@@ -26630,7 +26630,7 @@ s=7
 return A.J(A.hW(),$async$rv)
 case 7:n=a1.a
 m=A.eY(n.h(0,"recitationCount"))
-if(m==null)m=5400
+if(m==null)m=0
 l=$.ao()
 k=new A.bP(m,l)
 j=A.ci(n.h(0,"app_pin"))

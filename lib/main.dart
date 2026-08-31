@@ -27,7 +27,7 @@ void main() async {
   tz.initializeTimeZones();
   
   final prefs = await SharedPreferences.getInstance();
-  final int initialCount = prefs.getInt('recitationCount') ?? 5400; // Use 5400 as default to show some progress
+  final int initialCount = prefs.getInt('recitationCount') ?? 0; // Each new user starts from 0
   final ValueNotifier<int> globalRecitationCount = ValueNotifier<int>(initialCount);
   final String? savedPin = prefs.getString('app_pin');
   
