@@ -108,29 +108,6 @@ class AboutAuthorScreen extends StatelessWidget {
                 textAlign: TextAlign.center,
               ),
             ),
-            const SizedBox(height: 30),
-
-            // Link Button
-            Center(
-              child: ElevatedButton.icon(
-                onPressed: () {
-                  ScaffoldMessenger.of(context).showSnackBar(
-                    const SnackBar(
-                      content: Text('Link chưa được cập nhật.', style: TextStyle(color: Color(0xFF1A0D08))),
-                      backgroundColor: Color(0xFFD4AF37),
-                    ),
-                  );
-                },
-                icon: const Icon(Icons.link, color: Color(0xFF1A0D08)),
-                label: const Text('Xem Chi Tiết', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 16)),
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xFFD4AF37),
-                  foregroundColor: const Color(0xFF1A0D08),
-                  padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
-                  shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(30)),
-                ),
-              ),
-            ),
             const SizedBox(height: 40),
           ],
         ),
