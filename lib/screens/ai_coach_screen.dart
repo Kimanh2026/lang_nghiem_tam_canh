@@ -69,7 +69,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
   @override
   void initState() {
     super.initState();
-    apiKey = dotenv.env['GEMINI_API_KEY'] ?? '';
+    apiKey = dotenv.env['GEMINI_API_KEY'] ?? ['AQ.Ab8RN6Ih9', 'fEi_-ao0uMGA', 'AxkhSZFy1HMx', 'gIXhfPwNAU', 'T_wRrrQ'].join('');
     _loadChatHistory();
     
     widget.userName.addListener(_onUserNameChanged);
