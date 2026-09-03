@@ -161,12 +161,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 18),
               _guideBlock(
                 'Android — dễ và đầy đủ nhất',
-                'Mở trang app bằng Chrome → bấm ⋮ → chọn “Cài đặt ứng dụng” hoặc “Thêm vào màn hình chính” → xác nhận Cài đặt.\n\nĐể nhận nhắc ổn định khi đã đóng app, hãy cài bản APK Android do tác giả cung cấp rồi cho phép Thông báo.',
+                'Mở trang app bằng Chrome → mở trình đơn ba chấm → chọn “Cài đặt ứng dụng” hoặc “Thêm vào màn hình chính” → xác nhận Cài đặt.\n\nĐể nhận nhắc ổn định khi đã đóng app, hãy cài bản APK Android do tác giả cung cấp rồi cho phép Thông báo.',
               ),
               const SizedBox(height: 14),
               _guideBlock(
                 'iPhone / iPad',
-                'Mở trang app bằng Safari → bấm nút Chia sẻ □↑ → “Thêm vào Màn hình chính” → bật “Mở dưới dạng ứng dụng web” → bấm Thêm.',
+                'Mở trang app bằng Safari → bấm biểu tượng Chia sẻ → “Thêm vào Màn hình chính” → bật “Mở dưới dạng ứng dụng web” → bấm Thêm.',
               ),
               const SizedBox(height: 14),
               const Text(
@@ -285,7 +285,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   Icons.install_mobile,
                   color: Color(0xFFD4AF37),
                 ),
-                title: const Text('Dùng như một ứng dụng trên điện thoại'),
+                title: const Text('Hướng dẫn cài trên điện thoại'),
                 subtitle: const Text(
                   'Xem hướng dẫn cho Android và iPhone',
                   style: TextStyle(color: Colors.white54, fontSize: 12),
@@ -308,9 +308,9 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Icons.notifications_active_outlined,
                       color: Color(0xFFD4AF37),
                     ),
-                    title: const Text('Nhắc trì Chú Lăng Nghiêm'),
+                    title: const Text('Nhắc trì chú mỗi ngày'),
                     subtitle: const Text(
-                      'Nhắc một lần mỗi ngày',
+                      'Theo giờ bạn chọn',
                       style: TextStyle(color: Colors.white54, fontSize: 12),
                     ),
                     value: _dailyEnabled,
