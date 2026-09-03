@@ -184,6 +184,41 @@ class MainScaffold extends StatefulWidget {
 }
 
 class _MainScaffoldState extends State<MainScaffold> {
+  static const double _navigationRailBreakpoint = 800;
+
+  static const _railDestinations = <NavigationRailDestination>[
+    NavigationRailDestination(icon: Icon(Icons.home), label: Text('Trang chủ')),
+    NavigationRailDestination(
+      icon: Icon(Icons.menu_book),
+      label: Text('Khai thị'),
+    ),
+    NavigationRailDestination(
+      icon: Icon(Icons.self_improvement),
+      label: Text('Trì chú'),
+    ),
+    NavigationRailDestination(
+      icon: Icon(Icons.chat_bubble),
+      label: Text('Tiểu Tịnh'),
+    ),
+    NavigationRailDestination(
+      icon: Icon(Icons.info_outline),
+      label: Text('Tác Giả'),
+    ),
+    NavigationRailDestination(
+      icon: Icon(Icons.settings),
+      label: Text('Cài đặt'),
+    ),
+  ];
+
+  static const _bottomNavigationItems = <BottomNavigationBarItem>[
+    BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Trang chủ'),
+    BottomNavigationBarItem(icon: Icon(Icons.menu_book), label: 'Khai thị'),
+    BottomNavigationBarItem(icon: Icon(Icons.self_improvement), label: 'Trì chú'),
+    BottomNavigationBarItem(icon: Icon(Icons.chat_bubble), label: 'Tiểu Tịnh'),
+    BottomNavigationBarItem(icon: Icon(Icons.info_outline), label: 'Tác Giả'),
+    BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Cài đặt'),
+  ];
+
   int _currentIndex = 0;
 
   void _switchTab(int index) {
@@ -194,6 +229,8 @@ class _MainScaffoldState extends State<MainScaffold> {
 
   @override
   Widget build(BuildContext context) {
+    final isWideScreen =
+        MediaQuery.sizeOf(context).width >= _navigationRailBreakpoint;
     final screens = [
       HomeScreen(recitationCount: widget.recitationCount, onStartChanting: () => _switchTab(2)),
       const TeachingsScreen(),
@@ -202,39 +239,69 @@ class _MainScaffoldState extends State<MainScaffold> {
       const AboutAuthorScreen(),
       SettingsScreen(userName: widget.userName, clearChatTrigger: widget.clearChatTrigger),
     ];
-    
+
+    final content = IndexedStack(index: _currentIndex, children: screens);
+
     return Scaffold(
-      body: IndexedStack(
-        index: _currentIndex,
-        children: screens,
-      ),
-      bottomNavigationBar: Container(
-        decoration: const BoxDecoration(
-          border: Border(top: BorderSide(color: Color(0x33D4AF37), width: 1)),
-        ),
-        child: BottomNavigationBar(
-          currentIndex: _currentIndex,
-          onTap: (index) {
-            setState(() {
-              _currentIndex = index;
-            });
-          },
-          type: BottomNavigationBarType.fixed,
-          backgroundColor: const Color(0xFF2D1A11),
-          selectedItemColor: const Color(0xFFD4AF37),
-          unselectedItemColor: const Color(0xFFD1BFAE),
-          selectedFontSize: 12,
-          unselectedFontSize: 12,
-          items: const [
-            BottomNavigationBarItem(icon: Icon(Icons.home), label: 'Trang chủ'),
-            BottomNavigationBarItem(icon: Icon(Icons.menu_book), label: 'Khai thị'),
-            BottomNavigationBarItem(icon: Icon(Icons.self_improvement), label: 'Trì chú'),
-            BottomNavigationBarItem(icon: Icon(Icons.chat_bubble), label: 'Tiểu Tịnh'),
-            BottomNavigationBarItem(icon: Icon(Icons.info_outline), label: 'Tác Giả'),
-            BottomNavigationBarItem(icon: Icon(Icons.settings), label: 'Cài đặt'),
-          ],
-        ),
-      ),
+      body: isWideScreen
+          ? Row(
+              children: [
+                Container(
+                  decoration: const BoxDecoration(
+                    border: Border(
+                      right: BorderSide(color: Color(0x33D4AF37), width: 1),
+                    ),
+                  ),
+                  child: SafeArea(
+                    child: NavigationRail(
+                      selectedIndex: _currentIndex,
+                      onDestinationSelected: _switchTab,
+                      extended: true,
+                      minWidth: 72,
+                      minExtendedWidth: 200,
+                      groupAlignment: -0.85,
+                      backgroundColor: const Color(0xFF2D1A11),
+                      selectedIconTheme: const IconThemeData(
+                        color: Color(0xFFD4AF37),
+                      ),
+                      unselectedIconTheme: const IconThemeData(
+                        color: Color(0xFFD1BFAE),
+                      ),
+                      selectedLabelTextStyle: const TextStyle(
+                        color: Color(0xFFD4AF37),
+                        fontWeight: FontWeight.bold,
+                      ),
+                      unselectedLabelTextStyle: const TextStyle(
+                        color: Color(0xFFD1BFAE),
+                      ),
+                      destinations: _railDestinations,
+                    ),
+                  ),
+                ),
+                Expanded(child: content),
+              ],
+            )
+          : content,
+      bottomNavigationBar: isWideScreen
+          ? null
+          : Container(
+              decoration: const BoxDecoration(
+                border: Border(
+                  top: BorderSide(color: Color(0x33D4AF37), width: 1),
+                ),
+              ),
+              child: BottomNavigationBar(
+                currentIndex: _currentIndex,
+                onTap: _switchTab,
+                type: BottomNavigationBarType.fixed,
+                backgroundColor: const Color(0xFF2D1A11),
+                selectedItemColor: const Color(0xFFD4AF37),
+                unselectedItemColor: const Color(0xFFD1BFAE),
+                selectedFontSize: 12,
+                unselectedFontSize: 12,
+                items: _bottomNavigationItems,
+              ),
+            ),
     );
   }
 }
