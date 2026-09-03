@@ -180,9 +180,22 @@ class NotificationService {
       final lunarDay = lunar[0];
       final lunarMonth = lunar[1];
       final isLeapMonth = lunar[3] == 1;
-      final festival = isLeapMonth
-          ? null
-          : _festivalNames['$lunarMonth-$lunarDay'];
+      final tomorrow = date.add(const Duration(days: 1));
+      final tomorrowLunar = convertSolar2Lunar(
+        tomorrow.day,
+        tomorrow.month,
+        tomorrow.year,
+        7,
+      );
+      final isShortSeventhMonthEnding =
+          !isLeapMonth &&
+          lunarMonth == 7 &&
+          lunarDay == 29 &&
+          tomorrowLunar[0] == 1 &&
+          tomorrowLunar[1] == 8;
+      final festival = isShortSeventhMonthEnding
+          ? 'Vía Bồ Tát Địa Tạng'
+          : (isLeapMonth ? null : _festivalNames['$lunarMonth-$lunarDay']);
       final isMonthlyObservance = lunarDay == 1 || lunarDay == 15;
       if (!isMonthlyObservance && festival == null) continue;
 

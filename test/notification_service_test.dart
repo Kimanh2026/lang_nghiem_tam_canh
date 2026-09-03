@@ -16,4 +16,17 @@ void main() {
       expect(items[i].solarDate.isBefore(items[i - 1].solarDate), isFalse);
     }
   });
+
+  test('Dia Tang observance is present in each upcoming lunar year', () {
+    final items = NotificationService.instance.upcomingObservances(days: 730);
+    final diaTangDays = items
+        .where((item) => item.title.contains('Địa Tạng'))
+        .toList();
+    expect(diaTangDays.length, greaterThanOrEqualTo(2));
+    expect(diaTangDays.every((item) => item.lunarMonth == 7), isTrue);
+    expect(
+      diaTangDays.every((item) => item.lunarDay == 29 || item.lunarDay == 30),
+      isTrue,
+    );
+  });
 }
