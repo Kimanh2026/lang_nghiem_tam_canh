@@ -89468,10 +89468,10 @@ r=A.b([new A.LS(j,new A.aoK(n),m),B.RD,new A.Ag(j,m),new A.xi(i,k,m),B.B6,new A.
 k=n.d
 j=l?56:72
 i=l?128:200
-q=l?20:24
-p=l?20:24
-o=A.fX(m,m,B.C,m,m,m,m,m,m,m,m,l?11:14,m,m,B.at,m,m,!0,m,m,m,m,m,m,m,m)
-return A.ni(m,m,A.e1(A.b([A.d6(m,A.qq(!0,new A.AH(B.bw,!0,B.Jd,k,n.gajG(),-0.85,A.fX(m,m,B.bg,m,m,m,m,m,m,m,m,l?11:14,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),o,new A.ch(p,m,m,m,m,B.bg,m,m,m),new A.ch(q,m,m,m,m,B.C,m,m,m),j,i,m),!0,B.as,!0,!0),B.u,m,m,B.BR,m,m,m,m,m,m,m),A.tI(new A.Mi(k,r,m))],s),B.z,B.x,B.F,0))}}
+q=l?22:26
+p=l?22:26
+o=A.fX(m,m,B.C,m,m,m,m,m,m,m,m,l?14:16,m,m,B.at,m,m,!0,m,m,m,m,m,m,m,m)
+return A.ni(m,m,A.e1(A.b([A.d6(m,A.qq(!0,new A.AH(B.bw,!0,B.Jd,k,n.gajG(),-0.85,A.fX(m,m,B.bg,m,m,m,m,m,m,m,m,l?14:16,m,m,m,m,m,!0,m,m,m,m,m,m,m,m),o,new A.ch(p,m,m,m,m,B.bg,m,m,m),new A.ch(q,m,m,m,m,B.C,m,m,m),j,i,m),!0,B.as,!0,!0),B.u,m,m,B.BR,m,m,m,m,m,m,m),A.tI(new A.Mi(k,r,m))],s),B.z,B.x,B.F,0))}}
 A.aoJ.prototype={
 $0(){this.a.d=this.b},
 $S:0}
@@ -89536,7 +89536,7 @@ Fu(a){var s,r,q=this,p=null,o=J.aAr(q.a.c.a),n=o.length!==0?'Address the user as
 m===$&&A.a()
 s=A.b([new A.fW('You are a compassionate Buddhist Dharma Assistant named Ti\u1ec3u T\u1ecbnh.\nCRITICAL RULES:\n1. Be concise by default, but IF the user asks for details, stories, or explanations, you MUST provide a detailed, accurate, and truthful answer.\n2. When telling stories about the Shurangama Mantra (linh \u1ee9ng ch\xfa L\u0103ng Nghi\xeam) or Master Hsuan Hua (H\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a), provide accurate and engaging details.\n3. Always do EXACTLY what the user asks. If they say "n\xf3i chi ti\u1ebft", give a long detailed answer.\n4. Always refer to yourself as "con" or "Ti\u1ec3u T\u1ecbnh" (never "t\xf4i", "m\xecnh").\n5. '+n+'\n6. Respond in Vietnamese. Do NOT use markdown. Start with "A Mi \u0110\xe0 Ph\u1eadt" only for the first greeting, not in every chat.')],t.Uz)
 r=A.aSL("https","generativelanguage.googleapis.com","v1beta",p)
-s=new A.LG(A.aNj("gemini-1.5-flash"),B.JO,p,p,new A.a6T(m,p),r,new A.fD("system",s),p)
+s=new A.LG(A.aNj("gemini-3.6-flash"),B.JO,p,p,new A.a6T(m,p),r,new A.fD("system",s),p)
 q.r=s
 q.w=new A.a19(s.ga06(),new A.abv(A.l1(p,t.v4)),a,p,p)},
 DB(){var s=J.aAr(this.a.c.a),r=s.length!==0?"A Mi \u0110\xe0 Ph\u1eadt! Con l\xe0 Ti\u1ec3u T\u1ecbnh, ch\xe0o \u0110\u1ea1o H\u1eefu "+s+". M\u1ee5c ti\xeau \u0111\u1ea1t \u0111\u01b0\u1ee3c 36.000 bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam. \u0110\u1ea1o H\u1eefu c\xf3 th\u1eafc m\u1eafc g\xec v\u1ec1 vi\u1ec7c tr\xec t\u1ee5ng ch\xfa L\u0103ng Nghi\xeam kh\xf4ng?":"A Mi \u0110\xe0 Ph\u1eadt! Con l\xe0 Ti\u1ec3u T\u1ecbnh, \u0111\u01b0\u1ee3c \u0111\xe0o t\u1ea1o \u0111\u1ec3 tr\u1ee3 gi\xfap ch\u01b0 v\u1ecb \u0110\u1ea1o H\u1eefu tinh t\u1ea5n tr\xean con \u0111\u01b0\u1eddng gi\u1ea3i tho\xe1t. M\u1ee5c ti\xeau \u0111\u1ea1t \u0111\u01b0\u1ee3c 36.000 bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam. \u0110\u1ea1o H\u1eefu c\xf3 th\u1eafc m\u1eafc g\xec v\u1ec1 vi\u1ec7c tr\xec t\u1ee5ng ch\xfa L\u0103ng Nghi\xeam kh\xf4ng?",q=t.N

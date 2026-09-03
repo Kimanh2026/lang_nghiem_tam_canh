@@ -130,7 +130,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
         : 'Address the user as "Đạo Hữu" by default, unless they ask you not to.';
         
     _chatModel = GenerativeModel(
-      model: 'gemini-1.5-flash',
+      model: 'gemini-3.6-flash',
       apiKey: apiKey,
       systemInstruction: Content.system(
           'You are a compassionate Buddhist Dharma Assistant named Tiểu Tịnh.\n'

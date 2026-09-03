@@ -253,20 +253,20 @@ class _MainScaffoldState extends State<MainScaffold> {
                 backgroundColor: const Color(0xFF2D1A11),
                 selectedIconTheme: IconThemeData(
                   color: const Color(0xFFD4AF37),
-                  size: isCompactRail ? 20 : 24,
+                  size: isCompactRail ? 22 : 26,
                 ),
                 unselectedIconTheme: IconThemeData(
                   color: const Color(0xFFD1BFAE),
-                  size: isCompactRail ? 20 : 24,
+                  size: isCompactRail ? 22 : 26,
                 ),
                 selectedLabelTextStyle: TextStyle(
                   color: const Color(0xFFD4AF37),
-                  fontSize: isCompactRail ? 11 : 14,
+                  fontSize: isCompactRail ? 14 : 16,
                   fontWeight: FontWeight.bold,
                 ),
                 unselectedLabelTextStyle: TextStyle(
                   color: const Color(0xFFD1BFAE),
-                  fontSize: isCompactRail ? 11 : 14,
+                  fontSize: isCompactRail ? 14 : 16,
                 ),
                 destinations: _railDestinations,
               ),
