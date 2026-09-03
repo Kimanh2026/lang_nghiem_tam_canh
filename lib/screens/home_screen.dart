@@ -1,19 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../main.dart'; // for triggerTestNotification
+import '../services/notification_service.dart';
 
 class HomeScreen extends StatelessWidget {
   final ValueNotifier<int> recitationCount;
   final VoidCallback? onStartChanting;
-  
-  const HomeScreen({super.key, required this.recitationCount, this.onStartChanting});
+
+  const HomeScreen({
+    super.key,
+    required this.recitationCount,
+    this.onStartChanting,
+  });
 
   Widget _buildBadge(String label, int milestone, int currentCount) {
     bool unlocked = currentCount >= milestone;
     return Column(
       children: [
         Icon(
-          Icons.verified, 
+          Icons.verified,
           color: unlocked ? const Color(0xFFD4AF37) : Colors.white24,
           size: 40,
         ),
@@ -23,7 +27,7 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(
             color: unlocked ? const Color(0xFFD4AF37) : Colors.white54,
             fontSize: 12,
-            fontWeight: unlocked ? FontWeight.bold : FontWeight.normal
+            fontWeight: unlocked ? FontWeight.bold : FontWeight.normal,
           ),
         ),
       ],
@@ -31,13 +35,18 @@ class HomeScreen extends StatelessWidget {
   }
 
   void _showEditCountDialog(BuildContext context) {
-    final TextEditingController controller = TextEditingController(text: recitationCount.value.toString());
+    final TextEditingController controller = TextEditingController(
+      text: recitationCount.value.toString(),
+    );
     showDialog(
       context: context,
       builder: (context) {
         return AlertDialog(
           backgroundColor: const Color(0xFF2D1A11),
-          title: const Text('Điều chỉnh tiến độ', style: TextStyle(color: Color(0xFFD4AF37))),
+          title: const Text(
+            'Điều chỉnh tiến độ',
+            style: TextStyle(color: Color(0xFFD4AF37)),
+          ),
           content: TextField(
             controller: controller,
             keyboardType: TextInputType.number,
@@ -45,8 +54,12 @@ class HomeScreen extends StatelessWidget {
             decoration: const InputDecoration(
               hintText: 'Nhập số biến đã trì',
               hintStyle: TextStyle(color: Colors.white54),
-              enabledBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFD4AF37))),
-              focusedBorder: UnderlineInputBorder(borderSide: BorderSide(color: Color(0xFFD4AF37))),
+              enabledBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Color(0xFFD4AF37)),
+              ),
+              focusedBorder: UnderlineInputBorder(
+                borderSide: BorderSide(color: Color(0xFFD4AF37)),
+              ),
             ),
           ),
           actions: [
@@ -64,7 +77,10 @@ class HomeScreen extends StatelessWidget {
                 }
                 Navigator.pop(context);
               },
-              child: const Text('Lưu', style: TextStyle(color: Color(0xFFD4AF37))),
+              child: const Text(
+                'Lưu',
+                style: TextStyle(color: Color(0xFFD4AF37)),
+              ),
             ),
           ],
         );
@@ -76,7 +92,14 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Lăng Nghiêm Tâm Cảnh', style: TextStyle(color: Color(0xFFD4AF37), fontWeight: FontWeight.bold, fontSize: 18)),
+        title: const Text(
+          'Lăng Nghiêm Tâm Cảnh',
+          style: TextStyle(
+            color: Color(0xFFD4AF37),
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+          ),
+        ),
         backgroundColor: const Color(0xFF1A0D08),
         elevation: 0,
         actions: [
@@ -84,7 +107,14 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.only(right: 16.0),
             child: Row(
               children: [
-                const Text('Liên Hoa Hóa Sanh', style: TextStyle(color: Color(0xFFD4AF37), fontWeight: FontWeight.bold, fontSize: 14)),
+                const Text(
+                  'Liên Hoa Hóa Sanh',
+                  style: TextStyle(
+                    color: Color(0xFFD4AF37),
+                    fontWeight: FontWeight.bold,
+                    fontSize: 14,
+                  ),
+                ),
                 const SizedBox(width: 8),
                 const CircleAvatar(
                   radius: 16,
@@ -93,14 +123,11 @@ class HomeScreen extends StatelessWidget {
                 ),
               ],
             ),
-          )
+          ),
         ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
-          child: Container(
-            color: const Color(0x33D4AF37),
-            height: 1.0,
-          ),
+          child: Container(color: const Color(0x33D4AF37), height: 1.0),
         ),
       ),
       body: SingleChildScrollView(
@@ -111,14 +138,21 @@ class HomeScreen extends StatelessWidget {
             Align(
               alignment: Alignment.centerRight,
               child: TextButton.icon(
-                icon: const Icon(Icons.notifications_active, color: Color(0xFFD4AF37), size: 16),
-                label: const Text('Test Notification', style: TextStyle(color: Color(0xFFD4AF37))),
+                icon: const Icon(
+                  Icons.notifications_active,
+                  color: Color(0xFFD4AF37),
+                  size: 16,
+                ),
+                label: const Text(
+                  'Thử thông báo',
+                  style: TextStyle(color: Color(0xFFD4AF37)),
+                ),
                 onPressed: () {
-                  triggerTestNotification();
+                  NotificationService.instance.showTest();
                 },
               ),
             ),
-            
+
             // Khai thi Card
             Card(
               shape: RoundedRectangleBorder(
@@ -132,25 +166,41 @@ class HomeScreen extends StatelessWidget {
                   children: [
                     Row(
                       children: const [
-                        Icon(Icons.format_quote, color: Color(0xFFD4AF37), size: 16),
+                        Icon(
+                          Icons.format_quote,
+                          color: Color(0xFFD4AF37),
+                          size: 16,
+                        ),
                         SizedBox(width: 8),
                         Text(
                           'LỜI KHAI THỊ',
-                          style: TextStyle(color: Color(0xFFD4AF37), fontWeight: FontWeight.bold, fontSize: 14, letterSpacing: 1),
+                          style: TextStyle(
+                            color: Color(0xFFD4AF37),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                            letterSpacing: 1,
+                          ),
                         ),
                       ],
                     ),
                     const SizedBox(height: 12),
                     const Text(
                       '"Hai mươi chín câu Chú đầu tiên, một khi niệm ra thì sẽ xuất hiện một cảnh giới là: bốn mặt tám phương có rất nhiều hoa sen đỏ đến ủng hộ người trì Chú này, cho nên nói: Ngàn đóa sen đỏ hộ người trì."',
-                      style: TextStyle(fontSize: 16, fontStyle: FontStyle.italic, height: 1.5),
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontStyle: FontStyle.italic,
+                        height: 1.5,
+                      ),
                     ),
                     const SizedBox(height: 12),
                     const Align(
                       alignment: Alignment.centerRight,
                       child: Text(
                         '- Hoà thượng Tuyên Hoá -',
-                        style: TextStyle(color: Color(0xFFD4AF37), fontSize: 14),
+                        style: TextStyle(
+                          color: Color(0xFFD4AF37),
+                          fontSize: 14,
+                        ),
                       ),
                     ),
                   ],
@@ -158,7 +208,7 @@ class HomeScreen extends StatelessWidget {
               ),
             ),
             const SizedBox(height: 20),
-            
+
             // Progress Tracker Card
             Card(
               shape: RoundedRectangleBorder(
@@ -177,10 +227,19 @@ class HomeScreen extends StatelessWidget {
                           children: [
                             const Text(
                               'Tiến độ Trì Chú',
-                              style: TextStyle(color: Color(0xFFD4AF37), fontSize: 14, fontWeight: FontWeight.bold, letterSpacing: 1),
+                              style: TextStyle(
+                                color: Color(0xFFD4AF37),
+                                fontSize: 14,
+                                fontWeight: FontWeight.bold,
+                                letterSpacing: 1,
+                              ),
                             ),
                             IconButton(
-                              icon: const Icon(Icons.edit, color: Color(0xFFD1BFAE), size: 18),
+                              icon: const Icon(
+                                Icons.edit,
+                                color: Color(0xFFD1BFAE),
+                                size: 18,
+                              ),
                               onPressed: () => _showEditCountDialog(context),
                               tooltip: 'Chỉnh sửa số biến',
                             ),
@@ -205,18 +264,25 @@ class HomeScreen extends StatelessWidget {
                               children: [
                                 Text(
                                   '$count',
-                                  style: const TextStyle(color: Color(0xFFD4AF37), fontSize: 28, fontWeight: FontWeight.bold),
+                                  style: const TextStyle(
+                                    color: Color(0xFFD4AF37),
+                                    fontSize: 28,
+                                    fontWeight: FontWeight.bold,
+                                  ),
                                 ),
                                 const Text(
                                   '/ 36,000',
-                                  style: TextStyle(color: Color(0xFFD1BFAE), fontSize: 12),
+                                  style: TextStyle(
+                                    color: Color(0xFFD1BFAE),
+                                    fontSize: 12,
+                                  ),
                                 ),
                               ],
                             ),
                           ],
                         ),
                         const SizedBox(height: 20),
-                        
+
                         // Badges Row
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -228,19 +294,22 @@ class HomeScreen extends StatelessWidget {
                           ],
                         ),
                         const SizedBox(height: 20),
-                        
+
                         const Text(
                           'Bạn đang đi đúng hướng. Hãy tiếp tục tinh tấn!',
-                          style: TextStyle(color: Color(0xFFD1BFAE), fontSize: 14),
+                          style: TextStyle(
+                            color: Color(0xFFD1BFAE),
+                            fontSize: 14,
+                          ),
                         ),
                       ],
                     );
-                  }
+                  },
                 ),
               ),
             ),
             const SizedBox(height: 20),
-            
+
             // Action Button
             SizedBox(
               width: double.infinity,

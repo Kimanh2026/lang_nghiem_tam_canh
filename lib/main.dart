@@ -1,9 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_local_notifications/flutter_local_notifications.dart';
-import 'package:timezone/data/latest_all.dart' as tz;
-import 'package:timezone/timezone.dart' as tz;
-import 'dart:math';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'screens/home_screen.dart';
@@ -13,8 +9,7 @@ import 'screens/ai_coach_screen.dart';
 import 'screens/pin_screen.dart';
 import 'screens/settings_screen.dart';
 import 'screens/about_author_screen.dart';
-
-final FlutterLocalNotificationsPlugin flutterLocalNotificationsPlugin = FlutterLocalNotificationsPlugin();
+import 'services/notification_service.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -23,17 +18,22 @@ void main() async {
   } catch (e) {
     print("No .env file found. Using fallback keys.");
   }
-  
-  tz.initializeTimeZones();
-  
+
+  await NotificationService.instance.initialize();
+
   final prefs = await SharedPreferences.getInstance();
-  final int initialCount = prefs.getInt('recitationCount') ?? 0; // Each new user starts from 0
-  final ValueNotifier<int> globalRecitationCount = ValueNotifier<int>(initialCount);
+  final int initialCount =
+      prefs.getInt('recitationCount') ?? 0; // Each new user starts from 0
+  final ValueNotifier<int> globalRecitationCount = ValueNotifier<int>(
+    initialCount,
+  );
   final String? savedPin = prefs.getString('app_pin');
-  
+
   // Settings state
   final String initialName = prefs.getString('user_name') ?? '';
-  final ValueNotifier<String> globalUserName = ValueNotifier<String>(initialName);
+  final ValueNotifier<String> globalUserName = ValueNotifier<String>(
+    initialName,
+  );
   final ValueNotifier<int> globalClearChatTrigger = ValueNotifier<int>(0);
 
   // Store in shared preferences whenever it changes
@@ -46,78 +46,16 @@ void main() async {
     await prefsInstance.setString('user_name', globalUserName.value);
   });
 
-  const AndroidInitializationSettings initializationSettingsAndroid = AndroidInitializationSettings('@mipmap/ic_launcher');
-  // For web, notifications will degrade gracefully or do nothing if not supported properly.
-  const InitializationSettings initializationSettings = InitializationSettings(android: initializationSettingsAndroid);
-  await flutterLocalNotificationsPlugin.initialize(settings: initializationSettings);
-  
-  await flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()?.requestNotificationsPermission();
-  await flutterLocalNotificationsPlugin.resolvePlatformSpecificImplementation<AndroidFlutterLocalNotificationsPlugin>()?.requestExactAlarmsPermission();
-  
-  _scheduleDailyReminder();
+  await NotificationService.instance.applySavedSchedule();
 
-  runApp(LangNghiemApp(
-    recitationCount: globalRecitationCount, 
-    savedPin: savedPin,
-    userName: globalUserName,
-    clearChatTrigger: globalClearChatTrigger,
-  ));
-}
-
-void _scheduleDailyReminder() async {
-  final List<String> quotes = [
-    "Hãy tinh tấn tu tập, thời gian không chờ đợi ai. - Hòa Thượng Tuyên Hóa",
-    "Trì Chú Lăng Nghiêm là gieo hạt giống thành Phật. - Hòa Thượng Tuyên Hóa",
-    "Nghiệp chướng càng nặng, càng phải nỗ lực trì chú. - Hòa Thượng Phổ Quang",
-    "Có Chú Lăng Nghiêm là có chánh pháp. - Hòa Thượng Tuyên Hóa"
-  ];
-  final randomQuote = quotes[Random().nextInt(quotes.length)];
-
-  var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
-    'daily_reminder_channel', 'Daily Reminders',
-    channelDescription: 'Daily encouraging reminders',
-    importance: Importance.max, priority: Priority.high,
+  runApp(
+    LangNghiemApp(
+      recitationCount: globalRecitationCount,
+      savedPin: savedPin,
+      userName: globalUserName,
+      clearChatTrigger: globalClearChatTrigger,
+    ),
   );
-  var platformChannelSpecifics = NotificationDetails(android: androidPlatformChannelSpecifics);
-
-  tz.TZDateTime now = tz.TZDateTime.now(tz.local);
-  tz.TZDateTime scheduledDate = tz.TZDateTime(tz.local, now.year, now.month, now.day, 21, 0);
-  if (scheduledDate.isBefore(now)) {
-    scheduledDate = scheduledDate.add(const Duration(days: 1));
-  }
-
-  try {
-    await flutterLocalNotificationsPlugin.zonedSchedule(
-      id: 0,
-      title: 'Lăng Nghiêm Tâm Cảnh',
-      body: randomQuote,
-      scheduledDate: scheduledDate,
-      notificationDetails: platformChannelSpecifics,
-      androidScheduleMode: AndroidScheduleMode.exactAllowWhileIdle,
-      matchDateTimeComponents: DateTimeComponents.time,
-    );
-  } catch (e) {
-    // Ignore notification errors on unsupported platforms like Web
-  }
-}
-
-// Global method to trigger a test notification for the user to verify
-void triggerTestNotification() async {
-  var androidPlatformChannelSpecifics = const AndroidNotificationDetails(
-    'test_channel', 'Test Notifications',
-    importance: Importance.max, priority: Priority.high,
-  );
-  var platformChannelSpecifics = NotificationDetails(android: androidPlatformChannelSpecifics);
-  try {
-    await flutterLocalNotificationsPlugin.show(
-      id: 1,
-      title: 'Lăng Nghiêm Tâm Cảnh',
-      body: 'Thử nghiệm: Hãy tiếp tục tinh tấn trì chú! - Hòa Thượng Tuyên Hóa',
-      notificationDetails: platformChannelSpecifics,
-    );
-  } catch (e) {
-    // Ignore
-  }
 }
 
 class LangNghiemApp extends StatelessWidget {
@@ -125,10 +63,10 @@ class LangNghiemApp extends StatelessWidget {
   final String? savedPin;
   final ValueNotifier<String> userName;
   final ValueNotifier<int> clearChatTrigger;
-  
+
   const LangNghiemApp({
-    super.key, 
-    required this.recitationCount, 
+    super.key,
+    required this.recitationCount,
     this.savedPin,
     required this.userName,
     required this.clearChatTrigger,
@@ -173,7 +111,7 @@ class MainScaffold extends StatefulWidget {
   final ValueNotifier<int> clearChatTrigger;
 
   const MainScaffold({
-    super.key, 
+    super.key,
     required this.recitationCount,
     required this.userName,
     required this.clearChatTrigger,
@@ -223,12 +161,21 @@ class _MainScaffoldState extends State<MainScaffold> {
     final isCompactRail =
         MediaQuery.sizeOf(context).width < _compactRailBreakpoint;
     final screens = [
-      HomeScreen(recitationCount: widget.recitationCount, onStartChanting: () => _switchTab(2)),
+      HomeScreen(
+        recitationCount: widget.recitationCount,
+        onStartChanting: () => _switchTab(2),
+      ),
       const TeachingsScreen(),
       MantraScreen(recitationCount: widget.recitationCount),
-      AiCoachScreen(userName: widget.userName, clearChatTrigger: widget.clearChatTrigger),
+      AiCoachScreen(
+        userName: widget.userName,
+        clearChatTrigger: widget.clearChatTrigger,
+      ),
       const AboutAuthorScreen(),
-      SettingsScreen(userName: widget.userName, clearChatTrigger: widget.clearChatTrigger),
+      SettingsScreen(
+        userName: widget.userName,
+        clearChatTrigger: widget.clearChatTrigger,
+      ),
     ];
 
     final content = IndexedStack(index: _currentIndex, children: screens);
