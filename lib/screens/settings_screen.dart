@@ -60,11 +60,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
   Future<void> _setReminder({bool? daily, bool? observance}) async {
     final nextDaily = daily ?? _dailyEnabled;
     final nextObservance = observance ?? _observanceEnabled;
-    if ((nextDaily || nextObservance) && kIsWeb) {
-      _showMessage(
-        'Thông báo nền cần bản Android APK. Bản cài từ trình duyệt có thể bị hệ điều hành hạn chế.',
-      );
-    } else if ((nextDaily || nextObservance) &&
+    if (!kIsWeb &&
+        (nextDaily || nextObservance) &&
         !await NotificationService.instance.requestPermission()) {
       _showMessage('Bạn cần cho phép thông báo trong cài đặt điện thoại.');
       return;
@@ -108,14 +105,33 @@ class _SettingsScreenState extends State<SettingsScreen> {
       hour: selected.hour,
       minute: selected.minute,
     );
-    if (mounted)
+    if (mounted) {
       _showMessage('Đã đổi giờ nhắc sang ${selected.format(context)}.');
+    }
   }
 
   Future<void> _testNotification() async {
     if (kIsWeb) {
-      _showMessage(
-        'Hãy dùng bản Android APK để thử thông báo khi ứng dụng đã đóng.',
+      await showDialog<void>(
+        context: context,
+        builder: (context) => AlertDialog(
+          backgroundColor: const Color(0xFF2D1A11),
+          title: const Text(
+            'Thông báo trên bản web',
+            style: TextStyle(color: Color(0xFFD4AF37)),
+          ),
+          content: const Text(
+            'Bản cài từ trình duyệt có thể không nhắc khi ứng dụng đã đóng. '
+            'Để nhận thông báo nền ổn định, hãy dùng bản APK Android.',
+            style: TextStyle(color: Colors.white70, height: 1.45),
+          ),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.pop(context),
+              child: const Text('Đã hiểu'),
+            ),
+          ],
+        ),
       );
       return;
     }
@@ -359,6 +375,40 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 ],
               ),
             ),
+            if (kIsWeb) ...[
+              const SizedBox(height: 10),
+              Container(
+                width: double.infinity,
+                padding: const EdgeInsets.all(12),
+                decoration: BoxDecoration(
+                  color: const Color(0x192196F3),
+                  borderRadius: BorderRadius.circular(10),
+                  border: Border.all(color: const Color(0x553D8BD9)),
+                ),
+                child: const Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Icon(
+                      Icons.info_outline,
+                      color: Color(0xFF8AB4F8),
+                      size: 19,
+                    ),
+                    SizedBox(width: 9),
+                    Expanded(
+                      child: Text(
+                        'Bản cài từ trình duyệt có thể không nhắc khi ứng dụng đã đóng. '
+                        'APK Android sẽ nhắc nền ổn định hơn.',
+                        style: TextStyle(
+                          color: Color(0xFFB8CCEA),
+                          fontSize: 12,
+                          height: 1.35,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ],
             const SizedBox(height: 16),
             Card(
               child: Padding(
