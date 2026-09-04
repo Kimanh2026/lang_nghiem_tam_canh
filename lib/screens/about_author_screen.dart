@@ -73,7 +73,7 @@ class AboutAuthorScreen extends StatelessWidget {
         ),
         SizedBox(height: 12),
         Text(
-          'Mình không phải giảng sư hay người hướng dẫn Phật pháp. Nội dung trong ứng dụng mang tính hỗ trợ; quý đạo hữu nên đối chiếu thêm với kinh điển và các vị có chuyên môn.',
+          'Mình là người chia sẻ Phật Pháp. Nội dung trong ứng dụng mang tính hỗ trợ; quý đạo hữu nên đối chiếu thêm với kinh điển và các vị có chuyên môn.',
           style: TextStyle(color: _muted, fontSize: 15, height: 1.6),
         ),
       ],
