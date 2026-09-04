@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 class AboutAuthorScreen extends StatelessWidget {
@@ -10,11 +11,13 @@ class AboutAuthorScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isPhone = MediaQuery.sizeOf(context).width < 600;
     return Scaffold(
       appBar: AppBar(
-        title: const Text(
-          'Người Xây Dựng Ứng Dụng',
-          style: TextStyle(color: _gold, fontWeight: FontWeight.bold),
+        automaticallyImplyLeading: false,
+        title: Text(
+          isPhone ? 'Tác giả' : 'Người Xây Dựng Ứng Dụng',
+          style: const TextStyle(color: _gold, fontWeight: FontWeight.bold),
         ),
         backgroundColor: const Color(0xFF1A0D08),
         elevation: 0,
@@ -25,7 +28,12 @@ class AboutAuthorScreen extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.fromLTRB(
+          isPhone ? 14 : 20,
+          isPhone ? 14 : 20,
+          isPhone ? 14 : 20,
+          isPhone ? 24 : (kIsWeb ? 110 : 40),
+        ),
         child: Center(
           child: ConstrainedBox(
             constraints: const BoxConstraints(maxWidth: 760),

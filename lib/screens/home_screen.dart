@@ -1,6 +1,6 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import '../services/notification_service.dart';
 
 class HomeScreen extends StatelessWidget {
   final ValueNotifier<int> recitationCount;
@@ -90,8 +90,10 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final isPhone = MediaQuery.sizeOf(context).width < 600;
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text(
           'Lăng Nghiêm Tâm Cảnh',
           style: TextStyle(
@@ -107,15 +109,16 @@ class HomeScreen extends StatelessWidget {
             padding: const EdgeInsets.only(right: 16.0),
             child: Row(
               children: [
-                const Text(
-                  'Liên Hoa Hóa Sanh',
-                  style: TextStyle(
-                    color: Color(0xFFD4AF37),
-                    fontWeight: FontWeight.bold,
-                    fontSize: 14,
+                if (!isPhone)
+                  const Text(
+                    'Liên Hoa Hóa Sanh',
+                    style: TextStyle(
+                      color: Color(0xFFD4AF37),
+                      fontWeight: FontWeight.bold,
+                      fontSize: 14,
+                    ),
                   ),
-                ),
-                const SizedBox(width: 8),
+                if (!isPhone) const SizedBox(width: 8),
                 const CircleAvatar(
                   radius: 16,
                   backgroundImage: AssetImage('assets/images/avatar.jpg'),
@@ -131,32 +134,70 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20.0),
+        padding: EdgeInsets.fromLTRB(
+          isPhone ? 12 : 20,
+          isPhone ? 12 : 20,
+          isPhone ? 12 : 20,
+          isPhone ? 20 : (kIsWeb ? 110 : 20),
+        ),
         child: Column(
           children: [
-            // Test Notification Button
-            Align(
-              alignment: Alignment.centerRight,
-              child: TextButton.icon(
-                icon: const Icon(
-                  Icons.notifications_active,
-                  color: Color(0xFFD4AF37),
-                  size: 16,
+            Container(
+              width: double.infinity,
+              constraints: const BoxConstraints(minHeight: 240),
+              padding: const EdgeInsets.all(24),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(24),
+                image: const DecorationImage(
+                  image: AssetImage('assets/images/lotus-dawn.png'),
+                  fit: BoxFit.cover,
+                  colorFilter: ColorFilter.mode(
+                    Color(0x33000000),
+                    BlendMode.darken,
+                  ),
                 ),
-                label: const Text(
-                  'Thử thông báo',
-                  style: TextStyle(color: Color(0xFFD4AF37)),
-                ),
-                onPressed: () {
-                  NotificationService.instance.showTest();
-                },
+              ),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'THỜI KHÓA HÔM NAY',
+                    style: TextStyle(
+                      color: Color(0xFFFFDF9E),
+                      fontSize: 12,
+                      letterSpacing: 1.5,
+                    ),
+                  ),
+                  const SizedBox(height: 20),
+                  const Text(
+                    'Trở về\nvới tâm an',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30,
+                      height: 1.15,
+                      fontWeight: FontWeight.w600,
+                    ),
+                  ),
+                  const SizedBox(height: 12),
+                  const Text(
+                    'Dành một khoảng lặng\nđể trì tụng Chú Lăng Nghiêm.',
+                    style: TextStyle(color: Color(0xFFFFF3DF), height: 1.5),
+                  ),
+                  const SizedBox(height: 20),
+                  FilledButton.icon(
+                    onPressed: onStartChanting,
+                    icon: const Icon(Icons.play_arrow),
+                    label: const Text('Bắt đầu trì chú'),
+                  ),
+                ],
               ),
             ),
+            const SizedBox(height: 20),
 
             // Khai thi Card
             Card(
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
+                borderRadius: BorderRadius.circular(20.0),
                 side: const BorderSide(color: Color(0x1AD4AF37), width: 1),
               ),
               child: Padding(
@@ -212,7 +253,7 @@ class HomeScreen extends StatelessWidget {
             // Progress Tracker Card
             Card(
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
+                borderRadius: BorderRadius.circular(20.0),
                 side: const BorderSide(color: Color(0x1AD4AF37), width: 1),
               ),
               child: Padding(
@@ -225,13 +266,15 @@ class HomeScreen extends StatelessWidget {
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
-                            const Text(
-                              'Tiến độ Trì Chú',
-                              style: TextStyle(
-                                color: Color(0xFFD4AF37),
-                                fontSize: 14,
-                                fontWeight: FontWeight.bold,
-                                letterSpacing: 1,
+                            const Expanded(
+                              child: Text(
+                                'Tiến độ Trì Chú',
+                                style: TextStyle(
+                                  color: Color(0xFFD4AF37),
+                                  fontSize: 14,
+                                  fontWeight: FontWeight.bold,
+                                  letterSpacing: 1,
+                                ),
                               ),
                             ),
                             IconButton(

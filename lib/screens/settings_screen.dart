@@ -273,6 +273,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         .toList();
     return Scaffold(
       appBar: AppBar(
+        automaticallyImplyLeading: false,
         title: const Text(
           'Cài Đặt',
           style: TextStyle(
@@ -289,7 +290,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20),
+        padding: EdgeInsets.fromLTRB(
+          MediaQuery.sizeOf(context).width < 600 ? 12 : 20,
+          MediaQuery.sizeOf(context).width < 600 ? 12 : 20,
+          MediaQuery.sizeOf(context).width < 600 ? 12 : 20,
+          MediaQuery.sizeOf(context).width < 600 ? 20 : (kIsWeb ? 110 : 20),
+        ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [

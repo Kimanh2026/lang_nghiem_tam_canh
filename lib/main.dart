@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
@@ -158,8 +159,9 @@ class _MainScaffoldState extends State<MainScaffold> {
 
   @override
   Widget build(BuildContext context) {
-    final isCompactRail =
-        MediaQuery.sizeOf(context).width < _compactRailBreakpoint;
+    final screenWidth = MediaQuery.sizeOf(context).width;
+    final isPhone = screenWidth < 600;
+    final isCompactRail = screenWidth < _compactRailBreakpoint;
     final screens = [
       HomeScreen(
         recitationCount: widget.recitationCount,
@@ -180,6 +182,78 @@ class _MainScaffoldState extends State<MainScaffold> {
 
     final content = IndexedStack(index: _currentIndex, children: screens);
 
+    if (isPhone) {
+      return Scaffold(
+        body: SafeArea(bottom: false, child: content),
+        bottomNavigationBar: MediaQuery.viewInsetsOf(context).bottom > 0
+            ? null
+            : SafeArea(
+                top: false,
+                child: Padding(
+                  // Leave room for the hosting badge without covering controls.
+                  padding: const EdgeInsets.fromLTRB(8, 6, 8, kIsWeb ? 56 : 8),
+                  child: DecoratedBox(
+                    decoration: BoxDecoration(
+                      color: const Color(0xFF2D1A11),
+                      borderRadius: BorderRadius.circular(24),
+                      border: Border.all(color: const Color(0x33D4AF37)),
+                    ),
+                    child: Row(
+                      children: List.generate(_railDestinations.length, (
+                        index,
+                      ) {
+                        final selected = _currentIndex == index;
+                        final destination = _railDestinations[index];
+                        return Expanded(
+                          child: Semantics(
+                            selected: selected,
+                            button: true,
+                            child: InkWell(
+                              borderRadius: BorderRadius.circular(22),
+                              onTap: () => _switchTab(index),
+                              child: Padding(
+                                padding: const EdgeInsets.symmetric(
+                                  vertical: 10,
+                                ),
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.min,
+                                  children: [
+                                    IconTheme(
+                                      data: IconThemeData(
+                                        size: 23,
+                                        color: selected
+                                            ? const Color(0xFFD4AF37)
+                                            : const Color(0xFFD1BFAE),
+                                      ),
+                                      child: destination.icon,
+                                    ),
+                                    const SizedBox(height: 5),
+                                    DefaultTextStyle(
+                                      style: TextStyle(
+                                        fontSize: 10,
+                                        fontWeight: selected
+                                            ? FontWeight.bold
+                                            : FontWeight.normal,
+                                        color: selected
+                                            ? const Color(0xFFD4AF37)
+                                            : const Color(0xFFD1BFAE),
+                                      ),
+                                      child: destination.label,
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+                        );
+                      }),
+                    ),
+                  ),
+                ),
+              ),
+      );
+    }
+
     return Scaffold(
       body: Row(
         children: [
@@ -193,27 +267,30 @@ class _MainScaffoldState extends State<MainScaffold> {
               child: NavigationRail(
                 selectedIndex: _currentIndex,
                 onDestinationSelected: _switchTab,
-                extended: true,
-                minWidth: isCompactRail ? 56 : 72,
+                extended: !isPhone,
+                labelType: isPhone
+                    ? NavigationRailLabelType.all
+                    : NavigationRailLabelType.none,
+                minWidth: isPhone ? 72 : (isCompactRail ? 128 : 200),
                 minExtendedWidth: isCompactRail ? 128 : 200,
                 groupAlignment: -0.85,
                 backgroundColor: const Color(0xFF2D1A11),
                 selectedIconTheme: IconThemeData(
                   color: const Color(0xFFD4AF37),
-                  size: isCompactRail ? 22 : 26,
+                  size: isPhone ? 24 : (isCompactRail ? 22 : 26),
                 ),
                 unselectedIconTheme: IconThemeData(
                   color: const Color(0xFFD1BFAE),
-                  size: isCompactRail ? 22 : 26,
+                  size: isPhone ? 24 : (isCompactRail ? 22 : 26),
                 ),
                 selectedLabelTextStyle: TextStyle(
                   color: const Color(0xFFD4AF37),
-                  fontSize: isCompactRail ? 14 : 16,
+                  fontSize: isPhone ? 10 : (isCompactRail ? 14 : 16),
                   fontWeight: FontWeight.bold,
                 ),
                 unselectedLabelTextStyle: TextStyle(
                   color: const Color(0xFFD1BFAE),
-                  fontSize: isCompactRail ? 14 : 16,
+                  fontSize: isPhone ? 10 : (isCompactRail ? 14 : 16),
                 ),
                 destinations: _railDestinations,
               ),
