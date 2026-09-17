@@ -9,7 +9,6 @@ import 'screens/mantra_screen.dart';
 import 'screens/ai_coach_screen.dart';
 import 'screens/pin_screen.dart';
 import 'screens/settings_screen.dart';
-import 'screens/about_author_screen.dart';
 import 'services/notification_service.dart';
 
 void main() async {
@@ -140,10 +139,6 @@ class _MainScaffoldState extends State<MainScaffold> {
       label: Text('Tiểu Tịnh'),
     ),
     NavigationRailDestination(
-      icon: Icon(Icons.info_outline),
-      label: Text('Tác Giả'),
-    ),
-    NavigationRailDestination(
       icon: Icon(Icons.settings),
       label: Text('Cài đặt'),
     ),
@@ -173,7 +168,6 @@ class _MainScaffoldState extends State<MainScaffold> {
         userName: widget.userName,
         clearChatTrigger: widget.clearChatTrigger,
       ),
-      const AboutAuthorScreen(),
       SettingsScreen(
         userName: widget.userName,
         clearChatTrigger: widget.clearChatTrigger,

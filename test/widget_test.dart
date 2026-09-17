@@ -1,34 +1,32 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:lang_nghiem_tam_canh/main.dart';
 
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(LangNghiemApp(
-      recitationCount: ValueNotifier<int>(0),
-      userName: ValueNotifier<String>(''),
-      clearChatTrigger: ValueNotifier<int>(0),
-    ));
+  testWidgets('Main navigation has five screens and no author section', (
+    WidgetTester tester,
+  ) async {
+    tester.view.physicalSize = const Size(1024, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: ThemeData.dark(useMaterial3: true),
+        home: MainScaffold(
+          recitationCount: ValueNotifier<int>(0),
+          userName: ValueNotifier<String>(''),
+          clearChatTrigger: ValueNotifier<int>(0),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
-
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    final rail = tester.widget<NavigationRail>(find.byType(NavigationRail));
+    expect(rail.destinations, hasLength(5));
+    expect(find.text('Tác Giả'), findsNothing);
+    expect(find.text('Cài đặt'), findsOneWidget);
   });
 }

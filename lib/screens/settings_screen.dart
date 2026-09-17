@@ -177,7 +177,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 18),
               _guideBlock(
                 'Android — dễ và đầy đủ nhất',
-                'Mở trang app bằng Chrome → mở trình đơn ba chấm → chọn “Cài đặt ứng dụng” hoặc “Thêm vào màn hình chính” → xác nhận Cài đặt.\n\nĐể nhận nhắc ổn định khi đã đóng app, hãy cài bản APK Android do tác giả cung cấp rồi cho phép Thông báo.',
+                'Mở trang app bằng Chrome → mở trình đơn ba chấm → chọn “Cài đặt ứng dụng” hoặc “Thêm vào màn hình chính” → xác nhận Cài đặt.\n\nĐể nhận nhắc ổn định khi đã đóng app, hãy cài bản APK Android của ứng dụng rồi cho phép Thông báo.',
               ),
               const SizedBox(height: 14),
               _guideBlock(
