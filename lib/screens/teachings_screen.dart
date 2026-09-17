@@ -167,6 +167,260 @@ class _TeachingsScreenState extends State<TeachingsScreen> {
       'preview':
           'Động Từ Bi, từ xưa đến nay không biết đã có bao nhiêu vị đại đức (bậc tu hành cao thâm) đến đây đóng cửa ẩn tu rồi. Sư phụ là hòa thượng Phổ Quang kể lại rằng, những giọt nước rỉ ra từ khe đá trong động chính là nước mắt của Phật Bồ Tát. Nước này có thể uống chứ không được lãng phí, và còn chữa được bách bệnh. Căn nhà đá nhỏ nhắn, giản dị kia chính là nơi hòa thượng Phổ Quang từng tu hành lúc còn trẻ. Thời Dân Quốc, các vị hòa thượng nổi tiếng như ngài Hư Vân, pháp sư Viên Anh, và hòa thượng Lai Quả cũng đều từng tu hành ở nơi này.',
     },
+
+    // --- KHAI THỊ BỔ SUNG (GIỮ NGUYÊN NỘI DUNG GỐC) ---
+    {
+      'title': 'THẦN CHÚ KHAI MỞ TRÍ TUỆ',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview':
+          '''Vấn đáp cùng Hoà Thượng Tuyên Hoá vào ngày 10 tháng 01 năm 1993
+
+tại Học Viện Công Nghiệp Kỹ Thuật Quốc Lập - Đài Loan
+
+Phiên dịch bởi Viện Dịch Kinh Quốc Tế
+
+https://www.drbachinese.org/vbs/publish/453/vbs453p020.pdf
+
+Hỏi: Con là một đệ tử, và con rất thích đọc những sách của Hòa Thượng. Con có một câu hỏi quan trọng như sau. Hòa Thượng đã đề cập rằng có hai câu chú trong Chú Lăng Nghiêm có thể khai mở trí tuệ cho chúng ta. Xin Hoà Thượng hãy nói cho chúng con biết đó là hai câu chú nào? Tạ ơn sự từ bi chỉ dẫn của ngài. Nam Mô Đại Từ Đại Bi Quán Thế Âm Bồ Tát.
+
+Đáp: Đúng vậy, ta có thể nói cho quý vị, nhưng tin hay không tin là tùy quý vị. Ta cũng không thể tùy tiện nói cho quý vị nghe. Trước hết quý vị hãy cho ta biết là quý vị có thành thật niệm hay không? Nếu ta nói cho quý vị nghe, rồi quý vị cũng quên mất, đồng thời cũng không tụng niệm. Qua một thời gian, quý vị lại hỏi: “Xin Sư Phụ nói cho con biết hai câu chú này, cho đến bây giờ con vẫn chưa khai trí tuệ.” Tại sao trí tuệ của quý vị chưa khai mở? Là do quý vị không tụng niệm, vậy thì làm sao trí tuệ của quý vị có thể khai mở được? Do đó, nếu quý vị muốn học hai câu Thần chú này, thì nhất định phải nhất tâm dụng công tụng niệm, thậm chí không ăn cũng được nhưng không thể không niệm Thần chú này, thậm chí không mặc đồ cũng được nhưng không thể không niệm Thần chú này, thậm chí không ngủ cũng được nhưng không thể không niệm Thần chú này. Nếu quý vị có quyết tâm như vậy, thì trí tuệ của quý vị chắc chắn sẽ khai mở. Nếu quý vị không có được quyết tâm như vậy mà chỉ muốn tìm cơ hội đi đường tắt, mong ta chỉ giáo vài câu, rồi nghĩ rằng như thế là có được bảo bối, thì rốt cuộc quý vị cũng chẳng được gì cả.
+
+Bây giờ thì ta có thể giải thích một chút. Hai câu chú này là:
+
+“Thỉnh cầu chư Phật và chư vị Bồ Tát khai mở trí tuệ, khai mở trí tuệ chân chánh, không phải trí tuệ thế gian. Khiến con có thể nhận thức rõ tất cả các Pháp và phi Pháp. Có được Trạch Pháp Nhãn (mắt chọn Pháp).”
+
+Chú này được nói ra bởi Hoá Phật trên đảnh đầu (Vô Kiến Đảnh Tướng) của Phật Thích Ca Mâu Ni. Bởi vậy mỗi câu chú này đều là những linh văn, đều là chân ngôn diệu ngữ, do đó hai câu chú này nói rằng, “Thỉnh chư Phật và chư vị Bồ Tát, xin hãy gia hộ cho con, khiến con được khai mở đại trí tuệ.”
+
+Ý nghĩa của Thần chú này cũng gọi là “chân ngôn”, cũng gọi là “linh văn”.
+
+Tại sao gọi là “chân ngôn”? Bởi vì Thần chú này không có một chút giả dối nào cả.
+
+Tại sao gọi là “linh văn”? Bởi vì Thần chú này vốn là của trời Phạm Thiên và được Đức Phật Thích Ca Mâu Ni dùng chú này để giải cứu ngài A-nan. Do đó một số người không biết cách để sử dụng Thần chú này. Ta lại nói thêm cho quý vị nghe rằng từ lúc ta còn nhỏ, ta đã đi khắp nơi hàng phục yêu ma và bắt quỷ quái. Những loài yêu ma quỷ quái có thể biến hóa thành người. ta đã gặp hơn một trăm loại này. Chúng đi đâu là hại người đến đó, vì thế ta đã dùng Chú Lăng Nghiêm để hàng phục chúng. Kết cuộc là tất cả yêu ma quỷ quái đều muốn cùng ta nhất quyết tử chiến, vì vậy phiền phức lại kéo đến, gây ra rất nhiều rắc rối. Do nhân duyên đó, nay tuổi ta đã lớn, có lẽ cũng đã từng trải, nên không còn muốn tranh đấu với chúng.
+
+Nhân vì:
+
+Tranh là phân thắng bại,
+
+Đi ngược lại với Đạo.
+
+Trong Tâm sanh bốn tướng,
+
+Làm sao vào Tam Muội (Định)? (1)
+
+Tam Muội, chính là Chánh Định, Chánh Thọ. Khi chúng ta cùng người tranh chấp, tức là có tâm hơn thua: hoặc ta thắng người thua, hoặc ta thua người thắng. Tâm tranh thắng bại ấy chính là “Đi ngược lại với Đạo”. Vì ngược lại với Đạo, tâm sanh khởi bốn tướng: ngã tướng, nhân tướng, chúng sanh tướng, thọ giả tướng.
+
+Khi bốn tướng hiện tiền, làm sao có được định lực? Làm sao có thể chứng đắc Chánh Định, Chánh Thọ?
+
+Cho nên, bất luận việc gì, chúng ta cũng không nên dùng bạo lực để giải quyết vấn đề, mà cần phải giải quyết trong tinh thần hòa bình. Không nên trên dưới cùng nhau tranh lợi, mà chúng ta cần phải dùng hòa khí, từ bi để đối đãi.
+
+Nếu một quốc gia, mọi người đều hòa thuận, có hòa khí, thì quốc gia ấy nhất định sẽ hưng thịnh. Còn nếu suốt ngày tranh đấu, kẻ này giành của kẻ kia, người này đánh mắng người kia, thì thật chẳng tốt đẹp, chẳng cát tường chút nào cả.
+
+Ghi chú:
+
+Nguyên văn Hoa ngữ:
+
+(1)
+
+爭是勝負心，
+
+與道相違背，
+
+便生四相心,
+
+由何得三昧？
+
+Tranh thị thắng phụ tâm,
+
+Dữ đạo tương vi bối，
+
+Tiện sanh tứ tương tâm，
+
+Do hà đắc tam muội？''',
+    },
+    {
+      'title':
+          'THẬT SỰ CÓ THỂ TRÌ CHÚ LĂNG NGHIÊM, TRONG HƯ KHÔNG LIỀN CÓ MỘT ĐẠI BẠCH TÁN CÁI, CÓ OAI THẦN LỰC “PHỔ ẤM MUÔN PHƯƠNG”!',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': '''Tuyên Công Thượng Nhân khai thị
+
+“Thiên tán cái vân”: “Thiên tán cái vân” nghĩa là hương mà bạn đốt kết tụ giữa hư không, hình thành một cái lọng giống như chiếc dù, che phủ và bảo hộ chúng sinh. Trong Chú Lăng Nghiêm có Đại Bạch Tán Cái. Khi bạn tụng chú này, trong hư không liền hiện ra một Đại Bạch Tán Cái. Nơi được Đại Bạch Tán Cái che phủ thì không có các loại tai nạn, không có động đất, không có thiên tai, tất cả tai nạn đều không xảy đến!
+
+Chữ “Cái” trong câu “chấp trì nhất cái”, theo Mật tông, chính là chỉ Đại Bạch Tán Cái trong Chú Lăng Nghiêm. Trong Chú Lăng Nghiêm có chú tâm — “悉怛多鉢怛囉” (Tất Đát Đa Bát Đát La). Sáu chữ này chính là chú tâm. Nếu nhất tâm chuyên chú, tâm không tạp niệm, chí thành trì tụng thì trong hư không có thể hiện ra một Đại Bạch Tán Cái. Đại Bạch Tán Cái ấy có oai thần lực “phổ ấm muôn phương”, tức che chở khắp mọi phương.
+
+Phàm nơi nào được nó che phủ thì đao binh không khởi, ôn dịch không sinh, nước lửa và trộm cướp đều dứt sạch; chỉ có như ý cát tường, mưa thuận gió hòa, nhân dân an lạc, không có bất kỳ tai nạn nào.
+
+Nếu nói theo giáo pháp, chữ “cái” này chính là diệu pháp của thật tướng. Thật tướng không có tướng, nhưng lại không gì chẳng phải tướng. Từ thật tướng mà sinh ra tất cả các pháp, dùng tất cả các pháp để giáo hóa chúng sinh trong chín pháp giới. Đây chính là đạo lý:
+
+“Một gốc phân tán thành muôn hình vạn trạng, muôn hình vạn trạng cuối cùng vẫn quy về một gốc.”
+
+Trì tụng câu chú tâm này thì trên đỉnh đầu sẽ có các loại bảo cái hộ trì bạn.
+
+“悉怛多鉢怛囉” (Tất Đát Đa Bát Đát La) là chú tâm của Chú Lăng Nghiêm, cho nên có người thường xuyên trì tụng câu chú này. Trì tụng câu chú này thì có các loại bảo cái; trong đó chủ yếu là dựng nên Đại Bạch Tán Cái.
+
+Chúng ta mỗi ngày có thể trì tụng Chú Lăng Nghiêm, chính là đang giúp đỡ toàn thế giới, khiến tai nạn trên toàn thế giới có thể giảm bớt một phần, nghiệp ma cũng giảm bớt một phần. Vì vậy, Chú Lăng Nghiêm vô cùng quan trọng!
+
+Bảo cái có rất nhiều loại, cho nên nói là các loại bảo cái; lại có các loại mây hương, mây hoa, chứ không phải chỉ có một loại. Những bảo cái, mây hương và mây hoa này thường ở trên đỉnh đầu bạn để hộ trì bạn. Vì thế, rất nhiều việc vốn có vấn đề cũng trở thành không có vấn đề; dù có chuyện bất ngờ cũng không xảy ra tai nạn. Đây là sự lợi ích đối với tất cả mọi người trên thế giới.
+
+Vì vậy, chúng ta trì tụng Chú Lăng Nghiêm chính là đang giúp đỡ thế giới, khiến thế giới giảm bớt những tai nạn như tai nạn hàng không, tai nạn giao thông. Chẳng hạn như tai nạn tàu hỏa, tai nạn ô tô, tai nạn máy bay, xe buýt, thậm chí cả chiến tranh, đạn pháo — những tai nạn ấy đều có thể được âm thầm hóa giải. Đồng thời cũng tiêu trừ tai chướng của chúng sinh. Khi tai chướng không còn, con người liền được bình an. Đây chính là lợi ích cho quần chúng.
+
+Bạn có thể mỗi ngày một giây cũng không gián đoạn trì tụng Chú Lăng Nghiêm, nhất định sẽ có đại cảm ứng. Chỉ cần không gián đoạn; không gián đoạn chính là Tam-muội.
+
+Chư Phật có năm bộ:
+
+Phương Đông: Kim Cang Bộ
+
+Phương Nam: Bảo Sinh Bộ
+
+Phương Tây: Liên Hoa Bộ
+
+Phương Bắc: Yết Ma Bộ
+
+Trung ương: Phật Bộ
+
+“悉怛多鉢怛囉” (Tất Đát Đa Bát Đát La) là pháp của Phật Bộ Trung ương, cho nên có thể nhiếp phục năm đại ma quân.
+
+Nếu không có chư Phật năm phương, năm đại ma quân sẽ ngày ngày tung hoành trên thế giới — chúng ngang dọc không kiêng nể, không chút e dè. May thay có chư Phật ở năm phương âm thầm trấn phục chúng, nên chúng không dám công khai hoành hành.
+
+Bất luận là loại yêu ma quỷ quái nào, thiên ma hay ngoại đạo, tất cả đều phải thuận theo sức mạnh của Chú Lăng Nghiêm. Nếu không thuận theo thì sẽ bị tiêu diệt. Chú Lăng Nghiêm có pháp lực tiêu diệt và phá tan tất cả ma quân.
+
+Vì vậy, người biết trì tụng Chú Lăng Nghiêm, thiên ma ngoại đạo và tất cả quỷ quái đều sợ bạn. Nếu chúng không sợ, cuối cùng chúng vẫn sẽ bị hàng phục dưới sức mạnh của bạn.''',
+    },
+    {
+      'title': 'BUÔNG VÕ CÔNG, VÀO CHUNG NAM SƠN ĂN LÁ CÂY 72 NĂM',
+      'meta': 'Hòa Thượng Phổ Quang',
+      'preview': '''1. VÌ SAO KHÔNG LUYỆN VÕ NỮA?
+Về sau, Lão Hòa Thượng nhận ra:
+"Võ công có cao đến mấy cũng không thành đạo được, mà còn dễ làm tổn thương người.
+Nhìn thấy chuyện bất bình là muốn xen vào.
+Kết quả là để cứu 1 người tốt, có thể phải làm tổn thương 100 người xấu.
+Oan oan tương báo đến bao giờ mới dứt?"
+
+Ngài quyết định không luyện nữa.
+Ngài nói: "Người đến 30 tuổi mà còn luyện võ công là chấp mê bất ngộ.
+Công phu phải luyện từ nhỏ. Võ công có cao đến mấy cũng không thoát được sinh tử."
+
+Từ đó Ngài trốn vào rừng sâu. Không tiếp xúc với ai.
+Chuyện bất bình không nhìn thấy, cũng không có cơ hội "gây sự" nữa.
+
+2. ĐI BỘ MẤY THÁNG ĐẾN CHUNG NAM SƠN
+Về sau nghe nói Chung Nam Sơn là thánh địa mà bao đời hiền nhân ẩn sĩ tu hành đắc đạo.
+Ngài liền dẫn đệ tử đi. Đi bộ mấy tháng mới tới.
+
+Lúc đó cọp mù đã chết, tinh vẫn còn sống.
+Thấy Ngài thu dọn y và thiền trượng định đi, nó ôm chân Ngài khóc, không cho đi.
+Lão Hòa Thượng đành nhân lúc tinh ngủ, cầm thiền trượng và y, lén rời đi.
+
+3. 72 NĂM ĂN LÁ CÂY VỎ CÂY
+Chung Nam Sơn khác với Trường Bạch Sơn.
+Không có cây ăn quả, đất lại xấu.
+2 thầy trò không có quả rừng để ăn, cũng không thể trồng khoai như ở Trường Bạch để đỡ đói.
+
+Nhưng Ngài vẫn nhớ lời Tổ dạy: không tiếp xúc với người.
+Ngày ngày ngồi trong hang trì chú tu hành.
+Hè ăn lá cây, đông ăn vỏ cây. Ăn như vậy 72 năm.
+Ăn đủ 72 loại lá cây và vỏ cây.
+
+Mãi đến cuối năm 1996 mới có cư sĩ Bắc Kinh lên núi gửi gạo.
+
+Lúc đó dân rất nghèo. Nông dân làm quần quật cả ngày mới kiếm được 2 xu.
+Lương thực cũng ít. Lão Hòa Thượng không bao giờ đến nhà dân "hóa duyên".
+Lá cây khô đốt thành tro, hòa với nước lạnh uống cho no bụng.
+
+Ngài nói: "72 loại cây đều ăn được. Chỉ cần giã lá và thân cây thành bột, nấu chín là ăn được. Rất bổ."
+Ngài nói: "Tất cả do tâm tạo. Con nói nó là lá cây vỏ cây thì nó là lá cây vỏ cây. Con nói nó là bánh mì thì nó là bánh mì."
+"Chỉ cần bụng không kêu ục ục, ruột không dính vào nhau, ngồi thiền được là được rồi."''',
+    },
+    {
+      'title': 'Trì Chú Cần Chí Thành Chuyên Nhất',
+      'meta': 'Hòa Thượng Phổ Quang',
+      'preview': '''Phổ Quang Lão Hòa Thượng
+Trích từ "Chung Nam Sơn Quan Âm Cổ Động Khai Thị Lục"
+
+Chuyện trì chú , quan trọng nhất chính là 4 chữ 『Chí Thành Chuyên Nhất』!
+
+Các Phật tử thấy không, Thầy hơn 100 tuổi rồi mà mỗi ngày vẫn thành thật niệm chú. Vì sao? Vì thầy biết chú này linh nghiệm lắm.
+
+Thế nào là Chí Thành Chuyên Nhất? Thầy nói cho các Phật tử nghe:
+Thứ nhất - Tâm phải thành, đừng có lăng xăng.
+Miệng thì niệm chú mà tâm lại nghĩ chuyện khác, gọi là 『miệng niệm tâm không theo』, vậy thì vô ích!
+
+Thứ hai - Phải chuyên nhất một môn.
+Đừng hôm nay niệm chú này, ngày mai đổi chú khác. Cả đời thầy chỉ trì một bộ Lăng Nghiêm Chú, đã hơn 80 năm rồi.
+
+Thứ ba - Phải một lòng một dạ, kiên định.
+Dù trời có sập xuống thầy vẫn ngồi niệm chú.
+
+Các Phật tử xem cái am tranh của thầy đó, chẳng có gì hết, chỉ có mỗi cái giường ván. Tại sao? Là để cắt đứt vọng tưởng! Ở đây ngoài việc niệm chú ra thì không nghĩ gì khác.
+
+Có người hỏi thầy: 『Bạch Lão Hòa Thượng, Hòa Thượng niệm chú có thấy cảnh giới gì không ạ?』
+Thầy trả lời: 『Thầy chẳng thấy cảnh giới gì cả, chỉ biết thành thật mà niệm thôi!』
+Các Phật tử nhớ nha: Đừng có mong cầu cảnh giới, càng cầu là càng bị ma chướng. Cứ thành thật niệm, tự nhiên sẽ có lợi ích.
+
+Thầy mỗi ngày 3 giờ rưỡi sáng là thức dậy. Lạy Phật 100 lạy trước, rồi bắt đầu trì chú. Một ngày ít nhất 108 biến, dù mưa hay nắng cũng không bỏ.
+Vì sao phải vậy? Vì chuyện sinh tử rất lớn, vô thường đến nhanh lắm!
+
+Bây giờ có nhiều người vừa niệm chú vừa bấm điện thoại. Vậy gọi là trì chú gì? Đó là giỡn chơi đó!
+Đã niệm thì phải niệm cho nghiêm túc. Không niệm thì thôi. Phật Bồ Tát không gạt ai bao giờ, chỉ có mình tự gạt mình thì không ai cứu được.
+
+Cuối cùng thầy tặng các Phật tử một câu:
+『Đánh tan vọng tưởng, thì pháp thân sẽ hiển lộ』
+= Khi nào quý vị dẹp được hết vọng tưởng trong đầu, thì tánh Phật của quý vị sẽ sống lại. Lúc đó trì chú mới linh nghiệm!''',
+    },
+    {
+      'title': 'MUỐN NHANH CHÓNG THÀNH TỰU, HÃY TỤNG THUỘC CHÚ LĂNG NGHIÊM',
+      'meta': 'Hòa Thượng Phổ Quang',
+      'preview': '''Lời Hòa thượng Phổ Quang
+
+Niệm A Di Đà Phật, sau một trăm lẻ tám nghìn năm sẽ thành Phật, nhất định sẽ thành Phật! Đức A Di Đà từ bi, người nào niệm danh hiệu Ngài đều có thể thành Phật. Nhưng nếu bạn muốn nhanh chóng thành tựu, hãy hiếu thuận với cha mẹ và tụng thuộc Chú Lăng Nghiêm.
+
+Tại sao khi tụng Chú Lăng Nghiêm lại phải phát âm vang rõ?
+
+Nếu âm thanh quá nhỏ thì quỷ thần còn không nghe thấy, vậy bạn độ ai?
+
+Âm thanh lớn, ngay cả các loài côn trùng, kiến cũng có thể nghe được mà kết duyên thành Phật. Đồng thời, việc trì tụng còn có thể làm tiêu trừ những vọng niệm của chính mình, khiến vọng niệm không thể quấy nhiễu tâm tính, hàng phục cơn buồn ngủ, khai thông kinh mạch, bổ sung dương khí và tăng cường thể chất.
+
+NĂM ĐẠI TÂM CHÚ:
+
+叱陀你 / SẤT ĐÀ NỂ
+阿迦囉 / A CA LA
+密唎柱 / MẬT RỊ TRỤ
+般唎怛囉耶 / BÁT RỊ ĐÁT RA DA
+儜揭唎 / NẢNH YẾT RỊ
+
+Ba chữ là một câu. Năm câu này biểu thị Ngũ phương Phật hàng phục Ngũ phương ma.
+
+Tôi nói đây là tâm chú chính thống của Chú Lăng Nghiêm (đại tâm chú). Có người nói tâm chú của Chú Lăng Nghiêm là câu cuối cùng, tức câu chú tâm. Tâm chú của Chú Lăng Nghiêm chính thống chính là trái tim của chư Phật. Chính câu này có năng lực khiến thiên hạ hòa bình.
+
+Chú Lăng Nghiêm chính là do Đức Phật Thích Ca Mâu Ni tuyên thuyết. Ân đức của Phật thật khó báo đáp. Chú Lăng Nghiêm còn liên quan đến sự hưng suy của toàn thể Phật giáo, liên quan đến hết thảy chúng sinh. Trong trời đất này, không có gì quan trọng hơn Chú Lăng Nghiêm.
+
+Vì vậy, chỉ cần tôi còn một hơi thở, tôi vẫn sẽ hết lòng hoằng dương thần chú Lăng Nghiêm này.
+
+Tất cả mọi thứ trên thế gian đều là giả, ngay cả thân thể của lão Phổ Quang tôi đây cũng là giả. Chỉ có Chú Lăng Nghiêm là chân thật nhất. Vì vậy, tôi ngay cả chính mình cũng không tin, chỉ tin vào Chú Lăng Nghiêm này.
+
+Cho nên, khi mọi người tham gia pháp hội thất nhật, mỗi ngày trì tụng thần chú, nhất định phải dùng tâm mà niệm, phải đem tâm chân thành ra để trì tụng. Đừng vừa niệm vừa khởi vọng tưởng, vừa niệm vừa nghi ngờ.
+
+Bạn xem, khi tôi vừa niệm Chú Lăng Nghiêm thì ngay cả lão Phổ Quang tôi cũng không còn nữa. Toàn tâm đều hòa nhập vào việc trì chú.
+
+Khi tụng thuộc câu trước thì nghĩ đến câu tiếp theo; tụng đến chữ trước thì nghĩ đến chữ tiếp theo. Cứ như vậy, nhất tâm bất loạn mà trì tụng thần chú. Cứ bám chặt lấy Chú Lăng Nghiêm, không buông bỏ, thì trong đời này nhất định có thể thành tựu.''',
+    },
+    {
+      'title': 'NIỆM CHÚ LĂNG NGHIÊM BẢY NGÀY, CĂN BỆNH LẠ BỖNG NHIÊN KHỎI HẲN',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': '''宣化上人 - Tuyên Hóa Thượng Nhân:
+Tôi kể cho các bạn nghe một câu chuyện có thật thế này: Ở vùng Đông Bắc Trung Quốc, có một người mắc phải căn bệnh lạ, bao nhiêu bác sĩ đều chữa không khỏi. Sau đó, ông ấy gặp được một vị lão tu hành dạy cho cách niệm Chú Lăng Nghiêm. Ông ấy đã thành tâm thành ý niệm suốt bảy ngày, và bệnh tình liền khỏi hẳn! Đây không phải là mê tín, mà chính là uy thần lực của Chú Lăng Nghiêm!
+
+Người trì tụng Chú Lăng Nghiêm thì đi đến đâu cũng có thiện thần hộ pháp đi theo bảo vệ. Các bạn nhìn Tế Công Hòa Thượng xem, tại sao ngài lại có thể hàng yêu phục ma? Chính là dựa vào sức mạnh của Chú Lăng Nghiêm! Thần chú này vừa niệm lên một cái là yêu ma quỷ quái đều sợ hãi mà chạy trốn thật xa.
+
+Thế nhưng, các bạn đừng có nghĩ rằng hễ niệm vài biến là có đại thần thông ngay nhé. Thời trẻ khi tôi niệm Chú Lăng Nghiêm, niệm đến mức rộp cả miệng ra mà vẫn tiếp tục niệm. Tại sao vậy? Bởi vì tôi biết công đức của thần chú này là không thể nghĩ bàn!
+
+Bây giờ có rất nhiều người cứ mong cầu cảm ứng, niệm được vài ngày không thấy hào quang của Phật hiện ra là liền bỏ không niệm nữa. Như vậy thì gọi gì là tu hành? Kinh Lăng Nghiêm nói rất rõ ràng: "Nếu không trì giới, dẫu có tụng chú, chung quy cũng không phải là chính định." Bạn vừa ăn thịt uống rượu, lại vừa niệm chú, thì làm sao mà có hiệu quả cho được?
+
+Hãy nhớ kỹ lời này của tôi: Trì Chú Lăng Nghiêm thì phải giống như ăn cơm vậy, một ngày cũng không thể thiếu. Sáng niệm, tối niệm, đi đường niệm, ngồi xe niệm, hãy niệm bài chú này vào tận trong tâm của mình. Cứ niệm như vậy suốt ba năm, bạn sẽ tự biết cái lợi ích của nó.
+
+Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của việc trì Chú Lăng Nghiêm không phải là cầu phát tài, cầu bình an, mà là để khai mở trí tuệ, để minh tâm kiến tính. Các bạn nhìn Hư Vân Lão Hòa Thượng xem, tại sao ngài lại có thể sống đến 120 tuổi? Chính là vì ngày ngày ngài đều trì Chú Lăng Nghiêm!
+
+(Trích từ bài khai thị "Công đức của Chú Lăng Nghiêm" của Tuyên Hóa Thượng Nhân, Vạn Phật Thánh Thành)''',
+    },
   ];
 
   List<Map<String, String>> get _filteredTeachings {
