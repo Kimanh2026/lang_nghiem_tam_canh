@@ -29,6 +29,16 @@ void main() {
       );
       await tester.pumpAndSettle();
       expect(tester.takeException(), isNull);
+      expect(find.text('Liên Hoa Hóa Sanh'), findsNothing);
+      expect(
+        find.byWidgetPredicate(
+          (widget) =>
+              widget is CircleAvatar &&
+              widget.backgroundImage ==
+                  const AssetImage('assets/images/avatar.jpg'),
+        ),
+        findsNothing,
+      );
       expect(
         find.byType(NavigationRail),
         width < 600 ? findsNothing : findsOneWidget,

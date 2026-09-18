@@ -104,30 +104,6 @@ class HomeScreen extends StatelessWidget {
         ),
         backgroundColor: const Color(0xFF1A0D08),
         elevation: 0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: Row(
-              children: [
-                if (!isPhone)
-                  const Text(
-                    'Liên Hoa Hóa Sanh',
-                    style: TextStyle(
-                      color: Color(0xFFD4AF37),
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14,
-                    ),
-                  ),
-                if (!isPhone) const SizedBox(width: 8),
-                const CircleAvatar(
-                  radius: 16,
-                  backgroundImage: AssetImage('assets/images/avatar.jpg'),
-                  backgroundColor: Color(0xFFD4AF37),
-                ),
-              ],
-            ),
-          ),
-        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
           child: Container(color: const Color(0x33D4AF37), height: 1.0),
