@@ -78,6 +78,12 @@ void main() {
     await tester.tap(find.text('Khai thị').last);
     await tester.pumpAndSettle();
     expect(tester.getSize(find.byKey(const Key('teacher-hero'))).height, 84);
+    await tester.drag(
+      find.byKey(const Key('teachings-scroll')),
+      const Offset(0, -300),
+    );
+    await tester.pumpAndSettle();
+    expect(find.byKey(const Key('teacher-hero')).hitTestable(), findsNothing);
 
     await tester.tap(find.text('Trì chú').last);
     await tester.pumpAndSettle();

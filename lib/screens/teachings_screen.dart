@@ -9,7 +9,6 @@ class TeachingsScreen extends StatefulWidget {
 
 class _TeachingsScreenState extends State<TeachingsScreen> {
   int _selectedChipIndex = 0;
-  String _searchQuery = '';
 
   List<String> get _filters => ['Hòa Thượng Tuyên Hóa', 'Hòa Thượng Phổ Quang'];
 
@@ -441,21 +440,8 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
 
   List<Map<String, String>> get _filteredTeachings {
     return _allTeachings.where((teaching) {
-      // 1. Check Search Query
-      final matchesSearch =
-          _searchQuery.isEmpty ||
-          teaching['title']!.toLowerCase().contains(
-            _searchQuery.toLowerCase(),
-          ) ||
-          teaching['preview']!.toLowerCase().contains(
-            _searchQuery.toLowerCase(),
-          );
-
-      // 2. Check Chip Filter
       final currentFilter = _filters[_selectedChipIndex];
-      final matchesFilter = teaching['meta']! == currentFilter;
-
-      return matchesSearch && matchesFilter;
+      return teaching['meta']! == currentFilter;
     }).toList();
   }
 
@@ -563,181 +549,117 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
     final isPhone = MediaQuery.sizeOf(context).width < 600;
 
     return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const Text(
-          'Khai Thị & Tín Tâm',
-          style: TextStyle(
-            color: Color(0xFFD4AF37),
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
-        backgroundColor: const Color(0xFF1A0D08),
-        elevation: 0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: Row(
-              children: [
-                if (!isPhone)
-                  const Text(
-                    'Liên Hoa Hóa Sanh',
-                    style: TextStyle(
-                      color: Color(0xFFD4AF37),
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14,
+      body: CustomScrollView(
+        key: const Key('teachings-scroll'),
+        slivers: [
+          SliverPadding(
+            padding: EdgeInsets.fromLTRB(
+              isPhone ? 12 : 20,
+              isPhone ? 8 : 16,
+              isPhone ? 12 : 20,
+              0,
+            ),
+            sliver: SliverToBoxAdapter(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      children: List.generate(_filters.length, (index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(right: 8),
+                          child: ChoiceChip(
+                            label: Text(_filters[index]),
+                            selected: _selectedChipIndex == index,
+                            onSelected: (selected) {
+                              if (selected) {
+                                setState(() => _selectedChipIndex = index);
+                              }
+                            },
+                            backgroundColor: const Color(0xFF1A0D08),
+                            selectedColor: const Color(0x33D4AF37),
+                            labelStyle: TextStyle(
+                              color: _selectedChipIndex == index
+                                  ? const Color(0xFFD4AF37)
+                                  : const Color(0xFFD1BFAE),
+                              fontSize: 13,
+                            ),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(20),
+                              side: BorderSide(
+                                color: _selectedChipIndex == index
+                                    ? const Color(0xFFD4AF37)
+                                    : const Color(0x80D4AF37),
+                              ),
+                            ),
+                          ),
+                        );
+                      }),
                     ),
                   ),
-                if (!isPhone) const SizedBox(width: 8),
-                const CircleAvatar(
-                  radius: 16,
-                  backgroundImage: AssetImage('assets/images/avatar.jpg'),
-                  backgroundColor: Color(0xFFD4AF37),
-                ),
-              ],
+                  const SizedBox(height: 10),
+                  _buildTeacherHero(filteredList.length, isPhone),
+                  const SizedBox(height: 12),
+                ],
+              ),
+            ),
+          ),
+          SliverPadding(
+            padding: EdgeInsets.fromLTRB(
+              isPhone ? 12 : 20,
+              0,
+              isPhone ? 12 : 20,
+              24,
+            ),
+            sliver: SliverList.separated(
+              itemCount: filteredList.length,
+              separatorBuilder: (_, _) => const SizedBox(height: 12),
+              itemBuilder: (context, index) {
+                final item = filteredList[index];
+                return Container(
+                  key: ValueKey('teaching-${item['title']}'),
+                  padding: EdgeInsets.all(isPhone ? 16 : 22),
+                  decoration: BoxDecoration(
+                    color: const Color(0xFF2A160F),
+                    borderRadius: BorderRadius.circular(18),
+                    border: Border.all(color: const Color(0x33D4AF37)),
+                    boxShadow: const [
+                      BoxShadow(
+                        color: Color(0x30000000),
+                        blurRadius: 16,
+                        offset: Offset(0, 8),
+                      ),
+                    ],
+                  ),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        item['title']!,
+                        style: TextStyle(
+                          color: const Color(0xFFF4D35E),
+                          fontWeight: FontWeight.bold,
+                          fontSize: isPhone ? 17 : 19,
+                          height: 1.3,
+                        ),
+                      ),
+                      const SizedBox(height: 12),
+                      Text(
+                        item['preview']!,
+                        style: TextStyle(
+                          color: const Color(0xFFFDF5E6),
+                          fontSize: isPhone ? 15 : 16,
+                          height: 1.65,
+                        ),
+                      ),
+                    ],
+                  ),
+                );
+              },
             ),
           ),
         ],
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(1.0),
-          child: Container(color: const Color(0x33D4AF37), height: 1.0),
-        ),
-      ),
-      body: Padding(
-        padding: EdgeInsets.all(isPhone ? 12 : 20),
-        child: Column(
-          children: [
-            // Search Bar
-            TextField(
-              onChanged: (value) {
-                setState(() {
-                  _searchQuery = value;
-                });
-              },
-              decoration: InputDecoration(
-                hintText: 'Tìm kiếm lời khai thị...',
-                hintStyle: const TextStyle(color: Color(0xFFD1BFAE)),
-                filled: true,
-                fillColor: const Color(0xFF1A0D08),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                  borderSide: const BorderSide(color: Color(0x4DD4AF37)),
-                ),
-                enabledBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                  borderSide: const BorderSide(color: Color(0x4DD4AF37)),
-                ),
-                focusedBorder: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                  borderSide: const BorderSide(color: Color(0xFFD4AF37)),
-                ),
-                prefixIcon: const Icon(Icons.search, color: Color(0xFFD1BFAE)),
-              ),
-            ),
-            const SizedBox(height: 15),
-
-            // Filters
-            SingleChildScrollView(
-              scrollDirection: Axis.horizontal,
-              child: Row(
-                children: List.generate(_filters.length, (index) {
-                  return Padding(
-                    padding: const EdgeInsets.only(right: 8.0),
-                    child: ChoiceChip(
-                      label: Text(_filters[index]),
-                      selected: _selectedChipIndex == index,
-                      onSelected: (bool selected) {
-                        if (selected) {
-                          setState(() {
-                            _selectedChipIndex = index;
-                          });
-                        }
-                      },
-                      backgroundColor: const Color(0xFF1A0D08),
-                      selectedColor: const Color(0x33D4AF37),
-                      labelStyle: TextStyle(
-                        color: _selectedChipIndex == index
-                            ? const Color(0xFFD4AF37)
-                            : const Color(0xFFD1BFAE),
-                        fontSize: 13,
-                      ),
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20),
-                        side: BorderSide(
-                          color: _selectedChipIndex == index
-                              ? const Color(0xFFD4AF37)
-                              : const Color(0x80D4AF37),
-                        ),
-                      ),
-                    ),
-                  );
-                }),
-              ),
-            ),
-            const SizedBox(height: 12),
-            _buildTeacherHero(filteredList.length, isPhone),
-            const SizedBox(height: 16),
-
-            // Teaching List
-            Expanded(
-              child: filteredList.isEmpty
-                  ? const Center(
-                      child: Text(
-                        'Không tìm thấy lời khai thị nào.',
-                        style: TextStyle(color: Color(0xFFD1BFAE)),
-                      ),
-                    )
-                  : ListView.separated(
-                      padding: const EdgeInsets.only(bottom: 20),
-                      itemCount: filteredList.length,
-                      separatorBuilder: (context, index) =>
-                          const SizedBox(height: 12),
-                      itemBuilder: (context, index) {
-                        final item = filteredList[index];
-                        return Container(
-                          padding: EdgeInsets.all(isPhone ? 16 : 22),
-                          decoration: BoxDecoration(
-                            color: const Color(0xFF2A160F),
-                            borderRadius: BorderRadius.circular(18),
-                            border: Border.all(color: const Color(0x33D4AF37)),
-                            boxShadow: const [
-                              BoxShadow(
-                                color: Color(0x30000000),
-                                blurRadius: 16,
-                                offset: Offset(0, 8),
-                              ),
-                            ],
-                          ),
-                          child: Column(
-                            crossAxisAlignment: CrossAxisAlignment.start,
-                            children: [
-                              Text(
-                                item['title']!,
-                                style: TextStyle(
-                                  color: const Color(0xFFF4D35E),
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: isPhone ? 17 : 19,
-                                  height: 1.3,
-                                ),
-                              ),
-                              const SizedBox(height: 12),
-                              Text(
-                                item['preview']!,
-                                style: TextStyle(
-                                  color: const Color(0xFFFDF5E6),
-                                  fontSize: isPhone ? 15 : 16,
-                                  height: 1.65,
-                                ),
-                              ),
-                            ],
-                          ),
-                        );
-                      },
-                    ),
-            ),
-          ],
-        ),
       ),
     );
   }

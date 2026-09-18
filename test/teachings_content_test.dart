@@ -3,14 +3,11 @@ import 'package:flutter_test/flutter_test.dart';
 import 'package:lang_nghiem_tam_canh/screens/teachings_screen.dart';
 
 void main() {
-  testWidgets('New teachings appear under the correct teacher filters', (
-    tester,
-  ) async {
+  Future<void> pumpTeachings(WidgetTester tester) async {
     tester.view.physicalSize = const Size(1024, 900);
     tester.view.devicePixelRatio = 1;
     addTearDown(tester.view.resetPhysicalSize);
     addTearDown(tester.view.resetDevicePixelRatio);
-
     await tester.pumpWidget(
       MaterialApp(
         theme: ThemeData.dark(useMaterial3: true),
@@ -18,87 +15,49 @@ void main() {
       ),
     );
     await tester.pumpAndSettle();
+  }
 
-    const tuyenHoaTitles = [
-      'Thời Đại “Vô Cùng Nguy Ngập”',
-      'PHÁP KIẾT TƯỜNG (Trong Thần Chú Lăng Nghiêm)',
-      'THẦN CHÚ KHAI MỞ TRÍ TUỆ',
-      'THẬT SỰ CÓ THỂ TRÌ CHÚ LĂNG NGHIÊM, TRONG HƯ KHÔNG LIỀN CÓ MỘT ĐẠI BẠCH TÁN CÁI, CÓ OAI THẦN LỰC “PHỔ ẤM MUÔN PHƯƠNG”!',
-      'NIỆM CHÚ LĂNG NGHIÊM BẢY NGÀY, CĂN BỆNH LẠ BỖNG NHIÊN KHỎI HẲN',
-    ];
-    const phoQuangTitles = [
-      'BUÔNG VÕ CÔNG, VÀO CHUNG NAM SƠN ĂN LÁ CÂY 72 NĂM',
-      'Trì Chú Cần Chí Thành Chuyên Nhất',
-      'MUỐN NHANH CHÓNG THÀNH TỰU, HÃY TỤNG THUỘC CHÚ LĂNG NGHIÊM',
-    ];
+  testWidgets('Teachings use one continuous reading scroll', (tester) async {
+    await pumpTeachings(tester);
 
-    for (final title in tuyenHoaTitles) {
-      await tester.enterText(find.byType(TextField), title);
-      await tester.pumpAndSettle();
-      expect(
-        find.descendant(of: find.byType(ListView), matching: find.text(title)),
-        findsOneWidget,
-      );
-      expect(
-        find.text('Hòa Thượng Tuyên Hóa'),
-        findsOneWidget,
-        reason: 'Tên tác giả chỉ nên xuất hiện trên ô lọc',
-      );
-    }
+    expect(find.byType(AppBar), findsNothing);
+    expect(find.byType(TextField), findsNothing);
+    expect(find.text('Khai Thị & Tín Tâm'), findsNothing);
+    expect(find.text('Tìm kiếm lời khai thị...'), findsNothing);
+    expect(find.text('Thời Đại “Vô Cùng Nguy Ngập”'), findsOneWidget);
+    expect(find.text('Hòa Thượng Tuyên Hóa'), findsOneWidget);
 
-    await tester.enterText(find.byType(TextField), phoQuangTitles.first);
+    await tester.drag(
+      find.byKey(const Key('teachings-scroll')),
+      const Offset(0, -500),
+    );
     await tester.pumpAndSettle();
-    expect(find.text('Không tìm thấy lời khai thị nào.'), findsOneWidget);
-
-    await tester.tap(find.text('Hòa Thượng Phổ Quang'));
-    await tester.pumpAndSettle();
-
-    for (final title in phoQuangTitles) {
-      await tester.enterText(find.byType(TextField), title);
-      await tester.pumpAndSettle();
-      expect(
-        find.descendant(of: find.byType(ListView), matching: find.text(title)),
-        findsOneWidget,
-      );
-      expect(
-        find.text('Hòa Thượng Phổ Quang'),
-        findsOneWidget,
-        reason: 'Tên tác giả chỉ nên xuất hiện trên ô lọc',
-      );
-    }
-
-    await tester.enterText(find.byType(TextField), tuyenHoaTitles.first);
-    await tester.pumpAndSettle();
-    expect(find.text('Không tìm thấy lời khai thị nào.'), findsOneWidget);
+    expect(find.byKey(const Key('teacher-hero')).hitTestable(), findsNothing);
+    expect(find.text('Thời Đại “Vô Cùng Nguy Ngập”'), findsWidgets);
   });
 
-  testWidgets('Phổ Quang image teaching is not duplicated', (tester) async {
-    tester.view.physicalSize = const Size(1024, 900);
-    tester.view.devicePixelRatio = 1;
-    addTearDown(tester.view.resetPhysicalSize);
-    addTearDown(tester.view.resetDevicePixelRatio);
-
-    await tester.pumpWidget(
-      MaterialApp(
-        theme: ThemeData.dark(useMaterial3: true),
-        home: const TeachingsScreen(),
-      ),
-    );
-    await tester.pumpAndSettle();
+  testWidgets('Teacher filter changes content without duplicate attribution', (
+    tester,
+  ) async {
+    await pumpTeachings(tester);
     await tester.tap(find.text('Hòa Thượng Phổ Quang'));
     await tester.pumpAndSettle();
-    await tester.enterText(
-      find.byType(TextField),
-      'Trì Chú Cần Chí Thành Chuyên Nhất',
-    );
-    await tester.pumpAndSettle();
 
-    expect(
-      find.descendant(
-        of: find.byType(ListView),
-        matching: find.text('Trì Chú Cần Chí Thành Chuyên Nhất'),
-      ),
-      findsOneWidget,
+    expect(find.text('Hòa Thượng Phổ Quang'), findsOneWidget);
+    expect(find.text('Cột Mốc 36.000 Biến & Đài Sen Nâng Đỡ'), findsOneWidget);
+    expect(find.text('Thời Đại “Vô Cùng Nguy Ngập”'), findsNothing);
+
+    final target = find.text('Trì Chú Cần Chí Thành Chuyên Nhất');
+    await tester.scrollUntilVisible(
+      target,
+      600,
+      scrollable: find
+          .descendant(
+            of: find.byKey(const Key('teachings-scroll')),
+            matching: find.byType(Scrollable),
+          )
+          .first,
     );
+    expect(target, findsOneWidget);
   });
 }
