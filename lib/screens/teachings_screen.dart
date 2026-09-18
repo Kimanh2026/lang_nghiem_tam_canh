@@ -465,9 +465,10 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
 
   Widget _buildTeacherHero(int teachingCount, bool isPhone) {
     return ClipRRect(
+      key: const Key('teacher-hero'),
       borderRadius: BorderRadius.circular(22),
       child: SizedBox(
-        height: isPhone ? 150 : 185,
+        height: isPhone ? 84 : 185,
         width: double.infinity,
         child: Stack(
           fit: StackFit.expand,
@@ -482,10 +483,10 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
               ),
             ),
             Positioned(
-              left: 14,
-              top: 14,
-              bottom: 14,
-              width: isPhone ? 100 : 150,
+              left: isPhone ? 8 : 14,
+              top: isPhone ? 8 : 14,
+              bottom: isPhone ? 8 : 14,
+              width: isPhone ? 64 : 150,
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(16),
                 child: Image.asset(
@@ -497,40 +498,41 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
               ),
             ),
             Positioned(
-              left: isPhone ? 128 : 184,
-              right: 16,
-              top: 14,
-              bottom: 14,
+              left: isPhone ? 84 : 184,
+              right: isPhone ? 10 : 16,
+              top: isPhone ? 7 : 14,
+              bottom: isPhone ? 7 : 14,
               child: Column(
                 mainAxisAlignment: MainAxisAlignment.center,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
-                    'PHÁP NGỮ TUYỂN CHỌN',
-                    style: TextStyle(
-                      color: Color(0xFFD4AF37),
-                      fontSize: 11,
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 1.1,
+                  if (!isPhone)
+                    const Text(
+                      'PHÁP NGỮ TUYỂN CHỌN',
+                      style: TextStyle(
+                        color: Color(0xFFD4AF37),
+                        fontSize: 11,
+                        fontWeight: FontWeight.w800,
+                        letterSpacing: 1.1,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 6),
+                  if (!isPhone) const SizedBox(height: 6),
                   Text(
                     'Lời khai thị để đọc chậm và suy ngẫm',
                     maxLines: 2,
                     overflow: TextOverflow.ellipsis,
                     style: TextStyle(
                       color: const Color(0xFFFDF5E6),
-                      fontSize: isPhone ? 14 : 18,
+                      fontSize: isPhone ? 13 : 18,
                       fontWeight: FontWeight.w700,
                       height: 1.25,
                     ),
                   ),
-                  const SizedBox(height: 10),
+                  SizedBox(height: isPhone ? 5 : 10),
                   Container(
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 10,
-                      vertical: 6,
+                    padding: EdgeInsets.symmetric(
+                      horizontal: isPhone ? 8 : 10,
+                      vertical: isPhone ? 3 : 6,
                     ),
                     decoration: BoxDecoration(
                       color: const Color(0xCC1A0D08),
@@ -539,9 +541,9 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                     ),
                     child: Text(
                       '$teachingCount bài',
-                      style: const TextStyle(
+                      style: TextStyle(
                         color: Color(0xFFF4D35E),
-                        fontSize: 12,
+                        fontSize: isPhone ? 10 : 12,
                         fontWeight: FontWeight.w700,
                       ),
                     ),

@@ -244,31 +244,59 @@ class _MantraScreenState extends State<MantraScreen> {
   }
 
   Widget _buildPracticeGallery(bool isPhone) {
-    final cards = [
-      _buildPracticeImageCard(
-        asset: 'assets/images/lang-nghiem-mandala.jpeg',
-        eyebrow: 'TÂM CHÚ HỘ TRÌ',
-        title: 'Chú Lăng Nghiêm',
-        subtitle: 'Đọc chậm, rõ tiếng và giữ tâm chuyên nhất.',
-        width: isPhone ? 230 : 0,
-      ),
-      _buildPracticeImageCard(
-        asset: 'assets/images/ngu-phuong-phat.jpg',
-        eyebrow: 'NGŨ PHƯƠNG PHẬT',
-        title: 'Năm Đại Tâm Chú',
-        subtitle: 'Năm câu tâm chú gắn với Ngũ phương Phật.',
-        width: isPhone ? 230 : 0,
-      ),
-    ];
-
     if (isPhone) {
       return SizedBox(
-        height: 210,
+        key: const Key('practice-gallery'),
+        height: 92,
         child: ListView.separated(
           scrollDirection: Axis.horizontal,
-          itemCount: cards.length,
+          itemCount: 2,
           separatorBuilder: (_, _) => const SizedBox(width: 12),
-          itemBuilder: (_, index) => cards[index],
+          itemBuilder: (_, index) {
+            final isMantra = index == 0;
+            return ClipRRect(
+              borderRadius: BorderRadius.circular(16),
+              child: SizedBox(
+                width: 158,
+                child: Stack(
+                  fit: StackFit.expand,
+                  children: [
+                    Image.asset(
+                      isMantra
+                          ? 'assets/images/lang-nghiem-mandala.jpeg'
+                          : 'assets/images/ngu-phuong-phat.jpg',
+                      fit: BoxFit.cover,
+                      alignment: Alignment.topCenter,
+                    ),
+                    const DecoratedBox(
+                      decoration: BoxDecoration(
+                        gradient: LinearGradient(
+                          begin: Alignment.topCenter,
+                          end: Alignment.bottomCenter,
+                          colors: [Color(0x00000000), Color(0xE61A0D08)],
+                        ),
+                      ),
+                    ),
+                    Positioned(
+                      left: 10,
+                      right: 10,
+                      bottom: 8,
+                      child: Text(
+                        isMantra ? 'Chú Lăng Nghiêm' : 'Ngũ Phương Phật',
+                        maxLines: 1,
+                        overflow: TextOverflow.ellipsis,
+                        style: const TextStyle(
+                          color: Color(0xFFFDF5E6),
+                          fontSize: 13,
+                          fontWeight: FontWeight.w800,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            );
+          },
         ),
       );
     }
@@ -352,8 +380,8 @@ class _MantraScreenState extends State<MantraScreen> {
         ),
         child: Column(
           children: [
-            _buildPracticeGallery(isPhone),
-            const SizedBox(height: 20),
+            if (!isPhone) _buildPracticeGallery(false),
+            if (!isPhone) const SizedBox(height: 20),
 
             // Mantra text
             Card(
@@ -388,7 +416,12 @@ class _MantraScreenState extends State<MantraScreen> {
                     ),
                     const SizedBox(height: 14),
                     Container(
-                      height: 350,
+                      key: const Key('mantra-reading-viewport'),
+                      height: isPhone
+                          ? (MediaQuery.sizeOf(context).height * 0.62)
+                                .clamp(360.0, 560.0)
+                                .toDouble()
+                          : 350,
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: const Color(0x661A0D08),
@@ -571,6 +604,8 @@ class _MantraScreenState extends State<MantraScreen> {
                 ),
               ),
             ),
+            if (isPhone) const SizedBox(height: 16),
+            if (isPhone) _buildPracticeGallery(true),
           ],
         ),
       ),

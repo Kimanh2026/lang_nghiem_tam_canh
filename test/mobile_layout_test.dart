@@ -53,4 +53,42 @@ void main() {
       }
     });
   }
+
+  testWidgets('Mobile prioritizes reading space over decorative images', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    SharedPreferences.setMockInitialValues({});
+
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: ThemeData.dark(useMaterial3: true),
+        home: MainScaffold(
+          recitationCount: ValueNotifier(0),
+          userName: ValueNotifier('Đạo hữu'),
+          clearChatTrigger: ValueNotifier(0),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+
+    await tester.tap(find.text('Khai thị').last);
+    await tester.pumpAndSettle();
+    expect(tester.getSize(find.byKey(const Key('teacher-hero'))).height, 84);
+
+    await tester.tap(find.text('Trì chú').last);
+    await tester.pumpAndSettle();
+    final readingViewport = find.byKey(const Key('mantra-reading-viewport'));
+    final gallery = find.byKey(const Key('practice-gallery'));
+    expect(tester.getSize(readingViewport).height, greaterThanOrEqualTo(360));
+    expect(tester.getTopLeft(readingViewport).dy, lessThan(170));
+    expect(tester.getSize(gallery).height, 92);
+    expect(
+      tester.getTopLeft(gallery).dy,
+      greaterThan(tester.getBottomRight(readingViewport).dy),
+    );
+  });
 }
