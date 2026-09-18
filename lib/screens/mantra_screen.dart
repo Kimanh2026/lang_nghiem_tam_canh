@@ -166,168 +166,6 @@ class _MantraScreenState extends State<MantraScreen> {
     );
   }
 
-  Widget _buildPracticeImageCard({
-    required String asset,
-    required String eyebrow,
-    required String title,
-    required String subtitle,
-    required double width,
-  }) {
-    return Container(
-      width: width,
-      height: 360,
-      decoration: BoxDecoration(
-        color: const Color(0xFF120907),
-        borderRadius: BorderRadius.circular(22),
-        border: Border.all(color: const Color(0x4DD4AF37)),
-      ),
-      clipBehavior: Clip.antiAlias,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          Expanded(
-            child: Padding(
-              padding: const EdgeInsets.all(8),
-              child: Image.asset(
-                asset,
-                key: ValueKey('practice-image-$asset'),
-                fit: BoxFit.contain,
-                alignment: Alignment.center,
-                semanticLabel: title,
-              ),
-            ),
-          ),
-          Container(
-            padding: const EdgeInsets.fromLTRB(16, 11, 16, 14),
-            color: const Color(0xFF2A160F),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  eyebrow,
-                  style: const TextStyle(
-                    color: Color(0xFFF4D35E),
-                    fontSize: 11,
-                    fontWeight: FontWeight.w800,
-                    letterSpacing: 1.1,
-                  ),
-                ),
-                const SizedBox(height: 4),
-                Text(
-                  title,
-                  style: const TextStyle(
-                    color: Color(0xFFFDF5E6),
-                    fontSize: 18,
-                    fontWeight: FontWeight.w800,
-                  ),
-                ),
-                const SizedBox(height: 3),
-                Text(
-                  subtitle,
-                  maxLines: 2,
-                  overflow: TextOverflow.ellipsis,
-                  style: const TextStyle(
-                    color: Color(0xFFD1BFAE),
-                    fontSize: 13,
-                    height: 1.35,
-                  ),
-                ),
-              ],
-            ),
-          ),
-        ],
-      ),
-    );
-  }
-
-  Widget _buildPracticeGallery(bool isPhone) {
-    if (isPhone) {
-      return SizedBox(
-        key: const Key('practice-gallery'),
-        height: 92,
-        child: ListView.separated(
-          scrollDirection: Axis.horizontal,
-          itemCount: 2,
-          separatorBuilder: (_, _) => const SizedBox(width: 12),
-          itemBuilder: (_, index) {
-            final isMantra = index == 0;
-            return ClipRRect(
-              borderRadius: BorderRadius.circular(16),
-              child: SizedBox(
-                width: 158,
-                child: Stack(
-                  fit: StackFit.expand,
-                  children: [
-                    Container(
-                      color: const Color(0xFF120907),
-                      padding: const EdgeInsets.fromLTRB(6, 5, 6, 24),
-                      child: Image.asset(
-                        isMantra
-                            ? 'assets/images/lang-nghiem-mandala.jpeg'
-                            : 'assets/images/ngu-phuong-phat.jpg',
-                        fit: BoxFit.contain,
-                        alignment: Alignment.center,
-                      ),
-                    ),
-                    const DecoratedBox(
-                      decoration: BoxDecoration(
-                        gradient: LinearGradient(
-                          begin: Alignment.topCenter,
-                          end: Alignment.bottomCenter,
-                          colors: [Color(0x00000000), Color(0xE61A0D08)],
-                        ),
-                      ),
-                    ),
-                    Positioned(
-                      left: 10,
-                      right: 10,
-                      bottom: 8,
-                      child: Text(
-                        isMantra ? 'Chú Lăng Nghiêm' : 'Ngũ Phương Phật',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: const TextStyle(
-                          color: Color(0xFFFDF5E6),
-                          fontSize: 13,
-                          fontWeight: FontWeight.w800,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            );
-          },
-        ),
-      );
-    }
-
-    return Row(
-      key: const Key('practice-gallery-desktop'),
-      children: [
-        Expanded(
-          child: _buildPracticeImageCard(
-            asset: 'assets/images/lang-nghiem-mandala.jpeg',
-            eyebrow: 'TÂM CHÚ HỘ TRÌ',
-            title: 'Chú Lăng Nghiêm',
-            subtitle: 'Đọc chậm, rõ tiếng và giữ tâm chuyên nhất.',
-            width: double.infinity,
-          ),
-        ),
-        const SizedBox(width: 16),
-        Expanded(
-          child: _buildPracticeImageCard(
-            asset: 'assets/images/ngu-phuong-phat.jpg',
-            eyebrow: 'NGŨ PHƯƠNG PHẬT',
-            title: 'Năm Đại Tâm Chú',
-            subtitle: 'Năm câu tâm chú gắn với Ngũ phương Phật.',
-            width: double.infinity,
-          ),
-        ),
-      ],
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     final isPhone = MediaQuery.sizeOf(context).width < 600;
@@ -359,9 +197,6 @@ class _MantraScreenState extends State<MantraScreen> {
         ),
         child: Column(
           children: [
-            if (!isPhone) _buildPracticeGallery(false),
-            if (!isPhone) const SizedBox(height: 20),
-
             // Mantra text
             Card(
               color: const Color(0xFF2A160F),
@@ -585,8 +420,6 @@ class _MantraScreenState extends State<MantraScreen> {
                 ),
               ),
             ),
-            if (isPhone) const SizedBox(height: 16),
-            if (isPhone) _buildPracticeGallery(true),
           ],
         ),
       ),

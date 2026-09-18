@@ -98,14 +98,10 @@ void main() {
     await tester.tap(find.text('Trì chú').last);
     await tester.pumpAndSettle();
     final readingViewport = find.byKey(const Key('mantra-reading-viewport'));
-    final gallery = find.byKey(const Key('practice-gallery'));
     expect(tester.getSize(readingViewport).height, greaterThanOrEqualTo(360));
     expect(tester.getTopLeft(readingViewport).dy, lessThan(170));
-    expect(tester.getSize(gallery).height, 92);
-    expect(
-      tester.getTopLeft(gallery).dy,
-      greaterThan(tester.getBottomRight(readingViewport).dy),
-    );
+    expect(find.byKey(const Key('practice-gallery')), findsNothing);
+    expect(find.byKey(const Key('practice-gallery-desktop')), findsNothing);
   });
 
   testWidgets('Teacher portrait is centered and teacher tabs are prominent', (
@@ -147,7 +143,7 @@ void main() {
     expect(selectedTab.showCheckmark, isFalse);
   });
 
-  testWidgets('Practice images stay complete and scroll away from reading', (
+  testWidgets('Practice imagery is removed from the chanting screen', (
     tester,
   ) async {
     tester.view.physicalSize = const Size(1024, 844);
@@ -171,25 +167,8 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('Liên Hoa Hóa Sanh'), findsNothing);
-    for (final asset in [
-      'assets/images/lang-nghiem-mandala.jpeg',
-      'assets/images/ngu-phuong-phat.jpg',
-    ]) {
-      final image = tester.widget<Image>(
-        find.byKey(ValueKey('practice-image-$asset')),
-      );
-      expect(image.fit, BoxFit.contain);
-    }
-    final firstPracticeImage = find.byKey(
-      const ValueKey('practice-image-assets/images/lang-nghiem-mandala.jpeg'),
-    );
-    expect(firstPracticeImage.hitTestable(), findsOneWidget);
-    await tester.drag(
-      find.byKey(const Key('mantra-page-scroll')),
-      const Offset(0, -460),
-    );
-    await tester.pumpAndSettle();
-    expect(firstPracticeImage.hitTestable(), findsNothing);
+    expect(find.byKey(const Key('practice-gallery')), findsNothing);
+    expect(find.byKey(const Key('practice-gallery-desktop')), findsNothing);
     expect(
       find.byKey(const Key('mantra-reading-viewport')).hitTestable(),
       findsOneWidget,
