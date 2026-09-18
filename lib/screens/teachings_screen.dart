@@ -461,7 +461,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
 
   String get _selectedTeacherImage => _selectedChipIndex == 0
       ? 'assets/images/teacher-tuyen-hoa.jpeg'
-      : 'assets/images/teacher-pho-quang.jpeg';
+      : 'assets/images/teacher-pho-quang.webp';
 
   Widget _buildTeacherHero(int teachingCount, bool isPhone) {
     return ClipRRect(
@@ -491,9 +491,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                 child: Image.asset(
                   _selectedTeacherImage,
                   fit: BoxFit.cover,
-                  alignment: _selectedChipIndex == 0
-                      ? Alignment.centerLeft
-                      : Alignment.topCenter,
+                  alignment: Alignment.topCenter,
                   semanticLabel: 'Ảnh vị giảng sư đang được chọn',
                 ),
               ),
