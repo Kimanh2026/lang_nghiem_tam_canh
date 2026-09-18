@@ -97,4 +97,96 @@ void main() {
       greaterThan(tester.getBottomRight(readingViewport).dy),
     );
   });
+
+  testWidgets('Teacher portrait is centered and teacher tabs are prominent', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1024, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    SharedPreferences.setMockInitialValues({});
+
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: ThemeData.dark(useMaterial3: true),
+        home: MainScaffold(
+          recitationCount: ValueNotifier(0),
+          userName: ValueNotifier('Đạo hữu'),
+          clearChatTrigger: ValueNotifier(0),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Khai thị').last);
+    await tester.pumpAndSettle();
+
+    final heroCenter = tester.getCenter(find.byKey(const Key('teacher-hero')));
+    final imageCenter = tester.getCenter(
+      find.byKey(const Key('selected-teacher-image')),
+    );
+    expect((heroCenter.dx - imageCenter.dx).abs(), lessThan(1));
+    expect(
+      tester.getSize(find.byKey(const Key('selected-teacher-image'))).height,
+      157,
+    );
+    final selectedTab = tester.widget<ChoiceChip>(
+      find.byKey(const ValueKey('teacher-tab-0')),
+    );
+    expect(selectedTab.selectedColor, const Color(0xFFD4AF37));
+    expect(selectedTab.showCheckmark, isFalse);
+  });
+
+  testWidgets('Practice images stay complete and scroll away from reading', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(1024, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    SharedPreferences.setMockInitialValues({});
+
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: ThemeData.dark(useMaterial3: true),
+        home: MainScaffold(
+          recitationCount: ValueNotifier(0),
+          userName: ValueNotifier('Đạo hữu'),
+          clearChatTrigger: ValueNotifier(0),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Trì chú').last);
+    await tester.pumpAndSettle();
+
+    expect(find.text('Liên Hoa Hóa Sanh'), findsNothing);
+    for (final asset in [
+      'assets/images/lang-nghiem-mandala.jpeg',
+      'assets/images/ngu-phuong-phat.jpg',
+    ]) {
+      final image = tester.widget<Image>(
+        find.byKey(ValueKey('practice-image-$asset')),
+      );
+      expect(image.fit, BoxFit.contain);
+    }
+    final firstPracticeImage = find.byKey(
+      const ValueKey('practice-image-assets/images/lang-nghiem-mandala.jpeg'),
+    );
+    expect(firstPracticeImage.hitTestable(), findsOneWidget);
+    await tester.drag(
+      find.byKey(const Key('mantra-page-scroll')),
+      const Offset(0, -460),
+    );
+    await tester.pumpAndSettle();
+    expect(firstPracticeImage.hitTestable(), findsNothing);
+    expect(
+      find.byKey(const Key('mantra-reading-viewport')).hitTestable(),
+      findsOneWidget,
+    );
+
+    await tester.tap(find.text('Tiểu Tịnh').last);
+    await tester.pumpAndSettle();
+    expect(find.text('Liên Hoa Hóa Sanh'), findsNothing);
+  });
 }

@@ -268,28 +268,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
             tooltip: 'Xóa lịch sử chat',
             onPressed: _onClearChatTriggered,
           ),
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0, left: 8.0),
-            child: Row(
-              children: [
-                if (!isPhone)
-                  const Text(
-                    'Liên Hoa Hóa Sanh',
-                    style: TextStyle(
-                      color: Color(0xFFD4AF37),
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14,
-                    ),
-                  ),
-                if (!isPhone) const SizedBox(width: 8),
-                CircleAvatar(
-                  radius: 16,
-                  backgroundImage: const AssetImage('assets/images/avatar.jpg'),
-                  backgroundColor: const Color(0xFFD4AF37),
-                ),
-              ],
-            ),
-          ),
+          const SizedBox(width: 8),
         ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),

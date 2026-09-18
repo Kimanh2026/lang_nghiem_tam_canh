@@ -450,6 +450,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
       : 'assets/images/teacher-pho-quang.webp';
 
   Widget _buildTeacherHero(int teachingCount, bool isPhone) {
+    final imageWidth = isPhone ? 68.0 : 150.0;
     return ClipRRect(
       key: const Key('teacher-hero'),
       borderRadius: BorderRadius.circular(22),
@@ -469,72 +470,48 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
               ),
             ),
             Positioned(
-              left: isPhone ? 8 : 14,
+              left: 0,
+              right: 0,
               top: isPhone ? 8 : 14,
               bottom: isPhone ? 8 : 14,
-              width: isPhone ? 64 : 150,
-              child: ClipRRect(
-                borderRadius: BorderRadius.circular(16),
-                child: Image.asset(
-                  _selectedTeacherImage,
-                  fit: BoxFit.cover,
-                  alignment: Alignment.topCenter,
-                  semanticLabel: 'Ảnh vị giảng sư đang được chọn',
+              child: Center(
+                child: SizedBox(
+                  width: imageWidth,
+                  height: isPhone ? 68 : 157,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(16),
+                    child: Image.asset(
+                      _selectedTeacherImage,
+                      key: const Key('selected-teacher-image'),
+                      fit: BoxFit.cover,
+                      alignment: Alignment.topCenter,
+                      semanticLabel: 'Ảnh vị giảng sư đang được chọn',
+                    ),
+                  ),
                 ),
               ),
             ),
             Positioned(
-              left: isPhone ? 84 : 184,
               right: isPhone ? 10 : 16,
-              top: isPhone ? 7 : 14,
-              bottom: isPhone ? 7 : 14,
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  if (!isPhone)
-                    const Text(
-                      'PHÁP NGỮ TUYỂN CHỌN',
-                      style: TextStyle(
-                        color: Color(0xFFD4AF37),
-                        fontSize: 11,
-                        fontWeight: FontWeight.w800,
-                        letterSpacing: 1.1,
-                      ),
-                    ),
-                  if (!isPhone) const SizedBox(height: 6),
-                  Text(
-                    'Lời khai thị để đọc chậm và suy ngẫm',
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: TextStyle(
-                      color: const Color(0xFFFDF5E6),
-                      fontSize: isPhone ? 13 : 18,
-                      fontWeight: FontWeight.w700,
-                      height: 1.25,
-                    ),
+              bottom: isPhone ? 8 : 14,
+              child: Container(
+                padding: EdgeInsets.symmetric(
+                  horizontal: isPhone ? 8 : 11,
+                  vertical: isPhone ? 4 : 7,
+                ),
+                decoration: BoxDecoration(
+                  color: const Color(0xE61A0D08),
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: const Color(0x99D4AF37)),
+                ),
+                child: Text(
+                  '$teachingCount bài',
+                  style: TextStyle(
+                    color: const Color(0xFFF4D35E),
+                    fontSize: isPhone ? 10 : 12,
+                    fontWeight: FontWeight.w800,
                   ),
-                  SizedBox(height: isPhone ? 5 : 10),
-                  Container(
-                    padding: EdgeInsets.symmetric(
-                      horizontal: isPhone ? 8 : 10,
-                      vertical: isPhone ? 3 : 6,
-                    ),
-                    decoration: BoxDecoration(
-                      color: const Color(0xCC1A0D08),
-                      borderRadius: BorderRadius.circular(20),
-                      border: Border.all(color: const Color(0x66D4AF37)),
-                    ),
-                    child: Text(
-                      '$teachingCount bài',
-                      style: TextStyle(
-                        color: Color(0xFFF4D35E),
-                        fontSize: isPhone ? 10 : 12,
-                        fontWeight: FontWeight.w700,
-                      ),
-                    ),
-                  ),
-                ],
+                ),
               ),
             ),
           ],
@@ -563,39 +540,63 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  SingleChildScrollView(
-                    scrollDirection: Axis.horizontal,
-                    child: Row(
-                      children: List.generate(_filters.length, (index) {
-                        return Padding(
-                          padding: const EdgeInsets.only(right: 8),
-                          child: ChoiceChip(
-                            label: Text(_filters[index]),
-                            selected: _selectedChipIndex == index,
-                            onSelected: (selected) {
-                              if (selected) {
-                                setState(() => _selectedChipIndex = index);
-                              }
-                            },
-                            backgroundColor: const Color(0xFF1A0D08),
-                            selectedColor: const Color(0x33D4AF37),
-                            labelStyle: TextStyle(
-                              color: _selectedChipIndex == index
-                                  ? const Color(0xFFD4AF37)
-                                  : const Color(0xFFD1BFAE),
-                              fontSize: 13,
-                            ),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20),
-                              side: BorderSide(
-                                color: _selectedChipIndex == index
-                                    ? const Color(0xFFD4AF37)
-                                    : const Color(0x80D4AF37),
+                  Center(
+                    child: ConstrainedBox(
+                      constraints: const BoxConstraints(maxWidth: 720),
+                      child: Row(
+                        children: List.generate(_filters.length, (index) {
+                          final isSelected = _selectedChipIndex == index;
+                          return Expanded(
+                            child: Padding(
+                              padding: EdgeInsets.only(
+                                right: index == 0 ? 5 : 0,
+                                left: index == 1 ? 5 : 0,
+                              ),
+                              child: ChoiceChip(
+                                key: ValueKey('teacher-tab-$index'),
+                                label: SizedBox(
+                                  width: double.infinity,
+                                  child: Text(
+                                    _filters[index],
+                                    maxLines: 2,
+                                    textAlign: TextAlign.center,
+                                    overflow: TextOverflow.ellipsis,
+                                  ),
+                                ),
+                                selected: _selectedChipIndex == index,
+                                showCheckmark: false,
+                                onSelected: (selected) {
+                                  if (selected) {
+                                    setState(() => _selectedChipIndex = index);
+                                  }
+                                },
+                                backgroundColor: const Color(0xFF2A160F),
+                                selectedColor: const Color(0xFFD4AF37),
+                                padding: EdgeInsets.symmetric(
+                                  horizontal: isPhone ? 4 : 12,
+                                  vertical: isPhone ? 9 : 12,
+                                ),
+                                labelStyle: TextStyle(
+                                  color: isSelected
+                                      ? const Color(0xFF1A0D08)
+                                      : const Color(0xFFFDF5E6),
+                                  fontSize: isPhone ? 11 : 15,
+                                  fontWeight: FontWeight.w800,
+                                ),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(18),
+                                  side: BorderSide(
+                                    color: isSelected
+                                        ? const Color(0xFFD4AF37)
+                                        : const Color(0xB3D4AF37),
+                                    width: isSelected ? 1.8 : 1.2,
+                                  ),
+                                ),
                               ),
                             ),
-                          ),
-                        );
-                      }),
+                          );
+                        }),
+                      ),
                     ),
                   ),
                   const SizedBox(height: 10),

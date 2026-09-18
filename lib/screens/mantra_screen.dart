@@ -173,72 +173,69 @@ class _MantraScreenState extends State<MantraScreen> {
     required String subtitle,
     required double width,
   }) {
-    return ClipRRect(
-      borderRadius: BorderRadius.circular(22),
-      child: SizedBox(
-        width: width,
-        height: 210,
-        child: Stack(
-          fit: StackFit.expand,
-          children: [
-            Image.asset(
-              asset,
-              fit: BoxFit.cover,
-              alignment: Alignment.topCenter,
-              semanticLabel: title,
+    return Container(
+      width: width,
+      height: 360,
+      decoration: BoxDecoration(
+        color: const Color(0xFF120907),
+        borderRadius: BorderRadius.circular(22),
+        border: Border.all(color: const Color(0x4DD4AF37)),
+      ),
+      clipBehavior: Clip.antiAlias,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8),
+              child: Image.asset(
+                asset,
+                key: ValueKey('practice-image-$asset'),
+                fit: BoxFit.contain,
+                alignment: Alignment.center,
+                semanticLabel: title,
+              ),
             ),
-            const DecoratedBox(
-              decoration: BoxDecoration(
-                gradient: LinearGradient(
-                  begin: Alignment.topCenter,
-                  end: Alignment.bottomCenter,
-                  colors: [Color(0x08000000), Color(0xF21A0D08)],
-                  stops: [0.35, 1],
+          ),
+          Container(
+            padding: const EdgeInsets.fromLTRB(16, 11, 16, 14),
+            color: const Color(0xFF2A160F),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  eyebrow,
+                  style: const TextStyle(
+                    color: Color(0xFFF4D35E),
+                    fontSize: 11,
+                    fontWeight: FontWeight.w800,
+                    letterSpacing: 1.1,
+                  ),
                 ),
-              ),
+                const SizedBox(height: 4),
+                Text(
+                  title,
+                  style: const TextStyle(
+                    color: Color(0xFFFDF5E6),
+                    fontSize: 18,
+                    fontWeight: FontWeight.w800,
+                  ),
+                ),
+                const SizedBox(height: 3),
+                Text(
+                  subtitle,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis,
+                  style: const TextStyle(
+                    color: Color(0xFFD1BFAE),
+                    fontSize: 13,
+                    height: 1.35,
+                  ),
+                ),
+              ],
             ),
-            Positioned(
-              left: 16,
-              right: 16,
-              bottom: 15,
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                mainAxisSize: MainAxisSize.min,
-                children: [
-                  Text(
-                    eyebrow,
-                    style: const TextStyle(
-                      color: Color(0xFFF4D35E),
-                      fontSize: 11,
-                      fontWeight: FontWeight.w800,
-                      letterSpacing: 1.1,
-                    ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    title,
-                    style: const TextStyle(
-                      color: Color(0xFFFDF5E6),
-                      fontSize: 18,
-                      fontWeight: FontWeight.w800,
-                    ),
-                  ),
-                  const SizedBox(height: 3),
-                  Text(
-                    subtitle,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
-                    style: const TextStyle(
-                      color: Color(0xFFD1BFAE),
-                      fontSize: 13,
-                      height: 1.35,
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ],
-        ),
+          ),
+        ],
       ),
     );
   }
@@ -261,12 +258,16 @@ class _MantraScreenState extends State<MantraScreen> {
                 child: Stack(
                   fit: StackFit.expand,
                   children: [
-                    Image.asset(
-                      isMantra
-                          ? 'assets/images/lang-nghiem-mandala.jpeg'
-                          : 'assets/images/ngu-phuong-phat.jpg',
-                      fit: BoxFit.cover,
-                      alignment: Alignment.topCenter,
+                    Container(
+                      color: const Color(0xFF120907),
+                      padding: const EdgeInsets.fromLTRB(6, 5, 6, 24),
+                      child: Image.asset(
+                        isMantra
+                            ? 'assets/images/lang-nghiem-mandala.jpeg'
+                            : 'assets/images/ngu-phuong-phat.jpg',
+                        fit: BoxFit.contain,
+                        alignment: Alignment.center,
+                      ),
                     ),
                     const DecoratedBox(
                       decoration: BoxDecoration(
@@ -302,6 +303,7 @@ class _MantraScreenState extends State<MantraScreen> {
     }
 
     return Row(
+      key: const Key('practice-gallery-desktop'),
       children: [
         Expanded(
           child: _buildPracticeImageCard(
@@ -342,36 +344,13 @@ class _MantraScreenState extends State<MantraScreen> {
         ),
         backgroundColor: const Color(0xFF1A0D08),
         elevation: 0,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 16.0),
-            child: Row(
-              children: [
-                if (!isPhone)
-                  const Text(
-                    'Liên Hoa Hóa Sanh',
-                    style: TextStyle(
-                      color: Color(0xFFD4AF37),
-                      fontWeight: FontWeight.bold,
-                      fontSize: 14,
-                    ),
-                  ),
-                if (!isPhone) const SizedBox(width: 8),
-                const CircleAvatar(
-                  radius: 16,
-                  backgroundImage: AssetImage('assets/images/avatar.jpg'),
-                  backgroundColor: Color(0xFFD4AF37),
-                ),
-              ],
-            ),
-          ),
-        ],
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
           child: Container(color: const Color(0x33D4AF37), height: 1.0),
         ),
       ),
       body: SingleChildScrollView(
+        key: const Key('mantra-page-scroll'),
         padding: EdgeInsets.fromLTRB(
           isPhone ? 12 : 20,
           isPhone ? 12 : 20,
@@ -421,7 +400,9 @@ class _MantraScreenState extends State<MantraScreen> {
                           ? (MediaQuery.sizeOf(context).height * 0.62)
                                 .clamp(360.0, 560.0)
                                 .toDouble()
-                          : 350,
+                          : (MediaQuery.sizeOf(context).height - 170)
+                                .clamp(440.0, 700.0)
+                                .toDouble(),
                       width: double.infinity,
                       decoration: BoxDecoration(
                         color: const Color(0x661A0D08),
