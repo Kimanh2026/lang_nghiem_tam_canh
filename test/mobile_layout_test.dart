@@ -44,6 +44,12 @@ void main() {
         await tester.tap(find.text(label).last);
         await tester.pumpAndSettle();
         expect(tester.takeException(), isNull, reason: '$label at $width');
+        if (label == 'Cài đặt') {
+          expect(find.text('NHẮC THỜI KHÓA'), findsNothing);
+          expect(find.text('Nhắc trì chú mỗi ngày'), findsNothing);
+          expect(find.text('Nhắc ngày Phật giáo'), findsNothing);
+          expect(find.text('Các ngày sắp tới'), findsOneWidget);
+        }
       }
     });
   }

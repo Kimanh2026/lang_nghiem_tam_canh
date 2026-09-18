@@ -17,8 +17,42 @@ void main() {
     }
   });
 
+  test(
+    'upcoming observances automatically roll forward from the current date',
+    () {
+      final firstDay = DateTime(2026, 9, 18);
+      final laterDay = DateTime(2026, 10, 18);
+      final firstList = NotificationService.instance.upcomingObservances(
+        days: 90,
+        from: firstDay,
+      );
+      final laterList = NotificationService.instance.upcomingObservances(
+        days: 90,
+        from: laterDay,
+      );
+
+      expect(firstList, isNotEmpty);
+      expect(laterList, isNotEmpty);
+      expect(
+        firstList.every((item) => !item.solarDate.isBefore(firstDay)),
+        isTrue,
+      );
+      expect(
+        laterList.every((item) => !item.solarDate.isBefore(laterDay)),
+        isTrue,
+      );
+      expect(
+        laterList.first.solarDate.isAfter(firstList.first.solarDate),
+        isTrue,
+      );
+    },
+  );
+
   test('Dia Tang observance is present in each upcoming lunar year', () {
-    final items = NotificationService.instance.upcomingObservances(days: 730);
+    final items = NotificationService.instance.upcomingObservances(
+      days: 730,
+      from: DateTime(2026, 1, 1),
+    );
     final diaTangDays = items
         .where((item) => item.title.contains('Địa Tạng'))
         .toList();

@@ -1,6 +1,5 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 import '../services/notification_service.dart';
 import 'privacy_policy_screen.dart';
@@ -20,30 +19,11 @@ class SettingsScreen extends StatefulWidget {
 
 class _SettingsScreenState extends State<SettingsScreen> {
   late final TextEditingController _nameController;
-  bool _dailyEnabled = false;
-  bool _observanceEnabled = false;
-  TimeOfDay _reminderTime = const TimeOfDay(hour: 20, minute: 0);
 
   @override
   void initState() {
     super.initState();
     _nameController = TextEditingController(text: widget.userName.value);
-    _loadReminderSettings();
-  }
-
-  Future<void> _loadReminderSettings() async {
-    final prefs = await SharedPreferences.getInstance();
-    if (!mounted) return;
-    setState(() {
-      _dailyEnabled =
-          prefs.getBool(NotificationService.dailyEnabledKey) ?? false;
-      _observanceEnabled =
-          prefs.getBool(NotificationService.observanceEnabledKey) ?? false;
-      _reminderTime = TimeOfDay(
-        hour: prefs.getInt(NotificationService.reminderHourKey) ?? 20,
-        minute: prefs.getInt(NotificationService.reminderMinuteKey) ?? 0,
-      );
-    });
   }
 
   @override
@@ -55,92 +35,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
   void _saveName() {
     widget.userName.value = _nameController.text.trim();
     _showMessage('Đã lưu tên thành công.');
-  }
-
-  Future<void> _setReminder({bool? daily, bool? observance}) async {
-    final nextDaily = daily ?? _dailyEnabled;
-    final nextObservance = observance ?? _observanceEnabled;
-    if (!kIsWeb &&
-        (nextDaily || nextObservance) &&
-        !await NotificationService.instance.requestPermission()) {
-      _showMessage('Bạn cần cho phép thông báo trong cài đặt điện thoại.');
-      return;
-    }
-
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setBool(NotificationService.dailyEnabledKey, nextDaily);
-    await prefs.setBool(
-      NotificationService.observanceEnabledKey,
-      nextObservance,
-    );
-    await NotificationService.instance.applySchedule(
-      dailyEnabled: nextDaily,
-      observanceEnabled: nextObservance,
-      hour: _reminderTime.hour,
-      minute: _reminderTime.minute,
-    );
-    if (!mounted) return;
-    setState(() {
-      _dailyEnabled = nextDaily;
-      _observanceEnabled = nextObservance;
-    });
-  }
-
-  Future<void> _pickReminderTime() async {
-    final selected = await showTimePicker(
-      context: context,
-      initialTime: _reminderTime,
-      helpText: 'CHỌN GIỜ NHẮC HẰNG NGÀY',
-      cancelText: 'Hủy',
-      confirmText: 'Lưu',
-    );
-    if (selected == null || !mounted) return;
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setInt(NotificationService.reminderHourKey, selected.hour);
-    await prefs.setInt(NotificationService.reminderMinuteKey, selected.minute);
-    setState(() => _reminderTime = selected);
-    await NotificationService.instance.applySchedule(
-      dailyEnabled: _dailyEnabled,
-      observanceEnabled: _observanceEnabled,
-      hour: selected.hour,
-      minute: selected.minute,
-    );
-    if (mounted) {
-      _showMessage('Đã đổi giờ nhắc sang ${selected.format(context)}.');
-    }
-  }
-
-  Future<void> _testNotification() async {
-    if (kIsWeb) {
-      await showDialog<void>(
-        context: context,
-        builder: (context) => AlertDialog(
-          backgroundColor: const Color(0xFF2D1A11),
-          title: const Text(
-            'Thông báo trên bản web',
-            style: TextStyle(color: Color(0xFFD4AF37)),
-          ),
-          content: const Text(
-            'Bản cài từ trình duyệt có thể không nhắc khi ứng dụng đã đóng. '
-            'Để nhận thông báo nền ổn định, hãy dùng bản APK Android.',
-            style: TextStyle(color: Colors.white70, height: 1.45),
-          ),
-          actions: [
-            TextButton(
-              onPressed: () => Navigator.pop(context),
-              child: const Text('Đã hiểu'),
-            ),
-          ],
-        ),
-      );
-      return;
-    }
-    if (!await NotificationService.instance.requestPermission()) {
-      _showMessage('Bạn chưa cho phép ứng dụng gửi thông báo.');
-      return;
-    }
-    await NotificationService.instance.showTest();
-    _showMessage('Đã gửi một thông báo thử.');
   }
 
   void _showInstallGuide() {
@@ -320,102 +214,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
               ),
             ),
             const SizedBox(height: 28),
-            _sectionTitle('NHẮC THỜI KHÓA'),
-            const SizedBox(height: 12),
-            Card(
-              child: Column(
-                children: [
-                  SwitchListTile(
-                    secondary: const Icon(
-                      Icons.notifications_active_outlined,
-                      color: Color(0xFFD4AF37),
-                    ),
-                    title: const Text('Nhắc trì chú mỗi ngày'),
-                    subtitle: const Text(
-                      'Theo giờ bạn chọn',
-                      style: TextStyle(color: Colors.white54, fontSize: 12),
-                    ),
-                    value: _dailyEnabled,
-                    onChanged: (value) => _setReminder(daily: value),
-                  ),
-                  const Divider(color: Color(0x1AD4AF37), height: 1),
-                  ListTile(
-                    leading: const Icon(
-                      Icons.schedule,
-                      color: Color(0xFFD4AF37),
-                    ),
-                    title: const Text('Giờ nhắc'),
-                    subtitle: Text(
-                      _reminderTime.format(context),
-                      style: const TextStyle(color: Colors.white54),
-                    ),
-                    trailing: const Icon(
-                      Icons.chevron_right,
-                      color: Colors.white54,
-                    ),
-                    onTap: _pickReminderTime,
-                  ),
-                  const Divider(color: Color(0x1AD4AF37), height: 1),
-                  SwitchListTile(
-                    secondary: const Icon(
-                      Icons.event_available,
-                      color: Color(0xFFD4AF37),
-                    ),
-                    title: const Text('Nhắc ngày Phật giáo'),
-                    subtitle: const Text(
-                      'Mùng 1, ngày rằm và các ngày lễ, ngày vía chính',
-                      style: TextStyle(color: Colors.white54, fontSize: 12),
-                    ),
-                    value: _observanceEnabled,
-                    onChanged: (value) => _setReminder(observance: value),
-                  ),
-                  const Divider(color: Color(0x1AD4AF37), height: 1),
-                  ListTile(
-                    leading: const Icon(
-                      Icons.notification_add_outlined,
-                      color: Color(0xFFD4AF37),
-                    ),
-                    title: const Text('Gửi thông báo thử'),
-                    onTap: _testNotification,
-                  ),
-                ],
-              ),
-            ),
-            if (kIsWeb) ...[
-              const SizedBox(height: 10),
-              Container(
-                width: double.infinity,
-                padding: const EdgeInsets.all(12),
-                decoration: BoxDecoration(
-                  color: const Color(0x192196F3),
-                  borderRadius: BorderRadius.circular(10),
-                  border: Border.all(color: const Color(0x553D8BD9)),
-                ),
-                child: const Row(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children: [
-                    Icon(
-                      Icons.info_outline,
-                      color: Color(0xFF8AB4F8),
-                      size: 19,
-                    ),
-                    SizedBox(width: 9),
-                    Expanded(
-                      child: Text(
-                        'Bản cài từ trình duyệt có thể không nhắc khi ứng dụng đã đóng. '
-                        'APK Android sẽ nhắc nền ổn định hơn.',
-                        style: TextStyle(
-                          color: Color(0xFFB8CCEA),
-                          fontSize: 12,
-                          height: 1.35,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
-              ),
-            ],
-            const SizedBox(height: 16),
             Card(
               child: Padding(
                 padding: const EdgeInsets.all(16),
@@ -429,7 +227,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         fontWeight: FontWeight.bold,
                       ),
                     ),
-                    const SizedBox(height: 10),
+                    const SizedBox(height: 6),
+                    const Text(
+                      'Tự động tính theo ngày hiện tại mỗi lần bạn mở ứng dụng.',
+                      style: TextStyle(color: Colors.white54, fontSize: 12),
+                    ),
+                    const SizedBox(height: 12),
                     for (final item in upcoming)
                       Padding(
                         padding: const EdgeInsets.only(bottom: 9),

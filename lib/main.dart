@@ -20,6 +20,7 @@ void main() async {
   }
 
   await NotificationService.instance.initialize();
+  await NotificationService.instance.disableLegacyReminders();
 
   final prefs = await SharedPreferences.getInstance();
   final int initialCount =
@@ -45,8 +46,6 @@ void main() async {
     final prefsInstance = await SharedPreferences.getInstance();
     await prefsInstance.setString('user_name', globalUserName.value);
   });
-
-  await NotificationService.instance.applySavedSchedule();
 
   runApp(
     LangNghiemApp(

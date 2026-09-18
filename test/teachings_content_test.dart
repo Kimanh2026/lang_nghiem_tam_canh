@@ -37,7 +37,11 @@ void main() {
         find.descendant(of: find.byType(ListView), matching: find.text(title)),
         findsOneWidget,
       );
-      expect(find.text('Hòa Thượng Tuyên Hóa'), findsWidgets);
+      expect(
+        find.text('Hòa Thượng Tuyên Hóa'),
+        findsOneWidget,
+        reason: 'Tên tác giả chỉ nên xuất hiện trên ô lọc',
+      );
     }
 
     await tester.enterText(find.byType(TextField), phoQuangTitles.first);
@@ -54,7 +58,11 @@ void main() {
         find.descendant(of: find.byType(ListView), matching: find.text(title)),
         findsOneWidget,
       );
-      expect(find.text('Hòa Thượng Phổ Quang'), findsWidgets);
+      expect(
+        find.text('Hòa Thượng Phổ Quang'),
+        findsOneWidget,
+        reason: 'Tên tác giả chỉ nên xuất hiện trên ô lọc',
+      );
     }
 
     await tester.enterText(find.byType(TextField), tuyenHoaTitles.first);

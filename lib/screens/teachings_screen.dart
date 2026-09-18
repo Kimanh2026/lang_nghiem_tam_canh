@@ -594,14 +594,6 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                                   fontSize: 18,
                                 ),
                               ),
-                              const SizedBox(height: 6),
-                              Text(
-                                item['meta']!,
-                                style: const TextStyle(
-                                  color: Color(0xFFF28C28),
-                                  fontSize: 13,
-                                ),
-                              ),
                               const SizedBox(height: 12),
                               Text(
                                 item['preview']!,
