@@ -20,6 +20,8 @@ void main() {
     await tester.pumpAndSettle();
 
     const tuyenHoaTitles = [
+      'Thời Đại “Vô Cùng Nguy Ngập”',
+      'PHÁP KIẾT TƯỜNG (Trong Thần Chú Lăng Nghiêm)',
       'THẦN CHÚ KHAI MỞ TRÍ TUỆ',
       'THẬT SỰ CÓ THỂ TRÌ CHÚ LĂNG NGHIÊM, TRONG HƯ KHÔNG LIỀN CÓ MỘT ĐẠI BẠCH TÁN CÁI, CÓ OAI THẦN LỰC “PHỔ ẤM MUÔN PHƯƠNG”!',
       'NIỆM CHÚ LĂNG NGHIÊM BẢY NGÀY, CĂN BỆNH LẠ BỖNG NHIÊN KHỎI HẲN',
@@ -68,5 +70,35 @@ void main() {
     await tester.enterText(find.byType(TextField), tuyenHoaTitles.first);
     await tester.pumpAndSettle();
     expect(find.text('Không tìm thấy lời khai thị nào.'), findsOneWidget);
+  });
+
+  testWidgets('Phổ Quang image teaching is not duplicated', (tester) async {
+    tester.view.physicalSize = const Size(1024, 900);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: ThemeData.dark(useMaterial3: true),
+        home: const TeachingsScreen(),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Hòa Thượng Phổ Quang'));
+    await tester.pumpAndSettle();
+    await tester.enterText(
+      find.byType(TextField),
+      'Trì Chú Cần Chí Thành Chuyên Nhất',
+    );
+    await tester.pumpAndSettle();
+
+    expect(
+      find.descendant(
+        of: find.byType(ListView),
+        matching: find.text('Trì Chú Cần Chí Thành Chuyên Nhất'),
+      ),
+      findsOneWidget,
+    );
   });
 }

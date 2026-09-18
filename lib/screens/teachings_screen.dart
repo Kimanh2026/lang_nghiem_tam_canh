@@ -14,6 +14,22 @@ class _TeachingsScreenState extends State<TeachingsScreen> {
   List<String> get _filters => ['Hòa Thượng Tuyên Hóa', 'Hòa Thượng Phổ Quang'];
 
   List<Map<String, String>> get _allTeachings => [
+    {
+      'title': 'Thời Đại “Vô Cùng Nguy Ngập”',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview':
+          '''Hơn phân nửa nhân loại sẽ bị hủy diệt, và những người sống sót là những người biết tu Đạo, những người chân thật tu hành, những người biết niệm Phật, những người biết tụng Kinh và những người ăn chay, đó là những người có thể sống còn.
+
+Không phải tôi cố ý nói những lời này để hù dọa quý vị. Đã đến lúc tôi không thể không lên tiếng, thời đại này không phải là thời đại hòa bình, đây là một thời đại “Vô Cùng Nguy Ngập”''',
+    },
+    {
+      'title': 'PHÁP KIẾT TƯỜNG (Trong Thần Chú Lăng Nghiêm)',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview':
+          '''Pháp Kiết Tường: Tụng trì thần chú này thì tất cả sự việc đều tùy tâm như ý, thật kiết tường may mắn. Tôi sẽ giải thích rõ những pháp này cho quý vị.
+
+Dẫu có giảng nhiều năm mà vẫn không thể giảng hết những điểm hay của thần chú này. Tất cả 10 phương chư Phật đều sanh xuất từ thần chú này, nên có thể gọi là thần chú Lăng Nghiêm là mẹ của chư Phật.''',
+    },
     // --- KHAI THỊ CŨ ---
     {
       'title': 'Cột Mốc 36.000 Biến & Đài Sen Nâng Đỡ',
@@ -443,6 +459,104 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
     }).toList();
   }
 
+  String get _selectedTeacherImage => _selectedChipIndex == 0
+      ? 'assets/images/teacher-tuyen-hoa.jpeg'
+      : 'assets/images/teacher-pho-quang.jpeg';
+
+  Widget _buildTeacherHero(int teachingCount, bool isPhone) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(22),
+      child: SizedBox(
+        height: isPhone ? 150 : 185,
+        width: double.infinity,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            const DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Color(0xFF4A2919), Color(0xFF1A0D08)],
+                ),
+              ),
+            ),
+            Positioned(
+              left: 14,
+              top: 14,
+              bottom: 14,
+              width: isPhone ? 100 : 150,
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(16),
+                child: Image.asset(
+                  _selectedTeacherImage,
+                  fit: BoxFit.cover,
+                  alignment: _selectedChipIndex == 0
+                      ? Alignment.centerLeft
+                      : Alignment.topCenter,
+                  semanticLabel: 'Ảnh vị giảng sư đang được chọn',
+                ),
+              ),
+            ),
+            Positioned(
+              left: isPhone ? 128 : 184,
+              right: 16,
+              top: 14,
+              bottom: 14,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  const Text(
+                    'PHÁP NGỮ TUYỂN CHỌN',
+                    style: TextStyle(
+                      color: Color(0xFFD4AF37),
+                      fontSize: 11,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 1.1,
+                    ),
+                  ),
+                  const SizedBox(height: 6),
+                  Text(
+                    'Lời khai thị để đọc chậm và suy ngẫm',
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: TextStyle(
+                      color: const Color(0xFFFDF5E6),
+                      fontSize: isPhone ? 14 : 18,
+                      fontWeight: FontWeight.w700,
+                      height: 1.25,
+                    ),
+                  ),
+                  const SizedBox(height: 10),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 10,
+                      vertical: 6,
+                    ),
+                    decoration: BoxDecoration(
+                      color: const Color(0xCC1A0D08),
+                      borderRadius: BorderRadius.circular(20),
+                      border: Border.all(color: const Color(0x66D4AF37)),
+                    ),
+                    child: Text(
+                      '$teachingCount bài',
+                      style: const TextStyle(
+                        color: Color(0xFFF4D35E),
+                        fontSize: 12,
+                        fontWeight: FontWeight.w700,
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final filteredList = _filteredTeachings;
@@ -561,54 +675,66 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                 }),
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 12),
+            _buildTeacherHero(filteredList.length, isPhone),
+            const SizedBox(height: 16),
 
             // Teaching List
             Expanded(
-              child: Card(
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(8.0),
-                  side: const BorderSide(color: Color(0x1AD4AF37), width: 1),
-                ),
-                child: filteredList.isEmpty
-                    ? const Center(
-                        child: Text(
-                          'Không tìm thấy lời khai thị nào.',
-                          style: TextStyle(color: Color(0xFFD1BFAE)),
-                        ),
-                      )
-                    : ListView.separated(
-                        padding: const EdgeInsets.all(20.0),
-                        itemCount: filteredList.length,
-                        separatorBuilder: (context, index) =>
-                            const Divider(color: Color(0x1AFFFFFF), height: 40),
-                        itemBuilder: (context, index) {
-                          final item = filteredList[index];
-                          return Column(
+              child: filteredList.isEmpty
+                  ? const Center(
+                      child: Text(
+                        'Không tìm thấy lời khai thị nào.',
+                        style: TextStyle(color: Color(0xFFD1BFAE)),
+                      ),
+                    )
+                  : ListView.separated(
+                      padding: const EdgeInsets.only(bottom: 20),
+                      itemCount: filteredList.length,
+                      separatorBuilder: (context, index) =>
+                          const SizedBox(height: 12),
+                      itemBuilder: (context, index) {
+                        final item = filteredList[index];
+                        return Container(
+                          padding: EdgeInsets.all(isPhone ? 16 : 22),
+                          decoration: BoxDecoration(
+                            color: const Color(0xFF2A160F),
+                            borderRadius: BorderRadius.circular(18),
+                            border: Border.all(color: const Color(0x33D4AF37)),
+                            boxShadow: const [
+                              BoxShadow(
+                                color: Color(0x30000000),
+                                blurRadius: 16,
+                                offset: Offset(0, 8),
+                              ),
+                            ],
+                          ),
+                          child: Column(
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
                                 item['title']!,
-                                style: const TextStyle(
+                                style: TextStyle(
+                                  color: const Color(0xFFF4D35E),
                                   fontWeight: FontWeight.bold,
-                                  fontSize: 18,
+                                  fontSize: isPhone ? 17 : 19,
+                                  height: 1.3,
                                 ),
                               ),
                               const SizedBox(height: 12),
                               Text(
                                 item['preview']!,
-                                style: const TextStyle(
-                                  color: Color(0xFFFDF5E6),
-                                  fontSize: 16,
-                                  height: 1.6,
-                                  fontStyle: FontStyle.normal,
+                                style: TextStyle(
+                                  color: const Color(0xFFFDF5E6),
+                                  fontSize: isPhone ? 15 : 16,
+                                  height: 1.65,
                                 ),
                               ),
                             ],
-                          );
-                        },
-                      ),
-              ),
+                          ),
+                        );
+                      },
+                    ),
             ),
           ],
         ),

@@ -166,6 +166,138 @@ class _MantraScreenState extends State<MantraScreen> {
     );
   }
 
+  Widget _buildPracticeImageCard({
+    required String asset,
+    required String eyebrow,
+    required String title,
+    required String subtitle,
+    required double width,
+  }) {
+    return ClipRRect(
+      borderRadius: BorderRadius.circular(22),
+      child: SizedBox(
+        width: width,
+        height: 210,
+        child: Stack(
+          fit: StackFit.expand,
+          children: [
+            Image.asset(
+              asset,
+              fit: BoxFit.cover,
+              alignment: Alignment.topCenter,
+              semanticLabel: title,
+            ),
+            const DecoratedBox(
+              decoration: BoxDecoration(
+                gradient: LinearGradient(
+                  begin: Alignment.topCenter,
+                  end: Alignment.bottomCenter,
+                  colors: [Color(0x08000000), Color(0xF21A0D08)],
+                  stops: [0.35, 1],
+                ),
+              ),
+            ),
+            Positioned(
+              left: 16,
+              right: 16,
+              bottom: 15,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  Text(
+                    eyebrow,
+                    style: const TextStyle(
+                      color: Color(0xFFF4D35E),
+                      fontSize: 11,
+                      fontWeight: FontWeight.w800,
+                      letterSpacing: 1.1,
+                    ),
+                  ),
+                  const SizedBox(height: 4),
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      color: Color(0xFFFDF5E6),
+                      fontSize: 18,
+                      fontWeight: FontWeight.w800,
+                    ),
+                  ),
+                  const SizedBox(height: 3),
+                  Text(
+                    subtitle,
+                    maxLines: 2,
+                    overflow: TextOverflow.ellipsis,
+                    style: const TextStyle(
+                      color: Color(0xFFD1BFAE),
+                      fontSize: 13,
+                      height: 1.35,
+                    ),
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildPracticeGallery(bool isPhone) {
+    final cards = [
+      _buildPracticeImageCard(
+        asset: 'assets/images/lang-nghiem-mandala.jpeg',
+        eyebrow: 'TÂM CHÚ HỘ TRÌ',
+        title: 'Chú Lăng Nghiêm',
+        subtitle: 'Đọc chậm, rõ tiếng và giữ tâm chuyên nhất.',
+        width: isPhone ? 230 : 0,
+      ),
+      _buildPracticeImageCard(
+        asset: 'assets/images/ngu-phuong-phat.jpg',
+        eyebrow: 'NGŨ PHƯƠNG PHẬT',
+        title: 'Năm Đại Tâm Chú',
+        subtitle: 'Năm câu tâm chú gắn với Ngũ phương Phật.',
+        width: isPhone ? 230 : 0,
+      ),
+    ];
+
+    if (isPhone) {
+      return SizedBox(
+        height: 210,
+        child: ListView.separated(
+          scrollDirection: Axis.horizontal,
+          itemCount: cards.length,
+          separatorBuilder: (_, _) => const SizedBox(width: 12),
+          itemBuilder: (_, index) => cards[index],
+        ),
+      );
+    }
+
+    return Row(
+      children: [
+        Expanded(
+          child: _buildPracticeImageCard(
+            asset: 'assets/images/lang-nghiem-mandala.jpeg',
+            eyebrow: 'TÂM CHÚ HỘ TRÌ',
+            title: 'Chú Lăng Nghiêm',
+            subtitle: 'Đọc chậm, rõ tiếng và giữ tâm chuyên nhất.',
+            width: double.infinity,
+          ),
+        ),
+        const SizedBox(width: 16),
+        Expanded(
+          child: _buildPracticeImageCard(
+            asset: 'assets/images/ngu-phuong-phat.jpg',
+            eyebrow: 'NGŨ PHƯƠNG PHẬT',
+            title: 'Năm Đại Tâm Chú',
+            subtitle: 'Năm câu tâm chú gắn với Ngũ phương Phật.',
+            width: double.infinity,
+          ),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final isPhone = MediaQuery.sizeOf(context).width < 600;
@@ -220,24 +352,48 @@ class _MantraScreenState extends State<MantraScreen> {
         ),
         child: Column(
           children: [
-            // Audio Player and Lyrics Card
+            _buildPracticeGallery(isPhone),
+            const SizedBox(height: 20),
+
+            // Mantra text
             Card(
+              color: const Color(0xFF2A160F),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
-                side: const BorderSide(color: Color(0x1AD4AF37), width: 1),
+                borderRadius: BorderRadius.circular(22),
+                side: const BorderSide(color: Color(0x33D4AF37), width: 1),
               ),
               child: Padding(
                 padding: EdgeInsets.all(isPhone ? 12 : 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    // Lyrics
+                    const Row(
+                      children: [
+                        Icon(
+                          Icons.auto_stories_rounded,
+                          color: Color(0xFFD4AF37),
+                        ),
+                        SizedBox(width: 10),
+                        Expanded(
+                          child: Text(
+                            'Văn Chú Lăng Nghiêm',
+                            style: TextStyle(
+                              color: Color(0xFFF4D35E),
+                              fontSize: 18,
+                              fontWeight: FontWeight.w800,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 14),
                     Container(
                       height: 350,
                       width: double.infinity,
                       decoration: BoxDecoration(
-                        color: Colors.black26,
-                        borderRadius: BorderRadius.circular(8.0),
+                        color: const Color(0x661A0D08),
+                        borderRadius: BorderRadius.circular(16),
+                        border: Border.all(color: const Color(0x1FD4AF37)),
                       ),
                       padding: EdgeInsets.all(isPhone ? 12 : 20),
                       child: SingleChildScrollView(
@@ -255,9 +411,10 @@ class _MantraScreenState extends State<MantraScreen> {
 
             // Counter Section
             Card(
+              color: const Color(0xFF2A160F),
               shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(8.0),
-                side: const BorderSide(color: Color(0x1AD4AF37), width: 1),
+                borderRadius: BorderRadius.circular(22),
+                side: const BorderSide(color: Color(0x33D4AF37), width: 1),
               ),
               child: Padding(
                 padding: EdgeInsets.all(isPhone ? 14 : 30),
