@@ -42,6 +42,34 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
-  <script src="flutter_bootstrap.js" async></script>
+  <script>
+    // Remove caches left by older Flutter PWA builds before loading the app.
+    // This keeps local app data (PIN, progress, profile and chat) untouched.
+    (async () => {
+      try {
+        if ('serviceWorker' in navigator) {
+          const registrations = await navigator.serviceWorker.getRegistrations();
+          await Promise.all(registrations.map((registration) => registration.unregister()));
+        }
+
+        if ('caches' in window) {
+          const cacheNames = await caches.keys();
+          const flutterCaches = cacheNames.filter((name) =>
+            name === 'flutter-app-cache' ||
+            name === 'flutter-temp-cache' ||
+            name.startsWith('flutter-app-manifest')
+          );
+          await Promise.all(flutterCaches.map((name) => caches.delete(name)));
+        }
+      } catch (_) {
+        // Loading the app is more important than cache cleanup on old browsers.
+      } finally {
+        const bootstrap = document.createElement('script');
+        bootstrap.src = 'flutter_bootstrap.js?v=20260918-3';
+        bootstrap.async = true;
+        document.body.appendChild(bootstrap);
+      }
+    })();
+  </script>
 </body>
 </html>
