@@ -25,13 +25,13 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Lăng Nghiêm">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png?v=20260919-13">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png?v=20260919-14">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png?v=20260919-13"/>
+  <link rel="icon" type="image/png" href="favicon.png?v=20260919-14"/>
 
   <title>Lăng Nghiêm Tâm Cảnh</title>
-  <link rel="manifest" href="manifest.json?v=20260919-13">
+  <link rel="manifest" href="manifest.json?v=20260919-14">
 </head>
 <body>
   <!--
@@ -43,11 +43,64 @@
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
   <script>
-    // Remove caches left by older Flutter PWA builds before loading the app.
-    // This keeps local app data (PIN, progress, profile and chat) untouched.
-    (async () => {
+    // The installed mobile web app checks this uncached file whenever it opens,
+    // returns to the foreground, reconnects, and once per minute while visible.
+    const currentAppBuild = '1.4.0+13';
+    const updateCheckIntervalMs = 60 * 1000;
+    let updateCheckInFlight = false;
+
+    function deployedBuildId(versionInfo) {
+      if (!versionInfo || !versionInfo.version || !versionInfo.build_number) {
+        return null;
+      }
+      return `${versionInfo.version}+${versionInfo.build_number}`;
+    }
+
+    async function checkForAppUpdate() {
+      if (updateCheckInFlight || document.visibilityState === 'hidden') return;
+      updateCheckInFlight = true;
+
+      try {
+        const response = await fetch(`version.json?check=${Date.now()}`, {
+          cache: 'no-store',
+          headers: { 'Cache-Control': 'no-cache' },
+        });
+        if (!response.ok) return;
+
+        const newestBuild = deployedBuildId(await response.json());
+        if (!newestBuild || newestBuild === currentAppBuild) return;
+
+        // Prevent a reload loop if a proxy temporarily serves mismatched files.
+        const attemptKey = `lang-nghiem-update-${newestBuild}`;
+        const previousAttempt = Number(sessionStorage.getItem(attemptKey) || 0);
+        if (Date.now() - previousAttempt < updateCheckIntervalMs) return;
+        sessionStorage.setItem(attemptKey, String(Date.now()));
+
+        const nextUrl = new URL(window.location.href);
+        nextUrl.searchParams.set('v', newestBuild.replace(/[^a-zA-Z0-9.-]/g, '-'));
+        window.location.replace(nextUrl.toString());
+      } catch (_) {
+        // Offline users keep using the current version and retry automatically.
+      } finally {
+        updateCheckInFlight = false;
+      }
+    }
+
+    window.addEventListener('focus', checkForAppUpdate);
+    window.addEventListener('pageshow', checkForAppUpdate);
+    window.addEventListener('online', checkForAppUpdate);
+    document.addEventListener('visibilitychange', () => {
+      if (document.visibilityState === 'visible') checkForAppUpdate();
+    });
+    window.setInterval(checkForAppUpdate, updateCheckIntervalMs);
+
+    // Remove caches and registrations left by older Flutter PWA builds. This
+    // never touches localStorage/IndexedDB, so PIN and practice data remain.
+    async function prepareFreshRuntime() {
+      let wasControlledByOldWorker = false;
       try {
         if ('serviceWorker' in navigator) {
+          wasControlledByOldWorker = Boolean(navigator.serviceWorker.controller);
           const registrations = await navigator.serviceWorker.getRegistrations();
           await Promise.all(registrations.map((registration) => registration.unregister()));
         }
@@ -63,12 +116,27 @@
         }
       } catch (_) {
         // Loading the app is more important than cache cleanup on old browsers.
-      } finally {
-        const bootstrap = document.createElement('script');
-        bootstrap.src = 'flutter_bootstrap.js?v=20260919-13';
-        bootstrap.async = true;
-        document.body.appendChild(bootstrap);
       }
+
+      const cleanupKey = 'lang-nghiem-service-worker-cleanup';
+      if (wasControlledByOldWorker && sessionStorage.getItem(cleanupKey) !== currentAppBuild) {
+        sessionStorage.setItem(cleanupKey, currentAppBuild);
+        const cleanUrl = new URL(window.location.href);
+        cleanUrl.searchParams.set('v', currentAppBuild.replace('+', '-'));
+        window.location.replace(cleanUrl.toString());
+        return false;
+      }
+      return true;
+    }
+
+    (async () => {
+      if (!await prepareFreshRuntime()) return;
+      await checkForAppUpdate();
+
+      const bootstrap = document.createElement('script');
+      bootstrap.src = 'flutter_bootstrap.js?v=20260919-14';
+      bootstrap.async = true;
+      document.body.appendChild(bootstrap);
     })();
   </script>
 </body>

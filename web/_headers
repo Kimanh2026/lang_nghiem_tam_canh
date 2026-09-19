@@ -10,3 +10,5 @@
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
 /manifest.json
   Cache-Control: no-store, no-cache, must-revalidate, max-age=0
+/version.json
+  Cache-Control: no-store, no-cache, must-revalidate, max-age=0
