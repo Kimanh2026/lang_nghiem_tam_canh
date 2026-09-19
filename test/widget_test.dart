@@ -24,8 +24,18 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    final rail = tester.widget<NavigationRail>(find.byType(NavigationRail));
-    expect(rail.destinations, hasLength(5));
+    expect(find.byKey(const Key('desktop-navigation')), findsOneWidget);
+    for (var index = 0; index < 5; index++) {
+      expect(find.byKey(ValueKey('desktop-nav-item-$index')), findsOneWidget);
+      expect(
+        tester
+            .getTopLeft(find.byKey(ValueKey('desktop-nav-icon-slot-$index')))
+            .dx,
+        tester
+            .getTopLeft(find.byKey(const ValueKey('desktop-nav-icon-slot-0')))
+            .dx,
+      );
+    }
     expect(find.byKey(const Key('nav-home-selected')), findsOneWidget);
     expect(find.byKey(const Key('nav-teachings-idle')), findsOneWidget);
     expect(find.byKey(const Key('nav-mantra-idle')), findsOneWidget);
@@ -39,6 +49,11 @@ void main() {
       tester.widget(find.byKey(const Key('nav-home-selected'))),
       isA<SizedBox>(),
     );
+    final iconRight = tester
+        .getTopRight(find.byKey(const ValueKey('desktop-nav-icon-slot-0')))
+        .dx;
+    final labelLeft = tester.getTopLeft(find.text('Trang chủ')).dx;
+    expect(labelLeft - iconRight, lessThanOrEqualTo(10));
     expect(find.text('Tác Giả'), findsNothing);
     expect(find.text('Cài đặt'), findsOneWidget);
   });

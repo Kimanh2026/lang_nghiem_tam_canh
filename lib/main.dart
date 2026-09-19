@@ -240,6 +240,72 @@ class _MainScaffoldState extends State<MainScaffold> {
     });
   }
 
+  Widget _buildDesktopNavigation({required bool compact}) {
+    return Container(
+      key: const Key('desktop-navigation'),
+      width: compact ? 174 : 190,
+      decoration: const BoxDecoration(
+        color: Color(0xFF2D1A11),
+        border: Border(right: BorderSide(color: Color(0x33D4AF37), width: 1)),
+      ),
+      child: SafeArea(
+        child: Padding(
+          padding: EdgeInsets.fromLTRB(compact ? 12 : 16, 14, 10, 0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: List.generate(_railDestinations.length, (index) {
+              final selected = _currentIndex == index;
+              final destination = _railDestinations[index];
+              return SizedBox(
+                key: ValueKey('desktop-nav-item-$index'),
+                height: 58,
+                child: Material(
+                  color: Colors.transparent,
+                  child: InkWell(
+                    borderRadius: BorderRadius.circular(14),
+                    onTap: () => _switchTab(index),
+                    child: Row(
+                      children: [
+                        SizedBox(
+                          key: ValueKey('desktop-nav-icon-slot-$index'),
+                          width: 48,
+                          height: 42,
+                          child: Center(
+                            child: selected
+                                ? destination.selectedIcon
+                                : destination.icon,
+                          ),
+                        ),
+                        const SizedBox(width: 8),
+                        Expanded(
+                          child: DefaultTextStyle(
+                            style: TextStyle(
+                              color: selected
+                                  ? const Color(0xFFF4D35E)
+                                  : const Color(0xFFD1BFAE),
+                              fontSize: compact ? 14 : 16,
+                              fontWeight: selected
+                                  ? FontWeight.w800
+                                  : FontWeight.w500,
+                            ),
+                            child: Align(
+                              alignment: Alignment.centerLeft,
+                              child: destination.label,
+                            ),
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+              );
+            }),
+          ),
+        ),
+      ),
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final screenWidth = MediaQuery.sizeOf(context).width;
@@ -333,46 +399,7 @@ class _MainScaffoldState extends State<MainScaffold> {
     return Scaffold(
       body: Row(
         children: [
-          Container(
-            decoration: const BoxDecoration(
-              border: Border(
-                right: BorderSide(color: Color(0x33D4AF37), width: 1),
-              ),
-            ),
-            child: SafeArea(
-              child: NavigationRail(
-                selectedIndex: _currentIndex,
-                onDestinationSelected: _switchTab,
-                extended: !isPhone,
-                labelType: isPhone
-                    ? NavigationRailLabelType.all
-                    : NavigationRailLabelType.none,
-                minWidth: isPhone ? 72 : (isCompactRail ? 128 : 200),
-                minExtendedWidth: isCompactRail ? 128 : 200,
-                groupAlignment: -0.85,
-                backgroundColor: const Color(0xFF2D1A11),
-                useIndicator: false,
-                selectedIconTheme: IconThemeData(
-                  color: const Color(0xFFD4AF37),
-                  size: isPhone ? 24 : (isCompactRail ? 22 : 26),
-                ),
-                unselectedIconTheme: IconThemeData(
-                  color: const Color(0xFFD1BFAE),
-                  size: isPhone ? 24 : (isCompactRail ? 22 : 26),
-                ),
-                selectedLabelTextStyle: TextStyle(
-                  color: const Color(0xFFD4AF37),
-                  fontSize: isPhone ? 10 : (isCompactRail ? 14 : 16),
-                  fontWeight: FontWeight.bold,
-                ),
-                unselectedLabelTextStyle: TextStyle(
-                  color: const Color(0xFFD1BFAE),
-                  fontSize: isPhone ? 10 : (isCompactRail ? 14 : 16),
-                ),
-                destinations: _railDestinations,
-              ),
-            ),
-          ),
+          _buildDesktopNavigation(compact: isCompactRail),
           Expanded(child: content),
         ],
       ),

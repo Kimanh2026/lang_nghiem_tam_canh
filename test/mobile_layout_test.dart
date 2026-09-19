@@ -40,7 +40,7 @@ void main() {
         findsNothing,
       );
       expect(
-        find.byType(NavigationRail),
+        find.byKey(const Key('desktop-navigation')),
         width < 600 ? findsNothing : findsOneWidget,
       );
       expect(find.text('Tác Giả'), findsNothing);
