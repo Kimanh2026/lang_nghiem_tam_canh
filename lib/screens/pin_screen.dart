@@ -127,84 +127,105 @@ class _PinScreenState extends State<PinScreen> {
         : 'Nhập mã PIN để mở app';
 
     return Scaffold(
-      backgroundColor: const Color(0xFF1A0D08),
+      backgroundColor: Colors.transparent,
       body: SafeArea(
         child: SingleChildScrollView(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const SizedBox(height: 40),
-              const Icon(
-                Icons.lock_outline,
-                color: Color(0xFFD4AF37),
-                size: 48,
+          padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 24),
+          child: Center(
+            child: Container(
+              width: double.infinity,
+              constraints: const BoxConstraints(maxWidth: 460),
+              padding: const EdgeInsets.fromLTRB(18, 28, 18, 24),
+              decoration: BoxDecoration(
+                color: const Color(0xE61B2D38),
+                borderRadius: BorderRadius.circular(28),
+                border: Border.all(color: const Color(0x66D4AF37)),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0x520B1820),
+                    blurRadius: 32,
+                    offset: Offset(0, 16),
+                  ),
+                ],
               ),
-              const SizedBox(height: 24),
-              Text(
-                title,
-                style: const TextStyle(
-                  color: Color(0xFFD4AF37),
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              const SizedBox(height: 16),
-              if (_errorMessage.isNotEmpty)
-                Text(
-                  _errorMessage,
-                  style: const TextStyle(color: Colors.redAccent, fontSize: 14),
-                ),
-              const SizedBox(height: 32),
-              // PIN Dots
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: List.generate(4, (index) {
-                  return Container(
-                    margin: const EdgeInsets.symmetric(horizontal: 12),
-                    width: 20,
-                    height: 20,
-                    decoration: BoxDecoration(
-                      shape: BoxShape.circle,
-                      color: index < _enteredPin.length
-                          ? const Color(0xFFD4AF37)
-                          : const Color(0x33D4AF37),
-                      border: Border.all(
-                        color: const Color(0xFFD4AF37),
-                        width: 2,
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  const Icon(
+                    Icons.lock_outline,
+                    color: Color(0xFFD4AF37),
+                    size: 48,
+                  ),
+                  const SizedBox(height: 24),
+                  Text(
+                    title,
+                    style: const TextStyle(
+                      color: Color(0xFFD4AF37),
+                      fontSize: 20,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  if (_errorMessage.isNotEmpty)
+                    Text(
+                      _errorMessage,
+                      style: const TextStyle(
+                        color: Colors.redAccent,
+                        fontSize: 14,
                       ),
                     ),
-                  );
-                }),
-              ),
-              if (!_isSetupMode) ...[
-                const SizedBox(height: 20),
-                TextButton(
-                  onPressed: _resetPin,
-                  child: const Text('Quên mã PIN?'),
-                ),
-              ],
-              const SizedBox(height: 64),
-              // Keypad
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 40),
-                child: GridView.count(
-                  shrinkWrap: true,
-                  crossAxisCount: 3,
-                  mainAxisSpacing: 20,
-                  crossAxisSpacing: 20,
-                  childAspectRatio: 1.5,
-                  physics: const NeverScrollableScrollPhysics(),
-                  children: [
-                    for (int i = 1; i <= 9; i++)
-                      _buildKeypadButton(i.toString()),
-                    const SizedBox.shrink(),
-                    _buildKeypadButton('0'),
-                    _buildBackspaceButton(),
+                  const SizedBox(height: 32),
+                  // PIN Dots
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: List.generate(4, (index) {
+                      return Container(
+                        margin: const EdgeInsets.symmetric(horizontal: 12),
+                        width: 20,
+                        height: 20,
+                        decoration: BoxDecoration(
+                          shape: BoxShape.circle,
+                          color: index < _enteredPin.length
+                              ? const Color(0xFFD4AF37)
+                              : const Color(0x33D4AF37),
+                          border: Border.all(
+                            color: const Color(0xFFD4AF37),
+                            width: 2,
+                          ),
+                        ),
+                      );
+                    }),
+                  ),
+                  if (!_isSetupMode) ...[
+                    const SizedBox(height: 20),
+                    TextButton(
+                      onPressed: _resetPin,
+                      child: const Text('Quên mã PIN?'),
+                    ),
                   ],
-                ),
+                  const SizedBox(height: 42),
+                  // Keypad
+                  ConstrainedBox(
+                    constraints: const BoxConstraints(maxWidth: 380),
+                    child: GridView.count(
+                      shrinkWrap: true,
+                      crossAxisCount: 3,
+                      mainAxisSpacing: 20,
+                      crossAxisSpacing: 20,
+                      childAspectRatio: 1.5,
+                      physics: const NeverScrollableScrollPhysics(),
+                      children: [
+                        for (int i = 1; i <= 9; i++)
+                          _buildKeypadButton(i.toString()),
+                        const SizedBox.shrink(),
+                        _buildKeypadButton('0'),
+                        _buildBackspaceButton(),
+                      ],
+                    ),
+                  ),
+                ],
               ),
-              const SizedBox(height: 40),
-            ],
+            ),
           ),
         ),
       ),
@@ -219,7 +240,7 @@ class _PinScreenState extends State<PinScreen> {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: const Color(0xFF2D1A11),
+          color: const Color(0xE6253944),
           border: Border.all(color: const Color(0x1AD4AF37)),
         ),
         child: Text(
@@ -242,7 +263,7 @@ class _PinScreenState extends State<PinScreen> {
         alignment: Alignment.center,
         child: const Icon(
           Icons.backspace_outlined,
-          color: Color(0xFFD1BFAE),
+          color: Color(0xFFF4E9DC),
           size: 28,
         ),
       ),

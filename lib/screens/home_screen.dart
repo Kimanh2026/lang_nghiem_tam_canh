@@ -42,7 +42,7 @@ class HomeScreen extends StatelessWidget {
       context: context,
       builder: (context) {
         return AlertDialog(
-          backgroundColor: const Color(0xFF2D1A11),
+          backgroundColor: const Color(0xF2253944),
           title: const Text(
             'Điều chỉnh tiến độ',
             style: TextStyle(color: Color(0xFFD4AF37)),
@@ -102,7 +102,7 @@ class HomeScreen extends StatelessWidget {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xFF1A0D08),
+        backgroundColor: const Color(0xE61B2D38),
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
@@ -256,7 +256,7 @@ class HomeScreen extends StatelessWidget {
                             IconButton(
                               icon: const Icon(
                                 Icons.edit,
-                                color: Color(0xFFD1BFAE),
+                                color: Color(0xFFF4E9DC),
                                 size: 18,
                               ),
                               onPressed: () => _showEditCountDialog(context),
@@ -274,7 +274,7 @@ class HomeScreen extends StatelessWidget {
                               child: CircularProgressIndicator(
                                 value: (count / 36000).clamp(0.0, 1.0),
                                 strokeWidth: 10,
-                                backgroundColor: const Color(0xFF3D2A20),
+                                backgroundColor: const Color(0xD9364A52),
                                 color: const Color(0xFFD4AF37),
                               ),
                             ),
@@ -292,7 +292,7 @@ class HomeScreen extends StatelessWidget {
                                 const Text(
                                   '/ 36,000',
                                   style: TextStyle(
-                                    color: Color(0xFFD1BFAE),
+                                    color: Color(0xFFF4E9DC),
                                     fontSize: 12,
                                   ),
                                 ),
@@ -317,7 +317,7 @@ class HomeScreen extends StatelessWidget {
                         const Text(
                           'Bạn đang đi đúng hướng. Hãy tiếp tục tinh tấn!',
                           style: TextStyle(
-                            color: Color(0xFFD1BFAE),
+                            color: Color(0xFFF4E9DC),
                             fontSize: 14,
                           ),
                         ),
@@ -337,7 +337,7 @@ class HomeScreen extends StatelessWidget {
                 onPressed: onStartChanting,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: const Color(0xFFD4AF37),
-                  foregroundColor: const Color(0xFF1A0D08),
+                  foregroundColor: const Color(0xFF1B2D38),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8.0),
                   ),

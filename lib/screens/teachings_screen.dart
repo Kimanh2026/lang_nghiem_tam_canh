@@ -465,7 +465,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Color(0xFF4A2919), Color(0xFF1A0D08)],
+                  colors: [Color(0xE6465964), Color(0xE61B2D38)],
                 ),
               ),
             ),
@@ -570,7 +570,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                                     setState(() => _selectedChipIndex = index);
                                   }
                                 },
-                                backgroundColor: const Color(0xFF2A160F),
+                                backgroundColor: const Color(0xE61B2D38),
                                 selectedColor: const Color(0xFFD4AF37),
                                 padding: EdgeInsets.symmetric(
                                   horizontal: isPhone ? 4 : 12,
@@ -578,7 +578,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                                 ),
                                 labelStyle: TextStyle(
                                   color: isSelected
-                                      ? const Color(0xFF1A0D08)
+                                      ? const Color(0xFF1B2D38)
                                       : const Color(0xFFFDF5E6),
                                   fontSize: isPhone ? 11 : 15,
                                   fontWeight: FontWeight.w800,
@@ -622,7 +622,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                   key: ValueKey('teaching-${item['title']}'),
                   padding: EdgeInsets.all(isPhone ? 16 : 22),
                   decoration: BoxDecoration(
-                    color: const Color(0xFF2A160F),
+                    color: const Color(0xE61B2D38),
                     borderRadius: BorderRadius.circular(18),
                     border: Border.all(color: const Color(0x33D4AF37)),
                     boxShadow: const [

@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../services/notification_service.dart';
+import '../release_notes.dart';
 import 'privacy_policy_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -41,7 +42,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
-      backgroundColor: const Color(0xFF2D1A11),
+      backgroundColor: const Color(0xF2253944),
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
@@ -94,7 +95,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     width: double.infinity,
     padding: const EdgeInsets.all(16),
     decoration: BoxDecoration(
-      color: const Color(0xFF1A0D08),
+      color: const Color(0xE61B2D38),
       borderRadius: BorderRadius.circular(12),
       border: Border.all(color: const Color(0x33D4AF37)),
     ),
@@ -118,7 +119,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: const Color(0xFF2D1A11),
+        backgroundColor: const Color(0xF2253944),
         title: const Text(
           'Xác nhận xóa',
           style: TextStyle(color: Color(0xFFD4AF37)),
@@ -151,7 +152,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
       SnackBar(
         content: Text(
           message,
-          style: const TextStyle(color: Color(0xFF1A0D08)),
+          style: const TextStyle(color: Color(0xFF1B2D38)),
         ),
         backgroundColor: const Color(0xFFD4AF37),
         duration: const Duration(seconds: 3),
@@ -176,7 +177,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xFF1A0D08),
+        backgroundColor: const Color(0xE61B2D38),
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1),
@@ -193,6 +194,27 @@ class _SettingsScreenState extends State<SettingsScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            _sectionTitle('CẬP NHẬT ỨNG DỤNG'),
+            const SizedBox(height: 12),
+            Card(
+              child: ListTile(
+                leading: const Icon(
+                  Icons.auto_awesome,
+                  color: Color(0xFFD4AF37),
+                ),
+                title: const Text('Có gì mới'),
+                subtitle: const Text(
+                  'Phiên bản ${AppReleaseNotes.displayVersion} · Xem nội dung cập nhật',
+                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                ),
+                trailing: const Icon(
+                  Icons.chevron_right,
+                  color: Colors.white54,
+                ),
+                onTap: () => showCurrentReleaseNotes(context),
+              ),
+            ),
+            const SizedBox(height: 28),
             _sectionTitle('CÀI ỨNG DỤNG'),
             const SizedBox(height: 12),
             Card(
@@ -259,7 +281,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         decoration: const InputDecoration(
                           labelText: 'Tên để Tiểu Tịnh gọi bạn',
                           filled: true,
-                          fillColor: Color(0xFF1A0D08),
+                          fillColor: Color(0xE61B2D38),
                           border: OutlineInputBorder(),
                         ),
                       ),

@@ -260,7 +260,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xFF1A0D08),
+        backgroundColor: const Color(0xE61B2D38),
         elevation: 0,
         actions: [
           IconButton(
@@ -329,9 +329,9 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                 controller: _chatController,
                 decoration: InputDecoration(
                   hintText: 'Nhập câu hỏi...',
-                  hintStyle: const TextStyle(color: Color(0xFFD1BFAE)),
+                  hintStyle: const TextStyle(color: Color(0xFFF4E9DC)),
                   filled: true,
-                  fillColor: const Color(0xFF1A0D08),
+                  fillColor: const Color(0xE61B2D38),
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
                     borderSide: const BorderSide(color: Color(0x4DD4AF37)),
@@ -353,7 +353,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: IconButton(
-                icon: const Icon(Icons.send, color: Color(0xFF1A0D08)),
+                icon: const Icon(Icons.send, color: Color(0xFF1B2D38)),
                 onPressed: _isLoading ? null : _sendChatMessage,
               ),
             ),
@@ -389,7 +389,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                 right: isAi ? (isPhone ? 8 : 40) : 0,
               ),
               decoration: BoxDecoration(
-                color: isAi ? const Color(0xFF2D1A11) : null,
+                color: isAi ? const Color(0xE6253944) : null,
                 gradient: isAi
                     ? null
                     : const LinearGradient(

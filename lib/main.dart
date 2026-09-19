@@ -10,6 +10,8 @@ import 'screens/ai_coach_screen.dart';
 import 'screens/pin_screen.dart';
 import 'screens/settings_screen.dart';
 import 'services/notification_service.dart';
+import 'release_notes.dart';
+import 'widgets/app_background.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -29,6 +31,9 @@ void main() async {
     initialCount,
   );
   final String? savedPin = prefs.getString('app_pin');
+  final bool showUpdateAnnouncement = AppReleaseNotes.shouldAnnounce(
+    prefs.getString(AppReleaseNotes.seenVersionKey),
+  );
 
   // Settings state
   final String initialName = prefs.getString('user_name') ?? '';
@@ -53,6 +58,7 @@ void main() async {
       savedPin: savedPin,
       userName: globalUserName,
       clearChatTrigger: globalClearChatTrigger,
+      showUpdateAnnouncement: showUpdateAnnouncement,
     ),
   );
 }
@@ -62,6 +68,7 @@ class LangNghiemApp extends StatelessWidget {
   final String? savedPin;
   final ValueNotifier<String> userName;
   final ValueNotifier<int> clearChatTrigger;
+  final bool showUpdateAnnouncement;
 
   const LangNghiemApp({
     super.key,
@@ -69,6 +76,7 @@ class LangNghiemApp extends StatelessWidget {
     this.savedPin,
     required this.userName,
     required this.clearChatTrigger,
+    this.showUpdateAnnouncement = false,
   });
 
   @override
@@ -78,13 +86,13 @@ class LangNghiemApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         brightness: Brightness.dark,
-        scaffoldBackgroundColor: const Color(0xFF1A0D08),
-        cardColor: const Color(0xFF2D1A11),
+        scaffoldBackgroundColor: Colors.transparent,
+        cardColor: const Color(0xE6253944),
         primaryColor: const Color(0xFFD4AF37),
         colorScheme: const ColorScheme.dark(
           primary: Color(0xFFD4AF37),
           secondary: Color(0xFFF28C28),
-          surface: Color(0xFF2D1A11),
+          surface: Color(0xE6253944),
         ),
         textTheme: const TextTheme(
           bodyLarge: TextStyle(color: Color(0xFFFDF5E6)),
@@ -92,11 +100,15 @@ class LangNghiemApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
+      builder: (context, child) => AppBackground(
+        child: child ?? const SizedBox.shrink(),
+      ),
       routes: {
         '/home': (context) => MainScaffold(
           recitationCount: recitationCount,
           userName: userName,
           clearChatTrigger: clearChatTrigger,
+          showUpdateAnnouncement: showUpdateAnnouncement,
         ),
       },
       home: PinScreen(savedPin: savedPin, recitationCount: recitationCount),
@@ -108,12 +120,14 @@ class MainScaffold extends StatefulWidget {
   final ValueNotifier<int> recitationCount;
   final ValueNotifier<String> userName;
   final ValueNotifier<int> clearChatTrigger;
+  final bool showUpdateAnnouncement;
 
   const MainScaffold({
     super.key,
     required this.recitationCount,
     required this.userName,
     required this.clearChatTrigger,
+    this.showUpdateAnnouncement = false,
   });
 
   @override
@@ -168,6 +182,26 @@ class _LuxuryNavIcon extends StatelessWidget {
 
 class _MainScaffoldState extends State<MainScaffold> {
   static const double _compactRailBreakpoint = 800;
+
+  @override
+  void initState() {
+    super.initState();
+    if (widget.showUpdateAnnouncement) {
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        _announceCurrentRelease();
+      });
+    }
+  }
+
+  Future<void> _announceCurrentRelease() async {
+    if (!mounted) return;
+    await showCurrentReleaseNotes(context);
+    final prefs = await SharedPreferences.getInstance();
+    await prefs.setString(
+      AppReleaseNotes.seenVersionKey,
+      AppReleaseNotes.version,
+    );
+  }
 
   static const _railDestinations = <NavigationRailDestination>[
     NavigationRailDestination(
@@ -245,7 +279,7 @@ class _MainScaffoldState extends State<MainScaffold> {
       key: const Key('desktop-navigation'),
       width: compact ? 174 : 190,
       decoration: const BoxDecoration(
-        color: Color(0xFF2D1A11),
+        color: Color(0xE6253944),
         border: Border(right: BorderSide(color: Color(0x33D4AF37), width: 1)),
       ),
       child: SafeArea(
@@ -282,7 +316,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                             style: TextStyle(
                               color: selected
                                   ? const Color(0xFFF4D35E)
-                                  : const Color(0xFFD1BFAE),
+                                  : const Color(0xFFF4E9DC),
                               fontSize: compact ? 14 : 16,
                               fontWeight: selected
                                   ? FontWeight.w800
@@ -342,7 +376,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                   padding: const EdgeInsets.fromLTRB(8, 6, 8, kIsWeb ? 56 : 8),
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: const Color(0xFF2D1A11),
+                      color: const Color(0xE6253944),
                       borderRadius: BorderRadius.circular(24),
                       border: Border.all(color: const Color(0x33D4AF37)),
                     ),
@@ -378,7 +412,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                                             : FontWeight.normal,
                                         color: selected
                                             ? const Color(0xFFD4AF37)
-                                            : const Color(0xFFD1BFAE),
+                                            : const Color(0xFFF4E9DC),
                                       ),
                                       child: destination.label,
                                     ),

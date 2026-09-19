@@ -38,7 +38,7 @@ class _MantraScreenState extends State<MantraScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          backgroundColor: const Color(0xFF2D1A11),
+          backgroundColor: const Color(0xF2253944),
           title: const Text(
             'Điều chỉnh tiến độ',
             style: TextStyle(color: Color(0xFFD4AF37)),
@@ -110,7 +110,7 @@ class _MantraScreenState extends State<MantraScreen> {
       context: context,
       builder: (BuildContext context) {
         return Dialog(
-          backgroundColor: const Color(0xFF1A0D08),
+          backgroundColor: const Color(0xE61B2D38),
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
             side: const BorderSide(color: Color(0xFFD4AF37), width: 2),
@@ -151,7 +151,7 @@ class _MantraScreenState extends State<MantraScreen> {
                   onPressed: () => Navigator.of(context).pop(),
                   style: ElevatedButton.styleFrom(
                     backgroundColor: const Color(0xFFD4AF37),
-                    foregroundColor: const Color(0xFF1A0D08),
+                    foregroundColor: const Color(0xFF1B2D38),
                   ),
                   child: const Text(
                     'Tiếp tục Tinh Tấn',
@@ -180,7 +180,7 @@ class _MantraScreenState extends State<MantraScreen> {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xFF1A0D08),
+        backgroundColor: const Color(0xE61B2D38),
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
@@ -200,7 +200,7 @@ class _MantraScreenState extends State<MantraScreen> {
             // Mantra text
             Card(
               margin: EdgeInsets.zero,
-              color: const Color(0xFF2A160F),
+              color: const Color(0xE61B2D38),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(22),
                 side: const BorderSide(color: Color(0x33D4AF37), width: 1),
@@ -261,7 +261,7 @@ class _MantraScreenState extends State<MantraScreen> {
 
             // Counter Section
             Card(
-              color: const Color(0xFF2A160F),
+              color: const Color(0xE61B2D38),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(22),
                 side: const BorderSide(color: Color(0x33D4AF37), width: 1),
@@ -281,7 +281,7 @@ class _MantraScreenState extends State<MantraScreen> {
                               margin: EdgeInsets.only(right: isPhone ? 8 : 20),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: const Color(0xFF2D1A11),
+                                color: const Color(0xE6253944),
                                 border: Border.all(
                                   color: const Color(0x4DD4AF37),
                                 ),
@@ -289,7 +289,7 @@ class _MantraScreenState extends State<MantraScreen> {
                               child: IconButton(
                                 icon: const Icon(
                                   Icons.remove,
-                                  color: Color(0xFFD1BFAE),
+                                  color: Color(0xFFF4E9DC),
                                 ),
                                 onPressed: _decrementCount,
                                 tooltip: 'Giảm 1 biến',
@@ -345,7 +345,7 @@ class _MantraScreenState extends State<MantraScreen> {
                               margin: EdgeInsets.only(left: isPhone ? 8 : 20),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: const Color(0xFF2D1A11),
+                                color: const Color(0xE6253944),
                                 border: Border.all(
                                   color: const Color(0x4DD4AF37),
                                 ),
@@ -353,7 +353,7 @@ class _MantraScreenState extends State<MantraScreen> {
                               child: IconButton(
                                 icon: const Icon(
                                   Icons.edit,
-                                  color: Color(0xFFD1BFAE),
+                                  color: Color(0xFFF4E9DC),
                                 ),
                                 onPressed: () => _showEditCountDialog(context),
                                 tooltip: 'Chỉnh sửa chính xác',
@@ -402,14 +402,14 @@ class _MantraScreenState extends State<MantraScreen> {
                             const Text(
                               '0',
                               style: TextStyle(
-                                color: Color(0xFFD1BFAE),
+                                color: Color(0xFFF4E9DC),
                                 fontSize: 12,
                               ),
                             ),
                             Text(
                               'Mục tiêu: $_goal',
                               style: const TextStyle(
-                                color: Color(0xFFD1BFAE),
+                                color: Color(0xFFF4E9DC),
                                 fontSize: 12,
                               ),
                             ),

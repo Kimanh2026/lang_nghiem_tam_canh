@@ -8,7 +8,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Chính Sách Bảo Mật', style: TextStyle(color: Color(0xFFD4AF37), fontWeight: FontWeight.bold, fontSize: 18)),
-        backgroundColor: const Color(0xFF1A0D08),
+        backgroundColor: const Color(0xE61B2D38),
         iconTheme: const IconThemeData(color: Color(0xFFD4AF37)),
         elevation: 0,
         bottom: PreferredSize(
