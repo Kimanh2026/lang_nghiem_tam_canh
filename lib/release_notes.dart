@@ -3,14 +3,14 @@ import 'package:flutter/material.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.4.1+14';
-  static const displayVersion = '1.4.1';
+  static const version = '1.4.2+15';
+  static const displayVersion = '1.4.2';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Cập nhật tự động & thông báo phiên bản';
+  static const title = 'Trang chủ sáng và thoáng hơn';
   static const changes = <String>[
-    'Tự động kiểm tra và nạp bản mới khi mở lại app hoặc quay lại app.',
-    'Hiển thị thông báo có gì mới sau mỗi lần cập nhật.',
-    'Giữ nguyên mã PIN, tiến độ trì chú và dữ liệu cá nhân.',
+    'Bỏ ảnh hồ sen riêng ở phần thời khóa để nền pha lê toàn app hiện rõ.',
+    'Nội dung được đặt trên lớp xanh than trong suốt, giữ chữ sáng và dễ đọc.',
+    'Giữ nguyên mã PIN, tiến độ trì chú và toàn bộ dữ liệu cá nhân.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

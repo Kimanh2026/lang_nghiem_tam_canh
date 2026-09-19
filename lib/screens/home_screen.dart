@@ -121,51 +121,58 @@ class HomeScreen extends StatelessWidget {
             Container(
               width: double.infinity,
               constraints: const BoxConstraints(minHeight: 240),
-              padding: const EdgeInsets.all(24),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(24),
-                image: const DecorationImage(
-                  image: AssetImage('assets/images/lotus-dawn.png'),
-                  fit: BoxFit.cover,
-                  colorFilter: ColorFilter.mode(
-                    Color(0x33000000),
-                    BlendMode.darken,
-                  ),
+              alignment: Alignment.centerLeft,
+              child: Container(
+                width: isPhone ? double.infinity : 460,
+                padding: EdgeInsets.all(isPhone ? 22 : 28),
+                decoration: BoxDecoration(
+                  color: const Color(0xC91B2D38),
+                  borderRadius: BorderRadius.circular(24),
+                  border: Border.all(color: const Color(0x52D4AF37)),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0x2E10202A),
+                      blurRadius: 26,
+                      offset: Offset(0, 12),
+                    ),
+                  ],
                 ),
-              ),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    'THỜI KHÓA HÔM NAY',
-                    style: TextStyle(
-                      color: Color(0xFFFFDF9E),
-                      fontSize: 12,
-                      letterSpacing: 1.5,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    const Text(
+                      'THỜI KHÓA HÔM NAY',
+                      style: TextStyle(
+                        color: Color(0xFFFFDF9E),
+                        fontSize: 12,
+                        letterSpacing: 1.5,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 20),
-                  const Text(
-                    'Trở về\nvới tâm an',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 30,
-                      height: 1.15,
-                      fontWeight: FontWeight.w600,
+                    const SizedBox(height: 18),
+                    const Text(
+                      'Trở về\nvới tâm an',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 30,
+                        height: 1.15,
+                        fontWeight: FontWeight.w700,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  const Text(
-                    'Dành một khoảng lặng\nđể trì tụng Chú Lăng Nghiêm.',
-                    style: TextStyle(color: Color(0xFFFFF3DF), height: 1.5),
-                  ),
-                  const SizedBox(height: 20),
-                  FilledButton.icon(
-                    onPressed: onStartChanting,
-                    icon: const Icon(Icons.play_arrow),
-                    label: const Text('Bắt đầu trì chú'),
-                  ),
-                ],
+                    const SizedBox(height: 12),
+                    const Text(
+                      'Dành một khoảng lặng\nđể trì tụng Chú Lăng Nghiêm.',
+                      style: TextStyle(color: Color(0xFFFFF3DF), height: 1.5),
+                    ),
+                    const SizedBox(height: 20),
+                    FilledButton.icon(
+                      onPressed: onStartChanting,
+                      icon: const Icon(Icons.play_arrow),
+                      label: const Text('Bắt đầu trì chú'),
+                    ),
+                  ],
+                ),
               ),
             ),
             const SizedBox(height: 20),
