@@ -26,6 +26,11 @@ void main() {
 
     final rail = tester.widget<NavigationRail>(find.byType(NavigationRail));
     expect(rail.destinations, hasLength(5));
+    expect(find.byKey(const Key('nav-home-selected')), findsOneWidget);
+    expect(find.byKey(const Key('nav-teachings-idle')), findsOneWidget);
+    expect(find.byKey(const Key('nav-mantra-idle')), findsOneWidget);
+    expect(find.byKey(const Key('nav-chat-idle')), findsOneWidget);
+    expect(find.byKey(const Key('nav-settings-idle')), findsOneWidget);
     expect(find.text('Tác Giả'), findsNothing);
     expect(find.text('Cài đặt'), findsOneWidget);
   });

@@ -120,25 +120,128 @@ class MainScaffold extends StatefulWidget {
   State<MainScaffold> createState() => _MainScaffoldState();
 }
 
+class _LuxuryNavIcon extends StatelessWidget {
+  final String asset;
+  final String label;
+  final bool selected;
+
+  const _LuxuryNavIcon({
+    required this.asset,
+    required this.label,
+    this.selected = false,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Semantics(
+      image: true,
+      label: selected ? '$label, đang chọn' : label,
+      child: AnimatedContainer(
+        key: ValueKey(
+          'nav-${asset.split('/').last.replaceFirst('nav-', '').replaceFirst('.png', '')}-${selected ? 'selected' : 'idle'}',
+        ),
+        duration: const Duration(milliseconds: 180),
+        curve: Curves.easeOutCubic,
+        width: 44,
+        height: 38,
+        padding: EdgeInsets.all(selected ? 5 : 7),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(16),
+          gradient: selected
+              ? const LinearGradient(
+                  begin: Alignment.topLeft,
+                  end: Alignment.bottomRight,
+                  colors: [Color(0xFF624018), Color(0xFF2A160F)],
+                )
+              : null,
+          border: selected
+              ? Border.all(color: const Color(0xB3F4D35E), width: 1)
+              : null,
+          boxShadow: selected
+              ? const [
+                  BoxShadow(
+                    color: Color(0x45F4B942),
+                    blurRadius: 12,
+                    spreadRadius: 1,
+                  ),
+                ]
+              : null,
+        ),
+        child: Opacity(
+          opacity: selected ? 1 : 0.64,
+          child: Image.asset(
+            asset,
+            fit: BoxFit.contain,
+            filterQuality: FilterQuality.high,
+          ),
+        ),
+      ),
+    );
+  }
+}
+
 class _MainScaffoldState extends State<MainScaffold> {
   static const double _compactRailBreakpoint = 800;
 
   static const _railDestinations = <NavigationRailDestination>[
-    NavigationRailDestination(icon: Icon(Icons.home), label: Text('Trang chủ')),
     NavigationRailDestination(
-      icon: Icon(Icons.menu_book),
+      icon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-home.png',
+        label: 'Trang chủ',
+      ),
+      selectedIcon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-home.png',
+        label: 'Trang chủ',
+        selected: true,
+      ),
+      label: Text('Trang chủ'),
+    ),
+    NavigationRailDestination(
+      icon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-teachings.png',
+        label: 'Khai thị',
+      ),
+      selectedIcon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-teachings.png',
+        label: 'Khai thị',
+        selected: true,
+      ),
       label: Text('Khai thị'),
     ),
     NavigationRailDestination(
-      icon: Icon(Icons.self_improvement),
+      icon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-mantra.png',
+        label: 'Trì chú',
+      ),
+      selectedIcon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-mantra.png',
+        label: 'Trì chú',
+        selected: true,
+      ),
       label: Text('Trì chú'),
     ),
     NavigationRailDestination(
-      icon: Icon(Icons.chat_bubble),
+      icon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-chat.png',
+        label: 'Tiểu Tịnh',
+      ),
+      selectedIcon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-chat.png',
+        label: 'Tiểu Tịnh',
+        selected: true,
+      ),
       label: Text('Tiểu Tịnh'),
     ),
     NavigationRailDestination(
-      icon: Icon(Icons.settings),
+      icon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-settings.png',
+        label: 'Cài đặt',
+      ),
+      selectedIcon: _LuxuryNavIcon(
+        asset: 'assets/icons/nav-settings.png',
+        label: 'Cài đặt',
+        selected: true,
+      ),
       label: Text('Cài đặt'),
     ),
   ];
@@ -211,15 +314,9 @@ class _MainScaffoldState extends State<MainScaffold> {
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
                                   children: [
-                                    IconTheme(
-                                      data: IconThemeData(
-                                        size: 23,
-                                        color: selected
-                                            ? const Color(0xFFD4AF37)
-                                            : const Color(0xFFD1BFAE),
-                                      ),
-                                      child: destination.icon,
-                                    ),
+                                    selected
+                                        ? destination.selectedIcon
+                                        : destination.icon,
                                     const SizedBox(height: 5),
                                     DefaultTextStyle(
                                       style: TextStyle(
@@ -268,6 +365,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                 minExtendedWidth: isCompactRail ? 128 : 200,
                 groupAlignment: -0.85,
                 backgroundColor: const Color(0xFF2D1A11),
+                useIndicator: false,
                 selectedIconTheme: IconThemeData(
                   color: const Color(0xFFD4AF37),
                   size: isPhone ? 24 : (isCompactRail ? 22 : 26),
