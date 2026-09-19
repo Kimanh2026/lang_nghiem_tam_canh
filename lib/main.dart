@@ -136,43 +136,29 @@ class _LuxuryNavIcon extends StatelessWidget {
     return Semantics(
       image: true,
       label: selected ? '$label, đang chọn' : label,
-      child: AnimatedContainer(
-        key: ValueKey(
-          'nav-${asset.split('/').last.replaceFirst('nav-', '').replaceFirst('.png', '')}-${selected ? 'selected' : 'idle'}',
-        ),
+      child: AnimatedSlide(
         duration: const Duration(milliseconds: 180),
         curve: Curves.easeOutCubic,
-        width: 44,
-        height: 38,
-        padding: EdgeInsets.all(selected ? 5 : 7),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(16),
-          gradient: selected
-              ? const LinearGradient(
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight,
-                  colors: [Color(0xFF624018), Color(0xFF2A160F)],
-                )
-              : null,
-          border: selected
-              ? Border.all(color: const Color(0xB3F4D35E), width: 1)
-              : null,
-          boxShadow: selected
-              ? const [
-                  BoxShadow(
-                    color: Color(0x45F4B942),
-                    blurRadius: 12,
-                    spreadRadius: 1,
-                  ),
-                ]
-              : null,
-        ),
-        child: Opacity(
-          opacity: selected ? 1 : 0.64,
-          child: Image.asset(
-            asset,
-            fit: BoxFit.contain,
-            filterQuality: FilterQuality.high,
+        offset: selected ? const Offset(0, -0.08) : Offset.zero,
+        child: AnimatedScale(
+          duration: const Duration(milliseconds: 180),
+          curve: Curves.easeOutBack,
+          scale: selected ? 1.12 : 1,
+          child: AnimatedOpacity(
+            duration: const Duration(milliseconds: 180),
+            opacity: selected ? 1 : 0.66,
+            child: SizedBox(
+              key: ValueKey(
+                'nav-${asset.split('/').last.replaceFirst('nav-', '').replaceFirst('.png', '')}-${selected ? 'selected' : 'idle'}',
+              ),
+              width: 48,
+              height: 42,
+              child: Image.asset(
+                asset,
+                fit: BoxFit.contain,
+                filterQuality: FilterQuality.high,
+              ),
+            ),
           ),
         ),
       ),
@@ -309,7 +295,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                               onTap: () => _switchTab(index),
                               child: Padding(
                                 padding: const EdgeInsets.symmetric(
-                                  vertical: 10,
+                                  vertical: 8,
                                 ),
                                 child: Column(
                                   mainAxisSize: MainAxisSize.min,
@@ -317,7 +303,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                                     selected
                                         ? destination.selectedIcon
                                         : destination.icon,
-                                    const SizedBox(height: 5),
+                                    const SizedBox(height: 3),
                                     DefaultTextStyle(
                                       style: TextStyle(
                                         fontSize: 10,

@@ -190,22 +190,23 @@ class _MantraScreenState extends State<MantraScreen> {
       body: SingleChildScrollView(
         key: const Key('mantra-page-scroll'),
         padding: EdgeInsets.fromLTRB(
-          isPhone ? 12 : 20,
-          isPhone ? 12 : 20,
-          isPhone ? 12 : 20,
+          isPhone ? 4 : 20,
+          isPhone ? 8 : 20,
+          isPhone ? 4 : 20,
           isPhone ? 20 : (kIsWeb ? 110 : 20),
         ),
         child: Column(
           children: [
             // Mantra text
             Card(
+              margin: EdgeInsets.zero,
               color: const Color(0xFF2A160F),
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(22),
                 side: const BorderSide(color: Color(0x33D4AF37), width: 1),
               ),
               child: Padding(
-                padding: EdgeInsets.all(isPhone ? 12 : 20),
+                padding: EdgeInsets.all(isPhone ? 6 : 20),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -244,7 +245,7 @@ class _MantraScreenState extends State<MantraScreen> {
                         borderRadius: BorderRadius.circular(16),
                         border: Border.all(color: const Color(0x1FD4AF37)),
                       ),
-                      padding: EdgeInsets.all(isPhone ? 12 : 20),
+                      padding: EdgeInsets.all(isPhone ? 8 : 20),
                       child: SingleChildScrollView(
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
