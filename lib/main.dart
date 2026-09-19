@@ -11,6 +11,7 @@ import 'screens/pin_screen.dart';
 import 'screens/settings_screen.dart';
 import 'services/notification_service.dart';
 import 'release_notes.dart';
+import 'theme/app_palette.dart';
 import 'widgets/app_background.dart';
 
 void main() async {
@@ -87,12 +88,12 @@ class LangNghiemApp extends StatelessWidget {
       theme: ThemeData(
         brightness: Brightness.dark,
         scaffoldBackgroundColor: Colors.transparent,
-        cardColor: const Color(0xE6253944),
+        cardColor: AppPalette.glassPanel,
         primaryColor: const Color(0xFFD4AF37),
         colorScheme: const ColorScheme.dark(
           primary: Color(0xFFD4AF37),
           secondary: Color(0xFFF28C28),
-          surface: Color(0xE6253944),
+          surface: AppPalette.glassPanel,
         ),
         textTheme: const TextTheme(
           bodyLarge: TextStyle(color: Color(0xFFFDF5E6)),
@@ -100,9 +101,8 @@ class LangNghiemApp extends StatelessWidget {
         ),
         useMaterial3: true,
       ),
-      builder: (context, child) => AppBackground(
-        child: child ?? const SizedBox.shrink(),
-      ),
+      builder: (context, child) =>
+          AppBackground(child: child ?? const SizedBox.shrink()),
       routes: {
         '/home': (context) => MainScaffold(
           recitationCount: recitationCount,
@@ -279,7 +279,7 @@ class _MainScaffoldState extends State<MainScaffold> {
       key: const Key('desktop-navigation'),
       width: compact ? 174 : 190,
       decoration: const BoxDecoration(
-        color: Color(0xE6253944),
+        color: AppPalette.glassPanel,
         border: Border(right: BorderSide(color: Color(0x33D4AF37), width: 1)),
       ),
       child: SafeArea(
@@ -376,7 +376,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                   padding: const EdgeInsets.fromLTRB(8, 6, 8, kIsWeb ? 56 : 8),
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: const Color(0xE6253944),
+                      color: AppPalette.glassPanel,
                       borderRadius: BorderRadius.circular(24),
                       border: Border.all(color: const Color(0x33D4AF37)),
                     ),

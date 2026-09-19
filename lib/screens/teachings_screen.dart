@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_palette.dart';
+
 class TeachingsScreen extends StatefulWidget {
   const TeachingsScreen({super.key});
 
@@ -465,7 +467,10 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                 gradient: LinearGradient(
                   begin: Alignment.topLeft,
                   end: Alignment.bottomRight,
-                  colors: [Color(0xE6465964), Color(0xE61B2D38)],
+                  colors: [
+                    AppPalette.glassPanelHighlight,
+                    AppPalette.glassPanel,
+                  ],
                 ),
               ),
             ),
@@ -500,7 +505,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                   vertical: isPhone ? 4 : 7,
                 ),
                 decoration: BoxDecoration(
-                  color: const Color(0xE61A0D08),
+                  color: AppPalette.glassPanel,
                   borderRadius: BorderRadius.circular(20),
                   border: Border.all(color: const Color(0x99D4AF37)),
                 ),
@@ -570,7 +575,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                                     setState(() => _selectedChipIndex = index);
                                   }
                                 },
-                                backgroundColor: const Color(0xE61B2D38),
+                                backgroundColor: AppPalette.glassPanel,
                                 selectedColor: const Color(0xFFD4AF37),
                                 padding: EdgeInsets.symmetric(
                                   horizontal: isPhone ? 4 : 12,
@@ -622,7 +627,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                   key: ValueKey('teaching-${item['title']}'),
                   padding: EdgeInsets.all(isPhone ? 16 : 22),
                   decoration: BoxDecoration(
-                    color: const Color(0xE61B2D38),
+                    color: AppPalette.glassPanel,
                     borderRadius: BorderRadius.circular(18),
                     border: Border.all(color: const Color(0x33D4AF37)),
                     boxShadow: const [

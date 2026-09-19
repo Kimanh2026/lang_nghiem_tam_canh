@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../theme/app_palette.dart';
+
 class PinScreen extends StatefulWidget {
   final String? savedPin;
   final ValueNotifier<int> recitationCount;
@@ -137,7 +139,7 @@ class _PinScreenState extends State<PinScreen> {
               constraints: const BoxConstraints(maxWidth: 460),
               padding: const EdgeInsets.fromLTRB(18, 28, 18, 24),
               decoration: BoxDecoration(
-                color: const Color(0xE61B2D38),
+                color: AppPalette.glassPanel,
                 borderRadius: BorderRadius.circular(28),
                 border: Border.all(color: const Color(0x66D4AF37)),
                 boxShadow: const [
@@ -240,7 +242,7 @@ class _PinScreenState extends State<PinScreen> {
         alignment: Alignment.center,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
-          color: const Color(0xE6253944),
+          color: AppPalette.glassPanel,
           border: Border.all(color: const Color(0x1AD4AF37)),
         ),
         child: Text(

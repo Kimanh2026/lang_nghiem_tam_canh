@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/mantra_text.dart';
+import '../theme/app_palette.dart';
 
 class MantraScreen extends StatefulWidget {
   final ValueNotifier<int> recitationCount;
@@ -38,7 +39,7 @@ class _MantraScreenState extends State<MantraScreen> {
       context: context,
       builder: (context) {
         return AlertDialog(
-          backgroundColor: const Color(0xF2253944),
+          backgroundColor: AppPalette.glassPanel,
           title: const Text(
             'Điều chỉnh tiến độ',
             style: TextStyle(color: Color(0xFFD4AF37)),
@@ -110,7 +111,7 @@ class _MantraScreenState extends State<MantraScreen> {
       context: context,
       builder: (BuildContext context) {
         return Dialog(
-          backgroundColor: const Color(0xE61B2D38),
+          backgroundColor: AppPalette.glassPanel,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16.0),
             side: const BorderSide(color: Color(0xFFD4AF37), width: 2),
@@ -180,7 +181,7 @@ class _MantraScreenState extends State<MantraScreen> {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xE61B2D38),
+        backgroundColor: AppPalette.glassPanel,
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
@@ -200,7 +201,7 @@ class _MantraScreenState extends State<MantraScreen> {
             // Mantra text
             Card(
               margin: EdgeInsets.zero,
-              color: const Color(0xE61B2D38),
+              color: AppPalette.glassPanel,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(22),
                 side: const BorderSide(color: Color(0x33D4AF37), width: 1),
@@ -261,7 +262,7 @@ class _MantraScreenState extends State<MantraScreen> {
 
             // Counter Section
             Card(
-              color: const Color(0xE61B2D38),
+              color: AppPalette.glassPanel,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(22),
                 side: const BorderSide(color: Color(0x33D4AF37), width: 1),
@@ -281,7 +282,7 @@ class _MantraScreenState extends State<MantraScreen> {
                               margin: EdgeInsets.only(right: isPhone ? 8 : 20),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: const Color(0xE6253944),
+                                color: AppPalette.glassPanel,
                                 border: Border.all(
                                   color: const Color(0x4DD4AF37),
                                 ),
@@ -345,7 +346,7 @@ class _MantraScreenState extends State<MantraScreen> {
                               margin: EdgeInsets.only(left: isPhone ? 8 : 20),
                               decoration: BoxDecoration(
                                 shape: BoxShape.circle,
-                                color: const Color(0xE6253944),
+                                color: AppPalette.glassPanel,
                                 border: Border.all(
                                   color: const Color(0x4DD4AF37),
                                 ),

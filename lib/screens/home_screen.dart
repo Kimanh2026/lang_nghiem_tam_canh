@@ -2,6 +2,8 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../theme/app_palette.dart';
+
 class HomeScreen extends StatelessWidget {
   final ValueNotifier<int> recitationCount;
   final VoidCallback? onStartChanting;
@@ -42,7 +44,7 @@ class HomeScreen extends StatelessWidget {
       context: context,
       builder: (context) {
         return AlertDialog(
-          backgroundColor: const Color(0xF2253944),
+          backgroundColor: AppPalette.glassPanel,
           title: const Text(
             'Điều chỉnh tiến độ',
             style: TextStyle(color: Color(0xFFD4AF37)),
@@ -102,7 +104,7 @@ class HomeScreen extends StatelessWidget {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xE61B2D38),
+        backgroundColor: AppPalette.glassPanel,
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1.0),
@@ -126,7 +128,7 @@ class HomeScreen extends StatelessWidget {
                 width: isPhone ? double.infinity : 460,
                 padding: EdgeInsets.all(isPhone ? 22 : 28),
                 decoration: BoxDecoration(
-                  color: const Color(0xC91B2D38),
+                  color: AppPalette.glassPanel,
                   borderRadius: BorderRadius.circular(24),
                   border: Border.all(color: const Color(0x52D4AF37)),
                   boxShadow: const [

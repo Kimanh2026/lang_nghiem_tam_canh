@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 
+import 'theme/app_palette.dart';
+
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.4.2+15';
-  static const displayVersion = '1.4.2';
+  static const version = '1.4.3+16';
+  static const displayVersion = '1.4.3';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Trang chủ sáng và thoáng hơn';
+  static const title = 'Lớp kính trong và đồng bộ hơn';
   static const changes = <String>[
-    'Bỏ ảnh hồ sen riêng ở phần thời khóa để nền pha lê toàn app hiện rõ.',
-    'Nội dung được đặt trên lớp xanh than trong suốt, giữ chữ sáng và dễ đọc.',
+    'Giảm độ đậm của các lớp xanh để nền pha lê hiện rõ và sáng hơn.',
+    'Đồng bộ độ trong suốt trên thẻ nội dung, thanh điều hướng và hộp thoại.',
     'Giữ nguyên mã PIN, tiến độ trì chú và toàn bộ dữ liệu cá nhân.',
   ];
 
@@ -27,7 +29,7 @@ Future<void> showCurrentReleaseNotes(BuildContext context) {
         constraints: const BoxConstraints(maxWidth: 460),
         padding: const EdgeInsets.fromLTRB(22, 22, 22, 18),
         decoration: BoxDecoration(
-          color: const Color(0xF2253944),
+          color: AppPalette.glassPanel,
           borderRadius: BorderRadius.circular(24),
           border: Border.all(color: const Color(0x66D4AF37)),
           boxShadow: const [

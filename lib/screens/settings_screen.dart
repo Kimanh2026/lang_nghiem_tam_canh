@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 import '../services/notification_service.dart';
 import '../release_notes.dart';
+import '../theme/app_palette.dart';
 import 'privacy_policy_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -42,7 +43,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     showModalBottomSheet<void>(
       context: context,
       isScrollControlled: true,
-      backgroundColor: const Color(0xF2253944),
+      backgroundColor: AppPalette.glassPanel,
       shape: const RoundedRectangleBorder(
         borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
       ),
@@ -95,7 +96,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     width: double.infinity,
     padding: const EdgeInsets.all(16),
     decoration: BoxDecoration(
-      color: const Color(0xE61B2D38),
+      color: AppPalette.glassPanel,
       borderRadius: BorderRadius.circular(12),
       border: Border.all(color: const Color(0x33D4AF37)),
     ),
@@ -119,7 +120,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: const Color(0xF2253944),
+        backgroundColor: AppPalette.glassPanel,
         title: const Text(
           'Xác nhận xóa',
           style: TextStyle(color: Color(0xFFD4AF37)),
@@ -177,7 +178,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xE61B2D38),
+        backgroundColor: AppPalette.glassPanel,
         elevation: 0,
         bottom: PreferredSize(
           preferredSize: const Size.fromHeight(1),
@@ -281,7 +282,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         decoration: const InputDecoration(
                           labelText: 'Tên để Tiểu Tịnh gọi bạn',
                           filled: true,
-                          fillColor: Color(0xE61B2D38),
+                          fillColor: AppPalette.glassPanel,
                           border: OutlineInputBorder(),
                         ),
                       ),

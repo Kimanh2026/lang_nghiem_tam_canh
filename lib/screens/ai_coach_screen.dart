@@ -6,6 +6,8 @@ import 'dart:math' as math;
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
+import '../theme/app_palette.dart';
+
 class SpinningLotusLoading extends StatefulWidget {
   final double size;
   const SpinningLotusLoading({super.key, this.size = 40.0});
@@ -260,7 +262,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
             fontSize: 18,
           ),
         ),
-        backgroundColor: const Color(0xE61B2D38),
+        backgroundColor: AppPalette.glassPanel,
         elevation: 0,
         actions: [
           IconButton(
@@ -331,7 +333,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                   hintText: 'Nhập câu hỏi...',
                   hintStyle: const TextStyle(color: Color(0xFFF4E9DC)),
                   filled: true,
-                  fillColor: const Color(0xE61B2D38),
+                  fillColor: AppPalette.glassPanel,
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(8.0),
                     borderSide: const BorderSide(color: Color(0x4DD4AF37)),
@@ -389,7 +391,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                 right: isAi ? (isPhone ? 8 : 40) : 0,
               ),
               decoration: BoxDecoration(
-                color: isAi ? const Color(0xE6253944) : null,
+                color: isAi ? AppPalette.glassPanel : null,
                 gradient: isAi
                     ? null
                     : const LinearGradient(

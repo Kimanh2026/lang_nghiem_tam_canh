@@ -7,6 +7,6 @@ void main() {
     final source = File('lib/screens/home_screen.dart').readAsStringSync();
 
     expect(source, isNot(contains('assets/images/lotus-dawn.png')));
-    expect(source, contains('Color(0xC91B2D38)'));
+    expect(source, contains('AppPalette.glassPanel'));
   });
 }

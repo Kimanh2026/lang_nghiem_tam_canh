@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../theme/app_palette.dart';
+
 class PrivacyPolicyScreen extends StatelessWidget {
   const PrivacyPolicyScreen({super.key});
 
@@ -7,8 +9,15 @@ class PrivacyPolicyScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Chính Sách Bảo Mật', style: TextStyle(color: Color(0xFFD4AF37), fontWeight: FontWeight.bold, fontSize: 18)),
-        backgroundColor: const Color(0xE61B2D38),
+        title: const Text(
+          'Chính Sách Bảo Mật',
+          style: TextStyle(
+            color: Color(0xFFD4AF37),
+            fontWeight: FontWeight.bold,
+            fontSize: 18,
+          ),
+        ),
+        backgroundColor: AppPalette.glassPanel,
         iconTheme: const IconThemeData(color: Color(0xFFD4AF37)),
         elevation: 0,
         bottom: PreferredSize(
