@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../theme/app_palette.dart';
+import '../widgets/scroll_away_page.dart';
 
 class HomeScreen extends StatelessWidget {
   final ValueNotifier<int> recitationCount;
@@ -93,24 +94,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final isPhone = MediaQuery.sizeOf(context).width < 600;
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const Text(
-          'Lăng Nghiêm Tâm Cảnh',
-          style: TextStyle(
-            color: Color(0xFFD4AF37),
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
-        backgroundColor: AppPalette.glassPanel,
-        elevation: 0,
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(1.0),
-          child: Container(color: const Color(0x33D4AF37), height: 1.0),
-        ),
-      ),
+    return ScrollAwayPage(
+      title: 'Lăng Nghiêm Tâm Cảnh',
       body: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(
           isPhone ? 12 : 20,
@@ -125,55 +110,58 @@ class HomeScreen extends StatelessWidget {
               constraints: const BoxConstraints(minHeight: 240),
               alignment: Alignment.centerLeft,
               child: Container(
+                constraints: const BoxConstraints(maxWidth: 480),
                 width: isPhone ? double.infinity : 460,
-                padding: EdgeInsets.all(isPhone ? 22 : 28),
-                decoration: BoxDecoration(
-                  color: AppPalette.glassPanel,
-                  borderRadius: BorderRadius.circular(24),
-                  border: Border.all(color: const Color(0x52D4AF37)),
-                  boxShadow: const [
-                    BoxShadow(
-                      color: Color(0x2E10202A),
-                      blurRadius: 26,
-                      offset: Offset(0, 12),
-                    ),
-                  ],
-                ),
-                child: Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  mainAxisSize: MainAxisSize.min,
-                  children: [
-                    const Text(
-                      'THỜI KHÓA HÔM NAY',
-                      style: TextStyle(
-                        color: Color(0xFFFFDF9E),
-                        fontSize: 12,
-                        letterSpacing: 1.5,
-                        fontWeight: FontWeight.w700,
+                child: Padding(
+                  padding: EdgeInsets.all(isPhone ? 22 : 28),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Text(
+                        'THỜI KHÓA HÔM NAY',
+                        style: TextStyle(
+                          color: Color(0xFFFFDF9E),
+                          fontSize: 12,
+                          letterSpacing: 1.5,
+                          fontWeight: FontWeight.w700,
+                          shadows: [
+                            Shadow(color: Color(0xB3122330), blurRadius: 8),
+                          ],
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 18),
-                    const Text(
-                      'Trở về\nvới tâm an',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 30,
-                        height: 1.15,
-                        fontWeight: FontWeight.w700,
+                      const SizedBox(height: 18),
+                      const Text(
+                        'Trở về\nvới tâm an',
+                        style: TextStyle(
+                          color: Colors.white,
+                          fontSize: 30,
+                          height: 1.15,
+                          fontWeight: FontWeight.w700,
+                          shadows: [
+                            Shadow(color: Color(0xCC10202A), blurRadius: 10),
+                          ],
+                        ),
                       ),
-                    ),
-                    const SizedBox(height: 12),
-                    const Text(
-                      'Dành một khoảng lặng\nđể trì tụng Chú Lăng Nghiêm.',
-                      style: TextStyle(color: Color(0xFFFFF3DF), height: 1.5),
-                    ),
-                    const SizedBox(height: 20),
-                    FilledButton.icon(
-                      onPressed: onStartChanting,
-                      icon: const Icon(Icons.play_arrow),
-                      label: const Text('Bắt đầu trì chú'),
-                    ),
-                  ],
+                      const SizedBox(height: 12),
+                      const Text(
+                        'Dành một khoảng lặng\nđể trì tụng Chú Lăng Nghiêm.',
+                        style: TextStyle(
+                          color: Color(0xFFFFF3DF),
+                          height: 1.5,
+                          shadows: [
+                            Shadow(color: Color(0xCC10202A), blurRadius: 8),
+                          ],
+                        ),
+                      ),
+                      const SizedBox(height: 20),
+                      FilledButton.icon(
+                        onPressed: onStartChanting,
+                        icon: const Icon(Icons.play_arrow),
+                        label: const Text('Bắt đầu trì chú'),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),

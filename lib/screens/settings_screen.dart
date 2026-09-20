@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import '../services/notification_service.dart';
 import '../release_notes.dart';
 import '../theme/app_palette.dart';
+import '../widgets/scroll_away_page.dart';
 import 'privacy_policy_screen.dart';
 
 class SettingsScreen extends StatefulWidget {
@@ -167,24 +168,8 @@ class _SettingsScreenState extends State<SettingsScreen> {
         .upcomingObservances(days: 90)
         .take(5)
         .toList();
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const Text(
-          'Cài Đặt',
-          style: TextStyle(
-            color: Color(0xFFD4AF37),
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
-        backgroundColor: AppPalette.glassPanel,
-        elevation: 0,
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(1),
-          child: Container(color: const Color(0x33D4AF37), height: 1),
-        ),
-      ),
+    return ScrollAwayPage(
+      title: 'Cài Đặt',
       body: SingleChildScrollView(
         padding: EdgeInsets.fromLTRB(
           MediaQuery.sizeOf(context).width < 600 ? 12 : 20,

@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.4.3+16';
-  static const displayVersion = '1.4.3';
+  static const version = '1.5.0+17';
+  static const displayVersion = '1.5.0';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Lớp kính trong và đồng bộ hơn';
+  static const title = 'Nền sống động, thanh tĩnh';
   static const changes = <String>[
-    'Giảm độ đậm của các lớp xanh để nền pha lê hiện rõ và sáng hơn.',
-    'Đồng bộ độ trong suốt trên thẻ nội dung, thanh điều hướng và hộp thoại.',
-    'Giữ nguyên mã PIN, tiến độ trì chú và toàn bộ dữ liệu cá nhân.',
+    'Bỏ lớp xanh ở phần thời khóa để nền pha lê được phô bày trọn vẹn.',
+    'Thanh tiêu đề tự thu gọn khi cuộn, nhường thêm không gian đọc.',
+    'Thêm chuyển động nền, ánh nến và hạt sáng nhẹ nhàng, không gây xao động.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

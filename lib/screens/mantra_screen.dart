@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/mantra_text.dart';
 import '../theme/app_palette.dart';
+import '../widgets/scroll_away_page.dart';
 
 class MantraScreen extends StatefulWidget {
   final ValueNotifier<int> recitationCount;
@@ -170,24 +171,8 @@ class _MantraScreenState extends State<MantraScreen> {
   @override
   Widget build(BuildContext context) {
     final isPhone = MediaQuery.sizeOf(context).width < 600;
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const Text(
-          'Trì Chú & Đếm Biến',
-          style: TextStyle(
-            color: Color(0xFFD4AF37),
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
-        ),
-        backgroundColor: AppPalette.glassPanel,
-        elevation: 0,
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(1.0),
-          child: Container(color: const Color(0x33D4AF37), height: 1.0),
-        ),
-      ),
+    return ScrollAwayPage(
+      title: 'Trì Chú & Đếm Biến',
       body: SingleChildScrollView(
         key: const Key('mantra-page-scroll'),
         padding: EdgeInsets.fromLTRB(

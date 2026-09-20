@@ -5,7 +5,7 @@ import 'package:lang_nghiem_tam_canh/release_notes.dart';
 void main() {
   test('release announcement is shown once per version', () {
     expect(AppReleaseNotes.shouldAnnounce(null), isTrue);
-    expect(AppReleaseNotes.shouldAnnounce('1.4.2+15'), isTrue);
+    expect(AppReleaseNotes.shouldAnnounce('1.4.3+16'), isTrue);
     expect(AppReleaseNotes.shouldAnnounce(AppReleaseNotes.version), isFalse);
   });
 
@@ -27,7 +27,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('ỨNG DỤNG ĐÃ ĐƯỢC CẬP NHẬT'), findsOneWidget);
-    expect(find.text('Phiên bản 1.4.3'), findsOneWidget);
+    expect(find.text('Phiên bản 1.5.0'), findsOneWidget);
     for (final change in AppReleaseNotes.changes) {
       expect(find.text(change), findsOneWidget);
     }

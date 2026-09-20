@@ -7,6 +7,7 @@ import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import '../theme/app_palette.dart';
+import '../widgets/scroll_away_page.dart';
 
 class SpinningLotusLoading extends StatefulWidget {
   final double size;
@@ -251,32 +252,16 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
   @override
   Widget build(BuildContext context) {
     final isPhone = MediaQuery.sizeOf(context).width < 600;
-    return Scaffold(
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        title: const Text(
-          'Tiểu Tịnh',
-          style: TextStyle(
-            color: Color(0xFFD4AF37),
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
-          ),
+    return ScrollAwayPage(
+      title: 'Tiểu Tịnh',
+      actions: [
+        IconButton(
+          icon: const Icon(Icons.delete_outline, color: Color(0xFFD4AF37)),
+          tooltip: 'Xóa lịch sử chat',
+          onPressed: _onClearChatTriggered,
         ),
-        backgroundColor: AppPalette.glassPanel,
-        elevation: 0,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.delete_outline, color: Color(0xFFD4AF37)),
-            tooltip: 'Xóa lịch sử chat',
-            onPressed: _onClearChatTriggered,
-          ),
-          const SizedBox(width: 8),
-        ],
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(1.0),
-          child: Container(color: const Color(0x33D4AF37), height: 1.0),
-        ),
-      ),
+        const SizedBox(width: 8),
+      ],
       body: Padding(
         padding: EdgeInsets.fromLTRB(
           isPhone ? 10 : 20,
