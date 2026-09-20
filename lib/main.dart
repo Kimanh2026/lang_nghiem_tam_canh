@@ -22,8 +22,18 @@ void main() async {
     print("No .env file found. Using fallback keys.");
   }
 
-  await NotificationService.instance.initialize();
-  await NotificationService.instance.disableLegacyReminders();
+  // Notification support must never block the app from opening on mobile web.
+  // Older installed PWAs can expose a partially available notification API.
+  try {
+    await NotificationService.instance.initialize().timeout(
+      const Duration(seconds: 3),
+    );
+    await NotificationService.instance.disableLegacyReminders().timeout(
+      const Duration(seconds: 3),
+    );
+  } catch (error) {
+    debugPrint('Notification startup skipped: $error');
+  }
 
   final prefs = await SharedPreferences.getInstance();
   final int initialCount =

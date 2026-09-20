@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.1+18';
-  static const displayVersion = '1.5.1';
+  static const version = '1.5.2+19';
+  static const displayVersion = '1.5.2';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Ánh nến lung linh, chữ rõ nét';
+  static const title = 'Khai thị mới và mobile ổn định hơn';
   static const changes = <String>[
-    'Hạt sáng trôi nhẹ như tuyết, lấp lánh trên nền pha lê.',
-    'Ngọn lửa đung đưa dịu dàng, ánh nến sáng ấm theo nhịp.',
-    'Lời mời thời khóa rõ nét hơn với chữ xanh than và vàng đồng trên nền sáng.',
+    'Bổ sung nguyên văn cuộc đời và đạo nghiệp của Hòa thượng Phổ Quang.',
+    'Hạt sáng dày và rõ hơn, vẫn rơi chậm để giữ cảm giác an tĩnh.',
+    'Tối ưu hiệu ứng và khởi động để app mở ổn định hơn trên điện thoại.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

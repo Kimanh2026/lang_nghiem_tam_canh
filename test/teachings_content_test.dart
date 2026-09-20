@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lang_nghiem_tam_canh/screens/teachings_screen.dart';
@@ -44,7 +46,10 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('Hòa Thượng Phổ Quang'), findsOneWidget);
-    expect(find.text('Cột Mốc 36.000 Biến & Đài Sen Nâng Đỡ'), findsOneWidget);
+    expect(
+      find.text('Cuộc Đời Và Đạo Nghiệp Của Hòa Thượng Phổ Quang'),
+      findsOneWidget,
+    );
     expect(find.text('Thời Đại “Vô Cùng Nguy Ngập”'), findsNothing);
 
     final target = find.text('Trì Chú Cần Chí Thành Chuyên Nhất');
@@ -59,5 +64,15 @@ void main() {
           .first,
     );
     expect(target, findsOneWidget);
+  });
+
+  test('Phổ Quang biography keeps the supplied key passages verbatim', () {
+    final source = File('lib/screens/teachings_screen.dart').readAsStringSync();
+
+    expect(source, contains('Ngài sinh vào ngày 8 tháng 4 năm 1901'));
+    expect(source, contains('Học kinh bằng "3 câu đổi 1 miếng cơm"'));
+    expect(source, contains('Đục 5.000 bậc thang đá'));
+    expect(source, contains('Kỷ lục 5,6 triệu biến Lăng Nghiêm'));
+    expect(source, contains('Ngài vừa đi vừa trì tụng 108 biến Lăng Nghiêm'));
   });
 }

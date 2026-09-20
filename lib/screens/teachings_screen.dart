@@ -31,6 +31,50 @@ Không phải tôi cố ý nói những lời này để hù dọa quý vị. Đ
 
 Dẫu có giảng nhiều năm mà vẫn không thể giảng hết những điểm hay của thần chú này. Tất cả 10 phương chư Phật đều sanh xuất từ thần chú này, nên có thể gọi là thần chú Lăng Nghiêm là mẹ của chư Phật.''',
     },
+    {
+      'title': 'Cuộc Đời Và Đạo Nghiệp Của Hòa Thượng Phổ Quang',
+      'meta': 'Hòa Thượng Phổ Quang',
+      'preview':
+          '''Ngài sinh vào ngày 8 tháng 4 năm 1901 - là một trong những câu chuyện huyền thoại sống động nhất của Phật giáo đương đại. Ngài được xem là bậc cao tăng đại khổ hạnh ẩn tu tại núi Chung Nam, biểu tượng sống của sức mạnh Thần Chú Lăng Nghiêm và tinh hoa võ học Thiếu Lâm.
+
+Dưới đây là tóm tắt những nội dung đắt giá nhất về cuộc đời và đạo nghiệp của Ngài:
+
+1. Thân thế ly kỳ và phương pháp thọ giáo độc nhất
+
+• Mồ côi từ nhỏ, bén duyên cửa Phật: Ngài sinh năm 1901, mới 8 tháng tuổi thì cha mẹ đều qua đời giữa thời loạn lạc. Ngài được một vị cao tăng đồng hương đưa về chùa Thiếu Lâm nuôi dưỡng và đặt pháp hiệu là Phổ Quang.
+
+• Học kinh bằng "3 câu đổi 1 miếng cơm": Khi Ngài vừa biết nói, sư phụ đã dạy Ngài học thuộc Chú Lăng Nghiêm. Phương pháp dạy vô cùng nghiêm khắc: mỗi ngày học thuộc 3 câu chú mới được ăn một miếng cơm. Dù hoàn toàn không biết chữ văn tự, đến năm 15 tuổi Ngài đã thuộc lòng vô số kinh điển và thần chú Phật giáo, bất kể bắt đầu từ đoạn nào cũng đọc lại không sai một từ.
+
+• Thành tựu 47 tuyệt kỹ Thiếu Lâm: Ngài được sư phụ truyền dạy trọn vẹn 47 môn tuyệt kỷ võ học Thiếu Lâm (Kim Cang Tráo, Thiết Bố Sam, Thiết Sa Chưởng, Đồng Tử Công...).
+
+• Lời dặn ẩn tu trước tuổi 60: Năm 1927, trước khi viên tịch, sư phụ dặn Ngài trước 60 tuổi tuyệt đối không giao du với người thế tục để bảo toàn công phu và tránh bị kẻ ác tổn hại.
+
+2. Hành trình ẩn tu thâm sơn và sự cảm hóa muôn loài
+
+• Thuần hóa thú dữ tại núi Trường Bạch: Năm 22 tuổi, Ngài cùng sư đệ vào núi Trường Bạch khổ luyện. Tại đây, Ngài đã cảm hóa một con hổ dữ bằng cách chia sẻ thức ăn và cho hổ nằm bên cạnh nghe tụng 108 biến Chú Lăng Nghiêm mỗi ngày suốt 8 năm cho đến khi nó chết già. Nhiều loài tinh tinh, vượn trắng cũng quy y, biết quét cổng, hái trái cây và giúp Ngài thổi lửa.
+
+• Khổ hạnh tại núi Chung Nam: Ngài chuyển sang núi Chung Nam (ở độ cao hơn 3.000m) – nơi nổi tiếng là địa linh ẩn tu của các bậc đắc đạo.
+
+• Triết lý "Nhất thiết duy tâm": Những năm tháng đầu trên núi không có lương thực, Ngài ăn lá cây vào mùa hè và vỏ cây vào mùa đông giã thành bột pha nước lạnh. Ngài dạy: "Bạn nói nó là lá cây vỏ cây thì nó là lá cây vỏ cây, bạn nói nó là bột mì thì nó chính là bột mì".
+
+3. Tự tay xây dựng Quan Âm Cổ Động bằng một chiếc cuốc
+
+• Đục 5.000 bậc thang đá: Nhận thấy Quan Âm Cổ Động là nơi từ trường tâm linh tối ưu nhưng không có đường lên, Ngài đã tự tay đục đẽo hơn 5.000 bậc thang đá băng qua vách núi hiểm trở.
+
+• Dựng chùa làm chỗ tựa cho hậu thế: Dù chỉ có một chiếc cuốc và đôi tay trần, Ngài đã san phẳng vách núi, tự xẻ đá đập gạch xây nên Đại Hùng Bảo Điện, Viên Thông Điện cùng hơn 60 gian nhà đá để làm đạo tràng cho người tu hành tương lai. Ngài còn tự bỏ tiền mua màu về nhắm mắt quán tưởng để vẽ 32 bức tượng Bồ Tát Quán Thế Âm lên tường đất.
+
+4. Kỷ lục trì tụng Chú Lăng Nghiêm và những hiện tượng kỳ diệu
+
+• Kỷ lục 5,6 triệu biến Lăng Nghiêm: Ngài dành trọn hơn 100 năm cuộc đời chuyên trì Thần Chú Lăng Nghiêm. Trung bình mỗi ngày Ngài tụng 108 biến (hoặc 210 biến mỗi 10 ngày), tổng cộng đã tích lũy hơn 5,6 triệu biến – một con số kỷ lục trong lịch sử Phật giáo.
+
+• Thân thể kim cương bất hoại kỳ diệu:
+
+  • Diện mạo trẻ thơ: Ở tuổi 120+, da dẻ Ngài vẫn hồng hào, mắt sáng tai tường, giọng nói vang dội như chuông. Răng của Ngài đã rụng và mọc mới lại 3 lần, sở hữu 36 chiếc răng trắng đều.
+
+  • Tự tỏa hương chiên đàn: Dù hầu như không tắm rửa hay thay giặt thường xuyên, thân thể và quần áo Ngài luôn tỏa ra mùi hương hoa đàn thanh nhã. Chuỗi hạt được Ngài cầm xoa qua lập tức đượm mùi đàn hương ngạt ngào.
+
+  • Cơ bắp như đồng sắt: Dù chỉ ăn bắp cải, đậu phụ và muối, cơ bắp Ngài vẫn cứng chắc như đá. Đêm đến, hầu như Ngài không ngủ, Ngài vừa đi vừa trì tụng 108 biến Lăng Nghiêm''',
+    },
     // --- KHAI THỊ CŨ ---
     {
       'title': 'Cột Mốc 36.000 Biến & Đài Sen Nâng Đỡ',

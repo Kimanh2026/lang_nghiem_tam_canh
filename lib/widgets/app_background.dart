@@ -1,5 +1,4 @@
 import 'dart:math' as math;
-import 'dart:ui' as ui;
 
 import 'package:flutter/material.dart';
 
@@ -16,10 +15,6 @@ class _AppBackgroundState extends State<AppBackground>
     with SingleTickerProviderStateMixin {
   late final AnimationController _controller;
   bool _reduceMotion = false;
-  ImageStream? _imageStream;
-  ImageStreamListener? _imageListener;
-  ImageInfo? _imageInfo;
-  String? _imagePath;
 
   @override
   void initState() {
@@ -33,28 +28,6 @@ class _AppBackgroundState extends State<AppBackground>
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    final isPhone = MediaQuery.sizeOf(context).width < 600;
-    final path = isPhone
-        ? 'assets/images/app-background-mobile-v1.png'
-        : 'assets/images/app-background-desktop-v1.png';
-    if (_imagePath != path) {
-      _imagePath = path;
-      if (_imageListener != null) _imageStream?.removeListener(_imageListener!);
-      _imageStream = AssetImage(
-        path,
-      ).resolve(createLocalImageConfiguration(context));
-      _imageListener = ImageStreamListener((info, _) {
-        if (!mounted) {
-          info.dispose();
-          return;
-        }
-        setState(() {
-          _imageInfo?.dispose();
-          _imageInfo = info;
-        });
-      });
-      _imageStream!.addListener(_imageListener!);
-    }
     final reduceMotion =
         MediaQuery.maybeOf(context)?.disableAnimations ?? false;
     if (_reduceMotion == reduceMotion) return;
@@ -69,8 +42,6 @@ class _AppBackgroundState extends State<AppBackground>
 
   @override
   void dispose() {
-    if (_imageListener != null) _imageStream?.removeListener(_imageListener!);
-    _imageInfo?.dispose();
     _controller.dispose();
     super.dispose();
   }
@@ -103,12 +74,16 @@ class _AppBackgroundState extends State<AppBackground>
                           child: Transform.scale(
                             key: const Key('ambient-background-transform'),
                             scale: scale,
-                            child: CustomPaint(
-                              painter: _CandlePainter(
-                                image: _imageInfo?.image,
-                                phase: phase,
-                                isPhone: isPhone,
-                              ),
+                            child: Image.asset(
+                              isPhone
+                                  ? 'assets/images/app-background-mobile-v1.png'
+                                  : 'assets/images/app-background-desktop-v1.png',
+                              fit: BoxFit.cover,
+                              alignment: isPhone
+                                  ? Alignment.bottomCenter
+                                  : Alignment.centerRight,
+                              filterQuality: FilterQuality.high,
+                              gaplessPlayback: true,
                             ),
                           ),
                         ),
@@ -177,21 +152,73 @@ class _AmbientLightPainter extends CustomPainter {
   @override
   void paint(Canvas canvas, Size size) {
     final phase = progress * math.pi * 2;
-    for (var index = 0; index < _sparkles.length * 2; index++) {
+    final candleCenter = _candlePoint(size, isPhone);
+    final flicker = 0.5 + 0.5 * math.sin(phase * 17);
+    final sway = math.sin(phase * 12) * 3.2 + math.sin(phase * 19) * 1.2;
+    final glowRadius = (isPhone ? 54.0 : 72.0) + flicker * 16;
+    final glowRect = Rect.fromCircle(center: candleCenter, radius: glowRadius);
+    canvas.drawCircle(
+      candleCenter,
+      glowRadius,
+      Paint()
+        ..shader = RadialGradient(
+          colors: [
+            Color.fromARGB((46 + flicker * 38).round(), 255, 220, 126),
+            const Color(0x1CFFD787),
+            Colors.transparent,
+          ],
+          stops: const [0, 0.42, 1],
+        ).createShader(glowRect),
+    );
+
+    final flameHeight = isPhone ? 26.0 : 34.0;
+    final flameWidth = isPhone ? 8.0 : 10.0;
+    final flameBase = candleCenter + Offset(0, flameHeight * 0.36);
+    final flameTip = candleCenter + Offset(sway, -flameHeight * 0.64);
+    final flame = Path()
+      ..moveTo(flameBase.dx, flameBase.dy)
+      ..cubicTo(
+        candleCenter.dx - flameWidth,
+        candleCenter.dy + flameHeight * 0.05,
+        flameTip.dx - flameWidth * 0.42,
+        flameTip.dy + flameHeight * 0.26,
+        flameTip.dx,
+        flameTip.dy,
+      )
+      ..cubicTo(
+        flameTip.dx + flameWidth * 0.52,
+        flameTip.dy + flameHeight * 0.28,
+        candleCenter.dx + flameWidth,
+        candleCenter.dy + flameHeight * 0.05,
+        flameBase.dx,
+        flameBase.dy,
+      )
+      ..close();
+    canvas.drawPath(
+      flame,
+      Paint()
+        ..shader = const LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [Color(0xECFFFFFF), Color(0xF8FFE08A), Color(0xEFFF9A36)],
+        ).createShader(flame.getBounds()),
+    );
+
+    for (var index = 0; index < _sparkles.length * 3; index++) {
       final sparkle = _sparkles[index % _sparkles.length];
       final sparklePhase = phase * (2 + index % 3) + index * 1.31;
       final twinkle = 0.5 + 0.5 * math.sin(sparklePhase);
       // Full-height travel, with invisible wrap outside the viewport.
       final travel =
-          (sparkle.dy + progress + (index ~/ _sparkles.length) * 0.47) % 1;
+          (sparkle.dy + progress + (index ~/ _sparkles.length) * 0.31) % 1;
       final fade = math.min(1.0, math.min(travel, 1 - travel) * 16);
       final center = Offset(
-        ((sparkle.dx + (index ~/ _sparkles.length) * 0.31) % 1) * size.width +
+        ((sparkle.dx + (index ~/ _sparkles.length) * 0.23) % 1) * size.width +
             math.sin(phase * 2 + index) * (isPhone ? 12 : 22),
         travel * (size.height + 32) - 16,
       );
-      final radius = 1.1 + twinkle * (index % 3 == 0 ? 2.0 : 1.0);
-      final alpha = ((85 + twinkle * 145) * fade).round();
+      final radius = 1.25 + twinkle * (index % 3 == 0 ? 2.35 : 1.25);
+      final alpha = ((112 + twinkle * 138) * fade).round().clamp(0, 255);
       final halo = Paint()
         ..color = Color.fromARGB((alpha * 0.32).round(), 255, 239, 198);
       final core = Paint()..color = Color.fromARGB(alpha, 255, 247, 220);
@@ -224,112 +251,19 @@ class _AmbientLightPainter extends CustomPainter {
   @override
   bool shouldRepaint(covariant _AmbientLightPainter oldDelegate) =>
       oldDelegate.progress != progress || oldDelegate.isPhone != isPhone;
-}
 
-/// Warps only the photographed flame, keeping its wick and the crystal still.
-/// Image-space coordinates follow the same cover fit at every viewport size.
-class _CandlePainter extends CustomPainter {
-  final ui.Image? image;
-  final double phase;
-  final bool isPhone;
-  const _CandlePainter({
-    required this.image,
-    required this.phase,
-    required this.isPhone,
-  });
-
-  @override
-  void paint(Canvas canvas, Size size) {
-    final source = image;
-    if (source == null) return;
-    final w = source.width.toDouble();
-    final h = source.height.toDouble();
-    final cover = math.max(size.width / w, size.height / h);
-    final dx = (size.width - w * cover) * (isPhone ? 0.5 : 1.0);
-    final dy = (size.height - h * cover) * (isPhone ? 1.0 : 0.5);
-    canvas.save();
-    canvas.clipRect(Offset.zero & size);
-    canvas.translate(dx, dy);
-    canvas.scale(cover);
-    canvas.drawImage(
-      source,
-      Offset.zero,
-      Paint()..filterQuality = FilterQuality.medium,
+  Offset _candlePoint(Size viewport, bool phone) {
+    final sourceSize = phone ? const Size(946, 2048) : const Size(1673, 941);
+    final sourcePoint = phone
+        ? const Offset(473, 1437)
+        : const Offset(1354, 574);
+    final scale = math.max(
+      viewport.width / sourceSize.width,
+      viewport.height / sourceSize.height,
     );
-    final region = isPhone
-        ? Rect.fromLTRB(w * 0.463, h * 0.650, w * 0.537, h * 0.737)
-        : Rect.fromLTRB(w * 0.786, h * 0.528, w * 0.835, h * 0.649);
-    const columns = 16;
-    const rows = 24;
-    final positions = <Offset>[];
-    final textures = <Offset>[];
-    final indices = <int>[];
-    final sway = math.sin(phase * 12) * 0.70 + math.sin(phase * 19) * 0.30;
-    for (var y = 0; y <= rows; y++) {
-      for (var x = 0; x <= columns; x++) {
-        final u = x / columns;
-        final v = y / rows;
-        final original = Offset(
-          region.left + region.width * u,
-          region.top + region.height * v,
-        );
-        // Zero displacement at every edge prevents seams and keeps the wick anchored.
-        final envelope =
-            math.pow(math.sin(math.pi * u), 2) * math.sin(math.pi * v);
-        positions.add(
-          original +
-              Offset(
-                sway * region.width * 0.10 * envelope * (1 - v),
-                math.sin(phase * 17) * region.height * 0.015 * envelope,
-              ),
-        );
-        textures.add(original);
-        if (x < columns && y < rows) {
-          final a = y * (columns + 1) + x;
-          final b = a + columns + 1;
-          indices.addAll([a, a + 1, b, a + 1, b + 1, b]);
-        }
-      }
-    }
-    final mesh = ui.Vertices(
-      ui.VertexMode.triangles,
-      positions,
-      textureCoordinates: textures,
-      indices: indices,
-    );
-    final shader = ui.ImageShader(
-      source,
-      TileMode.clamp,
-      TileMode.clamp,
-      Matrix4.identity().storage,
-      filterQuality: FilterQuality.medium,
-    );
-    canvas.drawVertices(mesh, BlendMode.srcOver, Paint()..shader = shader);
-    mesh.dispose();
-    shader.dispose();
-    final center = Offset(region.center.dx, region.top + region.height * 0.58);
-    final glow = Rect.fromCircle(center: center, radius: region.height * 0.65);
-    canvas.drawOval(
-      glow,
-      Paint()
-        ..shader = RadialGradient(
-          colors: [
-            Color.fromARGB(
-              (18 + 12 * (0.5 + 0.5 * math.sin(phase * 17))).round(),
-              255,
-              210,
-              112,
-            ),
-            Colors.transparent,
-          ],
-        ).createShader(glow),
-    );
-    canvas.restore();
+    final dx = (viewport.width - sourceSize.width * scale) * (phone ? 0.5 : 1);
+    final dy =
+        (viewport.height - sourceSize.height * scale) * (phone ? 1 : 0.5);
+    return Offset(dx + sourcePoint.dx * scale, dy + sourcePoint.dy * scale);
   }
-
-  @override
-  bool shouldRepaint(covariant _CandlePainter oldDelegate) =>
-      oldDelegate.image != image ||
-      oldDelegate.phase != phase ||
-      oldDelegate.isPhone != isPhone;
 }

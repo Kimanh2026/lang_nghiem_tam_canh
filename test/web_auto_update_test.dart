@@ -9,8 +9,8 @@ void main() {
     final headers = File('web/_headers').readAsStringSync();
     final pubspec = File('pubspec.yaml').readAsStringSync();
 
-    expect(pubspec, contains('version: 1.5.1+18'));
-    expect(index, contains("const currentAppBuild = '1.5.1+18'"));
+    expect(pubspec, contains('version: 1.5.2+19'));
+    expect(index, contains("const currentAppBuild = '1.5.2+19'"));
     expect(index, contains('version.json?check=\${Date.now()}'));
     expect(index, contains("window.addEventListener('focus'"));
     expect(index, contains("window.addEventListener('pageshow'"));

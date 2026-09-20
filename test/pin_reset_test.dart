@@ -23,7 +23,7 @@ void main() {
     );
 
     expect(find.text('Nhập mã PIN để mở app'), findsOneWidget);
-    await tester.tap(find.text('Quên mã PIN?'));
+    await tester.tap(find.text('Đặt lại mã PIN để mở app'));
     await tester.pumpAndSettle();
 
     expect(find.text('Đặt lại mã PIN?'), findsOneWidget);

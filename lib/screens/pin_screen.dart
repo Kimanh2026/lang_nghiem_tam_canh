@@ -200,9 +200,28 @@ class _PinScreenState extends State<PinScreen> {
                   ),
                   if (!_isSetupMode) ...[
                     const SizedBox(height: 20),
-                    TextButton(
+                    const Text(
+                      'Nếu mã PIN cũ không mở được app, bạn có thể đặt lại. Tiến độ trì chú và dữ liệu khác vẫn được giữ nguyên.',
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        color: Color(0xFFE8D9CC),
+                        fontSize: 13,
+                        height: 1.4,
+                      ),
+                    ),
+                    const SizedBox(height: 12),
+                    OutlinedButton.icon(
                       onPressed: _resetPin,
-                      child: const Text('Quên mã PIN?'),
+                      icon: const Icon(Icons.lock_reset),
+                      label: const Text('Đặt lại mã PIN để mở app'),
+                      style: OutlinedButton.styleFrom(
+                        foregroundColor: const Color(0xFFF4D35E),
+                        side: const BorderSide(color: Color(0xFFD4AF37)),
+                        padding: const EdgeInsets.symmetric(
+                          horizontal: 18,
+                          vertical: 12,
+                        ),
+                      ),
                     ),
                   ],
                   const SizedBox(height: 42),
