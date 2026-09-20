@@ -121,12 +121,12 @@ class HomeScreen extends StatelessWidget {
                       const Text(
                         'THỜI KHÓA HÔM NAY',
                         style: TextStyle(
-                          color: Color(0xFFFFDF9E),
+                          color: Color(0xFF765018),
                           fontSize: 12,
                           letterSpacing: 1.5,
                           fontWeight: FontWeight.w700,
                           shadows: [
-                            Shadow(color: Color(0xB3122330), blurRadius: 8),
+                            Shadow(color: Color(0xCCFFFFFF), blurRadius: 8),
                           ],
                         ),
                       ),
@@ -134,12 +134,12 @@ class HomeScreen extends StatelessWidget {
                       const Text(
                         'Trở về\nvới tâm an',
                         style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 30,
+                          color: Color(0xFF183442),
+                          fontSize: 34,
                           height: 1.15,
-                          fontWeight: FontWeight.w700,
+                          fontWeight: FontWeight.w800,
                           shadows: [
-                            Shadow(color: Color(0xCC10202A), blurRadius: 10),
+                            Shadow(color: Color(0xDDFFFFFF), blurRadius: 12),
                           ],
                         ),
                       ),
@@ -147,10 +147,12 @@ class HomeScreen extends StatelessWidget {
                       const Text(
                         'Dành một khoảng lặng\nđể trì tụng Chú Lăng Nghiêm.',
                         style: TextStyle(
-                          color: Color(0xFFFFF3DF),
+                          color: Color(0xFF243D49),
+                          fontSize: 16,
+                          fontWeight: FontWeight.w600,
                           height: 1.5,
                           shadows: [
-                            Shadow(color: Color(0xCC10202A), blurRadius: 8),
+                            Shadow(color: Color(0xDDFFFFFF), blurRadius: 8),
                           ],
                         ),
                       ),
