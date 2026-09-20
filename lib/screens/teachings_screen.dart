@@ -16,6 +16,99 @@ class _TeachingsScreenState extends State<TeachingsScreen> {
 
   List<Map<String, String>> get _allTeachings => [
     {
+      'title': 'CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'gallery':
+          'assets/images/tuyen-hoa-01.webp|assets/images/tuyen-hoa-02.webp|assets/images/tuyen-hoa-03.webp|assets/images/tuyen-hoa-04.webp|assets/images/tuyen-hoa-05.webp|assets/images/tuyen-hoa-06.webp|assets/images/tuyen-hoa-07.jpg|assets/images/tuyen-hoa-08.jpg',
+      'preview': '''1. Hiện Tượng Đản Sanh Và Sự Trùng Hợp Nhân Duyên
+
+Hòa thượng Tuyên Hóa đản sanh vào giờ Tý ngày 16 tháng 3 năm 1918.
+
+Đêm trước khi Ngài chào đời, thân mẫu Ngài là bà Bạch Hồ Thị nằm mộng thấy Đức Phật A Di Đà phóng ánh hoàng kim chói lọi, khi tỉnh giấc ngửi thấy mùi hương kỳ diệu lan tỏa.
+
+Vừa lọt lòng, Ngài cất tiếng khóc liên tục suốt ba ngày đêm không ngừng. Chỉ đến khi có kẻ trộm đột nhập vào ngôi nhà nghèo lấy đi ít đồ đạc giá trị ít ỏi, Ngài mới chịu ngưng khóc.
+
+Hành trạng đản sanh và xuất gia của Ngài mang sự an bài nhân duyên kỳ lạ: Ngài sanh ngày 16 tháng 3 (Sư phụ Ngài sanh ngày 15, Sư bác sanh ngày 17); Ngài xuất gia ngày 16 tháng 9 (Sư phụ xuất gia ngày 15, Sư bác xuất gia ngày 17).
+
+2. Tuổi Thơ Vua Con Nít Và Sự Thể Ngộ Sanh Tử
+
+Thuở nhỏ, Ngài sinh trưởng trong gia đình nghèo nghèo đông anh em. Ngài từng có tính cách kỳ quái, hễ không vừa ý là khóc ré lên 1 đến 3 ngày đêm bỏ ăn uống để cha mẹ chịu thua.
+
+Từ 7 đến 8 tuổi, Ngài thích làm "vua con nít", tự đắp gò đất cao "đăng cơ tọa điện", bắt hàng chục đến hàng trăm đứa trẻ quỳ lạy xưng "vạn tuế" và sẵn sàng đánh lộn với người lớn gấp đôi tuổi mình để đòi lại sự công bằng.
+
+Năm 11 tuổi, lần đầu tiên nhìn thấy thi hài một đứa bé bị bó rơm vứt bỏ ngoại thành, Ngài giật mình ngộ ra sự vô thường của kiếp người. Ngài hỏi mẹ và được người họ hàng Lý Lâm chỉ rằng xuất gia tu Phật tu Tiên mới khỏi chết.
+
+Thân mẫu dặn Ngài phải giữ trọn hiếu đạo phụng dưỡng cha mẹ trước. Ngài vâng lời ở nhà ăn chay, niệm Phật. Cùng thời gian này, Ngài mộng thấy Bà lão dẫn Ngài qua con đường hiểm trở như chiếc nia đầy hầm hố, ngoảnh lại thấy muôn vạn người thuộc mọi tầng lớp đi theo sau – điềm báo trước cho đạo nghiệp độ sanh rộng lớn.
+
+3. Hành Trạng Bái Lạy Muôn Loài Và Tầm Sư Học Đạo
+
+Năm 12 tuổi, Ngài chợt tỉnh giác, nhận ra mình từng bất hiếu nên bắt đầu đảnh lễ cha mẹ sám hối. Ngài mở rộng bái lạy các bậc Thánh Hiền, đại hiếu tử, và đặc biệt là lạy cả những kẻ đại ác, lưu manh cùng loài kiến, muỗi mòng vi tế vì xem chúng là bạn cũ muôn kiếp. Mỗi ngày Ngài lạy 837 lạy bất chấp mưa giông, tuyết rơi hay sấm sét.
+
+Từ 13–14 tuổi, Ngài rong ruổi chạy bộ 5 dặm đường mỗi ngày nghe giảng Kinh Địa Tạng, nghiên cứu giáo nghĩa từ Nho, Đạo, Thiên Chúa đến các tà môn ngoại đạo để tìm đường giải thoát. Khi ngồi tĩnh lặng, Ngài có thể nghe văng vẳng trong hư không hàng trăm vị Pháp sư đang đồng thời thuyết pháp.
+
+4. Xuất Gia, Thủ Hiếu Và Mười Tám Đại Nguyện
+
+Năm 19 tuổi (1937), thân mẫu qua đời. Sau khi mai táng, Ngài đến chùa Tam Duyên bái Hòa thượng Thường Trí xuất gia, mang pháp danh An Từ, hiệu Độ Luân. Ngài về bên mộ mẹ cất am tranh thủ hiếu 3 năm.
+
+Nhân ngày vía Đức Quán Thế Âm Bồ Tát (19/6 âm lịch), Ngài đối trước Chư Phật phát Mười Tám Đại Nguyện chấn động: nguyện địa ngục, súc sanh, ngạ quỷ còn một kẻ chưa thành Phật thì thề không giữ ngôi Chánh Giác; nguyện đắc Ngũ nhãn Lục thông, phi hành tự tại.
+
+Trải qua nhiều danh xưng như Bạch Hiếu Tử, Hoạt Tử Nhân, Tuyên Hóa, Ngài luôn khiêm tốn khai thị rằng tên thật sự của Ngài chính là "Hư Không".
+
+PHẦN II: NHỮNG LẦN ĐỘ SANH KỲ BÍ, HUYỀN DIỆU CỦA NGÀI
+
+1. Bản Nguyện Hàng Ma Phục Quái Và Cảm Hóa Yêu Mị Ngàn Năm
+
+Hòa thượng Tuyên Hóa được tôn xưng là hóa thân của Đức Quán Thế Âm Bồ Tát. Toàn bộ cuộc đời độ sanh của Ngài đong đầy những câu chuyện thần dị, huyền kỳ bậc nhất trong giới Phật giáo.
+
+Với đạo hạnh tu hành thâm sâu và uy lực Bồ Đề tâm, Ngài đã dấn thân vào những nơi u tối nhất để cứu độ chúng sanh. Từ việc hàng phục ma quái, khuất phục các loài quỷ thần hung tợn cho đến cảm hóa những yêu mị tu luyện ngàn năm, tất cả đều bị ân đức từ bi và đạo lực vĩ đại của Ngài thu phục, quay đầu hướng thiện.
+
+Ngài không dùng thần thông để tiêu diệt mà dùng lòng từ bi bao la và tinh thần bình đẳng để hóa giải ơn oán muôn kiếp.
+
+3. Sự Bái Lạy Hóa Giải Oan Nghiệp Và Thu Phục Chúng Sanh Vô Hình
+
+Nhiệm màu và đặc kỳ bậc nhất trong đạo nghiệp của Ngài chính là hành trạng bái lạy chúng sanh từ năm 12 tuổi. Ngài không chỉ lạy Phật, Bồ Tát mà lạy cả những kẻ đại ác, đại hoại và muỗi mòng, kiến bọ.
+
+Ngài nhìn thấy bằng tuệ nhãn rằng trong muôn kiếp quá khứ, tất cả chúng sanh đều từng là cha mẹ, bạn bè hoặc có duyên nợ với Ngài. Việc Ngài bái lạy ngoài trời bất chấp tuyết phủ mưa giông chính là cách Ngài dùng thân mình gánh bớt tội nghiệp cho họ.
+
+Sau này, khi Ngài đi đến đâu cũng có hàng ngàn người quỳ lạy, Ngài chỉ ôn tồn giải thích rằng đó không phải vì Ngài có đức cao vọng trọng, mà thực chất họ chỉ đang "trả nợ cũ" mà Ngài đã lạy họ từ khi mới 12 tuổi. Sự khiêm hạ và dung chứa vô tận này đã cảm hóa biết bao tâm hồn kiêu mạn, khiến cả chúng sanh hữu hình lẫn vô hình đều sụp lạy quy y.
+
+4. Mười Tám Đại Nguyện Và Thần Thông Phi Hành Tự Tại
+
+Khi phát Mười Tám Đại Nguyện năm 19 tuổi, Ngài nguyện đắc Ngũ nhãn Lục thông, phi hành tự tại để đi khắp pháp giới độ sanh. Điềm báo từ giấc mộng tuổi thơ – khi Ngài dắt tay Bà lão dẫn hàng vạn người thuộc đủ sắc tộc, Tăng sĩ lẫn người đời thoát khỏi con đường hiểm hóc – đã trở thành sự thật.
+
+Đạo nghiệp của Ngài không dừng lại ở Á Đông mà vươn rộng ra toàn cầu. Ngài đem chánh pháp gieo rắc khắp phương Tây, thành lập các đạo trang, phiên dịch kinh điển và hóa độ vô số đệ tử xuất gia lẫn tại gia.
+
+Bằng nguyện lực "địa ngục chưa trống thề không thành Phật, súc sanh ngạ quỷ còn một kẻ chưa thành Phật thề không giữ ngôi Chánh Giác", hành trạng độ sanh của Ngài chính là ngọn hải đăng xua tan đêm đen, đưa chúng sanh thoát khỏi nhà lửa Tam giới.
+
+NGÀI KHAI THỊ
+
+1. Chú Lăng Nghiêm – Vua Trong Các Thần Chú Và Bảo Bối Hàng Ma
+
+Trong cuộc đời hoằng hóa, Hòa thượng Tuyên Hóa luôn coi Kinh và Chú Lăng Nghiêm là "xương sống" của Phật pháp. Ngài từng khai thị câu nói nổi tiếng: "Lăng Nghiêm hưng thì Phật pháp hưng; Lăng Nghiêm diệt thì Phật pháp diệt." Ngài ví Chú Lăng Nghiêm như chiếc "Kính chiếu yêu", "Gậy hàng ma" và "Thanh kiếm chém ma" tối thượng của chư Phật.
+
+Theo lời Ngài giảng giải, Chú Lăng Nghiêm được chia làm Ngũ Bộ Chú trấn giữ năm phương trong pháp giới:
+
+• Kim Cang bộ (phương Đông, do Đức Phật A Súc làm chủ) – chuyên nhiếp phục tà ma quỷ thần.
+• Bảo Sinh bộ (phương Nam, do Đức Phật Bảo Sinh làm chủ).
+• Phật bộ (chính giữa, do Đức Phật Thích Ca Mâu Ni làm chủ).
+• Liên Hoa bộ (phương Tây, do Đức Phật A Di Đà làm chủ).
+• Nghiệp bộ (phương Bắc, do Đức Phật Thành Tựu làm chủ).
+
+Sự kết hợp của Ngũ Bộ Chú tạo nên một hàng rào kim cang kiên cố, xua tan mọi ma khí và yêu mị trong vũ trụ.
+
+2. Hàng Phục Tà Ma, Quỷ Thần Và Phá 50 Hiện Tượng Ấm Ma
+
+Hòa thượng Tuyên Hóa khai thị rằng khi người tu trì tụng Chú Lăng Nghiêm với tâm chí thành và giới luật thanh tịnh, ánh hào quang từ đảnh nhục kế của Đức Phật sẽ phóng ra chói lọi. Chư Thiên, Hộ Pháp, Kim Cang Bồ Tát đồng thời vây quanh bảo hộ, khiến tất cả các loài tà ma, yêu ma quỷ quái, ly mị vọng lượng đều bị uy lực thần chú chấn động mà kinh sợ, phải tháo chạy hoặc cúi đầu quy phục.
+
+3. Khai Thị Về Thái Độ Trì Chú Cho Hàng Hậu Học
+
+Hòa thượng luôn nhắc nhở đệ tử rằng Chú Lăng Nghiêm là "Linh văn của trời đất cứu thế giới". Tuy nhiên, Ngài nhấn mạnh trì chú không phải để cầu danh lợi hay phô trương thần thông. Muốn Chú Lăng Nghiêm phát huy uy lực hàng ma trị bệnh, người trì chú phải:
+
+• Giữ gìn giới luật thanh tịnh: Đặc biệt là không sát sanh, ăn chay trọn vẹn, không dâm dục và không nói dóc.
+• Dứt trừ Tham - Sân - Si: Giữ tâm địa chân thật, khiêm hạ và chan hòa tình thương đến muôn loài.
+• Không chấp tướng thời gian: Bất kỳ giờ phút nào tâm chí thành niệm chú thì lúc đó đều là thời điểm linh ứng nhất.''',
+    },
+    {
       'title': 'Thời Đại “Vô Cùng Nguy Ngập”',
       'meta': 'Hòa Thượng Tuyên Hóa',
       'preview':
@@ -569,6 +662,68 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
     );
   }
 
+  Widget _buildImageGallery(String gallery, bool isPhone) {
+    final imagePaths = gallery.split('|');
+    final galleryHeight = isPhone ? 250.0 : 330.0;
+    final imageWidth = isPhone ? 235.0 : 285.0;
+
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Row(
+          children: [
+            const Icon(
+              Icons.photo_library_outlined,
+              size: 18,
+              color: Color(0xFFF4D35E),
+            ),
+            const SizedBox(width: 7),
+            Expanded(
+              child: Text(
+                '${imagePaths.length} ảnh về Hòa Thượng • Vuốt ngang để xem',
+                style: TextStyle(
+                  color: const Color(0xFFF4D35E),
+                  fontSize: isPhone ? 12 : 14,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
+            ),
+          ],
+        ),
+        const SizedBox(height: 10),
+        SizedBox(
+          key: const Key('tuyen-hoa-gallery'),
+          height: galleryHeight,
+          child: ListView.separated(
+            scrollDirection: Axis.horizontal,
+            physics: const BouncingScrollPhysics(),
+            itemCount: imagePaths.length,
+            separatorBuilder: (_, _) => const SizedBox(width: 10),
+            itemBuilder: (context, index) {
+              return Container(
+                width: imageWidth,
+                clipBehavior: Clip.antiAlias,
+                decoration: BoxDecoration(
+                  color: const Color(0x7A0E1A21),
+                  borderRadius: BorderRadius.circular(16),
+                  border: Border.all(color: const Color(0x66D4AF37)),
+                ),
+                child: Image.asset(
+                  imagePaths[index],
+                  key: ValueKey('tuyen-hoa-gallery-image-$index'),
+                  fit: BoxFit.contain,
+                  alignment: Alignment.center,
+                  semanticLabel:
+                      'Ảnh ${index + 1} trong thư viện Hòa Thượng Tuyên Hóa',
+                ),
+              );
+            },
+          ),
+        ),
+      ],
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     final filteredList = _filteredTeachings;
@@ -694,6 +849,10 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                           height: 1.3,
                         ),
                       ),
+                      if (item['gallery'] != null) ...[
+                        const SizedBox(height: 14),
+                        _buildImageGallery(item['gallery']!, isPhone),
+                      ],
                       const SizedBox(height: 12),
                       Text(
                         item['preview']!,

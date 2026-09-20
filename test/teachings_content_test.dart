@@ -26,8 +26,9 @@ void main() {
     expect(find.byType(TextField), findsNothing);
     expect(find.text('Khai Thị & Tín Tâm'), findsNothing);
     expect(find.text('Tìm kiếm lời khai thị...'), findsNothing);
-    expect(find.text('Thời Đại “Vô Cùng Nguy Ngập”'), findsOneWidget);
+    expect(find.text('CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA'), findsOneWidget);
     expect(find.text('Hòa Thượng Tuyên Hóa'), findsOneWidget);
+    expect(find.byKey(const Key('tuyen-hoa-gallery')), findsOneWidget);
 
     await tester.drag(
       find.byKey(const Key('teachings-scroll')),
@@ -35,7 +36,32 @@ void main() {
     );
     await tester.pumpAndSettle();
     expect(find.byKey(const Key('teacher-hero')).hitTestable(), findsNothing);
-    expect(find.text('Thời Đại “Vô Cùng Nguy Ngập”'), findsWidgets);
+    expect(find.text('CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA'), findsWidgets);
+  });
+
+  testWidgets('Tuyên Hóa biography includes a horizontally scrollable gallery', (
+    tester,
+  ) async {
+    await pumpTeachings(tester);
+
+    expect(
+      find.text('8 ảnh về Hòa Thượng • Vuốt ngang để xem'),
+      findsOneWidget,
+    );
+    expect(
+      find.byKey(const ValueKey('tuyen-hoa-gallery-image-0')),
+      findsOneWidget,
+    );
+
+    await tester.drag(
+      find.byKey(const Key('tuyen-hoa-gallery')),
+      const Offset(-1900, 0),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const ValueKey('tuyen-hoa-gallery-image-7')),
+      findsOneWidget,
+    );
   });
 
   testWidgets('Teacher filter changes content without duplicate attribution', (
@@ -74,5 +100,24 @@ void main() {
     expect(source, contains('Đục 5.000 bậc thang đá'));
     expect(source, contains('Kỷ lục 5,6 triệu biến Lăng Nghiêm'));
     expect(source, contains('Ngài vừa đi vừa trì tụng 108 biến Lăng Nghiêm'));
+  });
+
+  test('Tuyên Hóa biography keeps the supplied sections and all eight images', () {
+    final source = File('lib/screens/teachings_screen.dart').readAsStringSync();
+
+    expect(source, contains('Hòa thượng Tuyên Hóa đản sanh vào giờ Tý'));
+    expect(source, contains('Mỗi ngày Ngài lạy 837 lạy'));
+    expect(source, contains('PHẦN II: NHỮNG LẦN ĐỘ SANH KỲ BÍ'));
+    expect(source, contains('Lăng Nghiêm hưng thì Phật pháp hưng'));
+    expect(source, contains('Không chấp tướng thời gian'));
+    for (var index = 1; index <= 8; index++) {
+      final extension = index <= 6 ? 'webp' : 'jpg';
+      expect(
+        source,
+        contains(
+          'assets/images/tuyen-hoa-${index.toString().padLeft(2, '0')}.$extension',
+        ),
+      );
+    }
   });
 }

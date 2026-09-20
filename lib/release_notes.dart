@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.2+19';
-  static const displayVersion = '1.5.2';
+  static const version = '1.5.3+20';
+  static const displayVersion = '1.5.3';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Khai thị mới và mobile ổn định hơn';
+  static const title = 'Cuộc đời Hòa Thượng Tuyên Hóa';
   static const changes = <String>[
-    'Bổ sung nguyên văn cuộc đời và đạo nghiệp của Hòa thượng Phổ Quang.',
-    'Hạt sáng dày và rõ hơn, vẫn rơi chậm để giữ cảm giác an tĩnh.',
-    'Tối ưu hiệu ứng và khởi động để app mở ổn định hơn trên điện thoại.',
+    'Bổ sung bài về cuộc đời và đạo nghiệp của Hòa Thượng Tuyên Hóa.',
+    'Thêm thư viện 8 ảnh có thể vuốt ngang, tối ưu cho màn hình điện thoại.',
+    'Giữ phần chữ rộng, sáng và dễ đọc trên nền ứng dụng.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>
