@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lang_nghiem_tam_canh/screens/privacy_policy_screen.dart';
+import 'package:lang_nghiem_tam_canh/theme/app_palette.dart';
 
 void main() {
   testWidgets(
@@ -15,7 +16,7 @@ void main() {
         find.byKey(const Key('privacy-readable-panel')),
       );
       final decoration = panel.decoration! as BoxDecoration;
-      expect(decoration.color, const Color(0xD91B2D38));
+      expect(decoration.color, AppPalette.glassPanel);
     },
   );
 }

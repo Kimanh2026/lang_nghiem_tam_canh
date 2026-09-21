@@ -1,60 +1,62 @@
 import 'package:flutter/material.dart';
 
 import '../theme/app_palette.dart';
+import '../widgets/app_background.dart';
 
 class PrivacyPolicyScreen extends StatelessWidget {
   const PrivacyPolicyScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text(
-          'Chính Sách Bảo Mật',
-          style: TextStyle(
-            color: Color(0xFFD4AF37),
-            fontWeight: FontWeight.bold,
-            fontSize: 18,
+    return AppBackground(
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text(
+            'Chính Sách Bảo Mật',
+            style: TextStyle(
+              color: Color(0xFFD4AF37),
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+            ),
+          ),
+          backgroundColor: AppPalette.glassPanel,
+          iconTheme: const IconThemeData(color: Color(0xFFD4AF37)),
+          elevation: 0,
+          bottom: PreferredSize(
+            preferredSize: const Size.fromHeight(1.0),
+            child: Container(color: const Color(0x33D4AF37), height: 1.0),
           ),
         ),
-        backgroundColor: AppPalette.glassPanel,
-        iconTheme: const IconThemeData(color: Color(0xFFD4AF37)),
-        elevation: 0,
-        bottom: PreferredSize(
-          preferredSize: const Size.fromHeight(1.0),
-          child: Container(color: const Color(0x33D4AF37), height: 1.0),
-        ),
-      ),
-      body: SingleChildScrollView(
-        padding: EdgeInsets.fromLTRB(
-          MediaQuery.sizeOf(context).width < 600 ? 12 : 24,
-          18,
-          MediaQuery.sizeOf(context).width < 600 ? 12 : 24,
-          40,
-        ),
-        child: Center(
-          child: ConstrainedBox(
-            constraints: const BoxConstraints(maxWidth: 920),
-            child: Container(
-              key: const Key('privacy-readable-panel'),
-              width: double.infinity,
-              padding: EdgeInsets.all(
-                MediaQuery.sizeOf(context).width < 600 ? 18 : 28,
-              ),
-              decoration: BoxDecoration(
-                color: const Color(0xD91B2D38),
-                borderRadius: BorderRadius.circular(20),
-                border: Border.all(color: const Color(0x66D4AF37)),
-                boxShadow: const [
-                  BoxShadow(
-                    color: Color(0x44000000),
-                    blurRadius: 24,
-                    offset: Offset(0, 10),
-                  ),
-                ],
-              ),
-              child: const SelectableText(
-                '''Chính Sách Bảo Mật (Privacy Policy)
+        body: SingleChildScrollView(
+          padding: EdgeInsets.fromLTRB(
+            MediaQuery.sizeOf(context).width < 600 ? 12 : 24,
+            18,
+            MediaQuery.sizeOf(context).width < 600 ? 12 : 24,
+            40,
+          ),
+          child: Center(
+            child: ConstrainedBox(
+              constraints: const BoxConstraints(maxWidth: 920),
+              child: Container(
+                key: const Key('privacy-readable-panel'),
+                width: double.infinity,
+                padding: EdgeInsets.all(
+                  MediaQuery.sizeOf(context).width < 600 ? 18 : 28,
+                ),
+                decoration: BoxDecoration(
+                  color: AppPalette.glassPanel,
+                  borderRadius: BorderRadius.circular(20),
+                  border: Border.all(color: const Color(0x66D4AF37)),
+                  boxShadow: const [
+                    BoxShadow(
+                      color: Color(0x44000000),
+                      blurRadius: 24,
+                      offset: Offset(0, 10),
+                    ),
+                  ],
+                ),
+                child: const SelectableText(
+                  '''Chính Sách Bảo Mật (Privacy Policy)
 Ngày hiệu lực: 09 Tháng 09, 2026
 
 Chào mừng bạn đến với ứng dụng Lăng Nghiêm Tâm Cảnh, được phát triển và vận hành bởi Liên Hoa Hóa Sanh.
@@ -88,18 +90,19 @@ Tên nhà phát triển: Liên Hoa Hóa Sanh
 Email: xavia.nguyen97@gmail.com
 
 A Mi Đà Phật! Chúc Quý Đạo Hữu luôn tinh tấn và an lạc.''',
-                style: TextStyle(
-                  fontSize: 15,
-                  height: 1.65,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
-                  shadows: [
-                    Shadow(
-                      color: Color(0x99000000),
-                      blurRadius: 2,
-                      offset: Offset(0, 1),
-                    ),
-                  ],
+                  style: TextStyle(
+                    fontSize: 15,
+                    height: 1.65,
+                    color: Colors.white,
+                    fontWeight: FontWeight.w500,
+                    shadows: [
+                      Shadow(
+                        color: Color(0x99000000),
+                        blurRadius: 2,
+                        offset: Offset(0, 1),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ),
