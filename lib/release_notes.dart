@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.8+25';
-  static const displayVersion = '1.5.8';
+  static const version = '1.5.9+26';
+  static const displayVersion = '1.5.9';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Chữ menu và Cài đặt rõ nét hơn';
+  static const title = 'Chính sách bảo mật dễ đọc hơn';
   static const changes = <String>[
-    'Đổi chữ menu sang màu đậm, nét dày và dễ đọc trên nền trời sáng.',
-    'Làm rõ bốn tiêu đề trong Cài đặt bằng màu vàng nâu tương phản cao.',
-    'Tăng cỡ chữ menu mobile và giữ giao diện cân đối trên mọi màn hình.',
+    'Đặt nội dung Chính sách bảo mật trên nền tối để chữ luôn rõ ràng.',
+    'Tăng cỡ chữ, độ đậm và khoảng cách dòng cho nội dung dài dễ đọc.',
+    'Cập nhật email liên hệ thành xavia.nguyen97@gmail.com.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

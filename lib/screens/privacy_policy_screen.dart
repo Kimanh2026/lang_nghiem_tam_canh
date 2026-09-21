@@ -26,9 +26,35 @@ class PrivacyPolicyScreen extends StatelessWidget {
         ),
       ),
       body: SingleChildScrollView(
-        padding: const EdgeInsets.all(20.0),
-        child: const Text(
-          '''Chính Sách Bảo Mật (Privacy Policy)
+        padding: EdgeInsets.fromLTRB(
+          MediaQuery.sizeOf(context).width < 600 ? 12 : 24,
+          18,
+          MediaQuery.sizeOf(context).width < 600 ? 12 : 24,
+          40,
+        ),
+        child: Center(
+          child: ConstrainedBox(
+            constraints: const BoxConstraints(maxWidth: 920),
+            child: Container(
+              key: const Key('privacy-readable-panel'),
+              width: double.infinity,
+              padding: EdgeInsets.all(
+                MediaQuery.sizeOf(context).width < 600 ? 18 : 28,
+              ),
+              decoration: BoxDecoration(
+                color: const Color(0xD91B2D38),
+                borderRadius: BorderRadius.circular(20),
+                border: Border.all(color: const Color(0x66D4AF37)),
+                boxShadow: const [
+                  BoxShadow(
+                    color: Color(0x44000000),
+                    blurRadius: 24,
+                    offset: Offset(0, 10),
+                  ),
+                ],
+              ),
+              child: const SelectableText(
+                '''Chính Sách Bảo Mật (Privacy Policy)
 Ngày hiệu lực: 09 Tháng 09, 2026
 
 Chào mừng bạn đến với ứng dụng Lăng Nghiêm Tâm Cảnh, được phát triển và vận hành bởi Liên Hoa Hóa Sanh.
@@ -59,10 +85,25 @@ Tôi có thể cập nhật Chính sách Bảo mật này theo thời gian. Mọ
 6. Liên hệ với tôi
 Nếu bạn có bất kỳ thắc mắc hay góp ý nào về Chính sách Bảo mật này hoặc cách thức hoạt động của Ứng dụng, xin vui lòng liên hệ với tôi qua:
 Tên nhà phát triển: Liên Hoa Hóa Sanh
-Email: nkimanh932@gmail.com
+Email: xavia.nguyen97@gmail.com
 
 A Mi Đà Phật! Chúc Quý Đạo Hữu luôn tinh tấn và an lạc.''',
-          style: TextStyle(fontSize: 14, height: 1.6, color: Color(0xFFFDF5E6)),
+                style: TextStyle(
+                  fontSize: 15,
+                  height: 1.65,
+                  color: Colors.white,
+                  fontWeight: FontWeight.w500,
+                  shadows: [
+                    Shadow(
+                      color: Color(0x99000000),
+                      blurRadius: 2,
+                      offset: Offset(0, 1),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
         ),
       ),
     );
