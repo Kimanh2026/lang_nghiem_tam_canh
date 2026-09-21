@@ -5,14 +5,13 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.13+30';
-  static const displayVersion = '1.5.13';
+  static const version = '1.5.14+31';
+  static const displayVersion = '1.5.14';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Địa chỉ truy cập mới';
+  static const title = 'Tinh gọn phần Cài đặt';
   static const changes = <String>[
-    'Địa chỉ mới: langnghiemtamcanh.pages.dev.',
-    'Tên nhà phát triển trong Chính sách Bảo mật được đổi thành Xavia.',
-    'Giữ kết nối Tiểu Tịnh an toàn qua Cloudflare Worker.',
+    'Đã bỏ mục Có gì mới khỏi trang Cài đặt theo yêu cầu.',
+    'Giữ nguyên các tùy chọn cài ứng dụng, thông tin cá nhân và bảo mật.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

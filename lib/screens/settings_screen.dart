@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
 import '../services/notification_service.dart';
-import '../release_notes.dart';
 import '../theme/app_palette.dart';
 import '../widgets/scroll_away_page.dart';
 import 'privacy_policy_screen.dart';
@@ -180,27 +179,6 @@ class _SettingsScreenState extends State<SettingsScreen> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            _sectionTitle('CẬP NHẬT ỨNG DỤNG'),
-            const SizedBox(height: 12),
-            Card(
-              child: ListTile(
-                leading: const Icon(
-                  Icons.auto_awesome,
-                  color: Color(0xFFD4AF37),
-                ),
-                title: const Text('Có gì mới'),
-                subtitle: const Text(
-                  'Phiên bản ${AppReleaseNotes.displayVersion} · Xem nội dung cập nhật',
-                  style: TextStyle(color: Colors.white54, fontSize: 12),
-                ),
-                trailing: const Icon(
-                  Icons.chevron_right,
-                  color: Colors.white54,
-                ),
-                onTap: () => showCurrentReleaseNotes(context),
-              ),
-            ),
-            const SizedBox(height: 28),
             _sectionTitle('CÀI ỨNG DỤNG'),
             const SizedBox(height: 12),
             Card(
