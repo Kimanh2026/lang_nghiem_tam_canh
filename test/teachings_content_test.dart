@@ -28,8 +28,8 @@ void main() {
     expect(find.text('Tìm kiếm lời khai thị...'), findsNothing);
     expect(find.text('CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA'), findsOneWidget);
     expect(find.text('Hòa Thượng Tuyên Hóa'), findsOneWidget);
-    expect(find.byKey(const Key('teacher-hero-images')), findsOneWidget);
-    expect(find.byKey(const ValueKey('teacher-hero-image-4')), findsOneWidget);
+    expect(find.byKey(const Key('teacher-hero-gallery')), findsOneWidget);
+    expect(find.byKey(const ValueKey('tuyen-hoa-hero-image-4')), findsOneWidget);
     expect(find.text('25 bài'), findsOneWidget);
 
     await tester.drag(
@@ -41,28 +41,59 @@ void main() {
     expect(find.text('CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA'), findsWidgets);
   });
 
-  testWidgets('Tuyên Hóa hero presents five equal portraits in one row', (
+  testWidgets('Tuyên Hóa hero scrolls horizontally through all eight images', (
     tester,
   ) async {
     await pumpTeachings(tester);
 
     final firstSize = tester.getSize(
-      find.byKey(const ValueKey('teacher-hero-image-0')),
+      find.byKey(const ValueKey('tuyen-hoa-hero-image-0')),
     );
     for (var index = 1; index < 5; index++) {
       expect(
-        tester.getSize(find.byKey(ValueKey('teacher-hero-image-$index'))),
+        tester.getSize(find.byKey(ValueKey('tuyen-hoa-hero-image-$index'))),
         firstSize,
       );
     }
     final firstTop = tester.getTopLeft(
-      find.byKey(const ValueKey('teacher-hero-image-0')),
+      find.byKey(const ValueKey('tuyen-hoa-hero-image-0')),
     );
     final lastTop = tester.getTopLeft(
-      find.byKey(const ValueKey('teacher-hero-image-4')),
+      find.byKey(const ValueKey('tuyen-hoa-hero-image-4')),
     );
     expect((firstTop.dy - lastTop.dy).abs(), lessThan(1));
-    expect(find.textContaining('Vuốt ngang để xem'), findsNothing);
+
+    await tester.drag(
+      find.byKey(const Key('teacher-hero-gallery')),
+      const Offset(-700, 0),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const ValueKey('tuyen-hoa-hero-image-7')).hitTestable(),
+      findsOneWidget,
+    );
+  });
+
+  testWidgets('Phổ Quang hero scrolls through the supplied image set', (
+    tester,
+  ) async {
+    await pumpTeachings(tester);
+    await tester.tap(find.text('Hòa Thượng Phổ Quang'));
+    await tester.pumpAndSettle();
+
+    expect(
+      find.byKey(const ValueKey('pho-quang-hero-image-0')).hitTestable(),
+      findsOneWidget,
+    );
+    await tester.drag(
+      find.byKey(const Key('teacher-hero-gallery')),
+      const Offset(-1200, 0),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const ValueKey('pho-quang-hero-image-9')).hitTestable(),
+      findsOneWidget,
+    );
   });
 
   testWidgets('Teacher filter changes content without duplicate attribution', (
@@ -101,6 +132,16 @@ void main() {
     expect(source, contains('Đục 5.000 bậc thang đá'));
     expect(source, contains('Kỷ lục 5,6 triệu biến Lăng Nghiêm'));
     expect(source, contains('Ngài vừa đi vừa trì tụng 108 biến Lăng Nghiêm'));
+  });
+
+  test('All nine supplied Phổ Quang image assets are included', () {
+    final source = File('lib/screens/teachings_screen.dart').readAsStringSync();
+    for (var index = 1; index <= 9; index++) {
+      final path =
+          'assets/images/pho-quang-${index.toString().padLeft(2, '0')}.jpeg';
+      expect(File(path).existsSync(), isTrue, reason: path);
+      expect(source, contains(path));
+    }
   });
 
   test('Tuyên Hóa content and selected hero portraits are retained', () {

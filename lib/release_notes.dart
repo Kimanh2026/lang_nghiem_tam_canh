@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.5+22';
-  static const displayVersion = '1.5.5';
+  static const version = '1.5.6+23';
+  static const displayVersion = '1.5.6';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Khai thị dễ đọc hơn';
+  static const title = 'Thư viện ảnh các Hòa thượng';
   static const changes = <String>[
-    'Tách chín chủ đề khai thị của Hòa Thượng Tuyên Hóa thành từng bài riêng.',
-    'Mỗi bài ngắn gọn hơn, dễ tìm và thuận tiện đọc trên điện thoại.',
-    'Loại bỏ đoạn nội dung không còn cần thiết theo góp ý.',
+    'Bổ sung chín ảnh mới của Hòa Thượng Phổ Quang.',
+    'Ảnh Hòa Thượng Phổ Quang và Tuyên Hóa đều có thể vuốt ngang để xem hết.',
+    'Tối ưu kích thước và khoảng cách ảnh cho cả điện thoại lẫn máy tính.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

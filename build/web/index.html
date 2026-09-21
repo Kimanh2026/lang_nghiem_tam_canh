@@ -25,13 +25,13 @@
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <meta name="apple-mobile-web-app-title" content="Lăng Nghiêm">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png?v=20260921-24">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png?v=20260921-25">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png?v=20260921-24"/>
+  <link rel="icon" type="image/png" href="favicon.png?v=20260921-25"/>
 
   <title>Lăng Nghiêm Tâm Cảnh</title>
-  <link rel="manifest" href="manifest.json?v=20260921-24">
+  <link rel="manifest" href="manifest.json?v=20260921-25">
 </head>
 <body>
   <!--
@@ -45,7 +45,7 @@
   <script>
     // The installed mobile web app checks this uncached file whenever it opens,
     // returns to the foreground, reconnects, and once per minute while visible.
-    const currentAppBuild = '1.5.5+22';
+    const currentAppBuild = '1.5.6+23';
     const updateCheckIntervalMs = 60 * 1000;
     let updateCheckInFlight = false;
 
@@ -134,7 +134,7 @@
       await checkForAppUpdate();
 
       const bootstrap = document.createElement('script');
-      bootstrap.src = 'flutter_bootstrap.js?v=20260921-24';
+      bootstrap.src = 'flutter_bootstrap.js?v=20260921-25';
       bootstrap.async = true;
       document.body.appendChild(bootstrap);
     })();

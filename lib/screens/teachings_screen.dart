@@ -591,15 +591,36 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
     'assets/images/tuyen-hoa-01.webp',
     'assets/images/tuyen-hoa-02.webp',
     'assets/images/tuyen-hoa-03.webp',
+    'assets/images/tuyen-hoa-04.webp',
     'assets/images/tuyen-hoa-05.webp',
+    'assets/images/tuyen-hoa-06.webp',
+    'assets/images/tuyen-hoa-07.jpg',
     'assets/images/tuyen-hoa-08.jpg',
+  ];
+
+  static const _phoQuangHeroImages = <String>[
+    'assets/images/teacher-pho-quang.webp',
+    'assets/images/pho-quang-01.jpeg',
+    'assets/images/pho-quang-02.jpeg',
+    'assets/images/pho-quang-03.jpeg',
+    'assets/images/pho-quang-04.jpeg',
+    'assets/images/pho-quang-05.jpeg',
+    'assets/images/pho-quang-06.jpeg',
+    'assets/images/pho-quang-07.jpeg',
+    'assets/images/pho-quang-08.jpeg',
+    'assets/images/pho-quang-09.jpeg',
   ];
 
   Widget _buildTeacherHero(int teachingCount, bool isPhone) {
     final isTuyenHoa = _selectedChipIndex == 0;
     final heroImages = isTuyenHoa
-        ? (isPhone ? _tuyenHoaHeroImages.take(3).toList() : _tuyenHoaHeroImages)
-        : const ['assets/images/teacher-pho-quang.webp'];
+        ? _tuyenHoaHeroImages
+        : _phoQuangHeroImages;
+    final teacherKey = isTuyenHoa ? 'tuyen-hoa' : 'pho-quang';
+    final teacherName = isTuyenHoa
+        ? 'Hòa Thượng Tuyên Hóa'
+        : 'Hòa Thượng Phổ Quang';
+    final imageWidth = isPhone ? 58.0 : 122.0;
     return ClipRRect(
       key: const Key('teacher-hero'),
       borderRadius: BorderRadius.circular(22),
@@ -626,32 +647,30 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
               right: 0,
               top: isPhone ? 8 : 14,
               bottom: isPhone ? 8 : 14,
-              child: Row(
-                key: const Key('teacher-hero-images'),
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  for (var index = 0; index < heroImages.length; index++) ...[
-                    if (index > 0) SizedBox(width: isPhone ? 6 : 10),
-                    Flexible(
-                      child: AspectRatio(
-                        aspectRatio: isPhone ? 0.82 : 0.78,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(
-                            isPhone ? 10 : 16,
-                          ),
-                          child: Image.asset(
-                            heroImages[index],
-                            key: ValueKey('teacher-hero-image-$index'),
-                            fit: BoxFit.cover,
-                            alignment: Alignment.topCenter,
-                            semanticLabel:
-                                'Ảnh ${index + 1} của vị giảng sư đang được chọn',
-                          ),
-                        ),
-                      ),
+              child: ListView.separated(
+                key: const Key('teacher-hero-gallery'),
+                scrollDirection: Axis.horizontal,
+                physics: const BouncingScrollPhysics(),
+                padding: EdgeInsets.only(
+                  left: isPhone ? 12 : 20,
+                  right: isPhone ? 64 : 86,
+                ),
+                itemCount: heroImages.length,
+                separatorBuilder: (_, _) => SizedBox(width: isPhone ? 7 : 10),
+                itemBuilder: (context, index) => SizedBox(
+                  width: imageWidth,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(isPhone ? 10 : 16),
+                    child: Image.asset(
+                      heroImages[index],
+                      key: ValueKey('$teacherKey-hero-image-$index'),
+                      fit: BoxFit.cover,
+                      alignment: Alignment.topCenter,
+                      semanticLabel:
+                          'Ảnh ${index + 1} của $teacherName, vuốt ngang để xem thêm',
                     ),
-                  ],
-                ],
+                  ),
+                ),
               ),
             ),
             Positioned(

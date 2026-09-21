@@ -89,6 +89,27 @@ void main() {
     await tester.pumpAndSettle();
     expect(tester.getSize(find.byKey(const Key('teacher-hero'))).height, 84);
     await tester.drag(
+      find.byKey(const Key('teacher-hero-gallery')),
+      const Offset(-800, 0),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const ValueKey('tuyen-hoa-hero-image-7')).hitTestable(),
+      findsOneWidget,
+    );
+
+    await tester.tap(find.text('Hòa Thượng Phổ Quang'));
+    await tester.pumpAndSettle();
+    await tester.drag(
+      find.byKey(const Key('teacher-hero-gallery')),
+      const Offset(-1000, 0),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const ValueKey('pho-quang-hero-image-9')).hitTestable(),
+      findsOneWidget,
+    );
+    await tester.drag(
       find.byKey(const Key('teachings-scroll')),
       const Offset(0, -300),
     );
@@ -129,12 +150,15 @@ void main() {
     await tester.pumpAndSettle();
 
     final firstSize = tester.getSize(
-      find.byKey(const ValueKey('teacher-hero-image-0')),
+      find.byKey(const ValueKey('tuyen-hoa-hero-image-0')),
     );
-    expect(find.byKey(const ValueKey('teacher-hero-image-4')), findsOneWidget);
+    expect(
+      find.byKey(const ValueKey('tuyen-hoa-hero-image-4')),
+      findsOneWidget,
+    );
     for (var index = 1; index < 5; index++) {
       expect(
-        tester.getSize(find.byKey(ValueKey('teacher-hero-image-$index'))),
+        tester.getSize(find.byKey(ValueKey('tuyen-hoa-hero-image-$index'))),
         firstSize,
       );
     }
