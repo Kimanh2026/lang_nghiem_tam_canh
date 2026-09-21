@@ -383,7 +383,7 @@ case 1:s=A.b(["canvaskit.js"],t.s)
 break
 case 2:s=A.b([r],t.s)
 break
-default:s=null}s=A.Z(s,t.N)
+default:s=null}s=A.a_(s,t.N)
 return s},
 aTT(){var s=A.cV().b,r=s==null?null:s.canvasKitVariant
 s=A.aWB(A.aNB(B.K2,r==null?"auto":r))
@@ -717,7 +717,7 @@ return A.dO(s,t.X).c7(new A.aw_(),t.m)},
 aN5(a){var s=a.languages
 if(s==null)s=null
 else{s=B.c.hn(s,new A.a3a(),t.N)
-s=A.Z(s,s.$ti.i("al.E"))}return s},
+s=A.a_(s,s.$ti.i("al.E"))}return s},
 bW(a,b){var s=a.createElement(b)
 return s},
 aW(a){return A.je($.ai.HG(a,t.H,t.m))},
@@ -814,7 +814,7 @@ aHr(a){var s,r=v.G
 if(r.Intl.Segmenter==null)throw A.j(A.dK("Intl.Segmenter() is not supported."))
 r=r.Intl.Segmenter
 s=t.N
-s=A.a3(A.a_(["granularity",a],s,s))
+s=A.a3(A.Y(["granularity",a],s,s))
 s.toString
 return new r([],s)},
 aAd(){var s=0,r=A.N(t.H),q
@@ -855,7 +855,7 @@ case 4:o.aT()
 m=m.a
 if(m==null)throw A.j(A.jj(u.u))
 m=J.fd(t.j.a(m),new A.aw8(),t.VW)
-n=A.Z(m,m.$ti.i("al.E"))
+n=A.a_(m,m.$ti.i("al.E"))
 q=new A.zq(n)
 s=1
 break
@@ -1002,7 +1002,7 @@ if(A.aEr(s)||A.ayF(s))return A.aEq(a)}return A.aDu(a)},
 aDu(a){var s=new A.Az(a)
 s.a5B(a)
 return s},
-aEq(a){var s=new A.Cx(a,A.a_(["flutter",!0],t.N,t.y))
+aEq(a){var s=new A.Cx(a,A.Y(["flutter",!0],t.N,t.y))
 s.a5J(a)
 return s},
 aEr(a){return t.f.b(a)&&J.e(a.h(0,"origin"),!0)},
@@ -1056,7 +1056,7 @@ break A}s=B.j.a13(1,a)
 break A}return s},
 aDe(a,b,c,d){var s,r=A.aW(b)
 if(c==null)d.addEventListener(a,r)
-else{s=A.a3(A.a_(["passive",c],t.N,t.K))
+else{s=A.a3(A.Y(["passive",c],t.N,t.K))
 s.toString
 d.addEventListener(a,r,s)}return new A.MP(a,d,r)},
 r0(a){var s=B.e.hs(a)
@@ -1107,7 +1107,7 @@ aAa(a){var s,r
 if("computedStyleMap" in a){s=a.computedStyleMap().get("font-size")
 r=s==null?null:s.value}else r=null
 return r==null?A.a_s(A.yS(v.G.window,a).getPropertyValue("font-size")):r},
-aLf(){var s=t.s5,r=A.Z(new A.r6(v.G.document.querySelectorAll('[aria-modal="true"]'),s),s.i("B.E"))
+aLf(){var s=t.s5,r=A.a_(new A.r6(v.G.document.querySelectorAll('[aria-modal="true"]'),s),s.i("B.E"))
 if(r.length===0)return null
 return B.c.gaj(r)},
 aBe(a){var s=a===B.jo?"assertive":"polite",r=A.bW(v.G.document,"flt-announcement-"+s),q=r.style
@@ -1572,11 +1572,11 @@ azG(a){var s=!1
 if($.bc().gd1()===B.aO||$.bc().gd1()===B.bQ)if(a!=null)s=a===".SF Pro Text"||a===".SF Pro Display"||a===".SF UI Text"||a===".SF UI Display"
 return s},
 aGl(){if(A.aHL())return B.p_
-if($.bc().gd1()===B.aO||$.bc().gd1()===B.bQ)return B.Jt
+if($.bc().gd1()===B.aO||$.bc().gd1()===B.bQ)return B.Js
 throw A.j(A.aE("Should only be called on Mac or iOS."))},
 aVa(){if(A.aHL())return B.p_
 if($.bc().gd1()===B.aO||$.bc().gd1()===B.bQ)return A.aGl()
-return B.Jq},
+return B.Jp},
 aHi(a,b){var s,r,q,p,o=new A.ch("")
 A.aGS(a,o)
 if(!A.azH(a)&&!A.azG(a)){s=b==null
@@ -5893,7 +5893,7 @@ return new A.Ey(a,b,s,d.i("@<0>").bB(e).i("Ey<1,2>"))},
 aya(a,b,c,d){if(b==null){if(a==null)return new A.eS(c.i("@<0>").bB(d).i("eS<1,2>"))
 b=A.azP()}else{if(A.aHo()===b&&A.aHn()===a)return new A.zX(c.i("@<0>").bB(d).i("zX<1,2>"))
 if(a==null)a=A.azO()}return A.aSF(a,b,null,c,d)},
-a_(a,b,c){return A.aHx(a,new A.eS(b.i("@<0>").bB(c).i("eS<1,2>")))},
+Y(a,b,c){return A.aHx(a,new A.eS(b.i("@<0>").bB(c).i("eS<1,2>")))},
 u(a,b){return new A.eS(a.i("@<0>").bB(b).i("eS<1,2>"))},
 aSF(a,b,c,d,e){return new A.w8(a,b,new A.ap7(d),d.i("@<0>").bB(e).i("w8<1,2>"))},
 cZ(a){return new A.ki(a.i("ki<0>"))},
@@ -6442,7 +6442,7 @@ for(s=J.bu(a);s.v();)r.push(s.gL())
 if(b)return r
 r.$flags=1
 return r},
-Z(a,b){var s,r
+a_(a,b){var s,r
 if(Array.isArray(a))return A.b(a.slice(0),b.i("C<0>"))
 s=A.b([],b.i("C<0>"))
 for(r=J.bu(a);r.v();)s.push(r.gL())
@@ -6465,7 +6465,7 @@ if(s)c=o
 return A.aDZ(b>0||c<o?p.slice(b,c):p)}if(t.u9.b(a))return A.aRe(a,b,c)
 if(r)a=J.ax0(a,c)
 if(b>0)a=J.a_L(a,b)
-s=A.Z(a,t.S)
+s=A.a_(a,t.S)
 return A.aDZ(s)},
 ayJ(a){return A.e_(a)},
 aRe(a,b,c){var s=a.length
@@ -8522,11 +8522,11 @@ if(a==b)return a
 if(a==null){s=b.a
 if(s==null)s=b
 else{r=A.a2(s).i("aa<1,y>")
-s=A.Z(new A.aa(s,new A.amu(c),r),r.i("al.E"))
+s=A.a_(new A.aa(s,new A.amu(c),r),r.i("al.E"))
 s=new A.j7(s)}return s}if(b==null){s=a.a
 if(s==null)s=a
 else{r=A.a2(s).i("aa<1,y>")
-s=A.Z(new A.aa(s,new A.amv(c),r),r.i("al.E"))
+s=A.a_(new A.aa(s,new A.amv(c),r),r.i("al.E"))
 s=new A.j7(s)}return s}s=A.b([],t.t_)
 for(r=b.a,q=a.a,p=0;p<r.length;++p){o=q==null?null:q[p]
 o=A.A(o,r[p],c)
@@ -8879,7 +8879,7 @@ s=$.axK
 if(s===0)A.aWf(J.dR(a.a),100,a.b)
 else A.axH("Another exception was thrown: "+a.ga1x().k(0))
 $.axK=$.axK+1},
-aCs(a){var s,r,q,p,o,n,m,l,k,j,i,h=A.a_(["dart:async-patch",0,"dart:async",0,"package:stack_trace",0,"class _AssertionError",0,"class _FakeAsync",0,"class _FrameCallbackEntry",0,"class _Timer",0,"class _RawReceivePortImpl",0],t.N,t.S),g=A.aR7(J.aLa(a,"\n"))
+aCs(a){var s,r,q,p,o,n,m,l,k,j,i,h=A.Y(["dart:async-patch",0,"dart:async",0,"package:stack_trace",0,"class _AssertionError",0,"class _FakeAsync",0,"class _FrameCallbackEntry",0,"class _Timer",0,"class _RawReceivePortImpl",0],t.N,t.S),g=A.aR7(J.aLa(a,"\n"))
 for(s=0,r=0;q=g.length,r<q;++r){p=g[r]
 o="class "+p.w
 n=p.c+":"+p.d
@@ -9043,7 +9043,7 @@ _.e=c},
 Bk:function Bk(a){this.a=a
 this.b=0},
 aR7(a){var s=t.ZK
-s=A.Z(new A.c_(new A.eU(new A.aN(A.b(B.d.hc(a).split("\n"),t.s),new A.ahN(),t.Hd),A.aXt(),t.C9),s),s.i("B.E"))
+s=A.a_(new A.c_(new A.eU(new A.aN(A.b(B.d.hc(a).split("\n"),t.s),new A.ahN(),t.Hd),A.aXt(),t.C9),s),s.i("B.E"))
 return s},
 aR6(a){var s,r,q="<unknown>",p=$.aJh().oJ(a)
 if(p==null)return null
@@ -10892,7 +10892,7 @@ _.fr=a4
 _.fx=a5},
 RQ:function RQ(){},
 h5(a,b){if((a==null?b:a)==null)return null
-return new A.f0(A.a_([B.v,b,B.dJ,a],t.Ag,t._),t.GC)},
+return new A.f0(A.Y([B.v,b,B.dJ,a],t.Ag,t._),t.GC)},
 xX(a,b,c,d){var s
 A:{if(d<=1){s=a
 break A}if(d<2){s=A.cI(a,b,d-1)
@@ -11815,8 +11815,8 @@ break
 case 4:s=l.a
 s===$&&A.a()
 s=A.bt(s,200)
-r=A.bt(A.a3s(l,B.p1,B.Jv),24)
-q=A.bt(A.a3s(l,B.p1,B.Ke),32)
+r=A.bt(A.a3s(l,B.p1,B.Ju),24)
+q=A.bt(A.a3s(l,B.p1,B.Kd),32)
 p=A.bt(l.a,10)
 o=A.bt(l.a,12)
 l.d===$&&A.a()
@@ -12323,10 +12323,10 @@ return new A.L5(b,s,s,s,c,s,s,!1,s,!0,s,a,s)},
 aCf(a,b,c,d,e,f,g,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0,b1,b2){var s,r,q,p,o,n,m,l,k,j,i,h=null
 A:{s=h
 if(a2==null)break A
-r=new A.f0(A.a_([B.P,a2.b3(0.1),B.A,a2.b3(0.08),B.F,a2.b3(0.1)],t.EK,t._),t.GC)
+r=new A.f0(A.Y([B.P,a2.b3(0.1),B.A,a2.b3(0.08),B.F,a2.b3(0.1)],t.EK,t._),t.GC)
 s=r
 break A}if(g!=null){r=g+2
-q=new A.f0(A.a_([B.v,0,B.P,g+6,B.A,r,B.F,r,B.dJ,g],t.Ag,t.i),t.JI)}else q=h
+q=new A.f0(A.Y([B.v,0,B.P,g+6,B.A,r,B.F,r,B.dJ,g],t.Ag,t.i),t.JI)}else q=h
 r=A.h5(c,d)
 p=A.h5(a2,e)
 o=a6==null?h:new A.aX(a6,t.De)
@@ -12336,7 +12336,7 @@ l=a4==null?h:new A.aX(a4,t.W7)
 k=a3==null?h:new A.aX(a3,t.W7)
 j=a8==null?h:new A.aX(a8,t.y2)
 i=a7==null?h:new A.aX(a7,t.dy)
-return A.rW(a,b,h,r,q,a0,h,h,p,h,n,h,k,l,new A.f0(A.a_([B.v,f,B.dJ,a1],t.Ag,t.WV),t.ZX),s,m,o,i,j,a9,h,b0,new A.aX(b1,t.RP),b2)},
+return A.rW(a,b,h,r,q,a0,h,h,p,h,n,h,k,l,new A.f0(A.Y([B.v,f,B.dJ,a1],t.Ag,t.WV),t.ZX),s,m,o,i,j,a9,h,b0,new A.aX(b1,t.RP),b2)},
 aVg(a){var s=A.X(a),r=s.ok.as,q=r==null?null:r.r
 if(q==null)q=14
 r=A.be(a,B.b_)
@@ -12445,14 +12445,14 @@ aNJ(a,b,c,d,e){var s,r,q,p,o,n,m=null
 A:{s=m
 if(b==null)break A
 r=B.e.aM(25.5)
-r=new A.f0(A.a_([B.P,A.ax(r,b.C()>>>16&255,b.C()>>>8&255,b.C()&255),B.A,A.ax(20,b.C()>>>16&255,b.C()>>>8&255,b.C()&255),B.F,A.ax(r,b.C()>>>16&255,b.C()>>>8&255,b.C()&255)],t.EK,t._),t.GC)
+r=new A.f0(A.Y([B.P,A.ax(r,b.C()>>>16&255,b.C()>>>8&255,b.C()&255),B.A,A.ax(20,b.C()>>>16&255,b.C()>>>8&255,b.C()&255),B.F,A.ax(r,b.C()>>>16&255,b.C()>>>8&255,b.C()&255)],t.EK,t._),t.GC)
 s=r
 break A}r=A.h5(a,m)
 q=A.h5(b,m)
 p=A.h5(m,m)
 o=c==null?m:new A.aX(c,t.mD)
 n=d==null?m:new A.aX(d,t.y2)
-return A.rW(m,m,m,r,m,m,m,m,q,m,p,m,m,m,new A.f0(A.a_([B.v,null,B.dJ,null],t.Ag,t.WV),t.ZX),s,o,m,m,n,m,m,m,new A.aX(e,t.RP),m)},
+return A.rW(m,m,m,r,m,m,m,m,q,m,p,m,m,m,new A.f0(A.Y([B.v,null,B.dJ,null],t.Ag,t.WV),t.ZX),s,o,m,m,n,m,m,m,new A.aX(e,t.RP),m)},
 aVe(a){var s=A.X(a).ok.as,r=s==null?null:s.r
 if(r==null)r=14
 s=A.be(a,B.b_)
@@ -12609,7 +12609,7 @@ tW(a,b,c,d,e,f,g,h,i,j,a0,a1,a2,a3,a4,a5,a6){var s,r,q,p,o,n,m,l,k=null
 if(h!=null){A:{s=h.b3(0.1)
 r=h.b3(0.08)
 q=h.b3(0.1)
-q=new A.f0(A.a_([B.P,s,B.A,r,B.F,q],t.EK,t._),t.GC)
+q=new A.f0(A.Y([B.P,s,B.A,r,B.F,q],t.EK,t._),t.GC)
 s=q
 break A}p=s}else p=k
 s=A.h5(b,k)
@@ -13758,7 +13758,7 @@ if(s){s=new A.aX(c,t.rc)
 break A}s=A.h5(c,d)
 break A}B:{r=g
 if(a3==null)break B
-q=new A.f0(A.a_([B.P,a3.b3(0.1),B.A,a3.b3(0.08),B.F,a3.b3(0.1)],t.EK,t._),t.GC)
+q=new A.f0(A.Y([B.P,a3.b3(0.1),B.A,a3.b3(0.08),B.F,a3.b3(0.1)],t.EK,t._),t.GC)
 r=q
 break B}q=b2==null?g:new A.aX(b2,t.uE)
 p=A.h5(a3,e)
@@ -13770,7 +13770,7 @@ k=a5==null?g:new A.aX(a5,t.W7)
 j=a4==null?g:new A.aX(a4,t.W7)
 i=a9==null?g:new A.aX(a9,t.y2)
 h=a8==null?g:new A.aX(a8,t.dy)
-return A.rW(a,b,g,s,m,a1,g,g,p,g,n,g,j,k,new A.f0(A.a_([B.v,f,B.dJ,a2],t.Ag,t.WV),t.ZX),r,l,o,h,i,b0,g,b1,q,b3)},
+return A.rW(a,b,g,s,m,a1,g,g,p,g,n,g,j,k,new A.f0(A.Y([B.v,f,B.dJ,a2],t.Ag,t.WV),t.ZX),r,l,o,h,i,b0,g,b1,q,b3)},
 aVd(a){var s=A.X(a),r=s.ok.as,q=r==null?null:r.r
 if(q==null)q=14
 r=A.be(a,B.b_)
@@ -14829,7 +14829,7 @@ break A}s=A.h5(c,d)
 break A}B:{r=A.h5(g,g)
 break B}C:{q=g
 if(a3==null)break C
-p=new A.f0(A.a_([B.P,a3.b3(0.1),B.A,a3.b3(0.08),B.F,a3.b3(0.1)],t.EK,t._),t.GC)
+p=new A.f0(A.Y([B.P,a3.b3(0.1),B.A,a3.b3(0.08),B.F,a3.b3(0.1)],t.EK,t._),t.GC)
 q=p
 break C}p=b2==null?g:new A.aX(b2,t.uE)
 o=A.h5(a3,e)
@@ -14840,7 +14840,7 @@ k=a5==null?g:new A.aX(a5,t.W7)
 j=a4==null?g:new A.aX(a4,t.W7)
 i=a9==null?g:new A.aX(a9,t.y2)
 h=a8==null?g:new A.aX(a8,t.dy)
-return A.rW(a,b,g,s,m,a1,g,g,o,g,r,g,j,k,new A.f0(A.a_([B.v,f,B.dJ,a2],t.Ag,t.WV),t.ZX),q,l,n,h,i,b0,g,b1,p,b3)},
+return A.rW(a,b,g,s,m,a1,g,g,o,g,r,g,j,k,new A.f0(A.Y([B.v,f,B.dJ,a2],t.Ag,t.WV),t.ZX),q,l,n,h,i,b0,g,b1,p,b3)},
 aVf(a){var s=A.X(a).ok.as,r=s==null?null:s.r
 if(r==null)r=14
 s=A.be(a,B.b_)
@@ -16493,11 +16493,11 @@ return o},
 aGD(a,b,c,d,e){var s,r,q=A.PY(null,null,t.i)
 q.P(0,b)
 q.P(0,d)
-s=A.Z(q,q.$ti.c)
+s=A.a_(q,q.$ti.c)
 s.$flags=1
 r=s
 s=A.a2(r).i("aa<1,y>")
-s=A.Z(new A.aa(r,new A.avv(a,b,c,d,e),s),s.i("al.E"))
+s=A.a_(new A.aa(r,new A.avv(a,b,c,d,e),s),s.i("al.E"))
 s.$flags=1
 return new A.am8(s,r)},
 aCE(a,b,c){var s
@@ -18145,7 +18145,7 @@ a1=a4.gKQ()
 s.ar(0,new A.abt(r,A.aPw(j,k,m,g,f,a4.gAj(),0,n,!1,a0,o,l,h,i,d,a,b,c,e,a4.gtk(),a1,p,q).bt(a4.gc8()),s))
 q=A.l(r).i("b2<1>")
 p=q.i("aN<B.E>")
-a2=A.Z(new A.aN(new A.b2(r,q),new A.abu(s),p),p.i("B.E"))
+a2=A.a_(new A.aN(new A.b2(r,q),new A.abu(s),p),p.i("B.E"))
 q=a4.grI()
 p=a4.gk0()
 o=a4.gbC()
@@ -19896,7 +19896,7 @@ if(m===0){n.toString
 o.push(n)
 n=null}}B.c.kc(o)
 s=t.IX
-s=A.Z(new A.eM(o,new A.ave(),s),s.i("B.E"))
+s=A.a_(new A.eM(o,new A.ave(),s),s.i("B.E"))
 return s},
 eW(){return new A.dx(A.u(t._S,t.HT),A.u(t.I7,t.M),B.iw,new A.cF("",B.aI),new A.cF("",B.aI),new A.cF("",B.aI),new A.cF("",B.aI),new A.cF("",B.aI),B.fQ,B.eg,B.cs,B.lA,B.iv)},
 avi(a,b,c,d){var s
@@ -20271,7 +20271,7 @@ a0N:function a0N(){},
 Kd(a){var s=0,r=A.N(t.H)
 var $async$Kd=A.O(function(b,c){if(b===1)return A.K(c,r)
 for(;;)switch(s){case 0:s=2
-return A.G(B.aW.cW("Clipboard.setData",A.a_(["text",a.a],t.N,t.z),t.H),$async$Kd)
+return A.G(B.aW.cW("Clipboard.setData",A.Y(["text",a.a],t.N,t.z),t.H),$async$Kd)
 case 2:return A.L(null,r)}})
 return A.M($async$Kd,r)},
 a1W(a){var s=0,r=A.N(t.VA),q,p
@@ -20487,7 +20487,7 @@ this.b=b},
 ai8(a){var s=0,r=A.N(t.H)
 var $async$ai8=A.O(function(b,c){if(b===1)return A.K(c,r)
 for(;;)switch(s){case 0:s=2
-return A.G(B.aW.cW(u.p,A.a_(["label",a.a,"primaryColor",a.b],t.N,t.z),t.H),$async$ai8)
+return A.G(B.aW.cW(u.p,A.Y(["label",a.a,"primaryColor",a.b],t.N,t.z),t.H),$async$ai8)
 case 2:return A.L(null,r)}})
 return A.M($async$ai8,r)},
 ayL(a){if($.vh!=null){$.vh=a
@@ -21016,7 +21016,7 @@ _.a=i},
 Z5:function Z5(){},
 aBh(a,b,c,d,e){return new A.xu(a,b,d,e,c,null)},
 aLp(a,b){return new A.cY(b,!1,a,new A.bQ(a.a,t.Ll))},
-aLo(a,b){var s=A.Z(b,t.l7)
+aLo(a,b){var s=A.a_(b,t.l7)
 if(a!=null)s.push(a)
 return A.iZ(B.N,s,B.T,B.cu,null)},
 nO:function nO(a,b,c,d){var _=this
@@ -21932,7 +21932,7 @@ return A.aFF(A.ez(s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,b,!0,s,a,s,s,s,s,s,d),c)},
 aFF(a,b){var s,r=b.c
 if(r==null)r=null
 else{s=A.a2(r).i("aa<1,dV>")
-r=A.Z(new A.aa(r,new A.aqd(a),s),s.i("al.E"))}s=b.a
+r=A.a_(new A.aa(r,new A.aqd(a),s),s.i("al.E"))}s=b.a
 s=s==null?null:s.aS(a)
 if(s==null)s=a
 return A.dJ(r,b.y,b.e,b.f,b.r,b.d,b.x,b.w,b.z,s,b.b)},
@@ -22500,10 +22500,10 @@ axw(a,b,c){var s=a.b
 return B.e.b8(Math.abs(b.b-s),Math.abs(c.b-s))},
 axv(a,b,c){var s=a.a
 return B.e.b8(Math.abs(b.a-s),Math.abs(c.a-s))},
-aC2(a,b){var s=A.Z(b,b.$ti.i("B.E"))
+aC2(a,b){var s=A.a_(b,b.$ti.i("B.E"))
 A.mc(s,new A.a2Z(a),t.mx)
 return s},
-aC1(a,b){var s=A.Z(b,b.$ti.i("B.E"))
+aC1(a,b){var s=A.a_(b,b.$ti.i("B.E"))
 A.mc(s,new A.a2Y(a),t.mx)
 return s},
 aC3(a,b){var s=J.a_N(b)
@@ -22674,8 +22674,8 @@ q=b.as
 if(a.as!==q)return q?-1:1
 return 0},
 aNp(a,b){var s=A.a2(b).i("aa<1,du>")
-s=A.Z(new A.aa(b,new A.a4m(),s),s.i("al.E"))
-return A.aME(!0,s,a,B.Kp,!0,B.Fj,null)},
+s=A.a_(new A.aa(b,new A.a4m(),s),s.i("al.E"))
+return A.aME(!0,s,a,B.Ko,!0,B.Fj,null)},
 axF(a){var s
 try{a.e2()}catch(s){a.Pi()}a.w=B.a9x
 try{a.bf(A.aWy())}catch(s){}},
@@ -22695,7 +22695,7 @@ pb:function pb(a,b){this.a=a
 this.$ti=b},
 f:function f(){},
 aq:function aq(){},
-Y:function Y(){},
+Z:function Z(){},
 a7:function a7(){},
 aK:function aK(){},
 dZ:function dZ(){},
@@ -23351,7 +23351,7 @@ _.as=!0
 _.at=!1
 _.$ti=d},
 Mk(a,b){var s
-if(a.j(0,b))return new A.JR(B.Kq)
+if(a.j(0,b))return new A.JR(B.Kp)
 s=A.b([],t.fJ)
 A.c7()
 a.nt(new A.a7G(b,A.aC(t.u),s))
@@ -25837,7 +25837,7 @@ return A.aFE(A.ez(s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,s,b,!0,s,a,s,s,s,s,s,d),c)},
 aFE(a,b){var s,r=b.c
 if(r==null)r=null
 else{s=A.a2(r).i("aa<1,dV>")
-r=A.Z(new A.aa(r,new A.aqc(a),s),s.i("al.E"))}s=b.a
+r=A.a_(new A.aa(r,new A.aqc(a),s),s.i("al.E"))}s=b.a
 s=s==null?null:s.aS(a)
 if(s==null)s=a
 return A.dJ(r,b.y,b.e,b.f,b.r,b.d,b.x,b.w,b.z,s,b.b)},
@@ -26654,7 +26654,7 @@ else r=!0
 if(r)c=t.j.b(p)}else p=i
 if(c){c=d?p:a.h(0,g)
 c=J.fd(t.Dn.a(c),A.aVy(),t.CP)
-c=A.Z(c,c.$ti.i("al.E"))
+c=A.a_(c,c.$ti.i("al.E"))
 break A}c=A.b([],t.Qh)
 break A}B:{r=!1
 if(d){o=a.h(0,f)
@@ -26682,7 +26682,7 @@ else q=!0
 if(q)q=t.Dn.b(r)
 else q=!1
 if(q){q=J.fd(r,A.aHf(),t.Wu)
-A.Z(q,q.$ti.i("al.E"))
+A.a_(q,q.$ti.i("al.E"))
 break A}break A}B:{p=a.h(0,k)
 if(p==null)q=a.a_(k)
 else q=!0
@@ -26728,7 +26728,7 @@ else m=!1
 if(m){m=n
 break C}m=null
 break C}r=J.fd(r,A.aHf(),t.Wu)
-A.Z(r,r.$ti.i("al.E"))
+A.a_(r,r.$ti.i("al.E"))
 r=new A.O2(p,m)
 break A}r=A.U(A.h3("PromptFeedback",a))}return r},
 aV9(a){var s,r,q,p="promptTokenCount",o="candidatesTokenCount",n="totalTokenCount"
@@ -26768,7 +26768,7 @@ else p=!0
 if(p)r=t.j.b(q)}else q=null
 if(r){r=s?q:a.h(0,n)
 r=J.fd(t.Dn.a(r),A.aHe(),t.oV)
-A.Z(r,r.$ti.i("al.E"))
+A.a_(r,r.$ti.i("al.E"))
 r=new A.JZ()
 break A}r=!1
 if(s){o=a.h(0,m)
@@ -26777,7 +26777,7 @@ else p=!0
 if(p)r=t.j.b(o)}else o=null
 if(r){r=s?o:a.h(0,m)
 r=J.fd(t.Dn.a(r),A.aHe(),t.oV)
-A.Z(r,r.$ti.i("al.E"))
+A.a_(r,r.$ti.i("al.E"))
 r=new A.JZ()
 break A}r=A.U(A.h3("CitationMetadata",a))}return r},
 aV5(a){var s
@@ -26834,7 +26834,7 @@ else p=!1
 if(p){p=o
 break B}p=null
 break B}r=J.fd(r,A.aW2(),t.z2)
-r=A.Z(r,r.$ti.i("al.E"))
+r=A.a_(r,r.$ti.i("al.E"))
 r=new A.fE(p,r)
 break A}r=A.U(A.h3("Content",a))}return r},
 aV6(c1){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7=null,a8="text",a9="functionCall",b0="name",b1="args",b2="functionResponse",b3="response",b4="inlineData",b5="mimeType",b6="executableCode",b7="language",b8="code",b9="codeExecutionResult",c0="output"
@@ -27298,7 +27298,7 @@ a0.aA()
 a0.Nm(null,null,e)
 m.fx$!==$&&A.an()
 m.fx$=a0
-a=a0}m.a0u(new A.vF(c,new A.Mz(j,i,f,new A.bK(0,k),h!=="1.5.4+21",null),b,a,null))
+a=a0}m.a0u(new A.vF(c,new A.Mz(j,i,f,new A.bK(0,k),h!=="1.5.5+22",null),b,a,null))
 m.LS()
 return A.L(null,r)
 case 1:return A.K(p.at(-1),r)}})
@@ -28029,7 +28029,7 @@ aOd(a){var s,r,q=A.aWF(a,new A.a6K(),t.UR,t.K)
 for(s=new A.cC(q,q.r,q.e);s.v();)J.a_M(s.d,new A.a6L())
 s=A.l(q).i("ed<1,2>")
 r=s.i("eM<B.E,j8>")
-s=A.Z(new A.eM(new A.ed(q,s),new A.a6M(),r),r.i("B.E"))
+s=A.a_(new A.eM(new A.ed(q,s),new A.a6M(),r),r.i("B.E"))
 return s},
 aSv(a,b){var s=new A.aoh(a).$0()
 return new A.fa(s,!0,null)},
@@ -28519,7 +28519,7 @@ for(;;)switch(s){case 0:s=2
 return A.G(B.aW.cW("SystemNavigator.pop",null,t.H),$async$aig)
 case 2:return A.L(null,r)}})
 return A.M($async$aig,r)},
-aRk(a,b,c){return B.lj.cW("routeInformationUpdated",A.a_(["uri",c.k(0),"state",b,"replace",a],t.N,t.z),t.H)},
+aRk(a,b,c){return B.lj.cW("routeInformationUpdated",A.Y(["uri",c.k(0),"state",b,"replace",a],t.N,t.z),t.H)},
 aEM(a){switch(a){case 9:case 10:case 11:case 12:case 13:case 28:case 29:case 30:case 31:case 32:case 160:case 5760:case 8192:case 8193:case 8194:case 8195:case 8196:case 8197:case 8198:case 8199:case 8200:case 8201:case 8202:case 8239:case 8287:case 12288:break
 default:return!1}return!0},
 ayO(a){switch(a){case 10:case 11:case 12:case 13:case 133:case 8232:case 8233:return!0
@@ -29802,7 +29802,7 @@ wv(){var s=this.as
 s===$&&A.a()
 return s},
 ww(a,b,c,d){var s,r,q,p
-if(a<0||b<0)return B.Ky
+if(a<0||b<0)return B.Kx
 s=this.a
 s===$&&A.a()
 s=s.a
@@ -30010,7 +30010,7 @@ r.toString
 r.$1(B.a5.bW(["copy_fail",s,null]))},
 $S:87}
 A.a1Q.prototype={
-$1(a){var s=A.a_(["text",a],t.N,t.X),r=this.a
+$1(a){var s=A.Y(["text",a],t.N,t.X),r=this.a
 r.toString
 r.$1(B.a5.bW([s]))},
 $S:126}
@@ -30020,7 +30020,7 @@ r.toString
 r.$1(B.a5.bW(["paste_fail",s,null]))},
 $S:87}
 A.a1S.prototype={
-$1(a){var s=A.a_(["value",a.length!==0],t.N,t.X),r=this.a
+$1(a){var s=A.Y(["value",a.length!==0],t.N,t.X),r=this.a
 r.toString
 r.$1(B.a5.bW([s]))},
 $S:126}
@@ -30067,7 +30067,7 @@ j(a,b){if(b==null)return!1
 if(!(b instanceof A.z5))return!1
 return b.d===this.d&&b.b==this.b&&A.fw(b.c,this.c)},
 gA(a){var s=this,r=s.c
-return A.Q(s.d,s.a,s.b,A.bl(r==null?B.Kr:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+return A.Q(s.d,s.a,s.b,A.bl(r==null?B.Kq:r),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 $ihi:1}
 A.xZ.prototype={
 V3(a,b){var s=this.OO(a),r=A.aW(new A.a1h(this,b,s))
@@ -30570,7 +30570,7 @@ s.fV()}}},
 a9E(a0){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a
 if(a0.a===0)return A.b([],t.Qg)
 s=A.l(a0).i("b2<1>")
-r=A.Z(new A.b2(a0,s),s.i("B.E"))
+r=A.a_(new A.b2(a0,s),s.i("B.E"))
 q=$.a1().glf().gmX()
 s=t.Te
 p=A.u(s,t.S)
@@ -30587,7 +30587,7 @@ n.E(0,e)}d=p.h(0,e)
 d.toString
 p.m(0,e,d+i)
 o.h(0,e).push(j)}}c=A.b([],t.Qg)
-for(s=n.$ti.c;n.a!==0;){m=A.Z(n,s)
+for(s=n.$ti.c;n.a!==0;){m=A.a_(n,s)
 b=this.aim(m,p,q)
 c.push(b)
 a=o.h(0,b)
@@ -30606,7 +30606,7 @@ p.toString
 p=p>0}else p=!1
 if(p)return q}o=this.a9F(a,b)
 if(o.length===1)return B.c.gY(o)
-for(r=0;r<7;++r){q=A.aCq(o,new A.a5b(B.JE[r]))
+for(r=0;r<7;++r){q=A.aCq(o,new A.a5b(B.JD[r]))
 if(q!=null)return q}return B.c.gY(o)},
 aas(a){var s,r,q
 if(B.i3.a_(a)){s=B.i3.h(0,a)
@@ -30781,7 +30781,7 @@ $1(a){var s,r
 t.a.a(a)
 s=A.bw(a.h(0,"family"))
 r=J.fd(t.j.a(a.h(0,"fonts")),new A.aw5(),t.zq)
-r=A.Z(r,r.$ti.i("al.E"))
+r=A.a_(r,r.$ti.i("al.E"))
 return new A.p5(s,r)},
 $S:570}
 A.aw5.prototype={
@@ -31940,7 +31940,7 @@ a5B(a){var s,r=this,q=r.d
 if(q==null)return
 r.a=q.Hp(r.gKi())
 if(!r.Fo(r.gK())){s=t.z
-q.pj(A.a_(["serialCount",0,"state",r.gK()],s,s),"flutter",r.gmE())}r.e=r.gEp()},
+q.pj(A.Y(["serialCount",0,"state",r.gK()],s,s),"flutter",r.gmE())}r.e=r.gEp()},
 gEp(){if(this.Fo(this.gK())){var s=this.gK()
 s.toString
 return B.e.hs(A.c8(t.f.a(s).h(0,"serialCount")))}return 0},
@@ -31949,22 +31949,22 @@ Ma(a,b,c){var s,r,q=this.d
 if(q!=null){s=t.z
 r=this.e
 if(b){r===$&&A.a()
-q.pj(A.a_(["serialCount",r,"state",c],s,s),"flutter",a)}else{r===$&&A.a();++r
+q.pj(A.Y(["serialCount",r,"state",c],s,s),"flutter",a)}else{r===$&&A.a();++r
 this.e=r
-q.ZG(A.a_(["serialCount",r,"state",c],s,s),"flutter",a)}}},
+q.ZG(A.Y(["serialCount",r,"state",c],s,s),"flutter",a)}}},
 Kj(a){var s,r,q,p,o=this
 if(!o.Fo(a)){s=o.d
 s.toString
 r=o.e
 r===$&&A.a()
 q=t.z
-s.pj(A.a_(["serialCount",r+1,"state",a],q,q),"flutter",o.gmE())}o.e=o.gEp()
+s.pj(A.Y(["serialCount",r+1,"state",a],q,q),"flutter",o.gmE())}o.e=o.gEp()
 s=$.aH()
 r=o.gmE()
 t.Xy.a(a)
 q=a==null?null:a.h(0,"state")
 p=t.z
-s.hT("flutter/navigation",B.b0.j1(new A.hk("pushRouteInformation",A.a_(["location",r,"state",q],p,p))),new A.abB())},
+s.hT("flutter/navigation",B.b0.j1(new A.hk("pushRouteInformation",A.Y(["location",r,"state",q],p,p))),new A.abB())},
 kU(){var s=0,r=A.N(t.H),q,p=this,o,n,m
 var $async$kU=A.O(function(a,b){if(a===1)return A.K(b,r)
 for(;;)switch(s){case 0:p.l()
@@ -31992,7 +31992,7 @@ a5J(a){var s=this,r=s.d
 if(r==null)return
 s.a=r.Hp(s.gKi())
 s.e=s.gmE()
-if(!A.ayF(s.gK())){r.pj(A.a_(["origin",!0,"state",s.gK()],t.N,t.z),"origin","")
+if(!A.ayF(s.gK())){r.pj(A.Y(["origin",!0,"state",s.gK()],t.N,t.z),"origin","")
 s.T5(r)}},
 Ma(a,b,c){var s=this.d
 if(s!=null){this.e=a
@@ -32099,7 +32099,7 @@ if(s!=null){l=$.bJ
 s.prepend((l==null?$.bJ=A.dE():l).d.a.gV2())}l=m.gd_().e
 m.a=new A.d6(l,A.l(l).i("d6<1>")).lG(new A.a4N(m))
 m.a6g()},
-l(){var s=this,r=$.aB4(),q=r.a,p=A.l(q).i("b2<1>"),o=A.Z(new A.b2(q,p),p.i("B.E"))
+l(){var s=this,r=$.aB4(),q=r.a,p=A.l(q).i("b2<1>"),o=A.a_(new A.b2(q,p),p.i("B.E"))
 B.c.ar(o,r.ga5V())
 r=s.k4
 if(r!=null)r.disconnect()
@@ -32129,7 +32129,7 @@ r.b7()
 r=s.gd_()
 q=r.b
 p=A.l(q).i("b2<1>")
-q=A.Z(new A.b2(q,p),p.i("B.E"))
+q=A.a_(new A.b2(q,p),p.i("B.E"))
 B.c.ar(q,r.gao8())
 r.d.aT()
 r.e.aT()},
@@ -32242,7 +32242,7 @@ if(e.b){q=t.f
 d=q.a(q.a(B.cb.fX(a2)).h(0,"data"))
 c=A.ci(d.h(0,"message"))
 if(c!=null&&c.length!==0){b=A.ay8(d,"assertiveness")
-e.a.Vf(c,B.Jr[b==null?0:b])}}a.fc(a3,B.cb.bW(!0))
+e.a.Vf(c,B.Jq[b==null?0:b])}}a.fc(a3,B.cb.bW(!0))
 return
 case"flutter/navigation":q=a.gd_().b
 p=t.e8
@@ -32702,7 +32702,7 @@ s=A.b([],t.xj)
 r=A.b([],t.k_)
 q=A.u(t.sT,t.E9)
 p=t.SF
-p=A.Z(new A.c_(f.a,p),p.i("B.E"))
+p=A.a_(new A.c_(f.a,p),p.i("B.E"))
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){m=p[n]
@@ -32728,22 +32728,22 @@ if(c.oD(p.x)){o=c.a
 n=t.SF
 m=n.i("B.E")
 l=0
-for(;;){k=A.Z(new A.c_(o,n),m)
+for(;;){k=A.a_(new A.c_(o,n),m)
 if(!(l<k.length))break
-k=A.Z(new A.c_(o,n),m)
+k=A.a_(new A.c_(o,n),m)
 k=k[l]
-j=A.Z(new A.c_(p.x.a,n),m)
+j=A.a_(new A.c_(p.x.a,n),m)
 k.c=j[l].c
-k=A.Z(new A.c_(p.x.a,n),m)
+k=A.a_(new A.c_(p.x.a,n),m)
 k[l].c=null;++l}}p.x=c
 o=t.SF
-c=A.Z(new A.c_(c.a,o),o.i("B.E"))
+c=A.a_(new A.c_(c.a,o),o.i("B.E"))
 o=A.a2(c).i("aa<1,jv>")
-i=A.Z(new A.aa(c,new A.acL(),o),o.i("al.E"))
+i=A.a_(new A.aa(c,new A.acL(),o),o.i("al.E"))
 c=p.c.d
 c.toString
 o=A.a2(c).i("aa<1,acu>")
-h=A.Z(new A.aa(c,new A.acM(),o),o.i("al.E"))
+h=A.a_(new A.aa(c,new A.acM(),o),o.i("al.E"))
 s=3
 return A.G(p.b.lQ(i,h,a),$async$wY)
 case 3:for(c=h.length,g=0;g<h.length;h.length===c||(0,A.x)(h),++g)h[g].l()
@@ -32769,7 +32769,7 @@ if(s!=null)s.a.remove()
 this.d.D(0,a)
 this.f.D(0,a)},
 af7(a){var s,r,q,p,o,n,m,l=A.b([],t.EV),k=a.a,j=t.SF
-j=A.Z(new A.c_(k,j),j.i("B.E"))
+j=A.a_(new A.c_(k,j),j.i("B.E"))
 s=j.length
 if(s<=A.cV().gHL())return a
 r=s-A.cV().gHL()
@@ -32788,7 +32788,7 @@ ak6(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d=this
 if(a.oD(d.x))return
 s=d.aah(d.x,a)
 r=A.a2(s).i("aN<1>")
-q=A.Z(new A.aN(s,new A.acJ(),r),r.i("B.E"))
+q=A.a_(new A.aN(s,new A.acJ(),r),r.i("B.E"))
 p=A.aHP(q)
 for(r=p.length,o=0;o<r;++o)p[o]=q[p[o]]
 for(n=d.b,o=0;o<d.x.a.length;++o){if(B.c.t(s,o))continue
@@ -32823,7 +32823,7 @@ if(p[r] instanceof A.dm)m.E(0,r)
 s=!0
 break}++r}if(!s)q.push(-1);++l}return q},
 l(){var s,r,q,p=this,o=p.e,n=A.l(o).i("b2<1>")
-n=A.Z(new A.b2(o,n),n.i("B.E"))
+n=A.a_(new A.b2(o,n),n.i("B.E"))
 B.c.ar(n,p.gWG())
 p.c=new A.z2(A.u(t.sT,t.Cc),A.b([],t.y8))
 p.d.X(0)
@@ -32832,7 +32832,7 @@ p.f.X(0)
 B.c.X(p.w)
 B.c.X(p.r)
 o=t.SF
-o=A.Z(new A.c_(p.x.a,o),o.i("B.E"))
+o=A.a_(new A.c_(p.x.a,o),o.i("B.E"))
 n=o.length
 s=0
 for(;s<o.length;o.length===n||(0,A.x)(o),++s){r=o[s]
@@ -33533,7 +33533,7 @@ else if(a.code==="NumLock")n.b=p|16
 else if(a.key==="ScrollLock")n.b=p|64
 else if(a.key==="Meta"&&$.bc().gd1()===B.i8)n.b|=8
 else if(a.code==="MetaLeft"&&a.key==="Process")n.b|=8
-o=A.a_(["type",a.type,"keymap","web","code",a.code,"key",a.key,"location",J.am(a.location),"metaState",n.b,"keyCode",J.am(a.keyCode)],t.N,t.z)
+o=A.Y(["type",a.type,"keymap","web","code",a.code,"key",a.key,"location",J.am(a.location),"metaState",n.b,"keyCode",J.am(a.keyCode)],t.N,t.z)
 $.aH().hT("flutter/keyevent",B.a5.bW(o),new A.adg(s))}}
 A.add.prototype={
 $0(){this.a.l()},
@@ -33542,7 +33542,7 @@ A.adf.prototype={
 $0(){var s,r,q=this.a
 q.a.D(0,this.b)
 s=this.c.a
-r=A.a_(["type","keyup","keymap","web","code",s.code,"key",s.key,"location",J.am(s.location),"metaState",q.b,"keyCode",J.am(s.keyCode)],t.N,t.z)
+r=A.Y(["type","keyup","keymap","web","code",s.code,"key",s.key,"location",J.am(s.location),"metaState",q.b,"keyCode",J.am(s.keyCode)],t.N,t.z)
 $.aH().hT("flutter/keyevent",B.a5.bW(r),A.aUc())},
 $S:0}
 A.adg.prototype={
@@ -35254,7 +35254,7 @@ if(r.f!==B.ow){r.f=B.ow
 r.Rn()}}return r.d.a.a15(a)},
 Rn(){var s,r
 for(s=this.w,r=0;r<s.length;++r)s[r].$1(this.f)},
-a14(a){if(B.c.t(B.Kh,a))return this.f===B.hI
+a14(a){if(B.c.t(B.Kg,a))return this.f===B.hI
 return!1}}
 A.a4W.prototype={
 $0(){return new A.hQ(Date.now(),0,!1)},
@@ -35399,7 +35399,7 @@ if(i.c==null){h=h.y1.a
 h===$&&A.a()
 i.c=h
 i.b.append(h)}i.Pt()},
-jY(){var s,r,q=this,p=q.e,o=A.l(p).i("b2<1>"),n=A.Z(new A.b2(p,o),o.i("B.E")),m=n.length
+jY(){var s,r,q=this,p=q.e,o=A.l(p).i("b2<1>"),n=A.a_(new A.b2(p,o),o.i("B.E")),m=n.length
 for(s=0;s<m;++s){r=p.h(0,n[s])
 if(r!=null)q.w.push(r)}q.Pt()
 o=q.c
@@ -35846,7 +35846,7 @@ bW(a){return B.n8.bW(B.bW.oA(a))},
 fX(a){if(a==null)return a
 return B.bW.fm(B.cS.d5(J.op(B.aJ.gcd(a))))}}
 A.a7S.prototype={
-j1(a){return B.a5.bW(A.a_(["method",a.a,"args",a.b],t.N,t.z))},
+j1(a){return B.a5.bW(A.Y(["method",a.a,"args",a.b],t.N,t.z))},
 iY(a){var s,r,q=null,p=B.a5.fX(a)
 if(!t.f.b(p))throw A.j(A.bP("Expected method call Map, got "+A.k(p),q,q))
 s=p.h(0,"method")
@@ -36213,7 +36213,7 @@ if(g===f){e=h.a
 e=e.length!==0&&e!==g}else e=!1
 if(e){j=h.a
 if(j!==n.h(0,k)){n.m(0,k,j)
-$.aH().hT("flutter/textinput",B.a5.bW(A.a_(["method",u.w,"args",[0,A.a_([k,A.a_(["text",j,"selectionBase",h.b,"selectionExtent",h.c,"composingBase",h.d,"composingExtent",h.e],m,l)],m,l)]],m,l)),A.Ip())}continue}k=A.dW(j,"HTMLInputElement")
+$.aH().hT("flutter/textinput",B.a5.bW(A.Y(["method",u.w,"args",[0,A.Y([k,A.Y(["text",j,"selectionBase",h.b,"selectionExtent",h.c,"composingBase",h.d,"composingExtent",h.e],m,l)],m,l)]],m,l)),A.Ip())}continue}k=A.dW(j,"HTMLInputElement")
 if(k)j.value=g
 else{k=A.dW(j,"HTMLTextAreaElement")
 if(k)j.value=g
@@ -36222,7 +36222,7 @@ uz(){var s=this.b,r=A.b([],t.Up)
 new A.b2(s,A.l(s).i("b2<1>")).ar(0,new A.a4x(this,r))
 return r},
 aiu(a,b){this.c.m(0,a,b.a)
-$.aH().hT("flutter/textinput",B.b0.j1(new A.hk(u.w,[0,A.a_([a,b.a_h()],t.N,t.z)])),A.Ip())}}
+$.aH().hT("flutter/textinput",B.b0.j1(new A.hk(u.w,[0,A.Y([a,b.a_h()],t.N,t.z)])),A.Ip())}}
 A.a4x.prototype={
 $1(a){var s=this.a,r=s.b.h(0,a)
 r.toString
@@ -36257,7 +36257,7 @@ return new A.iC(s.a,Math.max(0,r),Math.max(0,q),p,o)},
 anm(a,b){return this.Wc(null,a,b,null)},
 qI(a,b){return this.Wc(a,null,null,b)},
 a_h(){var s=this
-return A.a_(["text",s.a,"selectionBase",s.b,"selectionExtent",s.c,"composingBase",s.d,"composingExtent",s.e],t.N,t.z)},
+return A.Y(["text",s.a,"selectionBase",s.b,"selectionExtent",s.c,"composingBase",s.d,"composingExtent",s.e],t.N,t.z)},
 gA(a){var s=this
 return A.Q(s.a,s.b,s.c,s.d,s.e,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 j(a,b){var s,r,q,p,o=this
@@ -36652,7 +36652,7 @@ if(q!=null){s=r.c
 s.toString
 q.fl(s)}if(A.aHK()||A.cV().gZ7()){q=r.c
 q.toString
-s=A.a3(A.a_(["block","center","inline","nearest"],t.N,t.z))
+s=A.a3(A.Y(["block","center","inline","nearest"],t.N,t.z))
 s.toString
 q.scrollIntoView(s)}}}
 A.a7f.prototype={
@@ -36835,7 +36835,7 @@ o=A.en(s.h(0,"textAlignIndex"))
 n=A.en(s.h(0,"textDirectionIndex"))
 m=A.f1(s.h(0,"fontWeightIndex"))
 l=m!=null?A.aHz(m):"normal"
-p=new A.aiM(new A.a4i(A.a7X(s,"fontSize"),l,A.ci(s.h(0,"fontFamily")),B.Jo[o],B.kS[n],A.a7X(s,"letterSpacing"),A.a7X(s,"wordSpacing"),A.a7X(s,"lineHeight")))
+p=new A.aiM(new A.a4i(A.a7X(s,"fontSize"),l,A.ci(s.h(0,"fontFamily")),B.Jn[o],B.kS[n],A.a7X(s,"letterSpacing"),A.a7X(s,"wordSpacing"),A.a7X(s,"lineHeight")))
 break
 case"TextInput.clearClient":p=B.D0
 break
@@ -36900,7 +36900,7 @@ if(p.d.r){p.gqx()
 p=p.b
 s=t.N
 r=t.z
-$.aH().hT(q,B.b0.j1(new A.hk(u.s,[p,A.a_(["deltas",A.b([A.a_(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.Ip())}else{p.gqx()
+$.aH().hT(q,B.b0.j1(new A.hk(u.s,[p,A.Y(["deltas",A.b([A.Y(["oldText",b.a,"deltaText",b.b,"deltaStart",b.c,"deltaEnd",b.d,"selectionBase",b.e,"selectionExtent",b.f,"composingBase",b.r,"composingExtent",b.w],s,r)],t.H7)],s,r)])),A.Ip())}else{p.gqx()
 p=p.b
 $.aH().hT(q,B.b0.j1(new A.hk("TextInputClient.updateEditingState",[p,a.a_h()])),A.Ip())}},
 $S:234}
@@ -37079,7 +37079,7 @@ r.d=q.matchMedia("(resolution: "+A.k(p)+"dppx)")
 q=r.d
 q===$&&A.a()
 p=A.aW(r.gafz())
-s=A.a3(A.a_(["once",!0,"passive",!0],t.N,t.K))
+s=A.a3(A.Y(["once",!0,"passive",!0],t.N,t.K))
 s.toString
 q.addEventListener("change",p,s)},
 afA(a){var s=this,r=s.a,q=r.d
@@ -38458,7 +38458,7 @@ s=r==null?s.gcc():r
 r=v.G
 q=A.bW(r.document,k)
 p=A.bW(r.document,"flt-glass-pane")
-o=A.a3(A.a_(["mode","open","delegatesFocus",!1],t.N,t.z))
+o=A.a3(A.Y(["mode","open","delegatesFocus",!1],t.N,t.z))
 o.toString
 o=p.attachShadow(o)
 n=A.bW(r.document,"flt-scene-host")
@@ -38829,7 +38829,7 @@ m(a,b,c){a.$flags&2&&A.au(a)
 if(!(b>=0&&b<a.length))throw A.j(A.a_k(a,b))
 a[b]=c},
 Lk(a,b){return new A.c_(a,b.i("c_<0>"))},
-M(a,b){var s=A.Z(a,A.a2(a).c)
+M(a,b){var s=A.a_(a,A.a2(a).c)
 this.P(s,b)
 return s},
 Y8(a,b,c){var s
@@ -39220,8 +39220,8 @@ if(p!==q.gF(q))throw A.j(A.c2(q))}return s},
 iC(a,b){return A.eZ(this,b,null,A.l(this).i("al.E"))},
 lT(a,b){return A.eZ(this,0,A.kr(b,"count",t.S),A.l(this).i("al.E"))},
 ei(a,b){var s=A.l(this).i("al.E")
-if(b)s=A.Z(this,s)
-else{s=A.Z(this,s)
+if(b)s=A.a_(this,s)
+else{s=A.a_(this,s)
 s.$flags=1
 s=s}return s},
 eh(a){return this.ei(0,!0)},
@@ -41460,13 +41460,13 @@ r.sF(a,r.gF(a)-1)
 return s},
 eP(a,b){var s=b==null?A.aVW():b
 A.PR(a,0,this.gF(a)-1,s)},
-M(a,b){var s=A.Z(a,A.cD(a).i("aJ.E"))
+M(a,b){var s=A.a_(a,A.cD(a).i("aJ.E"))
 B.c.P(s,b)
 return s},
 cC(a,b,c){var s,r=this.gF(a)
 if(c==null)c=r
 A.d4(b,c,r,null,null)
-s=A.Z(this.wA(a,b,c),A.cD(a).i("aJ.E"))
+s=A.a_(this.wA(a,b,c),A.cD(a).i("aJ.E"))
 return s},
 hC(a,b){return this.cC(a,b,null)},
 wA(a,b,c){A.d4(b,c,this.gF(a),null,null)
@@ -41783,8 +41783,8 @@ fZ(a){var s,r,q=this.hZ(0)
 for(s=this.ga8(this);s.v();){r=s.gL()
 if(a.t(0,r))q.D(0,r)}return q},
 ei(a,b){var s=A.l(this).c
-if(b)s=A.Z(this,s)
-else{s=A.Z(this,s)
+if(b)s=A.a_(this,s)
+else{s=A.a_(this,s)
 s.$flags=1
 s=s}return s},
 eh(a){return this.ei(0,!0)},
@@ -42280,7 +42280,7 @@ if(s==null||s.length<a)s=this.c=new Uint8Array(a)
 return J.hJ(B.R.gcd(s),s.byteOffset,a)}}
 A.al4.prototype={
 E(a,b){this.xv(b,0,J.cj(b),!1)},
-aT(){this.xv(B.Km,0,0,!0)},
+aT(){this.xv(B.Kl,0,0,!0)},
 dF(a,b,c,d){A.d4(b,c,a.length,null,null)
 this.xv(a,b,c,d)}}
 A.akR.prototype={
@@ -43047,8 +43047,8 @@ eB(a,b){var s
 for(s=this.ga8(this);s.v();)if(b.$1(s.gL()))return!0
 return!1},
 ei(a,b){var s=A.cD(this).i("B.E")
-if(b)s=A.Z(this,s)
-else{s=A.Z(this,s)
+if(b)s=A.a_(this,s)
+else{s=A.a_(this,s)
 s.$flags=1
 s=s}return s},
 eh(a){return this.ei(0,!0)},
@@ -45519,7 +45519,7 @@ a7=A.BW(a==null?B.mK:a,a7)
 if(p!=null&&a8){a8=o.f
 if(a8 instanceof A.cy)a8=a8.cZ(b0)}else a8=p
 a0=a5.y
-if(a0===$){a1=A.a_([B.AF,new A.d8(a5.ga73(),new A.bb(A.b([],t.e),t.d),t.wY)],t.u,t.od)
+if(a0===$){a1=A.Y([B.AF,new A.d8(a5.ga73(),new A.bb(A.b([],t.e),t.d),t.wY)],t.u,t.od)
 a5.y!==$&&A.an()
 a5.y=a1
 a0=a1}a5.a.toString
@@ -45874,7 +45874,7 @@ r=A.mZ(B.Nw,B.h,r==null?1:r)
 r.toString
 q=p.ae(q.gu())
 if(q==null)q=1
-return A.ayX(A.aE3(null,B.u,new A.uc(q,B.JT,new A.c4(B.Bx,this.e)),s,1,B.S3),r)}}
+return A.ayX(A.aE3(null,B.u,new A.uc(q,B.JS,new A.c4(B.Bx,this.e)),s,1,B.S3),r)}}
 A.HZ.prototype={
 l(){var s=this,r=s.bp$
 if(r!=null)r.I(s.ghh())
@@ -46339,7 +46339,7 @@ l(){var s=this.d
 s===$&&A.a()
 s.l()
 this.a4X()},
-J(a){var s,r,q,p=this,o=null,n=B.hn.cZ(a),m=A.iz(A.aBV(A.l3(A.jt(o,o,o,new A.Uk(n,!0,o),B.zQ),!0,o),p.gacz()),1,1),l=A.iz(A.aBV(A.l3(A.jt(o,o,o,new A.WM(n,!1,o),B.zQ),!0,o),p.gacd()),1,1),k=p.a.e,j=A.a2(k).i("aa<1,oF>"),i=A.Z(new A.aa(k,new A.amG(),j),j.i("al.E"))
+J(a){var s,r,q,p=this,o=null,n=B.hn.cZ(a),m=A.iz(A.aBV(A.l3(A.jt(o,o,o,new A.Uk(n,!0,o),B.zQ),!0,o),p.gacz()),1,1),l=A.iz(A.aBV(A.l3(A.jt(o,o,o,new A.WM(n,!1,o),B.zQ),!0,o),p.gacd()),1,1),k=p.a.e,j=A.a2(k).i("aa<1,oF>"),i=A.a_(new A.aa(k,new A.amG(),j),j.i("al.E"))
 k=p.a
 j=k.c
 s=k.d
@@ -47848,7 +47848,7 @@ return n}}
 A.azf.prototype={}
 A.B7.prototype={
 k(a){var s,r=this.a,q=A.cD(r).i("aa<aJ.E,o>")
-r=A.Z(new A.aa(r,new A.ad1(),q),q.i("al.E"))
+r=A.a_(new A.aa(r,new A.ad1(),q),q.i("al.E"))
 s=A.mM(r,"[","]")
 r=this.b
 r===$&&A.a()
@@ -48248,7 +48248,7 @@ r.y=null
 r.ug(s)
 $.eO.bh$.atS(s.b)}r.Oq()},
 Oq(){var s=this.z,r=A.l(s).i("ba<2>")
-s=A.Z(new A.ba(s,r),r.i("B.E"))
+s=A.a_(new A.ba(s,r),r.i("B.E"))
 B.c.ar(s,this.gaht())},
 To(){var s=this.x
 if(s!=null){s.b7()
@@ -48321,7 +48321,7 @@ iP(a){this.wX(a.gbC(),a.gc8())},
 vx(a){this.a5(B.aA)},
 hK(a){},
 fD(a){},
-a5(a){var s,r=this.f,q=A.Z(new A.ba(r,A.l(r).i("ba<2>")),t.SP)
+a5(a){var s,r=this.f,q=A.a_(new A.ba(r,A.l(r).i("ba<2>")),t.SP)
 r.X(0)
 for(r=q.length,s=0;s<q.length;q.length===r||(0,A.x)(q),++s)q[s].a5(a)},
 C5(a,b){var s=this.f,r=s.h(0,a)
@@ -49415,7 +49415,7 @@ A.vR.prototype={
 H(){return"_CornerId."+this.b}}
 A.lV.prototype={}
 A.ud.prototype={
-la(){var s,r,q,p=this,o=A.aUW(B.Kb,new A.aaZ(p,p.b.gaX().V(0,p.a.gaX()))),n=p.a
+la(){var s,r,q,p=this,o=A.aUW(B.Ka,new A.aaZ(p,p.b.gaX().V(0,p.a.gaX()))),n=p.a
 n.toString
 s=o.a
 r=p.pR(n,s)
@@ -49765,7 +49765,7 @@ if(p==null)p=s.r
 return new A.re(r,!0,r.j2,q,p,r.jI,r.lv,r.co,!0,!1,r.dU,null,r.$ti.i("re<1>"))},
 $S(){return this.a.$ti.i("re<1>(S)")}}
 A.E7.prototype={
-J(a){return new A.i5(this.c,A.a_([B.iP,new A.ce(new A.alb(this),new A.alc(this),t.ok)],t.u,t.xR),null,!0,null)}}
+J(a){return new A.i5(this.c,A.Y([B.iP,new A.ce(new A.alb(this),new A.alc(this),t.ok)],t.u,t.xR),null,!0,null)}}
 A.alb.prototype={
 $0(){return A.az_(this.a,null)},
 $S:108}
@@ -50567,7 +50567,7 @@ A.arn.prototype={
 $2(a,b){return this.a.n$.c0(a,this.b)},
 $S:12}
 A.S_.prototype={
-gD1(){return B.JC},
+gD1(){return B.JB},
 HP(a){var s
 switch(a.a){case 0:s=this.d.b
 break
@@ -52946,7 +52946,7 @@ k=a.w
 if(k===$){q=a.galc()
 p=t.e
 o=t.d
-j=A.a_([B.AF,new A.d8(q,new A.bb(A.b([],p),o),t.wY),B.a7J,new A.d8(q,new A.bb(A.b([],p),o),t.nz)],t.u,t.od)
+j=A.Y([B.AF,new A.d8(q,new A.bb(A.b([],p),o),t.wY),B.a7J,new A.d8(q,new A.bb(A.b([],p),o),t.nz)],t.u,t.od)
 a.w!==$&&A.an()
 a.w=j
 k=j}q=a.a.ok
@@ -53847,7 +53847,7 @@ A.arC.prototype={
 $0(){return A.b([],t.q1)},
 $S:231}
 A.SL.prototype={
-gD1(){return B.JJ},
+gD1(){return B.JI},
 HP(a){var s,r=this
 switch(a.a){case 0:s=r.d.ax
 break
@@ -54817,7 +54817,7 @@ r.f=s.d},
 $S:0}
 A.MU.prototype={
 J(a){var s=this.c.M(0,new A.h(0,40.95))
-return A.aE3(A.yn(null,B.EC,!0),B.T,new A.uc(1,B.KF,new A.c4(B.Bv,B.r)),s,1.25,B.S4)}}
+return A.aE3(A.yn(null,B.EC,!0),B.T,new A.uc(1,B.KE,new A.c4(B.Bv,B.r)),s,1.25,B.S4)}}
 A.pI.prototype={
 H(){return"MaterialType."+this.b}}
 A.Am.prototype={
@@ -55271,7 +55271,7 @@ $3(a,b,c){return new A.ob(b,this.a,!1,c,null)},
 $S:148}
 A.Nz.prototype={
 a6p(a){var s=t.Tr
-s=A.Z(new A.aa(B.K9,new A.aci(a),s),s.i("al.E"))
+s=A.a_(new A.aa(B.K8,new A.aci(a),s),s.i("al.E"))
 return s},
 j(a,b){if(b==null)return!1
 if(this===b)return!0
@@ -56111,7 +56111,7 @@ e=l.a.f
 e.toString
 l.tn(g,new A.ep(new A.a5(0,1/0,0,f),new A.zf(1,f,f,f,k,k,e,k),k),B.j8,!0,!1,!1,!1)}j.a=!1
 j.b=null
-if(l.ax!=null||l.at.length!==0){f=A.Z(l.at,t.l7)
+if(l.ax!=null||l.at.length!==0){f=A.a_(l.at,t.l7)
 e=l.ax
 e=e==null?k:e.a
 if(e!=null)f.push(e)
@@ -56177,7 +56177,7 @@ A.aeY.prototype={
 $0(){this.a.as=this.b},
 $S:0}
 A.af_.prototype={
-$1(a){var s,r,q,p,o,n,m,l=this,k=A.a_([B.m9,new A.SY(a,new A.bb(A.b([],t.e),t.d))],t.u,t.od),j=l.b
+$1(a){var s,r,q,p,o,n,m,l=this,k=A.Y([B.m9,new A.SY(a,new A.bb(A.b([],t.e),t.d))],t.u,t.od),j=l.b
 j.a.toString
 s=j.db
 s.toString
@@ -57690,7 +57690,7 @@ j(a,b){var s=this
 if(b==null)return!1
 if(J.T(b)!==A.r(s))return!1
 return b instanceof A.ib&&A.x7(b.d,s.d)&&b.a===s.a&&A.x7(b.c,s.c)&&b.e.j(0,s.e)&&b.f===s.f&&b.r.j(0,s.r)&&b.w===s.w&&b.x.j(0,s.x)&&b.y===s.y&&b.Q.j(0,s.Q)&&b.as.j(0,s.as)&&b.at.j(0,s.at)&&b.ax.j(0,s.ax)&&b.ay.j(0,s.ay)&&b.ch.j(0,s.ch)&&b.CW.j(0,s.CW)&&b.cx.j(0,s.cx)&&b.cy.j(0,s.cy)&&b.db.j(0,s.db)&&b.dx.j(0,s.dx)&&b.dy.j(0,s.dy)&&b.fr.j(0,s.fr)&&b.fx.j(0,s.fx)&&b.fy.j(0,s.fy)&&b.go.j(0,s.go)&&b.id.j(0,s.id)&&b.k1.j(0,s.k1)&&b.k2.j(0,s.k2)&&b.k3.j(0,s.k3)&&b.k4.j(0,s.k4)&&b.ok.j(0,s.ok)&&b.p1.j(0,s.p1)&&J.e(b.p2,s.p2)&&b.p3.j(0,s.p3)&&b.p4.j(0,s.p4)&&b.R8.j(0,s.R8)&&b.RG.j(0,s.RG)&&b.rx.j(0,s.rx)&&b.ry.j(0,s.ry)&&b.to.j(0,s.to)&&b.x1.j(0,s.x1)&&b.x2.j(0,s.x2)&&b.xr.j(0,s.xr)&&b.y1.j(0,s.y1)&&b.y2.j(0,s.y2)&&b.aF.j(0,s.aF)&&b.am.j(0,s.am)&&b.q.j(0,s.q)&&b.N.j(0,s.N)&&b.O.j(0,s.O)&&b.a0.j(0,s.a0)&&b.W.j(0,s.W)&&b.a9.j(0,s.a9)&&b.a1.j(0,s.a1)&&b.ai.j(0,s.ai)&&b.aY.j(0,s.aY)&&b.aI.j(0,s.aI)&&b.aJ.j(0,s.aJ)&&b.bq.j(0,s.bq)&&b.cl.j(0,s.cl)&&b.br.j(0,s.br)&&b.bh.j(0,s.bh)&&b.bG.j(0,s.bG)&&b.aq.j(0,s.aq)&&b.c4.j(0,s.c4)&&b.bP.j(0,s.bP)&&b.dm.j(0,s.dm)&&b.by.j(0,s.by)&&b.an.j(0,s.an)&&b.cH.j(0,s.cH)&&b.eD.j(0,s.eD)&&b.d7.j(0,s.d7)&&b.dn.j(0,s.dn)&&b.dg.j(0,s.dg)&&b.h3.j(0,s.h3)&&b.B.j(0,s.B)&&b.n.j(0,s.n)&&b.ac.j(0,s.ac)&&b.bs.j(0,s.bs)&&b.bT.j(0,s.bT)&&b.a4.j(0,s.a4)},
-gA(a){var s=this,r=s.d,q=A.l(r),p=A.Z(new A.b2(r,q.i("b2<1>")),t.X)
+gA(a){var s=this,r=s.d,q=A.l(r),p=A.a_(new A.b2(r,q.i("b2<1>")),t.X)
 B.c.P(p,new A.ba(r,q.i("ba<2>")))
 p.push(s.a)
 p.push(s.b)
@@ -58199,7 +58199,7 @@ if(!p){s=this.a
 r=c?B.c.gaj(s):B.c.gY(s)
 q=r.iO(0,b,c)
 if(q==null)q=b.iO(0,r,!c)
-if(q!=null){p=A.Z(s,t.RY)
+if(q!=null){p=A.a_(s,t.RY)
 p[c?p.length-1:0]=q
 return new A.ig(p)}}s=A.b([],t.N_)
 if(c)B.c.P(s,this.a)
@@ -58209,7 +58209,7 @@ if(!c)B.c.P(s,this.a)
 return new A.ig(s)},
 E(a,b){return this.iO(0,b,!1)},
 az(a){var s=this.a,r=A.a2(s).i("aa<1,bS>")
-s=A.Z(new A.aa(s,new A.amc(a),r),r.i("al.E"))
+s=A.a_(new A.aa(s,new A.amc(a),r),r.i("al.E"))
 return new A.ig(s)},
 cJ(a,b){return A.aFp(a,this,b)},
 cK(a,b){return A.aFp(this,a,b)},
@@ -58929,7 +58929,7 @@ uX(a,b){var s=this
 return A.axW(s.d.a5(b).Cs(a),s.e.a5(b).Cs(a),s.a,s.q_(),s.f,s.Sp(a,b))},
 Ig(a){return this.uX(a,null)},
 az(a){var s=this,r=s.a,q=A.a2(r).i("aa<1,y>")
-r=A.Z(new A.aa(r,new A.a8w(a),q),q.i("al.E"))
+r=A.a_(new A.aa(r,new A.a8w(a),q),q.i("al.E"))
 return new A.hZ(s.d,s.e,s.f,r,s.b,s.c)},
 J2(a){var s=this
 return new A.hZ(s.d,s.e,s.f,A.bq(s.a.length,a,!1,t.G),s.b,s.c)},
@@ -58960,7 +58960,7 @@ n=n==null?null:n.a5(b).Cs(a)
 return A.aO5(r,s.e*q,s.a,p,s.f,o,n,s.w*a.gej())},
 Ig(a){return this.uX(a,null)},
 az(a){var s=this,r=s.a,q=A.a2(r).i("aa<1,y>")
-r=A.Z(new A.aa(r,new A.ad9(a),q),q.i("al.E"))
+r=A.a_(new A.aa(r,new A.ad9(a),q),q.i("al.E"))
 return new A.na(s.d,s.e,s.f,s.r,s.w,r,s.b,s.c)},
 J2(a){var s=this
 return new A.na(s.d,s.e,s.f,s.r,s.w,A.bq(s.a.length,a,!1,t.G),s.b,s.c)},
@@ -59374,7 +59374,7 @@ e.c=a
 B.c.X(e.b)
 p=e.a
 if(p.length===0)return
-o=A.Z(p,t.dW)
+o=A.a_(p,t.dW)
 for(p=o.length,n=a.b,m=a.c,l=a.a,k=l.c,j=l.d,i=l.e,h=0;h<o.length;o.length===p||(0,A.x)(o),++h){s=o[h]
 try{g=l.b
 g===$&&A.a();++g.c
@@ -59385,7 +59385,7 @@ e.a_1(A.aG("by an image listener"),r,q)}}},
 C3(a,b,c,d,e){var s,r,q,p,o,n,m,l,k,j,i=this,h="image resource service"
 i.d=new A.aU(b,e,h,a,c,d)
 o=i.a
-o=A.Z(new A.c_(new A.aa(o,new A.a7B(),A.a2(o).i("aa<1,~(E,df?)?>")),t.kE),t.CF)
+o=A.a_(new A.c_(new A.aa(o,new A.a7B(),A.a2(o).i("aa<1,~(E,df?)?>")),t.kE),t.CF)
 n=i.b
 B.c.P(o,n)
 B.c.X(n)
@@ -59756,9 +59756,9 @@ if(r!=null){q=p.r
 q.toString
 q.st2(r.uX(a,b))}r=s.d
 if(r!=null){if(p.w==null){p.w=r.length
-q=A.Z(new A.aa(r,new A.ata(),A.a2(r).i("aa<1,NA>")),t.Q2)
-p.z=q}if(s.e.gfA()){r=A.Z(new A.aa(r,new A.atb(a),A.a2(r).i("aa<1,t>")),t.YT)
-p.x=r}else{r=A.Z(new A.aa(r,new A.atc(p,a,b),A.a2(r).i("aa<1,NF>")),t.ke)
+q=A.a_(new A.aa(r,new A.ata(),A.a2(r).i("aa<1,NA>")),t.Q2)
+p.z=q}if(s.e.gfA()){r=A.a_(new A.aa(r,new A.atb(a),A.a2(r).i("aa<1,t>")),t.YT)
+p.x=r}else{r=A.a_(new A.aa(r,new A.atc(p,a,b),A.a2(r).i("aa<1,NF>")),t.ke)
 p.y=r}}r=s.e
 if(!r.gfA())q=p.r!=null||p.w!=null
 else q=!1
@@ -60179,7 +60179,7 @@ r=p.e
 if(r==null)r=p.e=p.a.c.wv()
 if(s.j(0,B.h))return r
 q=A.a2(r).i("aa<1,e2>")
-q=A.Z(new A.aa(r,new A.aj0(s),q),q.i("al.E"))
+q=A.a_(new A.aa(r,new A.aj0(s),q),q.i("al.E"))
 q.$flags=1
 return q},
 i3(a){if(a==null||a.length===0||A.cc(a,this.ay))return
@@ -60335,7 +60335,7 @@ if(!isFinite(p.a)||!isFinite(p.b))return A.b([],t.Lx)
 s=q.a.c.ww(a.a,a.b,b,c)
 if(p.j(0,B.h))r=s
 else{r=A.a2(s).i("aa<1,e2>")
-r=A.Z(new A.aa(s,new A.aj_(p),r),r.i("al.E"))
+r=A.a_(new A.aa(s,new A.aj_(p),r),r.i("al.E"))
 r.$flags=1
 r=r}return r},
 ny(a){return this.nz(a,B.fU,B.d2)},
@@ -60345,12 +60345,12 @@ return new A.mC(r.a.cA(s.git()),r.b,r.c)},
 d3(a){var s=this.b
 return s.a.c.d3(a.V(0,s.git()))},
 qD(){var s,r,q=this.b,p=q.git()
-if(!isFinite(p.a)||!isFinite(p.b))return B.Ko
+if(!isFinite(p.a)||!isFinite(p.b))return B.Kn
 s=q.f
 if(s==null){s=q.a.c.qD()
 q.f=s}if(p.j(0,B.h))r=s
 else{r=A.a2(s).i("aa<1,mS>")
-r=A.Z(new A.aa(s,new A.aiZ(p),r),r.i("al.E"))
+r=A.a_(new A.aa(s,new A.aiZ(p),r),r.i("al.E"))
 r.$flags=1
 r=r}return r},
 l(){var s=this,r=s.ch
@@ -61599,7 +61599,7 @@ q.jt()
 s=q.a9
 s=q.aq.nz(a,s.y,s.z)
 r=A.a2(s).i("aa<1,e2>")
-s=A.Z(new A.aa(s,new A.adH(q),r),r.i("al.E"))
+s=A.a_(new A.aa(s,new A.adH(q),r),r.i("al.E"))
 return s},
 dI(a){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this
 e.i5(a)
@@ -62781,7 +62781,7 @@ s=this.r
 if(s!=null)s.uu(a)},
 tG(a){var s,r,q=this.a
 if(q.a===0)return
-q=A.Z(new A.ba(q,A.l(q).i("ba<2>")),t.M)
+q=A.a_(new A.ba(q,A.l(q).i("ba<2>")),t.M)
 s=q.length
 r=0
 for(;r<q.length;q.length===s||(0,A.x)(q),++r)q[r].$0()},
@@ -63410,7 +63410,7 @@ Xi(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9,b0=
 if(b0.at==null)return
 try{b=b0.ch
 a=A.l(b).i("aN<1>")
-a0=A.Z(new A.aN(b,new A.acz(b0),a),a.i("B.E"))
+a0=A.a_(new A.aN(b,new A.acz(b0),a),a.i("B.E"))
 B.c.eP(a0,new A.acA())
 s=a0
 b.X(0)
@@ -63418,7 +63418,7 @@ for(b=s,a=b.length,a1=0;a1<b.length;b.length===a||(0,A.x)(b),++a1){r=b[a1]
 if(r.gc1().gjh())continue
 r.gc1().Cm()}b=b0.CW
 a=A.l(b).i("aN<1>")
-a2=A.Z(new A.aN(b,new A.acB(b0),a),a.i("B.E"))
+a2=A.a_(new A.aN(b,new A.acB(b0),a),a.i("B.E"))
 q=a2
 b.X(0)
 for(b=q,a=b.length,a3=t.Zw,a4=t.ju,a1=0;a1<b.length;b.length===a||(0,A.x)(b),++a1){p=b[a1]
@@ -63452,7 +63452,7 @@ j.gc1().I0(l)
 if(j.gc1().CW!=null){a3=j.gc1().CW
 a3.toString
 J.eo(k,a3)}}b=k
-b=A.Z(b,A.l(b).c)
+b=A.a_(b,A.l(b).c)
 B.c.eP(b,new A.acC())
 a=b.length
 a1=0
@@ -67434,7 +67434,7 @@ q.toString
 r.OU(q);--s.b}s=r.y2
 q=A.l(s).i("ba<2>")
 p=q.i("aN<B.E>")
-s=A.Z(new A.aN(new A.ba(s,q),new A.aee(),p),p.i("B.E"))
+s=A.a_(new A.aN(new A.ba(s,q),new A.aee(),p),p.i("B.E"))
 B.c.ar(s,r.y1.gatZ())},
 $S:165}
 A.aee.prototype={
@@ -68716,7 +68716,7 @@ B.c.D(s,a)
 if(s.length===0){s=$.aH()
 s.dy=null
 s.fr=$.ai}},
-a9p(a){var s,r,q,p,o,n,m,l,k,j=this.p4$,i=A.Z(j,t.xt)
+a9p(a){var s,r,q,p,o,n,m,l,k,j=this.p4$,i=A.a_(j,t.xt)
 for(o=i.length,n=0;n<i.length;i.length===o||(0,A.x)(i),++n){s=i[n]
 try{if(B.c.t(j,s))s.$1(a)}catch(m){r=A.a9(m)
 q=A.aw(m)
@@ -68836,7 +68836,7 @@ $.aH()}},
 XC(){var s,r,q,p,o,n,m,l,k,j=this
 try{j.am$=B.ee
 p=t.zv
-o=A.Z(j.xr$,p)
+o=A.a_(j.xr$,p)
 n=o.length
 m=0
 for(;m<o.length;o.length===n||(0,A.x)(o),++m){s=o[m]
@@ -68844,7 +68844,7 @@ l=j.a9$
 l.toString
 j.QW(s,l)}j.am$=B.lq
 o=j.y1$
-k=A.Z(o,p)
+k=A.a_(o,p)
 r=k
 B.c.X(o)
 try{for(p=r,o=p.length,m=0;m<p.length;p.length===o||(0,A.x)(p),++m){q=p[m]
@@ -69026,7 +69026,7 @@ M(a,b){var s,r,q,p,o,n,m,l=this.a,k=l.length
 if(k===0)return b
 s=b.a
 if(s.length===0)return this
-r=A.Z(this.b,t.Vc)
+r=A.a_(this.b,t.Vc)
 q=b.b
 p=q.length
 if(p!==0)for(o=0;o<q.length;q.length===p||(0,A.x)(q),++o){n=q[o]
@@ -69251,7 +69251,7 @@ a3=b7.cx
 a4=b7.cy
 a5=b7.db
 a6=b7.dx
-a7=A.Z(q,q.$ti.c)
+a7=A.a_(q,q.$ti.c)
 B.c.kc(a7)
 a8=b7.dy
 a9=b7.fr
@@ -69269,7 +69269,7 @@ aiq(){var s=this.as
 if(s==null)return B.hR
 return s},
 a7A(){var s=this.aiq(),r=A.a2(s).i("cb<1>"),q=r.i("aa<al.E,n>")
-r=A.Z(new A.aa(new A.cb(s,r),new A.agD(),q),q.i("al.E"))
+r=A.a_(new A.aa(new A.cb(s,r),new A.agD(),q),q.i("al.E"))
 return new Int32Array(A.ip(r))},
 a6j(b1,b2){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3,a4,a5,a6,a7,a8,a9=this,b0=a9.a0j()
 if(!a9.gaq9()||a9.Q){s=$.aJf()
@@ -69314,7 +69314,7 @@ if(a4==null)a4=$.aAz()
 a5=o==null?$.aJg():o
 a6=b0.k1
 if(a6==null)a6=null
-else a6=A.Z(a6,A.l(a6).c)
+else a6=A.a_(a6,A.l(a6).c)
 a7=b0.p2
 if(a7==null)a7=""
 a8=b0.p1
@@ -69344,7 +69344,7 @@ B.c.P(q,p)
 B.c.X(p)}p.push(new A.m6(m,l,n))}if(o!=null)B.c.kc(p)
 B.c.P(q,p)
 s=t.rB
-s=A.Z(new A.aa(q,new A.agE(),s),s.i("al.E"))
+s=A.a_(new A.aa(q,new A.agE(),s),s.i("al.E"))
 return s},
 a0J(a){if(this.ay==null)return
 B.ew.i2(a.Ca(this.b)).cO(new A.agL(),new A.agM(this,a),t.P)},
@@ -69449,8 +69449,8 @@ if(l===0){m.toString
 n.push(m)
 m=null}}B.c.kc(n)
 if(r===B.aw){s=t.o_
-n=A.Z(new A.cb(n,s),s.i("al.E"))}s=A.a2(n).i("eM<1,bY>")
-s=A.Z(new A.eM(n,new A.at1(),s),s.i("B.E"))
+n=A.a_(new A.cb(n,s),s.i("al.E"))}s=A.a2(n).i("eM<1,bY>")
+s=A.a_(new A.eM(n,new A.at1(),s),s.i("B.E"))
 return s},
 a1m(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e,d,c,b,a,a0,a1,a2,a3=this.c,a4=a3.length
 if(a4<=1)return a3
@@ -69478,9 +69478,9 @@ a2=A.b(a3.slice(0),A.a2(a3))
 B.c.eP(a2,new A.asY())
 new A.aa(a2,new A.asZ(),A.a2(a2).i("aa<1,n>")).ar(0,new A.at0(A.aC(s),q,a1))
 a3=t.qn
-a3=A.Z(new A.aa(a1,new A.at_(r),a3),a3.i("al.E"))
+a3=A.a_(new A.aa(a1,new A.at_(r),a3),a3.i("al.E"))
 a4=A.a2(a3).i("cb<1>")
-a3=A.Z(new A.cb(a3,a4),a4.i("al.E"))
+a3=A.a_(new A.cb(a3,a4),a4.i("al.E"))
 return a3},
 $ibU:1}
 A.at1.prototype={
@@ -69533,7 +69533,7 @@ a0L(){var s,r,q,p,o,n,m,l,k,j,i,h,g,f,e=this,d=e.b
 if(d.a===0)return
 s=A.aC(t.S)
 r=A.b([],t.QF)
-for(q=e.f,p=e.e,o=e.d,n=A.l(d).i("aN<1>"),m=n.i("B.E");d.a!==0;){l=A.Z(new A.aN(d,new A.agO(e),n),m)
+for(q=e.f,p=e.e,o=e.d,n=A.l(d).i("aN<1>"),m=n.i("B.E");d.a!==0;){l=A.a_(new A.aN(d,new A.agO(e),n),m)
 d.X(0)
 o.X(0)
 B.c.eP(l,new A.agP())
@@ -69874,16 +69874,16 @@ A.Xa.prototype={}
 A.Xd.prototype={}
 A.Xe.prototype={}
 A.agy.prototype={
-Ca(a){var s=A.a_(["type",this.a,"data",this.rM()],t.N,t.z)
+Ca(a){var s=A.Y(["type",this.a,"data",this.rM()],t.N,t.z)
 if(a!=null)s.m(0,"nodeId",a)
 return s},
 auJ(){return this.Ca(null)},
-k(a){var s,r,q=A.b([],t.s),p=this.rM(),o=p.gc6(),n=A.Z(o,A.l(o).i("B.E"))
+k(a){var s,r,q=A.b([],t.s),p=this.rM(),o=p.gc6(),n=A.a_(o,A.l(o).i("B.E"))
 B.c.kc(n)
 for(o=n.length,s=0;s<n.length;n.length===o||(0,A.x)(n),++s){r=n[s]
 q.push(r+": "+A.k(p.h(0,r)))}return"SemanticsEvent("+B.c.bc(q,", ")+")"}}
 A.aje.prototype={
-rM(){return A.a_(["message",this.b],t.N,t.z)}}
+rM(){return A.Y(["message",this.b],t.N,t.z)}}
 A.a8I.prototype={
 rM(){return B.l8}}
 A.ain.prototype={
@@ -70052,7 +70052,7 @@ break
 case 1:return A.L(q,r)}})
 return A.M($async$Ff,r)},
 a9X(a,b){var s,r,q,p
-if(a===b)return B.Kv
+if(a===b)return B.Ku
 s=A.b([],t.QP)
 if(a==null)s.push(b)
 else{r=B.c.h7(B.f6,a)
@@ -70104,7 +70104,7 @@ break
 case 8:l=A
 s=11
 return A.G(p.AL(),$async$tR)
-case 11:q=l.a_(["response",c.b],t.N,t.z)
+case 11:q=l.Y(["response",c.b],t.N,t.z)
 s=1
 break
 case 9:throw A.j(A.jj('Method "'+m+'" not handled.'))
@@ -70257,7 +70257,7 @@ n=!k}if(n){p.c.apJ(o)
 for(m=p.e,l=m.length,k=p.b,j=!1,i=0;i<m.length;m.length===l||(0,A.x)(m),++i)j=k.XF(m[i])||j
 j=p.P6(m,o)||j
 B.c.X(m)}else j=!0
-q=A.a_(["handled",j],t.N,t.z)
+q=A.Y(["handled",j],t.N,t.z)
 s=1
 break
 case 1:return A.L(q,r)}})
@@ -70339,7 +70339,7 @@ s=B.jy.fX(a)
 s.toString
 return B.bW.fm(s)}}
 A.a7T.prototype={
-j1(a){var s=B.d4.bW(A.a_(["method",a.a,"args",a.b],t.N,t.X))
+j1(a){var s=B.d4.bW(A.Y(["method",a.a,"args",a.b],t.N,t.X))
 s.toString
 return s},
 iY(a){var s,r,q=null,p=B.d4.fX(a)
@@ -70566,7 +70566,7 @@ if(q==null)q=this.a
 if(J.e(r==null?null:t.ZC.a(r.a),q))return
 p=q.A_(a)
 s.m(0,a,p)
-B.Om.cW("activateSystemCursor",A.a_(["device",p.b,"kind",t.ZC.a(p.a).a],t.N,t.z),t.H)}}
+B.Om.cW("activateSystemCursor",A.Y(["device",p.b,"kind",t.ZC.a(p.a).a],t.N,t.z),t.H)}}
 A.Ax.prototype={}
 A.dw.prototype={
 k(a){var s=this.gA6()
@@ -70802,7 +70802,7 @@ if(a instanceof A.nc){o=a.c
 h.d.m(0,o.gjU(),o.gJX())}else if(a instanceof A.uE)h.d.D(0,a.c.gjU())
 h.ajm(a)
 o=h.a
-n=A.Z(o,t.iS)
+n=A.a_(o,t.iS)
 m=n.length
 l=0
 for(;l<n.length;n.length===m||(0,A.x)(n),++l){s=n[l]
@@ -71000,7 +71000,7 @@ s.q1()},
 Ps(a){this.f.m(0,a.e,a)
 this.gue().m(0,a.e,a.a)},
 UV(a,b){var s=this.f,r=this.r,q=A.l(r).i("ba<2>"),p=new A.ba(s,A.l(s).i("ba<2>")).ap2(0,new A.eM(new A.ba(r,q),new A.aeD(),q.i("eM<B.E,dq>")))
-if(b){s=A.Z(p,A.l(p).i("B.E"))
+if(b){s=A.a_(p,A.l(p).i("B.E"))
 s.$flags=1
 p=s}J.J0(p,a)},
 UU(a){return this.UV(a,!1)},
@@ -71074,7 +71074,7 @@ o=s.f.H()
 n=s.r.H()
 m=s.c
 m=m==null?null:m.H()
-B.aW.cW("SystemChrome.setSystemUIOverlayStyle",A.a_(["systemNavigationBarColor",r,"systemNavigationBarDividerColor",null,"systemStatusBarContrastEnforced",q,"statusBarColor",p,"statusBarBrightness",o,"statusBarIconBrightness",n,"systemNavigationBarIconBrightness",m,"systemNavigationBarContrastEnforced",s.d],t.N,t.z),t.H).cO(new A.ai9(),new A.aia(),t.P)
+B.aW.cW("SystemChrome.setSystemUIOverlayStyle",A.Y(["systemNavigationBarColor",r,"systemNavigationBarDividerColor",null,"systemStatusBarContrastEnforced",q,"statusBarColor",p,"statusBarBrightness",o,"statusBarIconBrightness",n,"systemNavigationBarIconBrightness",m,"systemNavigationBarContrastEnforced",s.d],t.N,t.z),t.H).cO(new A.ai9(),new A.aia(),t.P)
 $.ai6=$.vh}$.vh=null},
 $S:0}
 A.ai9.prototype={
@@ -71234,7 +71234,7 @@ H(){return"SmartDashesType."+this.b}}
 A.ahH.prototype={
 H(){return"SmartQuotesType."+this.b}}
 A.j1.prototype={
-dw(){return A.a_(["name","TextInputType."+B.oW[this.a],"signed",this.b,"decimal",this.c],t.N,t.z)},
+dw(){return A.Y(["name","TextInputType."+B.oW[this.a],"signed",this.b,"decimal",this.c],t.N,t.z)},
 k(a){return"TextInputType(name: "+("TextInputType."+B.oW[this.a])+", signed: "+A.k(this.b)+", decimal: "+A.k(this.c)+")"},
 j(a,b){if(b==null)return!1
 return b instanceof A.j1&&b.a===this.a&&b.b==this.b&&b.c==this.c},
@@ -71317,7 +71317,7 @@ r=o.b
 p=o.c
 return new A.cr(q,A.c5(B.k,s.$1(r.c),s.$1(r.d),!1),new A.bo(s.$1(p.a),s.$1(p.b)))},
 a_i(){var s=this.b,r=this.c
-return A.a_(["text",this.a,"selectionBase",s.c,"selectionExtent",s.d,"selectionAffinity",s.e.H(),"selectionIsDirectional",s.f,"composingBase",r.a,"composingExtent",r.b],t.N,t.z)},
+return A.Y(["text",this.a,"selectionBase",s.c,"selectionExtent",s.d,"selectionAffinity",s.e.H(),"selectionIsDirectional",s.f,"composingBase",r.a,"composingExtent",r.b],t.N,t.z)},
 k(a){return"TextEditingValue(text: \u2524"+this.a+"\u251c, selection: "+this.b.k(0)+", composing: "+this.c.k(0)+")"},
 j(a,b){var s=this
 if(b==null)return!1
@@ -71351,7 +71351,7 @@ gA(a){var s=this
 return A.Q(s.a,s.b,s.c,s.d,s.e,s.f,s.r,s.w,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 dw(){var s=this,r=s.c
 r=r==null?null:r.goP()
-return A.a_(["fontFamily",s.a,"fontSize",s.b,"fontWeightIndex",r,"textAlignIndex",s.e.a,"textDirectionIndex",s.d.a,"letterSpacing",s.f,"wordSpacing",s.r,"lineHeight",s.w],t.N,t.z)}}
+return A.Y(["fontFamily",s.a,"fontSize",s.b,"fontWeightIndex",r,"textAlignIndex",s.e.a,"textDirectionIndex",s.d.a,"letterSpacing",s.f,"wordSpacing",s.r,"lineHeight",s.w],t.N,t.z)}}
 A.aiD.prototype={
 CS(a){var s
 if(a.j(0,this.c))return
@@ -71414,11 +71414,11 @@ m.a.av4()}s=1
 break A
 case"TextInputClient.requestElementsInRect":n=J.rC(t.j.a(a.b),t.Ci)
 m=n.$ti.i("aa<aJ.E,P>")
-o=A.Z(new A.aa(n,new A.aiQ(),m),m.i("al.E"))
+o=A.a_(new A.aa(n,new A.aiQ(),m),m.i("al.E"))
 n=p.r
 m=A.l(n).i("b2<1>")
 l=m.i("eU<B.E,R<@>>")
-n=A.Z(new A.eU(new A.aN(new A.b2(n,m),new A.aiR(p,o),m.i("aN<B.E>")),new A.aiS(p),l),l.i("B.E"))
+n=A.a_(new A.eU(new A.aN(new A.b2(n,m),new A.aiR(p,o),m.i("aN<B.E>")),new A.aiS(p),l),l.i("B.E"))
 q=n
 s=1
 break A
@@ -71583,21 +71583,21 @@ s===$&&A.a()
 s.ip("TextInput.hide",t.H).cO(new A.aqr(),new A.aqs(),t.P)},
 a0S(a,b){var s=$.c0().c
 s===$&&A.a()
-s.cW("TextInput.setEditableSizeAndTransform",A.a_(["width",a.a,"height",a.b,"transform",b.a],t.N,t.z),t.H).cO(new A.aqz(),new A.aqA(),t.P)},
+s.cW("TextInput.setEditableSizeAndTransform",A.Y(["width",a.a,"height",a.b,"transform",b.a],t.N,t.z),t.H).cO(new A.aqz(),new A.aqA(),t.P)},
 CS(a){var s,r,q=$.c0().c
 q===$&&A.a()
 s=a.a
 r=a.b
-q.cW("TextInput.setMarkedTextRect",A.a_(["width",a.c-s,"height",a.d-r,"x",s,"y",r],t.N,t.z),t.H).cO(new A.aqx(),new A.aqy(),t.P)},
+q.cW("TextInput.setMarkedTextRect",A.Y(["width",a.c-s,"height",a.d-r,"x",s,"y",r],t.N,t.z),t.H).cO(new A.aqx(),new A.aqy(),t.P)},
 CR(a){var s,r,q=$.c0().c
 q===$&&A.a()
 s=a.a
 r=a.b
-q.cW("TextInput.setCaretRect",A.a_(["width",a.c-s,"height",a.d-r,"x",s,"y",r],t.N,t.z),t.H).cO(new A.aqv(),new A.aqw(),t.P)},
+q.cW("TextInput.setCaretRect",A.Y(["width",a.c-s,"height",a.d-r,"x",s,"y",r],t.N,t.z),t.H).cO(new A.aqv(),new A.aqw(),t.P)},
 a0Y(a){var s,r=$.c0().c
 r===$&&A.a()
 s=A.a2(a).i("aa<1,R<d1>>")
-s=A.Z(new A.aa(a,new A.aqD(),s),s.i("al.E"))
+s=A.a_(new A.aa(a,new A.aqD(),s),s.i("al.E"))
 r.cW("TextInput.setSelectionRects",s,t.H).cO(new A.aqE(),new A.aqF(),t.P)},
 av5(a){var s=$.c0().c
 s===$&&A.a()
@@ -71697,7 +71697,7 @@ if(n)return A.er(null,t.H)
 $.dI.dg$=o
 o.b.X(0)
 for(n=b.length,r=0;r<n;++r);n=A.a2(b).i("aa<1,aO<o,@>>")
-q=A.Z(new A.aa(b,new A.aie(),n),n.i("al.E"))
+q=A.a_(new A.aa(b,new A.aie(),n),n.i("al.E"))
 o.c=a
 o.d=b
 $.qI=o
@@ -71705,7 +71705,7 @@ o.e=!1
 n=a.a
 s=a.b
 p=t.N
-return B.aW.cW("ContextMenu.showSystemContextMenu",A.a_(["targetRect",A.a_(["x",n,"y",s,"width",a.c-n,"height",a.d-s],p,t.i),"items",q],p,t.z),t.H)},
+return B.aW.cW("ContextMenu.showSystemContextMenu",A.Y(["targetRect",A.Y(["x",n,"y",s,"width",a.c-n,"height",a.d-s],p,t.i),"items",q],p,t.z),t.H)},
 io(){var s=0,r=A.N(t.H),q,p=this
 var $async$io=A.O(function(a,b){if(a===1)return A.K(b,r)
 for(;;)switch(s){case 0:if(p!==$.qI){s=1
@@ -71777,7 +71777,7 @@ case 1:return A.L(q,r)}})
 return A.M($async$Fk,r)},
 aiJ(a,b){var s=this.a
 s===$&&A.a()
-s.cW("UndoManager.setUndoState",A.a_(["canUndo",b,"canRedo",a],t.N,t.y),t.H).cO(new A.aju(),new A.ajv(),t.P)},
+s.cW("UndoManager.setUndoState",A.Y(["canUndo",b,"canRedo",a],t.N,t.y),t.H).cO(new A.aju(),new A.ajv(),t.P)},
 ajJ(a){var s
 A:{if("undo"===a){s=B.a8O
 break A}if("redo"===a){s=B.a8P
@@ -71844,7 +71844,7 @@ s=q.d
 r=q.a.c
 return new A.HO(s,new A.jM(new A.auY(q),r,s,null),null)}}
 A.auY.prototype={
-$2(a,b){var s=A.Ad(this.a.d.a,t.nL),r=A.a2(s).i("aa<1,aq>"),q=A.Z(new A.aa(s,new A.auX(a),r),r.i("al.E"))
+$2(a,b){var s=A.Ad(this.a.d.a,t.nL),r=A.a2(s).i("aa<1,aq>"),q=A.a_(new A.aa(s,new A.auX(a),r),r.i("al.E"))
 if(A.lO(a)==null)return A.aFa(q)
 s=q.length!==0?A.aFa(q):null
 b.toString
@@ -72062,7 +72062,7 @@ A.lm.prototype={}
 A.O0.prototype={
 lE(a,b){var s,r,q,p,o,n=$.a0.a4$.d.c
 if(n==null||n.e==null)return!1
-for(s=t.C,r=0;r<2;++r){q=B.Ki[r]
+for(s=t.C,r=0;r<2;++r){q=B.Kh[r]
 p=n.e
 p.toString
 o=A.ax2(p,q,s)
@@ -72248,7 +72248,7 @@ q=o.f
 q.toString
 p=A.a2(q).i("aN<1>")
 p=A.dX(new A.aN(q,new A.akK(o),p),p.i("B.E"))
-q=A.Z(p,A.l(p).c)
+q=A.a_(p,A.l(p).c)
 return s.arn(r,q)}}
 A.akI.prototype={
 $1(a){var s,r=this
@@ -72407,7 +72407,7 @@ r=n.gaec()
 q=n.a
 q=q.ch
 q.toString
-l.a=A.aNU(!0,A.aDy(B.u,r,s,q,A.aHR(),n.gafH(),m,n.gag6(),B.Kw,!0,"nav",B.a7B),"Navigator Scope",!0,m,m,m,m)}else n.a.toString
+l.a=A.aNU(!0,A.aDy(B.u,r,s,q,A.aHR(),n.gafH(),m,n.gag6(),B.Kv,!0,"nav",B.a7B),"Navigator Scope",!0,m,m,m,m)}else n.a.toString
 l.b=null
 s=n.a
 s.toString
@@ -73121,7 +73121,7 @@ return B.c.D(this.c5$,a)},
 AL(){var s=0,r=A.N(t.s1),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$AL=A.O(function(a,b){if(a===1){o.push(b)
 s=p}for(;;)switch(s){case 0:g=!1
-f=A.Z(n.c5$,t.l)
+f=A.a_(n.c5$,t.l)
 e=f.length
 d=0
 case 3:if(!(d<f.length)){s=5
@@ -73154,7 +73154,7 @@ case 1:return A.L(q,r)
 case 2:return A.K(o.at(-1),r)}})
 return A.M($async$AL,r)},
 aps(){this.ao7($.aH().c.f)},
-ao7(a){var s,r,q,p,o,n,m=A.Z(this.c5$,t.l),l=m.length,k=0
+ao7(a){var s,r,q,p,o,n,m=A.a_(this.c5$,t.l),l=m.length,k=0
 for(;k<m.length;m.length===l||(0,A.x)(m),++k){s=m[k]
 try{s.Wu(a)}catch(p){r=A.a9(p)
 q=A.aw(p)
@@ -73164,7 +73164,7 @@ if(n!=null)n.$1(new A.aU(r,q,"widgets library",o,null,!1))}}},
 Fi(a){return this.adq(a)},
 adq(a){var s=0,r=A.N(t.H),q=this,p,o,n,m,l,k,j,i,h
 var $async$Fi=A.O(function(b,c){if(b===1)return A.K(c,r)
-for(;;)switch(s){case 0:j=A.Z(q.c5$,t.l)
+for(;;)switch(s){case 0:j=A.a_(q.c5$,t.l)
 i=j.length
 h=0
 for(;h<j.length;j.length===i||(0,A.x)(j),++h){p=j[h]
@@ -73177,7 +73177,7 @@ if(k!=null)k.$1(m)}}return A.L(null,r)}})
 return A.M($async$Fi,r)},
 vy(){var s=0,r=A.N(t.y),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d
 var $async$vy=A.O(function(a,b){if(a===1){o.push(b)
-s=p}for(;;)switch(s){case 0:g=A.Z(n.c5$,t.l)
+s=p}for(;;)switch(s){case 0:g=A.a_(n.c5$,t.l)
 f=g.length
 e=0
 case 3:if(!(e<g.length)){s=5
@@ -73214,7 +73214,7 @@ return A.M($async$vy,r)},
 adh(a){var s,r,q,p,o,n,m,l,k,j,i=this.eU$
 B.c.X(i)
 s=A.aDT(a)
-o=A.Z(this.c5$,t.l)
+o=A.a_(this.c5$,t.l)
 n=o.length
 m=0
 for(;m<o.length;o.length===n||(0,A.x)(o),++m){r=o[m]
@@ -73260,7 +73260,7 @@ AK(a){return this.apI(a)},
 apI(a){var s=0,r=A.N(t.y),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$AK=A.O(function(b,a0){if(b===1){o.push(a0)
 s=p}for(;;)switch(s){case 0:g=new A.nl(A.hB(a),null)
-f=A.Z(n.c5$,t.l)
+f=A.a_(n.c5$,t.l)
 e=f.length
 d=0
 case 3:if(!(d<f.length)){s=5
@@ -73297,7 +73297,7 @@ xU(a){return this.acA(a)},
 acA(a){var s=0,r=A.N(t.y),q,p=2,o=[],n=this,m,l,k,j,i,h,g,f,e,d,c
 var $async$xU=A.O(function(b,a0){if(b===1){o.push(a0)
 s=p}for(;;)switch(s){case 0:g=new A.nl(A.hB(A.bw(a.h(0,"location"))),a.h(0,"state"))
-f=A.Z(n.c5$,t.l)
+f=A.a_(n.c5$,t.l)
 e=f.length
 d=0
 case 3:if(!(d<f.length)){s=5
@@ -73563,7 +73563,7 @@ l.eE$=s
 l.jL$=A.aW8()},
 Ja(){var s,r,q,p,o,n,m,l,k
 this.a34()
-p=A.Z(this.c5$,t.l)
+p=A.a_(this.c5$,t.l)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){s=p[n]
@@ -73574,7 +73574,7 @@ k=$.cQ
 if(k!=null)k.$1(new A.aU(r,q,"widgets library",l,null,!1))}}},
 Ji(){var s,r,q,p,o,n,m,l,k
 this.a36()
-p=A.Z(this.c5$,t.l)
+p=A.a_(this.c5$,t.l)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){s=p[n]
@@ -73585,7 +73585,7 @@ k=$.cQ
 if(k!=null)k.$1(new A.aU(r,q,"widgets library",l,null,!1))}}},
 Jd(){var s,r,q,p,o,n,m,l,k
 this.a35()
-p=A.Z(this.c5$,t.l)
+p=A.a_(this.c5$,t.l)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){s=p[n]
@@ -73596,7 +73596,7 @@ k=$.cQ
 if(k!=null)k.$1(new A.aU(r,q,"widgets library",l,null,!1))}}},
 AD(){var s,r,q,p,o,n,m,l,k
 this.a3p()
-p=A.Z(this.c5$,t.l)
+p=A.a_(this.c5$,t.l)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){s=p[n]
@@ -73607,7 +73607,7 @@ k=$.cQ
 if(k!=null)k.$1(new A.aU(r,q,"widgets library",l,null,!1))}}},
 J4(a){var s,r,q,p,o,n,m,l,k
 this.a3i(a)
-p=A.Z(this.c5$,t.l)
+p=A.a_(this.c5$,t.l)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){s=p[n]
@@ -73618,7 +73618,7 @@ k=$.cQ
 if(k!=null)k.$1(new A.aU(r,q,"widgets library",l,null,!1))}}},
 Jk(a){var s,r,q,p,o,n,m,l,k
 this.a3s(a)
-p=A.Z(this.c5$,t.l)
+p=A.a_(this.c5$,t.l)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){s=p[n]
@@ -73629,7 +73629,7 @@ k=$.cQ
 if(k!=null)k.$1(new A.aU(r,q,"widgets library",l,null,!1))}}},
 vw(){var s,r,q,p,o,n,m,l,k
 this.a4L()
-p=A.Z(this.c5$,t.l)
+p=A.a_(this.c5$,t.l)
 o=p.length
 n=0
 for(;n<p.length;p.length===o||(0,A.x)(p),++n){s=p[n]
@@ -74120,7 +74120,7 @@ q.be()
 q.cj$.E(0,s.gafw())
 s.e=q}return q},
 gQZ(){var s=this.f
-return s===$?this.f=new A.an4(1,B.Jn,B.bF):s},
+return s===$?this.f=new A.an4(1,B.Jm,B.bF):s},
 gfM(){var s=this.z
 s=s==null?null:$.c0().d===s
 return s===!0},
@@ -74835,7 +74835,7 @@ h.H8()
 r=h.gaaK()
 q=q.vq
 h.e!==$&&A.aL()
-h.e=new A.Pg(f,new A.bK(B.Mu,l),new A.pB(),p,B.cx,0,k,h.gacX(),h.gacZ(),r,B.cx,0,j,h.gacR(),h.gacT(),r,i,B.Ks,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Ks(),new A.Ks())
+h.e=new A.Pg(f,new A.bK(B.Mu,l),new A.pB(),p,B.cx,0,k,h.gacX(),h.gacZ(),r,B.cx,0,j,h.gacR(),h.gacT(),r,i,B.Kr,s,g.CW,g.cx,g.cy,o,g,n,m,g.x,q,new A.Ks(),new A.Ks())
 return h},
 xD(a,b){var s,r,q,p=this,o=p.a.c,n=o.a.a.length
 if(n<a.b||n<a.a)return
@@ -75406,7 +75406,7 @@ b7=new A.Td(new A.bb(b6,i)).dE(b7)
 k=A.b([],k)
 b6=b9.c
 b6.toString
-b8=A.a_([B.a7H,new A.yO(!1,new A.bb(j,i)),B.a8g,l,B.a8u,g,B.AG,new A.yL(!0,new A.bb(h,i)),B.m9,new A.d8(b9.gae2(),new A.bb(f,i),t.OX),B.a7Q,b,B.a8B,a0,B.a7R,a2,B.a80,e,B.a8C,a4,B.a8L,a6,B.a8K,a3,B.a8n,a9,B.a8o,a7,B.a8d,a5,B.a8D,b1,B.a8J,a8,B.a8F,c,B.mb,new A.d8(b9.ga9d(),new A.bb(d,i),t.fn),B.a7F,a,B.a7G,b2,B.a8i,b0,B.a7O,b3,B.a8a,b4,B.a8m,a1,B.a7U,b7,B.a7E,new A.Te(new A.bb(k,i)).dE(b6)],t.u,t.od)
+b8=A.Y([B.a7H,new A.yO(!1,new A.bb(j,i)),B.a8g,l,B.a8u,g,B.AG,new A.yL(!0,new A.bb(h,i)),B.m9,new A.d8(b9.gae2(),new A.bb(f,i),t.OX),B.a7Q,b,B.a8B,a0,B.a7R,a2,B.a80,e,B.a8C,a4,B.a8L,a6,B.a8K,a3,B.a8n,a9,B.a8o,a7,B.a8d,a5,B.a8D,b1,B.a8J,a8,B.a8F,c,B.mb,new A.d8(b9.ga9d(),new A.bb(d,i),t.fn),B.a7F,a,B.a7G,b2,B.a8i,b0,B.a7O,b3,B.a8a,b4,B.a8m,a1,B.a7U,b7,B.a7E,new A.Te(new A.bb(k,i)).dE(b6)],t.u,t.od)
 b9.ai!==$&&A.an()
 b9.ai=b8
 l=b8}return new A.S5(b9.ga7R(),q,A.rG(l,new A.d7(new A.a3W(c1,b9,s,p,o,n,r),c0)),c0)},
@@ -76301,7 +76301,7 @@ $iaf:1}
 A.TM.prototype={
 aC(){var s,r,q,p,o,n,m,l,k,j=this,i=j.f
 if(i.a.a===0)return
-o=A.Z(i,t.Su)
+o=A.a_(i,t.Su)
 for(i=o.length,n=0;n<o.length;o.length===i||(0,A.x)(o),++n){s=o[n]
 try{if(j.f.a.a_(s)){m=j.b
 if(m==null)m=A.F3()
@@ -76857,7 +76857,7 @@ $2(a,b){return B.e.b8(a.b.b,b.b.b)},
 $S:161}
 A.adw.prototype={
 $2(a,b){var s=a.b,r=A.a2(b).i("aN<1>")
-s=A.Z(new A.aN(b,new A.adx(new A.t(-1/0,s.b,1/0,s.d)),r),r.i("B.E"))
+s=A.a_(new A.aN(b,new A.adx(new A.t(-1/0,s.b,1/0,s.d)),r),r.i("B.E"))
 return s},
 $S:423}
 A.adx.prototype={
@@ -76944,7 +76944,7 @@ return this.l8(0,b)},
 gA(a){return A.E.prototype.gA.call(this,0)}}
 A.aq.prototype={
 c_(){return new A.PZ(this,B.a9)}}
-A.Y.prototype={
+A.Z.prototype={
 c_(){var s=this.ah(),r=new A.hv(s,this,B.a9)
 s.c=r
 s.a=this
@@ -76975,7 +76975,7 @@ c_(){return A.aP0(this)}}
 A.r7.prototype={
 H(){return"_ElementLifecycle."+this.b}}
 A.U1.prototype={
-ajX(){var s,r=this.b,q=A.Z(r,A.l(r).c)
+ajX(){var s,r=this.b,q=A.a_(r,A.l(r).c)
 B.c.eP(q,A.azZ())
 s=q
 r.X(0)
@@ -78048,7 +78048,7 @@ if(o.a.get(this).cy.a)return
 o=this.b
 s=A.l(o).i("ba<2>")
 r=s.i("aN<B.E>")
-o=A.Z(new A.aN(new A.ba(o,s),new A.a6C(),r),r.i("B.E"))
+o=A.a_(new A.aN(new A.ba(o,s),new A.a6C(),r),r.i("B.E"))
 o.$flags=1
 q=o
 for(o=q.length,p=0;p<q.length;q.length===o||(0,A.x)(q),++p)q[p].Qd(B.O)},
@@ -78214,7 +78214,7 @@ j(a,b){var s=this
 if(b==null)return!1
 if(J.T(b)!==A.r(s))return!1
 return b instanceof A.cT&&b.a===s.a&&b.b==s.b&&b.d===s.d&&A.cc(null,null)},
-gA(a){return A.Q(this.a,this.b,null,this.d,A.bl(B.Kx),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
+gA(a){return A.Q(this.a,this.b,null,this.d,A.bl(B.Kw),B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a,B.a)},
 k(a){return"IconData(U+"+B.d.p7(B.j.nm(this.a,16).toUpperCase(),5,"0")+")"}}
 A.pj.prototype={
 ct(a){return!this.w.j(0,a.w)},
@@ -79209,7 +79209,7 @@ k=Math.max(0,l.c-s)
 l=Math.max(0,l.d-r)
 j=h.cy
 i=A.a2(j).i("aN<1>")
-j=A.Z(new A.aN(j,new A.ab6(a),i),i.i("B.E"))
+j=A.a_(new A.aN(j,new A.ab6(a),i),i.i("B.E"))
 return h.any(j,new A.a8(e,c,q,g),new A.a8(f,d,k,l),new A.a8(o,n,m,p))},
 j(a,b){var s=this
 if(b==null)return!1
@@ -79350,7 +79350,7 @@ b=r?a1:a3.fr
 if(b==null)b=a2.b.c.z
 a3=r?a1:a3.fx
 if(a3==null)a3=a2.b.c.Q
-a=new A.As(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.tx(a1),B.Kn,e===!0,d,c,b,a3,A.aOT(a2))
+a=new A.As(a4,s,q,p,m,o,n,a5,g===!0,a6,a7,i,h,l,k,j,f,new A.tx(a1),B.Km,e===!0,d,c,b,a3,A.aOT(a2))
 if(!a.j(0,a0.e))a0.ad(new A.apK(a0,a))},
 A9(){if(this.d==null)this.qj()},
 Iw(){this.qj()},
@@ -79445,7 +79445,7 @@ W_(){var s=t.S
 return new A.vM(B.br,-1,-1,B.df,A.u(s,t.SP),A.cZ(s),null,null,A.IB(),A.u(s,t.Qd))},
 Yb(a){a.q=this.a}}
 A.UI.prototype={
-J(a){return new A.i5(this.c,A.a_([B.a8y,new A.Rs(this.d)],t.u,t.xR),B.aH,!1,null)}}
+J(a){return new A.i5(this.c,A.Y([B.a8y,new A.Rs(this.d)],t.u,t.xR),B.aH,!1,null)}}
 A.Nc.prototype={
 J(a){var s=this,r=a.al(t.I).w,q=A.b([],t.p),p=s.c
 if(p!=null)q.push(A.a8u(p,B.jf))
@@ -80157,7 +80157,7 @@ DU(){if($.bz.am$===B.du){var s=this.d
 s===$&&A.a()
 s=$.a0.a4$.x.h(0,s)
 this.ad(new A.abP(s==null?null:s.r0(t.CZ)))}s=this.db
-s=A.Z(s,A.l(s).c)
+s=A.a_(s,A.l(s).c)
 B.c.ar(s,$.a0.gam7())},
 Pw(a){var s,r,q
 for(s=this.e.a,r=A.a2(s),s=new J.cE(s,s.length,r.i("cE<1>")),r=r.c;s.v();){q=s.d
@@ -80197,7 +80197,7 @@ A.abS.prototype={
 $0(){return A.b([],t.uD)},
 $S:80}
 A.abT.prototype={
-$0(){var s=A.Z(this.a,t.Ez)
+$0(){var s=A.a_(this.a,t.Ez)
 return s},
 $S:80}
 A.abU.prototype={
@@ -80742,7 +80742,7 @@ o=o.b
 q=!o}else if(o.c)m.push(new A.m0(o,n,!1,o.r))}s=m.length
 r=n.a.d
 o=t.MV
-o=A.Z(new A.cb(m,o),o.i("al.E"))
+o=A.a_(new A.cb(m,o),o.i("al.E"))
 o.$flags=1
 return new A.Hi(s-p,r,!1,o,null)}}
 A.acf.prototype={
@@ -81314,7 +81314,7 @@ s=r.a(q).ak$}}}
 A.ZD.prototype={}
 A.zv.prototype={
 ah(){var s=t.y
-return new A.F_(A.a_([!1,!0,!0,!0],s,s),null,null)},
+return new A.F_(A.Y([!1,!0,!0,!0],s,s),null,null)},
 n8(a){return A.IC().$1(a)}}
 A.F_.prototype={
 aw(){var s,r,q=this
@@ -81918,7 +81918,7 @@ this.Gt(this.a.f)},
 ac1(a){var s,r,q,p
 this.y.E(0,a.gjE())
 s=A.a2($.qf).i("aN<1>")
-r=A.Z(new A.aN($.qf,new A.adq(),s),s.i("B.E"))
+r=A.a_(new A.aN($.qf,new A.adq(),s),s.i("B.E"))
 for(s=r.length,q=0;p=r.length,q<p;r.length===s||(0,A.x)(r),++q)r[q].Gs()
 this.SE(p!==0?B.B:this.a.e)},
 ac2(a){var s=this.y
@@ -82596,7 +82596,7 @@ b.toString
 return new A.nj(b,s,null)},
 $S:483}
 A.apT.prototype={
-$1(a){var s,r=null,q=A.a_([B.m9,new A.SZ(a,new A.bb(A.b([],t.e),t.d))],t.u,t.od),p=this.a,o=p.e
+$1(a){var s,r=null,q=A.Y([B.m9,new A.SZ(a,new A.bb(A.b([],t.e),t.d))],t.u,t.od),p=this.a,o=p.e
 o===$&&A.a()
 s=p.d
 if(s==null)s=p.d=new A.hr(new A.d7(new A.apQ(p),r),p.a.c.ry)
@@ -82671,7 +82671,7 @@ r.lp()},
 jm(){var s=0,r=A.N(t.oj),q,p=this,o,n,m
 var $async$jm=A.O(function(a,b){if(a===1)return A.K(b,r)
 for(;;)switch(s){case 0:p.rx.gK()
-o=A.Z(p.R8,t.Ev)
+o=A.a_(p.R8,t.Ev)
 n=o.length
 m=0
 case 3:if(!(m<o.length)){s=5
@@ -83041,7 +83041,7 @@ s=2
 return A.G(A.p8(n,t.H),$async$kp)
 case 2:return A.L(null,r)}})
 return A.M($async$kp,r)},
-eI(a){var s=A.Z(this.f,t.gt),r=s.length,q=0
+eI(a){var s=A.a_(this.f,t.gt),r=s.length,q=0
 for(;q<s.length;s.length===r||(0,A.x)(s),++q)s[q].eI(a)},
 af(a){this.f.push(a)
 a.S(this.gho())},
@@ -83257,7 +83257,7 @@ q.TY(A.l(r).i("i_.E").a(r))
 return}}},
 Ro(a){var s,r,q,p,o,n,m,l,k=this.d
 if(k.b===0)return
-p=A.Z(k,t.Sx)
+p=A.a_(k,t.Sx)
 for(k=p.length,o=0;o<p.length;p.length===k||(0,A.x)(p),++o){s=p[o]
 try{if(s.j3$!=null)s.ars(a)}catch(n){r=A.a9(n)
 q=A.aw(n)
@@ -84085,9 +84085,9 @@ if(a===q.ay)s=!a||A.aZ(q.a.c)===q.ch
 else s=!1
 if(s)return
 if(!a){q.at=B.v9
-q.SJ()}else{switch(A.aZ(q.a.c).a){case 1:q.at=A.a_([B.iP,new A.ce(new A.afq(q),new A.afr(q),t.ok)],t.u,t.xR)
+q.SJ()}else{switch(A.aZ(q.a.c).a){case 1:q.at=A.Y([B.iP,new A.ce(new A.afq(q),new A.afr(q),t.ok)],t.u,t.xR)
 break
-case 0:q.at=A.a_([B.md,new A.ce(new A.afs(q),new A.aft(q),t.Uv)],t.u,t.xR)
+case 0:q.at=A.Y([B.md,new A.ce(new A.afs(q),new A.aft(q),t.Uv)],t.u,t.xR)
 break}a=!0}q.ay=a
 q.ch=A.aZ(q.a.c)
 s=q.Q
@@ -85585,7 +85585,7 @@ s=new A.abE(this)
 r=$.bz
 if(r.am$===B.lq)A.eI(s)
 else r.y1$.push(s)}},
-a9I(){var s,r,q,p,o,n,m,l,k=this,j=k.Q,i=A.Z(j,A.l(j).c)
+a9I(){var s,r,q,p,o,n,m,l,k=this,j=k.Q,i=A.a_(j,A.l(j).c)
 B.c.eP(i,k.guO())
 s=k.b
 k.b=A.b([],t.D1)
@@ -85646,7 +85646,7 @@ h=A.b([],t.AO)
 g=c.gaqc()?new A.t(0,0,0+c.gW0().a,0+c.gW0().b):b
 for(f=c.d;f<=c.c;++f){e=c.b[f].gu().d
 a=new A.aa(e,new A.abF(c,f,g),A.a2(e).i("aa<1,t>")).Df(0,new A.abG())
-d=A.Z(a,a.$ti.i("B.E"))
+d=A.a_(a,a.$ti.i("B.E"))
 B.c.P(h,d)}return new A.np(m,i,!s.j(0,l)?B.lx:s.c,h,!0)},
 NA(a,b){var s=b>a
 for(;;){if(!(a!==b&&this.b[a].gu().c!==B.lx))break
@@ -85776,7 +85776,7 @@ r.yW()
 return s.b4()},
 l(){var s,r,q,p,o=this
 for(s=o.b,r=s.length,q=o.gFh(),p=0;p<s.length;s.length===r||(0,A.x)(s),++p)s[p].I(q)
-o.b=B.Ku
+o.b=B.Kt
 o.y=!1
 o.dA()},
 eq(a,b){return a.mJ(b)},
@@ -85967,7 +85967,7 @@ q.a=p
 n.d.ar(0,q.gzf())}s=r?null:s.at
 r=n.a.e
 if(!J.e(s,r==null?null:r.at)){s=n.d
-s=A.Z(s,A.l(s).c)
+s=A.a_(s,A.l(s).c)
 s.$flags=1
 s=s
 r=s.length
@@ -86050,7 +86050,7 @@ gQP(){var s=this.c
 return s==null?this.c=A.aQT(this.b):s},
 a9w(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=a.b,e=this.gQP().h(0,f)
 if(e==null)e=A.b([],t.Na)
-e=A.Z(e,t.JX)
+e=A.a_(e,t.JX)
 s=this.gQP().h(0,null)
 B.c.P(e,s==null?A.b([],t.Na):s)
 s=e.length
@@ -86445,7 +86445,7 @@ q=t.M0.a(i)
 p=new A.ahD(a1,a,s,q,r)
 i=a.p2
 h=i.$ti.i("m4<1,fu<1,2>>")
-h=A.Z(new A.m4(i,h),h.i("B.E"))
+h=A.a_(new A.m4(i,h),h.i("B.E"))
 g=h.length
 f=t.MR
 e=a.p1
@@ -86530,7 +86530,7 @@ je(a,b,c){this.gU().vU(t.x.a(a),this.p3)},
 jX(a,b){this.gU().D(0,t.x.a(a))},
 bf(a){var s=this.p2,r=s.$ti.i("ro<1,2>")
 r=A.mk(new A.ro(s,r),r.i("B.E"),t.Q)
-s=A.Z(r,A.l(r).i("B.E"))
+s=A.a_(r,A.l(r).i("B.E"))
 B.c.ar(s,a)}}
 A.ahD.prototype={
 $1(a){var s,r,q,p,o=this,n=o.b
@@ -86804,7 +86804,7 @@ if(o.a.d.length!==0){s=A.fi(a,B.AJ,t.Uh)
 s.toString
 r=o.a.d
 q=A.a2(r).i("aa<1,eQ>")
-p=A.Z(new A.aa(r,new A.atw(s),q),q.i("al.E"))
+p=A.a_(new A.aa(r,new A.atw(s),q),q.i("al.E"))
 s=o.d
 s===$&&A.a()
 s.a1f(o.a.c,p)}return B.aB}}
@@ -86893,7 +86893,7 @@ n=A.aC(n)
 for(o=m.a,o=o.ga8(o),s=this.bj,r=m.$ti.y[1];o.v();){q=s.h(0,r.a(o.gL()).dU)
 q.toString
 n.P(0,q)}o=A.l(p).i("aN<1>")
-p=A.Z(new A.aN(p,new A.ael(n),o),o.i("B.E"))
+p=A.a_(new A.aN(p,new A.ael(n),o),o.i("B.E"))
 return new A.W2(n,p)},
 kI(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g=t.pY.b(a)
 if(!g&&!t.oN.b(a))return
@@ -87724,7 +87724,7 @@ n=q.b
 m=new A.h(-p.a,-p.b).V(0,new A.h(f,n))
 l=i.d
 l===$&&A.a()
-k=A.a_([B.iN,new A.ce(new A.asS(i),new A.asT(i,o),t.YC)],t.u,t.xR)
+k=A.Y([B.iN,new A.ce(new A.asS(i),new A.asT(i,o),t.YC)],t.u,t.xR)
 j=i.a
 return A.aBO(new A.cY(l,!1,new A.bm(r.c-r.a,r.d-r.b,new A.e8(B.d0,h,h,new A.i5(new A.bx(new A.a8(f,n,q.c,q.d),j.w.zz(a,j.z,j.y,j.d),h),k,B.cj,!1,h),h),h),h),g,m,!1)}}
 A.asS.prototype={
@@ -88486,7 +88486,7 @@ r=s.f
 if(r!=null)r.b7()
 s.aG()},
 J(a){var s=t.e,r=t.d
-return A.rG(A.a_([B.a8t,new A.d8(this.gajR(),new A.bb(A.b([],s),r),t._n).dE(a),B.a8f,new A.d8(this.gahr(),new A.bb(A.b([],s),r),t.fN).dE(a)],t.u,t.od),this.a.x)},
+return A.rG(A.Y([B.a8t,new A.d8(this.gajR(),new A.bb(A.b([],s),r),t._n).dE(a),B.a8f,new A.d8(this.gahr(),new A.bb(A.b([],s),r),t.fN).dE(a)],t.u,t.od),this.a.x)},
 ajB(a){return this.gajA().$1(a)}}
 A.ajs.prototype={
 $1(a){var s=this.a
@@ -89135,10 +89135,10 @@ return A.u(l,l)}o=B.d.hc(B.d.Z(k,s+1,l))
 n=this.a0l(o)
 m=this.au2(o)
 if(n==="'"){l=t.N
-return A.a_([p,A.fx(m,"\\'","'")],l,l)}if(n==='"'){l=A.fx(m,'\\"','"')
+return A.Y([p,A.fx(m,"\\'","'")],l,l)}if(n==='"'){l=A.fx(m,'\\"','"')
 m=A.fx(l,"\\n","\n")}l=this.aqM(m,b)
 r=t.N
-return A.a_([p,A.fx(l,"\\$","$")],r,r)},
+return A.Y([p,A.fx(l,"\\$","$")],r,r)},
 aqM(a,b){return A.aAe(a,$.aJ2(),new A.acq(this,b),null)},
 a0l(a){var s=$.aAw()
 if(!s.b.test(a))return""
@@ -89437,7 +89437,7 @@ dw(){var s,r,q=A.u(t.N,t.X),p=this.a
 if(p!=null)q.m(0,"role",p)
 s=this.b
 r=A.a2(s).i("aa<1,E>")
-s=A.Z(new A.aa(s,new A.a25(),r),r.i("al.E"))
+s=A.a_(new A.aa(s,new A.a25(),r),r.i("al.E"))
 q.m(0,"parts",s)
 return q}}
 A.a25.prototype={
@@ -89445,19 +89445,19 @@ $1(a){return a.dw()},
 $S:540}
 A.fV.prototype={
 dw(){var s=t.N
-return A.a_(["text",this.a],s,s)},
+return A.Y(["text",this.a],s,s)},
 $ifR:1}
 A.LD.prototype={
 dw(){var s=t.N
-return A.a_(["functionCall",A.a_(["name",this.a,"args",this.b],s,t.K)],s,t.nf)},
+return A.Y(["functionCall",A.Y(["name",this.a,"args",this.b],s,t.K)],s,t.nf)},
 $ifR:1}
 A.Lh.prototype={
 dw(){var s=t.N
-return A.a_(["executable_code",A.a_(["langage",this.a.dw(),"code",this.b],s,s)],s,t.GU)},
+return A.Y(["executable_code",A.Y(["langage",this.a.dw(),"code",this.b],s,s)],s,t.GU)},
 $ifR:1}
 A.Ki.prototype={
 dw(){var s=t.N
-return A.a_(["code_execution_result",A.a_(["outcome",this.a.dw(),"output",this.b],s,s)],s,t.GU)},
+return A.Y(["code_execution_result",A.Y(["outcome",this.a.dw(),"output",this.b],s,s)],s,t.GU)},
 $ifR:1}
 A.MA.prototype={
 H(){return"Language."+this.b},
@@ -89509,9 +89509,9 @@ s.m(0,"model",r.b+"/"+r.a)
 s.m(0,"contents",J.fd(a,new A.a62(),t.xE).eh(0))
 r=J.b6(c)
 if(r.gc9(c)){r=r.hn(c,new A.a63(),t.K)
-r=A.Z(r,r.$ti.i("al.E"))
+r=A.a_(r,r.$ti.i("al.E"))
 s.m(0,"safetySettings",r)}if(e!=null){r=J.fd(e,new A.a64(),t.nf)
-r=A.Z(r,r.$ti.i("al.E"))
+r=A.a_(r,r.$ti.i("al.E"))
 s.m(0,"tools",r)}s.m(0,"systemInstruction",q.r.dw())
 return s}}
 A.a62.prototype={
@@ -89790,7 +89790,7 @@ return A.M($async$$0,r)},
 $S:18}
 A.Mz.prototype={
 J(a){var s=A.vq(B.aj,B.aa,B.Dx,B.I,B.w,B.XR,!0)
-return new A.An(new A.B2(this.d,null),A.a_(["/home",new A.a8m(this)],t.N,t.Ab),new A.a8n(),"Lang Nghiem Tam Canh",s,!1,null)}}
+return new A.An(new A.B2(this.d,null),A.Y(["/home",new A.a8m(this)],t.N,t.Ab),new A.a8n(),"Lang Nghiem Tam Canh",s,!1,null)}}
 A.a8n.prototype={
 $2(a,b){return new A.ot(b==null?B.aB:b,null)},
 $S:553}
@@ -89822,7 +89822,7 @@ return A.G(A.aI6(o),$async$pL)
 case 3:s=5
 return A.G(A.fl(),$async$pL)
 case 5:s=4
-return A.G(b.jw("String","last_seen_release_notes_version","1.5.4+21"),$async$pL)
+return A.G(b.jw("String","last_seen_release_notes_version","1.5.5+22"),$async$pL)
 case 4:case 1:return A.L(q,r)}})
 return A.M($async$pL,r)},
 GG(a){this.ad(new A.apg(this,a))},
@@ -89863,10 +89863,10 @@ $0(){return this.a.GG(this.b)},
 $S:0}
 A.awF.prototype={
 $1(a){var s,r=null,q=A.cA(24),p=A.hN(B.nj,1),o=t.p,n=A.e1(A.b([A.cP(r,A.a7k("assets/icons/nav-mantra.png",B.N,B.bL,B.mQ,!1,r,r),B.u,r,r,B.BS,r,54,r,r,B.Gm,r,r,54),B.S6,B.Gx],o),B.at,r,B.x,B.K,0),m=A.cA(999)
-m=A.b([n,B.bw,A.cP(r,B.a_W,B.u,r,r,new A.c1(B.d8,r,A.hN(B.bX,1),m,r,r,B.ae),r,r,r,r,B.G1,r,r,r),B.lU],o)
-for(s=0;s<3;++s)m.push(new A.bx(B.FS,A.e1(A.b([B.OE,B.fC,new A.iD(1,B.dd,A.cq(B.K8[s],r,r,r,B.Uz,r,r),r)],o),B.at,r,B.x,B.K,0),r))
+m=A.b([n,B.bw,A.cP(r,B.ZN,B.u,r,r,new A.c1(B.d8,r,A.hN(B.bX,1),m,r,r,B.ae),r,r,r,r,B.G1,r,r,r),B.lU],o)
+for(s=0;s<3;++s)m.push(new A.bx(B.FS,A.e1(A.b([B.OE,B.fC,new A.iD(1,B.dd,A.cq(B.KQ[s],r,r,r,B.Uz,r,r),r)],o),B.at,r,B.x,B.K,0),r))
 m.push(B.Sc)
-m.push(new A.bm(1/0,r,A.aCo(B.Hk,B.YN,new A.awE(a),A.aNJ(B.I,B.d8,B.FW,r,B.fG)),r))
+m.push(new A.bm(1/0,r,A.aCo(B.Hk,B.YM,new A.awE(a),A.aNJ(B.I,B.d8,B.FW,r,B.fG)),r))
 return A.axt(r,B.w,A.cP(r,A.qF(A.cB(m,B.at,B.x,B.bd),r,r),B.u,r,B.mN,new A.c1(B.aa,r,p,q,B.J5,r,B.ae),r,r,r,r,B.Gg,r,r,r),r,r,r,B.Ge,B.zp,r,r,r)},
 $S:215}
 A.awE.prototype={
@@ -89917,7 +89917,7 @@ if(j.length===0&&l==="model")continue
 if(l===o)continue
 if(l==="user"){k=m.h(0,"text")
 k=new A.fE("user",A.b([new A.fV(k==null?"":k)],q))}else{k=m.h(0,"text")
-k=A.Z(A.b([new A.fV(k==null?"":k)],q),p)
+k=A.a_(A.b([new A.fV(k==null?"":k)],q),p)
 k=new A.fE("model",k)}j.push(k)
 o=l}if(j.length!==0&&o==="user")j.pop()
 return j},
@@ -89927,11 +89927,11 @@ Fr(a){var s,r,q=this,p=null,o=J.aBc(q.a.c.a),n=o.length!==0?'Address the user as
 m===$&&A.a()
 s=A.b([new A.fV('You are a compassionate Buddhist Dharma Assistant named Ti\u1ec3u T\u1ecbnh.\nCRITICAL RULES:\n1. Be concise by default, but IF the user asks for details, stories, or explanations, you MUST provide a detailed, accurate, and truthful answer.\n2. When telling stories about the Shurangama Mantra (linh \u1ee9ng ch\xfa L\u0103ng Nghi\xeam) or Master Hsuan Hua (H\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a), provide accurate and engaging details.\n3. Always do EXACTLY what the user asks. If they say "n\xf3i chi ti\u1ebft", give a long detailed answer.\n4. Always refer to yourself as "con" or "Ti\u1ec3u T\u1ecbnh" (never "t\xf4i", "m\xecnh").\n5. '+n+'\n6. Respond in Vietnamese. Do NOT use markdown. Start with "A Mi \u0110\xe0 Ph\u1eadt" only for the first greeting, not in every chat.')],t.Uz)
 r=A.aTw("https","generativelanguage.googleapis.com","v1beta",p)
-s=new A.LG(A.aO2("gemini-3.6-flash"),B.Kt,p,p,new A.a78(m,p),r,new A.fE("system",s),p)
+s=new A.LG(A.aO2("gemini-3.6-flash"),B.Ks,p,p,new A.a78(m,p),r,new A.fE("system",s),p)
 q.r=s
 q.w=new A.a1q(s.ga_S(),new A.abL(A.jK(p,t.v4)),a,p,p)},
 Dy(){var s=J.aBc(this.a.c.a),r=s.length!==0?"A Mi \u0110\xe0 Ph\u1eadt! Con l\xe0 Ti\u1ec3u T\u1ecbnh, ch\xe0o \u0110\u1ea1o H\u1eefu "+s+". M\u1ee5c ti\xeau \u0111\u1ea1t \u0111\u01b0\u1ee3c 36.000 bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam. \u0110\u1ea1o H\u1eefu c\xf3 th\u1eafc m\u1eafc g\xec v\u1ec1 vi\u1ec7c tr\xec t\u1ee5ng ch\xfa L\u0103ng Nghi\xeam kh\xf4ng?":"A Mi \u0110\xe0 Ph\u1eadt! Con l\xe0 Ti\u1ec3u T\u1ecbnh, \u0111\u01b0\u1ee3c \u0111\xe0o t\u1ea1o \u0111\u1ec3 tr\u1ee3 gi\xfap ch\u01b0 v\u1ecb \u0110\u1ea1o H\u1eefu tinh t\u1ea5n tr\xean con \u0111\u01b0\u1eddng gi\u1ea3i tho\xe1t. M\u1ee5c ti\xeau \u0111\u1ea1t \u0111\u01b0\u1ee3c 36.000 bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam. \u0110\u1ea1o H\u1eefu c\xf3 th\u1eafc m\u1eafc g\xec v\u1ec1 vi\u1ec7c tr\xec t\u1ee5ng ch\xfa L\u0103ng Nghi\xeam kh\xf4ng?",q=t.N
-this.f.push(A.a_(["role","ai","text",r],q,q))},
+this.f.push(A.Y(["role","ai","text",r],q,q))},
 y4(){var s=0,r=A.N(t.H),q=this,p,o
 var $async$y4=A.O(function(a,b){if(a===1)return A.K(b,r)
 for(;;)switch(s){case 0:p=A
@@ -90008,7 +90008,7 @@ m=m==null?null:J.dR(m)
 if(m==null)m="user"
 l=r.h(0,"text")
 l=l==null?null:J.dR(l)
-n.push(A.a_(["role",m,"text",l==null?"":l],o,o))}}}catch(k){q=A.a9(k)
+n.push(A.Y(["role",m,"text",l==null?"":l],o,o))}}}catch(k){q=A.a9(k)
 A.aww("Error decoding history: "+A.k(q))
 j.a.Dy()}else j.a.Dy()
 i=j.a
@@ -90016,7 +90016,7 @@ i.Fr(i.DN())},
 $S:0}
 A.akf.prototype={
 $0(){var s=this.a,r=t.N
-s.f.push(A.a_(["role","user","text",this.b],r,r))
+s.f.push(A.Y(["role","user","text",this.b],r,r))
 s.d=!0
 s.mp()},
 $S:0}
@@ -90026,12 +90026,12 @@ if(q==null)q=null
 else q=A.fx(q,"*","")
 if(q==null)q="Xin l\u1ed7i, t\xf4i kh\xf4ng th\u1ec3 tr\u1ea3 l\u1eddi l\xfac n\xe0y."
 s=t.N
-r.f.push(A.a_(["role","ai","text",q],s,s))
+r.f.push(A.Y(["role","ai","text",q],s,s))
 r.mp()},
 $S:0}
 A.akh.prototype={
 $0(){var s=this.a,r=t.N
-s.f.push(A.a_(["role","ai","text","C\xf3 l\u1ed7i x\u1ea3y ra k\u1ebft n\u1ed1i v\u1edbi AI. Xin th\u1eed l\u1ea1i sau."],r,r))
+s.f.push(A.Y(["role","ai","text","C\xf3 l\u1ed7i x\u1ea3y ra k\u1ebft n\u1ed1i v\u1edbi AI. Xin th\u1eed l\u1ea1i sau."],r,r))
 s.mp()},
 $S:0}
 A.aki.prototype={
@@ -90075,9 +90075,9 @@ return A.cB(A.b([q,B.zX,A.cq(a,s,s,s,A.ez(s,s,p,s,s,s,s,s,s,s,s,12,s,s,r?B.ay:B.
 ae4(a){var s=J.dR(this.c.a)
 A.ID(new A.a73(this,new A.qL(new A.cr(s,B.fF,B.b6),$.as())),a,t.z)},
 J(a){var s=null,r=A.b7(a,B.ba,t.w).w.a.a<600,q=r?12:20,p=r?12:20,o=r?12:20,n=r?20:110,m=r?1/0:460,l=r?22:28,k=this.d,j=t.p
-m=A.cP(B.cH,A.cP(s,new A.bx(new A.a8(l,l,l,l),A.cB(A.b([B.ZY,B.lU,B.a5P,B.bw,B.a6J,B.ct,A.aCo(B.Hn,B.a68,k,s)],j),B.at,B.x,B.bd),s),B.u,s,B.BR,s,s,s,s,s,s,s,s,m),B.u,s,B.BN,s,s,s,s,s,s,s,s,1/0)
+m=A.cP(B.cH,A.cP(s,new A.bx(new A.a8(l,l,l,l),A.cB(A.b([B.ZZ,B.lU,B.a5Q,B.bw,B.a6J,B.ct,A.aCo(B.Hn,B.a69,k,s)],j),B.at,B.x,B.bd),s),B.u,s,B.BR,s,s,s,s,s,s,s,s,m),B.u,s,B.BN,s,s,s,s,s,s,s,s,1/0)
 l=A.cA(20)
-return new A.nm("L\u0103ng Nghi\xeam T\xe2m C\u1ea3nh",A.qF(A.cB(A.b([m,B.ct,A.kD(new A.bx(B.hs,A.cB(A.b([A.e1(B.Jf,B.J,s,B.x,B.K,0),B.bw,B.a54,B.bw,B.B9],j),B.at,B.x,B.K),s),s,s,new A.c4(l,B.jr)),B.ct,A.kD(new A.bx(B.hs,new A.kc(this.c,new A.a75(this),s,s,t.Id),s),s,s,new A.c4(A.cA(20),B.jr)),B.ct,new A.bm(1/0,56,A.aCe(B.a0x,k,A.aCf(s,s,B.I,s,s,s,s,s,s,B.d8,s,s,s,s,new A.c4(A.cA(8),B.r),s,s,s,s,s)),s)],j),B.J,B.x,B.K),s,new A.a8(q,p,o,n)),B.hQ,s)}}
+return new A.nm("L\u0103ng Nghi\xeam T\xe2m C\u1ea3nh",A.qF(A.cB(A.b([m,B.ct,A.kD(new A.bx(B.hs,A.cB(A.b([A.e1(B.Je,B.J,s,B.x,B.K,0),B.bw,B.a55,B.bw,B.B9],j),B.at,B.x,B.K),s),s,s,new A.c4(l,B.jr)),B.ct,A.kD(new A.bx(B.hs,new A.kc(this.c,new A.a75(this),s,s,t.Id),s),s,s,new A.c4(A.cA(20),B.jr)),B.ct,new A.bm(1/0,56,A.aCe(B.a0x,k,A.aCf(s,s,B.I,s,s,s,s,s,s,B.d8,s,s,s,s,new A.c4(A.cA(8),B.r),s,s,s,s,s)),s)],j),B.J,B.x,B.K),s,new A.a8(q,p,o,n)),B.hQ,s)}}
 A.a73.prototype={
 $1(a){var s=this.b,r=A.aiz(s,B.oJ,B.Am,null,B.m5)
 return A.a04(A.b([A.nB(B.m7,new A.a71(a),null),A.nB(B.Au,new A.a72(this.a,s,a),null)],t.p),B.aa,r,B.Av)},
@@ -90154,7 +90154,7 @@ r=A.hN(B.nu,1)
 q=l?8:20
 p=t.p
 o=A.b([B.Q9,B.lS],p)
-B.c.P(o,B.Kk)
+B.c.P(o,B.Kj)
 g=A.kD(new A.bx(new A.a8(f,f,f,f),A.cB(A.b([A.cP(n,A.qF(A.cB(o,B.da,B.x,B.K),B.a8Z,n),B.u,n,n,new A.c1(B.Eu,n,r,s,n,n,B.ae),n,m,B.a8X,n,new A.a8(q,q,q,q),n,n,1/0)],p),B.at,B.x,B.K),n),B.aa,B.af,new A.c4(g,B.js))
 q=A.cA(22)
 m=l?14:30
@@ -90184,7 +90184,7 @@ return A.M($async$$0,r)},
 $S:18}
 A.apm.prototype={
 $1(a){var s=null,r=A.cA(16)
-return A.axt(s,B.aa,new A.bx(B.Gi,A.cB(A.b([B.Hr,B.lT,A.cq("C\u1ed9t M\u1ed1c "+this.b+" Bi\u1ebfn!",s,s,s,B.Ap,B.b5,s),B.lT,A.cq(this.a.a,s,s,s,B.Wc,B.b5,s),B.zW,A.aCe(B.a6l,new A.apl(a),A.aCf(s,s,B.I,s,s,s,s,s,s,B.d8,s,s,s,s,s,s,s,s,s,s))],t.p),B.J,B.x,B.bd),s),s,s,s,s,B.zp,s,new A.c4(r,B.BD),s)},
+return A.axt(s,B.aa,new A.bx(B.Gi,A.cB(A.b([B.Hr,B.lT,A.cq("C\u1ed9t M\u1ed1c "+this.b+" Bi\u1ebfn!",s,s,s,B.Ap,B.b5,s),B.lT,A.cq(this.a.a,s,s,s,B.Wc,B.b5,s),B.zW,A.aCe(B.a6m,new A.apl(a),A.aCf(s,s,B.I,s,s,s,s,s,s,B.d8,s,s,s,s,s,s,s,s,s,s))],t.p),B.J,B.x,B.bd),s),s,s,s,s,B.zp,s,new A.c4(r,B.BD),s)},
 $S:215}
 A.apl.prototype={
 $0(){return A.dG(this.a,!1).eg()},
@@ -90201,7 +90201,7 @@ o=o?8:20
 s=A.hN(B.jJ,1)
 o=A.e1(A.b([n,m,A.cP(p,A.tV(p,p,B.Hi,p,p,new A.apq(l,a),p,p,"Ch\u1ec9nh s\u1eeda ch\xednh x\xe1c"),B.u,p,p,new A.c1(B.aa,p,s,p,p,p,B.ca),p,p,p,new A.a8(o,0,0,0),p,p,p,p)],q),B.J,p,B.dY,B.K,0)
 s=A.cA(4)
-return A.cB(A.b([o,B.S8,B.a4F,B.ct,A.cP(p,new A.Lz(B.e.dH(b/36e3,0,1),B.cH,A.cP(p,p,B.u,p,p,new A.c1(p,p,p,A.cA(4),p,B.oT,B.ae),p,p,p,p,p,p,p,p),p),B.u,p,p,new A.c1(B.E5,p,p,s,p,p,B.ae),p,8,p,p,p,p,p,1/0),B.zY,A.e1(A.b([B.a2d,A.cq("M\u1ee5c ti\xeau: 36000",p,p,p,B.m4,p,p)],q),B.J,p,B.fk,B.K,0)],q),B.J,B.x,B.K)},
+return A.cB(A.b([o,B.S8,B.a4G,B.ct,A.cP(p,new A.Lz(B.e.dH(b/36e3,0,1),B.cH,A.cP(p,p,B.u,p,p,new A.c1(p,p,p,A.cA(4),p,B.oT,B.ae),p,p,p,p,p,p,p,p),p),B.u,p,p,new A.c1(B.E5,p,p,s,p,p,B.ae),p,8,p,p,p,p,p,1/0),B.zY,A.e1(A.b([B.a2d,A.cq("M\u1ee5c ti\xeau: 36000",p,p,p,B.m4,p,p)],q),B.J,p,B.fk,B.K,0)],q),B.J,B.x,B.K)},
 $S:217}
 A.apq.prototype={
 $0(){return this.a.aiW(this.b)},
@@ -90257,16 +90257,16 @@ for(o=i.d.length,m=0;m<4;++m){l=m<o?B.I:B.bX
 k=new A.aI(B.I,2,B.t,-1)
 n[m]=A.cP(h,h,B.u,h,h,new A.c1(l,h,new A.dj(k,k,k,k),h,h,h,B.ca),h,20,h,B.G2,h,h,h,20)}p.push(A.e1(n,B.J,h,B.dY,B.K,0))
 if(!i.w){o=A.aPn(h,h,h,h,h,h,h,h,h,B.dL,h,h,B.Gb,h,h,B.jt,h,h,h,h)
-B.c.P(p,A.b([B.ct,B.a3x,B.bw,new A.Nu(!0,i.gahE(),h,h,h,o,h,h,!1,h,!0,h,new A.V3(B.a_H,B.Hv,o,h,h),h)],q))}p.push(B.Sb)
+B.c.P(p,A.b([B.ct,B.a3x,B.bw,new A.Nu(!0,i.gahE(),h,h,h,o,h,h,!1,h,!0,h,new A.V3(B.a_I,B.Hv,o,h,h),h)],q))}p.push(B.Sb)
 q=A.b([],q)
 for(j=1;j<=9;++j)q.push(i.NV(B.j.k(j)))
 q.push(B.aB)
 q.push(i.NV("0"))
 q.push(A.u_(!1,A.cA(40),!0,A.cP(B.N,B.Hu,B.u,h,h,h,h,h,h,h,h,h,h,h),h,!0,h,h,h,h,h,h,h,h,i.gafs(),h,h,h,h,h,h,h))
-o=A.a_([null,0],t.LO,t.S)
+o=A.Y([null,0],t.LO,t.S)
 l=q.length
 p.push(new A.ep(B.BP,new A.LM(new A.ahu(3,20,20,1.5,h),new A.ahs(!0,!0,!0,q,o),h,B.ar,!1,h,h,B.Nd,h,!0,h,0,h,h,l,B.lW,B.aG,h,h,B.T,B.aH,h),h))
-return A.BZ(h,B.w,A.k0(!0,A.qF(A.iz(A.cP(h,A.cB(p,B.J,B.x,B.bd),B.u,h,B.mN,new A.c1(B.aa,h,r,g,B.Ka,h,B.ae),h,h,h,h,B.Gc,h,h,1/0),h,h),h,B.G9),B.af,!0),h)},
+return A.BZ(h,B.w,A.k0(!0,A.qF(A.iz(A.cP(h,A.cB(p,B.J,B.x,B.bd),B.u,h,B.mN,new A.c1(B.aa,h,r,g,B.K9,h,B.ae),h,h,h,h,B.Gc,h,h,1/0),h,h),h,B.G9),B.af,!0),h)},
 NV(a){var s=null,r=A.cA(40),q=A.hN(B.h5,1)
 return A.u_(!1,r,!0,A.cP(B.N,A.cq(a,s,s,s,B.Un,s,s),B.u,s,s,new A.c1(B.aa,s,q,s,s,s,B.ca),s,s,s,s,s,s,s,s),s,!0,s,s,s,s,s,s,s,s,new A.aqg(this,a),s,s,s,s,s,s,s)}}
 A.aqi.prototype={
@@ -90295,7 +90295,7 @@ r=s.length
 if(r!==0)q.d=B.d.Z(s,0,r-1)},
 $S:0}
 A.aql.prototype={
-$1(a){return A.a04(A.b([A.nB(B.a0E,new A.aqj(a),null),A.aCn(B.a5E,new A.aqk(a))],t.p),null,B.a4t,B.a0N)},
+$1(a){return A.a04(A.b([A.nB(B.a0E,new A.aqj(a),null),A.aCn(B.a5F,new A.aqk(a))],t.p),null,B.a4u,B.a0N)},
 $S:65}
 A.aqj.prototype={
 $0(){return A.dG(this.a,!1).jW(!1)},
@@ -90366,24 +90366,24 @@ r=A.b7(a,B.ba,d).w.a.a<600?12:20
 q=A.b7(a,B.ba,d).w.a.a<600?12:20
 d=A.b7(a,B.ba,d).w.a.a<600?20:110
 p=A.cq("C\u1eacP NH\u1eacT \u1ee8NG D\u1ee4NG",e,e,e,B.ek,e,e)
-o=A.kD(A.a8z(B.Hz,new A.at7(a),B.a6s,B.Ym,B.kM),e,e,e)
+o=A.kD(A.a8z(B.Hz,new A.at7(a),B.a4_,B.Ym,B.kM),e,e,e)
 n=A.cq("C\xc0I \u1ee8NG D\u1ee4NG",e,e,e,B.ek,e,e)
-m=A.kD(A.a8z(B.oF,f.gaiY(),B.a3f,B.a4K,B.kM),e,e,e)
+m=A.kD(A.a8z(B.oF,f.gaiY(),B.a3f,B.a4L,B.kM),e,e,e)
 l=t.p
-k=A.b([B.a6M,B.Sd,B.a5k,B.bw],l)
+k=A.b([B.a6M,B.Sd,B.a5l,B.bw],l)
 for(j=c.length,i=0;i<c.length;c.length===j||(0,A.x)(c),++i){h=c[i]
 g=h.a
 k.push(new A.bx(B.FU,A.cq(B.d.p7(B.j.k(A.NW(g)),2,"0")+"/"+B.d.p7(B.j.k(A.NX(g)),2,"0")+"/"+A.NY(g)+"  \xb7  "+h.d,e,e,e,B.To,e,e),e))}k=A.kD(new A.bx(B.o0,A.cB(k,B.at,B.x,B.K),e),e,e,e)
 j=A.cq("TH\xd4NG TIN C\xc1 NH\xc2N",e,e,e,B.ek,e,e)
 g=f.d
 g===$&&A.a()
-return new A.nm("C\xe0i \u0110\u1eb7t",A.qF(A.cB(A.b([p,B.bw,o,B.iG,n,B.bw,m,B.iG,k,B.iG,j,B.bw,A.kD(new A.bx(B.G5,A.e1(A.b([A.kR(A.aiz(g,B.HV,e,e,e)),B.fC,A.aCn(B.a2I,f.gahX())],l),B.J,e,B.x,B.K,0),e),e,e,e),B.iG,A.cq("T\xd9Y CH\u1eccN",e,e,e,B.ek,e,e),B.bw,A.kD(A.cB(A.b([A.a8z(B.Hl,f.ga82(),B.a5T,B.Y1,e),B.Fo,A.a8z(B.Hp,new A.at8(a),e,B.a11,B.kM)],l),B.J,B.x,B.K),e,e,e)],l),B.at,B.x,B.K),e,new A.a8(s,r,q,d)),B.hQ,e)}}
+return new A.nm("C\xe0i \u0110\u1eb7t",A.qF(A.cB(A.b([p,B.bw,o,B.iG,n,B.bw,m,B.iG,k,B.iG,j,B.bw,A.kD(new A.bx(B.G5,A.e1(A.b([A.kR(A.aiz(g,B.HV,e,e,e)),B.fC,A.aCn(B.a2I,f.gahX())],l),B.J,e,B.x,B.K,0),e),e,e,e),B.iG,A.cq("T\xd9Y CH\u1eccN",e,e,e,B.ek,e,e),B.bw,A.kD(A.cB(A.b([A.a8z(B.Hl,f.ga82(),B.a5U,B.Y1,e),B.Fo,A.a8z(B.Hp,new A.at8(a),e,B.a11,B.kM)],l),B.J,B.x,B.K),e,e,e)],l),B.at,B.x,B.K),e,new A.a8(s,r,q,d)),B.hQ,e)}}
 A.at5.prototype={
 $1(a){var s=this.a
 return A.k0(!0,A.qF(A.cB(A.b([B.Qa,B.lU,s.Qa("Android \u2014 d\u1ec5 v\xe0 \u0111\u1ea7y \u0111\u1ee7 nh\u1ea5t","M\u1edf trang app b\u1eb1ng Chrome \u2192 m\u1edf tr\xecnh \u0111\u01a1n ba ch\u1ea5m \u2192 ch\u1ecdn \u201cC\xe0i \u0111\u1eb7t \u1ee9ng d\u1ee5ng\u201d ho\u1eb7c \u201cTh\xeam v\xe0o m\xe0n h\xecnh ch\xednh\u201d \u2192 x\xe1c nh\u1eadn C\xe0i \u0111\u1eb7t.\n\n\u0110\u1ec3 nh\u1eadn nh\u1eafc \u1ed5n \u0111\u1ecbnh khi \u0111\xe3 \u0111\xf3ng app, h\xe3y c\xe0i b\u1ea3n APK Android c\u1ee7a \u1ee9ng d\u1ee5ng r\u1ed3i cho ph\xe9p Th\xf4ng b\xe1o."),B.lS,s.Qa("iPhone / iPad","M\u1edf trang app b\u1eb1ng Safari \u2192 b\u1ea5m bi\u1ec3u t\u01b0\u1ee3ng Chia s\u1ebb \u2192 \u201cTh\xeam v\xe0o M\xe0n h\xecnh ch\xednh\u201d \u2192 b\u1eadt \u201cM\u1edf d\u01b0\u1edbi d\u1ea1ng \u1ee9ng d\u1ee5ng web\u201d \u2192 b\u1ea5m Th\xeam."),B.lS,B.a7k],t.p),B.at,B.x,B.bd),null,B.Gf),B.af,!0)},
 $S:561}
 A.at4.prototype={
-$1(a){return A.a04(A.b([A.nB(B.m7,new A.at2(a),null),A.nB(B.a6A,new A.at3(this.a,a),null)],t.p),B.aa,B.Ze,B.a_f)},
+$1(a){return A.a04(A.b([A.nB(B.m7,new A.at2(a),null),A.nB(B.a6A,new A.at3(this.a,a),null)],t.p),B.aa,B.Ze,B.a_g)},
 $S:65}
 A.at2.prototype={
 $0(){A.dG(this.a,!1).jW(null)
@@ -90409,11 +90409,11 @@ A.D5.prototype={
 ah(){return new A.XT()}}
 A.XT.prototype={
 ga9u(){var s="H\xf2a Th\u01b0\u1ee3ng Tuy\xean H\xf3a",r="H\xf2a Th\u01b0\u1ee3ng Ph\u1ed5 Quang",q=t.N,p=t.Ky
-q=A.Z(new A.aN(A.b([A.a_(["title","CU\u1ed8C \u0110\u1edcI H\xd2A TH\u01af\u1ee2NG TUY\xcaN H\xd3A","meta",s,"preview",'1. Hi\u1ec7n T\u01b0\u1ee3ng \u0110\u1ea3n Sanh V\xe0 S\u1ef1 Tr\xf9ng H\u1ee3p Nh\xe2n Duy\xean\n\nH\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a \u0111\u1ea3n sanh v\xe0o gi\u1edd T\xfd ng\xe0y 16 th\xe1ng 3 n\u0103m 1918.\n\n\u0110\xeam tr\u01b0\u1edbc khi Ng\xe0i ch\xe0o \u0111\u1eddi, th\xe2n m\u1eabu Ng\xe0i l\xe0 b\xe0 B\u1ea1ch H\u1ed3 Th\u1ecb n\u1eb1m m\u1ed9ng th\u1ea5y \u0110\u1ee9c Ph\u1eadt A Di \u0110\xe0 ph\xf3ng \xe1nh ho\xe0ng kim ch\xf3i l\u1ecdi, khi t\u1ec9nh gi\u1ea5c ng\u1eedi th\u1ea5y m\xf9i h\u01b0\u01a1ng k\u1ef3 di\u1ec7u lan t\u1ecfa.\n\nV\u1eeba l\u1ecdt l\xf2ng, Ng\xe0i c\u1ea5t ti\u1ebfng kh\xf3c li\xean t\u1ee5c su\u1ed1t ba ng\xe0y \u0111\xeam kh\xf4ng ng\u1eebng. Ch\u1ec9 \u0111\u1ebfn khi c\xf3 k\u1ebb tr\u1ed9m \u0111\u1ed9t nh\u1eadp v\xe0o ng\xf4i nh\xe0 ngh\xe8o l\u1ea5y \u0111i \xedt \u0111\u1ed3 \u0111\u1ea1c gi\xe1 tr\u1ecb \xedt \u1ecfi, Ng\xe0i m\u1edbi ch\u1ecbu ng\u01b0ng kh\xf3c.\n\nH\xe0nh tr\u1ea1ng \u0111\u1ea3n sanh v\xe0 xu\u1ea5t gia c\u1ee7a Ng\xe0i mang s\u1ef1 an b\xe0i nh\xe2n duy\xean k\u1ef3 l\u1ea1: Ng\xe0i sanh ng\xe0y 16 th\xe1ng 3 (S\u01b0 ph\u1ee5 Ng\xe0i sanh ng\xe0y 15, S\u01b0 b\xe1c sanh ng\xe0y 17); Ng\xe0i xu\u1ea5t gia ng\xe0y 16 th\xe1ng 9 (S\u01b0 ph\u1ee5 xu\u1ea5t gia ng\xe0y 15, S\u01b0 b\xe1c xu\u1ea5t gia ng\xe0y 17).\n\n2. Tu\u1ed5i Th\u01a1 Vua Con N\xedt V\xe0 S\u1ef1 Th\u1ec3 Ng\u1ed9 Sanh T\u1eed\n\nThu\u1edf nh\u1ecf, Ng\xe0i sinh tr\u01b0\u1edfng trong gia \u0111\xecnh ngh\xe8o ngh\xe8o \u0111\xf4ng anh em. Ng\xe0i t\u1eebng c\xf3 t\xednh c\xe1ch k\u1ef3 qu\xe1i, h\u1ec5 kh\xf4ng v\u1eeba \xfd l\xe0 kh\xf3c r\xe9 l\xean 1 \u0111\u1ebfn 3 ng\xe0y \u0111\xeam b\u1ecf \u0103n u\u1ed1ng \u0111\u1ec3 cha m\u1eb9 ch\u1ecbu thua.\n\nT\u1eeb 7 \u0111\u1ebfn 8 tu\u1ed5i, Ng\xe0i th\xedch l\xe0m "vua con n\xedt", t\u1ef1 \u0111\u1eafp g\xf2 \u0111\u1ea5t cao "\u0111\u0103ng c\u01a1 t\u1ecda \u0111i\u1ec7n", b\u1eaft h\xe0ng ch\u1ee5c \u0111\u1ebfn h\xe0ng tr\u0103m \u0111\u1ee9a tr\u1ebb qu\u1ef3 l\u1ea1y x\u01b0ng "v\u1ea1n tu\u1ebf" v\xe0 s\u1eb5n s\xe0ng \u0111\xe1nh l\u1ed9n v\u1edbi ng\u01b0\u1eddi l\u1edbn g\u1ea5p \u0111\xf4i tu\u1ed5i m\xecnh \u0111\u1ec3 \u0111\xf2i l\u1ea1i s\u1ef1 c\xf4ng b\u1eb1ng.\n\nN\u0103m 11 tu\u1ed5i, l\u1ea7n \u0111\u1ea7u ti\xean nh\xecn th\u1ea5y thi h\xe0i m\u1ed9t \u0111\u1ee9a b\xe9 b\u1ecb b\xf3 r\u01a1m v\u1ee9t b\u1ecf ngo\u1ea1i th\xe0nh, Ng\xe0i gi\u1eadt m\xecnh ng\u1ed9 ra s\u1ef1 v\xf4 th\u01b0\u1eddng c\u1ee7a ki\u1ebfp ng\u01b0\u1eddi. Ng\xe0i h\u1ecfi m\u1eb9 v\xe0 \u0111\u01b0\u1ee3c ng\u01b0\u1eddi h\u1ecd h\xe0ng L\xfd L\xe2m ch\u1ec9 r\u1eb1ng xu\u1ea5t gia tu Ph\u1eadt tu Ti\xean m\u1edbi kh\u1ecfi ch\u1ebft.\n\nTh\xe2n m\u1eabu d\u1eb7n Ng\xe0i ph\u1ea3i gi\u1eef tr\u1ecdn hi\u1ebfu \u0111\u1ea1o ph\u1ee5ng d\u01b0\u1ee1ng cha m\u1eb9 tr\u01b0\u1edbc. Ng\xe0i v\xe2ng l\u1eddi \u1edf nh\xe0 \u0103n chay, ni\u1ec7m Ph\u1eadt. C\xf9ng th\u1eddi gian n\xe0y, Ng\xe0i m\u1ed9ng th\u1ea5y B\xe0 l\xe3o d\u1eabn Ng\xe0i qua con \u0111\u01b0\u1eddng hi\u1ec3m tr\u1edf nh\u01b0 chi\u1ebfc nia \u0111\u1ea7y h\u1ea7m h\u1ed1, ngo\u1ea3nh l\u1ea1i th\u1ea5y mu\xf4n v\u1ea1n ng\u01b0\u1eddi thu\u1ed9c m\u1ecdi t\u1ea7ng l\u1edbp \u0111i theo sau \u2013 \u0111i\u1ec1m b\xe1o tr\u01b0\u1edbc cho \u0111\u1ea1o nghi\u1ec7p \u0111\u1ed9 sanh r\u1ed9ng l\u1edbn.\n\n3. H\xe0nh Tr\u1ea1ng B\xe1i L\u1ea1y Mu\xf4n Lo\xe0i V\xe0 T\u1ea7m S\u01b0 H\u1ecdc \u0110\u1ea1o\n\nN\u0103m 12 tu\u1ed5i, Ng\xe0i ch\u1ee3t t\u1ec9nh gi\xe1c, nh\u1eadn ra m\xecnh t\u1eebng b\u1ea5t hi\u1ebfu n\xean b\u1eaft \u0111\u1ea7u \u0111\u1ea3nh l\u1ec5 cha m\u1eb9 s\xe1m h\u1ed1i. Ng\xe0i m\u1edf r\u1ed9ng b\xe1i l\u1ea1y c\xe1c b\u1eadc Th\xe1nh Hi\u1ec1n, \u0111\u1ea1i hi\u1ebfu t\u1eed, v\xe0 \u0111\u1eb7c bi\u1ec7t l\xe0 l\u1ea1y c\u1ea3 nh\u1eefng k\u1ebb \u0111\u1ea1i \xe1c, l\u01b0u manh c\xf9ng lo\xe0i ki\u1ebfn, mu\u1ed7i m\xf2ng vi t\u1ebf v\xec xem ch\xfang l\xe0 b\u1ea1n c\u0169 mu\xf4n ki\u1ebfp. M\u1ed7i ng\xe0y Ng\xe0i l\u1ea1y 837 l\u1ea1y b\u1ea5t ch\u1ea5p m\u01b0a gi\xf4ng, tuy\u1ebft r\u01a1i hay s\u1ea5m s\xe9t.\n\nT\u1eeb 13\u201314 tu\u1ed5i, Ng\xe0i rong ru\u1ed5i ch\u1ea1y b\u1ed9 5 d\u1eb7m \u0111\u01b0\u1eddng m\u1ed7i ng\xe0y nghe gi\u1ea3ng Kinh \u0110\u1ecba T\u1ea1ng, nghi\xean c\u1ee9u gi\xe1o ngh\u0129a t\u1eeb Nho, \u0110\u1ea1o, Thi\xean Ch\xfaa \u0111\u1ebfn c\xe1c t\xe0 m\xf4n ngo\u1ea1i \u0111\u1ea1o \u0111\u1ec3 t\xecm \u0111\u01b0\u1eddng gi\u1ea3i tho\xe1t. Khi ng\u1ed3i t\u0129nh l\u1eb7ng, Ng\xe0i c\xf3 th\u1ec3 nghe v\u0103ng v\u1eb3ng trong h\u01b0 kh\xf4ng h\xe0ng tr\u0103m v\u1ecb Ph\xe1p s\u01b0 \u0111ang \u0111\u1ed3ng th\u1eddi thuy\u1ebft ph\xe1p.\n\n4. Xu\u1ea5t Gia, Th\u1ee7 Hi\u1ebfu V\xe0 M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n\n\nN\u0103m 19 tu\u1ed5i (1937), th\xe2n m\u1eabu qua \u0111\u1eddi. Sau khi mai t\xe1ng, Ng\xe0i \u0111\u1ebfn ch\xf9a Tam Duy\xean b\xe1i H\xf2a th\u01b0\u1ee3ng Th\u01b0\u1eddng Tr\xed xu\u1ea5t gia, mang ph\xe1p danh An T\u1eeb, hi\u1ec7u \u0110\u1ed9 Lu\xe2n. Ng\xe0i v\u1ec1 b\xean m\u1ed9 m\u1eb9 c\u1ea5t am tranh th\u1ee7 hi\u1ebfu 3 n\u0103m.\n\nNh\xe2n ng\xe0y v\xeda \u0110\u1ee9c Qu\xe1n Th\u1ebf \xc2m B\u1ed3 T\xe1t (19/6 \xe2m l\u1ecbch), Ng\xe0i \u0111\u1ed1i tr\u01b0\u1edbc Ch\u01b0 Ph\u1eadt ph\xe1t M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n ch\u1ea5n \u0111\u1ed9ng: nguy\u1ec7n \u0111\u1ecba ng\u1ee5c, s\xfac sanh, ng\u1ea1 qu\u1ef7 c\xf2n m\u1ed9t k\u1ebb ch\u01b0a th\xe0nh Ph\u1eadt th\xec th\u1ec1 kh\xf4ng gi\u1eef ng\xf4i Ch\xe1nh Gi\xe1c; nguy\u1ec7n \u0111\u1eafc Ng\u0169 nh\xe3n L\u1ee5c th\xf4ng, phi h\xe0nh t\u1ef1 t\u1ea1i.\n\nTr\u1ea3i qua nhi\u1ec1u danh x\u01b0ng nh\u01b0 B\u1ea1ch Hi\u1ebfu T\u1eed, Ho\u1ea1t T\u1eed Nh\xe2n, Tuy\xean H\xf3a, Ng\xe0i lu\xf4n khi\xeam t\u1ed1n khai th\u1ecb r\u1eb1ng t\xean th\u1eadt s\u1ef1 c\u1ee7a Ng\xe0i ch\xednh l\xe0 "H\u01b0 Kh\xf4ng".\n\nPH\u1ea6N II: NH\u1eeeNG L\u1ea6N \u0110\u1ed8 SANH K\u1ef2 B\xcd, HUY\u1ec0N DI\u1ec6U C\u1ee6A NG\xc0I\n\n1. B\u1ea3n Nguy\u1ec7n H\xe0ng Ma Ph\u1ee5c Qu\xe1i V\xe0 C\u1ea3m H\xf3a Y\xeau M\u1ecb Ng\xe0n N\u0103m\n\nH\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a \u0111\u01b0\u1ee3c t\xf4n x\u01b0ng l\xe0 h\xf3a th\xe2n c\u1ee7a \u0110\u1ee9c Qu\xe1n Th\u1ebf \xc2m B\u1ed3 T\xe1t. To\xe0n b\u1ed9 cu\u1ed9c \u0111\u1eddi \u0111\u1ed9 sanh c\u1ee7a Ng\xe0i \u0111ong \u0111\u1ea7y nh\u1eefng c\xe2u chuy\u1ec7n th\u1ea7n d\u1ecb, huy\u1ec1n k\u1ef3 b\u1eadc nh\u1ea5t trong gi\u1edbi Ph\u1eadt gi\xe1o.\n\nV\u1edbi \u0111\u1ea1o h\u1ea1nh tu h\xe0nh th\xe2m s\xe2u v\xe0 uy l\u1ef1c B\u1ed3 \u0110\u1ec1 t\xe2m, Ng\xe0i \u0111\xe3 d\u1ea5n th\xe2n v\xe0o nh\u1eefng n\u01a1i u t\u1ed1i nh\u1ea5t \u0111\u1ec3 c\u1ee9u \u0111\u1ed9 ch\xfang sanh. T\u1eeb vi\u1ec7c h\xe0ng ph\u1ee5c ma qu\xe1i, khu\u1ea5t ph\u1ee5c c\xe1c lo\xe0i qu\u1ef7 th\u1ea7n hung t\u1ee3n cho \u0111\u1ebfn c\u1ea3m h\xf3a nh\u1eefng y\xeau m\u1ecb tu luy\u1ec7n ng\xe0n n\u0103m, t\u1ea5t c\u1ea3 \u0111\u1ec1u b\u1ecb \xe2n \u0111\u1ee9c t\u1eeb bi v\xe0 \u0111\u1ea1o l\u1ef1c v\u0129 \u0111\u1ea1i c\u1ee7a Ng\xe0i thu ph\u1ee5c, quay \u0111\u1ea7u h\u01b0\u1edbng thi\u1ec7n.\n\nNg\xe0i kh\xf4ng d\xf9ng th\u1ea7n th\xf4ng \u0111\u1ec3 ti\xeau di\u1ec7t m\xe0 d\xf9ng l\xf2ng t\u1eeb bi bao la v\xe0 tinh th\u1ea7n b\xecnh \u0111\u1eb3ng \u0111\u1ec3 h\xf3a gi\u1ea3i \u01a1n o\xe1n mu\xf4n ki\u1ebfp.\n\n3. S\u1ef1 B\xe1i L\u1ea1y H\xf3a Gi\u1ea3i Oan Nghi\u1ec7p V\xe0 Thu Ph\u1ee5c Ch\xfang Sanh V\xf4 H\xecnh\n\nNhi\u1ec7m m\xe0u v\xe0 \u0111\u1eb7c k\u1ef3 b\u1eadc nh\u1ea5t trong \u0111\u1ea1o nghi\u1ec7p c\u1ee7a Ng\xe0i ch\xednh l\xe0 h\xe0nh tr\u1ea1ng b\xe1i l\u1ea1y ch\xfang sanh t\u1eeb n\u0103m 12 tu\u1ed5i. Ng\xe0i kh\xf4ng ch\u1ec9 l\u1ea1y Ph\u1eadt, B\u1ed3 T\xe1t m\xe0 l\u1ea1y c\u1ea3 nh\u1eefng k\u1ebb \u0111\u1ea1i \xe1c, \u0111\u1ea1i ho\u1ea1i v\xe0 mu\u1ed7i m\xf2ng, ki\u1ebfn b\u1ecd.\n\nNg\xe0i nh\xecn th\u1ea5y b\u1eb1ng tu\u1ec7 nh\xe3n r\u1eb1ng trong mu\xf4n ki\u1ebfp qu\xe1 kh\u1ee9, t\u1ea5t c\u1ea3 ch\xfang sanh \u0111\u1ec1u t\u1eebng l\xe0 cha m\u1eb9, b\u1ea1n b\xe8 ho\u1eb7c c\xf3 duy\xean n\u1ee3 v\u1edbi Ng\xe0i. Vi\u1ec7c Ng\xe0i b\xe1i l\u1ea1y ngo\xe0i tr\u1eddi b\u1ea5t ch\u1ea5p tuy\u1ebft ph\u1ee7 m\u01b0a gi\xf4ng ch\xednh l\xe0 c\xe1ch Ng\xe0i d\xf9ng th\xe2n m\xecnh g\xe1nh b\u1edbt t\u1ed9i nghi\u1ec7p cho h\u1ecd.\n\nSau n\xe0y, khi Ng\xe0i \u0111i \u0111\u1ebfn \u0111\xe2u c\u0169ng c\xf3 h\xe0ng ng\xe0n ng\u01b0\u1eddi qu\u1ef3 l\u1ea1y, Ng\xe0i ch\u1ec9 \xf4n t\u1ed3n gi\u1ea3i th\xedch r\u1eb1ng \u0111\xf3 kh\xf4ng ph\u1ea3i v\xec Ng\xe0i c\xf3 \u0111\u1ee9c cao v\u1ecdng tr\u1ecdng, m\xe0 th\u1ef1c ch\u1ea5t h\u1ecd ch\u1ec9 \u0111ang "tr\u1ea3 n\u1ee3 c\u0169" m\xe0 Ng\xe0i \u0111\xe3 l\u1ea1y h\u1ecd t\u1eeb khi m\u1edbi 12 tu\u1ed5i. S\u1ef1 khi\xeam h\u1ea1 v\xe0 dung ch\u1ee9a v\xf4 t\u1eadn n\xe0y \u0111\xe3 c\u1ea3m h\xf3a bi\u1ebft bao t\xe2m h\u1ed3n ki\xeau m\u1ea1n, khi\u1ebfn c\u1ea3 ch\xfang sanh h\u1eefu h\xecnh l\u1eabn v\xf4 h\xecnh \u0111\u1ec1u s\u1ee5p l\u1ea1y quy y.\n\n4. M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n V\xe0 Th\u1ea7n Th\xf4ng Phi H\xe0nh T\u1ef1 T\u1ea1i\n\nKhi ph\xe1t M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n n\u0103m 19 tu\u1ed5i, Ng\xe0i nguy\u1ec7n \u0111\u1eafc Ng\u0169 nh\xe3n L\u1ee5c th\xf4ng, phi h\xe0nh t\u1ef1 t\u1ea1i \u0111\u1ec3 \u0111i kh\u1eafp ph\xe1p gi\u1edbi \u0111\u1ed9 sanh. \u0110i\u1ec1m b\xe1o t\u1eeb gi\u1ea5c m\u1ed9ng tu\u1ed5i th\u01a1 \u2013 khi Ng\xe0i d\u1eaft tay B\xe0 l\xe3o d\u1eabn h\xe0ng v\u1ea1n ng\u01b0\u1eddi thu\u1ed9c \u0111\u1ee7 s\u1eafc t\u1ed9c, T\u0103ng s\u0129 l\u1eabn ng\u01b0\u1eddi \u0111\u1eddi tho\xe1t kh\u1ecfi con \u0111\u01b0\u1eddng hi\u1ec3m h\xf3c \u2013 \u0111\xe3 tr\u1edf th\xe0nh s\u1ef1 th\u1eadt.\n\n\u0110\u1ea1o nghi\u1ec7p c\u1ee7a Ng\xe0i kh\xf4ng d\u1eebng l\u1ea1i \u1edf \xc1 \u0110\xf4ng m\xe0 v\u01b0\u01a1n r\u1ed9ng ra to\xe0n c\u1ea7u. Ng\xe0i \u0111em ch\xe1nh ph\xe1p gieo r\u1eafc kh\u1eafp ph\u01b0\u01a1ng T\xe2y, th\xe0nh l\u1eadp c\xe1c \u0111\u1ea1o trang, phi\xean d\u1ecbch kinh \u0111i\u1ec3n v\xe0 h\xf3a \u0111\u1ed9 v\xf4 s\u1ed1 \u0111\u1ec7 t\u1eed xu\u1ea5t gia l\u1eabn t\u1ea1i gia.\n\nB\u1eb1ng nguy\u1ec7n l\u1ef1c "\u0111\u1ecba ng\u1ee5c ch\u01b0a tr\u1ed1ng th\u1ec1 kh\xf4ng th\xe0nh Ph\u1eadt, s\xfac sanh ng\u1ea1 qu\u1ef7 c\xf2n m\u1ed9t k\u1ebb ch\u01b0a th\xe0nh Ph\u1eadt th\u1ec1 kh\xf4ng gi\u1eef ng\xf4i Ch\xe1nh Gi\xe1c", h\xe0nh tr\u1ea1ng \u0111\u1ed9 sanh c\u1ee7a Ng\xe0i ch\xednh l\xe0 ng\u1ecdn h\u1ea3i \u0111\u0103ng xua tan \u0111\xeam \u0111en, \u0111\u01b0a ch\xfang sanh tho\xe1t kh\u1ecfi nh\xe0 l\u1eeda Tam gi\u1edbi.\n\nNG\xc0I KHAI TH\u1eca\n\n1. Ch\xfa L\u0103ng Nghi\xeam \u2013 Vua Trong C\xe1c Th\u1ea7n Ch\xfa V\xe0 B\u1ea3o B\u1ed1i H\xe0ng Ma\n\nTrong cu\u1ed9c \u0111\u1eddi ho\u1eb1ng h\xf3a, H\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a lu\xf4n coi Kinh v\xe0 Ch\xfa L\u0103ng Nghi\xeam l\xe0 "x\u01b0\u01a1ng s\u1ed1ng" c\u1ee7a Ph\u1eadt ph\xe1p. Ng\xe0i t\u1eebng khai th\u1ecb c\xe2u n\xf3i n\u1ed5i ti\u1ebfng: "L\u0103ng Nghi\xeam h\u01b0ng th\xec Ph\u1eadt ph\xe1p h\u01b0ng; L\u0103ng Nghi\xeam di\u1ec7t th\xec Ph\u1eadt ph\xe1p di\u1ec7t." Ng\xe0i v\xed Ch\xfa L\u0103ng Nghi\xeam nh\u01b0 chi\u1ebfc "K\xednh chi\u1ebfu y\xeau", "G\u1eady h\xe0ng ma" v\xe0 "Thanh ki\u1ebfm ch\xe9m ma" t\u1ed1i th\u01b0\u1ee3ng c\u1ee7a ch\u01b0 Ph\u1eadt.\n\nTheo l\u1eddi Ng\xe0i gi\u1ea3ng gi\u1ea3i, Ch\xfa L\u0103ng Nghi\xeam \u0111\u01b0\u1ee3c chia l\xe0m Ng\u0169 B\u1ed9 Ch\xfa tr\u1ea5n gi\u1eef n\u0103m ph\u01b0\u01a1ng trong ph\xe1p gi\u1edbi:\n\n\u2022 Kim Cang b\u1ed9 (ph\u01b0\u01a1ng \u0110\xf4ng, do \u0110\u1ee9c Ph\u1eadt A S\xfac l\xe0m ch\u1ee7) \u2013 chuy\xean nhi\u1ebfp ph\u1ee5c t\xe0 ma qu\u1ef7 th\u1ea7n.\n\u2022 B\u1ea3o Sinh b\u1ed9 (ph\u01b0\u01a1ng Nam, do \u0110\u1ee9c Ph\u1eadt B\u1ea3o Sinh l\xe0m ch\u1ee7).\n\u2022 Ph\u1eadt b\u1ed9 (ch\xednh gi\u1eefa, do \u0110\u1ee9c Ph\u1eadt Th\xedch Ca M\xe2u Ni l\xe0m ch\u1ee7).\n\u2022 Li\xean Hoa b\u1ed9 (ph\u01b0\u01a1ng T\xe2y, do \u0110\u1ee9c Ph\u1eadt A Di \u0110\xe0 l\xe0m ch\u1ee7).\n\u2022 Nghi\u1ec7p b\u1ed9 (ph\u01b0\u01a1ng B\u1eafc, do \u0110\u1ee9c Ph\u1eadt Th\xe0nh T\u1ef1u l\xe0m ch\u1ee7).\n\nS\u1ef1 k\u1ebft h\u1ee3p c\u1ee7a Ng\u0169 B\u1ed9 Ch\xfa t\u1ea1o n\xean m\u1ed9t h\xe0ng r\xe0o kim cang ki\xean c\u1ed1, xua tan m\u1ecdi ma kh\xed v\xe0 y\xeau m\u1ecb trong v\u0169 tr\u1ee5.\n\n2. H\xe0ng Ph\u1ee5c T\xe0 Ma, Qu\u1ef7 Th\u1ea7n V\xe0 Ph\xe1 50 Hi\u1ec7n T\u01b0\u1ee3ng \u1ea4m Ma\n\nH\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a khai th\u1ecb r\u1eb1ng khi ng\u01b0\u1eddi tu tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam v\u1edbi t\xe2m ch\xed th\xe0nh v\xe0 gi\u1edbi lu\u1eadt thanh t\u1ecbnh, \xe1nh h\xe0o quang t\u1eeb \u0111\u1ea3nh nh\u1ee5c k\u1ebf c\u1ee7a \u0110\u1ee9c Ph\u1eadt s\u1ebd ph\xf3ng ra ch\xf3i l\u1ecdi. Ch\u01b0 Thi\xean, H\u1ed9 Ph\xe1p, Kim Cang B\u1ed3 T\xe1t \u0111\u1ed3ng th\u1eddi v\xe2y quanh b\u1ea3o h\u1ed9, khi\u1ebfn t\u1ea5t c\u1ea3 c\xe1c lo\xe0i t\xe0 ma, y\xeau ma qu\u1ef7 qu\xe1i, ly m\u1ecb v\u1ecdng l\u01b0\u1ee3ng \u0111\u1ec1u b\u1ecb uy l\u1ef1c th\u1ea7n ch\xfa ch\u1ea5n \u0111\u1ed9ng m\xe0 kinh s\u1ee3, ph\u1ea3i th\xe1o ch\u1ea1y ho\u1eb7c c\xfai \u0111\u1ea7u quy ph\u1ee5c.\n\n3. Khai Th\u1ecb V\u1ec1 Th\xe1i \u0110\u1ed9 Tr\xec Ch\xfa Cho H\xe0ng H\u1eadu H\u1ecdc\n\nH\xf2a th\u01b0\u1ee3ng lu\xf4n nh\u1eafc nh\u1edf \u0111\u1ec7 t\u1eed r\u1eb1ng Ch\xfa L\u0103ng Nghi\xeam l\xe0 "Linh v\u0103n c\u1ee7a tr\u1eddi \u0111\u1ea5t c\u1ee9u th\u1ebf gi\u1edbi". Tuy nhi\xean, Ng\xe0i nh\u1ea5n m\u1ea1nh tr\xec ch\xfa kh\xf4ng ph\u1ea3i \u0111\u1ec3 c\u1ea7u danh l\u1ee3i hay ph\xf4 tr\u01b0\u01a1ng th\u1ea7n th\xf4ng. Mu\u1ed1n Ch\xfa L\u0103ng Nghi\xeam ph\xe1t huy uy l\u1ef1c h\xe0ng ma tr\u1ecb b\u1ec7nh, ng\u01b0\u1eddi tr\xec ch\xfa ph\u1ea3i:\n\n\u2022 Gi\u1eef g\xecn gi\u1edbi lu\u1eadt thanh t\u1ecbnh: \u0110\u1eb7c bi\u1ec7t l\xe0 kh\xf4ng s\xe1t sanh, \u0103n chay tr\u1ecdn v\u1eb9n, kh\xf4ng d\xe2m d\u1ee5c v\xe0 kh\xf4ng n\xf3i d\xf3c.\n\u2022 D\u1ee9t tr\u1eeb Tham - S\xe2n - Si: Gi\u1eef t\xe2m \u0111\u1ecba ch\xe2n th\u1eadt, khi\xeam h\u1ea1 v\xe0 chan h\xf2a t\xecnh th\u01b0\u01a1ng \u0111\u1ebfn mu\xf4n lo\xe0i.\n\u2022 Kh\xf4ng ch\u1ea5p t\u01b0\u1edbng th\u1eddi gian: B\u1ea5t k\u1ef3 gi\u1edd ph\xfat n\xe0o t\xe2m ch\xed th\xe0nh ni\u1ec7m ch\xfa th\xec l\xfac \u0111\xf3 \u0111\u1ec1u l\xe0 th\u1eddi \u0111i\u1ec3m linh \u1ee9ng nh\u1ea5t.'],q,q),A.a_(["title","TH\xc0NH T\xc2M T\u1ee4NG CH\xda L\u0102NG NGHI\xcaM S\u1ebc \u0110\u1eaeC \u0110\u01af\u1ee2C PH\xc1P TH\xc2N","meta",s,"preview","\u201cTh\xe0nh t\xe2m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, th\xec kh\xf4ng c\u1ea7n tr\u1ea3i qua th\u1eddi gian l\xe2u d\xe0i c\u0169ng s\u1ebd \u0111\u1eafc \u0111\u01b0\u1ee3c Ph\xe1p Th\xe2n.\u201d\n\nCon ng\u01b0\u1eddi t\u1eeb v\xf4 l\u01b0\u1ee3ng ki\u1ebfp \u0111\u1ebfn nay, c\xf3 nh\u1eefng v\u1ecdng tri v\u1ecdng ki\u1ebfn, t\xe0 tri t\xe0 ki\u1ebfn, \u0111i\xean \u0111\u1ea3o m\u1ed9ng t\u01b0\u1edfng. T\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o t\u1ee9c l\xe0 ch\u1eb3ng ph\u1ea3i th\u01b0\u1eddng cho l\xe0 th\u01b0\u1eddng, ch\u1eb3ng ph\u1ea3i \u0111o\u1ea1n cho l\xe0 \u0111o\u1ea1n, ch\u1eb3ng c\xf3 cho l\xe0 c\xf3, ch\u1eb3ng kh\xf4ng cho l\xe0 kh\xf4ng; ch\u1ea1y theo c\u1ea3nh gi\u1edbi kh\xf4ng th\u1eadt, kh\xf4ng th\u1ec3 chuy\u1ec3n \u0111\u01b0\u1ee3c c\u1ea3nh gi\u1edbi kh\xf4ng th\u1eadt, t\u1ee9c c\u0169ng l\xe0 ng\u01b0\u1eddi b\u1ecb c\u1ea3nh chuy\u1ec3n, m\xe0 kh\xf4ng th\u1ec3 chuy\u1ec3n \u0111\u01b0\u1ee3c c\u1ea3nh, t\u1ee9c c\u0169ng th\u01b0\u1eddng b\u1ecb gi\xf3 nghi\u1ec7p d\u1eaft \u0111i. S\u1ef1 sai l\u1ea7m ch\u1ec9 l\xe0 ch\xfat ch\xfat kh\xf4ng nhi\u1ec1u, nh\u01b0ng ch\u1ec9 m\u1ed9t ch\xfat ch\xfat n\xe0y, m\xe0 kh\xe1c bi\u1ec7t v\u1edbi ch\xe2n ch\xe1nh th\u01b0\u1eddng tr\u1ee5 ch\xe2n t\xe2m, t\xednh t\u1ecbnh minh th\u1ec3, sai l\u1ea7m h\xe0ng ng\xe0n d\u1eb7m.\n\n\u0110i\xean \u0111\u1ea3o t\u1ee9c l\xe0 kh\xf4ng n\xean t\u01b0\u1edfng m\xe0 t\u01b0\u1edfng, kh\xf4ng n\xean tham m\xe0 tham, kh\xf4ng n\xean s\xe2n m\xe0 s\xe2n, kh\xf4ng n\xean m\xea h\u1ed3 m\xe0 m\xea h\u1ed3. N\xf3i r\xf5 ra l\xe0 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o trong t\u1ef1 t\xe1nh. Kh\xf4ng th\u1ec3 \u0111\u1ea1i c\xf4ng v\xf4 t\u01b0, t\u1ee9c l\xe0 \u0111i\xean \u0111\u1ea3o. Th\u1ee9 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o n\xe0y, l\xe0 nguy\xean nh\xe2n khi\u1ebfn cho ch\xfang ta th\u1ecd sinh t\u1eed, trong s\xe1u n\u1ebbo lu\xe2n h\u1ed3i. Tu th\xec ph\u1ea3i ti\xeau tr\u1eeb t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o. Nh\u01b0 Ng\xe0i A Nan l\xe0 ng\u01b0\u1eddi th\xf4ng minh nh\u01b0 th\u1ebf, m\xe0 v\u1eabn c\xf3 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o gi\u1ed1ng nhau. S\u1ee9c tr\xed nh\u1edb c\u1ee7a Ng\xe0i r\u1ea5t phi th\u01b0\u1eddng. Ph\u1eadt n\xf3i h\u1ebft th\u1ea3y Kinh \u0111i\u1ec3n, m\u1ed9t khi l\u1ecdt qua tai th\xec v\u0129nh ki\u1ebfp kh\xf4ng qu\xean. Nh\u01b0ng khi Ng\xe0i th\u1ea5y n\u1eef Ma \u0110\u0103ng Gi\xe0, th\xec Ng\xe0i b\u1ecb giao \u0111\u1ed9ng, li\u1ec1n theo c\xf4 ta v\xe0o trong nh\xe0 ngo\u1ea1i \u0111\u1ea1o. \u0110\xe2y l\xe0 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o c\u1ee7a Ng\xe0i. Ng\u01b0\u1eddi nam th\xec tham, ng\u01b0\u1eddi n\u1eef th\xec \xe1i, t\u1ee9c l\xe0 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o. \u0110\xe2y l\xe0 t\u1eeb v\xf4 l\u01b0\u1ee3ng ki\u1ebfp \u0111\u1ebfn nay \u0111\u1ec1u c\xf3. Cho n\xean n\xf3i Th\u1ee7 L\u0103ng Nghi\xeam V\u01b0\u01a1ng \u0111\u1ea1i \u0111\u1ecbnh, \u0111\u1ea1i ph\xe1p n\xe0y r\u1ea5t hi\u1ebfm c\xf3 trong th\u1ebf gian, s\u1ebd ti\xeau tr\u1eeb t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o \u0111\u1eddi \u0111\u1eddi ki\u1ebfp ki\u1ebfp, t\u1eeb v\xf4 l\u01b0\u1ee3ng ki\u1ebfp \u0111\u1ebfn nay.\n\n\u201cKh\xf4ng ph\u1ea3i tr\u1ea3i qua s\u1ed1 ki\u1ebfp A t\u0103ng k\u1ef3 m\xe0 ch\u1ee9ng \u0111\u01b0\u1ee3c ph\xe1p th\xe2n.\u201d \u0110\u1ee9c Ph\u1eadt tu h\xe0nh tr\u1ea3i qua ba \u0111\u1ea1i A t\u0103ng k\u1ef3 ki\u1ebfp m\u1edbi th\xe0nh Ph\u1eadt. Cho n\xean:\n\nTam k\u1ef3 tu ph\u01b0\u1edbc hu\u1ec7,\nB\xe1ch ki\u1ebfp ch\u1ee7ng t\u01b0\u1edbng h\u1ea3o.\n\nNgh\u0129a l\xe0:\n\n\u201cBa A T\u0103ng k\u1ef3 tu ph\u01b0\u1edbc hu\u1ec7\nTr\u0103m ki\u1ebfp tr\u1ed3ng t\u01b0\u1edbng t\u1ed1t.\u201d\n\nTu ph\u01b0\u1edbc m\u1ed9t tr\u0103m \u0111\u1ea1i ki\u1ebfp, m\u1edbi \u0111\u1eafc \u0111\u01b0\u1ee3c ba m\u01b0\u01a1i hai t\u01b0\u1edbng t\u1ed1t, t\xe1m m\u01b0\u01a1i v\u1ebb \u0111\u1eb9p. A t\u0103ng k\u1ef3 ki\u1ebfp t\u1ee9c v\xf4 l\u01b0\u1ee3ng s\u1ed1, ba A t\u0103ng k\u1ef3 ki\u1ebfp t\u1ee9c l\xe0 ba v\xf4 l\u01b0\u1ee3ng s\u1ed1. S\u1ed1 m\u1ee5c n\xe0y c\xf3 bao nhi\xeau? D\xf9ng m\xe1y \u0111i\u1ec7n to\xe1n c\u0169ng \u0111\u1ebfm kh\xf4ng \u0111\u01b0\u1ee3c. B\xe2y gi\u1edd Ng\xe0i A Nan n\xf3i: \u201cKh\xf4ng ph\u1ea3i tr\u1ea3i qua s\u1ed1 ki\u1ebfp A t\u0103ng k\u1ef3, m\xe0 ch\u1ee9ng \u0111\u01b0\u1ee3c ph\xe1p th\xe2n.\u201d T\xf4i \u0111\u1eafc \u0111\u01b0\u1ee3c \u0111\u1ea1i \u0111\u1ecbnh ki\xean c\u1ed1 c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam, kh\xf4ng c\u1ea7n tr\u1ea3i qua ba A t\u0103ng k\u1ef3 ki\u1ebfp, m\xe0 c\xf3 th\u1ec3 \u0111\u1eafc \u0111\u01b0\u1ee3c ph\xe1p th\xe2n, c\u0169ng s\u1ebd th\xe0nh Ph\u1eadt, ch\u1ee9ng \u0111\u01b0\u1ee3c ph\xe1p th\xe2n t\u1ef1 t\u1ea1i, th\u1ea7n th\xf4ng bi\u1ebfn h\xf3a. Th\xe0nh t\xe2m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, th\xec kh\xf4ng c\u1ea7n tr\u1ea3i qua th\u1eddi gian l\xe2u d\xe0i c\u0169ng s\u1ebd \u0111\u1eafc \u0111\u01b0\u1ee3c ph\xe1p th\xe2n.\n\nNam m\xf4 Kim Cang T\u1ea1ng B\u1ed3 T\xe1t\n\nL\u1ea1i quy y t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t. Ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam th\xec c\xf3 t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t th\u01b0\u1eddng b\u1ea3o h\u1ed9 b\u1ea1n, theo h\u1ea7u hai b\xean. Cho n\xean tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam kh\xf4ng ph\u1ea3i l\xe0 s\u1ef1 tr\u1ed3ng c\u0103n l\xe0nh m\u1ed9t \u0111\u1eddi, m\u1ed9t ki\u1ebfp, m\xe0 l\xe0 \u0111\xe3 tr\u1ed3ng c\u0103n l\xe0nh trong v\xf4 l\u01b0\u1ee3ng tr\u0103m ng\xe0n v\u1ea1n \u1ee9c ki\u1ebfp v\u1ec1 tr\u01b0\u1edbc, m\u1edbi c\xf3 th\u1ec3 h\u1ecdc v\xe0 tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam. Kh\xf4ng ph\u1ea3i tr\u1ed3ng c\u0103n l\xe0nh n\u01a1i m\u1ed9t \u0111\u1ee9c Ph\u1eadt, hai \u0111\u1ee9c Ph\u1eadt, ba, b\u1ed1n, n\u0103m \u0111\u1ee9c Ph\u1eadt, m\xe0 \u0111\xe3 tr\u1ed3ng c\u0103n l\xe0nh v\u1edbi v\xf4 l\u01b0\u1ee3ng ng\xe0n v\u1ea1n \u0111\u1ee9c Ph\u1eadt, m\u1edbi g\u1eb7p \u0111\u01b0\u1ee3c Ch\xfa L\u0103ng Nghi\xeam.\n\n\u0110\u1ee9c Th\u1ebf T\xf4n l\xe0 th\u1ebf xu\u1ea5t th\u1ebf, \u0111\u1ec1u t\xf4n k\xednh. L\u1ea1i kh\xf4ng so s\xe1nh th\xec c\xe0ng t\xf4n qu\xfd, cao si\xeau t\u1ee9c l\xe0 Ph\u1eadt. L\xfac \u0111\xf3, t\u1eeb tr\xean \u0111\u1ec9nh nh\u1ee5c k\u1ebf c\u1ee7a \u0111\u1ee9c Ph\u1eadt ph\xf3ng ra tr\u0103m lu\u1ed3ng quang minh b\xe1u, trong quang minh b\xe1u, v\u1ecdt ra hoa sen b\xe1u ng\xe0n c\xe1nh. Tr\u0103m b\xe1u \u1edf \u0111\xe2y l\xe0 bi\u1ec3u hi\u1ec7n b\xe1ch gi\u1edbi. Hoa sen b\xe1u ng\xe0n c\xe1nh l\xe0 bi\u1ec3u hi\u1ec7n thi\xean nh\u01b0. N\xf3i l\xe0 n\xf3i nh\u01b0 th\u1ebf, th\u1eadt ra kh\xf4ng ph\u1ea3i l\xe0 bi\u1ec3u hi\u1ec7n b\xe1ch gi\u1edbi thi\xean nh\u01b0, m\xe0 l\xe0 v\xf4 c\xf9ng v\xf4 t\u1eadn, v\xf4 l\u01b0\u1ee3ng v\xf4 bi\xean. C\xf3 th\u1ec3 n\xf3i ba ng\xe0n \u0111\u1ea1i thi\xean th\u1ebf gi\u1edbi, \u0111\xe2u ch\u1eb3ng ph\u1ea3i t\u1eeb tr\u0103m quang minh b\xe1u h\xf3a th\xe0nh. Tr\xean hoa sen b\xe1u c\xf3 h\xf3a th\xe2n c\u1ee7a Ph\u1eadt. H\xf3a th\xe2n l\xe0 do kh\xf4ng m\xe0 h\xf3a c\xf3. N\xf3i n\xf3 c\xf3, n\xf3 l\u1ea1i kh\xf4ng c\xf3, n\xf3i n\xf3 kh\xf4ng c\xf3, n\xf3 l\u1ea1i c\xf3. L\xfac hi\u1ec3n, l\xfac \u1ea9n, l\xfac c\xf3, l\xfac kh\xf4ng. Ng\u01b0\u1edbc m\u1eb7t xem \u1edf tr\u01b0\u1edbc, \u0111\u1ed9t nhi\xean l\u1ea1i \u1edf sau.\n\nH\xf3a th\xe2n Nh\u01b0 Lai, t\u1ee9c l\xe0 Ph\u1eadt bi\u1ebfn h\xf3a th\xe2n, ng\u1ed3i tr\xean hoa sen b\xe1u ng\xe0n c\xe1nh. Tr\xean \u0111\u1ea7u h\xf3a th\xe2n Nh\u01b0 Lai, l\u1ea1i ph\xf3ng ra m\u01b0\u1eddi lu\u1ed3ng tr\u0103m quang minh b\xe1u. M\u01b0\u1eddi lu\u1ed3ng quang minh bi\u1ec3u hi\u1ec7n m\u01b0\u1eddi ph\xe1p gi\u1edbi. M\u1ed7i m\u1ed7i quang minh \u0111\u1ec1u ph\u1ed5 bi\u1ebfn th\u1ecb hi\u1ec7n B\u1ed3 T\xe1t Kim Cang M\u1eadt T\xedch, nhi\u1ec1u nh\u01b0 s\u1ed1 c\xe1t m\u01b0\u1eddi s\xf4ng H\u1eb1ng. Kim Cang M\u1eadt T\xedch c\u0169ng l\xe0 Kim Cang H\u1ed9 Ph\xe1p, t\u1ee9c c\u0169ng l\xe0 H\u1ed9 Ph\xe1p Kim Cang. M\u1eadt T\xedch t\u1ee9c l\xe0 \xe2m th\u1ea7m b\u1ea3o h\u1ed9 b\u1ea1n. Ni\u1ec7m Ch\xfa c\xf3 \xedt nh\u1ea5t t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang b\u1ea3o h\u1ed9 b\u1ea1n. Th\u1ef1c ra kh\xf4ng ch\u1ec9 c\xf3 ch\u1eebng \u1ea5y, m\xe0 c\xf3 nhi\u1ec1u nh\u01b0 s\u1ed1 c\xe1t m\u01b0\u1eddi s\xf4ng H\u1eb1ng, d\xf9ng m\xe1y \u0111i\u1ec7n to\xe1n c\u0169ng t\xednh kh\xf4ng \u0111\u01b0\u1ee3c, s\u1ed1 H\u1ed9 Ph\xe1p Kim Cang trong s\u1ef1 \xe2m th\u1ea7m b\u1ea3o h\u1ed9 b\u1ea1n. Ch\xednh b\u1ea1n kh\xf4ng nh\xecn th\u1ea5y, nh\u01b0ng c\xf3 th\u1eadt.\n\n\u201cPh\xf3ng ra quang minh di\u1ec5n n\xf3i th\u1ea7n Ch\xfa.\u201d T\u1ee9c l\xe0 Nh\u01b0 Lai bi\u1ebfn h\xf3a tr\xean hoa sen b\xe1u l\u1edbn, tr\xean t\u01b0\u1edbng v\xf4 ki\u1ebfn \u0111\u1ea3nh c\u1ee7a Ng\xe0i, sinh ra tr\u0103m quang minh b\xe1u, tr\u0103m quang minh b\xe1u l\u1ea1i c\xf3 hoa sen b\xe1u ng\xe0n c\xe1nh. Tr\xean hoa sen b\xe1u ng\xe0n c\xe1nh, l\u1ea1i c\xf3 h\xf3a th\xe2n Nh\u01b0 Lai, l\u1ea1i ph\xf3ng \u0111\u1ea1i quang minh di\u1ec5n n\xf3i th\u1ea7n Ch\xfa. \u0110\xe2y l\xe0 Ph\u1eadt h\xf3a Ph\u1eadt tuy\xean thuy\u1ebft th\u1ea7n Ch\xfa. Kh\xf4ng ph\u1ea3i m\u1ed9t s\u1ed1 ng\u01b0\u1eddi c\xf3 th\u1ec3 nghe \u0111\u01b0\u1ee3c. \u0110\u01b0\u01a1ng th\u1eddi, \u0111\u1ec1u l\xe0 nh\u1eefng v\u1ecb ph\xe1p th\xe2n \u0110\u1ea1i S\u0129, \u0111\u1ea1i B\u1ed3 T\xe1t m\u1edbi c\xf3 th\u1ec3 nghe \u0111\u01b0\u1ee3c th\u1ea7n Ch\xfa. B\u1ea1n mu\u1ed1n nghe th\xec tr\u01b0\u1edbc ph\u1ea3i h\u1ecdc Ch\xfa L\u0103ng Nghi\xeam. H\u1ecdc xong r\u1ed3i m\u1edbi c\xf3 th\u1ec3 nghe.\n\n\u201cT\xe1t \u0110\xe1t \u0110a\u201d c\u0169ng l\xe0 ti\u1ebfng Ph\u1ea1n. D\u1ecbch l\xe0 \u201cb\u1ea1ch s\u1eafc\u201d (m\xe0u tr\u1eafng), c\u0169ng l\xe0 thanh t\u1ecbnh, ngh\u0129a l\xe0 kh\xf4ng nhi\u1ec5m \xf4. Cho n\xean n\xf3i: \u201cT\u01b0\u1edbng tuy\u1ec7t kh\xf4ng nhi\u1ec5m l\xe0 tr\u1eafng.\u201d Ch\xfa L\u0103ng Nghi\xeam l\xe0 ph\xe1p tr\u1eafng t\u1ecbnh, l\xe0 ph\xe1p thanh t\u1ecbnh kh\xf4ng nhi\u1ec5m. \u201cB\xe1t \u0110\xe1t La\u201d c\u0169ng l\xe0 ti\u1ebfng Ph\u1ea1n. D\u1ecbch l\xe0 \u201cc\xe1i l\u1ecdng\u201d. \u0110\xe2y l\xe0 v\xed d\u1ee5. V\xed d\u1ee5 m\u1ed9t c\xe1i l\u1ecdng d\xf9ng \u0111\u1ec3 che v\u1ea1n v\u1eadt, che h\u1ed9 h\u1ebft th\u1ea3y ng\u01b0\u1eddi c\xf3 \u0111\u1ee9c, ai c\xf3 \u0111\u1ee9c h\u1ea1nh th\xec ng\u01b0\u1eddi \u0111\xf3 g\u1eb7p \u0111\u01b0\u1ee3c ph\xe1p n\xe0y. Ng\u01b0\u1eddi kh\xf4ng c\xf3 \u0111\u1ee9c h\u1ea1nh th\xec kh\xf4ng g\u1eb7p \u0111\u01b0\u1ee3c ph\xe1p n\xe0y. Cho n\xean n\xf3i: \u201cTam quang ph\u1ed5 chi\u1ebfu th\u1ea5u tam t\xe0i.\u201d Ph\u1ea7n \u0111\xf4ng cho r\u1eb1ng \u201cTam quang\u201d l\xe0 nh\u1eadt, nguy\u1ec7t, tinh (m\u1eb7t tr\u1eddi, m\u1eb7t tr\u0103ng v\xe0 sao). Nh\u1eadt, nguy\u1ec7t, tinh l\xe0 ba th\u1ee9 \xe1nh s\xe1ng b\xean ngo\xe0i. T\u1ee5ng tr\xec Ch\xfa L\u0103ng Nghi\xeam, th\xec tr\xean th\xe2n c\xf3 quang minh c\u1ee7a th\xe2n, trong mi\u1ec7ng c\xf3 quang minh c\u1ee7a mi\u1ec7ng, trong t\xe2m c\xf3 quang minh c\u1ee7a t\xe2m. Th\xe2n mi\u1ec7ng \xfd ba nghi\u1ec7p \u0111\u1ec1u ph\xf3ng quang. B\u1ea1n nghe n\xf3i qua c\xe1i n\xe0y ch\u01b0a?\n\n\u0110\xe2y l\xe0 nghe c\xe1i ch\u01b0a nghe, th\u1ea5y c\xe1i ch\u01b0a th\u1ea5y. Quang tr\xean th\xe2n ph\xf3ng ra l\xe0 ho\xe0ng quang (quang minh m\xe0u v\xe0ng). Tu th\xe0nh c\xf4ng r\u1ed3i li\u1ec1n th\xe0nh kim quang, kim quang v\u1ea1n \u0111\u1ea1o. B\u1eaft \u0111\u1ea7u tu Ch\xfa L\u0103ng Nghi\xeam l\xe0 ho\xe0ng quang, l\xe2u d\u1ea7n th\xec bi\u1ebfn th\xe0nh kim quang. Cho n\xean n\xf3i: \u201cT\u1eed ma kim s\u1eafc v\u1ea1n \u0111\u1ea1o quang minh sung m\xe3n ph\xe1p gi\u1edbi.\u201d Ngh\u0129a l\xe0 v\u1ea1n lu\u1ed3ng h\xe0o quang v\xe0ng t\xeda \u0111\u1ea7y kh\u1eafp ph\xe1p gi\u1edbi. \u0110\u1ec1u do tu Ch\xfa L\u0103ng Nghi\xeam m\xe0 th\xe0nh.\n\nQuang minh trong mi\u1ec7ng ph\xf3ng ra l\xe0 h\u1ed3ng quang (quang minh m\xe0u \u0111\u1ecf). Quang minh trong t\xe2m ph\xf3ng ra l\xe0 b\u1ea1ch quang (quang minh m\xe0u tr\u1eafng). Nh\u01b0ng c\xf3 khi trong mi\u1ec7ng c\u0169ng ph\xf3ng ra ho\xe0ng quang, c\xf3 khi l\u1ea1i ph\xf3ng thanh quang (quang minh m\xe0u xanh), c\xf3 khi l\u1ea1i ph\xf3ng ra h\u1eafc quang (quang minh m\xe0u \u0111en). C\xf3 l\xfac quang minh xanh, v\xe0ng, \u0111\u1ecf, tr\u1eafng, \u0111en, \u0111\u1ec1u ph\xf3ng ra. B\u1ea5t qu\xe1 ph\u1ea3i tu th\xe0nh r\u1ed3i m\u1edbi c\xf3 \u0111\u01b0\u1ee3c.\n\nHAI M\u01af\u01a0I B\u1ed0N \xcdCH L\u1ee2I C\u1ee6A S\u1ef0 PHI\xcaN D\u1ecaCH\n\nSau n\xf3i r\xf5 ch\u1ed7 \xedch l\u1ee3i c\u1ee7a s\u1ef1 phi\xean d\u1ecbch \u0111\u1ea1i kh\xe1i c\xf3 hai m\u01b0\u01a1i b\u1ed1n th\u1ee9.\n\n1. Bi\u1ebft \u0111\u01b0\u1ee3c h\u1ebft th\u1ea3y danh hi\u1ec7u c\u1ee7a ch\u01b0 Ph\u1eadt. Nh\u01b0 tr\u01b0\u1edbc c\xf3 m\u1ed9t \u0111o\u1ea1n \u0111\u1ec1u l\xe0 danh hi\u1ec7u c\u1ee7a ch\u01b0 Ph\u1eadt. X\u01b0ng t\u1ee9c th\u01b0\u1eddng th\u1ea5y th\xe2n Ph\u1eadt. N\u1ebfu b\u1ea1n th\u01b0\u1eddng t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam th\xec th\u01b0\u1eddng th\u1ea5y \u0111\u01b0\u1ee3c ph\xe1p th\xe2n c\u1ee7a ch\u01b0 Ph\u1eadt.\n\n2. Bi\u1ebft \u0111\u01b0\u1ee3c Ph\u1eadt Ph\xe1p T\u0103ng Tam B\u1ea3o. Nh\u1edd oai \u0111\u1ee9c \u0111\u1ec3 gia tr\xec cho ch\xfang ta.\n\n3. Bi\u1ebft Kim Cang T\u01b0\u1edbng nh\u01b0 B\u1ea1t \u0110\u1ed3 La, Th\u01b0\u01a1ng Y\u1ebft La v.v... T\u1ea5t c\u1ea3 t\xe0 ma ngo\u1ea1i \u0111\u1ea1o \u0111\u1ec1u \u0111\u1ebfn quy h\xe0ng.\n\n4. V\xec b\u1ea1n bi\u1ebft vua qu\u1ef7 th\u1ea7n, th\xec b\u1ed9 \u0111\u1ea3ng d\u01b0\u1edbi quy\u1ec1n c\u1ee7a ch\xfang s\u1ebd cung k\xednh b\u1ea1n.\n\n5. Bi\u1ebft n\u0103m b\u1ed9, ch\xednh gi\u1eefa l\xe0 Ph\u1eadt b\u1ed9, Ph\u1eadt T\u1ef3 L\xf4 Gi\xe1 Na l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng nam l\xe0 B\u1ea3o b\u1ed9, Ph\u1eadt B\u1ea3o Sinh l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng \u0111\xf4ng l\xe0 Kim Cang b\u1ed9, c\u0169ng l\xe0 A S\xfac b\u1ed9, Ph\u1eadt A S\xfac, c\u0169ng l\xe0 Ph\u1eadt D\u01b0\u1ee3c S\u01b0 l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng t\xe2y Li\xean Hoa b\u1ed9, Ph\u1eadt Di \u0110\xe0 l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng B\u1eafc l\xe0 Y\u1ebft Ma b\u1ed9, Ph\u1eadt Th\xe0nh T\u1ef1u l\xe0 ch\u1ee7. Bi\u1ebft n\u0103m b\u1ed9 Ph\u1eadt Ch\xfa l\xe0 \u0111\u1ec7 nh\u1ea5t T\xf4n Th\xe1nh, l\xe0 t\u1ed1i di\u1ec7u.\n\n6. Bi\u1ebft \u0111\xe2y l\xe0 Ph\u1eadt \u0111\u1ea3nh quang minh Ma Ha T\xe1t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La V\xf4 Th\u01b0\u1ee3ng Th\u1ea7n Ch\xfa. B\u1ea1n ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam th\xec m\u01b0\u1eddi ph\u01b0\u01a1ng ch\u01b0 Ph\u1eadt \u0111\u1ec1u \u0111\u1ebfn qu\xe1n \u0111\u1ea3nh cho b\u1ea1n.\n\n7. Linh th\xf4ng c\u1ea3m \u1ee9ng kh\xf4ng th\u1ec3 ngh\u0129 b\xe0n.\n\n8. Bi\u1ebft Ch\xfa th\xec sinh \u0111\u1ea1i tr\xed hu\u1ec7, l\u1ea1i ph\xf3ng \u0111\u1ea1i quang minh.\n\n9. Bi\u1ebft Ch\xfa L\u0103ng Nghi\xeam l\xe0 vua trong t\u1ea5t c\u1ea3 c\xe1c Ch\xfa.\n\n10. Bi\u1ebft \u0111o\u1ea1n \u0111\xf3 l\xe0 t\xe2m Ch\xfa, th\u01b0\u1eddng th\u01b0\u1eddng t\u1ee5ng ni\u1ec7m l\u1ea1i chuy\xean nh\u1ea5t, th\xec s\u1ebd minh t\xe2m ki\u1ebfn t\xe1nh, khai \u0111\u1ea1i tr\xed hu\u1ec7.\n\n11. Bi\u1ebft Ch\xfa \u1ea5n, tam ph\xe1p \u1ea5n, t\u1ee5ng tr\xec Ch\xfa L\u0103ng Nghi\xeam, th\xec \xedt nh\u1ea5t trong b\u1ea3y \u0111\u1eddi \u0111\u1ec1u l\xe0 ng\u01b0\u1eddi gi\xe0u c\xf3 nh\u1ea5t tr\xean \u0111\u1eddi.\n\n12. Ch\xfa c\xf2n d\u1ecbch l\xe0 quy\u1ebft. Th\u1ea7n th\xf4ng c\u1ee7a Ch\xfa bi\u1ebfn h\xf3a kh\xf3 d\xf2. C\xf3 ng\u01b0\u1eddi n\xf3i t\xf4i t\u1ee5ng Ch\xfa kh\xf4ng ph\u1ea3i v\xec c\u1ea7u gi\xe0u c\xf3, b\u1ea1n c\u1ea7u th\u1ea7n th\xf4ng th\xec \u0111\u01b0\u1ee3c th\u1ea7n th\xf4ng, c\u1ea7u khai ng\u1ed9 th\xec \u0111\u01b0\u1ee3c khai ng\u1ed9, c\u1ea7u tr\xed hu\u1ec7 th\xec \u0111\u01b0\u1ee3c tr\xed hu\u1ec7, t\xf9y \xfd b\u1ea1n. Kh\xf4ng ph\u1ea3i mu\u1ed1n d\u1ea1y b\u1ea1n nh\u1ea5t \u0111\u1ecbnh c\u1ea7u ph\xfa qu\xfd.\n\n13. Mu\u1ed1n c\u1ea7u g\xec, ph\xe1t nguy\u1ec7n g\xec \u0111\u1ec1u s\u1ebd th\xe0nh t\u1ef1u.\n\n14. B\u1ea1n ni\u1ec7m Ch\xfa, nguy\u1ec7n khi\u1ebfn cho k\u1ebb kh\xe1c \u0111\u01b0\u1ee3c ph\u01b0\u1edbc, th\xec ng\u01b0\u1eddi \u0111\xf3 li\u1ec1n \u0111\u01b0\u1ee3c ph\u01b0\u1edbc. Nguy\u1ec7n ng\u01b0\u1eddi \u0111\xf3 g\u1eb7p h\u1ecda, th\xec li\u1ec1n g\u1eb7p h\u1ecda, b\u1ea5t qu\xe1 \u0111\u1eebng c\xf3 t\xe2m l\xe0m h\u1ea1i k\u1ebb kh\xe1c. Ni\u1ec7m Ch\xfa nguy\u1ec7n cho k\u1ebb kh\xe1c g\u1eb7p h\u1ecda th\xec kh\xf4ng \u0111\xfang.\n\n15. B\u1ea1n c\u1ea7u g\xec th\xec nh\u01b0 ti\u1ebfng vang t\xf9y t\xe2m m\xe3n nguy\u1ec7n kh\xf4ng kh\xe1c.\n\n16. Ch\xfa ph\xe1p hay khai m\u1edf tr\xed hu\u1ec7 c\u1ee7a b\u1ea1n, khi\u1ebfn cho b\u1ea1n \u0111\u01b0\u1ee3c bi\u1ec7n t\xe0i v\xf4 ng\u1ea1i.\n\n17. Bi\u1ebft ngu\u1ed3n g\u1ed1c ti\u1ebfng Ph\u1ea1n, \u0111\xe2y l\xe0 c\u0103n b\u1ea3n tam t\u1ea1ng v\u0103n t\u1ef1. Tam t\u1ea1ng l\xe0 do Ph\u1ea1n v\u0103n phi\xean d\u1ecbch ra.\n\n18. Bi\u1ebft h\u1ebft th\u1ea3y Th\xe1nh hi\u1ec1n hi\u1ec3n gi\xe1o v\xe0 m\u1eadt gi\xe1o \u0111\u1ec1u t\u1eeb t\u1ef1 m\u1eabu sinh ra.\n\n19. Ngh\u0129a l\xfd c\u1ee7a ch\u1eef l\xe0 bao h\xe0m ngh\u0129a th\xfa v\xf4 bi\xean.\n\n20. Ch\u1eef Ph\u1ea1n nguy\xean l\xe0 gi\u1ed1ng tr\xed tu\u1ec7 c\u1ee7a ch\u01b0 Ph\u1eadt.\n\n21. Bi\u1ebft \xe2m c\u1ee7a Ch\xfa l\xe0 do Ph\u1eadt tr\u1eddi truy\u1ec1n ra tr\u01b0\u1edbc nh\u1ea5t.\n\n22. H\u1ebft th\u1ea3y ngh\u0129a l\xfd c\u1ee7a ph\xe1p \u0111\u1ec1u nhi\u1ebfp h\u1ebft th\u1ea3y.\n\n23. Bi\u1ebft ch\xe2n ng\xf4n \u0111\u1ec1u nh\u01b0 s\u1edf n\xf3i, \u0111\u1ec1u l\xe0 ch\xe2n th\u1eadt, kh\xf4ng c\xf3 m\u1ed9t c\xe2u v\u1ecdng ng\u1eef.\n\n24. Bi\u1ebft Ch\xfa ng\u1eef gi\u1ed1ng nh\u01b0 m\u1ec7nh l\u1ec7nh trong qu\xe2n \u0111\u1ed9i, l\u1ea1i nh\u01b0 Th\xe1nh ch\u1ec9 c\u1ee7a ho\xe0ng \u0111\u1ebf kh\xf4ng kh\xe1c, kh\xf4ng th\u1ec3 n\xf3i cho ng\u01b0\u1eddi kh\xe1c bi\u1ebft.\n\nB\u1ed1n h\u1ea1ng tr\u01b0\u1edbc l\xe0 gi\u1edbi h\u1ea1n n\u01a1i n\u0103m h\u1ed9i ch\xe2n ng\xf4n. C\xf2n hai m\u01b0\u01a1i h\u1ea1ng sau c\u0169ng bao qu\xe1t t\xe2m Ch\xfa trong \u0111\xf3.\n\nTI\xcaU TAI, NHI\u1ebeP TRI\u1ec6U V\xc0 H\xc0NG PH\u1ee4C\n\nTi\xeau tai t\u1ee9c l\xe0 b\u1ea1n c\xf3 tai n\u1ea1n g\xec, t\u1ee5ng Ch\xfa th\xec li\u1ec1n ti\xeau tr\u1eeb. Nh\u01b0ng b\u1ea1n c\xf2n ph\u1ea3i tr\u1eeb kh\u1eed tai (n\u1ea1n) trong t\xe2m. N\u1ebfu b\u1ea1n ch\u1ec9 ni\u1ec7m Ch\xfa, m\xe0 trong t\xe2m c\u1ee9 kh\u1edfi nh\u1eefng v\u1ecdng ni\u1ec7m kh\xf4ng trong s\u1ea1ch n\xe0o t\u1ea1p ni\u1ec7m \u0111\u1ea7y d\u1eaby th\xec tai (n\u1ea1n) c\u0103n b\u1ea3n kh\xf4ng th\u1ec3 ti\xeau tr\u1eeb \u0111\u01b0\u1ee3c, ni\u1ec7m b\u1ea5t c\u1ee9 Ch\xfa g\xec c\u0169ng v\xf4 d\u1ee5ng.\n\nDo \u0111\xf3 mu\u1ed1n ti\xeau tai th\xec trong t\xe2m tr\u01b0\u1edbc ph\u1ea3i thanh t\u1ecbnh, thu th\u1eadp t\xe2m cho s\u1ea1ch s\u1ebd, \u0111\xf3 m\u1edbi l\xe0 ch\xe2n ti\xeau tai. N\u1ebfu kh\xf4ng, trong t\xe2m \u0111\u1ea7y d\u1eaby tham s\xe2n si, th\xec ni\u1ec7m Ch\xfa g\xec c\u0169ng kh\xf4ng linh. Do \u0111\xf3 trong t\xe2m l\xe0 quan tr\u1ecdng nh\u1ea5t. T\xe2m nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i t\u1eeb bi l\u01b0\u01a1ng thi\u1ec7n, gi\xfap \u0111\u1ee1 m\u1ecdi ng\u01b0\u1eddi, ch\u1ec9 c\xf3 m\u1ed9t th\u1ee9 t\xe2m t\u1ed1t. \u0110\xe2y l\xe0 t\u0103ng \xedch ti\xeau tai ph\xe1p.\n\nNhi\u1ebfp tri\u1ec7u t\u1ee9c c\xe2u tri\u1ec7u ph\xe1p, gi\u1ed1ng nh\u01b0 c\u1ea3nh s\xe1t b\u1eaft t\u1ed9i ph\u1ea1m, y\xeau ma qu\u1ef7 qu\xe1i l\xe0m vi\u1ec7c \xe1c, khi\u1ebfn cho ng\u01b0\u1eddi sinh b\u1ec7nh, sinh tai n\u1ea1n, khi b\u1ea1n t\u1ee5ng Ch\xfa th\xec y\xeau ma qu\u1ef7 qu\xe1i b\xf2 ra. Nh\u01b0ng b\xf2 l\xe0 b\xf2 ra, song c\xf3 th\u1eddi ch\xfang kh\xf4ng ph\u1ee5c, ph\u1ea3i d\xf9ng \u0111\u1ee7 th\u1ee9 ph\u01b0\u01a1ng ph\xe1p \u0111\u1ec3 gi\xe1o h\xf3a ch\xfang. Ri\xeang h\xe0ng ph\u1ee5c l\xe0 ph\xe1p h\u1ea1 \u0111\u1eb3ng. Ph\xe1p th\u01b0\u1ee3ng \u0111\u1eb3ng kh\xf4ng d\xf9ng b\u1ea5t c\u1ee9 th\u1ebf l\u1ef1c n\xe0o, \u0111\u1ec3 \u0111\xe0n \xe1p b\u1ee9c b\xe1ch b\u1ea5t c\u1ee9 ai, v\xe0 b\u1ea5t c\u1ee9 y\xeau ma qu\u1ef7 qu\xe1i, kh\xf4ng th\u1ec3 \u0111\u1ea5u tranh v\u1edbi ch\xfang. \u0110\u1eebng h\u1ecdc A Tu La \u0111\u1ea5u tranh ki\xean c\u1ed1 nh\u01b0 th\u1ebf. T\u1ef1 m\xecnh bi\u1ebft r\xf5 c\xf3 m\u1ed9t s\u1ee9c l\u1ef1c c\xf3 th\u1ec3 h\xe0ng ph\u1ee5c ch\xfang, c\u0169ng \u0111\u1eebng d\xf9ng. Ph\u1ea3i d\xf9ng \u0111\u1ee9c h\u1ea1nh \u0111\u1ec3 gi\xe1o h\xf3a ch\xfang, c\u1ea3m h\xf3a ch\xfang.\n\nN\u1ebfu b\u1ea1n th\u01b0\u1eddng n\xf3i v\u1edbi k\u1ebb kh\xe1c r\u1eb1ng, b\u1ea1n tr\xec Ch\xfa c\xf3 linh c\u1ea3m hi\u1ec7u l\u1ef1c g\xec, ni\u1ec7m Ch\xfa \u0110\u1ea1i Bi tr\u1ecb \u0111\u01b0\u1ee3c b\u1ec7nh g\xec, ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam l\u1ea1i \u0111\u1eafc \u0111\u01b0\u1ee3c c\u1ea3m \u1ee9ng g\xec? \u0110\xf3 c\u0169ng gi\u1ed1ng nh\u01b0 b\xe1n thu\u1ed1c cao, \u0111\xe2y g\u1ecdi l\xe0 rao b\xe1n s\u1ef1 tu h\xe0nh, kh\xf4ng \u0111\xfang. N\u1ebfu nh\u01b0 th\u1ebf th\xec s\u1ebd g\u1eb7p tai h\u1ecda, c\u0169ng kh\xf4ng \u0111\u1eafc \u0111\u01b0\u1ee3c s\u1ef1 l\u1ee3i \xedch kh\xf4ng ngh\u0129 b\xe0n c\u1ee7a b\u1ed1n t\u1ea5t \xedch.\n\nV\xcc SAO T\u1ee4NG TR\xcc KINH CH\xda KH\xd4NG C\xd4NG HI\u1ec6U?\n\nTrong Ph\xe1p Uy\u1ec3n Ch\xe2u L\xe2m n\xf3i l\xe0, t\u1ea1i sao ng\u01b0\u1eddi xu\u1ea5t gia v\xe0 ng\u01b0\u1eddi t\u1ea1i gia t\u1ee5ng tr\xec Kinh Ch\xfa kh\xf4ng c\xf4ng hi\u1ec7u? V\xec t\xe2m kh\xf4ng ch\xed th\xe0nh kh\u1ea9n thi\u1ebft. Tu m\u1ec7t, tu m\xe0 c\u1ea3m th\u1ea5y kh\xf4ng c\xf3 c\u1ea3m \u1ee9ng g\xec, li\u1ec1n b\u1eaft \u0111\u1ea7u ph\u1ec9 b\xe1ng, n\xf3i kh\xf4ng c\xf3 g\xec ch\u1ee9ng minh, ch\u1eb3ng c\xf3 linh nghi\u1ec7m g\xec, n\xf3i Ch\xfa n\xe0y l\xe0 gi\u1ea3, Kinh n\xe0y l\xe0 gi\u1ea3. Th\u1ef1c ra nguy\xean nh\xe2n tr\xec Ch\xfa kh\xf4ng linh l\xe0 do v\u0103n t\u1ef1 ng\u1ee5y t\u1ea1o thay th\u1ebf, ho\u1eb7c \xe2m v\u1ea7n ni\u1ec7m sai, ho\u1eb7c u\u1ed1ng r\u01b0\u1ee3u \u0103n th\u1ecbt, ho\u1eb7c \u0103n ng\u0169 t\xe2n, ho\u1eb7c \u0111i \u0111\u1ea1i ti\u1ec3u ti\u1ec7n kh\xf4ng r\u1eeda tay r\u1ed3i c\u1ea7m Kinh Ch\xfa, ho\u1eb7c n\xf3i nh\u1eefng l\u1eddi th\u1ebf t\u1ee5c, kh\xf4ng gi\u1eef quy c\u1ee5, n\xf3i chuy\u1ec7n th\u1ecb phi, ho\u1eb7c m\u1eb7c y ph\u1ee5c kh\xf4ng s\u1ea1ch s\u1ebd, ho\u1eb7c \u1edf ch\u1ed7 kh\xf4ng nghi\xeam t\u1ecbnh, ph\u1ea1m t\xe1m th\u1ee9 gi\u1edbi ph\xe1p n\xf3i tr\xean, khi\u1ebfn cho qu\u1ef7 th\u1ea7n kh\xf4ng cung k\xednh, kh\xf4ng nh\u1eefng kh\xf4ng c\xf3 c\xf4ng \u0111\u1ee9c, ng\u01b0\u1ee3c l\u1ea1i c\xf3 l\u1ed7i l\u1ea7m.\n\nN\u1ebfu nh\u01b0 b\u1ea1n mu\u1ed1n tu ph\xe1p Ch\xfa L\u0103ng Nghi\xeam, th\xec ph\u1ea3i t\u1eafm r\u1eeda, s\xfac mi\u1ec7ng s\u1ea1ch s\u1ebd. Ph\u1ea3i c\xf3 t\xe2m ch\xed th\xe0nh kh\u1ea9n thi\u1ebft, th\u1eddi th\u1eddi kh\u1eafc kh\u1eafc kh\xf4ng qu\xean, kh\u1eafp v\xec ch\xfang sinh trong l\u1ee5c \u0111\u1ea1o, tr\u1eddi, ng\u01b0\u1eddi A tu la, s\xfac sinh, ng\u1ea1 qu\u1ef7 v\xe0 \u0111\u1ecba ng\u1ee5c m\xe0 ph\xe1t t\xe2m b\u1ed3 \u0111\u1ec1, kh\xf4ng l\u01b0\u1eddi bi\u1ebfng gi\u1ea3i \u0111\xe3i, ch\xed th\xe0nh kh\u1ea9n thi\u1ebft nh\u01b0 th\u1ebf th\xec nh\u1ea5t \u0111\u1ecbnh s\u1ebd c\xf3 \u1ee9ng nghi\u1ec7m.\n\nNH\u1eeeNG C\u1ea2NH GI\u1edaI KHI D\u1ee4NG C\xd4NG TR\xcc CH\xda\n\nTrong Hi\u1ec3n M\u1eadt Vi\xean Th\xf4ng n\xf3i, l\xfac b\u1ea1n d\u1ee5ng c\xf4ng tr\xec Ch\xfa, ho\u1eb7c m\u1ed9ng th\u1ea5y m\xecnh l\u1ea1y Ph\u1eadt, m\u1ed9ng th\u1ea5y Ph\u1eadt ph\xf3ng quang minh, m\u1ed9ng th\u1ea5y Ph\u1eadt \u0111\u1ebfn r\u1edd \u0111\u1ea7u, m\u1ed9ng th\u1ea5y Ph\u1eadt v\xec b\u1ea1n m\xe0 gi\u1ea3ng Kinh thuy\u1ebft ph\xe1p, ho\u1eb7c m\u1ed9ng th\u1ea5y B\u1ed3 T\xe1t, Duy\xean Gi\xe1c, Thanh V\u0103n, Th\xe1nh T\u0103ng, ho\u1eb7c Thi\xean t\u01b0\u1edbng tr\xean tr\u1eddi, ho\u1eb7c \u0111\u1ee7 th\u1ee9 kh\xe1c nhau, xu\u1ea5t k\u1ef3 nh\u1eefng d\u1ecb t\u01b0\u1edbng r\u1ea5t \u0111\u1eb7c th\xf9, ho\u1eb7c m\u1ed9ng th\u1ea5y th\xe2n m\xecnh bay l\xean h\u01b0 kh\xf4ng, ho\u1eb7c c\u1ee1i ng\u1ef1a qua s\xf4ng, ho\u1eb7c th\u1ea5y \u0111\u1ee7 lo\u1ea1i h\u01b0\u01a1ng th\u01a1m, quang minh t\u1ed1t \u0111\u1eb9p, \u0111\xf3 l\xe0 nh\u1eefng c\u1ea3nh gi\u1edbi t\u1ed1t.\n\nN\u1ebfu \u0111\u1eafc \u0111\u01b0\u1ee3c nh\u1eefng \u1ee9ng nghi\u1ec7m nh\u01b0 th\u1ebf, th\xec tu th\xe2n mi\u1ec7ng \xfd ba nghi\u1ec7p ph\u1ea3i c\u1ea9n th\u1eadn, khi\u1ebfn cho thanh t\u1ecbnh, ph\xe1t \u0111\u1ea1i b\u1ed3 \u0111\u1ec1 t\xe2m v\xe0 d\u1ee5ng t\xe2m tr\xec Ch\xfa th\xeam, kh\xf4ng th\u1ec3 tuy\xean n\xf3i c\u1ea3nh gi\u1edbi trong Ch\xfa. Kh\xf4ng th\u1ec3 n\xf3i v\u1edbi ng\u01b0\u1eddi kh\xe1c c\xf3 b\u1ea5t c\u1ee9 c\u1ea3m \u1ee9ng g\xec, k\xeau ng\u01b0\u1eddi tin b\u1ea1n, c\xf3 h\u1ea3o c\u1ea3m v\u1edbi b\u1ea1n, ho\u1eb7c k\xeau ng\u01b0\u1eddi cung k\xednh b\u1ea1n, t\xe1n th\xe1n b\u1ea1n, nh\u1eefng th\u1ee9 \u0111\xf3 \u0111\u1ec1u kh\xf4ng th\u1ec3 \u0111\u01b0\u1ee3c. Ch\u1ec9 \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi \u0111\u1ed3ng tu, \u0111\u1eebng v\xec cung k\xednh, ho\u1eb7c t\xe1n th\xe1n, m\u1edbi c\xf3 th\u1ec3 n\xf3i.\n\nTrong Kinh \u0110\u1ea1i Bi c\xf3 n\xf3i: N\u1ebfu c\xf3 ng\u01b0\u1eddi kh\u1ea9n thi\u1ebft ni\u1ec7m, th\xec ho\u1eb7c g\u1eb7p ma ch\u01b0\u1edbng, ho\u1eb7c h\u1ed1t nhi\xean sinh t\xe2m s\u1ee3 s\u1ec7t, th\xe2n t\xe2m b\u1ea5t an, ho\u1eb7c nhi\u1ec1u n\xf3ng gi\u1eadn, ho\u1eb7c th\xedch ng\u1ee7, ho\u1eb7c \u0111\u1ea7u l\u01b0\u1ee1i kh\xf4ng th\u1ec3 ni\u1ec7m, ho\u1eb7c th\u1ea5y nh\u1eefng di\u1ec7u t\u01b0\u1edbng y\xeau ma qu\u1ef7 qu\xe1i. Nh\u1eefng d\u1ecb t\u01b0\u1edbng \u1edf \u0111\xe2y, v\u1edbi d\u1ecb t\u01b0\u1edbng \u1edf tr\xean kh\xf4ng gi\u1ed1ng nhau. Nh\u1eefng d\u1ecb t\u01b0\u1edbng \u1edf \u0111\xe2y l\xe0 nh\u1eefng t\u01b0\u1edbng x\u1ea5u, nh\u1eefng d\u1ecb t\u01b0\u1edbng \u1edf tr\xean l\xe0 nh\u1eefng d\u1ecb t\u01b0\u1edbng c\xe1t t\u01b0\u1eddng. Ho\u1eb7c l\xe0 sinh t\xe2m nghi ho\u1eb7c v\u1edbi Ch\xfa L\u0103ng Nghi\xeam, ho\u1eb7c t\xe2m ph\xe2n bi\u1ec7t, ho\u1eb7c kh\u1edfi v\xf4 minh ch\u1ea5p tr\u01b0\u1edbc c\xe1c h\u1eefu, b\u1ea1n nh\xecn nghi\u1ec7p ch\u01b0\u1edbng c\u1ee7a ng\u01b0\u1eddi nh\u01b0 th\u1ebf n\xe0o \u0111\u1ec1u c\xf3.\n\nB\xe2y gi\u1edd b\u1ea1n ni\u1ec7m t\u1eeb t\u1eeb Ch\xfa n\xe0y r\u1ea5t kh\xf3 \u0111\u01b0\u1ee3c. N\u1ebfu c\xf3 nh\u1eefng c\u1ea3nh gi\u1edbi kh\xf4ng c\xe1t t\u01b0\u1eddng \u1edf tr\xean, th\xec n\xean qu\xe1n t\u01b0\u1edfng Ph\u1ea1n th\u01b0 ch\u1eef \u201cLam\u201d th\xec s\u1ebd khi\u1ebfn b\u1ea1n thanh t\u1ecbnh, ho\u1eb7c qu\xe1n ch\u1eef \u201cA\u201d th\xec nh\u1eefng c\u1ea3nh gi\u1edbi kh\xf4ng c\xe1t t\u01b0\u1eddng \u1edf tr\xean s\u1ebd ti\xeau di\u1ec7t. Ph\u1ea3i bi\u1ebft nh\xe2n duy\xean ph\xe1p v\u1ed1n l\xe0 kh\xf4ng.\n\nH\u1eeeU H\u1eccC V\xc0 V\xd4 H\u1eccC\n\nS\u01a1 qu\u1ea3 \u0111o\u1ea1n s\u1ea1ch t\xe1m m\u01b0\u01a1i t\xe1m ph\u1ea9m ki\u1ebfn ho\u1eb7c, nh\u1ecb qu\u1ea3 \u0111o\u1ea1n t\xe1m m\u01b0\u01a1i m\u1ed1t ph\u1ea9m t\u01b0 ho\u1eb7c. S\u01a1 qu\u1ea3, nh\u1ecb qu\u1ea3, tam qu\u1ea3, \u0111\u1ec1u l\xe0 b\u1eadc h\u1eefu h\u1ecdc, ch\u1ee9ng \u0111\u01b0\u1ee3c t\u1ee9 qu\u1ea3 l\xe0 b\u1eadc v\xf4 h\u1ecdc, m\u1edbi th\u1eadt ch\xe2n ch\xe1nh ch\u1ea5m d\u1ee9t sinh t\u1eed, \u0111\u1eafc \u0111\u01b0\u1ee3c v\xf4 sinh ph\xe1p nh\u1eabn, kh\xf4ng th\u1ea5y ch\xfat ph\xe1p sinh, c\u0169ng kh\xf4ng th\u1ea5y ch\xfat ph\xe1p di\u1ec7t.\n\nKi\u1ebfn ho\u1eb7c t\u1ee9c l\xe0 \u0111\u1ed1i c\u1ea3nh kh\u1edfi tham \xe1i, \u0111\u1ed1i tr\u01b0\u1edbc c\u1ea3nh th\xec ch\u1ea5p tr\u01b0\u1edbc m\xea ho\u1eb7c, kh\xf4ng bi\u1ebft s\u1ef1 vi\u1ec7c nh\u01b0 th\u1ebf n\xe0o, cho n\xean sinh t\xe2m tham, t\xe2m \xe1i, th\u1ea5y ti\u1ec1n b\u1ea1c th\xec mu\u1ed1n \u0111\u01b0\u1ee3c ti\u1ec1n b\u1ea1c, th\u1ea5y s\u1eafc \u0111\u1eb9p th\xec mu\u1ed1n \u0111\u01b0\u1ee3c s\u1eafc \u0111\u1eb9p, \u0111\xf3 \u0111\u1ec1u l\xe0 \u201cki\u1ebfn ho\u1eb7c\u201d \u0111\u1ec1u l\xe0 th\u1ea5y c\u1ea3nh gi\u1edbi, kh\xf4ng th\u1ea5y th\xec kh\xf4ng m\xea, th\u1ea5y \u0111\u01b0\u1ee3c th\xec kh\xf4ng l\xe0m ch\u1ee7 \u0111\u01b0\u1ee3c, h\u1ed3 \u0111\u1ed3, b\u1ecb c\u1ea3nh gi\u1edbi chuy\u1ec3n. T\u1ea1i c\u1ea3nh gi\u1edbi, h\u1ebft th\u1ea3y s\u1ef1 vi\u1ec7c \u0111\u1ebfn th\xec kh\xf4ng nh\u1eadn th\u1ee9c.\n\nT\u01b0 ho\u1eb7c th\xec \u0111\u1ed1i v\u1edbi l\xfd kh\xf4ng nh\u1eadn th\u1ee9c, b\u1ecb m\xea ho\u1eb7c, kh\xf4ng bi\u1ebft l\xe0 \u0111\xfang, hay l\xe0 kh\xf4ng \u0111\xfang, m\xea \u1edf l\xfd lu\u1eadn, cho n\xean \u0111\u1ee7 th\u1ee9 v\u1ecdng t\u01b0\u1edfng b\xe8n sinh ra, \u0111\xe2y g\u1ecdi l\xe0 t\u01b0 ho\u1eb7c. Cho n\xean m\xea n\u01a1i l\xfd kh\u1edfi ph\xe2n bi\u1ec7t, c\xe0ng ph\xe2n bi\u1ec7t c\xe0ng kh\xf4ng minh b\u1ea1ch, c\xe0ng kh\xf4ng minh b\u1ea1ch c\xe0ng ph\xe2n bi\u1ec7t, h\u1ed3 \u0111\u1ed3 l\u1ea1i th\xeam h\u1ed3 \u0111\u1ed3, ngu si th\xeam ngu si, t\u01b0 ho\u1eb7c \u0111o\u1ea1n s\u1ea1ch th\xec ng\u1ef1 tr\xean \u0111\xe0i sen, ng\u1ed3i tr\xean hoa sen b\xe1u.\n\nNh\u1ecb qu\u1ea3 Th\xe1nh nh\xe2n c\xf3 th\u1ec3, th\xe2n v\u1ecdt l\xean h\u01b0 kh\xf4ng hi\u1ec7n m\u01b0\u1eddi t\xe1m bi\u1ebfn, tr\xean th\xe2n phun n\u01b0\u1edbc, d\u01b0\u1edbi th\xe2n phun l\u1eeda, d\u01b0\u1edbi th\xe2n phun n\u01b0\u1edbc, tr\xean th\xe2n phun l\u1eeda, bi\u1ebfn h\xf3a l\u1edbn nh\u1ecf bay \u0111i t\u1ef1 t\u1ea1i, mu\u1ed1n l\xe0m g\xec th\xec l\xe0m.\n\nB\u1eadc \u1ea5y kh\xf4ng nh\u1eefng \u1edf t\u1ea1i th\u1ebf gi\u1edbi n\xe0y, m\xe0 c\xf2n c\xf3 th\u1ec3 \u0111\u1ebfn c\xe1c th\u1ebf gi\u1edbi kh\xe1c, c\xf3 th\u1ec3 gi\u1ea3ng Kinh thuy\u1ebft ph\xe1p t\u1ea1i th\u1ebf gi\u1edbi n\xe0y, gi\xe1o h\xf3a ch\xfang sinh, l\u1ea1i \u0111\u1ebfn th\u1ebf gi\u1edbi kh\xe1c gi\u1ea3ng Kinh thuy\u1ebft ph\xe1p, gi\xe1o h\xf3a ch\xfang sinh, \u0111\u1ed3ng th\u1eddi \u1edf t\u1ea1i c\xe1c th\u1ebf gi\u1edbi \u0111\u1ec1u hi\u1ec7n th\xe2n thuy\u1ebft ph\xe1p.\n\nCH\xda L\u0102NG NGHI\xcaM L\xc0 \u201cLINH V\u0102N\u201d\n\nCh\xfa L\u0103ng Nghi\xeam l\xe0 Ch\xfa d\xe0i nh\u1ea5t, c\xf2n g\u1ecdi l\xe0 \u201clinh v\u0103n\u201d v\xec qu\xe1 linh, qu\xe1 di\u1ec7u, di\u1ec7u kh\xf4ng th\u1ec3 t\u1ea3. Ai ni\u1ec7m th\xec ng\u01b0\u1eddi \u0111\xf3 c\xf3 c\u1ea3m \u1ee9ng. Ai tr\xec t\u1ee5ng th\xec ng\u01b0\u1eddi \u0111\xf3 \u0111\u01b0\u1ee3c B\u1ed3 T\xe1t Kim Cang T\u1ea1ng h\u1ed9 tr\xec. Cho n\xean b\u1ea1n tu Ch\xfa n\xe0y ph\u1ea3i ch\xe1nh t\xe2m th\xe0nh \xfd, tu th\xe2n, c\xe1ch v\u1eadt. C\xe1ch v\u1eadt l\xe0 g\xec? T\u1ee9c l\xe0 c\xe1ch tr\u1eeb h\u1ebft th\u1ea3y v\u1eadt d\u1ee5c, t\u1ee9c c\u0169ng l\xe0 kh\xf4ng c\xf3 t\xe2m tham, c\xe1ch v\u1eadt ch\xed tri, ch\xe1nh t\xe2m th\xe0nh \xfd, tu th\xe2n t\u1ee9c tr\xec Ch\xfa n\xe0y, th\xec s\u1ebd c\xf3 \u0111\u1ea1i c\u1ea3m \u1ee9ng. C\xf3 ng\u01b0\u1eddi kh\xf4ng hi\u1ec3u \xfd ngh\u0129a c\u1ee7a Ch\xfa, cho n\xean n\xf3i Ch\xfa L\u0103ng Nghi\xeam l\xe0 do nhi\u1ec1u Ch\xfa nh\u1ecf h\u1ee3p th\xe0nh, m\u1edbi d\xe0i nh\u01b0 th\u1ebf, th\u1eadt kh\xf4ng b\u1eb1ng tr\u1ebb con. Tr\u1ebb con c\xf3 n\xf3i, c\u0169ng n\xf3i nh\u1eefng l\u1eddi \u0111\xe3 nghe ng\u01b0\u1eddi l\u1edbn n\xf3i r\u1ed3i m\u1edbi n\xf3i, kh\xf4ng th\u1ec3 sai l\u1ee3i h\u1ea1i nh\u01b0 th\u1ebf.\n\nN\u1ebfu n\xf3i Ch\xfa L\u0103ng Nghi\xeam l\xe0 do nhi\u1ec1u Ch\xfa ng\u1eafn n\u1ed1i l\u1ea1i v\u1edbi nhau, th\xec nh\u1eefng Ch\xfa ng\u1eafn \u0111\xf3 l\xe0 Ch\xfa g\xec? N\u1ebfu b\u1ea1n n\xf3i kh\xf4ng bi\u1ebft, sao l\u1ea1i n\xf3i l\xe0 do nhi\u1ec1u Ch\xfa ng\u1eafn h\u1ee3p th\xe0nh? N\xf3i th\u1eb3ng \u0111\xf3 ch\u1eb3ng c\xf3 c\u0103n c\u1ee9, nh\u1eefng Ch\xfa ng\u1eafn \u0111\xf3 c\xf3 t\xean ch\u0103ng? N\u1ebfu kh\xf4ng c\xf3 th\xec Ch\xfa n\xe0y l\xe0 ai n\xf3i, cho \u0111\u1ebfn t\xean c\u0169ng kh\xf4ng c\xf3, th\xec c\xf2n n\xf3i Ch\xfa g\xec, cho n\xean th\u1ed1t ra l\u1eddi ph\u1ea3i ch\u1ecbu tr\xe1ch nhi\u1ec7m, kh\xf4ng th\u1ec3 t\xf9y ti\u1ec7n n\xf3i.\n\nCh\xfa L\u0103ng Nghi\xeam t\u1eeb khi b\u1eaft \u0111\u1ea7u l\xe0 quy y m\u01b0\u1eddi ph\u01b0\u01a1ng t\u1eadn h\u01b0 kh\xf4ng bi\u1ebfn ph\xe1p gi\u1edbi h\u1ebft th\u1ea3y ch\u01b0 Ph\u1eadt, sau \u0111\xf3 l\u1ea1i quy y m\u01b0\u1eddi ph\u01b0\u01a1ng t\u1eadn h\u01b0 kh\xf4ng bi\u1ebfn ph\xe1p gi\u1edbi h\u1ebft th\u1ea3y ch\u01b0 B\u1ed3 T\xe1t, k\u1ebf \u0111\xf3 l\u1ea1i quy y c\xe1c b\u1eadc Th\xe1nh nh\xe2n s\u01a1 qu\u1ea3, nh\u1ecb qu\u1ea3, tam qu\u1ea3 v\xe0 t\u1ee9 qu\u1ea3 A La H\xe1n, k\u1ebf ti\u1ebfp l\u1ea1i quy y ch\u01b0 Thi\xean. Quy y ch\u01b0 Thi\xean n\xe0y kh\xf4ng ph\u1ea3i ph\u1ee5ng h\xe0nh ph\xe1p c\u1ee7a ch\u01b0 Thi\xean, ch\u1ec9 l\xe0 cung k\xednh ch\u01b0 Thi\xean, b\u1ed5n lai ng\u01b0\u1eddi xu\u1ea5t gia kh\xf4ng l\u1ec5 b\xe1i ai, ng\u01b0\u1eddi xu\u1ea5t gia \u0111\xe1ng th\u1ecd s\u1ef1 c\xfang d\u01b0\u1eddng c\u1ee7a ch\u01b0 Thi\xean, t\u1ea1i sao l\u1ea1i ph\u1ea3i cung k\xednh ch\u01b0 Thi\xean?\n\nCh\u01b0 Thi\xean l\u1ec5 b\xe1i b\u1ea1n l\xe0 v\xec b\u1ea1n c\xf3 \u0111\u1ea1o \u0111\u1ee9c, c\xf3 tu h\xe0nh, b\u1ea1n \u0111\u1eebng n\xean c\xf3 t\xe2m c\u1ed1ng cao ng\xe3 m\u1ea1n n\xf3i, b\u1ea1n bi\u1ebft kh\xf4ng! T\u1ea5t c\u1ea3 h\u1ed9 ph\xe1p ch\u01b0 Thi\xean \u0111\u1ec1u c\xfai \u0111\u1ea7u \u0111\u1ea3nh l\u1ec5 t\xf4i, kh\xf4ng th\u1ec3 sinh t\xe2m c\u1ed1ng cao ng\xe3 m\u1ea1n nh\u01b0 th\u1ebf, ph\u1ea3i c\u1ea3m th\u1ea5y ch\xednh m\xecnh ch\u01b0a \u0111\u1ee7 \u0111\u1ea1o \u0111\u1ee9c c\u1ee7a m\xecnh m\u1edbi vi\xean m\xe3n, c\u0169ng ph\u1ea3i xem c\xf3 nh\u01b0 kh\xf4ng th\u1eadt, nh\u01b0 h\u01b0 v\u1ecdng. M\xecnh c\xf3 \u0111\u1ea1o \u0111\u1ee9c m\xe0 kh\xf4ng ch\u1ea5p tr\u01b0\u1edbc, b\u1ea1n c\xf3 h\u1ecdc v\u1ea5n ch\xe2n th\u1eadt c\u0169ng \u0111\u1eebng t\u1ef1 m\xe3n, nh\u01b0 v\u1eady m\u1edbi l\xe0 ng\u01b0\u1eddi tu \u0111\u1ea1o. Cho n\xean ng\u01b0\u1eddi tu h\xe0nh t\u1ee5ng tr\xec Ch\xfa n\xe0y c\u0169ng ph\u1ea3i cung k\xednh ch\u01b0 Thi\xean thi\u1ec7n th\u1ea7n, kh\xf4ng nh\u1eefng cung k\xednh thi\u1ec7n th\u1ea7n m\xe0 \xe1c th\u1ea7n c\u0169ng ph\u1ea3i cung k\xednh. Ph\u1ea3i tr\u1eeb kh\u1eed c\u1ed1ng cao ng\xe3 m\u1ea1n c\u1ee7a m\xecnh.\n\nHAI M\u01af\u01a0I CH\xcdN C\xc2U \u0110\u1ea6U C\u1ee6A CH\xda L\u0102NG NGHI\xcaM\n\nCh\xfa L\u0103ng Nghi\xeam b\u1eaft \u0111\u1ea7u t\u1eeb c\xe2u th\u1ee9 nh\u1ea5t \u201cNam M\xf4 T\xe1t \u0110\xe1t Tha T\xf4 Gi\xe0 \u0110a Gia\u201d \u0111\u1ebfn \u201cNam M\xf4 Nh\xe2n \u0110\xe0 La Gia\u201d c\xf3 29 c\xe2u. Hai m\u01b0\u01a1i ch\xedn c\xe2u n\xe0y, ch\xfang ta ng\u01b0\u1eddi tu \u0111\u1ea1o ph\u1ea3i quy m\u1ea1ng \u0111\u1ea3nh l\u1ec5 h\u1ebft th\u1ea3y ch\u01b0 Ph\u1eadt, B\u1ed3 T\xe1t, A La H\xe1n, Th\xe1nh hi\u1ec1n, Thi\xean, ti\xean v.v... Hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa n\xe0y, m\u1ed9t khi ni\u1ec7m ra th\xec s\u1ebd xu\u1ea5t hi\u1ec7n m\u1ed9t c\u1ea3nh gi\u1edbi, c\xf3 th\u1ec3 n\xf3i c\u1ea3nh gi\u1edbi n\xe0y v\u1ed1n l\xe0 th\u1eadt, c\u0169ng c\xf3 th\u1ec3 n\xf3i l\xe0 huy\u1ec5n.\n\nT\u1ea1i sao? V\xec t\u1ea5t c\u1ea3 thi\xean ma ngo\u1ea1i \u0111\u1ea1o nh\xecn c\u1ea3nh gi\u1edbi n\xe0y th\xec l\xe0 th\u1eadt, ng\u01b0\u1eddi tu \u0111\u1ea1o th\xec t\u1ef1 m\xecnh bi\u1ebft. \u0110\xe2y \u0111\u1ec1u l\xe0 do th\u1ea7n l\u1ef1c c\u1ee7a Ch\xfa hi\u1ec7n ra ch\u1ee9 kh\xf4ng ph\u1ea3i ch\xednh m\xecnh, l\xe0 s\u1ee9c l\u1ef1c c\u1ee7a tam mu\u1ed9i, l\xe0 s\u1ee9c l\u1ef1c c\u1ee7a Ch\xfa. Cho n\xean c\u0169ng c\xf3 th\u1ec3 n\xf3i l\xe0 huy\u1ec5n.\n\nT\u1ee5ng tr\xec hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa n\xe0y, th\xec s\u1ebd hi\u1ec7n ra c\u1ea3nh gi\u1edbi nh\u01b0 sau: H\xe0nh gi\u1ea3 hi\u1ec7n m\u1ed9t th\u1ee9 th\xe2n ph\xe1p, b\u1ed1n m\u1eb7t t\xe1m ph\u01b0\u01a1ng c\xf3 r\u1ea5t nhi\u1ec1u, r\u1ea5t nhi\u1ec1u hoa sen \u0111\u1ecf \u0111\u1ebfn \u1ee7ng h\u1ed9 ng\u01b0\u1eddi tr\xec Ch\xfa n\xe0y, cho n\xean n\xf3i: \u201cNg\xe0n \u0111\xf3a sen \u0111\u1ecf h\u1ed9 ng\u01b0\u1eddi tr\xec.\u201d N\u1ebfu b\u1ea1n \u0111\u1ea7y \u0111\u1ee7 t\xe2m th\xe0nh, th\xec nhi\u1ec1u h\u01a1n n\u1eefa kh\xf4ng ch\u1ec9 ng\xe0n \u0111\xf3a th\xf4i. \u201cNg\u1ed3i c\u1ee1i con k\u1ef3 l\xe2n \u0111en\u201d l\xfac n\xe0y ch\u1ed7 ng\u1ed3i kh\xf4ng ph\u1ea3i l\xe0 m\xe1y bay, kh\xf4ng ph\u1ea3i l\xe0 xe l\u1eeda, c\u0169ng kh\xf4ng ph\u1ea3i l\xe0 xe bu\xfdt, m\xe0 l\xe0 con k\u1ef3 l\xe2n, v\xec c\xf3 oai \u0111\u1ee9c t\u01b0\u1edbng hi\u1ec7n ra, cho n\xean y\xeau ma qu\u1ef7 qu\xe1i th\u1ea5y th\xec ph\u1ea3i ch\u1ea1y xa.\n\nV\xe0o th\u1eddi nh\xe0 T\u1ed1ng, T\u1ebf \u0110i\xean t\u1ee9c l\xe0 T\u1ebf C\xf4ng h\xf2a th\u01b0\u1ee3ng, th\u01b0\u1eddng th\u01b0\u1eddng d\xf9ng \u0111o\u1ea1n Ch\xfa n\xe0y \u0111\u1ec3 h\xe0ng ph\u1ee5c thi\xean ma, kh\u1ed1ng ch\u1ebf c\xe1c ngo\u1ea1i \u0111\u1ea1o r\u1ea5t linh nghi\u1ec7m c\u1ea3m \u1ee9ng. Do \u0111\xf3, ch\xfang ta h\u1ecdc Ch\xfa L\u0103ng Nghi\xeam ph\u1ea3i bi\u1ebft s\u1ef1 di\u1ec7u d\u1ee5ng c\u1ee7a Ch\xfa, \u0111o\u1ea1n Ch\xfa L\u0103ng Nghi\xeam n\xe0y l\xe0 ph\xe1p khu\u1ea5t ph\u1ee5c, khi b\u1ea1n t\u1ee5ng Ch\xfa n\xe0y, th\xec b\xe0n m\xf4n t\u1ea3 \u0111\u1ea1o, ma qu\u1ef7 t\xe0 th\u1ea7n, \u0111\u1ec1u kh\xf4ng d\xe1m t\xe1c qu\xe1i, \u0111\u1ec1u l\xe3o th\u1ef1c.\n\nN\u0102M \u0110\u1ea0I T\xc2M CH\xda\n\nT\u1eeb \u201cS\u1ea5t \u0110\xe0 N\u1ec5 \u0111\u1ebfn N\u1ea3nh Y\u1ebft R\u1ecb\u201d, n\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y \u1ea3o di\u1ec7u v\xf4 c\xf9ng, d\xf9 c\xf3 n\xf3i nhi\u1ec1u c\u0169ng kh\xf4ng h\u1ebft \u0111\u01b0\u1ee3c.\n\nH\u1ecfi: Ch\xfang ta ph\u1ea3i ni\u1ec7m to\xe0n b\u1ed9 Ch\xfa L\u0103ng Nghi\xeam hay l\xe0 n\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y?\n\n\u0110\xe1p: Ch\xfa L\u0103ng Nghi\xeam l\xe0 Ch\xfa r\u1ea5t d\xe0i, nh\u01b0ng m\u1ed7i m\u1ed9t c\xe2u Ch\xfa, \u0111\u1ec1u c\xf3 di\u1ec7u d\u1ee5ng v\xe0 oai l\u1ef1c c\u1ee7a n\xf3. N\u1ebfu b\u1ea1n bi\u1ebft di\u1ec7u d\u1ee5ng v\xe0 oai l\u1ef1c c\u1ee7a n\xf3, th\xec khi c\u1ea3nh gi\u1edbi \u0111\u1ebfn, c\xf3 th\u1ec3 ni\u1ec7m m\u1ea5y c\xe2u n\xe0y l\xe0 \u0111\u1ee7. N\u1ebfu b\u1ea1n ni\u1ec7m t\u1eeb \u0111\u1ea7u \u0111\u1ebfn cu\u1ed1i, th\xec th\u1eddi gian ph\u1ea3i d\xe0i.\n\nN\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y hay ph\xe1 tan Ma La v\xf5ng, ph\xe1 ch\xfa thu\u1eadt c\u1ee7a Ma v\u01b0\u01a1ng. La v\xf5ng t\u1ee9c l\xe0 ch\u1ec9 ph\xf9 v\xe0 ch\xfa thu\u1eadt, khi\u1ebfn cho trong t\xe2m c\u1ee7a b\u1ea1n m\xea m\u1ea5t ch\xe1nh ni\u1ec7m. Nh\u01b0 \u1edf Nam D\u01b0\u01a1ng, Th\xe1i Lan, \u0111\u1ec1u c\xf3 \u0111\u1ed9c tr\xf9ng, b\xf9a ng\u1ea3i c\xe1c th\u1ee9 t\xe0 thu\u1eadt. N\u1ebfu d\xf9ng n\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y th\xec s\u1ebd ph\xe1 \u0111\u01b0\u1ee3c. Nh\u01b0 trong Kinh L\u0103ng Nghi\xeam, ngo\u1ea1i \u0111\u1ea1o Ma \u0110\u0103ng Gi\xe0 d\xf9ng ch\xfa Ph\u1ea1m Thi\xean, c\u0169ng c\xf3 s\u1ee9c l\u1ef1c kh\xf4ng th\u1ec3 ngh\u0129 b\xe0n, \u0111\xf3 l\xe0 t\xe0 ph\xe1p, ch\xfa thu\u1eadt thu\u1ed9c v\u1ec1 t\u1ef1 t\u01b0 t\u1ef1 l\u1ee3i, ch\u1eb3ng ph\u1ea3i \u0111\u1ea1i c\xf4ng v\xf4 t\u01b0, cho n\xean ph\xe1 \u0111\u01b0\u1ee3c n\xf3. N\u1ebfu l\xe0 \u0111\u1ea1i c\xf4ng v\xf4 t\u01b0, kh\xf4ng c\xf3 ch\xfat t\xe2m \xedch k\u1ef7 l\u1ee3i m\xecnh, th\xec ch\u1eb3ng ai ph\xe1 \u0111\u01b0\u1ee3c, v\xec thu\u1ed9c v\u1ec1 ch\xe1nh.\n\nL\xfac t\xf4i \u1edf t\u1ea1i M\xe3 Lai th\xec c\xf3 m\u1ed9t ng\u01b0\u1eddi tr\xfang c\u1ed5 \u0111\u1ed9c kho\u1ea3ng m\u01b0\u1eddi l\u0103m n\u0103m. Y lu\xf4n lu\xf4n mu\u1ed1n t\u1ef1 s\xe1t, th\u01b0\u1eddng nghe th\u1ea5y c\xf3 ng\u01b0\u1eddi n\xf3i chuy\u1ec7n, \u0111i\xean \u0111i\xean \u0111\u1ea3o \u0111\u1ea3o. Y \u0111\u1ebfn t\xecm t\xf4i, t\xf4i d\xf9ng g\u1eady \u0111\xe1nh y th\xec y m\u1eeda ra h\xe0ng ng\xe0n v\xf4 s\u1ed1 c\xf4n tr\xf9ng, r\u1ed3i kh\u1ecfi b\u1ec7nh. \u0110\xf3 l\xe0 c\u1ed5 \u0111\u1ed9c. T\u1ea1i sao d\xf9ng g\u1eady \u0111\xe1nh th\xec y h\u1ebft b\u1ec7nh? V\xec tr\xean c\xe2y g\u1eady c\xf3 r\u1ea5t nhi\u1ec1u oai l\u1ef1c c\u1ee7a Ch\xfa.\n\nPh\u1ea3i c\xf3 \u0111\u1ee9c h\u1ea1nh m\u1edbi c\xf3 th\u1ec3 chi ph\u1ed1i th\u1ee9 ph\xe1p n\xe0y. N\u1ebfu b\u1ea1n kh\xf4ng c\xf3 \u0111\u1ee9c h\u1ea1nh, tuy c\u0169ng c\xf3 ch\xfat linh c\u1ea3m, nh\u01b0ng cu\u1ed1i c\xf9ng s\u1ebd chi\xeau l\u1ea1i h\u1ecda ho\u1ea1n. N\u1ebfu gi\u1edbi lu\u1eadt kh\xf4ng thanh t\u1ecbnh, kh\xf4ng c\xf3 \u0111\u1ee9c h\u1ea1nh, th\xec th\u1ea7n h\u1ed9 Ch\xfa s\u1ebd kh\xf4ng b\u1ed9i ph\u1ee5c b\u1ea1n. Tuy nhi\xean \u0111\u01b0\u01a1ng th\u1eddi c\xf3 c\u1ea3m \u1ee9ng, nh\u01b0ng th\u1eddi gian l\xe2u d\u1ea7n, s\u1ebd g\u1eb7p tai h\u1ecda. Do \u0111\xf3 b\u1ea5t c\u1ee9 tu ph\xe1p g\xec, \u0111\u1ec1u ph\u1ea3i ch\xfa tr\u1ecdng v\u1ec1 \u0111\u1ee9c h\u1ea1nh, ch\xfa tr\u1ecdng v\u1ec1 \u0111\u1ea1o \u0111\u1ee9c c\u0103n b\u1ea3n m\u1edbi c\xf3 th\u1ec3 s\u1eed d\u1ee5ng ph\xe1p n\xe0y, m\u1edbi c\xf3 oai l\u1ef1c, m\u1edbi an to\xe0n. Kh\xf4ng c\xf3 \u0111\u1ea1o \u0111\u1ee9c th\xec kh\xf4ng n\xean d\xf9ng, b\u1ea5t c\u1ee9 ch\xfa g\xec c\u0169ng th\u1ebf.\n\nN\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y l\xe0 tr\u0103m ng\xe0n v\u1ea1n ki\u1ebfp m\u1edbi g\u1eb7p \u0111\u01b0\u1ee3c, c\u0169ng c\xf3 th\u1ec3 tr\u0103m ng\xe0n v\u1ea1n ki\u1ebfp b\u1ea1n \u0111\xe3 g\u1eb7p qua r\u1ed3i, nh\u01b0ng kh\xf4ng th\u1ec3 bi\u1ebft r\xf5. N\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y l\xe0 t\xf4n qu\xfd nh\u1ea5t, l\xe0 Ch\xfa h\u1eefu d\u1ee5ng nh\u1ea5t trong Ph\u1eadt gi\xe1o. B\u1ea5t c\u1ee9 l\xe0 Ch\xfa c\u1ee7a thi\xean ma, Ch\xfa c\u1ee7a ngo\u1ea1i \u0111\u1ea1o, Ch\xfa c\u1ee7a qu\u1ef7 th\u1ea7n, Ch\xfa c\u1ee7a y\xeau qu\xe1i, Ch\xfa c\u1ee7a b\xe0ng m\xf4n t\u1ea3 \u0111\u1ea1o \u0111\u1ec1u ph\xe1 h\u1ebft \u0111\u01b0\u1ee3c. T\u1ee9c l\xe0 Ch\xfa hay ph\xe1 t\u1ea5t c\u1ea3 kh\xf4ng th\u1ec3 ph\xe1. Ch\xfa ph\xe1 thi\xean ma ngo\u1ea1i \u0111\u1ea1o ch\u1ee9 ch\u1eb3ng ph\u1ea3i c\xf3 t\xe2m mu\u1ed1n \u0111\u1ed1i \u0111\u1ecbch v\u1edbi ch\xfang, m\xe0 l\xe0 gi\u1ed1ng nh\u01b0 \u0111\xe1nh th\xe1i c\u1ef1c quy\u1ec1n, d\xf9ng l\u1ef1c nhu ph\xe1 gi\u1ea3i l\u1ef1c cang. B\u1ea5t c\u1ee9 Ch\xfa g\xec, d\xf9ng t\xe2m Ch\xfa n\xe0y \u0111\u1ec1u h\xf3a gi\u1ea3i \u0111\u01b0\u1ee3c h\u1ebft, nh\u01b0ng \u0111\u1eebng t\u1ed5n h\u1ea1i \u0111\u1ed1i v\u1edbi \u0111\u1ed1i ph\u01b0\u01a1ng.\n\nN\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y, t\u1ea1i sao g\u1ecdi l\xe0 t\xe2m Ch\xfa? T\u1ee9c l\xe0 t\u1eeb trong t\xe2m t\u1eeb bi ch\u1ea3y ra. D\xf9ng Ch\xfa n\xe0y ph\u1ea3i d\xf9ng t\xe2m t\u1eeb bi h\u1ef7 x\u1ea3, nhi\u1ebfp th\u1ecd t\u1ea5t c\u1ea3 ch\xfang sinh, ch\u1ee9 ch\u1eb3ng ph\u1ea3i n\xf3i, t\xf4i ni\u1ec7m Ch\xfa n\xe0y l\xe0 mu\u1ed1n \u0111\xe1nh b\u1ea1n ch\u1ebft, gi\u1ebft b\u1ea1n, ho\u1eb7c l\xe0 ti\xeau di\u1ec7t b\u1ea1n, m\xe0 l\xe0 oai l\u1ef1c c\u1ee7a Ch\xfa h\xf3a gi\u1ea3i h\u1ebft Ch\xfa thu\u1eadt kh\xe1c c\u0169ng nh\u01b0 b\u0103ng \u0111\xe1 g\u1eb7p m\u1eb7t tr\u1eddi, th\xec t\u1ef1 nhi\xean bi\u1ebfn th\xe0nh n\u01b0\u1edbc.\n\nB\u1ed5n lai Ch\xfa c\u1ee7a b\xe0ng m\xf4n ngo\u1ea1i \u0111\u1ea1o \u0111\u1ec1u v\xec t\xe2m s\xe2n h\u1eadn chi tr\xec, b\u1ea1n ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam n\xe0y, th\xec s\u1ebd h\xf3a th\xe0nh c\xe1t t\u01b0\u1eddng, di\u1ec7u l\xe0 di\u1ec7u ch\u1ed7 n\xe0y. Ch\u1ee9 ch\u1eb3ng ph\u1ea3i b\u1ea1n ni\u1ec7m Ch\xfa n\xe0y, th\xec \u0111\u1ed1i ph\u01b0\u01a1ng th\u1ebf n\xe0o ch\u1ecbu c\u0169ng kh\xf4ng \u0111\u01b0\u1ee3c, m\xe0 l\xe0 Ch\xfa L\u0103ng Nghi\xeam ph\xe1 gi\u1ea3i h\u1ebft oai l\u1ef1c c\u1ee7a Ch\xfa kh\xe1c, ch\u1ee9 kh\xf4ng h\u1ea1i ng\u01b0\u1eddi. Oai l\u1ef1c c\u1ee7a Ch\xfa l\xe0 t\u1eeb trong t\xe2m c\u1ee7a ch\u01b0 Ph\u1eadt, B\u1ed3 T\xe1t v\xe0 ng\u01b0\u1eddi t\u1ee5ng Ch\xfa ch\u1ea3y ra m\u1ed9t th\u1ee9 t\xe2m t\u1eeb bi cho n\xean h\xe0ng ph\u1ee5c \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3 thi\xean ma ngo\u1ea1i \u0111\u1ea1o.\n\nMU\u1ed0N C\u1ea6U PH\u01af\u1edaC B\xc1U TH\u1ebe GIAN HAY QU\u1ea2 B\xc1U TH\xc1NH HI\u1ec0N \u0110\u1ec0U N\xcaN T\u1ee4NG CH\xda L\u0102NG NGHI\xcaM\n\nCh\xfang ta h\u1eb1ng ng\xe0y mu\u1ed1n h\u1ecdc di\u1ec7u ph\xe1p, nh\u01b0ng \u0111\u1ee3i \u0111\u1ebfn khi di\u1ec7u ph\xe1p tr\u01b0\u1edbc m\u1eaft, th\xec kh\xf4ng nh\u1eadn ra \u0111\u01b0\u1ee3c, tr\u01b0\u1edbc m\u1eb7t b\u1ecf qua, m\u1ea5t \u0111i c\u01a1 h\u1ed9i. Ch\xfa L\u0103ng Nghi\xeam m\u1ed7i c\xe2u \u0111\u1ec1u l\xe0 di\u1ec7u ph\xe1p, m\u1ed7i ch\u1eef \u0111\u1ec1u l\xe0 tam mu\u1ed9i, v\xec ch\xfang ta kh\xf4ng hi\u1ec3u r\xf5, n\xean c\u0169ng kh\xf4ng bi\u1ebft t\xf4n qu\xfd. Gi\u1ed1ng nh\u01b0 ng\u01b0\u1eddi kh\xf4ng nh\u1eadn ra v\xe0ng th\u1eadt, cho r\u1eb1ng \u0111\u1ed3ng v\xe0ng l\xe0 v\xe0ng. N\u1ebfu ai th\xe0nh t\xe2m t\u1ee5ng tr\xec Ch\xfa L\u0103ng Nghi\xeam, th\xec th\u01b0\u1eddng c\xf3 t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t \u0111\u1ebfn h\u1ed9 tr\xec, nh\u01b0ng ph\u1ea3i th\xe0nh t\xe2m, n\u1ebfu kh\xf4ng th\xe0nh t\xe2m th\xec s\u1ebd kh\xf4ng c\xf3 c\u1ea3m \u1ee9ng.\n\nN\u1ebfu ch\xfang ta ni\u1ec7m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, ng\xe0y ng\xe0y th\u1ecd tr\xec, th\xec \u0111\u1eafc \u0111\u01b0\u1ee3c ph\u01b0\u1edbc b\xe1u b\u1ea3y \u0111\u1eddi l\xe0m vi\xean ngo\u1ea1i, t\u1ee9c l\xe0 ng\u01b0\u1eddi c\xf3 ph\u01b0\u1edbc nh\u1ea5t, c\xf3 \u0111\u1ea1i th\u1ebf l\u1ef1c trong th\u1eddi th\xe1i b\xecnh th\u1ecbnh v\u01b0\u1ee3ng. Cho n\xean mu\u1ed1n c\u1ea7u ph\u01b0\u1edbc b\xe1u th\u1ebf gian, ph\u1ea3i ni\u1ec7m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, mu\u1ed1n c\xf3 qu\u1ea3 b\xe1u Th\xe1nh hi\u1ec1n, c\xe0ng ph\u1ea3i ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam."],q,q),A.a_(["title","Th\u1eddi \u0110\u1ea1i \u201cV\xf4 C\xf9ng Nguy Ng\u1eadp\u201d","meta",s,"preview","H\u01a1n ph\xe2n n\u1eeda nh\xe2n lo\u1ea1i s\u1ebd b\u1ecb h\u1ee7y di\u1ec7t, v\xe0 nh\u1eefng ng\u01b0\u1eddi s\u1ed1ng s\xf3t l\xe0 nh\u1eefng ng\u01b0\u1eddi bi\u1ebft tu \u0110\u1ea1o, nh\u1eefng ng\u01b0\u1eddi ch\xe2n th\u1eadt tu h\xe0nh, nh\u1eefng ng\u01b0\u1eddi bi\u1ebft ni\u1ec7m Ph\u1eadt, nh\u1eefng ng\u01b0\u1eddi bi\u1ebft t\u1ee5ng Kinh v\xe0 nh\u1eefng ng\u01b0\u1eddi \u0103n chay, \u0111\xf3 l\xe0 nh\u1eefng ng\u01b0\u1eddi c\xf3 th\u1ec3 s\u1ed1ng c\xf2n.\n\nKh\xf4ng ph\u1ea3i t\xf4i c\u1ed1 \xfd n\xf3i nh\u1eefng l\u1eddi n\xe0y \u0111\u1ec3 h\xf9 d\u1ecda qu\xfd v\u1ecb. \u0110\xe3 \u0111\u1ebfn l\xfac t\xf4i kh\xf4ng th\u1ec3 kh\xf4ng l\xean ti\u1ebfng, th\u1eddi \u0111\u1ea1i n\xe0y kh\xf4ng ph\u1ea3i l\xe0 th\u1eddi \u0111\u1ea1i h\xf2a b\xecnh, \u0111\xe2y l\xe0 m\u1ed9t th\u1eddi \u0111\u1ea1i \u201cV\xf4 C\xf9ng Nguy Ng\u1eadp\u201d"],q,q),A.a_(["title","PH\xc1P KI\u1ebeT T\u01af\u1edcNG (Trong Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam)","meta",s,"preview","Ph\xe1p Ki\u1ebft T\u01b0\u1eddng: T\u1ee5ng tr\xec th\u1ea7n ch\xfa n\xe0y th\xec t\u1ea5t c\u1ea3 s\u1ef1 vi\u1ec7c \u0111\u1ec1u t\xf9y t\xe2m nh\u01b0 \xfd, th\u1eadt ki\u1ebft t\u01b0\u1eddng may m\u1eafn. T\xf4i s\u1ebd gi\u1ea3i th\xedch r\xf5 nh\u1eefng ph\xe1p n\xe0y cho qu\xfd v\u1ecb.\n\nD\u1eabu c\xf3 gi\u1ea3ng nhi\u1ec1u n\u0103m m\xe0 v\u1eabn kh\xf4ng th\u1ec3 gi\u1ea3ng h\u1ebft nh\u1eefng \u0111i\u1ec3m hay c\u1ee7a th\u1ea7n ch\xfa n\xe0y. T\u1ea5t c\u1ea3 10 ph\u01b0\u01a1ng ch\u01b0 Ph\u1eadt \u0111\u1ec1u sanh xu\u1ea5t t\u1eeb th\u1ea7n ch\xfa n\xe0y, n\xean c\xf3 th\u1ec3 g\u1ecdi l\xe0 th\u1ea7n ch\xfa L\u0103ng Nghi\xeam l\xe0 m\u1eb9 c\u1ee7a ch\u01b0 Ph\u1eadt."],q,q),A.a_(["title","Cu\u1ed9c \u0110\u1eddi V\xe0 \u0110\u1ea1o Nghi\u1ec7p C\u1ee7a H\xf2a Th\u01b0\u1ee3ng Ph\u1ed5 Quang","meta",r,"preview",'Ng\xe0i sinh v\xe0o ng\xe0y 8 th\xe1ng 4 n\u0103m 1901 - l\xe0 m\u1ed9t trong nh\u1eefng c\xe2u chuy\u1ec7n huy\u1ec1n tho\u1ea1i s\u1ed1ng \u0111\u1ed9ng nh\u1ea5t c\u1ee7a Ph\u1eadt gi\xe1o \u0111\u01b0\u01a1ng \u0111\u1ea1i. Ng\xe0i \u0111\u01b0\u1ee3c xem l\xe0 b\u1eadc cao t\u0103ng \u0111\u1ea1i kh\u1ed5 h\u1ea1nh \u1ea9n tu t\u1ea1i n\xfai Chung Nam, bi\u1ec3u t\u01b0\u1ee3ng s\u1ed1ng c\u1ee7a s\u1ee9c m\u1ea1nh Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam v\xe0 tinh hoa v\xf5 h\u1ecdc Thi\u1ebfu L\xe2m.\n\nD\u01b0\u1edbi \u0111\xe2y l\xe0 t\xf3m t\u1eaft nh\u1eefng n\u1ed9i dung \u0111\u1eaft gi\xe1 nh\u1ea5t v\u1ec1 cu\u1ed9c \u0111\u1eddi v\xe0 \u0111\u1ea1o nghi\u1ec7p c\u1ee7a Ng\xe0i:\n\n1. Th\xe2n th\u1ebf ly k\u1ef3 v\xe0 ph\u01b0\u01a1ng ph\xe1p th\u1ecd gi\xe1o \u0111\u1ed9c nh\u1ea5t\n\n\u2022 M\u1ed3 c\xf4i t\u1eeb nh\u1ecf, b\xe9n duy\xean c\u1eeda Ph\u1eadt: Ng\xe0i sinh n\u0103m 1901, m\u1edbi 8 th\xe1ng tu\u1ed5i th\xec cha m\u1eb9 \u0111\u1ec1u qua \u0111\u1eddi gi\u1eefa th\u1eddi lo\u1ea1n l\u1ea1c. Ng\xe0i \u0111\u01b0\u1ee3c m\u1ed9t v\u1ecb cao t\u0103ng \u0111\u1ed3ng h\u01b0\u01a1ng \u0111\u01b0a v\u1ec1 ch\xf9a Thi\u1ebfu L\xe2m nu\xf4i d\u01b0\u1ee1ng v\xe0 \u0111\u1eb7t ph\xe1p hi\u1ec7u l\xe0 Ph\u1ed5 Quang.\n\n\u2022 H\u1ecdc kinh b\u1eb1ng "3 c\xe2u \u0111\u1ed5i 1 mi\u1ebfng c\u01a1m": Khi Ng\xe0i v\u1eeba bi\u1ebft n\xf3i, s\u01b0 ph\u1ee5 \u0111\xe3 d\u1ea1y Ng\xe0i h\u1ecdc thu\u1ed9c Ch\xfa L\u0103ng Nghi\xeam. Ph\u01b0\u01a1ng ph\xe1p d\u1ea1y v\xf4 c\xf9ng nghi\xeam kh\u1eafc: m\u1ed7i ng\xe0y h\u1ecdc thu\u1ed9c 3 c\xe2u ch\xfa m\u1edbi \u0111\u01b0\u1ee3c \u0103n m\u1ed9t mi\u1ebfng c\u01a1m. D\xf9 ho\xe0n to\xe0n kh\xf4ng bi\u1ebft ch\u1eef v\u0103n t\u1ef1, \u0111\u1ebfn n\u0103m 15 tu\u1ed5i Ng\xe0i \u0111\xe3 thu\u1ed9c l\xf2ng v\xf4 s\u1ed1 kinh \u0111i\u1ec3n v\xe0 th\u1ea7n ch\xfa Ph\u1eadt gi\xe1o, b\u1ea5t k\u1ec3 b\u1eaft \u0111\u1ea7u t\u1eeb \u0111o\u1ea1n n\xe0o c\u0169ng \u0111\u1ecdc l\u1ea1i kh\xf4ng sai m\u1ed9t t\u1eeb.\n\n\u2022 Th\xe0nh t\u1ef1u 47 tuy\u1ec7t k\u1ef9 Thi\u1ebfu L\xe2m: Ng\xe0i \u0111\u01b0\u1ee3c s\u01b0 ph\u1ee5 truy\u1ec1n d\u1ea1y tr\u1ecdn v\u1eb9n 47 m\xf4n tuy\u1ec7t k\u1ef7 v\xf5 h\u1ecdc Thi\u1ebfu L\xe2m (Kim Cang Tr\xe1o, Thi\u1ebft B\u1ed1 Sam, Thi\u1ebft Sa Ch\u01b0\u1edfng, \u0110\u1ed3ng T\u1eed C\xf4ng...).\n\n\u2022 L\u1eddi d\u1eb7n \u1ea9n tu tr\u01b0\u1edbc tu\u1ed5i 60: N\u0103m 1927, tr\u01b0\u1edbc khi vi\xean t\u1ecbch, s\u01b0 ph\u1ee5 d\u1eb7n Ng\xe0i tr\u01b0\u1edbc 60 tu\u1ed5i tuy\u1ec7t \u0111\u1ed1i kh\xf4ng giao du v\u1edbi ng\u01b0\u1eddi th\u1ebf t\u1ee5c \u0111\u1ec3 b\u1ea3o to\xe0n c\xf4ng phu v\xe0 tr\xe1nh b\u1ecb k\u1ebb \xe1c t\u1ed5n h\u1ea1i.\n\n2. H\xe0nh tr\xecnh \u1ea9n tu th\xe2m s\u01a1n v\xe0 s\u1ef1 c\u1ea3m h\xf3a mu\xf4n lo\xe0i\n\n\u2022 Thu\u1ea7n h\xf3a th\xfa d\u1eef t\u1ea1i n\xfai Tr\u01b0\u1eddng B\u1ea1ch: N\u0103m 22 tu\u1ed5i, Ng\xe0i c\xf9ng s\u01b0 \u0111\u1ec7 v\xe0o n\xfai Tr\u01b0\u1eddng B\u1ea1ch kh\u1ed5 luy\u1ec7n. T\u1ea1i \u0111\xe2y, Ng\xe0i \u0111\xe3 c\u1ea3m h\xf3a m\u1ed9t con h\u1ed5 d\u1eef b\u1eb1ng c\xe1ch chia s\u1ebb th\u1ee9c \u0103n v\xe0 cho h\u1ed5 n\u1eb1m b\xean c\u1ea1nh nghe t\u1ee5ng 108 bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam m\u1ed7i ng\xe0y su\u1ed1t 8 n\u0103m cho \u0111\u1ebfn khi n\xf3 ch\u1ebft gi\xe0. Nhi\u1ec1u lo\xe0i tinh tinh, v\u01b0\u1ee3n tr\u1eafng c\u0169ng quy y, bi\u1ebft qu\xe9t c\u1ed5ng, h\xe1i tr\xe1i c\xe2y v\xe0 gi\xfap Ng\xe0i th\u1ed5i l\u1eeda.\n\n\u2022 Kh\u1ed5 h\u1ea1nh t\u1ea1i n\xfai Chung Nam: Ng\xe0i chuy\u1ec3n sang n\xfai Chung Nam (\u1edf \u0111\u1ed9 cao h\u01a1n 3.000m) \u2013 n\u01a1i n\u1ed5i ti\u1ebfng l\xe0 \u0111\u1ecba linh \u1ea9n tu c\u1ee7a c\xe1c b\u1eadc \u0111\u1eafc \u0111\u1ea1o.\n\n\u2022 Tri\u1ebft l\xfd "Nh\u1ea5t thi\u1ebft duy t\xe2m": Nh\u1eefng n\u0103m th\xe1ng \u0111\u1ea7u tr\xean n\xfai kh\xf4ng c\xf3 l\u01b0\u01a1ng th\u1ef1c, Ng\xe0i \u0103n l\xe1 c\xe2y v\xe0o m\xf9a h\xe8 v\xe0 v\u1ecf c\xe2y v\xe0o m\xf9a \u0111\xf4ng gi\xe3 th\xe0nh b\u1ed9t pha n\u01b0\u1edbc l\u1ea1nh. Ng\xe0i d\u1ea1y: "B\u1ea1n n\xf3i n\xf3 l\xe0 l\xe1 c\xe2y v\u1ecf c\xe2y th\xec n\xf3 l\xe0 l\xe1 c\xe2y v\u1ecf c\xe2y, b\u1ea1n n\xf3i n\xf3 l\xe0 b\u1ed9t m\xec th\xec n\xf3 ch\xednh l\xe0 b\u1ed9t m\xec".\n\n3. T\u1ef1 tay x\xe2y d\u1ef1ng Quan \xc2m C\u1ed5 \u0110\u1ed9ng b\u1eb1ng m\u1ed9t chi\u1ebfc cu\u1ed1c\n\n\u2022 \u0110\u1ee5c 5.000 b\u1eadc thang \u0111\xe1: Nh\u1eadn th\u1ea5y Quan \xc2m C\u1ed5 \u0110\u1ed9ng l\xe0 n\u01a1i t\u1eeb tr\u01b0\u1eddng t\xe2m linh t\u1ed1i \u01b0u nh\u01b0ng kh\xf4ng c\xf3 \u0111\u01b0\u1eddng l\xean, Ng\xe0i \u0111\xe3 t\u1ef1 tay \u0111\u1ee5c \u0111\u1ebdo h\u01a1n 5.000 b\u1eadc thang \u0111\xe1 b\u0103ng qua v\xe1ch n\xfai hi\u1ec3m tr\u1edf.\n\n\u2022 D\u1ef1ng ch\xf9a l\xe0m ch\u1ed7 t\u1ef1a cho h\u1eadu th\u1ebf: D\xf9 ch\u1ec9 c\xf3 m\u1ed9t chi\u1ebfc cu\u1ed1c v\xe0 \u0111\xf4i tay tr\u1ea7n, Ng\xe0i \u0111\xe3 san ph\u1eb3ng v\xe1ch n\xfai, t\u1ef1 x\u1ebb \u0111\xe1 \u0111\u1eadp g\u1ea1ch x\xe2y n\xean \u0110\u1ea1i H\xf9ng B\u1ea3o \u0110i\u1ec7n, Vi\xean Th\xf4ng \u0110i\u1ec7n c\xf9ng h\u01a1n 60 gian nh\xe0 \u0111\xe1 \u0111\u1ec3 l\xe0m \u0111\u1ea1o tr\xe0ng cho ng\u01b0\u1eddi tu h\xe0nh t\u01b0\u01a1ng lai. Ng\xe0i c\xf2n t\u1ef1 b\u1ecf ti\u1ec1n mua m\xe0u v\u1ec1 nh\u1eafm m\u1eaft qu\xe1n t\u01b0\u1edfng \u0111\u1ec3 v\u1ebd 32 b\u1ee9c t\u01b0\u1ee3ng B\u1ed3 T\xe1t Qu\xe1n Th\u1ebf \xc2m l\xean t\u01b0\u1eddng \u0111\u1ea5t.\n\n4. K\u1ef7 l\u1ee5c tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam v\xe0 nh\u1eefng hi\u1ec7n t\u01b0\u1ee3ng k\u1ef3 di\u1ec7u\n\n\u2022 K\u1ef7 l\u1ee5c 5,6 tri\u1ec7u bi\u1ebfn L\u0103ng Nghi\xeam: Ng\xe0i d\xe0nh tr\u1ecdn h\u01a1n 100 n\u0103m cu\u1ed9c \u0111\u1eddi chuy\xean tr\xec Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam. Trung b\xecnh m\u1ed7i ng\xe0y Ng\xe0i t\u1ee5ng 108 bi\u1ebfn (ho\u1eb7c 210 bi\u1ebfn m\u1ed7i 10 ng\xe0y), t\u1ed5ng c\u1ed9ng \u0111\xe3 t\xedch l\u0169y h\u01a1n 5,6 tri\u1ec7u bi\u1ebfn \u2013 m\u1ed9t con s\u1ed1 k\u1ef7 l\u1ee5c trong l\u1ecbch s\u1eed Ph\u1eadt gi\xe1o.\n\n\u2022 Th\xe2n th\u1ec3 kim c\u01b0\u01a1ng b\u1ea5t ho\u1ea1i k\u1ef3 di\u1ec7u:\n\n  \u2022 Di\u1ec7n m\u1ea1o tr\u1ebb th\u01a1: \u1ede tu\u1ed5i 120+, da d\u1ebb Ng\xe0i v\u1eabn h\u1ed3ng h\xe0o, m\u1eaft s\xe1ng tai t\u01b0\u1eddng, gi\u1ecdng n\xf3i vang d\u1ed9i nh\u01b0 chu\xf4ng. R\u0103ng c\u1ee7a Ng\xe0i \u0111\xe3 r\u1ee5ng v\xe0 m\u1ecdc m\u1edbi l\u1ea1i 3 l\u1ea7n, s\u1edf h\u1eefu 36 chi\u1ebfc r\u0103ng tr\u1eafng \u0111\u1ec1u.\n\n  \u2022 T\u1ef1 t\u1ecfa h\u01b0\u01a1ng chi\xean \u0111\xe0n: D\xf9 h\u1ea7u nh\u01b0 kh\xf4ng t\u1eafm r\u1eeda hay thay gi\u1eb7t th\u01b0\u1eddng xuy\xean, th\xe2n th\u1ec3 v\xe0 qu\u1ea7n \xe1o Ng\xe0i lu\xf4n t\u1ecfa ra m\xf9i h\u01b0\u01a1ng hoa \u0111\xe0n thanh nh\xe3. Chu\u1ed7i h\u1ea1t \u0111\u01b0\u1ee3c Ng\xe0i c\u1ea7m xoa qua l\u1eadp t\u1ee9c \u0111\u01b0\u1ee3m m\xf9i \u0111\xe0n h\u01b0\u01a1ng ng\u1ea1t ng\xe0o.\n\n  \u2022 C\u01a1 b\u1eafp nh\u01b0 \u0111\u1ed3ng s\u1eaft: D\xf9 ch\u1ec9 \u0103n b\u1eafp c\u1ea3i, \u0111\u1eadu ph\u1ee5 v\xe0 mu\u1ed1i, c\u01a1 b\u1eafp Ng\xe0i v\u1eabn c\u1ee9ng ch\u1eafc nh\u01b0 \u0111\xe1. \u0110\xeam \u0111\u1ebfn, h\u1ea7u nh\u01b0 Ng\xe0i kh\xf4ng ng\u1ee7, Ng\xe0i v\u1eeba \u0111i v\u1eeba tr\xec t\u1ee5ng 108 bi\u1ebfn L\u0103ng Nghi\xeam'],q,q),A.a_(["title","C\u1ed9t M\u1ed1c 36.000 Bi\u1ebfn & \u0110\xe0i Sen N\xe2ng \u0110\u1ee1","meta",r,"preview","Khi m\u1ed9t h\xe0nh gi\u1ea3 ch\xed t\xe2m tr\xec t\u1ee5ng \u0111\u1ea1t t\u1edbi c\u1ed9t m\u1ed1c t\u1ed1i th\u01b0\u1ee3ng 36.000 bi\u1ebfn, nh\u1eefng ph\xe9p m\u1ea7u hi\u1ec7n ti\u1ec1n s\u1ebd h\xf3a sinh. T\xedch l\u0169y \u0111\u1ee7 36.000 l\u1ea7n m\u1ed9t c\xe1ch chu\u1ea9n x\xe1c, m\u1ed9t hi\u1ec7n t\u01b0\u1ee3ng vi di\u1ec7u s\u1ebd xu\u1ea5t hi\u1ec7n: d\u01b0\u1edbi th\xe2n ng\u01b0\u1eddi \u0111\xf3 s\u1ebd hi\u1ec7n ra m\u1ed9t \u0111\xe0i sen n\xe2ng \u0111\u1ee1 trong kho\u1ea3ng kh\xf4ng v\xf4 h\xecnh."],q,q),A.a_(["title","\u0110\u1ecbnh Qu\u1ed1c V\xe3ng Sinh \u2014 36.000 \u0110\u1ea1o H\xe0o Quang","meta",r,"preview","M\u1ed7i bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam \u0111\u01b0\u1ee3c t\u1ee5ng l\xean gi\u1ed1ng nh\u01b0 vi\u1ec7c v\u1ebd m\u1ed9t \u0111\u1ea1o h\xe0o quang r\u1ef1c r\u1ee1 bao b\u1ecdc xung quanh c\u01a1 th\u1ec3. Do \u0111\xf3, khi t\u1ee5ng \u0111\u1ee7 36.000 bi\u1ebfn, th\xe2n t\xe2m h\xe0nh gi\u1ea3 s\u1ebd c\xf3 36.000 \u0111\u1ea1o h\xe0o quang ki\xean c\u1ed1 b\u1ea3o v\u1ec7, ch\u1eafc ch\u1eafn tho\xe1t kh\u1ecfi ba \u0111\u01b0\u1eddng \xe1c nghi\u1ec7p."],q,q),A.a_(["title","C\u1ee9u \u0110\u1ed9 Cha M\u1eb9 Trong B\u1ea3y \u0110\u1eddi Nhi\u1ec1u Ki\u1ebfp","meta",r,"preview","N\u0103ng l\u1ef1c c\u1ee7a 36.000 bi\u1ebfn t\u1ee5ng kh\xf4ng ch\u1ec9 \u0111em l\u1ea1i s\u1ef1 th\xe0nh t\u1ef1u ri\xeang cho b\u1ea3n th\xe2n, m\xe0 c\xf2n t\u1ecfa n\u0103ng l\u01b0\u1ee3ng c\u1ee9u \u0111\u1ed9 to l\u1edbn. C\xf4ng \u0111\u1ee9c th\xf9 th\u1eafng n\xe0y c\xf3 th\u1ec3 gi\xfap c\u1ee9u \u0111\u1ed9 cha m\u1eb9 trong b\u1ea3y \u0111\u1eddi, th\u1eadm ch\xed l\xe0 cha m\u1eb9 trong nhi\u1ec1u ki\u1ebfp qu\xe1 kh\u1ee9 \u0111\u1ec1u \u0111\u01b0\u1ee3c gi\u1ea3i tho\xe1t si\xeau sinh."],q,q),A.a_(["title","S\u1ef1 T\u1ed3n Vong C\u1ee7a Ch\xe1nh Ph\xe1p","meta",s,"preview","Ch\xfa L\u0103ng Nghi\xeam l\xe0 linh v\u0103n c\u1ee9u m\u1ea1ng c\u1ee7a tr\u1eddi \u0111\u1ea5t. B\u1ea5t c\u1ee9 l\xfac n\xe0o c\u0169ng ph\u1ea3i c\xf3 ng\u01b0\u1eddi tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam \u0111\u1ec3 ch\u1ed1ng \u0111\u1ee1 tr\u1eddi \u0111\u1ea5t, kh\xf4ng \u0111\u1ec3 cho th\u1ebf gi\u1edbi \u0111i \u0111\u1ebfn ch\u1ed7 ho\u1ea1i di\u1ec7t. N\u1ebfu kh\xf4ng c\xf2n ai t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam n\u1eefa, th\u1ebf gi\u1edbi n\xe0y s\u1ebd nhanh ch\xf3ng \u0111i \u0111\u1ebfn c\xf5i di\u1ec7t."],q,q),A.a_(["title","C\u1ea3nh Gi\u1edbi Th\xe2n Kim Cang B\u1ea5t Ho\u1ea1i","meta",r,"preview","Qu\xe1 tr\xecnh tinh t\u1ea5n tr\xec t\u1ee5ng \u0111\u1ea1i th\u1ea7n ch\xfa gi\xfap tr\u01b0\u1ee3c kh\xed gi\u1ea3m s\xe2u, thanh kh\xed th\u0103ng ti\u1ebfn, chuy\u1ec3n h\xf3a ph\xe0m th\xe2n th\xe0nh Th\xe2n Kim Cang. C\u01a1 th\u1ec3 tr\u1edf n\xean c\u1ee9ng ch\u1eafc nh\u01b0 \u0111\u1ed3ng s\u1eaft, h\xe0m r\u0103ng 36 chi\u1ebfc t\u1ef1 m\u1ecdc l\u1ea1i, v\xe0 th\xe2n th\u1ec3 t\u1ef1 t\u1ecfa m\xf9i h\u01b0\u01a1ng \u0111\xe0n h\u01b0\u01a1ng n\u1ed3ng n\xe0n b\u1ea5t bi\u1ebfn."],q,q),A.a_(["title","B\xe1ch \u0110\u1ed9c B\u1ea5t S\xe2m & Th\u1ea7n Th\xf4ng Mu\xf4ng Th\xfa","meta",r,"preview","Th\xe2n th\u1ec3 mi\u1ec5n nhi\u1ec5m ho\xe0n to\xe0n v\u1edbi t\u1ea5t c\u1ea3 b\u1ec7nh t\u1eadt, \u0111\u1ed9c ch\u1ea5t. \u0110\u1eb7c bi\u1ec7t, khi h\xe0nh gi\u1ea3 tr\xec t\u1ee5ng v\u01b0\u1ee3t qua m\u1ed1c 1.000.000 bi\u1ebfn, h\u1ecd s\u1ebd \u0111\u1eafc \u0111\u01b0\u1ee3c kh\u1ea3 n\u0103ng th\u1ea5u hi\u1ec3u ng\xf4n ng\u1eef c\u1ee7a mu\xf4n lo\xe0i \u0111\u1ed9ng v\u1eadt, tho\xe1t kh\u1ecfi th\u1ebf gi\u1edbi h\u01b0 \u1ea3o huy\u1ec5n c\u1ea3nh."],q,q),A.a_(["title","V\xec Sao Tr\xec L\u0103ng Nghi\xeam Ch\xfa Ph\u1ea3i Ni\u1ec7m L\u1edbn Ti\u1ebfng","meta",r,"preview","Ph\xe0m l\xe0 ng\u01b0\u1eddi \u0111\u1ebfn Quan \xc2m C\u1ed5 \u0110\u1ed9ng tu h\xe0nh th\xec nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i ni\u1ec7m l\u1edbn ti\u1ebfng. V\xec sao th\u1ea7y k\xeau c\xe1c Ph\u1eadt t\u1eed ni\u1ec7m l\u1edbn ti\u1ebfng? Ni\u1ec7m l\u1edbn ti\u1ebfng L\u0103ng Nghi\xeam Ch\xfa, th\xec hoa sen c\u1ee7a c\xe1c Ph\u1eadt t\u1eed c\u0169ng l\u1edbn theo. Ni\u1ec7m cho t\u1ed1t th\xec cha m\u1eb9 \u0111\u1ec1u \u0111\u01b0\u1ee3c l\u1ee3i \xedch, \u0111\u1ec1u \u0111\u01b0\u1ee3c ng\u1ed3i tr\xean hoa sen. C\xe1c Ph\u1eadt t\u1eed xem Th\xedch Ca M\xe2u Ni Ph\u1eadt, D\u01b0\u1ee3c S\u01b0 Ph\u1eadt, A Di \u0110\xe0 Ph\u1eadt trong \u0110\u1ea1i H\xf9ng B\u1ea3o \u0110i\u1ec7n, c\xe1c Ng\xe0i \u0111\u1ec1u ng\u1ed3i tr\xean hoa sen 5 t\u1ea7ng.\n\nNi\u1ec7m l\u1edbn ti\u1ebfng L\u0103ng Nghi\xeam Ch\xfa kh\xf4ng ch\u1ec9 c\xf3 l\u1ee3i cho b\u1ea3n th\xe2n. N\xf3 c\xf2n c\xf3 th\u1ec3 \u0111\u1ea3 th\xf4ng to\xe0n b\u1ed9 kinh m\u1ea1ch trong th\xe2n th\u1ec3. Ni\u1ec7m l\u1edbn ti\u1ebfng th\xec s\u1ebd kh\xf4ng c\xf2n \u0111\u1ee7 th\u1ee9 v\u1ecdng t\u01b0\u1edfng n\u1eefa.\n\nV\xec sao c\u1ea3 \u0111\u1eddi th\u1ea7y kh\xf4ng cho ph\xe9p m\u1eb7c ni\u1ec7m v\xe0 ni\u1ec7m nh\u1ecf ti\u1ebfng? Ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa ph\u1ea3i h\xe9t to ra, \xe2m thanh c\xe0ng l\u1edbn c\xe0ng t\u1ed1t. Th\u1ea7y th\xedch nh\u1ea5t l\xe0 ng\u01b0\u1eddi c\xf3 \xe2m thanh l\u1edbn. Khi h\xe9t to ra r\u1ed3i, th\xec th\xe2n v\xe0 t\xe2m c\u1ee7a Ph\u1eadt t\u1eed \u0111\u1ec1u \u1edf trong c\xe2u ch\xfa, s\u1ebd kh\xf4ng \u0111i kh\u1edfi v\u1ecdng t\u01b0\u1edfng n\u1eefa. \u0110\u1ee7 th\u1ee9 b\u1ec7nh t\u1eadt c\u0169ng kh\xf4ng c\xf2n. C\u0169ng s\u1ebd kh\xf4ng c\xf3 50 lo\u1ea1i \u1ea5m ma. \u1ea4m ma l\xe0 g\xec? Ch\xednh l\xe0 t\xe0 t\u01b0 t\xe0 ki\u1ebfn trong t\xe2m c\u1ee7a ch\xednh m\xecnh, nh\u01b0 v\u1eady l\xe0 b\u1ecb ma \xe1m r\u1ed3i.\n\nNi\u1ec7m l\u1edbn ti\u1ebfng L\u0103ng Nghi\xeam Ch\xfa, h\u1ebft th\u1ea3y ma \u0111\u1ec1u kh\xf4ng c\xf2n. Ch\xfang n\xf3 t\u1eeb xa \u0111\u1ec1u qu\u1ef3 xu\u1ed1ng d\u1eadp \u0111\u1ea7u \u0111\u1ea3nh l\u1ec5 Ph\u1eadt t\u1eed. Cho \u0111\u1ebfn nh\u1eefng con tr\xf9ng con ki\u1ebfn, t\u1ea5t c\u1ea3 ch\xfang sinh, ch\u1ec9 c\u1ea7n nghe \u0111\u01b0\u1ee3c th\xf4i, v\u1ecb lai \u0111\u1ec1u s\u1ebd th\xe0nh Ph\u1eadt.\n\nM\u1ed7i m\u1ed9t ch\u1eef m\u1ed7i m\u1ed9t c\xe2u c\u1ee7a L\u0103ng Nghi\xeam Ch\xfa \u0111\u1ec1u l\xe0 ph\xe1 \u0111\u1ecba ng\u1ee5c. Nh\u1eefng ch\xfang sinh \u0111ang ch\u1ecbu kh\u1ed5 trong \u0111\u1ecba ng\u1ee5c \u0111\u1ec1u c\xf3 th\u1ec3 \u0111\u01b0\u1ee3c \u0111\u1ed9. Cho n\xean uy l\u1ef1c c\u1ee7a L\u0103ng Nghi\xeam Ch\xfa ch\xednh l\xe0 l\u1edbn nh\u01b0 v\u1eady \u0111\xf3."],q,q),A.a_(["title","C\u1ea5u Tr\xfac Kh\u1edfi \u0110\u1ea7u C\u1ee7a B\xe0i T\u1ee5ng","meta",r,"preview",'\u0110\u1ec3 b\xe0i tr\xec ch\xfa c\xf3 hi\u1ec7u qu\u1ea3 t\u1ed1t nh\u1ea5t, tuy\u1ec7t \u0111\u1ed1i kh\xf4ng n\xean b\u1ecf qua nghi th\u1ee9c kh\u1edfi \u0111\u1ea7u: Lu\xf4n ph\u1ea3i ni\u1ec7m 3 l\u1ea7n c\xe2u "\u0110\u1ea1i Ph\u1eadt \u0110\u1ea3nh Th\u1ee7 L\u0103ng Nghi\xeam Th\u1ea7n Ch\xfa". C\xe2u n\xe0y gi\u1ed1ng nh\u01b0 c\xe1i \u0111\u1ea7u, ph\u1ea7n th\u1ea7n ch\xfa l\xe0 th\xe2n th\u1ec3; n\u1ebfu kh\xf4ng t\u1ee5ng gi\u1ed1ng nh\u01b0 c\u01a1 th\u1ec3 kh\xf4ng c\xf3 \u0111\u1ea7u.'],q,q),A.a_(["title","S\u1ef1 B\u1ea3o V\u1ec7 C\u1ee7a 8 V\u1ea1n 4 Ng\xe0n Kim Cang T\u1ea1ng","meta",s,"preview","B\u1ea1n t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, d\xf9 b\u1ea1n ch\u1ec9 t\u1ee5ng m\u1ed9t ch\u1eef, m\u1ed9t c\xe2u, m\u1ed9t h\u1ed9i, hay to\xe0n b\u1ed9, th\xec t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t c\xf9ng quy\u1ebfn thu\u1ed9c c\u1ee7a c\xe1c ng\xe0i c\u0169ng lu\xf4n lu\xf4n theo b\u1ea3o v\u1ec7 b\u1ea1n c\u1ea9n th\u1eadn, kh\xf4ng \u0111\u1ec3 cho b\u1ea5t k\u1ef3 lo\xe0i ma qu\u1ef7 n\xe0o \u0111\u1ebfn qu\u1ea5y nhi\u1ec5u."],q,q),A.a_(["title","Kh\xf4ng N\xean \u0102n Tr\u1ee9ng Khi Tr\xec Ch\xfa","meta",r,"preview","Kh\xf4ng n\xean \u0103n tr\u1ee9ng khi tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam. Vi\u1ec7c \u0103n tr\u1ee9ng g\xe0 mang t\u1ed9i n\u1eb7ng h\u01a1n c\u1ea3 \u0103n th\u1ecbt th\xf4ng th\u01b0\u1eddng, b\u1edfi l\u1ebd m\u1ed7i qu\u1ea3 tr\u1ee9ng \u0111\u1ea1i di\u1ec7n cho m\u1ed9t sinh m\u1ea1ng nguy\xean v\u1eb9n. \u0102n tr\u1ee9ng mang m\xf9i tanh, ng\u0103n c\u1ea3n th\xe2n t\xe2m \u0111\u1ea1t \u0111\u1ebfn thu\u1ea7n t\u1ecbnh L\u0103ng Nghi\xeam Tam Mu\u1ed9i."],q,q),A.a_(["title","B\u1ea3o Ph\xe1p Ng\u0169 \u0110\u1ea1i T\xe2m Ch\xfa Cho Ng\u01b0\u1eddi B\u1eadn R\u1ed9n","meta",r,"preview","N\u1ebfu kh\xf4ng \u0111\u1ee7 th\u1eddi gian tr\xec to\xe0n b\u1ed9, h\xe3y t\u1ee5ng Ng\u0169 \u0110\u1ea1i T\xe2m Ch\xfa: S\u1ea4T \u0110\xc0N N\u1ec2 \u2014 A CA GIA \u2014 M\u1eacT R\u1eca TR\u1ee4 \u2014 B\xc1T R\u1eca \u0110\xc1T RA GIA \u2014 N\u1ea2NH Y\u1ebeT R\u1eca. Ch\u1ec9 c\u1ea7n tr\xec 7 bi\u1ebfn h\u1eb1ng ng\xe0y, c\xf4ng \u0111\u1ee9c t\u1ea1o ra c\xf2n to l\u1edbn h\u01a1n c\u1ea3 vi\u1ec7c tr\xec t\u1ee5ng \u0111\u1ee7 108 bi\u1ebfn Ch\xfa \u0110\u1ea1i Bi tinh t\u1ea5n."],q,q),A.a_(["title","H\xe0ng Ph\u1ee5c Ma Qu\xe2n","meta",s,"preview","Ch\xfa L\u0103ng Nghi\xeam l\xe0 th\u1ea7n ch\xfa uy l\u1ef1c nh\u1ea5t \u0111\u1ec3 h\xe0ng ph\u1ee5c ma o\xe1n. Khi b\u1ea1n t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, t\u1ea5t c\u1ea3 t\xe0 ma ngo\u1ea1i \u0111\u1ea1o, y\xeau ma qu\u1ef7 qu\xe1i \u0111\u1ec1u khi\u1ebfp s\u1ee3 v\xe0 kh\xf4ng d\xe1m \u0111\u1ebfn g\u1ea7n. \u0110\xf3 l\xe0 v\xec Ch\xfa L\u0103ng Nghi\xeam ph\xe1t ra h\xe0o quang r\u1ef1c r\u1ee1 c\u1ee7a Ph\u1eadt, soi s\xe1ng kh\u1eafp ph\xe1p gi\u1edbi."],q,q),A.a_(["title","V\u1ee5 Tr\u1ee9ng G\xe0","meta",s,"preview","\u201cB\u1ea1n cho r\u1eb1ng \u0103n chay th\xec \u0103n tr\u1ee9ng c\u0169ng \u0111\u01b0\u1ee3c? C\u0169ng \u0111\u01b0\u1ee3c! Ch\u1edd t\u1edbi khi b\u1ea1n \u0111\u1ea7u thai l\xe0m g\xe0 r\u1ed3i khi \u0111\xf3 b\u1ea1n s\u1ebd hi\u1ec3u (ph\u1eadn l\xe0m g\xe0) ch\xednh do \u0103n tr\u1ee9ng g\xe0 m\xe0 ra\u201d.\n\nH\u1ecfi: L\xe0 \u0111\u1ec7 t\u1eed Ph\u1eadt th\xec c\xf3 th\u1ec3 \u0103n tr\u1ee9ng kh\xf4ng?\n\u0110\xe1p: N\u1ebfu qu\xfd v\u1ecb th\xe8m mu\u1ed1n \u0103n nh\u1eefng th\u1ee9 dinh d\u01b0\u1ee1ng \u0111\xf3, th\xec c\u1ea7n g\xec ph\u1ea3i h\u1ecfi t\xf4i?\n\nH\u1ecfi: T\u1ea1i sao ng\u01b0\u1eddi \u0103n chay kh\xf4ng \u0111\u01b0\u1ee3c \u0103n tr\u1ee9ng?\n\u0110\xe1p: Kh\xf4ng c\xf3 g\xe0 tr\u1ed1ng, g\xe0 m\xe1i c\u0169ng c\xf3 th\u1ec3 \u1ea5p tr\u1ee9ng n\u1edf ra g\xe0 con nh\u01b0 th\u01b0\u1eddng. Ng\xe0y x\u01b0a ng\u01b0\u1eddi ta kh\xf4ng hi\u1ec3u \u0111i\u1ec1u n\xe0y n\xean h\u1ecd n\xf3i l\xe0, n\u1ebfu tr\u1ee9ng kh\xf4ng c\xf3 tr\u1ed1ng th\xec kh\xf4ng th\u1ec3 n\u1edf ra g\xe0 con. Nh\u01b0ng l\u1ed1i n\xf3i n\xe0y c\u0169ng kh\xf4ng \u0111\xfang s\u1ef1 th\u1eadt. B\u1edfi v\xec \u0111\u1ea1o l\xfd v\u1ed1n kh\xf4ng c\xf3 tuy\u1ec7t \u0111\u1ed1i, cho n\xean ch\xfang ta \u0103n chay quy\u1ebft kh\xf4ng n\xean \u0103n tr\u1ee9ng.\n\nH\u1ecfi: L\xfac \u0103n chay c\xf3 th\u1ec3 \u0103n tr\u1ee9ng g\xe0 kh\xf4ng?\n\u0110\xe1p: B\u1ea1n ch\u01b0a \u0103n \u0111\xe3 mu\u1ed1n bi\u1ebft! C\xf9ng v\u1edbi kh\xf4ng \u0103n th\xec th\u1ebf n\xe0o? \u0102n th\xec th\u1ebf n\xe0o?"],q,q),A.a_(["title","S\u1ef1 B\u1ea3o V\u1ec7 C\u1ee7a Ng\xe0n \u0110\xf3a Hoa Sen","meta",s,"preview",'Hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa \u0111\u1ea7u ti\xean, m\u1ed9t khi ni\u1ec7m ra th\xec s\u1ebd xu\u1ea5t hi\u1ec7n m\u1ed9t c\u1ea3nh gi\u1edbi l\xe0: b\u1ed1n m\u1eb7t t\xe1m ph\u01b0\u01a1ng c\xf3 r\u1ea5t nhi\u1ec1u hoa sen \u0111\u1ecf \u0111\u1ebfn \u1ee7ng h\u1ed9 ng\u01b0\u1eddi tr\xec Ch\xfa n\xe0y, cho n\xean n\xf3i: "Ng\xe0n \u0111\xf3a sen \u0111\u1ecf h\u1ed9 ng\u01b0\u1eddi tr\xec." (Thi\xean \u0111\xf3a h\u1ed3ng li\xean h\u1ed9 tr\u1ee5 th\xe2n). T\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang t\u1ea1ng B\u1ed3 t\xe1t c\u0169ng \u0111\u1ebfn gia h\u1ed9 b\u1ea1n, cho n\xean n\xf3i: "Ng\u1ed3i tr\xean hoa sen \u0111i m\xe2y tr\u1eafng" (T\u1ecda li\xean phi th\u1eeba b\u1ea1ch v\xe2n \u0111\xf4n). C\xe2u Ch\xfa n\xe0y (Nam M\xf4 T\xe1t \u0110\xe1t Tha) v\u1ed1n d\u0129 b\u1ea3o h\u1ed9 ng\u01b0\u1eddi t\u1ee5ng, ai m\xe0 tr\xec c\xe2u Ch\xfa n\xe0y th\xec Ma v\u01b0\u01a1ng Ba Tu\u1ea7n kh\xf4ng c\xf3 c\xe1ch g\xec l\u1ea1i g\u1ea7n \u0111\u01b0\u1ee3c.'],q,q),A.a_(["title","T\u1ea1i Sao Ng\u01b0\u1eddi Ta Mu\u1ed1n T\u1ef1 S\xe1t?","meta",s,"preview","T\xf4i n\xf3i cho qu\xfd v\u1ecb bi\u1ebft, nh\u1eefng ng\u01b0\u1eddi t\u1ef1 s\xe1t \u0111a s\u1ed1 \u0111\u1ec1u b\u1ecb ma qu\u1ef7 k\xeau h\u1ecd \u0111\u1ebfn \u0111\xf3. Con qu\u1ef7 \u0111\xf3 \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi t\u1ef1 s\xe1t \u0111\xe3 ni\u1ec7m m\u1ed9t b\xe0i ch\xfa. Qu\u1ef7 ni\u1ec7m ch\xfa g\xec? N\xf3 n\xf3i: \u201cM\xe0y \u0111i ch\u1ebft \u0111i! M\xe0y \u0111i ch\u1ebft \u0111i! Ch\u1ebft \u0111i l\xe0 t\u1ed1t l\u1eafm! Ch\u1ebft \u0111i l\xe0 t\u1ed1t nh\u1ea5t \u0111\xf3!\u201d. Con qu\u1ef7 \u0111\xf3 c\xf3 tha t\xe2m th\xf4ng, n\xf3 l\u1ea5y qu\u1ef7 kh\xed x\xe2m nh\u1eadp v\xe0o t\xe2m c\u1ee7a ng\u01b0\u1eddi \u0111\xf3 khi\u1ebfn ng\u01b0\u1eddi \u0111\xf3 ngh\u0129 r\u1eb1ng: \u201cA! Ch\u1ebft \u0111i l\xe0 t\u1ed1t! Ch\u1ebft \u0111i l\xe0 t\u1ed1t!\u201d. Th\u1ebf l\xe0 ng\u01b0\u1eddi \u0111\xf3 b\xe8n \u0111i u\u1ed1ng thu\u1ed1c \u0111\u1ed9c t\u1ef1 t\u1eed, treo c\u1ed5, nh\u1ea3y xu\u1ed1ng bi\u1ec3n... V\xec v\u1eady b\u1ea5t c\u1ee9 l\xfac n\xe0o, m\u1ecdi ng\u01b0\u1eddi c\u1ea7n ph\u1ea3i ni\u1ec7m Ph\u1eadt, ni\u1ec7m ch\xfa. Qu\xfd v\u1ecb ni\u1ec7m Ph\u1eadt ni\u1ec7m ch\xfa th\xec l\xfac \u0111\xf3 c\xf3 Ph\u1eadt quang ph\u1ed5 chi\u1ebfu, ma qu\u1ef7 s\u1ebd b\u1ecf ch\u1ea1y \u0111i m\u1ea5t."],q,q),A.a_(["title","B\u1ed3 T\xe1t Kim Cang T\u1ea1ng \xc2m Th\u1ea7m Th\xfac Gi\u1ee5c","meta",s,"preview","Gi\u1ea3 s\u1eed t\xe2m ni\u1ec7m c\u1ee7a qu\xfd v\u1ecb v\xf4 c\xf9ng t\xe1n lo\u1ea1n, kh\xf4ng th\u1ec3 chuy\xean nh\u1ea5t, nh\u01b0ng n\u1ebfu mi\u1ec7ng c\u1ee7a qu\xfd v\u1ecb li\u1ec1n tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, th\xec B\u1ed3 T\xe1t Kim Cang T\u1ea1ng V\u01b0\u01a1ng li\u1ec1n d\xf9ng t\xe2m tinh ch\xe2n thu\u1ea7n th\u1ee5c \u0111i theo \xe2m th\u1ea7m th\xfac gi\u1ee5c. Ch\u1eef \u201c\xe2m th\u1ea7m th\xfac gi\u1ee5c\u201d n\xe0y v\xf4 c\xf9ng quan tr\u1ecdng, c\xf3 ngh\u0129a l\xe0 \u1edf ph\xeda sau \xe2m th\u1ea7m \u0111\u1ea9y b\u1ea1n m\u1ed9t c\xe1i, \xe2m th\u1ea7m h\u01b0\u1edbng d\u1eabn b\u1ea1n, nh\u1eafc nh\u1edf b\u1ea1n. Khi\u1ebfn t\xe2m t\xe1n lo\u1ea1n c\u1ee7a qu\xfd v\u1ecb d\u1ea7n m\u1ea5t \u0111i, m\u1ed9t ch\xfat, m\u1ed9t ch\xfat m\u1ed9t sinh ra \u0111\u1ecbnh l\u1ef1c, r\u1ed3i \u0111\u1ea1t \u0111\u01b0\u1ee3c \u0111\u1ecbnh l\u1ef1c, d\u1ea7n d\u1ea7n qu\xfd v\u1ecb s\u1ebd \u0111\u01b0\u1ee3c khai m\u1edf tr\xed hu\u1ec7."],q,q),A.a_(["title","Tr\xec Ch\xfa L\u0103ng Nghi\xeam Nh\u1ea5t T\xe2m","meta",s,"preview","Khi t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam kh\xf4ng n\xean c\xf3 t\xe2m mong c\u1ea7u, kh\xf4ng mong c\u1ea7u \u0111\u1eafc th\u1ea7n th\xf4ng, kh\xf4ng mong c\u1ea7u \u0111\u1eafc Ph\u1eadt nh\xe3n, kh\xf4ng mong c\u1ea7u ti\xeau tai, kh\xf4ng mong c\u1ea7u kh\u1ecfi b\u1ec7nh... Ch\u1ec9 c\u1ea7n nh\u1ea5t t\xe2m t\u1ee5ng tr\xec, th\xec c\xf4ng \u0111\u1ee9c m\u1edbi l\u1edbn. Gi\u1ed1ng nh\u01b0 \u0111\u1ee9a tr\u1ebb b\xfa m\u1eb9, ch\u1ec9 bi\u1ebft b\xfa th\xf4i ch\u1ee9 \u0111\xe2u c\xf3 ngh\u0129 g\xec kh\xe1c. B\xfa no r\u1ed3i th\xec ng\u1ee7, ng\u1ee7 d\u1eady l\u1ea1i b\xfa. Ng\u01b0\u1eddi t\u1ee5ng ch\xfa c\u0169ng ph\u1ea3i nh\u01b0 th\u1ebf, kh\xf4ng \u0111\u01b0\u1ee3c c\xf3 m\u1ed9t v\u1ecdng ni\u1ec7m n\xe0o xen v\xe0o."],q,q),A.a_(["title","Kh\xf4ng \u0102n Ng\u0169 V\u1ecb T\xe2n","meta",s,"preview","\u0110\u1ee9c Ph\u1eadt d\u1ea1y trong Kinh L\u0103ng Nghi\xeam: C\xe1c ch\xfang sinh c\u1ea7u qu\u1ea3 B\u1ed3 \u0110\u1ec1, c\u1ed1t y\u1ebfu l\xe0 kh\xf4ng \u0111\u01b0\u1ee3c \u0103n ng\u0169 v\u1ecb t\xe2n (h\xe0nh, t\u1ecfi, n\xe9n, h\u1eb9, h\u01b0ng h\xe0o). V\xec n\u0103m th\u1ee9 v\u1ecb cay n\xe0y, \u0103n ch\xedn th\xec ph\xe1t d\xe2m, \u0103n s\u1ed1ng th\xec th\xeam ph\u1eabn n\u1ed9. Nh\u1eefng ng\u01b0\u1eddi \u0103n n\u0103m th\u1ee9 v\u1ecb cay n\xe0y, tuy c\xf3 t\u1ee5ng tr\xec m\u01b0\u1eddi hai b\u1ed9 kinh Ph\u1eadt, m\u01b0\u1eddi ph\u01b0\u01a1ng Thi\xean ti\xean c\u0169ng \u0111\u1ec1u ch\xea m\xf9i h\xf4i th\u1ed1i m\xe0 tr\xe1nh xa. C\xe1c ng\u1ea1 qu\u1ef7 s\u1ebd th\u01b0\u1eddng li\u1ebfm m\xf4i mi\u1ec7ng c\u1ee7a ng\u01b0\u1eddi \u1ea5y, do lu\xf4n s\u1ed1ng chung v\u1edbi qu\u1ef7 n\xean ph\u01b0\u1edbc \u0111\u1ee9c ng\xe0y c\xe0ng ti\xeau m\xf2n, ch\u1eb3ng l\u1ee3i \xedch g\xec."],q,q),A.a_(["title","C\u1ea3nh Gi\u1edbi Nhi\u1ec7m M\xe0u","meta",r,"preview",'Khi ni\u1ec7m c\xe2u "Nam M\xf4 L\u0103ng Nghi\xeam H\u1ed9i Th\u01b0\u1ee3ng Ph\u1eadt B\u1ed3 T\xe1t" \u0111\u1ee7 ba l\u1ea7n, tr\xean h\u01b0 kh\xf4ng b\u1ed7ng hi\u1ec7n ra m\u1ed9t \u0110\xe0n th\xe0nh L\u0103ng Nghi\xeam r\u1ed9ng l\u1edbn \u0111\u1ebfn m\u1ee9c kh\xf4ng th\u1ea5y bi\xean gi\u1edbi. \u0110\xe0n th\xe0nh \u1ea5y nh\u01b0 m\u1ed9t c\xe1i \xf4 kh\u1ed5ng l\u1ed3 b\u1eb1ng \xe1nh s\xe1ng bao ph\u1ee7 t\u1eeb tr\xean kh\xf4ng trung xu\u1ed1ng. B\xean trong \u0110\xe0n th\xe0nh c\xf3 v\xf4 s\u1ed1 ch\u01b0 Ph\u1eadt, ch\u01b0 \u0110\u1ea1i B\u1ed3 T\xe1t c\xf9ng t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t. T\u1ea5t c\u1ea3 c\xe1c Ng\xe0i \u0111\u1ec1u ph\xf3ng ra \u0111\u1ee7 th\u1ee9 h\xe0o quang v\xf4 c\xf9ng r\u1ef1c r\u1ee1 v\xe0 vi di\u1ec7u, chi\u1ebfu r\u1ecdi kh\u1eafp n\u01a1i v\xe0 gia tr\xec cho t\u1ea5t c\u1ea3 m\u1ecdi ng\u01b0\u1eddi. S\u1ef1 hi\u1ec7n di\u1ec7n v\xe0 \xe1nh s\xe1ng t\u1eeb \u0110\xe0n th\xe0nh kh\xf4ng ch\u1ec9 b\u1ea3o v\u1ec7 m\xe0 c\xf2n \u0111em l\u1ea1i l\u1ee3i \xedch l\u1edbn lao cho nh\u1eefng ai th\xe0nh t\xe2m tr\xec t\u1ee5ng, gi\xfap h\u1ecd ti\xeau tr\u1eeb nghi\u1ec7p ch\u01b0\u1edbng, t\xe2m tr\xed thanh t\u1ecbnh v\xe0 ng\xe0y c\xe0ng tinh t\u1ea5n tr\xean con \u0111\u01b0\u1eddng tu h\xe0nh.'],q,q),A.a_(["title","T\xe2m C\u1ee7a Ph\u1eadt - Th\xe2n C\u1ee7a Ph\u1eadt","meta",r,"preview","B\u1ea1ch \xe2n s\u01b0 Ph\u1ed5 Quang! Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam t\u1ea1i sao l\u1ea1i c\xf3 s\u1ee9c m\u1ea1nh l\u1edbn nh\u01b0 v\u1eady \u1ea1?\nHT. Ph\u1ed5 Quang: Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam n\xe0y l\xe0 ph\xe1p m\xf4n th\xf9 th\u1eafng nh\u1ea5t trong c\xe1c ph\xe1p m\xf4n. B\u1edfi v\xec n\xf3 ch\xednh l\xe0 t\xe2m c\u1ee7a Ph\u1eadt, l\xe0 th\xe2n c\u1ee7a Ph\u1eadt. Kh\xf4ng c\xf3 th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam, th\xec kh\xf4ng c\xf3 t\u1ea5t c\u1ea3 ch\u01b0 Ph\u1eadt! ... Con ng\u01b0\u1eddi n\u1ebfu th\u1eadt s\u1ef1 hi\u1ec3u \u0111\u01b0\u1ee3c \u0111i\u1ec1u n\xe0y, th\xec \u0111\xe3 kh\xf4ng c\xf2n l\xe0 ph\xe0m phu n\u1eefa r\u1ed3i! Ni\u1ec7m \u0111\u1ee7 36.000 bi\u1ebfn, d\u01b0\u1edbi hai b\xe0n ch\xe2n c\u1ee7a con c\u0169ng c\xf3 hoa sen, khi con \u0111i \u0111\u1ee9ng, th\u1ef1c ra l\xe0 c\xf3 hoa sen n\xe2ng \u0111\u1ee1, ch\u1ec9 l\xe0 nh\u1ee5c nh\xe3n c\u1ee7a con nh\xecn kh\xf4ng th\u1ea5y m\xe0 th\xf4i."],q,q),A.a_(["title","C\u1ea3nh Gi\u1edbi \u0110\u1ea1i T\u1ef1 T\u1ea1i","meta",r,"preview",'C\xf3 c\xe2u: "L\xe0m ng\u01b0\u1eddi th\xec hi\u1ebfm khi kh\u1edd kh\u1ea1o", nh\u01b0ng tu h\xe0nh th\xec ph\u1ea3i \u0111\u1ea3o ng\u01b0\u1ee3c l\u1ea1i! Tu h\xe0nh l\xe0 ph\u1ea3i h\u1ecdc c\xe1ch kh\u1edd kh\u1ea1o... N\u1ebfu nh\u01b0 b\u1ea1n ch\u1eb3ng c\xf3 tr\xed tu\u1ec7, b\u1ea1n s\u1ebd ch\u1eb3ng th\u1ec3 kh\u1edd kh\u1ea1o \u0111\u01b0\u1ee3c. Gi\u1ed1ng nh\u01b0 B\u1ed3 T\xe1t B\u1ed1 \u0110\u1ea1i v\u1eady, Ng\xe0i kh\u1edd nh\u01b0ng m\xe0 Ng\xe0i l\u1ea1i s\u1ed1ng r\u1ea5t sung s\u01b0\u1edbng! S\u1ed1ng tr\xean \u0111\u1eddi \u0111\u1eebng bao gi\u1edd d\u1eb1n v\u1eb7t ng\u01b0\u1eddi kh\xe1c, c\u0169ng \u0111\u1eebng d\u1eb1n v\u1eb7t ch\xednh m\xecnh! Chuy\u1ec7n l\xfac t\xe1m gi\u1edd th\xec \u0111\u1ebfn ch\xedn gi\u1edd l\xe0 ph\u1ea3i qu\xean \u0111i r\u1ed3i. \u0110\u1ec3 nh\u1eefng chuy\u1ec7n phi\u1ec1n n\xe3o \u0111\xf3 trong l\xf2ng l\xe0m chi? Vi\u1ec7c g\xec \u0111\xe3 qua th\xec c\u1ee9 \u0111\u1ec3 n\xf3 qua \u0111i! \u0110\xf3 m\u1edbi l\xe0 Ph\u1eadt, B\u1ed3-t\xe1t, \u0111\xf3 m\u1edbi l\xe0 khai \u0111\u1ea1i ng\u1ed9! Cho n\xean ph\u1ea3i ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam, ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam m\u1edbi c\xf3 th\u1ec3 c\xf3 \u0111\u1ecbnh l\u1ef1c, m\u1edbi c\xf3 th\u1ec3 khai m\u1edf tr\xed tu\u1ec7, m\u1ed9t \u0111\u1eddi th\xe0nh Ph\u1eadt \u0111\u1ea1o.'],q,q),A.a_(["title","C\xf4ng \u0110\u1ee9c B\u1eb1ng 10 Toa T\xe0u H\u1ecfa Kinh \u0110\u1ea1i T\u1ea1ng","meta",r,"preview","Kinh \u0110\u1ea1i T\u1ea1ng nhi\u1ec1u nh\u01b0 v\u1eady, ni\u1ec7m t\u1edbi bao gi\u1edd m\u1edbi h\u1ebft? Nh\u01b0ng ni\u1ec7m m\u1ed9t bi\u1ebfn ch\xfa L\u0103ng Nghi\xeam th\xec c\xf4ng \u0111\u1ee9c b\u1eb1ng c\u1ea3 ni\u1ec7m 10 toa t\xe0u h\u1ecfa \u0111\u1ea7y \u1eafp kinh \u0110\u1ea1i T\u1ea1ng! Ai mu\u1ed1n t\u1ee5ng h\u1ebft b\u1ed9 kinh \u0110\u1ea1i T\u1ea1ng th\xec th\xe0 ni\u1ec7m m\u1ed9t bi\u1ebfn ch\xfa L\u0103ng Nghi\xeam c\xf2n h\u01a1n. C\xf3 ng\u01b0\u1eddi tu thi\u1ec1n, c\xf3 ng\u01b0\u1eddi ni\u1ec7m Ph\u1eadt, c\xf3 ng\u01b0\u1eddi tr\xec ch\xfa... c\xf3 t\u1edbi 8 v\u1ea1n 4 ng\xe0n ph\xe1p m\xf4n, nh\u01b0ng cho d\xf9 c\xf3 tu ph\xe1p n\xe0o \u0111i n\u1eefa, c\u0169ng ch\u1eb3ng b\u1eb1ng chuy\xean t\xe2m tu m\u1ed9t m\xecnh ch\xfa L\u0103ng Nghi\xeam. Cho n\xean, ai tu \u0111\u01b0\u1ee3c ch\xfa L\u0103ng Nghi\xeam, ng\u01b0\u1eddi \u0111\xf3 th\u1eadt s\u1ef1 l\xe0 c\xf3 \u0111\u1ea1i ph\xfac b\xe1o!"],q,q),A.a_(["title","Si\xeau \u0110\u1ed9 Cho Ng\u01b0\u1eddi \u0110\xe3 Khu\u1ea5t","meta",r,"preview","C\xf3 ng\u01b0\u1eddi h\u1ecfi v\u1ec1 c\xe1ch si\xeau \u0111\u1ed9 cho ng\u01b0\u1eddi th\xe2n \u0111\xe3 khu\u1ea5t. H\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang \u0111\xe1p: Khi v\u1eeba ni\u1ec7m ch\xfa, b\u1ea1n ph\u1ea3i v\u1eeba qu\xe1n t\u01b0\u1edfng l\u1ea1i g\u01b0\u01a1ng m\u1eb7t v\u1edbi ng\u0169 quan \u0111ang m\u1ec9m c\u01b0\u1eddi l\xfac sinh ti\u1ec1n c\u1ee7a ng\u01b0\u1eddi ch\u1ebft. C\u1ee9 nh\u1ea5t t\xe2m ni\u1ec7m nh\u01b0 v\u1eady th\xec d\u01b0\u1edbi ch\xe2n th\u1ea7n th\u1ee9c c\u1ee7a ng\u01b0\u1eddi m\u1ea5t s\u1ebd l\u1eadp t\u1ee9c hi\u1ec7n ra m\u1ed9t \u0111\xf3a hoa sen, ng\u01b0\u1eddi m\u1ea5t t\u1ef1 nhi\xean s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c l\u1ee3i \xedch si\xeau tho\xe1t."],q,q),A.a_(["title","Ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa Nh\u01b0 \u0110i Thang M\xe1y","meta",r,"preview","M\u1ecdi ng\u01b0\u1eddi c\xf9ng nhau ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa th\xec th\u1ebf gi\u1edbi s\u1ebd b\xecnh y\xean, \u0111\u1ea5t n\u01b0\u1edbc s\u1ebd tai qua n\u1ea1n kh\u1ecfi.\n\nM\u1ed7i b\u1ed9 kinh chia ra r\u1ea5t nhi\u1ec1u ph\u1ea7n. \u0110\u1ecdc c\u1ea3 \u0111\u1eddi c\u0169ng kh\xf4ng h\u1ebft. Nh\u01b0ng L\u0103ng Nghi\xeam Ch\xfa \u0111\xe3 bao g\u1ed3m h\u1ebft t\u1ea5t c\u1ea3 kinh \u0111i\u1ec3n r\u1ed3i. Kinh T\xe2m Kinh ch\xednh l\xe0 ph\u1ea7n tinh t\xfay nh\u1ea5t c\u1ee7a t\u1ea5t c\u1ea3 kinh. L\xe0 \u0111\u1ec3 cho m\xecnh hi\u1ec3u v\xe0 ng\u1ed9 ra.\n\nNi\u1ec7m A Di \u0110\xe0 Ph\u1eadt th\xec tho\xe1t \u0111\u01b0\u1ee3c sinh t\u1eed, nh\u01b0ng ph\u1ea3i th\u1eadt nh\u1ea5t t\xe2m, t\xe2m ph\u1ea3i th\u1eadt s\u1ea1ch. Tham, s\xe2n, si, ki\xeau m\u1ea1n, nghi ng\u1edd... m\u1ed7i ch\u1eef l\xe0 m\u1ed9t c\u1ea3nh. S\u1ebd \u0111\u1ecda v\xe0o \u0111\u01b0\u1eddng A Tu La, \u0111\u01b0\u1eddng ng\u1ea1 qu\u1ef7... r\u01a1i v\xe0o \u0111\u01b0\u1eddng n\xe0o th\xec theo \u0111\u01b0\u1eddng \u0111\xf3.\n\nNi\u1ec7m \u0110\u1ea1i Bi Ch\xfa 108 l\u1ea7n c\u0169ng kh\xf4ng b\u1eb1ng ni\u1ec7m 1 l\u1ea7n L\u0103ng Nghi\xeam Ch\xfa. Kh\xf4ng b\u1eb1ng ni\u1ec7m 7 l\u1ea7n Ng\u0169 \u0110\u1ea1i T\xe2m Ch\xfa. \u0110\u1ea1i Bi Ch\xfa l\xe0 \u0111\u1ec3 c\u1ee9u kh\u1ed5. Ni\u1ec7m \u0111\u1ebfn m\u1ee9c cao nh\u1ea5t th\xec to\xe0n th\xe2n s\xe1ng l\xean, c\xf3 th\u1ec3 th\xe0nh B\u1ed3 T\xe1t, nh\u01b0ng v\u1eabn ch\u01b0a th\xe0nh Ph\u1eadt \u0111\u01b0\u1ee3c. Mu\u1ed1n th\xe0nh Ph\u1eadt th\xec ph\u1ea3i ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa n\xe0y.\n\nNi\u1ec7m kinh kh\xe1c th\xec ph\u1ea3i h\u1ed3i h\u01b0\u1edbng. Nh\u01b0ng ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa n\xe0y v\xe0 Kinh Kim Cang th\xec kh\xf4ng c\u1ea7n h\u1ed3i h\u01b0\u1edbng. \u0110\u1ee9c Ph\u1eadt \u0111\xe3 \u1ea5n ch\u1ee9ng r\u1ed3i. Kh\xf4ng c\u1ea7n ph\u1ea3i l\xe0m th\xeam n\u1eefa. Ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa, m\u1ed9t \u0111\u1eddi n\xe0y l\xe0 th\xe0nh Ph\u1eadt.\n\nNi\u1ec7m L\u0103ng Nghi\xeam Ch\xfa gi\u1ed1ng nh\u01b0 \u0111i thang m\xe1y v\u1eady \u0111\xf3. V\xc8O m\u1ed9t c\xe1i l\xe0 th\xe0nh Ph\u1eadt r\u1ed3i!"],q,q),A.a_(["title","\u0110\u1ed9ng T\u1eeb Bi","meta",r,"preview","\u0110\u1ed9ng T\u1eeb Bi, t\u1eeb x\u01b0a \u0111\u1ebfn nay kh\xf4ng bi\u1ebft \u0111\xe3 c\xf3 bao nhi\xeau v\u1ecb \u0111\u1ea1i \u0111\u1ee9c (b\u1eadc tu h\xe0nh cao th\xe2m) \u0111\u1ebfn \u0111\xe2y \u0111\xf3ng c\u1eeda \u1ea9n tu r\u1ed3i. S\u01b0 ph\u1ee5 l\xe0 h\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang k\u1ec3 l\u1ea1i r\u1eb1ng, nh\u1eefng gi\u1ecdt n\u01b0\u1edbc r\u1ec9 ra t\u1eeb khe \u0111\xe1 trong \u0111\u1ed9ng ch\xednh l\xe0 n\u01b0\u1edbc m\u1eaft c\u1ee7a Ph\u1eadt B\u1ed3 T\xe1t. N\u01b0\u1edbc n\xe0y c\xf3 th\u1ec3 u\u1ed1ng ch\u1ee9 kh\xf4ng \u0111\u01b0\u1ee3c l\xe3ng ph\xed, v\xe0 c\xf2n ch\u1eefa \u0111\u01b0\u1ee3c b\xe1ch b\u1ec7nh. C\u0103n nh\xe0 \u0111\xe1 nh\u1ecf nh\u1eafn, gi\u1ea3n d\u1ecb kia ch\xednh l\xe0 n\u01a1i h\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang t\u1eebng tu h\xe0nh l\xfac c\xf2n tr\u1ebb. Th\u1eddi D\xe2n Qu\u1ed1c, c\xe1c v\u1ecb h\xf2a th\u01b0\u1ee3ng n\u1ed5i ti\u1ebfng nh\u01b0 ng\xe0i H\u01b0 V\xe2n, ph\xe1p s\u01b0 Vi\xean Anh, v\xe0 h\xf2a th\u01b0\u1ee3ng Lai Qu\u1ea3 c\u0169ng \u0111\u1ec1u t\u1eebng tu h\xe0nh \u1edf n\u01a1i n\xe0y."],q,q),A.a_(["title","TH\u1ea6N CH\xda KHAI M\u1ede TR\xcd TU\u1ec6","meta",s,"preview","V\u1ea5n \u0111\xe1p c\xf9ng Ho\xe0 Th\u01b0\u1ee3ng Tuy\xean Ho\xe1 v\xe0o ng\xe0y 10 th\xe1ng 01 n\u0103m 1993\n\nt\u1ea1i H\u1ecdc Vi\u1ec7n C\xf4ng Nghi\u1ec7p K\u1ef9 Thu\u1eadt Qu\u1ed1c L\u1eadp - \u0110\xe0i Loan\n\nPhi\xean d\u1ecbch b\u1edfi Vi\u1ec7n D\u1ecbch Kinh Qu\u1ed1c T\u1ebf\n\nhttps://www.drbachinese.org/vbs/publish/453/vbs453p020.pdf\n\nH\u1ecfi: Con l\xe0 m\u1ed9t \u0111\u1ec7 t\u1eed, v\xe0 con r\u1ea5t th\xedch \u0111\u1ecdc nh\u1eefng s\xe1ch c\u1ee7a H\xf2a Th\u01b0\u1ee3ng. Con c\xf3 m\u1ed9t c\xe2u h\u1ecfi quan tr\u1ecdng nh\u01b0 sau. H\xf2a Th\u01b0\u1ee3ng \u0111\xe3 \u0111\u1ec1 c\u1eadp r\u1eb1ng c\xf3 hai c\xe2u ch\xfa trong Ch\xfa L\u0103ng Nghi\xeam c\xf3 th\u1ec3 khai m\u1edf tr\xed tu\u1ec7 cho ch\xfang ta. Xin Ho\xe0 Th\u01b0\u1ee3ng h\xe3y n\xf3i cho ch\xfang con bi\u1ebft \u0111\xf3 l\xe0 hai c\xe2u ch\xfa n\xe0o? T\u1ea1 \u01a1n s\u1ef1 t\u1eeb bi ch\u1ec9 d\u1eabn c\u1ee7a ng\xe0i. Nam M\xf4 \u0110\u1ea1i T\u1eeb \u0110\u1ea1i Bi Qu\xe1n Th\u1ebf \xc2m B\u1ed3 T\xe1t.\n\n\u0110\xe1p: \u0110\xfang v\u1eady, ta c\xf3 th\u1ec3 n\xf3i cho qu\xfd v\u1ecb, nh\u01b0ng tin hay kh\xf4ng tin l\xe0 t\xf9y qu\xfd v\u1ecb. Ta c\u0169ng kh\xf4ng th\u1ec3 t\xf9y ti\u1ec7n n\xf3i cho qu\xfd v\u1ecb nghe. Tr\u01b0\u1edbc h\u1ebft qu\xfd v\u1ecb h\xe3y cho ta bi\u1ebft l\xe0 qu\xfd v\u1ecb c\xf3 th\xe0nh th\u1eadt ni\u1ec7m hay kh\xf4ng? N\u1ebfu ta n\xf3i cho qu\xfd v\u1ecb nghe, r\u1ed3i qu\xfd v\u1ecb c\u0169ng qu\xean m\u1ea5t, \u0111\u1ed3ng th\u1eddi c\u0169ng kh\xf4ng t\u1ee5ng ni\u1ec7m. Qua m\u1ed9t th\u1eddi gian, qu\xfd v\u1ecb l\u1ea1i h\u1ecfi: \u201cXin S\u01b0 Ph\u1ee5 n\xf3i cho con bi\u1ebft hai c\xe2u ch\xfa n\xe0y, cho \u0111\u1ebfn b\xe2y gi\u1edd con v\u1eabn ch\u01b0a khai tr\xed tu\u1ec7.\u201d T\u1ea1i sao tr\xed tu\u1ec7 c\u1ee7a qu\xfd v\u1ecb ch\u01b0a khai m\u1edf? L\xe0 do qu\xfd v\u1ecb kh\xf4ng t\u1ee5ng ni\u1ec7m, v\u1eady th\xec l\xe0m sao tr\xed tu\u1ec7 c\u1ee7a qu\xfd v\u1ecb c\xf3 th\u1ec3 khai m\u1edf \u0111\u01b0\u1ee3c? Do \u0111\xf3, n\u1ebfu qu\xfd v\u1ecb mu\u1ed1n h\u1ecdc hai c\xe2u Th\u1ea7n ch\xfa n\xe0y, th\xec nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i nh\u1ea5t t\xe2m d\u1ee5ng c\xf4ng t\u1ee5ng ni\u1ec7m, th\u1eadm ch\xed kh\xf4ng \u0103n c\u0169ng \u0111\u01b0\u1ee3c nh\u01b0ng kh\xf4ng th\u1ec3 kh\xf4ng ni\u1ec7m Th\u1ea7n ch\xfa n\xe0y, th\u1eadm ch\xed kh\xf4ng m\u1eb7c \u0111\u1ed3 c\u0169ng \u0111\u01b0\u1ee3c nh\u01b0ng kh\xf4ng th\u1ec3 kh\xf4ng ni\u1ec7m Th\u1ea7n ch\xfa n\xe0y, th\u1eadm ch\xed kh\xf4ng ng\u1ee7 c\u0169ng \u0111\u01b0\u1ee3c nh\u01b0ng kh\xf4ng th\u1ec3 kh\xf4ng ni\u1ec7m Th\u1ea7n ch\xfa n\xe0y. N\u1ebfu qu\xfd v\u1ecb c\xf3 quy\u1ebft t\xe2m nh\u01b0 v\u1eady, th\xec tr\xed tu\u1ec7 c\u1ee7a qu\xfd v\u1ecb ch\u1eafc ch\u1eafn s\u1ebd khai m\u1edf. N\u1ebfu qu\xfd v\u1ecb kh\xf4ng c\xf3 \u0111\u01b0\u1ee3c quy\u1ebft t\xe2m nh\u01b0 v\u1eady m\xe0 ch\u1ec9 mu\u1ed1n t\xecm c\u01a1 h\u1ed9i \u0111i \u0111\u01b0\u1eddng t\u1eaft, mong ta ch\u1ec9 gi\xe1o v\xe0i c\xe2u, r\u1ed3i ngh\u0129 r\u1eb1ng nh\u01b0 th\u1ebf l\xe0 c\xf3 \u0111\u01b0\u1ee3c b\u1ea3o b\u1ed1i, th\xec r\u1ed1t cu\u1ed9c qu\xfd v\u1ecb c\u0169ng ch\u1eb3ng \u0111\u01b0\u1ee3c g\xec c\u1ea3.\n\nB\xe2y gi\u1edd th\xec ta c\xf3 th\u1ec3 gi\u1ea3i th\xedch m\u1ed9t ch\xfat. Hai c\xe2u ch\xfa n\xe0y l\xe0:\n\n\u201cTh\u1ec9nh c\u1ea7u ch\u01b0 Ph\u1eadt v\xe0 ch\u01b0 v\u1ecb B\u1ed3 T\xe1t khai m\u1edf tr\xed tu\u1ec7, khai m\u1edf tr\xed tu\u1ec7 ch\xe2n ch\xe1nh, kh\xf4ng ph\u1ea3i tr\xed tu\u1ec7 th\u1ebf gian. Khi\u1ebfn con c\xf3 th\u1ec3 nh\u1eadn th\u1ee9c r\xf5 t\u1ea5t c\u1ea3 c\xe1c Ph\xe1p v\xe0 phi Ph\xe1p. C\xf3 \u0111\u01b0\u1ee3c Tr\u1ea1ch Ph\xe1p Nh\xe3n (m\u1eaft ch\u1ecdn Ph\xe1p).\u201d\n\nCh\xfa n\xe0y \u0111\u01b0\u1ee3c n\xf3i ra b\u1edfi Ho\xe1 Ph\u1eadt tr\xean \u0111\u1ea3nh \u0111\u1ea7u (V\xf4 Ki\u1ebfn \u0110\u1ea3nh T\u01b0\u1edbng) c\u1ee7a Ph\u1eadt Th\xedch Ca M\xe2u Ni. B\u1edfi v\u1eady m\u1ed7i c\xe2u ch\xfa n\xe0y \u0111\u1ec1u l\xe0 nh\u1eefng linh v\u0103n, \u0111\u1ec1u l\xe0 ch\xe2n ng\xf4n di\u1ec7u ng\u1eef, do \u0111\xf3 hai c\xe2u ch\xfa n\xe0y n\xf3i r\u1eb1ng, \u201cTh\u1ec9nh ch\u01b0 Ph\u1eadt v\xe0 ch\u01b0 v\u1ecb B\u1ed3 T\xe1t, xin h\xe3y gia h\u1ed9 cho con, khi\u1ebfn con \u0111\u01b0\u1ee3c khai m\u1edf \u0111\u1ea1i tr\xed tu\u1ec7.\u201d\n\n\xdd ngh\u0129a c\u1ee7a Th\u1ea7n ch\xfa n\xe0y c\u0169ng g\u1ecdi l\xe0 \u201cch\xe2n ng\xf4n\u201d, c\u0169ng g\u1ecdi l\xe0 \u201clinh v\u0103n\u201d.\n\nT\u1ea1i sao g\u1ecdi l\xe0 \u201cch\xe2n ng\xf4n\u201d? B\u1edfi v\xec Th\u1ea7n ch\xfa n\xe0y kh\xf4ng c\xf3 m\u1ed9t ch\xfat gi\u1ea3 d\u1ed1i n\xe0o c\u1ea3.\n\nT\u1ea1i sao g\u1ecdi l\xe0 \u201clinh v\u0103n\u201d? B\u1edfi v\xec Th\u1ea7n ch\xfa n\xe0y v\u1ed1n l\xe0 c\u1ee7a tr\u1eddi Ph\u1ea1m Thi\xean v\xe0 \u0111\u01b0\u1ee3c \u0110\u1ee9c Ph\u1eadt Th\xedch Ca M\xe2u Ni d\xf9ng ch\xfa n\xe0y \u0111\u1ec3 gi\u1ea3i c\u1ee9u ng\xe0i A-nan. Do \u0111\xf3 m\u1ed9t s\u1ed1 ng\u01b0\u1eddi kh\xf4ng bi\u1ebft c\xe1ch \u0111\u1ec3 s\u1eed d\u1ee5ng Th\u1ea7n ch\xfa n\xe0y. Ta l\u1ea1i n\xf3i th\xeam cho qu\xfd v\u1ecb nghe r\u1eb1ng t\u1eeb l\xfac ta c\xf2n nh\u1ecf, ta \u0111\xe3 \u0111i kh\u1eafp n\u01a1i h\xe0ng ph\u1ee5c y\xeau ma v\xe0 b\u1eaft qu\u1ef7 qu\xe1i. Nh\u1eefng lo\xe0i y\xeau ma qu\u1ef7 qu\xe1i c\xf3 th\u1ec3 bi\u1ebfn h\xf3a th\xe0nh ng\u01b0\u1eddi. ta \u0111\xe3 g\u1eb7p h\u01a1n m\u1ed9t tr\u0103m lo\u1ea1i n\xe0y. Ch\xfang \u0111i \u0111\xe2u l\xe0 h\u1ea1i ng\u01b0\u1eddi \u0111\u1ebfn \u0111\xf3, v\xec th\u1ebf ta \u0111\xe3 d\xf9ng Ch\xfa L\u0103ng Nghi\xeam \u0111\u1ec3 h\xe0ng ph\u1ee5c ch\xfang. K\u1ebft cu\u1ed9c l\xe0 t\u1ea5t c\u1ea3 y\xeau ma qu\u1ef7 qu\xe1i \u0111\u1ec1u mu\u1ed1n c\xf9ng ta nh\u1ea5t quy\u1ebft t\u1eed chi\u1ebfn, v\xec v\u1eady phi\u1ec1n ph\u1ee9c l\u1ea1i k\xe9o \u0111\u1ebfn, g\xe2y ra r\u1ea5t nhi\u1ec1u r\u1eafc r\u1ed1i. Do nh\xe2n duy\xean \u0111\xf3, nay tu\u1ed5i ta \u0111\xe3 l\u1edbn, c\xf3 l\u1ebd c\u0169ng \u0111\xe3 t\u1eebng tr\u1ea3i, n\xean kh\xf4ng c\xf2n mu\u1ed1n tranh \u0111\u1ea5u v\u1edbi ch\xfang.\n\nNh\xe2n v\xec:\n\nTranh l\xe0 ph\xe2n th\u1eafng b\u1ea1i,\n\n\u0110i ng\u01b0\u1ee3c l\u1ea1i v\u1edbi \u0110\u1ea1o.\n\nTrong T\xe2m sanh b\u1ed1n t\u01b0\u1edbng,\n\nL\xe0m sao v\xe0o Tam Mu\u1ed9i (\u0110\u1ecbnh)? (1)\n\nTam Mu\u1ed9i, ch\xednh l\xe0 Ch\xe1nh \u0110\u1ecbnh, Ch\xe1nh Th\u1ecd. Khi ch\xfang ta c\xf9ng ng\u01b0\u1eddi tranh ch\u1ea5p, t\u1ee9c l\xe0 c\xf3 t\xe2m h\u01a1n thua: ho\u1eb7c ta th\u1eafng ng\u01b0\u1eddi thua, ho\u1eb7c ta thua ng\u01b0\u1eddi th\u1eafng. T\xe2m tranh th\u1eafng b\u1ea1i \u1ea5y ch\xednh l\xe0 \u201c\u0110i ng\u01b0\u1ee3c l\u1ea1i v\u1edbi \u0110\u1ea1o\u201d. V\xec ng\u01b0\u1ee3c l\u1ea1i v\u1edbi \u0110\u1ea1o, t\xe2m sanh kh\u1edfi b\u1ed1n t\u01b0\u1edbng: ng\xe3 t\u01b0\u1edbng, nh\xe2n t\u01b0\u1edbng, ch\xfang sanh t\u01b0\u1edbng, th\u1ecd gi\u1ea3 t\u01b0\u1edbng.\n\nKhi b\u1ed1n t\u01b0\u1edbng hi\u1ec7n ti\u1ec1n, l\xe0m sao c\xf3 \u0111\u01b0\u1ee3c \u0111\u1ecbnh l\u1ef1c? L\xe0m sao c\xf3 th\u1ec3 ch\u1ee9ng \u0111\u1eafc Ch\xe1nh \u0110\u1ecbnh, Ch\xe1nh Th\u1ecd?\n\nCho n\xean, b\u1ea5t lu\u1eadn vi\u1ec7c g\xec, ch\xfang ta c\u0169ng kh\xf4ng n\xean d\xf9ng b\u1ea1o l\u1ef1c \u0111\u1ec3 gi\u1ea3i quy\u1ebft v\u1ea5n \u0111\u1ec1, m\xe0 c\u1ea7n ph\u1ea3i gi\u1ea3i quy\u1ebft trong tinh th\u1ea7n h\xf2a b\xecnh. Kh\xf4ng n\xean tr\xean d\u01b0\u1edbi c\xf9ng nhau tranh l\u1ee3i, m\xe0 ch\xfang ta c\u1ea7n ph\u1ea3i d\xf9ng h\xf2a kh\xed, t\u1eeb bi \u0111\u1ec3 \u0111\u1ed1i \u0111\xe3i.\n\nN\u1ebfu m\u1ed9t qu\u1ed1c gia, m\u1ecdi ng\u01b0\u1eddi \u0111\u1ec1u h\xf2a thu\u1eadn, c\xf3 h\xf2a kh\xed, th\xec qu\u1ed1c gia \u1ea5y nh\u1ea5t \u0111\u1ecbnh s\u1ebd h\u01b0ng th\u1ecbnh. C\xf2n n\u1ebfu su\u1ed1t ng\xe0y tranh \u0111\u1ea5u, k\u1ebb n\xe0y gi\xe0nh c\u1ee7a k\u1ebb kia, ng\u01b0\u1eddi n\xe0y \u0111\xe1nh m\u1eafng ng\u01b0\u1eddi kia, th\xec th\u1eadt ch\u1eb3ng t\u1ed1t \u0111\u1eb9p, ch\u1eb3ng c\xe1t t\u01b0\u1eddng ch\xfat n\xe0o c\u1ea3.\n\nGhi ch\xfa:\n\nNguy\xean v\u0103n Hoa ng\u1eef:\n\n(1)\n\n\u722d\u662f\u52dd\u8ca0\u5fc3\uff0c\n\n\u8207\u9053\u76f8\u9055\u80cc\uff0c\n\n\u4fbf\u751f\u56db\u76f8\u5fc3,\n\n\u7531\u4f55\u5f97\u4e09\u6627\uff1f\n\nTranh th\u1ecb th\u1eafng ph\u1ee5 t\xe2m,\n\nD\u1eef \u0111\u1ea1o t\u01b0\u01a1ng vi b\u1ed1i\uff0c\n\nTi\u1ec7n sanh t\u1ee9 t\u01b0\u01a1ng t\xe2m\uff0c\n\nDo h\xe0 \u0111\u1eafc tam mu\u1ed9i\uff1f"],q,q),A.a_(["title","TH\u1eacT S\u1ef0 C\xd3 TH\u1ec2 TR\xcc CH\xda L\u0102NG NGHI\xcaM, TRONG H\u01af KH\xd4NG LI\u1ec0N C\xd3 M\u1ed8T \u0110\u1ea0I B\u1ea0CH T\xc1N C\xc1I, C\xd3 OAI TH\u1ea6N L\u1ef0C \u201cPH\u1ed4 \u1ea4M MU\xd4N PH\u01af\u01a0NG\u201d!","meta",s,"preview","Tuy\xean C\xf4ng Th\u01b0\u1ee3ng Nh\xe2n khai th\u1ecb\n\n\u201cThi\xean t\xe1n c\xe1i v\xe2n\u201d: \u201cThi\xean t\xe1n c\xe1i v\xe2n\u201d ngh\u0129a l\xe0 h\u01b0\u01a1ng m\xe0 b\u1ea1n \u0111\u1ed1t k\u1ebft t\u1ee5 gi\u1eefa h\u01b0 kh\xf4ng, h\xecnh th\xe0nh m\u1ed9t c\xe1i l\u1ecdng gi\u1ed1ng nh\u01b0 chi\u1ebfc d\xf9, che ph\u1ee7 v\xe0 b\u1ea3o h\u1ed9 ch\xfang sinh. Trong Ch\xfa L\u0103ng Nghi\xeam c\xf3 \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i. Khi b\u1ea1n t\u1ee5ng ch\xfa n\xe0y, trong h\u01b0 kh\xf4ng li\u1ec1n hi\u1ec7n ra m\u1ed9t \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i. N\u01a1i \u0111\u01b0\u1ee3c \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i che ph\u1ee7 th\xec kh\xf4ng c\xf3 c\xe1c lo\u1ea1i tai n\u1ea1n, kh\xf4ng c\xf3 \u0111\u1ed9ng \u0111\u1ea5t, kh\xf4ng c\xf3 thi\xean tai, t\u1ea5t c\u1ea3 tai n\u1ea1n \u0111\u1ec1u kh\xf4ng x\u1ea3y \u0111\u1ebfn!\n\nCh\u1eef \u201cC\xe1i\u201d trong c\xe2u \u201cch\u1ea5p tr\xec nh\u1ea5t c\xe1i\u201d, theo M\u1eadt t\xf4ng, ch\xednh l\xe0 ch\u1ec9 \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i trong Ch\xfa L\u0103ng Nghi\xeam. Trong Ch\xfa L\u0103ng Nghi\xeam c\xf3 ch\xfa t\xe2m \u2014 \u201c\u6089\u601b\u591a\u9262\u601b\u56c9\u201d (T\u1ea5t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La). S\xe1u ch\u1eef n\xe0y ch\xednh l\xe0 ch\xfa t\xe2m. N\u1ebfu nh\u1ea5t t\xe2m chuy\xean ch\xfa, t\xe2m kh\xf4ng t\u1ea1p ni\u1ec7m, ch\xed th\xe0nh tr\xec t\u1ee5ng th\xec trong h\u01b0 kh\xf4ng c\xf3 th\u1ec3 hi\u1ec7n ra m\u1ed9t \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i. \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i \u1ea5y c\xf3 oai th\u1ea7n l\u1ef1c \u201cph\u1ed5 \u1ea5m mu\xf4n ph\u01b0\u01a1ng\u201d, t\u1ee9c che ch\u1edf kh\u1eafp m\u1ecdi ph\u01b0\u01a1ng.\n\nPh\xe0m n\u01a1i n\xe0o \u0111\u01b0\u1ee3c n\xf3 che ph\u1ee7 th\xec \u0111ao binh kh\xf4ng kh\u1edfi, \xf4n d\u1ecbch kh\xf4ng sinh, n\u01b0\u1edbc l\u1eeda v\xe0 tr\u1ed9m c\u01b0\u1edbp \u0111\u1ec1u d\u1ee9t s\u1ea1ch; ch\u1ec9 c\xf3 nh\u01b0 \xfd c\xe1t t\u01b0\u1eddng, m\u01b0a thu\u1eadn gi\xf3 h\xf2a, nh\xe2n d\xe2n an l\u1ea1c, kh\xf4ng c\xf3 b\u1ea5t k\u1ef3 tai n\u1ea1n n\xe0o.\n\nN\u1ebfu n\xf3i theo gi\xe1o ph\xe1p, ch\u1eef \u201cc\xe1i\u201d n\xe0y ch\xednh l\xe0 di\u1ec7u ph\xe1p c\u1ee7a th\u1eadt t\u01b0\u1edbng. Th\u1eadt t\u01b0\u1edbng kh\xf4ng c\xf3 t\u01b0\u1edbng, nh\u01b0ng l\u1ea1i kh\xf4ng g\xec ch\u1eb3ng ph\u1ea3i t\u01b0\u1edbng. T\u1eeb th\u1eadt t\u01b0\u1edbng m\xe0 sinh ra t\u1ea5t c\u1ea3 c\xe1c ph\xe1p, d\xf9ng t\u1ea5t c\u1ea3 c\xe1c ph\xe1p \u0111\u1ec3 gi\xe1o h\xf3a ch\xfang sinh trong ch\xedn ph\xe1p gi\u1edbi. \u0110\xe2y ch\xednh l\xe0 \u0111\u1ea1o l\xfd:\n\n\u201cM\u1ed9t g\u1ed1c ph\xe2n t\xe1n th\xe0nh mu\xf4n h\xecnh v\u1ea1n tr\u1ea1ng, mu\xf4n h\xecnh v\u1ea1n tr\u1ea1ng cu\u1ed1i c\xf9ng v\u1eabn quy v\u1ec1 m\u1ed9t g\u1ed1c.\u201d\n\nTr\xec t\u1ee5ng c\xe2u ch\xfa t\xe2m n\xe0y th\xec tr\xean \u0111\u1ec9nh \u0111\u1ea7u s\u1ebd c\xf3 c\xe1c lo\u1ea1i b\u1ea3o c\xe1i h\u1ed9 tr\xec b\u1ea1n.\n\n\u201c\u6089\u601b\u591a\u9262\u601b\u56c9\u201d (T\u1ea5t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La) l\xe0 ch\xfa t\xe2m c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam, cho n\xean c\xf3 ng\u01b0\u1eddi th\u01b0\u1eddng xuy\xean tr\xec t\u1ee5ng c\xe2u ch\xfa n\xe0y. Tr\xec t\u1ee5ng c\xe2u ch\xfa n\xe0y th\xec c\xf3 c\xe1c lo\u1ea1i b\u1ea3o c\xe1i; trong \u0111\xf3 ch\u1ee7 y\u1ebfu l\xe0 d\u1ef1ng n\xean \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i.\n\nCh\xfang ta m\u1ed7i ng\xe0y c\xf3 th\u1ec3 tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, ch\xednh l\xe0 \u0111ang gi\xfap \u0111\u1ee1 to\xe0n th\u1ebf gi\u1edbi, khi\u1ebfn tai n\u1ea1n tr\xean to\xe0n th\u1ebf gi\u1edbi c\xf3 th\u1ec3 gi\u1ea3m b\u1edbt m\u1ed9t ph\u1ea7n, nghi\u1ec7p ma c\u0169ng gi\u1ea3m b\u1edbt m\u1ed9t ph\u1ea7n. V\xec v\u1eady, Ch\xfa L\u0103ng Nghi\xeam v\xf4 c\xf9ng quan tr\u1ecdng!\n\nB\u1ea3o c\xe1i c\xf3 r\u1ea5t nhi\u1ec1u lo\u1ea1i, cho n\xean n\xf3i l\xe0 c\xe1c lo\u1ea1i b\u1ea3o c\xe1i; l\u1ea1i c\xf3 c\xe1c lo\u1ea1i m\xe2y h\u01b0\u01a1ng, m\xe2y hoa, ch\u1ee9 kh\xf4ng ph\u1ea3i ch\u1ec9 c\xf3 m\u1ed9t lo\u1ea1i. Nh\u1eefng b\u1ea3o c\xe1i, m\xe2y h\u01b0\u01a1ng v\xe0 m\xe2y hoa n\xe0y th\u01b0\u1eddng \u1edf tr\xean \u0111\u1ec9nh \u0111\u1ea7u b\u1ea1n \u0111\u1ec3 h\u1ed9 tr\xec b\u1ea1n. V\xec th\u1ebf, r\u1ea5t nhi\u1ec1u vi\u1ec7c v\u1ed1n c\xf3 v\u1ea5n \u0111\u1ec1 c\u0169ng tr\u1edf th\xe0nh kh\xf4ng c\xf3 v\u1ea5n \u0111\u1ec1; d\xf9 c\xf3 chuy\u1ec7n b\u1ea5t ng\u1edd c\u0169ng kh\xf4ng x\u1ea3y ra tai n\u1ea1n. \u0110\xe2y l\xe0 s\u1ef1 l\u1ee3i \xedch \u0111\u1ed1i v\u1edbi t\u1ea5t c\u1ea3 m\u1ecdi ng\u01b0\u1eddi tr\xean th\u1ebf gi\u1edbi.\n\nV\xec v\u1eady, ch\xfang ta tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam ch\xednh l\xe0 \u0111ang gi\xfap \u0111\u1ee1 th\u1ebf gi\u1edbi, khi\u1ebfn th\u1ebf gi\u1edbi gi\u1ea3m b\u1edbt nh\u1eefng tai n\u1ea1n nh\u01b0 tai n\u1ea1n h\xe0ng kh\xf4ng, tai n\u1ea1n giao th\xf4ng. Ch\u1eb3ng h\u1ea1n nh\u01b0 tai n\u1ea1n t\xe0u h\u1ecfa, tai n\u1ea1n \xf4 t\xf4, tai n\u1ea1n m\xe1y bay, xe bu\xfdt, th\u1eadm ch\xed c\u1ea3 chi\u1ebfn tranh, \u0111\u1ea1n ph\xe1o \u2014 nh\u1eefng tai n\u1ea1n \u1ea5y \u0111\u1ec1u c\xf3 th\u1ec3 \u0111\u01b0\u1ee3c \xe2m th\u1ea7m h\xf3a gi\u1ea3i. \u0110\u1ed3ng th\u1eddi c\u0169ng ti\xeau tr\u1eeb tai ch\u01b0\u1edbng c\u1ee7a ch\xfang sinh. Khi tai ch\u01b0\u1edbng kh\xf4ng c\xf2n, con ng\u01b0\u1eddi li\u1ec1n \u0111\u01b0\u1ee3c b\xecnh an. \u0110\xe2y ch\xednh l\xe0 l\u1ee3i \xedch cho qu\u1ea7n ch\xfang.\n\nB\u1ea1n c\xf3 th\u1ec3 m\u1ed7i ng\xe0y m\u1ed9t gi\xe2y c\u0169ng kh\xf4ng gi\xe1n \u0111o\u1ea1n tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, nh\u1ea5t \u0111\u1ecbnh s\u1ebd c\xf3 \u0111\u1ea1i c\u1ea3m \u1ee9ng. Ch\u1ec9 c\u1ea7n kh\xf4ng gi\xe1n \u0111o\u1ea1n; kh\xf4ng gi\xe1n \u0111o\u1ea1n ch\xednh l\xe0 Tam-mu\u1ed9i.\n\nCh\u01b0 Ph\u1eadt c\xf3 n\u0103m b\u1ed9:\n\nPh\u01b0\u01a1ng \u0110\xf4ng: Kim Cang B\u1ed9\n\nPh\u01b0\u01a1ng Nam: B\u1ea3o Sinh B\u1ed9\n\nPh\u01b0\u01a1ng T\xe2y: Li\xean Hoa B\u1ed9\n\nPh\u01b0\u01a1ng B\u1eafc: Y\u1ebft Ma B\u1ed9\n\nTrung \u01b0\u01a1ng: Ph\u1eadt B\u1ed9\n\n\u201c\u6089\u601b\u591a\u9262\u601b\u56c9\u201d (T\u1ea5t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La) l\xe0 ph\xe1p c\u1ee7a Ph\u1eadt B\u1ed9 Trung \u01b0\u01a1ng, cho n\xean c\xf3 th\u1ec3 nhi\u1ebfp ph\u1ee5c n\u0103m \u0111\u1ea1i ma qu\xe2n.\n\nN\u1ebfu kh\xf4ng c\xf3 ch\u01b0 Ph\u1eadt n\u0103m ph\u01b0\u01a1ng, n\u0103m \u0111\u1ea1i ma qu\xe2n s\u1ebd ng\xe0y ng\xe0y tung ho\xe0nh tr\xean th\u1ebf gi\u1edbi \u2014 ch\xfang ngang d\u1ecdc kh\xf4ng ki\xeang n\u1ec3, kh\xf4ng ch\xfat e d\xe8. May thay c\xf3 ch\u01b0 Ph\u1eadt \u1edf n\u0103m ph\u01b0\u01a1ng \xe2m th\u1ea7m tr\u1ea5n ph\u1ee5c ch\xfang, n\xean ch\xfang kh\xf4ng d\xe1m c\xf4ng khai ho\xe0nh h\xe0nh.\n\nB\u1ea5t lu\u1eadn l\xe0 lo\u1ea1i y\xeau ma qu\u1ef7 qu\xe1i n\xe0o, thi\xean ma hay ngo\u1ea1i \u0111\u1ea1o, t\u1ea5t c\u1ea3 \u0111\u1ec1u ph\u1ea3i thu\u1eadn theo s\u1ee9c m\u1ea1nh c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam. N\u1ebfu kh\xf4ng thu\u1eadn theo th\xec s\u1ebd b\u1ecb ti\xeau di\u1ec7t. Ch\xfa L\u0103ng Nghi\xeam c\xf3 ph\xe1p l\u1ef1c ti\xeau di\u1ec7t v\xe0 ph\xe1 tan t\u1ea5t c\u1ea3 ma qu\xe2n.\n\nV\xec v\u1eady, ng\u01b0\u1eddi bi\u1ebft tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, thi\xean ma ngo\u1ea1i \u0111\u1ea1o v\xe0 t\u1ea5t c\u1ea3 qu\u1ef7 qu\xe1i \u0111\u1ec1u s\u1ee3 b\u1ea1n. N\u1ebfu ch\xfang kh\xf4ng s\u1ee3, cu\u1ed1i c\xf9ng ch\xfang v\u1eabn s\u1ebd b\u1ecb h\xe0ng ph\u1ee5c d\u01b0\u1edbi s\u1ee9c m\u1ea1nh c\u1ee7a b\u1ea1n."],q,q),A.a_(["title","Tr\xec Ch\xfa C\u1ea7n Ch\xed Th\xe0nh Chuy\xean Nh\u1ea5t","meta",r,"preview",'Ph\u1ed5 Quang L\xe3o H\xf2a Th\u01b0\u1ee3ng\nTr\xedch t\u1eeb "Chung Nam S\u01a1n Quan \xc2m C\u1ed5 \u0110\u1ed9ng Khai Th\u1ecb L\u1ee5c"\n\nChuy\u1ec7n tr\xec ch\xfa , quan tr\u1ecdng nh\u1ea5t ch\xednh l\xe0 4 ch\u1eef \u300eCh\xed Th\xe0nh Chuy\xean Nh\u1ea5t\u300f!\n\nC\xe1c Ph\u1eadt t\u1eed th\u1ea5y kh\xf4ng, Th\u1ea7y h\u01a1n 100 tu\u1ed5i r\u1ed3i m\xe0 m\u1ed7i ng\xe0y v\u1eabn th\xe0nh th\u1eadt ni\u1ec7m ch\xfa. V\xec sao? V\xec th\u1ea7y bi\u1ebft ch\xfa n\xe0y linh nghi\u1ec7m l\u1eafm.\n\nTh\u1ebf n\xe0o l\xe0 Ch\xed Th\xe0nh Chuy\xean Nh\u1ea5t? Th\u1ea7y n\xf3i cho c\xe1c Ph\u1eadt t\u1eed nghe:\nTh\u1ee9 nh\u1ea5t - T\xe2m ph\u1ea3i th\xe0nh, \u0111\u1eebng c\xf3 l\u0103ng x\u0103ng.\nMi\u1ec7ng th\xec ni\u1ec7m ch\xfa m\xe0 t\xe2m l\u1ea1i ngh\u0129 chuy\u1ec7n kh\xe1c, g\u1ecdi l\xe0 \u300emi\u1ec7ng ni\u1ec7m t\xe2m kh\xf4ng theo\u300f, v\u1eady th\xec v\xf4 \xedch!\n\nTh\u1ee9 hai - Ph\u1ea3i chuy\xean nh\u1ea5t m\u1ed9t m\xf4n.\n\u0110\u1eebng h\xf4m nay ni\u1ec7m ch\xfa n\xe0y, ng\xe0y mai \u0111\u1ed5i ch\xfa kh\xe1c. C\u1ea3 \u0111\u1eddi th\u1ea7y ch\u1ec9 tr\xec m\u1ed9t b\u1ed9 L\u0103ng Nghi\xeam Ch\xfa, \u0111\xe3 h\u01a1n 80 n\u0103m r\u1ed3i.\n\nTh\u1ee9 ba - Ph\u1ea3i m\u1ed9t l\xf2ng m\u1ed9t d\u1ea1, ki\xean \u0111\u1ecbnh.\nD\xf9 tr\u1eddi c\xf3 s\u1eadp xu\u1ed1ng th\u1ea7y v\u1eabn ng\u1ed3i ni\u1ec7m ch\xfa.\n\nC\xe1c Ph\u1eadt t\u1eed xem c\xe1i am tranh c\u1ee7a th\u1ea7y \u0111\xf3, ch\u1eb3ng c\xf3 g\xec h\u1ebft, ch\u1ec9 c\xf3 m\u1ed7i c\xe1i gi\u01b0\u1eddng v\xe1n. T\u1ea1i sao? L\xe0 \u0111\u1ec3 c\u1eaft \u0111\u1ee9t v\u1ecdng t\u01b0\u1edfng! \u1ede \u0111\xe2y ngo\xe0i vi\u1ec7c ni\u1ec7m ch\xfa ra th\xec kh\xf4ng ngh\u0129 g\xec kh\xe1c.\n\nC\xf3 ng\u01b0\u1eddi h\u1ecfi th\u1ea7y: \u300eB\u1ea1ch L\xe3o H\xf2a Th\u01b0\u1ee3ng, H\xf2a Th\u01b0\u1ee3ng ni\u1ec7m ch\xfa c\xf3 th\u1ea5y c\u1ea3nh gi\u1edbi g\xec kh\xf4ng \u1ea1?\u300f\nTh\u1ea7y tr\u1ea3 l\u1eddi: \u300eTh\u1ea7y ch\u1eb3ng th\u1ea5y c\u1ea3nh gi\u1edbi g\xec c\u1ea3, ch\u1ec9 bi\u1ebft th\xe0nh th\u1eadt m\xe0 ni\u1ec7m th\xf4i!\u300f\nC\xe1c Ph\u1eadt t\u1eed nh\u1edb nha: \u0110\u1eebng c\xf3 mong c\u1ea7u c\u1ea3nh gi\u1edbi, c\xe0ng c\u1ea7u l\xe0 c\xe0ng b\u1ecb ma ch\u01b0\u1edbng. C\u1ee9 th\xe0nh th\u1eadt ni\u1ec7m, t\u1ef1 nhi\xean s\u1ebd c\xf3 l\u1ee3i \xedch.\n\nTh\u1ea7y m\u1ed7i ng\xe0y 3 gi\u1edd r\u01b0\u1ee1i s\xe1ng l\xe0 th\u1ee9c d\u1eady. L\u1ea1y Ph\u1eadt 100 l\u1ea1y tr\u01b0\u1edbc, r\u1ed3i b\u1eaft \u0111\u1ea7u tr\xec ch\xfa. M\u1ed9t ng\xe0y \xedt nh\u1ea5t 108 bi\u1ebfn, d\xf9 m\u01b0a hay n\u1eafng c\u0169ng kh\xf4ng b\u1ecf.\nV\xec sao ph\u1ea3i v\u1eady? V\xec chuy\u1ec7n sinh t\u1eed r\u1ea5t l\u1edbn, v\xf4 th\u01b0\u1eddng \u0111\u1ebfn nhanh l\u1eafm!\n\nB\xe2y gi\u1edd c\xf3 nhi\u1ec1u ng\u01b0\u1eddi v\u1eeba ni\u1ec7m ch\xfa v\u1eeba b\u1ea5m \u0111i\u1ec7n tho\u1ea1i. V\u1eady g\u1ecdi l\xe0 tr\xec ch\xfa g\xec? \u0110\xf3 l\xe0 gi\u1ee1n ch\u01a1i \u0111\xf3!\n\u0110\xe3 ni\u1ec7m th\xec ph\u1ea3i ni\u1ec7m cho nghi\xeam t\xfac. Kh\xf4ng ni\u1ec7m th\xec th\xf4i. Ph\u1eadt B\u1ed3 T\xe1t kh\xf4ng g\u1ea1t ai bao gi\u1edd, ch\u1ec9 c\xf3 m\xecnh t\u1ef1 g\u1ea1t m\xecnh th\xec kh\xf4ng ai c\u1ee9u \u0111\u01b0\u1ee3c.\n\nCu\u1ed1i c\xf9ng th\u1ea7y t\u1eb7ng c\xe1c Ph\u1eadt t\u1eed m\u1ed9t c\xe2u:\n\u300e\u0110\xe1nh tan v\u1ecdng t\u01b0\u1edfng, th\xec ph\xe1p th\xe2n s\u1ebd hi\u1ec3n l\u1ed9\u300f\n= Khi n\xe0o qu\xfd v\u1ecb d\u1eb9p \u0111\u01b0\u1ee3c h\u1ebft v\u1ecdng t\u01b0\u1edfng trong \u0111\u1ea7u, th\xec t\xe1nh Ph\u1eadt c\u1ee7a qu\xfd v\u1ecb s\u1ebd s\u1ed1ng l\u1ea1i. L\xfac \u0111\xf3 tr\xec ch\xfa m\u1edbi linh nghi\u1ec7m!'],q,q),A.a_(["title","MU\u1ed0N NHANH CH\xd3NG TH\xc0NH T\u1ef0U, H\xc3Y T\u1ee4NG THU\u1ed8C CH\xda L\u0102NG NGHI\xcaM","meta",r,"preview","L\u1eddi H\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang\n\nNi\u1ec7m A Di \u0110\xe0 Ph\u1eadt, sau m\u1ed9t tr\u0103m l\u1ebb t\xe1m ngh\xecn n\u0103m s\u1ebd th\xe0nh Ph\u1eadt, nh\u1ea5t \u0111\u1ecbnh s\u1ebd th\xe0nh Ph\u1eadt! \u0110\u1ee9c A Di \u0110\xe0 t\u1eeb bi, ng\u01b0\u1eddi n\xe0o ni\u1ec7m danh hi\u1ec7u Ng\xe0i \u0111\u1ec1u c\xf3 th\u1ec3 th\xe0nh Ph\u1eadt. Nh\u01b0ng n\u1ebfu b\u1ea1n mu\u1ed1n nhanh ch\xf3ng th\xe0nh t\u1ef1u, h\xe3y hi\u1ebfu thu\u1eadn v\u1edbi cha m\u1eb9 v\xe0 t\u1ee5ng thu\u1ed9c Ch\xfa L\u0103ng Nghi\xeam.\n\nT\u1ea1i sao khi t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam l\u1ea1i ph\u1ea3i ph\xe1t \xe2m vang r\xf5?\n\nN\u1ebfu \xe2m thanh qu\xe1 nh\u1ecf th\xec qu\u1ef7 th\u1ea7n c\xf2n kh\xf4ng nghe th\u1ea5y, v\u1eady b\u1ea1n \u0111\u1ed9 ai?\n\n\xc2m thanh l\u1edbn, ngay c\u1ea3 c\xe1c lo\xe0i c\xf4n tr\xf9ng, ki\u1ebfn c\u0169ng c\xf3 th\u1ec3 nghe \u0111\u01b0\u1ee3c m\xe0 k\u1ebft duy\xean th\xe0nh Ph\u1eadt. \u0110\u1ed3ng th\u1eddi, vi\u1ec7c tr\xec t\u1ee5ng c\xf2n c\xf3 th\u1ec3 l\xe0m ti\xeau tr\u1eeb nh\u1eefng v\u1ecdng ni\u1ec7m c\u1ee7a ch\xednh m\xecnh, khi\u1ebfn v\u1ecdng ni\u1ec7m kh\xf4ng th\u1ec3 qu\u1ea5y nhi\u1ec5u t\xe2m t\xednh, h\xe0ng ph\u1ee5c c\u01a1n bu\u1ed3n ng\u1ee7, khai th\xf4ng kinh m\u1ea1ch, b\u1ed5 sung d\u01b0\u01a1ng kh\xed v\xe0 t\u0103ng c\u01b0\u1eddng th\u1ec3 ch\u1ea5t.\n\nN\u0102M \u0110\u1ea0I T\xc2M CH\xda:\n\n\u53f1\u9640\u4f60 / S\u1ea4T \u0110\xc0 N\u1ec2\n\u963f\u8fe6\u56c9 / A CA LA\n\u5bc6\u550e\u67f1 / M\u1eacT R\u1eca TR\u1ee4\n\u822c\u550e\u601b\u56c9\u8036 / B\xc1T R\u1eca \u0110\xc1T RA DA\n\u511c\u63ed\u550e / N\u1ea2NH Y\u1ebeT R\u1eca\n\nBa ch\u1eef l\xe0 m\u1ed9t c\xe2u. N\u0103m c\xe2u n\xe0y bi\u1ec3u th\u1ecb Ng\u0169 ph\u01b0\u01a1ng Ph\u1eadt h\xe0ng ph\u1ee5c Ng\u0169 ph\u01b0\u01a1ng ma.\n\nT\xf4i n\xf3i \u0111\xe2y l\xe0 t\xe2m ch\xfa ch\xednh th\u1ed1ng c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam (\u0111\u1ea1i t\xe2m ch\xfa). C\xf3 ng\u01b0\u1eddi n\xf3i t\xe2m ch\xfa c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam l\xe0 c\xe2u cu\u1ed1i c\xf9ng, t\u1ee9c c\xe2u ch\xfa t\xe2m. T\xe2m ch\xfa c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam ch\xednh th\u1ed1ng ch\xednh l\xe0 tr\xe1i tim c\u1ee7a ch\u01b0 Ph\u1eadt. Ch\xednh c\xe2u n\xe0y c\xf3 n\u0103ng l\u1ef1c khi\u1ebfn thi\xean h\u1ea1 h\xf2a b\xecnh.\n\nCh\xfa L\u0103ng Nghi\xeam ch\xednh l\xe0 do \u0110\u1ee9c Ph\u1eadt Th\xedch Ca M\xe2u Ni tuy\xean thuy\u1ebft. \xc2n \u0111\u1ee9c c\u1ee7a Ph\u1eadt th\u1eadt kh\xf3 b\xe1o \u0111\xe1p. Ch\xfa L\u0103ng Nghi\xeam c\xf2n li\xean quan \u0111\u1ebfn s\u1ef1 h\u01b0ng suy c\u1ee7a to\xe0n th\u1ec3 Ph\u1eadt gi\xe1o, li\xean quan \u0111\u1ebfn h\u1ebft th\u1ea3y ch\xfang sinh. Trong tr\u1eddi \u0111\u1ea5t n\xe0y, kh\xf4ng c\xf3 g\xec quan tr\u1ecdng h\u01a1n Ch\xfa L\u0103ng Nghi\xeam.\n\nV\xec v\u1eady, ch\u1ec9 c\u1ea7n t\xf4i c\xf2n m\u1ed9t h\u01a1i th\u1edf, t\xf4i v\u1eabn s\u1ebd h\u1ebft l\xf2ng ho\u1eb1ng d\u01b0\u01a1ng th\u1ea7n ch\xfa L\u0103ng Nghi\xeam n\xe0y.\n\nT\u1ea5t c\u1ea3 m\u1ecdi th\u1ee9 tr\xean th\u1ebf gian \u0111\u1ec1u l\xe0 gi\u1ea3, ngay c\u1ea3 th\xe2n th\u1ec3 c\u1ee7a l\xe3o Ph\u1ed5 Quang t\xf4i \u0111\xe2y c\u0169ng l\xe0 gi\u1ea3. Ch\u1ec9 c\xf3 Ch\xfa L\u0103ng Nghi\xeam l\xe0 ch\xe2n th\u1eadt nh\u1ea5t. V\xec v\u1eady, t\xf4i ngay c\u1ea3 ch\xednh m\xecnh c\u0169ng kh\xf4ng tin, ch\u1ec9 tin v\xe0o Ch\xfa L\u0103ng Nghi\xeam n\xe0y.\n\nCho n\xean, khi m\u1ecdi ng\u01b0\u1eddi tham gia ph\xe1p h\u1ed9i th\u1ea5t nh\u1eadt, m\u1ed7i ng\xe0y tr\xec t\u1ee5ng th\u1ea7n ch\xfa, nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i d\xf9ng t\xe2m m\xe0 ni\u1ec7m, ph\u1ea3i \u0111em t\xe2m ch\xe2n th\xe0nh ra \u0111\u1ec3 tr\xec t\u1ee5ng. \u0110\u1eebng v\u1eeba ni\u1ec7m v\u1eeba kh\u1edfi v\u1ecdng t\u01b0\u1edfng, v\u1eeba ni\u1ec7m v\u1eeba nghi ng\u1edd.\n\nB\u1ea1n xem, khi t\xf4i v\u1eeba ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam th\xec ngay c\u1ea3 l\xe3o Ph\u1ed5 Quang t\xf4i c\u0169ng kh\xf4ng c\xf2n n\u1eefa. To\xe0n t\xe2m \u0111\u1ec1u h\xf2a nh\u1eadp v\xe0o vi\u1ec7c tr\xec ch\xfa.\n\nKhi t\u1ee5ng thu\u1ed9c c\xe2u tr\u01b0\u1edbc th\xec ngh\u0129 \u0111\u1ebfn c\xe2u ti\u1ebfp theo; t\u1ee5ng \u0111\u1ebfn ch\u1eef tr\u01b0\u1edbc th\xec ngh\u0129 \u0111\u1ebfn ch\u1eef ti\u1ebfp theo. C\u1ee9 nh\u01b0 v\u1eady, nh\u1ea5t t\xe2m b\u1ea5t lo\u1ea1n m\xe0 tr\xec t\u1ee5ng th\u1ea7n ch\xfa. C\u1ee9 b\xe1m ch\u1eb7t l\u1ea5y Ch\xfa L\u0103ng Nghi\xeam, kh\xf4ng bu\xf4ng b\u1ecf, th\xec trong \u0111\u1eddi n\xe0y nh\u1ea5t \u0111\u1ecbnh c\xf3 th\u1ec3 th\xe0nh t\u1ef1u."],q,q),A.a_(["title","NI\u1ec6M CH\xda L\u0102NG NGHI\xcaM B\u1ea2Y NG\xc0Y, C\u0102N B\u1ec6NH L\u1ea0 B\u1ed6NG NHI\xcaN KH\u1eceI H\u1eb2N","meta",s,"preview",'\u5ba3\u5316\u4e0a\u4eba - Tuy\xean H\xf3a Th\u01b0\u1ee3ng Nh\xe2n:\nT\xf4i k\u1ec3 cho c\xe1c b\u1ea1n nghe m\u1ed9t c\xe2u chuy\u1ec7n c\xf3 th\u1eadt th\u1ebf n\xe0y: \u1ede v\xf9ng \u0110\xf4ng B\u1eafc Trung Qu\u1ed1c, c\xf3 m\u1ed9t ng\u01b0\u1eddi m\u1eafc ph\u1ea3i c\u0103n b\u1ec7nh l\u1ea1, bao nhi\xeau b\xe1c s\u0129 \u0111\u1ec1u ch\u1eefa kh\xf4ng kh\u1ecfi. Sau \u0111\xf3, \xf4ng \u1ea5y g\u1eb7p \u0111\u01b0\u1ee3c m\u1ed9t v\u1ecb l\xe3o tu h\xe0nh d\u1ea1y cho c\xe1ch ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam. \xd4ng \u1ea5y \u0111\xe3 th\xe0nh t\xe2m th\xe0nh \xfd ni\u1ec7m su\u1ed1t b\u1ea3y ng\xe0y, v\xe0 b\u1ec7nh t\xecnh li\u1ec1n kh\u1ecfi h\u1eb3n! \u0110\xe2y kh\xf4ng ph\u1ea3i l\xe0 m\xea t\xedn, m\xe0 ch\xednh l\xe0 uy th\u1ea7n l\u1ef1c c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam!\n\nNg\u01b0\u1eddi tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam th\xec \u0111i \u0111\u1ebfn \u0111\xe2u c\u0169ng c\xf3 thi\u1ec7n th\u1ea7n h\u1ed9 ph\xe1p \u0111i theo b\u1ea3o v\u1ec7. C\xe1c b\u1ea1n nh\xecn T\u1ebf C\xf4ng H\xf2a Th\u01b0\u1ee3ng xem, t\u1ea1i sao ng\xe0i l\u1ea1i c\xf3 th\u1ec3 h\xe0ng y\xeau ph\u1ee5c ma? Ch\xednh l\xe0 d\u1ef1a v\xe0o s\u1ee9c m\u1ea1nh c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam! Th\u1ea7n ch\xfa n\xe0y v\u1eeba ni\u1ec7m l\xean m\u1ed9t c\xe1i l\xe0 y\xeau ma qu\u1ef7 qu\xe1i \u0111\u1ec1u s\u1ee3 h\xe3i m\xe0 ch\u1ea1y tr\u1ed1n th\u1eadt xa.\n\nTh\u1ebf nh\u01b0ng, c\xe1c b\u1ea1n \u0111\u1eebng c\xf3 ngh\u0129 r\u1eb1ng h\u1ec5 ni\u1ec7m v\xe0i bi\u1ebfn l\xe0 c\xf3 \u0111\u1ea1i th\u1ea7n th\xf4ng ngay nh\xe9. Th\u1eddi tr\u1ebb khi t\xf4i ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam, ni\u1ec7m \u0111\u1ebfn m\u1ee9c r\u1ed9p c\u1ea3 mi\u1ec7ng ra m\xe0 v\u1eabn ti\u1ebfp t\u1ee5c ni\u1ec7m. T\u1ea1i sao v\u1eady? B\u1edfi v\xec t\xf4i bi\u1ebft c\xf4ng \u0111\u1ee9c c\u1ee7a th\u1ea7n ch\xfa n\xe0y l\xe0 kh\xf4ng th\u1ec3 ngh\u0129 b\xe0n!\n\nB\xe2y gi\u1edd c\xf3 r\u1ea5t nhi\u1ec1u ng\u01b0\u1eddi c\u1ee9 mong c\u1ea7u c\u1ea3m \u1ee9ng, ni\u1ec7m \u0111\u01b0\u1ee3c v\xe0i ng\xe0y kh\xf4ng th\u1ea5y h\xe0o quang c\u1ee7a Ph\u1eadt hi\u1ec7n ra l\xe0 li\u1ec1n b\u1ecf kh\xf4ng ni\u1ec7m n\u1eefa. Nh\u01b0 v\u1eady th\xec g\u1ecdi g\xec l\xe0 tu h\xe0nh? Kinh L\u0103ng Nghi\xeam n\xf3i r\u1ea5t r\xf5 r\xe0ng: "N\u1ebfu kh\xf4ng tr\xec gi\u1edbi, d\u1eabu c\xf3 t\u1ee5ng ch\xfa, chung quy c\u0169ng kh\xf4ng ph\u1ea3i l\xe0 ch\xednh \u0111\u1ecbnh." B\u1ea1n v\u1eeba \u0103n th\u1ecbt u\u1ed1ng r\u01b0\u1ee3u, l\u1ea1i v\u1eeba ni\u1ec7m ch\xfa, th\xec l\xe0m sao m\xe0 c\xf3 hi\u1ec7u qu\u1ea3 cho \u0111\u01b0\u1ee3c?\n\nH\xe3y nh\u1edb k\u1ef9 l\u1eddi n\xe0y c\u1ee7a t\xf4i: Tr\xec Ch\xfa L\u0103ng Nghi\xeam th\xec ph\u1ea3i gi\u1ed1ng nh\u01b0 \u0103n c\u01a1m v\u1eady, m\u1ed9t ng\xe0y c\u0169ng kh\xf4ng th\u1ec3 thi\u1ebfu. S\xe1ng ni\u1ec7m, t\u1ed1i ni\u1ec7m, \u0111i \u0111\u01b0\u1eddng ni\u1ec7m, ng\u1ed3i xe ni\u1ec7m, h\xe3y ni\u1ec7m b\xe0i ch\xfa n\xe0y v\xe0o t\u1eadn trong t\xe2m c\u1ee7a m\xecnh. C\u1ee9 ni\u1ec7m nh\u01b0 v\u1eady su\u1ed1t ba n\u0103m, b\u1ea1n s\u1ebd t\u1ef1 bi\u1ebft c\xe1i l\u1ee3i \xedch c\u1ee7a n\xf3.\n\nCu\u1ed1i c\xf9ng t\xf4i n\xf3i cho c\xe1c b\u1ea1n bi\u1ebft: C\xe1i l\u1ee3i \xedch l\u1edbn nh\u1ea5t c\u1ee7a vi\u1ec7c tr\xec Ch\xfa L\u0103ng Nghi\xeam kh\xf4ng ph\u1ea3i l\xe0 c\u1ea7u ph\xe1t t\xe0i, c\u1ea7u b\xecnh an, m\xe0 l\xe0 \u0111\u1ec3 khai m\u1edf tr\xed tu\u1ec7, \u0111\u1ec3 minh t\xe2m ki\u1ebfn t\xednh. C\xe1c b\u1ea1n nh\xecn H\u01b0 V\xe2n L\xe3o H\xf2a Th\u01b0\u1ee3ng xem, t\u1ea1i sao ng\xe0i l\u1ea1i c\xf3 th\u1ec3 s\u1ed1ng \u0111\u1ebfn 120 tu\u1ed5i? Ch\xednh l\xe0 v\xec ng\xe0y ng\xe0y ng\xe0i \u0111\u1ec1u tr\xec Ch\xfa L\u0103ng Nghi\xeam!\n\n(Tr\xedch t\u1eeb b\xe0i khai th\u1ecb "C\xf4ng \u0111\u1ee9c c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam" c\u1ee7a Tuy\xean H\xf3a Th\u01b0\u1ee3ng Nh\xe2n, V\u1ea1n Ph\u1eadt Th\xe1nh Th\xe0nh)'],q,q)],t.m0),new A.atx(this),p),p.i("B.E"))
+q=A.a_(new A.aN(A.b([A.Y(["title","CU\u1ed8C \u0110\u1edcI H\xd2A TH\u01af\u1ee2NG TUY\xcaN H\xd3A","meta",s,"preview",'1. Hi\u1ec7n T\u01b0\u1ee3ng \u0110\u1ea3n Sanh V\xe0 S\u1ef1 Tr\xf9ng H\u1ee3p Nh\xe2n Duy\xean\n\nH\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a \u0111\u1ea3n sanh v\xe0o gi\u1edd T\xfd ng\xe0y 16 th\xe1ng 3 n\u0103m 1918.\n\n\u0110\xeam tr\u01b0\u1edbc khi Ng\xe0i ch\xe0o \u0111\u1eddi, th\xe2n m\u1eabu Ng\xe0i l\xe0 b\xe0 B\u1ea1ch H\u1ed3 Th\u1ecb n\u1eb1m m\u1ed9ng th\u1ea5y \u0110\u1ee9c Ph\u1eadt A Di \u0110\xe0 ph\xf3ng \xe1nh ho\xe0ng kim ch\xf3i l\u1ecdi, khi t\u1ec9nh gi\u1ea5c ng\u1eedi th\u1ea5y m\xf9i h\u01b0\u01a1ng k\u1ef3 di\u1ec7u lan t\u1ecfa.\n\nV\u1eeba l\u1ecdt l\xf2ng, Ng\xe0i c\u1ea5t ti\u1ebfng kh\xf3c li\xean t\u1ee5c su\u1ed1t ba ng\xe0y \u0111\xeam kh\xf4ng ng\u1eebng. Ch\u1ec9 \u0111\u1ebfn khi c\xf3 k\u1ebb tr\u1ed9m \u0111\u1ed9t nh\u1eadp v\xe0o ng\xf4i nh\xe0 ngh\xe8o l\u1ea5y \u0111i \xedt \u0111\u1ed3 \u0111\u1ea1c gi\xe1 tr\u1ecb \xedt \u1ecfi, Ng\xe0i m\u1edbi ch\u1ecbu ng\u01b0ng kh\xf3c.\n\nH\xe0nh tr\u1ea1ng \u0111\u1ea3n sanh v\xe0 xu\u1ea5t gia c\u1ee7a Ng\xe0i mang s\u1ef1 an b\xe0i nh\xe2n duy\xean k\u1ef3 l\u1ea1: Ng\xe0i sanh ng\xe0y 16 th\xe1ng 3 (S\u01b0 ph\u1ee5 Ng\xe0i sanh ng\xe0y 15, S\u01b0 b\xe1c sanh ng\xe0y 17); Ng\xe0i xu\u1ea5t gia ng\xe0y 16 th\xe1ng 9 (S\u01b0 ph\u1ee5 xu\u1ea5t gia ng\xe0y 15, S\u01b0 b\xe1c xu\u1ea5t gia ng\xe0y 17).\n\n2. Tu\u1ed5i Th\u01a1 Vua Con N\xedt V\xe0 S\u1ef1 Th\u1ec3 Ng\u1ed9 Sanh T\u1eed\n\nThu\u1edf nh\u1ecf, Ng\xe0i sinh tr\u01b0\u1edfng trong gia \u0111\xecnh ngh\xe8o ngh\xe8o \u0111\xf4ng anh em. Ng\xe0i t\u1eebng c\xf3 t\xednh c\xe1ch k\u1ef3 qu\xe1i, h\u1ec5 kh\xf4ng v\u1eeba \xfd l\xe0 kh\xf3c r\xe9 l\xean 1 \u0111\u1ebfn 3 ng\xe0y \u0111\xeam b\u1ecf \u0103n u\u1ed1ng \u0111\u1ec3 cha m\u1eb9 ch\u1ecbu thua.\n\nT\u1eeb 7 \u0111\u1ebfn 8 tu\u1ed5i, Ng\xe0i th\xedch l\xe0m "vua con n\xedt", t\u1ef1 \u0111\u1eafp g\xf2 \u0111\u1ea5t cao "\u0111\u0103ng c\u01a1 t\u1ecda \u0111i\u1ec7n", b\u1eaft h\xe0ng ch\u1ee5c \u0111\u1ebfn h\xe0ng tr\u0103m \u0111\u1ee9a tr\u1ebb qu\u1ef3 l\u1ea1y x\u01b0ng "v\u1ea1n tu\u1ebf" v\xe0 s\u1eb5n s\xe0ng \u0111\xe1nh l\u1ed9n v\u1edbi ng\u01b0\u1eddi l\u1edbn g\u1ea5p \u0111\xf4i tu\u1ed5i m\xecnh \u0111\u1ec3 \u0111\xf2i l\u1ea1i s\u1ef1 c\xf4ng b\u1eb1ng.\n\nN\u0103m 11 tu\u1ed5i, l\u1ea7n \u0111\u1ea7u ti\xean nh\xecn th\u1ea5y thi h\xe0i m\u1ed9t \u0111\u1ee9a b\xe9 b\u1ecb b\xf3 r\u01a1m v\u1ee9t b\u1ecf ngo\u1ea1i th\xe0nh, Ng\xe0i gi\u1eadt m\xecnh ng\u1ed9 ra s\u1ef1 v\xf4 th\u01b0\u1eddng c\u1ee7a ki\u1ebfp ng\u01b0\u1eddi. Ng\xe0i h\u1ecfi m\u1eb9 v\xe0 \u0111\u01b0\u1ee3c ng\u01b0\u1eddi h\u1ecd h\xe0ng L\xfd L\xe2m ch\u1ec9 r\u1eb1ng xu\u1ea5t gia tu Ph\u1eadt tu Ti\xean m\u1edbi kh\u1ecfi ch\u1ebft.\n\nTh\xe2n m\u1eabu d\u1eb7n Ng\xe0i ph\u1ea3i gi\u1eef tr\u1ecdn hi\u1ebfu \u0111\u1ea1o ph\u1ee5ng d\u01b0\u1ee1ng cha m\u1eb9 tr\u01b0\u1edbc. Ng\xe0i v\xe2ng l\u1eddi \u1edf nh\xe0 \u0103n chay, ni\u1ec7m Ph\u1eadt. C\xf9ng th\u1eddi gian n\xe0y, Ng\xe0i m\u1ed9ng th\u1ea5y B\xe0 l\xe3o d\u1eabn Ng\xe0i qua con \u0111\u01b0\u1eddng hi\u1ec3m tr\u1edf nh\u01b0 chi\u1ebfc nia \u0111\u1ea7y h\u1ea7m h\u1ed1, ngo\u1ea3nh l\u1ea1i th\u1ea5y mu\xf4n v\u1ea1n ng\u01b0\u1eddi thu\u1ed9c m\u1ecdi t\u1ea7ng l\u1edbp \u0111i theo sau \u2013 \u0111i\u1ec1m b\xe1o tr\u01b0\u1edbc cho \u0111\u1ea1o nghi\u1ec7p \u0111\u1ed9 sanh r\u1ed9ng l\u1edbn.\n\n3. H\xe0nh Tr\u1ea1ng B\xe1i L\u1ea1y Mu\xf4n Lo\xe0i V\xe0 T\u1ea7m S\u01b0 H\u1ecdc \u0110\u1ea1o\n\nN\u0103m 12 tu\u1ed5i, Ng\xe0i ch\u1ee3t t\u1ec9nh gi\xe1c, nh\u1eadn ra m\xecnh t\u1eebng b\u1ea5t hi\u1ebfu n\xean b\u1eaft \u0111\u1ea7u \u0111\u1ea3nh l\u1ec5 cha m\u1eb9 s\xe1m h\u1ed1i. Ng\xe0i m\u1edf r\u1ed9ng b\xe1i l\u1ea1y c\xe1c b\u1eadc Th\xe1nh Hi\u1ec1n, \u0111\u1ea1i hi\u1ebfu t\u1eed, v\xe0 \u0111\u1eb7c bi\u1ec7t l\xe0 l\u1ea1y c\u1ea3 nh\u1eefng k\u1ebb \u0111\u1ea1i \xe1c, l\u01b0u manh c\xf9ng lo\xe0i ki\u1ebfn, mu\u1ed7i m\xf2ng vi t\u1ebf v\xec xem ch\xfang l\xe0 b\u1ea1n c\u0169 mu\xf4n ki\u1ebfp. M\u1ed7i ng\xe0y Ng\xe0i l\u1ea1y 837 l\u1ea1y b\u1ea5t ch\u1ea5p m\u01b0a gi\xf4ng, tuy\u1ebft r\u01a1i hay s\u1ea5m s\xe9t.\n\nT\u1eeb 13\u201314 tu\u1ed5i, Ng\xe0i rong ru\u1ed5i ch\u1ea1y b\u1ed9 5 d\u1eb7m \u0111\u01b0\u1eddng m\u1ed7i ng\xe0y nghe gi\u1ea3ng Kinh \u0110\u1ecba T\u1ea1ng, nghi\xean c\u1ee9u gi\xe1o ngh\u0129a t\u1eeb Nho, \u0110\u1ea1o, Thi\xean Ch\xfaa \u0111\u1ebfn c\xe1c t\xe0 m\xf4n ngo\u1ea1i \u0111\u1ea1o \u0111\u1ec3 t\xecm \u0111\u01b0\u1eddng gi\u1ea3i tho\xe1t. Khi ng\u1ed3i t\u0129nh l\u1eb7ng, Ng\xe0i c\xf3 th\u1ec3 nghe v\u0103ng v\u1eb3ng trong h\u01b0 kh\xf4ng h\xe0ng tr\u0103m v\u1ecb Ph\xe1p s\u01b0 \u0111ang \u0111\u1ed3ng th\u1eddi thuy\u1ebft ph\xe1p.\n\n4. Xu\u1ea5t Gia, Th\u1ee7 Hi\u1ebfu V\xe0 M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n\n\nN\u0103m 19 tu\u1ed5i (1937), th\xe2n m\u1eabu qua \u0111\u1eddi. Sau khi mai t\xe1ng, Ng\xe0i \u0111\u1ebfn ch\xf9a Tam Duy\xean b\xe1i H\xf2a th\u01b0\u1ee3ng Th\u01b0\u1eddng Tr\xed xu\u1ea5t gia, mang ph\xe1p danh An T\u1eeb, hi\u1ec7u \u0110\u1ed9 Lu\xe2n. Ng\xe0i v\u1ec1 b\xean m\u1ed9 m\u1eb9 c\u1ea5t am tranh th\u1ee7 hi\u1ebfu 3 n\u0103m.\n\nNh\xe2n ng\xe0y v\xeda \u0110\u1ee9c Qu\xe1n Th\u1ebf \xc2m B\u1ed3 T\xe1t (19/6 \xe2m l\u1ecbch), Ng\xe0i \u0111\u1ed1i tr\u01b0\u1edbc Ch\u01b0 Ph\u1eadt ph\xe1t M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n ch\u1ea5n \u0111\u1ed9ng: nguy\u1ec7n \u0111\u1ecba ng\u1ee5c, s\xfac sanh, ng\u1ea1 qu\u1ef7 c\xf2n m\u1ed9t k\u1ebb ch\u01b0a th\xe0nh Ph\u1eadt th\xec th\u1ec1 kh\xf4ng gi\u1eef ng\xf4i Ch\xe1nh Gi\xe1c; nguy\u1ec7n \u0111\u1eafc Ng\u0169 nh\xe3n L\u1ee5c th\xf4ng, phi h\xe0nh t\u1ef1 t\u1ea1i.\n\nTr\u1ea3i qua nhi\u1ec1u danh x\u01b0ng nh\u01b0 B\u1ea1ch Hi\u1ebfu T\u1eed, Ho\u1ea1t T\u1eed Nh\xe2n, Tuy\xean H\xf3a, Ng\xe0i lu\xf4n khi\xeam t\u1ed1n khai th\u1ecb r\u1eb1ng t\xean th\u1eadt s\u1ef1 c\u1ee7a Ng\xe0i ch\xednh l\xe0 "H\u01b0 Kh\xf4ng".\n\nPH\u1ea6N II: NH\u1eeeNG L\u1ea6N \u0110\u1ed8 SANH K\u1ef2 B\xcd, HUY\u1ec0N DI\u1ec6U C\u1ee6A NG\xc0I\n\n1. B\u1ea3n Nguy\u1ec7n H\xe0ng Ma Ph\u1ee5c Qu\xe1i V\xe0 C\u1ea3m H\xf3a Y\xeau M\u1ecb Ng\xe0n N\u0103m\n\nH\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a \u0111\u01b0\u1ee3c t\xf4n x\u01b0ng l\xe0 h\xf3a th\xe2n c\u1ee7a \u0110\u1ee9c Qu\xe1n Th\u1ebf \xc2m B\u1ed3 T\xe1t. To\xe0n b\u1ed9 cu\u1ed9c \u0111\u1eddi \u0111\u1ed9 sanh c\u1ee7a Ng\xe0i \u0111ong \u0111\u1ea7y nh\u1eefng c\xe2u chuy\u1ec7n th\u1ea7n d\u1ecb, huy\u1ec1n k\u1ef3 b\u1eadc nh\u1ea5t trong gi\u1edbi Ph\u1eadt gi\xe1o.\n\nV\u1edbi \u0111\u1ea1o h\u1ea1nh tu h\xe0nh th\xe2m s\xe2u v\xe0 uy l\u1ef1c B\u1ed3 \u0110\u1ec1 t\xe2m, Ng\xe0i \u0111\xe3 d\u1ea5n th\xe2n v\xe0o nh\u1eefng n\u01a1i u t\u1ed1i nh\u1ea5t \u0111\u1ec3 c\u1ee9u \u0111\u1ed9 ch\xfang sanh. T\u1eeb vi\u1ec7c h\xe0ng ph\u1ee5c ma qu\xe1i, khu\u1ea5t ph\u1ee5c c\xe1c lo\xe0i qu\u1ef7 th\u1ea7n hung t\u1ee3n cho \u0111\u1ebfn c\u1ea3m h\xf3a nh\u1eefng y\xeau m\u1ecb tu luy\u1ec7n ng\xe0n n\u0103m, t\u1ea5t c\u1ea3 \u0111\u1ec1u b\u1ecb \xe2n \u0111\u1ee9c t\u1eeb bi v\xe0 \u0111\u1ea1o l\u1ef1c v\u0129 \u0111\u1ea1i c\u1ee7a Ng\xe0i thu ph\u1ee5c, quay \u0111\u1ea7u h\u01b0\u1edbng thi\u1ec7n.\n\nNg\xe0i kh\xf4ng d\xf9ng th\u1ea7n th\xf4ng \u0111\u1ec3 ti\xeau di\u1ec7t m\xe0 d\xf9ng l\xf2ng t\u1eeb bi bao la v\xe0 tinh th\u1ea7n b\xecnh \u0111\u1eb3ng \u0111\u1ec3 h\xf3a gi\u1ea3i \u01a1n o\xe1n mu\xf4n ki\u1ebfp.\n\n3. S\u1ef1 B\xe1i L\u1ea1y H\xf3a Gi\u1ea3i Oan Nghi\u1ec7p V\xe0 Thu Ph\u1ee5c Ch\xfang Sanh V\xf4 H\xecnh\n\nNhi\u1ec7m m\xe0u v\xe0 \u0111\u1eb7c k\u1ef3 b\u1eadc nh\u1ea5t trong \u0111\u1ea1o nghi\u1ec7p c\u1ee7a Ng\xe0i ch\xednh l\xe0 h\xe0nh tr\u1ea1ng b\xe1i l\u1ea1y ch\xfang sanh t\u1eeb n\u0103m 12 tu\u1ed5i. Ng\xe0i kh\xf4ng ch\u1ec9 l\u1ea1y Ph\u1eadt, B\u1ed3 T\xe1t m\xe0 l\u1ea1y c\u1ea3 nh\u1eefng k\u1ebb \u0111\u1ea1i \xe1c, \u0111\u1ea1i ho\u1ea1i v\xe0 mu\u1ed7i m\xf2ng, ki\u1ebfn b\u1ecd.\n\nNg\xe0i nh\xecn th\u1ea5y b\u1eb1ng tu\u1ec7 nh\xe3n r\u1eb1ng trong mu\xf4n ki\u1ebfp qu\xe1 kh\u1ee9, t\u1ea5t c\u1ea3 ch\xfang sanh \u0111\u1ec1u t\u1eebng l\xe0 cha m\u1eb9, b\u1ea1n b\xe8 ho\u1eb7c c\xf3 duy\xean n\u1ee3 v\u1edbi Ng\xe0i. Vi\u1ec7c Ng\xe0i b\xe1i l\u1ea1y ngo\xe0i tr\u1eddi b\u1ea5t ch\u1ea5p tuy\u1ebft ph\u1ee7 m\u01b0a gi\xf4ng ch\xednh l\xe0 c\xe1ch Ng\xe0i d\xf9ng th\xe2n m\xecnh g\xe1nh b\u1edbt t\u1ed9i nghi\u1ec7p cho h\u1ecd.\n\nSau n\xe0y, khi Ng\xe0i \u0111i \u0111\u1ebfn \u0111\xe2u c\u0169ng c\xf3 h\xe0ng ng\xe0n ng\u01b0\u1eddi qu\u1ef3 l\u1ea1y, Ng\xe0i ch\u1ec9 \xf4n t\u1ed3n gi\u1ea3i th\xedch r\u1eb1ng \u0111\xf3 kh\xf4ng ph\u1ea3i v\xec Ng\xe0i c\xf3 \u0111\u1ee9c cao v\u1ecdng tr\u1ecdng, m\xe0 th\u1ef1c ch\u1ea5t h\u1ecd ch\u1ec9 \u0111ang "tr\u1ea3 n\u1ee3 c\u0169" m\xe0 Ng\xe0i \u0111\xe3 l\u1ea1y h\u1ecd t\u1eeb khi m\u1edbi 12 tu\u1ed5i. S\u1ef1 khi\xeam h\u1ea1 v\xe0 dung ch\u1ee9a v\xf4 t\u1eadn n\xe0y \u0111\xe3 c\u1ea3m h\xf3a bi\u1ebft bao t\xe2m h\u1ed3n ki\xeau m\u1ea1n, khi\u1ebfn c\u1ea3 ch\xfang sanh h\u1eefu h\xecnh l\u1eabn v\xf4 h\xecnh \u0111\u1ec1u s\u1ee5p l\u1ea1y quy y.\n\n4. M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n V\xe0 Th\u1ea7n Th\xf4ng Phi H\xe0nh T\u1ef1 T\u1ea1i\n\nKhi ph\xe1t M\u01b0\u1eddi T\xe1m \u0110\u1ea1i Nguy\u1ec7n n\u0103m 19 tu\u1ed5i, Ng\xe0i nguy\u1ec7n \u0111\u1eafc Ng\u0169 nh\xe3n L\u1ee5c th\xf4ng, phi h\xe0nh t\u1ef1 t\u1ea1i \u0111\u1ec3 \u0111i kh\u1eafp ph\xe1p gi\u1edbi \u0111\u1ed9 sanh. \u0110i\u1ec1m b\xe1o t\u1eeb gi\u1ea5c m\u1ed9ng tu\u1ed5i th\u01a1 \u2013 khi Ng\xe0i d\u1eaft tay B\xe0 l\xe3o d\u1eabn h\xe0ng v\u1ea1n ng\u01b0\u1eddi thu\u1ed9c \u0111\u1ee7 s\u1eafc t\u1ed9c, T\u0103ng s\u0129 l\u1eabn ng\u01b0\u1eddi \u0111\u1eddi tho\xe1t kh\u1ecfi con \u0111\u01b0\u1eddng hi\u1ec3m h\xf3c \u2013 \u0111\xe3 tr\u1edf th\xe0nh s\u1ef1 th\u1eadt.\n\n\u0110\u1ea1o nghi\u1ec7p c\u1ee7a Ng\xe0i kh\xf4ng d\u1eebng l\u1ea1i \u1edf \xc1 \u0110\xf4ng m\xe0 v\u01b0\u01a1n r\u1ed9ng ra to\xe0n c\u1ea7u. Ng\xe0i \u0111em ch\xe1nh ph\xe1p gieo r\u1eafc kh\u1eafp ph\u01b0\u01a1ng T\xe2y, th\xe0nh l\u1eadp c\xe1c \u0111\u1ea1o trang, phi\xean d\u1ecbch kinh \u0111i\u1ec3n v\xe0 h\xf3a \u0111\u1ed9 v\xf4 s\u1ed1 \u0111\u1ec7 t\u1eed xu\u1ea5t gia l\u1eabn t\u1ea1i gia.\n\nNG\xc0I KHAI TH\u1eca\n\n1. Ch\xfa L\u0103ng Nghi\xeam \u2013 Vua Trong C\xe1c Th\u1ea7n Ch\xfa V\xe0 B\u1ea3o B\u1ed1i H\xe0ng Ma\n\nTrong cu\u1ed9c \u0111\u1eddi ho\u1eb1ng h\xf3a, H\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a lu\xf4n coi Kinh v\xe0 Ch\xfa L\u0103ng Nghi\xeam l\xe0 "x\u01b0\u01a1ng s\u1ed1ng" c\u1ee7a Ph\u1eadt ph\xe1p. Ng\xe0i t\u1eebng khai th\u1ecb c\xe2u n\xf3i n\u1ed5i ti\u1ebfng: "L\u0103ng Nghi\xeam h\u01b0ng th\xec Ph\u1eadt ph\xe1p h\u01b0ng; L\u0103ng Nghi\xeam di\u1ec7t th\xec Ph\u1eadt ph\xe1p di\u1ec7t." Ng\xe0i v\xed Ch\xfa L\u0103ng Nghi\xeam nh\u01b0 chi\u1ebfc "K\xednh chi\u1ebfu y\xeau", "G\u1eady h\xe0ng ma" v\xe0 "Thanh ki\u1ebfm ch\xe9m ma" t\u1ed1i th\u01b0\u1ee3ng c\u1ee7a ch\u01b0 Ph\u1eadt.\n\nTheo l\u1eddi Ng\xe0i gi\u1ea3ng gi\u1ea3i, Ch\xfa L\u0103ng Nghi\xeam \u0111\u01b0\u1ee3c chia l\xe0m Ng\u0169 B\u1ed9 Ch\xfa tr\u1ea5n gi\u1eef n\u0103m ph\u01b0\u01a1ng trong ph\xe1p gi\u1edbi:\n\n\u2022 Kim Cang b\u1ed9 (ph\u01b0\u01a1ng \u0110\xf4ng, do \u0110\u1ee9c Ph\u1eadt A S\xfac l\xe0m ch\u1ee7) \u2013 chuy\xean nhi\u1ebfp ph\u1ee5c t\xe0 ma qu\u1ef7 th\u1ea7n.\n\u2022 B\u1ea3o Sinh b\u1ed9 (ph\u01b0\u01a1ng Nam, do \u0110\u1ee9c Ph\u1eadt B\u1ea3o Sinh l\xe0m ch\u1ee7).\n\u2022 Ph\u1eadt b\u1ed9 (ch\xednh gi\u1eefa, do \u0110\u1ee9c Ph\u1eadt Th\xedch Ca M\xe2u Ni l\xe0m ch\u1ee7).\n\u2022 Li\xean Hoa b\u1ed9 (ph\u01b0\u01a1ng T\xe2y, do \u0110\u1ee9c Ph\u1eadt A Di \u0110\xe0 l\xe0m ch\u1ee7).\n\u2022 Nghi\u1ec7p b\u1ed9 (ph\u01b0\u01a1ng B\u1eafc, do \u0110\u1ee9c Ph\u1eadt Th\xe0nh T\u1ef1u l\xe0m ch\u1ee7).\n\nS\u1ef1 k\u1ebft h\u1ee3p c\u1ee7a Ng\u0169 B\u1ed9 Ch\xfa t\u1ea1o n\xean m\u1ed9t h\xe0ng r\xe0o kim cang ki\xean c\u1ed1, xua tan m\u1ecdi ma kh\xed v\xe0 y\xeau m\u1ecb trong v\u0169 tr\u1ee5.\n\n2. H\xe0ng Ph\u1ee5c T\xe0 Ma, Qu\u1ef7 Th\u1ea7n V\xe0 Ph\xe1 50 Hi\u1ec7n T\u01b0\u1ee3ng \u1ea4m Ma\n\nH\xf2a th\u01b0\u1ee3ng Tuy\xean H\xf3a khai th\u1ecb r\u1eb1ng khi ng\u01b0\u1eddi tu tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam v\u1edbi t\xe2m ch\xed th\xe0nh v\xe0 gi\u1edbi lu\u1eadt thanh t\u1ecbnh, \xe1nh h\xe0o quang t\u1eeb \u0111\u1ea3nh nh\u1ee5c k\u1ebf c\u1ee7a \u0110\u1ee9c Ph\u1eadt s\u1ebd ph\xf3ng ra ch\xf3i l\u1ecdi. Ch\u01b0 Thi\xean, H\u1ed9 Ph\xe1p, Kim Cang B\u1ed3 T\xe1t \u0111\u1ed3ng th\u1eddi v\xe2y quanh b\u1ea3o h\u1ed9, khi\u1ebfn t\u1ea5t c\u1ea3 c\xe1c lo\xe0i t\xe0 ma, y\xeau ma qu\u1ef7 qu\xe1i, ly m\u1ecb v\u1ecdng l\u01b0\u1ee3ng \u0111\u1ec1u b\u1ecb uy l\u1ef1c th\u1ea7n ch\xfa ch\u1ea5n \u0111\u1ed9ng m\xe0 kinh s\u1ee3, ph\u1ea3i th\xe1o ch\u1ea1y ho\u1eb7c c\xfai \u0111\u1ea7u quy ph\u1ee5c.\n\n3. Khai Th\u1ecb V\u1ec1 Th\xe1i \u0110\u1ed9 Tr\xec Ch\xfa Cho H\xe0ng H\u1eadu H\u1ecdc\n\nH\xf2a th\u01b0\u1ee3ng lu\xf4n nh\u1eafc nh\u1edf \u0111\u1ec7 t\u1eed r\u1eb1ng Ch\xfa L\u0103ng Nghi\xeam l\xe0 "Linh v\u0103n c\u1ee7a tr\u1eddi \u0111\u1ea5t c\u1ee9u th\u1ebf gi\u1edbi". Tuy nhi\xean, Ng\xe0i nh\u1ea5n m\u1ea1nh tr\xec ch\xfa kh\xf4ng ph\u1ea3i \u0111\u1ec3 c\u1ea7u danh l\u1ee3i hay ph\xf4 tr\u01b0\u01a1ng th\u1ea7n th\xf4ng. Mu\u1ed1n Ch\xfa L\u0103ng Nghi\xeam ph\xe1t huy uy l\u1ef1c h\xe0ng ma tr\u1ecb b\u1ec7nh, ng\u01b0\u1eddi tr\xec ch\xfa ph\u1ea3i:\n\n\u2022 Gi\u1eef g\xecn gi\u1edbi lu\u1eadt thanh t\u1ecbnh: \u0110\u1eb7c bi\u1ec7t l\xe0 kh\xf4ng s\xe1t sanh, \u0103n chay tr\u1ecdn v\u1eb9n, kh\xf4ng d\xe2m d\u1ee5c v\xe0 kh\xf4ng n\xf3i d\xf3c.\n\u2022 D\u1ee9t tr\u1eeb Tham - S\xe2n - Si: Gi\u1eef t\xe2m \u0111\u1ecba ch\xe2n th\u1eadt, khi\xeam h\u1ea1 v\xe0 chan h\xf2a t\xecnh th\u01b0\u01a1ng \u0111\u1ebfn mu\xf4n lo\xe0i.\n\u2022 Kh\xf4ng ch\u1ea5p t\u01b0\u1edbng th\u1eddi gian: B\u1ea5t k\u1ef3 gi\u1edd ph\xfat n\xe0o t\xe2m ch\xed th\xe0nh ni\u1ec7m ch\xfa th\xec l\xfac \u0111\xf3 \u0111\u1ec1u l\xe0 th\u1eddi \u0111i\u1ec3m linh \u1ee9ng nh\u1ea5t.'],q,q),A.Y(["title","TH\xc0NH T\xc2M T\u1ee4NG CH\xda L\u0102NG NGHI\xcaM S\u1ebc \u0110\u1eaeC \u0110\u01af\u1ee2C PH\xc1P TH\xc2N","meta",s,"preview","\u201cTh\xe0nh t\xe2m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, th\xec kh\xf4ng c\u1ea7n tr\u1ea3i qua th\u1eddi gian l\xe2u d\xe0i c\u0169ng s\u1ebd \u0111\u1eafc \u0111\u01b0\u1ee3c Ph\xe1p Th\xe2n.\u201d\n\nCon ng\u01b0\u1eddi t\u1eeb v\xf4 l\u01b0\u1ee3ng ki\u1ebfp \u0111\u1ebfn nay, c\xf3 nh\u1eefng v\u1ecdng tri v\u1ecdng ki\u1ebfn, t\xe0 tri t\xe0 ki\u1ebfn, \u0111i\xean \u0111\u1ea3o m\u1ed9ng t\u01b0\u1edfng. T\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o t\u1ee9c l\xe0 ch\u1eb3ng ph\u1ea3i th\u01b0\u1eddng cho l\xe0 th\u01b0\u1eddng, ch\u1eb3ng ph\u1ea3i \u0111o\u1ea1n cho l\xe0 \u0111o\u1ea1n, ch\u1eb3ng c\xf3 cho l\xe0 c\xf3, ch\u1eb3ng kh\xf4ng cho l\xe0 kh\xf4ng; ch\u1ea1y theo c\u1ea3nh gi\u1edbi kh\xf4ng th\u1eadt, kh\xf4ng th\u1ec3 chuy\u1ec3n \u0111\u01b0\u1ee3c c\u1ea3nh gi\u1edbi kh\xf4ng th\u1eadt, t\u1ee9c c\u0169ng l\xe0 ng\u01b0\u1eddi b\u1ecb c\u1ea3nh chuy\u1ec3n, m\xe0 kh\xf4ng th\u1ec3 chuy\u1ec3n \u0111\u01b0\u1ee3c c\u1ea3nh, t\u1ee9c c\u0169ng th\u01b0\u1eddng b\u1ecb gi\xf3 nghi\u1ec7p d\u1eaft \u0111i. S\u1ef1 sai l\u1ea7m ch\u1ec9 l\xe0 ch\xfat ch\xfat kh\xf4ng nhi\u1ec1u, nh\u01b0ng ch\u1ec9 m\u1ed9t ch\xfat ch\xfat n\xe0y, m\xe0 kh\xe1c bi\u1ec7t v\u1edbi ch\xe2n ch\xe1nh th\u01b0\u1eddng tr\u1ee5 ch\xe2n t\xe2m, t\xednh t\u1ecbnh minh th\u1ec3, sai l\u1ea7m h\xe0ng ng\xe0n d\u1eb7m.\n\n\u0110i\xean \u0111\u1ea3o t\u1ee9c l\xe0 kh\xf4ng n\xean t\u01b0\u1edfng m\xe0 t\u01b0\u1edfng, kh\xf4ng n\xean tham m\xe0 tham, kh\xf4ng n\xean s\xe2n m\xe0 s\xe2n, kh\xf4ng n\xean m\xea h\u1ed3 m\xe0 m\xea h\u1ed3. N\xf3i r\xf5 ra l\xe0 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o trong t\u1ef1 t\xe1nh. Kh\xf4ng th\u1ec3 \u0111\u1ea1i c\xf4ng v\xf4 t\u01b0, t\u1ee9c l\xe0 \u0111i\xean \u0111\u1ea3o. Th\u1ee9 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o n\xe0y, l\xe0 nguy\xean nh\xe2n khi\u1ebfn cho ch\xfang ta th\u1ecd sinh t\u1eed, trong s\xe1u n\u1ebbo lu\xe2n h\u1ed3i. Tu th\xec ph\u1ea3i ti\xeau tr\u1eeb t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o. Nh\u01b0 Ng\xe0i A Nan l\xe0 ng\u01b0\u1eddi th\xf4ng minh nh\u01b0 th\u1ebf, m\xe0 v\u1eabn c\xf3 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o gi\u1ed1ng nhau. S\u1ee9c tr\xed nh\u1edb c\u1ee7a Ng\xe0i r\u1ea5t phi th\u01b0\u1eddng. Ph\u1eadt n\xf3i h\u1ebft th\u1ea3y Kinh \u0111i\u1ec3n, m\u1ed9t khi l\u1ecdt qua tai th\xec v\u0129nh ki\u1ebfp kh\xf4ng qu\xean. Nh\u01b0ng khi Ng\xe0i th\u1ea5y n\u1eef Ma \u0110\u0103ng Gi\xe0, th\xec Ng\xe0i b\u1ecb giao \u0111\u1ed9ng, li\u1ec1n theo c\xf4 ta v\xe0o trong nh\xe0 ngo\u1ea1i \u0111\u1ea1o. \u0110\xe2y l\xe0 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o c\u1ee7a Ng\xe0i. Ng\u01b0\u1eddi nam th\xec tham, ng\u01b0\u1eddi n\u1eef th\xec \xe1i, t\u1ee9c l\xe0 t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o. \u0110\xe2y l\xe0 t\u1eeb v\xf4 l\u01b0\u1ee3ng ki\u1ebfp \u0111\u1ebfn nay \u0111\u1ec1u c\xf3. Cho n\xean n\xf3i Th\u1ee7 L\u0103ng Nghi\xeam V\u01b0\u01a1ng \u0111\u1ea1i \u0111\u1ecbnh, \u0111\u1ea1i ph\xe1p n\xe0y r\u1ea5t hi\u1ebfm c\xf3 trong th\u1ebf gian, s\u1ebd ti\xeau tr\u1eeb t\u01b0\u1edfng \u0111i\xean \u0111\u1ea3o \u0111\u1eddi \u0111\u1eddi ki\u1ebfp ki\u1ebfp, t\u1eeb v\xf4 l\u01b0\u1ee3ng ki\u1ebfp \u0111\u1ebfn nay.\n\n\u201cKh\xf4ng ph\u1ea3i tr\u1ea3i qua s\u1ed1 ki\u1ebfp A t\u0103ng k\u1ef3 m\xe0 ch\u1ee9ng \u0111\u01b0\u1ee3c ph\xe1p th\xe2n.\u201d \u0110\u1ee9c Ph\u1eadt tu h\xe0nh tr\u1ea3i qua ba \u0111\u1ea1i A t\u0103ng k\u1ef3 ki\u1ebfp m\u1edbi th\xe0nh Ph\u1eadt. Cho n\xean:\n\nTam k\u1ef3 tu ph\u01b0\u1edbc hu\u1ec7,\nB\xe1ch ki\u1ebfp ch\u1ee7ng t\u01b0\u1edbng h\u1ea3o.\n\nNgh\u0129a l\xe0:\n\n\u201cBa A T\u0103ng k\u1ef3 tu ph\u01b0\u1edbc hu\u1ec7\nTr\u0103m ki\u1ebfp tr\u1ed3ng t\u01b0\u1edbng t\u1ed1t.\u201d\n\nTu ph\u01b0\u1edbc m\u1ed9t tr\u0103m \u0111\u1ea1i ki\u1ebfp, m\u1edbi \u0111\u1eafc \u0111\u01b0\u1ee3c ba m\u01b0\u01a1i hai t\u01b0\u1edbng t\u1ed1t, t\xe1m m\u01b0\u01a1i v\u1ebb \u0111\u1eb9p. A t\u0103ng k\u1ef3 ki\u1ebfp t\u1ee9c v\xf4 l\u01b0\u1ee3ng s\u1ed1, ba A t\u0103ng k\u1ef3 ki\u1ebfp t\u1ee9c l\xe0 ba v\xf4 l\u01b0\u1ee3ng s\u1ed1. S\u1ed1 m\u1ee5c n\xe0y c\xf3 bao nhi\xeau? D\xf9ng m\xe1y \u0111i\u1ec7n to\xe1n c\u0169ng \u0111\u1ebfm kh\xf4ng \u0111\u01b0\u1ee3c. B\xe2y gi\u1edd Ng\xe0i A Nan n\xf3i: \u201cKh\xf4ng ph\u1ea3i tr\u1ea3i qua s\u1ed1 ki\u1ebfp A t\u0103ng k\u1ef3, m\xe0 ch\u1ee9ng \u0111\u01b0\u1ee3c ph\xe1p th\xe2n.\u201d T\xf4i \u0111\u1eafc \u0111\u01b0\u1ee3c \u0111\u1ea1i \u0111\u1ecbnh ki\xean c\u1ed1 c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam, kh\xf4ng c\u1ea7n tr\u1ea3i qua ba A t\u0103ng k\u1ef3 ki\u1ebfp, m\xe0 c\xf3 th\u1ec3 \u0111\u1eafc \u0111\u01b0\u1ee3c ph\xe1p th\xe2n, c\u0169ng s\u1ebd th\xe0nh Ph\u1eadt, ch\u1ee9ng \u0111\u01b0\u1ee3c ph\xe1p th\xe2n t\u1ef1 t\u1ea1i, th\u1ea7n th\xf4ng bi\u1ebfn h\xf3a. Th\xe0nh t\xe2m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, th\xec kh\xf4ng c\u1ea7n tr\u1ea3i qua th\u1eddi gian l\xe2u d\xe0i c\u0169ng s\u1ebd \u0111\u1eafc \u0111\u01b0\u1ee3c ph\xe1p th\xe2n.\n\nNam m\xf4 Kim Cang T\u1ea1ng B\u1ed3 T\xe1t\n\nL\u1ea1i quy y t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t. Ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam th\xec c\xf3 t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t th\u01b0\u1eddng b\u1ea3o h\u1ed9 b\u1ea1n, theo h\u1ea7u hai b\xean. Cho n\xean tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam kh\xf4ng ph\u1ea3i l\xe0 s\u1ef1 tr\u1ed3ng c\u0103n l\xe0nh m\u1ed9t \u0111\u1eddi, m\u1ed9t ki\u1ebfp, m\xe0 l\xe0 \u0111\xe3 tr\u1ed3ng c\u0103n l\xe0nh trong v\xf4 l\u01b0\u1ee3ng tr\u0103m ng\xe0n v\u1ea1n \u1ee9c ki\u1ebfp v\u1ec1 tr\u01b0\u1edbc, m\u1edbi c\xf3 th\u1ec3 h\u1ecdc v\xe0 tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam. Kh\xf4ng ph\u1ea3i tr\u1ed3ng c\u0103n l\xe0nh n\u01a1i m\u1ed9t \u0111\u1ee9c Ph\u1eadt, hai \u0111\u1ee9c Ph\u1eadt, ba, b\u1ed1n, n\u0103m \u0111\u1ee9c Ph\u1eadt, m\xe0 \u0111\xe3 tr\u1ed3ng c\u0103n l\xe0nh v\u1edbi v\xf4 l\u01b0\u1ee3ng ng\xe0n v\u1ea1n \u0111\u1ee9c Ph\u1eadt, m\u1edbi g\u1eb7p \u0111\u01b0\u1ee3c Ch\xfa L\u0103ng Nghi\xeam.\n\n\u0110\u1ee9c Th\u1ebf T\xf4n l\xe0 th\u1ebf xu\u1ea5t th\u1ebf, \u0111\u1ec1u t\xf4n k\xednh. L\u1ea1i kh\xf4ng so s\xe1nh th\xec c\xe0ng t\xf4n qu\xfd, cao si\xeau t\u1ee9c l\xe0 Ph\u1eadt. L\xfac \u0111\xf3, t\u1eeb tr\xean \u0111\u1ec9nh nh\u1ee5c k\u1ebf c\u1ee7a \u0111\u1ee9c Ph\u1eadt ph\xf3ng ra tr\u0103m lu\u1ed3ng quang minh b\xe1u, trong quang minh b\xe1u, v\u1ecdt ra hoa sen b\xe1u ng\xe0n c\xe1nh. Tr\u0103m b\xe1u \u1edf \u0111\xe2y l\xe0 bi\u1ec3u hi\u1ec7n b\xe1ch gi\u1edbi. Hoa sen b\xe1u ng\xe0n c\xe1nh l\xe0 bi\u1ec3u hi\u1ec7n thi\xean nh\u01b0. N\xf3i l\xe0 n\xf3i nh\u01b0 th\u1ebf, th\u1eadt ra kh\xf4ng ph\u1ea3i l\xe0 bi\u1ec3u hi\u1ec7n b\xe1ch gi\u1edbi thi\xean nh\u01b0, m\xe0 l\xe0 v\xf4 c\xf9ng v\xf4 t\u1eadn, v\xf4 l\u01b0\u1ee3ng v\xf4 bi\xean. C\xf3 th\u1ec3 n\xf3i ba ng\xe0n \u0111\u1ea1i thi\xean th\u1ebf gi\u1edbi, \u0111\xe2u ch\u1eb3ng ph\u1ea3i t\u1eeb tr\u0103m quang minh b\xe1u h\xf3a th\xe0nh. Tr\xean hoa sen b\xe1u c\xf3 h\xf3a th\xe2n c\u1ee7a Ph\u1eadt. H\xf3a th\xe2n l\xe0 do kh\xf4ng m\xe0 h\xf3a c\xf3. N\xf3i n\xf3 c\xf3, n\xf3 l\u1ea1i kh\xf4ng c\xf3, n\xf3i n\xf3 kh\xf4ng c\xf3, n\xf3 l\u1ea1i c\xf3. L\xfac hi\u1ec3n, l\xfac \u1ea9n, l\xfac c\xf3, l\xfac kh\xf4ng. Ng\u01b0\u1edbc m\u1eb7t xem \u1edf tr\u01b0\u1edbc, \u0111\u1ed9t nhi\xean l\u1ea1i \u1edf sau.\n\nH\xf3a th\xe2n Nh\u01b0 Lai, t\u1ee9c l\xe0 Ph\u1eadt bi\u1ebfn h\xf3a th\xe2n, ng\u1ed3i tr\xean hoa sen b\xe1u ng\xe0n c\xe1nh. Tr\xean \u0111\u1ea7u h\xf3a th\xe2n Nh\u01b0 Lai, l\u1ea1i ph\xf3ng ra m\u01b0\u1eddi lu\u1ed3ng tr\u0103m quang minh b\xe1u. M\u01b0\u1eddi lu\u1ed3ng quang minh bi\u1ec3u hi\u1ec7n m\u01b0\u1eddi ph\xe1p gi\u1edbi. M\u1ed7i m\u1ed7i quang minh \u0111\u1ec1u ph\u1ed5 bi\u1ebfn th\u1ecb hi\u1ec7n B\u1ed3 T\xe1t Kim Cang M\u1eadt T\xedch, nhi\u1ec1u nh\u01b0 s\u1ed1 c\xe1t m\u01b0\u1eddi s\xf4ng H\u1eb1ng. Kim Cang M\u1eadt T\xedch c\u0169ng l\xe0 Kim Cang H\u1ed9 Ph\xe1p, t\u1ee9c c\u0169ng l\xe0 H\u1ed9 Ph\xe1p Kim Cang. M\u1eadt T\xedch t\u1ee9c l\xe0 \xe2m th\u1ea7m b\u1ea3o h\u1ed9 b\u1ea1n. Ni\u1ec7m Ch\xfa c\xf3 \xedt nh\u1ea5t t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang b\u1ea3o h\u1ed9 b\u1ea1n. Th\u1ef1c ra kh\xf4ng ch\u1ec9 c\xf3 ch\u1eebng \u1ea5y, m\xe0 c\xf3 nhi\u1ec1u nh\u01b0 s\u1ed1 c\xe1t m\u01b0\u1eddi s\xf4ng H\u1eb1ng, d\xf9ng m\xe1y \u0111i\u1ec7n to\xe1n c\u0169ng t\xednh kh\xf4ng \u0111\u01b0\u1ee3c, s\u1ed1 H\u1ed9 Ph\xe1p Kim Cang trong s\u1ef1 \xe2m th\u1ea7m b\u1ea3o h\u1ed9 b\u1ea1n. Ch\xednh b\u1ea1n kh\xf4ng nh\xecn th\u1ea5y, nh\u01b0ng c\xf3 th\u1eadt.\n\n\u201cPh\xf3ng ra quang minh di\u1ec5n n\xf3i th\u1ea7n Ch\xfa.\u201d T\u1ee9c l\xe0 Nh\u01b0 Lai bi\u1ebfn h\xf3a tr\xean hoa sen b\xe1u l\u1edbn, tr\xean t\u01b0\u1edbng v\xf4 ki\u1ebfn \u0111\u1ea3nh c\u1ee7a Ng\xe0i, sinh ra tr\u0103m quang minh b\xe1u, tr\u0103m quang minh b\xe1u l\u1ea1i c\xf3 hoa sen b\xe1u ng\xe0n c\xe1nh. Tr\xean hoa sen b\xe1u ng\xe0n c\xe1nh, l\u1ea1i c\xf3 h\xf3a th\xe2n Nh\u01b0 Lai, l\u1ea1i ph\xf3ng \u0111\u1ea1i quang minh di\u1ec5n n\xf3i th\u1ea7n Ch\xfa. \u0110\xe2y l\xe0 Ph\u1eadt h\xf3a Ph\u1eadt tuy\xean thuy\u1ebft th\u1ea7n Ch\xfa. Kh\xf4ng ph\u1ea3i m\u1ed9t s\u1ed1 ng\u01b0\u1eddi c\xf3 th\u1ec3 nghe \u0111\u01b0\u1ee3c. \u0110\u01b0\u01a1ng th\u1eddi, \u0111\u1ec1u l\xe0 nh\u1eefng v\u1ecb ph\xe1p th\xe2n \u0110\u1ea1i S\u0129, \u0111\u1ea1i B\u1ed3 T\xe1t m\u1edbi c\xf3 th\u1ec3 nghe \u0111\u01b0\u1ee3c th\u1ea7n Ch\xfa. B\u1ea1n mu\u1ed1n nghe th\xec tr\u01b0\u1edbc ph\u1ea3i h\u1ecdc Ch\xfa L\u0103ng Nghi\xeam. H\u1ecdc xong r\u1ed3i m\u1edbi c\xf3 th\u1ec3 nghe.\n\n\u201cT\xe1t \u0110\xe1t \u0110a\u201d c\u0169ng l\xe0 ti\u1ebfng Ph\u1ea1n. D\u1ecbch l\xe0 \u201cb\u1ea1ch s\u1eafc\u201d (m\xe0u tr\u1eafng), c\u0169ng l\xe0 thanh t\u1ecbnh, ngh\u0129a l\xe0 kh\xf4ng nhi\u1ec5m \xf4. Cho n\xean n\xf3i: \u201cT\u01b0\u1edbng tuy\u1ec7t kh\xf4ng nhi\u1ec5m l\xe0 tr\u1eafng.\u201d Ch\xfa L\u0103ng Nghi\xeam l\xe0 ph\xe1p tr\u1eafng t\u1ecbnh, l\xe0 ph\xe1p thanh t\u1ecbnh kh\xf4ng nhi\u1ec5m. \u201cB\xe1t \u0110\xe1t La\u201d c\u0169ng l\xe0 ti\u1ebfng Ph\u1ea1n. D\u1ecbch l\xe0 \u201cc\xe1i l\u1ecdng\u201d. \u0110\xe2y l\xe0 v\xed d\u1ee5. V\xed d\u1ee5 m\u1ed9t c\xe1i l\u1ecdng d\xf9ng \u0111\u1ec3 che v\u1ea1n v\u1eadt, che h\u1ed9 h\u1ebft th\u1ea3y ng\u01b0\u1eddi c\xf3 \u0111\u1ee9c, ai c\xf3 \u0111\u1ee9c h\u1ea1nh th\xec ng\u01b0\u1eddi \u0111\xf3 g\u1eb7p \u0111\u01b0\u1ee3c ph\xe1p n\xe0y. Ng\u01b0\u1eddi kh\xf4ng c\xf3 \u0111\u1ee9c h\u1ea1nh th\xec kh\xf4ng g\u1eb7p \u0111\u01b0\u1ee3c ph\xe1p n\xe0y. Cho n\xean n\xf3i: \u201cTam quang ph\u1ed5 chi\u1ebfu th\u1ea5u tam t\xe0i.\u201d Ph\u1ea7n \u0111\xf4ng cho r\u1eb1ng \u201cTam quang\u201d l\xe0 nh\u1eadt, nguy\u1ec7t, tinh (m\u1eb7t tr\u1eddi, m\u1eb7t tr\u0103ng v\xe0 sao). Nh\u1eadt, nguy\u1ec7t, tinh l\xe0 ba th\u1ee9 \xe1nh s\xe1ng b\xean ngo\xe0i. T\u1ee5ng tr\xec Ch\xfa L\u0103ng Nghi\xeam, th\xec tr\xean th\xe2n c\xf3 quang minh c\u1ee7a th\xe2n, trong mi\u1ec7ng c\xf3 quang minh c\u1ee7a mi\u1ec7ng, trong t\xe2m c\xf3 quang minh c\u1ee7a t\xe2m. Th\xe2n mi\u1ec7ng \xfd ba nghi\u1ec7p \u0111\u1ec1u ph\xf3ng quang. B\u1ea1n nghe n\xf3i qua c\xe1i n\xe0y ch\u01b0a?\n\n\u0110\xe2y l\xe0 nghe c\xe1i ch\u01b0a nghe, th\u1ea5y c\xe1i ch\u01b0a th\u1ea5y. Quang tr\xean th\xe2n ph\xf3ng ra l\xe0 ho\xe0ng quang (quang minh m\xe0u v\xe0ng). Tu th\xe0nh c\xf4ng r\u1ed3i li\u1ec1n th\xe0nh kim quang, kim quang v\u1ea1n \u0111\u1ea1o. B\u1eaft \u0111\u1ea7u tu Ch\xfa L\u0103ng Nghi\xeam l\xe0 ho\xe0ng quang, l\xe2u d\u1ea7n th\xec bi\u1ebfn th\xe0nh kim quang. Cho n\xean n\xf3i: \u201cT\u1eed ma kim s\u1eafc v\u1ea1n \u0111\u1ea1o quang minh sung m\xe3n ph\xe1p gi\u1edbi.\u201d Ngh\u0129a l\xe0 v\u1ea1n lu\u1ed3ng h\xe0o quang v\xe0ng t\xeda \u0111\u1ea7y kh\u1eafp ph\xe1p gi\u1edbi. \u0110\u1ec1u do tu Ch\xfa L\u0103ng Nghi\xeam m\xe0 th\xe0nh.\n\nQuang minh trong mi\u1ec7ng ph\xf3ng ra l\xe0 h\u1ed3ng quang (quang minh m\xe0u \u0111\u1ecf). Quang minh trong t\xe2m ph\xf3ng ra l\xe0 b\u1ea1ch quang (quang minh m\xe0u tr\u1eafng). Nh\u01b0ng c\xf3 khi trong mi\u1ec7ng c\u0169ng ph\xf3ng ra ho\xe0ng quang, c\xf3 khi l\u1ea1i ph\xf3ng thanh quang (quang minh m\xe0u xanh), c\xf3 khi l\u1ea1i ph\xf3ng ra h\u1eafc quang (quang minh m\xe0u \u0111en). C\xf3 l\xfac quang minh xanh, v\xe0ng, \u0111\u1ecf, tr\u1eafng, \u0111en, \u0111\u1ec1u ph\xf3ng ra. B\u1ea5t qu\xe1 ph\u1ea3i tu th\xe0nh r\u1ed3i m\u1edbi c\xf3 \u0111\u01b0\u1ee3c.\n\n"],q,q),A.Y(["title","HAI M\u01af\u01a0I B\u1ed0N \xcdCH L\u1ee2I C\u1ee6A S\u1ef0 PHI\xcaN D\u1ecaCH","meta",s,"preview","Sau n\xf3i r\xf5 ch\u1ed7 \xedch l\u1ee3i c\u1ee7a s\u1ef1 phi\xean d\u1ecbch \u0111\u1ea1i kh\xe1i c\xf3 hai m\u01b0\u01a1i b\u1ed1n th\u1ee9.\n\n1. Bi\u1ebft \u0111\u01b0\u1ee3c h\u1ebft th\u1ea3y danh hi\u1ec7u c\u1ee7a ch\u01b0 Ph\u1eadt. Nh\u01b0 tr\u01b0\u1edbc c\xf3 m\u1ed9t \u0111o\u1ea1n \u0111\u1ec1u l\xe0 danh hi\u1ec7u c\u1ee7a ch\u01b0 Ph\u1eadt. X\u01b0ng t\u1ee9c th\u01b0\u1eddng th\u1ea5y th\xe2n Ph\u1eadt. N\u1ebfu b\u1ea1n th\u01b0\u1eddng t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam th\xec th\u01b0\u1eddng th\u1ea5y \u0111\u01b0\u1ee3c ph\xe1p th\xe2n c\u1ee7a ch\u01b0 Ph\u1eadt.\n\n2. Bi\u1ebft \u0111\u01b0\u1ee3c Ph\u1eadt Ph\xe1p T\u0103ng Tam B\u1ea3o. Nh\u1edd oai \u0111\u1ee9c \u0111\u1ec3 gia tr\xec cho ch\xfang ta.\n\n3. Bi\u1ebft Kim Cang T\u01b0\u1edbng nh\u01b0 B\u1ea1t \u0110\u1ed3 La, Th\u01b0\u01a1ng Y\u1ebft La v.v... T\u1ea5t c\u1ea3 t\xe0 ma ngo\u1ea1i \u0111\u1ea1o \u0111\u1ec1u \u0111\u1ebfn quy h\xe0ng.\n\n4. V\xec b\u1ea1n bi\u1ebft vua qu\u1ef7 th\u1ea7n, th\xec b\u1ed9 \u0111\u1ea3ng d\u01b0\u1edbi quy\u1ec1n c\u1ee7a ch\xfang s\u1ebd cung k\xednh b\u1ea1n.\n\n5. Bi\u1ebft n\u0103m b\u1ed9, ch\xednh gi\u1eefa l\xe0 Ph\u1eadt b\u1ed9, Ph\u1eadt T\u1ef3 L\xf4 Gi\xe1 Na l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng nam l\xe0 B\u1ea3o b\u1ed9, Ph\u1eadt B\u1ea3o Sinh l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng \u0111\xf4ng l\xe0 Kim Cang b\u1ed9, c\u0169ng l\xe0 A S\xfac b\u1ed9, Ph\u1eadt A S\xfac, c\u0169ng l\xe0 Ph\u1eadt D\u01b0\u1ee3c S\u01b0 l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng t\xe2y Li\xean Hoa b\u1ed9, Ph\u1eadt Di \u0110\xe0 l\xe0 ch\u1ee7. Ph\u01b0\u01a1ng B\u1eafc l\xe0 Y\u1ebft Ma b\u1ed9, Ph\u1eadt Th\xe0nh T\u1ef1u l\xe0 ch\u1ee7. Bi\u1ebft n\u0103m b\u1ed9 Ph\u1eadt Ch\xfa l\xe0 \u0111\u1ec7 nh\u1ea5t T\xf4n Th\xe1nh, l\xe0 t\u1ed1i di\u1ec7u.\n\n6. Bi\u1ebft \u0111\xe2y l\xe0 Ph\u1eadt \u0111\u1ea3nh quang minh Ma Ha T\xe1t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La V\xf4 Th\u01b0\u1ee3ng Th\u1ea7n Ch\xfa. B\u1ea1n ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam th\xec m\u01b0\u1eddi ph\u01b0\u01a1ng ch\u01b0 Ph\u1eadt \u0111\u1ec1u \u0111\u1ebfn qu\xe1n \u0111\u1ea3nh cho b\u1ea1n.\n\n7. Linh th\xf4ng c\u1ea3m \u1ee9ng kh\xf4ng th\u1ec3 ngh\u0129 b\xe0n.\n\n8. Bi\u1ebft Ch\xfa th\xec sinh \u0111\u1ea1i tr\xed hu\u1ec7, l\u1ea1i ph\xf3ng \u0111\u1ea1i quang minh.\n\n9. Bi\u1ebft Ch\xfa L\u0103ng Nghi\xeam l\xe0 vua trong t\u1ea5t c\u1ea3 c\xe1c Ch\xfa.\n\n10. Bi\u1ebft \u0111o\u1ea1n \u0111\xf3 l\xe0 t\xe2m Ch\xfa, th\u01b0\u1eddng th\u01b0\u1eddng t\u1ee5ng ni\u1ec7m l\u1ea1i chuy\xean nh\u1ea5t, th\xec s\u1ebd minh t\xe2m ki\u1ebfn t\xe1nh, khai \u0111\u1ea1i tr\xed hu\u1ec7.\n\n11. Bi\u1ebft Ch\xfa \u1ea5n, tam ph\xe1p \u1ea5n, t\u1ee5ng tr\xec Ch\xfa L\u0103ng Nghi\xeam, th\xec \xedt nh\u1ea5t trong b\u1ea3y \u0111\u1eddi \u0111\u1ec1u l\xe0 ng\u01b0\u1eddi gi\xe0u c\xf3 nh\u1ea5t tr\xean \u0111\u1eddi.\n\n12. Ch\xfa c\xf2n d\u1ecbch l\xe0 quy\u1ebft. Th\u1ea7n th\xf4ng c\u1ee7a Ch\xfa bi\u1ebfn h\xf3a kh\xf3 d\xf2. C\xf3 ng\u01b0\u1eddi n\xf3i t\xf4i t\u1ee5ng Ch\xfa kh\xf4ng ph\u1ea3i v\xec c\u1ea7u gi\xe0u c\xf3, b\u1ea1n c\u1ea7u th\u1ea7n th\xf4ng th\xec \u0111\u01b0\u1ee3c th\u1ea7n th\xf4ng, c\u1ea7u khai ng\u1ed9 th\xec \u0111\u01b0\u1ee3c khai ng\u1ed9, c\u1ea7u tr\xed hu\u1ec7 th\xec \u0111\u01b0\u1ee3c tr\xed hu\u1ec7, t\xf9y \xfd b\u1ea1n. Kh\xf4ng ph\u1ea3i mu\u1ed1n d\u1ea1y b\u1ea1n nh\u1ea5t \u0111\u1ecbnh c\u1ea7u ph\xfa qu\xfd.\n\n13. Mu\u1ed1n c\u1ea7u g\xec, ph\xe1t nguy\u1ec7n g\xec \u0111\u1ec1u s\u1ebd th\xe0nh t\u1ef1u.\n\n14. B\u1ea1n ni\u1ec7m Ch\xfa, nguy\u1ec7n khi\u1ebfn cho k\u1ebb kh\xe1c \u0111\u01b0\u1ee3c ph\u01b0\u1edbc, th\xec ng\u01b0\u1eddi \u0111\xf3 li\u1ec1n \u0111\u01b0\u1ee3c ph\u01b0\u1edbc. Nguy\u1ec7n ng\u01b0\u1eddi \u0111\xf3 g\u1eb7p h\u1ecda, th\xec li\u1ec1n g\u1eb7p h\u1ecda, b\u1ea5t qu\xe1 \u0111\u1eebng c\xf3 t\xe2m l\xe0m h\u1ea1i k\u1ebb kh\xe1c. Ni\u1ec7m Ch\xfa nguy\u1ec7n cho k\u1ebb kh\xe1c g\u1eb7p h\u1ecda th\xec kh\xf4ng \u0111\xfang.\n\n15. B\u1ea1n c\u1ea7u g\xec th\xec nh\u01b0 ti\u1ebfng vang t\xf9y t\xe2m m\xe3n nguy\u1ec7n kh\xf4ng kh\xe1c.\n\n16. Ch\xfa ph\xe1p hay khai m\u1edf tr\xed hu\u1ec7 c\u1ee7a b\u1ea1n, khi\u1ebfn cho b\u1ea1n \u0111\u01b0\u1ee3c bi\u1ec7n t\xe0i v\xf4 ng\u1ea1i.\n\n17. Bi\u1ebft ngu\u1ed3n g\u1ed1c ti\u1ebfng Ph\u1ea1n, \u0111\xe2y l\xe0 c\u0103n b\u1ea3n tam t\u1ea1ng v\u0103n t\u1ef1. Tam t\u1ea1ng l\xe0 do Ph\u1ea1n v\u0103n phi\xean d\u1ecbch ra.\n\n18. Bi\u1ebft h\u1ebft th\u1ea3y Th\xe1nh hi\u1ec1n hi\u1ec3n gi\xe1o v\xe0 m\u1eadt gi\xe1o \u0111\u1ec1u t\u1eeb t\u1ef1 m\u1eabu sinh ra.\n\n19. Ngh\u0129a l\xfd c\u1ee7a ch\u1eef l\xe0 bao h\xe0m ngh\u0129a th\xfa v\xf4 bi\xean.\n\n20. Ch\u1eef Ph\u1ea1n nguy\xean l\xe0 gi\u1ed1ng tr\xed tu\u1ec7 c\u1ee7a ch\u01b0 Ph\u1eadt.\n\n21. Bi\u1ebft \xe2m c\u1ee7a Ch\xfa l\xe0 do Ph\u1eadt tr\u1eddi truy\u1ec1n ra tr\u01b0\u1edbc nh\u1ea5t.\n\n22. H\u1ebft th\u1ea3y ngh\u0129a l\xfd c\u1ee7a ph\xe1p \u0111\u1ec1u nhi\u1ebfp h\u1ebft th\u1ea3y.\n\n23. Bi\u1ebft ch\xe2n ng\xf4n \u0111\u1ec1u nh\u01b0 s\u1edf n\xf3i, \u0111\u1ec1u l\xe0 ch\xe2n th\u1eadt, kh\xf4ng c\xf3 m\u1ed9t c\xe2u v\u1ecdng ng\u1eef.\n\n24. Bi\u1ebft Ch\xfa ng\u1eef gi\u1ed1ng nh\u01b0 m\u1ec7nh l\u1ec7nh trong qu\xe2n \u0111\u1ed9i, l\u1ea1i nh\u01b0 Th\xe1nh ch\u1ec9 c\u1ee7a ho\xe0ng \u0111\u1ebf kh\xf4ng kh\xe1c, kh\xf4ng th\u1ec3 n\xf3i cho ng\u01b0\u1eddi kh\xe1c bi\u1ebft.\n\nB\u1ed1n h\u1ea1ng tr\u01b0\u1edbc l\xe0 gi\u1edbi h\u1ea1n n\u01a1i n\u0103m h\u1ed9i ch\xe2n ng\xf4n. C\xf2n hai m\u01b0\u01a1i h\u1ea1ng sau c\u0169ng bao qu\xe1t t\xe2m Ch\xfa trong \u0111\xf3.\n\n"],q,q),A.Y(["title","TI\xcaU TAI, NHI\u1ebeP TRI\u1ec6U V\xc0 H\xc0NG PH\u1ee4C","meta",s,"preview","Ti\xeau tai t\u1ee9c l\xe0 b\u1ea1n c\xf3 tai n\u1ea1n g\xec, t\u1ee5ng Ch\xfa th\xec li\u1ec1n ti\xeau tr\u1eeb. Nh\u01b0ng b\u1ea1n c\xf2n ph\u1ea3i tr\u1eeb kh\u1eed tai (n\u1ea1n) trong t\xe2m. N\u1ebfu b\u1ea1n ch\u1ec9 ni\u1ec7m Ch\xfa, m\xe0 trong t\xe2m c\u1ee9 kh\u1edfi nh\u1eefng v\u1ecdng ni\u1ec7m kh\xf4ng trong s\u1ea1ch n\xe0o t\u1ea1p ni\u1ec7m \u0111\u1ea7y d\u1eaby th\xec tai (n\u1ea1n) c\u0103n b\u1ea3n kh\xf4ng th\u1ec3 ti\xeau tr\u1eeb \u0111\u01b0\u1ee3c, ni\u1ec7m b\u1ea5t c\u1ee9 Ch\xfa g\xec c\u0169ng v\xf4 d\u1ee5ng.\n\nDo \u0111\xf3 mu\u1ed1n ti\xeau tai th\xec trong t\xe2m tr\u01b0\u1edbc ph\u1ea3i thanh t\u1ecbnh, thu th\u1eadp t\xe2m cho s\u1ea1ch s\u1ebd, \u0111\xf3 m\u1edbi l\xe0 ch\xe2n ti\xeau tai. N\u1ebfu kh\xf4ng, trong t\xe2m \u0111\u1ea7y d\u1eaby tham s\xe2n si, th\xec ni\u1ec7m Ch\xfa g\xec c\u0169ng kh\xf4ng linh. Do \u0111\xf3 trong t\xe2m l\xe0 quan tr\u1ecdng nh\u1ea5t. T\xe2m nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i t\u1eeb bi l\u01b0\u01a1ng thi\u1ec7n, gi\xfap \u0111\u1ee1 m\u1ecdi ng\u01b0\u1eddi, ch\u1ec9 c\xf3 m\u1ed9t th\u1ee9 t\xe2m t\u1ed1t. \u0110\xe2y l\xe0 t\u0103ng \xedch ti\xeau tai ph\xe1p.\n\nNhi\u1ebfp tri\u1ec7u t\u1ee9c c\xe2u tri\u1ec7u ph\xe1p, gi\u1ed1ng nh\u01b0 c\u1ea3nh s\xe1t b\u1eaft t\u1ed9i ph\u1ea1m, y\xeau ma qu\u1ef7 qu\xe1i l\xe0m vi\u1ec7c \xe1c, khi\u1ebfn cho ng\u01b0\u1eddi sinh b\u1ec7nh, sinh tai n\u1ea1n, khi b\u1ea1n t\u1ee5ng Ch\xfa th\xec y\xeau ma qu\u1ef7 qu\xe1i b\xf2 ra. Nh\u01b0ng b\xf2 l\xe0 b\xf2 ra, song c\xf3 th\u1eddi ch\xfang kh\xf4ng ph\u1ee5c, ph\u1ea3i d\xf9ng \u0111\u1ee7 th\u1ee9 ph\u01b0\u01a1ng ph\xe1p \u0111\u1ec3 gi\xe1o h\xf3a ch\xfang. Ri\xeang h\xe0ng ph\u1ee5c l\xe0 ph\xe1p h\u1ea1 \u0111\u1eb3ng. Ph\xe1p th\u01b0\u1ee3ng \u0111\u1eb3ng kh\xf4ng d\xf9ng b\u1ea5t c\u1ee9 th\u1ebf l\u1ef1c n\xe0o, \u0111\u1ec3 \u0111\xe0n \xe1p b\u1ee9c b\xe1ch b\u1ea5t c\u1ee9 ai, v\xe0 b\u1ea5t c\u1ee9 y\xeau ma qu\u1ef7 qu\xe1i, kh\xf4ng th\u1ec3 \u0111\u1ea5u tranh v\u1edbi ch\xfang. \u0110\u1eebng h\u1ecdc A Tu La \u0111\u1ea5u tranh ki\xean c\u1ed1 nh\u01b0 th\u1ebf. T\u1ef1 m\xecnh bi\u1ebft r\xf5 c\xf3 m\u1ed9t s\u1ee9c l\u1ef1c c\xf3 th\u1ec3 h\xe0ng ph\u1ee5c ch\xfang, c\u0169ng \u0111\u1eebng d\xf9ng. Ph\u1ea3i d\xf9ng \u0111\u1ee9c h\u1ea1nh \u0111\u1ec3 gi\xe1o h\xf3a ch\xfang, c\u1ea3m h\xf3a ch\xfang.\n\nN\u1ebfu b\u1ea1n th\u01b0\u1eddng n\xf3i v\u1edbi k\u1ebb kh\xe1c r\u1eb1ng, b\u1ea1n tr\xec Ch\xfa c\xf3 linh c\u1ea3m hi\u1ec7u l\u1ef1c g\xec, ni\u1ec7m Ch\xfa \u0110\u1ea1i Bi tr\u1ecb \u0111\u01b0\u1ee3c b\u1ec7nh g\xec, ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam l\u1ea1i \u0111\u1eafc \u0111\u01b0\u1ee3c c\u1ea3m \u1ee9ng g\xec? \u0110\xf3 c\u0169ng gi\u1ed1ng nh\u01b0 b\xe1n thu\u1ed1c cao, \u0111\xe2y g\u1ecdi l\xe0 rao b\xe1n s\u1ef1 tu h\xe0nh, kh\xf4ng \u0111\xfang. N\u1ebfu nh\u01b0 th\u1ebf th\xec s\u1ebd g\u1eb7p tai h\u1ecda, c\u0169ng kh\xf4ng \u0111\u1eafc \u0111\u01b0\u1ee3c s\u1ef1 l\u1ee3i \xedch kh\xf4ng ngh\u0129 b\xe0n c\u1ee7a b\u1ed1n t\u1ea5t \xedch.\n\n"],q,q),A.Y(["title","V\xcc SAO T\u1ee4NG TR\xcc KINH CH\xda KH\xd4NG C\xd4NG HI\u1ec6U?","meta",s,"preview","Trong Ph\xe1p Uy\u1ec3n Ch\xe2u L\xe2m n\xf3i l\xe0, t\u1ea1i sao ng\u01b0\u1eddi xu\u1ea5t gia v\xe0 ng\u01b0\u1eddi t\u1ea1i gia t\u1ee5ng tr\xec Kinh Ch\xfa kh\xf4ng c\xf4ng hi\u1ec7u? V\xec t\xe2m kh\xf4ng ch\xed th\xe0nh kh\u1ea9n thi\u1ebft. Tu m\u1ec7t, tu m\xe0 c\u1ea3m th\u1ea5y kh\xf4ng c\xf3 c\u1ea3m \u1ee9ng g\xec, li\u1ec1n b\u1eaft \u0111\u1ea7u ph\u1ec9 b\xe1ng, n\xf3i kh\xf4ng c\xf3 g\xec ch\u1ee9ng minh, ch\u1eb3ng c\xf3 linh nghi\u1ec7m g\xec, n\xf3i Ch\xfa n\xe0y l\xe0 gi\u1ea3, Kinh n\xe0y l\xe0 gi\u1ea3. Th\u1ef1c ra nguy\xean nh\xe2n tr\xec Ch\xfa kh\xf4ng linh l\xe0 do v\u0103n t\u1ef1 ng\u1ee5y t\u1ea1o thay th\u1ebf, ho\u1eb7c \xe2m v\u1ea7n ni\u1ec7m sai, ho\u1eb7c u\u1ed1ng r\u01b0\u1ee3u \u0103n th\u1ecbt, ho\u1eb7c \u0103n ng\u0169 t\xe2n, ho\u1eb7c \u0111i \u0111\u1ea1i ti\u1ec3u ti\u1ec7n kh\xf4ng r\u1eeda tay r\u1ed3i c\u1ea7m Kinh Ch\xfa, ho\u1eb7c n\xf3i nh\u1eefng l\u1eddi th\u1ebf t\u1ee5c, kh\xf4ng gi\u1eef quy c\u1ee5, n\xf3i chuy\u1ec7n th\u1ecb phi, ho\u1eb7c m\u1eb7c y ph\u1ee5c kh\xf4ng s\u1ea1ch s\u1ebd, ho\u1eb7c \u1edf ch\u1ed7 kh\xf4ng nghi\xeam t\u1ecbnh, ph\u1ea1m t\xe1m th\u1ee9 gi\u1edbi ph\xe1p n\xf3i tr\xean, khi\u1ebfn cho qu\u1ef7 th\u1ea7n kh\xf4ng cung k\xednh, kh\xf4ng nh\u1eefng kh\xf4ng c\xf3 c\xf4ng \u0111\u1ee9c, ng\u01b0\u1ee3c l\u1ea1i c\xf3 l\u1ed7i l\u1ea7m.\n\nN\u1ebfu nh\u01b0 b\u1ea1n mu\u1ed1n tu ph\xe1p Ch\xfa L\u0103ng Nghi\xeam, th\xec ph\u1ea3i t\u1eafm r\u1eeda, s\xfac mi\u1ec7ng s\u1ea1ch s\u1ebd. Ph\u1ea3i c\xf3 t\xe2m ch\xed th\xe0nh kh\u1ea9n thi\u1ebft, th\u1eddi th\u1eddi kh\u1eafc kh\u1eafc kh\xf4ng qu\xean, kh\u1eafp v\xec ch\xfang sinh trong l\u1ee5c \u0111\u1ea1o, tr\u1eddi, ng\u01b0\u1eddi A tu la, s\xfac sinh, ng\u1ea1 qu\u1ef7 v\xe0 \u0111\u1ecba ng\u1ee5c m\xe0 ph\xe1t t\xe2m b\u1ed3 \u0111\u1ec1, kh\xf4ng l\u01b0\u1eddi bi\u1ebfng gi\u1ea3i \u0111\xe3i, ch\xed th\xe0nh kh\u1ea9n thi\u1ebft nh\u01b0 th\u1ebf th\xec nh\u1ea5t \u0111\u1ecbnh s\u1ebd c\xf3 \u1ee9ng nghi\u1ec7m.\n\n"],q,q),A.Y(["title","NH\u1eeeNG C\u1ea2NH GI\u1edaI KHI D\u1ee4NG C\xd4NG TR\xcc CH\xda","meta",s,"preview","Trong Hi\u1ec3n M\u1eadt Vi\xean Th\xf4ng n\xf3i, l\xfac b\u1ea1n d\u1ee5ng c\xf4ng tr\xec Ch\xfa, ho\u1eb7c m\u1ed9ng th\u1ea5y m\xecnh l\u1ea1y Ph\u1eadt, m\u1ed9ng th\u1ea5y Ph\u1eadt ph\xf3ng quang minh, m\u1ed9ng th\u1ea5y Ph\u1eadt \u0111\u1ebfn r\u1edd \u0111\u1ea7u, m\u1ed9ng th\u1ea5y Ph\u1eadt v\xec b\u1ea1n m\xe0 gi\u1ea3ng Kinh thuy\u1ebft ph\xe1p, ho\u1eb7c m\u1ed9ng th\u1ea5y B\u1ed3 T\xe1t, Duy\xean Gi\xe1c, Thanh V\u0103n, Th\xe1nh T\u0103ng, ho\u1eb7c Thi\xean t\u01b0\u1edbng tr\xean tr\u1eddi, ho\u1eb7c \u0111\u1ee7 th\u1ee9 kh\xe1c nhau, xu\u1ea5t k\u1ef3 nh\u1eefng d\u1ecb t\u01b0\u1edbng r\u1ea5t \u0111\u1eb7c th\xf9, ho\u1eb7c m\u1ed9ng th\u1ea5y th\xe2n m\xecnh bay l\xean h\u01b0 kh\xf4ng, ho\u1eb7c c\u1ee1i ng\u1ef1a qua s\xf4ng, ho\u1eb7c th\u1ea5y \u0111\u1ee7 lo\u1ea1i h\u01b0\u01a1ng th\u01a1m, quang minh t\u1ed1t \u0111\u1eb9p, \u0111\xf3 l\xe0 nh\u1eefng c\u1ea3nh gi\u1edbi t\u1ed1t.\n\nN\u1ebfu \u0111\u1eafc \u0111\u01b0\u1ee3c nh\u1eefng \u1ee9ng nghi\u1ec7m nh\u01b0 th\u1ebf, th\xec tu th\xe2n mi\u1ec7ng \xfd ba nghi\u1ec7p ph\u1ea3i c\u1ea9n th\u1eadn, khi\u1ebfn cho thanh t\u1ecbnh, ph\xe1t \u0111\u1ea1i b\u1ed3 \u0111\u1ec1 t\xe2m v\xe0 d\u1ee5ng t\xe2m tr\xec Ch\xfa th\xeam, kh\xf4ng th\u1ec3 tuy\xean n\xf3i c\u1ea3nh gi\u1edbi trong Ch\xfa. Kh\xf4ng th\u1ec3 n\xf3i v\u1edbi ng\u01b0\u1eddi kh\xe1c c\xf3 b\u1ea5t c\u1ee9 c\u1ea3m \u1ee9ng g\xec, k\xeau ng\u01b0\u1eddi tin b\u1ea1n, c\xf3 h\u1ea3o c\u1ea3m v\u1edbi b\u1ea1n, ho\u1eb7c k\xeau ng\u01b0\u1eddi cung k\xednh b\u1ea1n, t\xe1n th\xe1n b\u1ea1n, nh\u1eefng th\u1ee9 \u0111\xf3 \u0111\u1ec1u kh\xf4ng th\u1ec3 \u0111\u01b0\u1ee3c. Ch\u1ec9 \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi \u0111\u1ed3ng tu, \u0111\u1eebng v\xec cung k\xednh, ho\u1eb7c t\xe1n th\xe1n, m\u1edbi c\xf3 th\u1ec3 n\xf3i.\n\nTrong Kinh \u0110\u1ea1i Bi c\xf3 n\xf3i: N\u1ebfu c\xf3 ng\u01b0\u1eddi kh\u1ea9n thi\u1ebft ni\u1ec7m, th\xec ho\u1eb7c g\u1eb7p ma ch\u01b0\u1edbng, ho\u1eb7c h\u1ed1t nhi\xean sinh t\xe2m s\u1ee3 s\u1ec7t, th\xe2n t\xe2m b\u1ea5t an, ho\u1eb7c nhi\u1ec1u n\xf3ng gi\u1eadn, ho\u1eb7c th\xedch ng\u1ee7, ho\u1eb7c \u0111\u1ea7u l\u01b0\u1ee1i kh\xf4ng th\u1ec3 ni\u1ec7m, ho\u1eb7c th\u1ea5y nh\u1eefng di\u1ec7u t\u01b0\u1edbng y\xeau ma qu\u1ef7 qu\xe1i. Nh\u1eefng d\u1ecb t\u01b0\u1edbng \u1edf \u0111\xe2y, v\u1edbi d\u1ecb t\u01b0\u1edbng \u1edf tr\xean kh\xf4ng gi\u1ed1ng nhau. Nh\u1eefng d\u1ecb t\u01b0\u1edbng \u1edf \u0111\xe2y l\xe0 nh\u1eefng t\u01b0\u1edbng x\u1ea5u, nh\u1eefng d\u1ecb t\u01b0\u1edbng \u1edf tr\xean l\xe0 nh\u1eefng d\u1ecb t\u01b0\u1edbng c\xe1t t\u01b0\u1eddng. Ho\u1eb7c l\xe0 sinh t\xe2m nghi ho\u1eb7c v\u1edbi Ch\xfa L\u0103ng Nghi\xeam, ho\u1eb7c t\xe2m ph\xe2n bi\u1ec7t, ho\u1eb7c kh\u1edfi v\xf4 minh ch\u1ea5p tr\u01b0\u1edbc c\xe1c h\u1eefu, b\u1ea1n nh\xecn nghi\u1ec7p ch\u01b0\u1edbng c\u1ee7a ng\u01b0\u1eddi nh\u01b0 th\u1ebf n\xe0o \u0111\u1ec1u c\xf3.\n\nB\xe2y gi\u1edd b\u1ea1n ni\u1ec7m t\u1eeb t\u1eeb Ch\xfa n\xe0y r\u1ea5t kh\xf3 \u0111\u01b0\u1ee3c. N\u1ebfu c\xf3 nh\u1eefng c\u1ea3nh gi\u1edbi kh\xf4ng c\xe1t t\u01b0\u1eddng \u1edf tr\xean, th\xec n\xean qu\xe1n t\u01b0\u1edfng Ph\u1ea1n th\u01b0 ch\u1eef \u201cLam\u201d th\xec s\u1ebd khi\u1ebfn b\u1ea1n thanh t\u1ecbnh, ho\u1eb7c qu\xe1n ch\u1eef \u201cA\u201d th\xec nh\u1eefng c\u1ea3nh gi\u1edbi kh\xf4ng c\xe1t t\u01b0\u1eddng \u1edf tr\xean s\u1ebd ti\xeau di\u1ec7t. Ph\u1ea3i bi\u1ebft nh\xe2n duy\xean ph\xe1p v\u1ed1n l\xe0 kh\xf4ng.\n\n"],q,q),A.Y(["title","H\u1eeeU H\u1eccC V\xc0 V\xd4 H\u1eccC","meta",s,"preview","S\u01a1 qu\u1ea3 \u0111o\u1ea1n s\u1ea1ch t\xe1m m\u01b0\u01a1i t\xe1m ph\u1ea9m ki\u1ebfn ho\u1eb7c, nh\u1ecb qu\u1ea3 \u0111o\u1ea1n t\xe1m m\u01b0\u01a1i m\u1ed1t ph\u1ea9m t\u01b0 ho\u1eb7c. S\u01a1 qu\u1ea3, nh\u1ecb qu\u1ea3, tam qu\u1ea3, \u0111\u1ec1u l\xe0 b\u1eadc h\u1eefu h\u1ecdc, ch\u1ee9ng \u0111\u01b0\u1ee3c t\u1ee9 qu\u1ea3 l\xe0 b\u1eadc v\xf4 h\u1ecdc, m\u1edbi th\u1eadt ch\xe2n ch\xe1nh ch\u1ea5m d\u1ee9t sinh t\u1eed, \u0111\u1eafc \u0111\u01b0\u1ee3c v\xf4 sinh ph\xe1p nh\u1eabn, kh\xf4ng th\u1ea5y ch\xfat ph\xe1p sinh, c\u0169ng kh\xf4ng th\u1ea5y ch\xfat ph\xe1p di\u1ec7t.\n\nKi\u1ebfn ho\u1eb7c t\u1ee9c l\xe0 \u0111\u1ed1i c\u1ea3nh kh\u1edfi tham \xe1i, \u0111\u1ed1i tr\u01b0\u1edbc c\u1ea3nh th\xec ch\u1ea5p tr\u01b0\u1edbc m\xea ho\u1eb7c, kh\xf4ng bi\u1ebft s\u1ef1 vi\u1ec7c nh\u01b0 th\u1ebf n\xe0o, cho n\xean sinh t\xe2m tham, t\xe2m \xe1i, th\u1ea5y ti\u1ec1n b\u1ea1c th\xec mu\u1ed1n \u0111\u01b0\u1ee3c ti\u1ec1n b\u1ea1c, th\u1ea5y s\u1eafc \u0111\u1eb9p th\xec mu\u1ed1n \u0111\u01b0\u1ee3c s\u1eafc \u0111\u1eb9p, \u0111\xf3 \u0111\u1ec1u l\xe0 \u201cki\u1ebfn ho\u1eb7c\u201d \u0111\u1ec1u l\xe0 th\u1ea5y c\u1ea3nh gi\u1edbi, kh\xf4ng th\u1ea5y th\xec kh\xf4ng m\xea, th\u1ea5y \u0111\u01b0\u1ee3c th\xec kh\xf4ng l\xe0m ch\u1ee7 \u0111\u01b0\u1ee3c, h\u1ed3 \u0111\u1ed3, b\u1ecb c\u1ea3nh gi\u1edbi chuy\u1ec3n. T\u1ea1i c\u1ea3nh gi\u1edbi, h\u1ebft th\u1ea3y s\u1ef1 vi\u1ec7c \u0111\u1ebfn th\xec kh\xf4ng nh\u1eadn th\u1ee9c.\n\nT\u01b0 ho\u1eb7c th\xec \u0111\u1ed1i v\u1edbi l\xfd kh\xf4ng nh\u1eadn th\u1ee9c, b\u1ecb m\xea ho\u1eb7c, kh\xf4ng bi\u1ebft l\xe0 \u0111\xfang, hay l\xe0 kh\xf4ng \u0111\xfang, m\xea \u1edf l\xfd lu\u1eadn, cho n\xean \u0111\u1ee7 th\u1ee9 v\u1ecdng t\u01b0\u1edfng b\xe8n sinh ra, \u0111\xe2y g\u1ecdi l\xe0 t\u01b0 ho\u1eb7c. Cho n\xean m\xea n\u01a1i l\xfd kh\u1edfi ph\xe2n bi\u1ec7t, c\xe0ng ph\xe2n bi\u1ec7t c\xe0ng kh\xf4ng minh b\u1ea1ch, c\xe0ng kh\xf4ng minh b\u1ea1ch c\xe0ng ph\xe2n bi\u1ec7t, h\u1ed3 \u0111\u1ed3 l\u1ea1i th\xeam h\u1ed3 \u0111\u1ed3, ngu si th\xeam ngu si, t\u01b0 ho\u1eb7c \u0111o\u1ea1n s\u1ea1ch th\xec ng\u1ef1 tr\xean \u0111\xe0i sen, ng\u1ed3i tr\xean hoa sen b\xe1u.\n\nNh\u1ecb qu\u1ea3 Th\xe1nh nh\xe2n c\xf3 th\u1ec3, th\xe2n v\u1ecdt l\xean h\u01b0 kh\xf4ng hi\u1ec7n m\u01b0\u1eddi t\xe1m bi\u1ebfn, tr\xean th\xe2n phun n\u01b0\u1edbc, d\u01b0\u1edbi th\xe2n phun l\u1eeda, d\u01b0\u1edbi th\xe2n phun n\u01b0\u1edbc, tr\xean th\xe2n phun l\u1eeda, bi\u1ebfn h\xf3a l\u1edbn nh\u1ecf bay \u0111i t\u1ef1 t\u1ea1i, mu\u1ed1n l\xe0m g\xec th\xec l\xe0m.\n\nB\u1eadc \u1ea5y kh\xf4ng nh\u1eefng \u1edf t\u1ea1i th\u1ebf gi\u1edbi n\xe0y, m\xe0 c\xf2n c\xf3 th\u1ec3 \u0111\u1ebfn c\xe1c th\u1ebf gi\u1edbi kh\xe1c, c\xf3 th\u1ec3 gi\u1ea3ng Kinh thuy\u1ebft ph\xe1p t\u1ea1i th\u1ebf gi\u1edbi n\xe0y, gi\xe1o h\xf3a ch\xfang sinh, l\u1ea1i \u0111\u1ebfn th\u1ebf gi\u1edbi kh\xe1c gi\u1ea3ng Kinh thuy\u1ebft ph\xe1p, gi\xe1o h\xf3a ch\xfang sinh, \u0111\u1ed3ng th\u1eddi \u1edf t\u1ea1i c\xe1c th\u1ebf gi\u1edbi \u0111\u1ec1u hi\u1ec7n th\xe2n thuy\u1ebft ph\xe1p.\n\n"],q,q),A.Y(["title","CH\xda L\u0102NG NGHI\xcaM L\xc0 \u201cLINH V\u0102N\u201d","meta",s,"preview","Ch\xfa L\u0103ng Nghi\xeam l\xe0 Ch\xfa d\xe0i nh\u1ea5t, c\xf2n g\u1ecdi l\xe0 \u201clinh v\u0103n\u201d v\xec qu\xe1 linh, qu\xe1 di\u1ec7u, di\u1ec7u kh\xf4ng th\u1ec3 t\u1ea3. Ai ni\u1ec7m th\xec ng\u01b0\u1eddi \u0111\xf3 c\xf3 c\u1ea3m \u1ee9ng. Ai tr\xec t\u1ee5ng th\xec ng\u01b0\u1eddi \u0111\xf3 \u0111\u01b0\u1ee3c B\u1ed3 T\xe1t Kim Cang T\u1ea1ng h\u1ed9 tr\xec. Cho n\xean b\u1ea1n tu Ch\xfa n\xe0y ph\u1ea3i ch\xe1nh t\xe2m th\xe0nh \xfd, tu th\xe2n, c\xe1ch v\u1eadt. C\xe1ch v\u1eadt l\xe0 g\xec? T\u1ee9c l\xe0 c\xe1ch tr\u1eeb h\u1ebft th\u1ea3y v\u1eadt d\u1ee5c, t\u1ee9c c\u0169ng l\xe0 kh\xf4ng c\xf3 t\xe2m tham, c\xe1ch v\u1eadt ch\xed tri, ch\xe1nh t\xe2m th\xe0nh \xfd, tu th\xe2n t\u1ee9c tr\xec Ch\xfa n\xe0y, th\xec s\u1ebd c\xf3 \u0111\u1ea1i c\u1ea3m \u1ee9ng. C\xf3 ng\u01b0\u1eddi kh\xf4ng hi\u1ec3u \xfd ngh\u0129a c\u1ee7a Ch\xfa, cho n\xean n\xf3i Ch\xfa L\u0103ng Nghi\xeam l\xe0 do nhi\u1ec1u Ch\xfa nh\u1ecf h\u1ee3p th\xe0nh, m\u1edbi d\xe0i nh\u01b0 th\u1ebf, th\u1eadt kh\xf4ng b\u1eb1ng tr\u1ebb con. Tr\u1ebb con c\xf3 n\xf3i, c\u0169ng n\xf3i nh\u1eefng l\u1eddi \u0111\xe3 nghe ng\u01b0\u1eddi l\u1edbn n\xf3i r\u1ed3i m\u1edbi n\xf3i, kh\xf4ng th\u1ec3 sai l\u1ee3i h\u1ea1i nh\u01b0 th\u1ebf.\n\nN\u1ebfu n\xf3i Ch\xfa L\u0103ng Nghi\xeam l\xe0 do nhi\u1ec1u Ch\xfa ng\u1eafn n\u1ed1i l\u1ea1i v\u1edbi nhau, th\xec nh\u1eefng Ch\xfa ng\u1eafn \u0111\xf3 l\xe0 Ch\xfa g\xec? N\u1ebfu b\u1ea1n n\xf3i kh\xf4ng bi\u1ebft, sao l\u1ea1i n\xf3i l\xe0 do nhi\u1ec1u Ch\xfa ng\u1eafn h\u1ee3p th\xe0nh? N\xf3i th\u1eb3ng \u0111\xf3 ch\u1eb3ng c\xf3 c\u0103n c\u1ee9, nh\u1eefng Ch\xfa ng\u1eafn \u0111\xf3 c\xf3 t\xean ch\u0103ng? N\u1ebfu kh\xf4ng c\xf3 th\xec Ch\xfa n\xe0y l\xe0 ai n\xf3i, cho \u0111\u1ebfn t\xean c\u0169ng kh\xf4ng c\xf3, th\xec c\xf2n n\xf3i Ch\xfa g\xec, cho n\xean th\u1ed1t ra l\u1eddi ph\u1ea3i ch\u1ecbu tr\xe1ch nhi\u1ec7m, kh\xf4ng th\u1ec3 t\xf9y ti\u1ec7n n\xf3i.\n\nCh\xfa L\u0103ng Nghi\xeam t\u1eeb khi b\u1eaft \u0111\u1ea7u l\xe0 quy y m\u01b0\u1eddi ph\u01b0\u01a1ng t\u1eadn h\u01b0 kh\xf4ng bi\u1ebfn ph\xe1p gi\u1edbi h\u1ebft th\u1ea3y ch\u01b0 Ph\u1eadt, sau \u0111\xf3 l\u1ea1i quy y m\u01b0\u1eddi ph\u01b0\u01a1ng t\u1eadn h\u01b0 kh\xf4ng bi\u1ebfn ph\xe1p gi\u1edbi h\u1ebft th\u1ea3y ch\u01b0 B\u1ed3 T\xe1t, k\u1ebf \u0111\xf3 l\u1ea1i quy y c\xe1c b\u1eadc Th\xe1nh nh\xe2n s\u01a1 qu\u1ea3, nh\u1ecb qu\u1ea3, tam qu\u1ea3 v\xe0 t\u1ee9 qu\u1ea3 A La H\xe1n, k\u1ebf ti\u1ebfp l\u1ea1i quy y ch\u01b0 Thi\xean. Quy y ch\u01b0 Thi\xean n\xe0y kh\xf4ng ph\u1ea3i ph\u1ee5ng h\xe0nh ph\xe1p c\u1ee7a ch\u01b0 Thi\xean, ch\u1ec9 l\xe0 cung k\xednh ch\u01b0 Thi\xean, b\u1ed5n lai ng\u01b0\u1eddi xu\u1ea5t gia kh\xf4ng l\u1ec5 b\xe1i ai, ng\u01b0\u1eddi xu\u1ea5t gia \u0111\xe1ng th\u1ecd s\u1ef1 c\xfang d\u01b0\u1eddng c\u1ee7a ch\u01b0 Thi\xean, t\u1ea1i sao l\u1ea1i ph\u1ea3i cung k\xednh ch\u01b0 Thi\xean?\n\nCh\u01b0 Thi\xean l\u1ec5 b\xe1i b\u1ea1n l\xe0 v\xec b\u1ea1n c\xf3 \u0111\u1ea1o \u0111\u1ee9c, c\xf3 tu h\xe0nh, b\u1ea1n \u0111\u1eebng n\xean c\xf3 t\xe2m c\u1ed1ng cao ng\xe3 m\u1ea1n n\xf3i, b\u1ea1n bi\u1ebft kh\xf4ng! T\u1ea5t c\u1ea3 h\u1ed9 ph\xe1p ch\u01b0 Thi\xean \u0111\u1ec1u c\xfai \u0111\u1ea7u \u0111\u1ea3nh l\u1ec5 t\xf4i, kh\xf4ng th\u1ec3 sinh t\xe2m c\u1ed1ng cao ng\xe3 m\u1ea1n nh\u01b0 th\u1ebf, ph\u1ea3i c\u1ea3m th\u1ea5y ch\xednh m\xecnh ch\u01b0a \u0111\u1ee7 \u0111\u1ea1o \u0111\u1ee9c c\u1ee7a m\xecnh m\u1edbi vi\xean m\xe3n, c\u0169ng ph\u1ea3i xem c\xf3 nh\u01b0 kh\xf4ng th\u1eadt, nh\u01b0 h\u01b0 v\u1ecdng. M\xecnh c\xf3 \u0111\u1ea1o \u0111\u1ee9c m\xe0 kh\xf4ng ch\u1ea5p tr\u01b0\u1edbc, b\u1ea1n c\xf3 h\u1ecdc v\u1ea5n ch\xe2n th\u1eadt c\u0169ng \u0111\u1eebng t\u1ef1 m\xe3n, nh\u01b0 v\u1eady m\u1edbi l\xe0 ng\u01b0\u1eddi tu \u0111\u1ea1o. Cho n\xean ng\u01b0\u1eddi tu h\xe0nh t\u1ee5ng tr\xec Ch\xfa n\xe0y c\u0169ng ph\u1ea3i cung k\xednh ch\u01b0 Thi\xean thi\u1ec7n th\u1ea7n, kh\xf4ng nh\u1eefng cung k\xednh thi\u1ec7n th\u1ea7n m\xe0 \xe1c th\u1ea7n c\u0169ng ph\u1ea3i cung k\xednh. Ph\u1ea3i tr\u1eeb kh\u1eed c\u1ed1ng cao ng\xe3 m\u1ea1n c\u1ee7a m\xecnh.\n\n"],q,q),A.Y(["title","HAI M\u01af\u01a0I CH\xcdN C\xc2U \u0110\u1ea6U C\u1ee6A CH\xda L\u0102NG NGHI\xcaM","meta",s,"preview","Ch\xfa L\u0103ng Nghi\xeam b\u1eaft \u0111\u1ea7u t\u1eeb c\xe2u th\u1ee9 nh\u1ea5t \u201cNam M\xf4 T\xe1t \u0110\xe1t Tha T\xf4 Gi\xe0 \u0110a Gia\u201d \u0111\u1ebfn \u201cNam M\xf4 Nh\xe2n \u0110\xe0 La Gia\u201d c\xf3 29 c\xe2u. Hai m\u01b0\u01a1i ch\xedn c\xe2u n\xe0y, ch\xfang ta ng\u01b0\u1eddi tu \u0111\u1ea1o ph\u1ea3i quy m\u1ea1ng \u0111\u1ea3nh l\u1ec5 h\u1ebft th\u1ea3y ch\u01b0 Ph\u1eadt, B\u1ed3 T\xe1t, A La H\xe1n, Th\xe1nh hi\u1ec1n, Thi\xean, ti\xean v.v... Hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa n\xe0y, m\u1ed9t khi ni\u1ec7m ra th\xec s\u1ebd xu\u1ea5t hi\u1ec7n m\u1ed9t c\u1ea3nh gi\u1edbi, c\xf3 th\u1ec3 n\xf3i c\u1ea3nh gi\u1edbi n\xe0y v\u1ed1n l\xe0 th\u1eadt, c\u0169ng c\xf3 th\u1ec3 n\xf3i l\xe0 huy\u1ec5n.\n\nT\u1ea1i sao? V\xec t\u1ea5t c\u1ea3 thi\xean ma ngo\u1ea1i \u0111\u1ea1o nh\xecn c\u1ea3nh gi\u1edbi n\xe0y th\xec l\xe0 th\u1eadt, ng\u01b0\u1eddi tu \u0111\u1ea1o th\xec t\u1ef1 m\xecnh bi\u1ebft. \u0110\xe2y \u0111\u1ec1u l\xe0 do th\u1ea7n l\u1ef1c c\u1ee7a Ch\xfa hi\u1ec7n ra ch\u1ee9 kh\xf4ng ph\u1ea3i ch\xednh m\xecnh, l\xe0 s\u1ee9c l\u1ef1c c\u1ee7a tam mu\u1ed9i, l\xe0 s\u1ee9c l\u1ef1c c\u1ee7a Ch\xfa. Cho n\xean c\u0169ng c\xf3 th\u1ec3 n\xf3i l\xe0 huy\u1ec5n.\n\nT\u1ee5ng tr\xec hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa n\xe0y, th\xec s\u1ebd hi\u1ec7n ra c\u1ea3nh gi\u1edbi nh\u01b0 sau: H\xe0nh gi\u1ea3 hi\u1ec7n m\u1ed9t th\u1ee9 th\xe2n ph\xe1p, b\u1ed1n m\u1eb7t t\xe1m ph\u01b0\u01a1ng c\xf3 r\u1ea5t nhi\u1ec1u, r\u1ea5t nhi\u1ec1u hoa sen \u0111\u1ecf \u0111\u1ebfn \u1ee7ng h\u1ed9 ng\u01b0\u1eddi tr\xec Ch\xfa n\xe0y, cho n\xean n\xf3i: \u201cNg\xe0n \u0111\xf3a sen \u0111\u1ecf h\u1ed9 ng\u01b0\u1eddi tr\xec.\u201d N\u1ebfu b\u1ea1n \u0111\u1ea7y \u0111\u1ee7 t\xe2m th\xe0nh, th\xec nhi\u1ec1u h\u01a1n n\u1eefa kh\xf4ng ch\u1ec9 ng\xe0n \u0111\xf3a th\xf4i. \u201cNg\u1ed3i c\u1ee1i con k\u1ef3 l\xe2n \u0111en\u201d l\xfac n\xe0y ch\u1ed7 ng\u1ed3i kh\xf4ng ph\u1ea3i l\xe0 m\xe1y bay, kh\xf4ng ph\u1ea3i l\xe0 xe l\u1eeda, c\u0169ng kh\xf4ng ph\u1ea3i l\xe0 xe bu\xfdt, m\xe0 l\xe0 con k\u1ef3 l\xe2n, v\xec c\xf3 oai \u0111\u1ee9c t\u01b0\u1edbng hi\u1ec7n ra, cho n\xean y\xeau ma qu\u1ef7 qu\xe1i th\u1ea5y th\xec ph\u1ea3i ch\u1ea1y xa.\n\nV\xe0o th\u1eddi nh\xe0 T\u1ed1ng, T\u1ebf \u0110i\xean t\u1ee9c l\xe0 T\u1ebf C\xf4ng h\xf2a th\u01b0\u1ee3ng, th\u01b0\u1eddng th\u01b0\u1eddng d\xf9ng \u0111o\u1ea1n Ch\xfa n\xe0y \u0111\u1ec3 h\xe0ng ph\u1ee5c thi\xean ma, kh\u1ed1ng ch\u1ebf c\xe1c ngo\u1ea1i \u0111\u1ea1o r\u1ea5t linh nghi\u1ec7m c\u1ea3m \u1ee9ng. Do \u0111\xf3, ch\xfang ta h\u1ecdc Ch\xfa L\u0103ng Nghi\xeam ph\u1ea3i bi\u1ebft s\u1ef1 di\u1ec7u d\u1ee5ng c\u1ee7a Ch\xfa, \u0111o\u1ea1n Ch\xfa L\u0103ng Nghi\xeam n\xe0y l\xe0 ph\xe1p khu\u1ea5t ph\u1ee5c, khi b\u1ea1n t\u1ee5ng Ch\xfa n\xe0y, th\xec b\xe0n m\xf4n t\u1ea3 \u0111\u1ea1o, ma qu\u1ef7 t\xe0 th\u1ea7n, \u0111\u1ec1u kh\xf4ng d\xe1m t\xe1c qu\xe1i, \u0111\u1ec1u l\xe3o th\u1ef1c.\n\n"],q,q),A.Y(["title","N\u0102M \u0110\u1ea0I T\xc2M CH\xda","meta",s,"preview","T\u1eeb \u201cS\u1ea5t \u0110\xe0 N\u1ec5 \u0111\u1ebfn N\u1ea3nh Y\u1ebft R\u1ecb\u201d, n\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y \u1ea3o di\u1ec7u v\xf4 c\xf9ng, d\xf9 c\xf3 n\xf3i nhi\u1ec1u c\u0169ng kh\xf4ng h\u1ebft \u0111\u01b0\u1ee3c.\n\nH\u1ecfi: Ch\xfang ta ph\u1ea3i ni\u1ec7m to\xe0n b\u1ed9 Ch\xfa L\u0103ng Nghi\xeam hay l\xe0 n\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y?\n\n\u0110\xe1p: Ch\xfa L\u0103ng Nghi\xeam l\xe0 Ch\xfa r\u1ea5t d\xe0i, nh\u01b0ng m\u1ed7i m\u1ed9t c\xe2u Ch\xfa, \u0111\u1ec1u c\xf3 di\u1ec7u d\u1ee5ng v\xe0 oai l\u1ef1c c\u1ee7a n\xf3. N\u1ebfu b\u1ea1n bi\u1ebft di\u1ec7u d\u1ee5ng v\xe0 oai l\u1ef1c c\u1ee7a n\xf3, th\xec khi c\u1ea3nh gi\u1edbi \u0111\u1ebfn, c\xf3 th\u1ec3 ni\u1ec7m m\u1ea5y c\xe2u n\xe0y l\xe0 \u0111\u1ee7. N\u1ebfu b\u1ea1n ni\u1ec7m t\u1eeb \u0111\u1ea7u \u0111\u1ebfn cu\u1ed1i, th\xec th\u1eddi gian ph\u1ea3i d\xe0i.\n\nN\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y hay ph\xe1 tan Ma La v\xf5ng, ph\xe1 ch\xfa thu\u1eadt c\u1ee7a Ma v\u01b0\u01a1ng. La v\xf5ng t\u1ee9c l\xe0 ch\u1ec9 ph\xf9 v\xe0 ch\xfa thu\u1eadt, khi\u1ebfn cho trong t\xe2m c\u1ee7a b\u1ea1n m\xea m\u1ea5t ch\xe1nh ni\u1ec7m. Nh\u01b0 \u1edf Nam D\u01b0\u01a1ng, Th\xe1i Lan, \u0111\u1ec1u c\xf3 \u0111\u1ed9c tr\xf9ng, b\xf9a ng\u1ea3i c\xe1c th\u1ee9 t\xe0 thu\u1eadt. N\u1ebfu d\xf9ng n\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y th\xec s\u1ebd ph\xe1 \u0111\u01b0\u1ee3c. Nh\u01b0 trong Kinh L\u0103ng Nghi\xeam, ngo\u1ea1i \u0111\u1ea1o Ma \u0110\u0103ng Gi\xe0 d\xf9ng ch\xfa Ph\u1ea1m Thi\xean, c\u0169ng c\xf3 s\u1ee9c l\u1ef1c kh\xf4ng th\u1ec3 ngh\u0129 b\xe0n, \u0111\xf3 l\xe0 t\xe0 ph\xe1p, ch\xfa thu\u1eadt thu\u1ed9c v\u1ec1 t\u1ef1 t\u01b0 t\u1ef1 l\u1ee3i, ch\u1eb3ng ph\u1ea3i \u0111\u1ea1i c\xf4ng v\xf4 t\u01b0, cho n\xean ph\xe1 \u0111\u01b0\u1ee3c n\xf3. N\u1ebfu l\xe0 \u0111\u1ea1i c\xf4ng v\xf4 t\u01b0, kh\xf4ng c\xf3 ch\xfat t\xe2m \xedch k\u1ef7 l\u1ee3i m\xecnh, th\xec ch\u1eb3ng ai ph\xe1 \u0111\u01b0\u1ee3c, v\xec thu\u1ed9c v\u1ec1 ch\xe1nh.\n\nL\xfac t\xf4i \u1edf t\u1ea1i M\xe3 Lai th\xec c\xf3 m\u1ed9t ng\u01b0\u1eddi tr\xfang c\u1ed5 \u0111\u1ed9c kho\u1ea3ng m\u01b0\u1eddi l\u0103m n\u0103m. Y lu\xf4n lu\xf4n mu\u1ed1n t\u1ef1 s\xe1t, th\u01b0\u1eddng nghe th\u1ea5y c\xf3 ng\u01b0\u1eddi n\xf3i chuy\u1ec7n, \u0111i\xean \u0111i\xean \u0111\u1ea3o \u0111\u1ea3o. Y \u0111\u1ebfn t\xecm t\xf4i, t\xf4i d\xf9ng g\u1eady \u0111\xe1nh y th\xec y m\u1eeda ra h\xe0ng ng\xe0n v\xf4 s\u1ed1 c\xf4n tr\xf9ng, r\u1ed3i kh\u1ecfi b\u1ec7nh. \u0110\xf3 l\xe0 c\u1ed5 \u0111\u1ed9c. T\u1ea1i sao d\xf9ng g\u1eady \u0111\xe1nh th\xec y h\u1ebft b\u1ec7nh? V\xec tr\xean c\xe2y g\u1eady c\xf3 r\u1ea5t nhi\u1ec1u oai l\u1ef1c c\u1ee7a Ch\xfa.\n\nPh\u1ea3i c\xf3 \u0111\u1ee9c h\u1ea1nh m\u1edbi c\xf3 th\u1ec3 chi ph\u1ed1i th\u1ee9 ph\xe1p n\xe0y. N\u1ebfu b\u1ea1n kh\xf4ng c\xf3 \u0111\u1ee9c h\u1ea1nh, tuy c\u0169ng c\xf3 ch\xfat linh c\u1ea3m, nh\u01b0ng cu\u1ed1i c\xf9ng s\u1ebd chi\xeau l\u1ea1i h\u1ecda ho\u1ea1n. N\u1ebfu gi\u1edbi lu\u1eadt kh\xf4ng thanh t\u1ecbnh, kh\xf4ng c\xf3 \u0111\u1ee9c h\u1ea1nh, th\xec th\u1ea7n h\u1ed9 Ch\xfa s\u1ebd kh\xf4ng b\u1ed9i ph\u1ee5c b\u1ea1n. Tuy nhi\xean \u0111\u01b0\u01a1ng th\u1eddi c\xf3 c\u1ea3m \u1ee9ng, nh\u01b0ng th\u1eddi gian l\xe2u d\u1ea7n, s\u1ebd g\u1eb7p tai h\u1ecda. Do \u0111\xf3 b\u1ea5t c\u1ee9 tu ph\xe1p g\xec, \u0111\u1ec1u ph\u1ea3i ch\xfa tr\u1ecdng v\u1ec1 \u0111\u1ee9c h\u1ea1nh, ch\xfa tr\u1ecdng v\u1ec1 \u0111\u1ea1o \u0111\u1ee9c c\u0103n b\u1ea3n m\u1edbi c\xf3 th\u1ec3 s\u1eed d\u1ee5ng ph\xe1p n\xe0y, m\u1edbi c\xf3 oai l\u1ef1c, m\u1edbi an to\xe0n. Kh\xf4ng c\xf3 \u0111\u1ea1o \u0111\u1ee9c th\xec kh\xf4ng n\xean d\xf9ng, b\u1ea5t c\u1ee9 ch\xfa g\xec c\u0169ng th\u1ebf.\n\nN\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y l\xe0 tr\u0103m ng\xe0n v\u1ea1n ki\u1ebfp m\u1edbi g\u1eb7p \u0111\u01b0\u1ee3c, c\u0169ng c\xf3 th\u1ec3 tr\u0103m ng\xe0n v\u1ea1n ki\u1ebfp b\u1ea1n \u0111\xe3 g\u1eb7p qua r\u1ed3i, nh\u01b0ng kh\xf4ng th\u1ec3 bi\u1ebft r\xf5. N\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y l\xe0 t\xf4n qu\xfd nh\u1ea5t, l\xe0 Ch\xfa h\u1eefu d\u1ee5ng nh\u1ea5t trong Ph\u1eadt gi\xe1o. B\u1ea5t c\u1ee9 l\xe0 Ch\xfa c\u1ee7a thi\xean ma, Ch\xfa c\u1ee7a ngo\u1ea1i \u0111\u1ea1o, Ch\xfa c\u1ee7a qu\u1ef7 th\u1ea7n, Ch\xfa c\u1ee7a y\xeau qu\xe1i, Ch\xfa c\u1ee7a b\xe0ng m\xf4n t\u1ea3 \u0111\u1ea1o \u0111\u1ec1u ph\xe1 h\u1ebft \u0111\u01b0\u1ee3c. T\u1ee9c l\xe0 Ch\xfa hay ph\xe1 t\u1ea5t c\u1ea3 kh\xf4ng th\u1ec3 ph\xe1. Ch\xfa ph\xe1 thi\xean ma ngo\u1ea1i \u0111\u1ea1o ch\u1ee9 ch\u1eb3ng ph\u1ea3i c\xf3 t\xe2m mu\u1ed1n \u0111\u1ed1i \u0111\u1ecbch v\u1edbi ch\xfang, m\xe0 l\xe0 gi\u1ed1ng nh\u01b0 \u0111\xe1nh th\xe1i c\u1ef1c quy\u1ec1n, d\xf9ng l\u1ef1c nhu ph\xe1 gi\u1ea3i l\u1ef1c cang. B\u1ea5t c\u1ee9 Ch\xfa g\xec, d\xf9ng t\xe2m Ch\xfa n\xe0y \u0111\u1ec1u h\xf3a gi\u1ea3i \u0111\u01b0\u1ee3c h\u1ebft, nh\u01b0ng \u0111\u1eebng t\u1ed5n h\u1ea1i \u0111\u1ed1i v\u1edbi \u0111\u1ed1i ph\u01b0\u01a1ng.\n\nN\u0103m \u0111\u1ea1i t\xe2m Ch\xfa n\xe0y, t\u1ea1i sao g\u1ecdi l\xe0 t\xe2m Ch\xfa? T\u1ee9c l\xe0 t\u1eeb trong t\xe2m t\u1eeb bi ch\u1ea3y ra. D\xf9ng Ch\xfa n\xe0y ph\u1ea3i d\xf9ng t\xe2m t\u1eeb bi h\u1ef7 x\u1ea3, nhi\u1ebfp th\u1ecd t\u1ea5t c\u1ea3 ch\xfang sinh, ch\u1ee9 ch\u1eb3ng ph\u1ea3i n\xf3i, t\xf4i ni\u1ec7m Ch\xfa n\xe0y l\xe0 mu\u1ed1n \u0111\xe1nh b\u1ea1n ch\u1ebft, gi\u1ebft b\u1ea1n, ho\u1eb7c l\xe0 ti\xeau di\u1ec7t b\u1ea1n, m\xe0 l\xe0 oai l\u1ef1c c\u1ee7a Ch\xfa h\xf3a gi\u1ea3i h\u1ebft Ch\xfa thu\u1eadt kh\xe1c c\u0169ng nh\u01b0 b\u0103ng \u0111\xe1 g\u1eb7p m\u1eb7t tr\u1eddi, th\xec t\u1ef1 nhi\xean bi\u1ebfn th\xe0nh n\u01b0\u1edbc.\n\nB\u1ed5n lai Ch\xfa c\u1ee7a b\xe0ng m\xf4n ngo\u1ea1i \u0111\u1ea1o \u0111\u1ec1u v\xec t\xe2m s\xe2n h\u1eadn chi tr\xec, b\u1ea1n ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam n\xe0y, th\xec s\u1ebd h\xf3a th\xe0nh c\xe1t t\u01b0\u1eddng, di\u1ec7u l\xe0 di\u1ec7u ch\u1ed7 n\xe0y. Ch\u1ee9 ch\u1eb3ng ph\u1ea3i b\u1ea1n ni\u1ec7m Ch\xfa n\xe0y, th\xec \u0111\u1ed1i ph\u01b0\u01a1ng th\u1ebf n\xe0o ch\u1ecbu c\u0169ng kh\xf4ng \u0111\u01b0\u1ee3c, m\xe0 l\xe0 Ch\xfa L\u0103ng Nghi\xeam ph\xe1 gi\u1ea3i h\u1ebft oai l\u1ef1c c\u1ee7a Ch\xfa kh\xe1c, ch\u1ee9 kh\xf4ng h\u1ea1i ng\u01b0\u1eddi. Oai l\u1ef1c c\u1ee7a Ch\xfa l\xe0 t\u1eeb trong t\xe2m c\u1ee7a ch\u01b0 Ph\u1eadt, B\u1ed3 T\xe1t v\xe0 ng\u01b0\u1eddi t\u1ee5ng Ch\xfa ch\u1ea3y ra m\u1ed9t th\u1ee9 t\xe2m t\u1eeb bi cho n\xean h\xe0ng ph\u1ee5c \u0111\u01b0\u1ee3c t\u1ea5t c\u1ea3 thi\xean ma ngo\u1ea1i \u0111\u1ea1o.\n\n"],q,q),A.Y(["title","MU\u1ed0N C\u1ea6U PH\u01af\u1edaC B\xc1U TH\u1ebe GIAN HAY QU\u1ea2 B\xc1U TH\xc1NH HI\u1ec0N \u0110\u1ec0U N\xcaN T\u1ee4NG CH\xda L\u0102NG NGHI\xcaM","meta",s,"preview","Ch\xfang ta h\u1eb1ng ng\xe0y mu\u1ed1n h\u1ecdc di\u1ec7u ph\xe1p, nh\u01b0ng \u0111\u1ee3i \u0111\u1ebfn khi di\u1ec7u ph\xe1p tr\u01b0\u1edbc m\u1eaft, th\xec kh\xf4ng nh\u1eadn ra \u0111\u01b0\u1ee3c, tr\u01b0\u1edbc m\u1eb7t b\u1ecf qua, m\u1ea5t \u0111i c\u01a1 h\u1ed9i. Ch\xfa L\u0103ng Nghi\xeam m\u1ed7i c\xe2u \u0111\u1ec1u l\xe0 di\u1ec7u ph\xe1p, m\u1ed7i ch\u1eef \u0111\u1ec1u l\xe0 tam mu\u1ed9i, v\xec ch\xfang ta kh\xf4ng hi\u1ec3u r\xf5, n\xean c\u0169ng kh\xf4ng bi\u1ebft t\xf4n qu\xfd. Gi\u1ed1ng nh\u01b0 ng\u01b0\u1eddi kh\xf4ng nh\u1eadn ra v\xe0ng th\u1eadt, cho r\u1eb1ng \u0111\u1ed3ng v\xe0ng l\xe0 v\xe0ng. N\u1ebfu ai th\xe0nh t\xe2m t\u1ee5ng tr\xec Ch\xfa L\u0103ng Nghi\xeam, th\xec th\u01b0\u1eddng c\xf3 t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t \u0111\u1ebfn h\u1ed9 tr\xec, nh\u01b0ng ph\u1ea3i th\xe0nh t\xe2m, n\u1ebfu kh\xf4ng th\xe0nh t\xe2m th\xec s\u1ebd kh\xf4ng c\xf3 c\u1ea3m \u1ee9ng.\n\nN\u1ebfu ch\xfang ta ni\u1ec7m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, ng\xe0y ng\xe0y th\u1ecd tr\xec, th\xec \u0111\u1eafc \u0111\u01b0\u1ee3c ph\u01b0\u1edbc b\xe1u b\u1ea3y \u0111\u1eddi l\xe0m vi\xean ngo\u1ea1i, t\u1ee9c l\xe0 ng\u01b0\u1eddi c\xf3 ph\u01b0\u1edbc nh\u1ea5t, c\xf3 \u0111\u1ea1i th\u1ebf l\u1ef1c trong th\u1eddi th\xe1i b\xecnh th\u1ecbnh v\u01b0\u1ee3ng. Cho n\xean mu\u1ed1n c\u1ea7u ph\u01b0\u1edbc b\xe1u th\u1ebf gian, ph\u1ea3i ni\u1ec7m t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, mu\u1ed1n c\xf3 qu\u1ea3 b\xe1u Th\xe1nh hi\u1ec1n, c\xe0ng ph\u1ea3i ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam."],q,q),A.Y(["title","Th\u1eddi \u0110\u1ea1i \u201cV\xf4 C\xf9ng Nguy Ng\u1eadp\u201d","meta",s,"preview","H\u01a1n ph\xe2n n\u1eeda nh\xe2n lo\u1ea1i s\u1ebd b\u1ecb h\u1ee7y di\u1ec7t, v\xe0 nh\u1eefng ng\u01b0\u1eddi s\u1ed1ng s\xf3t l\xe0 nh\u1eefng ng\u01b0\u1eddi bi\u1ebft tu \u0110\u1ea1o, nh\u1eefng ng\u01b0\u1eddi ch\xe2n th\u1eadt tu h\xe0nh, nh\u1eefng ng\u01b0\u1eddi bi\u1ebft ni\u1ec7m Ph\u1eadt, nh\u1eefng ng\u01b0\u1eddi bi\u1ebft t\u1ee5ng Kinh v\xe0 nh\u1eefng ng\u01b0\u1eddi \u0103n chay, \u0111\xf3 l\xe0 nh\u1eefng ng\u01b0\u1eddi c\xf3 th\u1ec3 s\u1ed1ng c\xf2n.\n\nKh\xf4ng ph\u1ea3i t\xf4i c\u1ed1 \xfd n\xf3i nh\u1eefng l\u1eddi n\xe0y \u0111\u1ec3 h\xf9 d\u1ecda qu\xfd v\u1ecb. \u0110\xe3 \u0111\u1ebfn l\xfac t\xf4i kh\xf4ng th\u1ec3 kh\xf4ng l\xean ti\u1ebfng, th\u1eddi \u0111\u1ea1i n\xe0y kh\xf4ng ph\u1ea3i l\xe0 th\u1eddi \u0111\u1ea1i h\xf2a b\xecnh, \u0111\xe2y l\xe0 m\u1ed9t th\u1eddi \u0111\u1ea1i \u201cV\xf4 C\xf9ng Nguy Ng\u1eadp\u201d"],q,q),A.Y(["title","PH\xc1P KI\u1ebeT T\u01af\u1edcNG (Trong Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam)","meta",s,"preview","Ph\xe1p Ki\u1ebft T\u01b0\u1eddng: T\u1ee5ng tr\xec th\u1ea7n ch\xfa n\xe0y th\xec t\u1ea5t c\u1ea3 s\u1ef1 vi\u1ec7c \u0111\u1ec1u t\xf9y t\xe2m nh\u01b0 \xfd, th\u1eadt ki\u1ebft t\u01b0\u1eddng may m\u1eafn. T\xf4i s\u1ebd gi\u1ea3i th\xedch r\xf5 nh\u1eefng ph\xe1p n\xe0y cho qu\xfd v\u1ecb.\n\nD\u1eabu c\xf3 gi\u1ea3ng nhi\u1ec1u n\u0103m m\xe0 v\u1eabn kh\xf4ng th\u1ec3 gi\u1ea3ng h\u1ebft nh\u1eefng \u0111i\u1ec3m hay c\u1ee7a th\u1ea7n ch\xfa n\xe0y. T\u1ea5t c\u1ea3 10 ph\u01b0\u01a1ng ch\u01b0 Ph\u1eadt \u0111\u1ec1u sanh xu\u1ea5t t\u1eeb th\u1ea7n ch\xfa n\xe0y, n\xean c\xf3 th\u1ec3 g\u1ecdi l\xe0 th\u1ea7n ch\xfa L\u0103ng Nghi\xeam l\xe0 m\u1eb9 c\u1ee7a ch\u01b0 Ph\u1eadt."],q,q),A.Y(["title","Cu\u1ed9c \u0110\u1eddi V\xe0 \u0110\u1ea1o Nghi\u1ec7p C\u1ee7a H\xf2a Th\u01b0\u1ee3ng Ph\u1ed5 Quang","meta",r,"preview",'Ng\xe0i sinh v\xe0o ng\xe0y 8 th\xe1ng 4 n\u0103m 1901 - l\xe0 m\u1ed9t trong nh\u1eefng c\xe2u chuy\u1ec7n huy\u1ec1n tho\u1ea1i s\u1ed1ng \u0111\u1ed9ng nh\u1ea5t c\u1ee7a Ph\u1eadt gi\xe1o \u0111\u01b0\u01a1ng \u0111\u1ea1i. Ng\xe0i \u0111\u01b0\u1ee3c xem l\xe0 b\u1eadc cao t\u0103ng \u0111\u1ea1i kh\u1ed5 h\u1ea1nh \u1ea9n tu t\u1ea1i n\xfai Chung Nam, bi\u1ec3u t\u01b0\u1ee3ng s\u1ed1ng c\u1ee7a s\u1ee9c m\u1ea1nh Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam v\xe0 tinh hoa v\xf5 h\u1ecdc Thi\u1ebfu L\xe2m.\n\nD\u01b0\u1edbi \u0111\xe2y l\xe0 t\xf3m t\u1eaft nh\u1eefng n\u1ed9i dung \u0111\u1eaft gi\xe1 nh\u1ea5t v\u1ec1 cu\u1ed9c \u0111\u1eddi v\xe0 \u0111\u1ea1o nghi\u1ec7p c\u1ee7a Ng\xe0i:\n\n1. Th\xe2n th\u1ebf ly k\u1ef3 v\xe0 ph\u01b0\u01a1ng ph\xe1p th\u1ecd gi\xe1o \u0111\u1ed9c nh\u1ea5t\n\n\u2022 M\u1ed3 c\xf4i t\u1eeb nh\u1ecf, b\xe9n duy\xean c\u1eeda Ph\u1eadt: Ng\xe0i sinh n\u0103m 1901, m\u1edbi 8 th\xe1ng tu\u1ed5i th\xec cha m\u1eb9 \u0111\u1ec1u qua \u0111\u1eddi gi\u1eefa th\u1eddi lo\u1ea1n l\u1ea1c. Ng\xe0i \u0111\u01b0\u1ee3c m\u1ed9t v\u1ecb cao t\u0103ng \u0111\u1ed3ng h\u01b0\u01a1ng \u0111\u01b0a v\u1ec1 ch\xf9a Thi\u1ebfu L\xe2m nu\xf4i d\u01b0\u1ee1ng v\xe0 \u0111\u1eb7t ph\xe1p hi\u1ec7u l\xe0 Ph\u1ed5 Quang.\n\n\u2022 H\u1ecdc kinh b\u1eb1ng "3 c\xe2u \u0111\u1ed5i 1 mi\u1ebfng c\u01a1m": Khi Ng\xe0i v\u1eeba bi\u1ebft n\xf3i, s\u01b0 ph\u1ee5 \u0111\xe3 d\u1ea1y Ng\xe0i h\u1ecdc thu\u1ed9c Ch\xfa L\u0103ng Nghi\xeam. Ph\u01b0\u01a1ng ph\xe1p d\u1ea1y v\xf4 c\xf9ng nghi\xeam kh\u1eafc: m\u1ed7i ng\xe0y h\u1ecdc thu\u1ed9c 3 c\xe2u ch\xfa m\u1edbi \u0111\u01b0\u1ee3c \u0103n m\u1ed9t mi\u1ebfng c\u01a1m. D\xf9 ho\xe0n to\xe0n kh\xf4ng bi\u1ebft ch\u1eef v\u0103n t\u1ef1, \u0111\u1ebfn n\u0103m 15 tu\u1ed5i Ng\xe0i \u0111\xe3 thu\u1ed9c l\xf2ng v\xf4 s\u1ed1 kinh \u0111i\u1ec3n v\xe0 th\u1ea7n ch\xfa Ph\u1eadt gi\xe1o, b\u1ea5t k\u1ec3 b\u1eaft \u0111\u1ea7u t\u1eeb \u0111o\u1ea1n n\xe0o c\u0169ng \u0111\u1ecdc l\u1ea1i kh\xf4ng sai m\u1ed9t t\u1eeb.\n\n\u2022 Th\xe0nh t\u1ef1u 47 tuy\u1ec7t k\u1ef9 Thi\u1ebfu L\xe2m: Ng\xe0i \u0111\u01b0\u1ee3c s\u01b0 ph\u1ee5 truy\u1ec1n d\u1ea1y tr\u1ecdn v\u1eb9n 47 m\xf4n tuy\u1ec7t k\u1ef7 v\xf5 h\u1ecdc Thi\u1ebfu L\xe2m (Kim Cang Tr\xe1o, Thi\u1ebft B\u1ed1 Sam, Thi\u1ebft Sa Ch\u01b0\u1edfng, \u0110\u1ed3ng T\u1eed C\xf4ng...).\n\n\u2022 L\u1eddi d\u1eb7n \u1ea9n tu tr\u01b0\u1edbc tu\u1ed5i 60: N\u0103m 1927, tr\u01b0\u1edbc khi vi\xean t\u1ecbch, s\u01b0 ph\u1ee5 d\u1eb7n Ng\xe0i tr\u01b0\u1edbc 60 tu\u1ed5i tuy\u1ec7t \u0111\u1ed1i kh\xf4ng giao du v\u1edbi ng\u01b0\u1eddi th\u1ebf t\u1ee5c \u0111\u1ec3 b\u1ea3o to\xe0n c\xf4ng phu v\xe0 tr\xe1nh b\u1ecb k\u1ebb \xe1c t\u1ed5n h\u1ea1i.\n\n2. H\xe0nh tr\xecnh \u1ea9n tu th\xe2m s\u01a1n v\xe0 s\u1ef1 c\u1ea3m h\xf3a mu\xf4n lo\xe0i\n\n\u2022 Thu\u1ea7n h\xf3a th\xfa d\u1eef t\u1ea1i n\xfai Tr\u01b0\u1eddng B\u1ea1ch: N\u0103m 22 tu\u1ed5i, Ng\xe0i c\xf9ng s\u01b0 \u0111\u1ec7 v\xe0o n\xfai Tr\u01b0\u1eddng B\u1ea1ch kh\u1ed5 luy\u1ec7n. T\u1ea1i \u0111\xe2y, Ng\xe0i \u0111\xe3 c\u1ea3m h\xf3a m\u1ed9t con h\u1ed5 d\u1eef b\u1eb1ng c\xe1ch chia s\u1ebb th\u1ee9c \u0103n v\xe0 cho h\u1ed5 n\u1eb1m b\xean c\u1ea1nh nghe t\u1ee5ng 108 bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam m\u1ed7i ng\xe0y su\u1ed1t 8 n\u0103m cho \u0111\u1ebfn khi n\xf3 ch\u1ebft gi\xe0. Nhi\u1ec1u lo\xe0i tinh tinh, v\u01b0\u1ee3n tr\u1eafng c\u0169ng quy y, bi\u1ebft qu\xe9t c\u1ed5ng, h\xe1i tr\xe1i c\xe2y v\xe0 gi\xfap Ng\xe0i th\u1ed5i l\u1eeda.\n\n\u2022 Kh\u1ed5 h\u1ea1nh t\u1ea1i n\xfai Chung Nam: Ng\xe0i chuy\u1ec3n sang n\xfai Chung Nam (\u1edf \u0111\u1ed9 cao h\u01a1n 3.000m) \u2013 n\u01a1i n\u1ed5i ti\u1ebfng l\xe0 \u0111\u1ecba linh \u1ea9n tu c\u1ee7a c\xe1c b\u1eadc \u0111\u1eafc \u0111\u1ea1o.\n\n\u2022 Tri\u1ebft l\xfd "Nh\u1ea5t thi\u1ebft duy t\xe2m": Nh\u1eefng n\u0103m th\xe1ng \u0111\u1ea7u tr\xean n\xfai kh\xf4ng c\xf3 l\u01b0\u01a1ng th\u1ef1c, Ng\xe0i \u0103n l\xe1 c\xe2y v\xe0o m\xf9a h\xe8 v\xe0 v\u1ecf c\xe2y v\xe0o m\xf9a \u0111\xf4ng gi\xe3 th\xe0nh b\u1ed9t pha n\u01b0\u1edbc l\u1ea1nh. Ng\xe0i d\u1ea1y: "B\u1ea1n n\xf3i n\xf3 l\xe0 l\xe1 c\xe2y v\u1ecf c\xe2y th\xec n\xf3 l\xe0 l\xe1 c\xe2y v\u1ecf c\xe2y, b\u1ea1n n\xf3i n\xf3 l\xe0 b\u1ed9t m\xec th\xec n\xf3 ch\xednh l\xe0 b\u1ed9t m\xec".\n\n3. T\u1ef1 tay x\xe2y d\u1ef1ng Quan \xc2m C\u1ed5 \u0110\u1ed9ng b\u1eb1ng m\u1ed9t chi\u1ebfc cu\u1ed1c\n\n\u2022 \u0110\u1ee5c 5.000 b\u1eadc thang \u0111\xe1: Nh\u1eadn th\u1ea5y Quan \xc2m C\u1ed5 \u0110\u1ed9ng l\xe0 n\u01a1i t\u1eeb tr\u01b0\u1eddng t\xe2m linh t\u1ed1i \u01b0u nh\u01b0ng kh\xf4ng c\xf3 \u0111\u01b0\u1eddng l\xean, Ng\xe0i \u0111\xe3 t\u1ef1 tay \u0111\u1ee5c \u0111\u1ebdo h\u01a1n 5.000 b\u1eadc thang \u0111\xe1 b\u0103ng qua v\xe1ch n\xfai hi\u1ec3m tr\u1edf.\n\n\u2022 D\u1ef1ng ch\xf9a l\xe0m ch\u1ed7 t\u1ef1a cho h\u1eadu th\u1ebf: D\xf9 ch\u1ec9 c\xf3 m\u1ed9t chi\u1ebfc cu\u1ed1c v\xe0 \u0111\xf4i tay tr\u1ea7n, Ng\xe0i \u0111\xe3 san ph\u1eb3ng v\xe1ch n\xfai, t\u1ef1 x\u1ebb \u0111\xe1 \u0111\u1eadp g\u1ea1ch x\xe2y n\xean \u0110\u1ea1i H\xf9ng B\u1ea3o \u0110i\u1ec7n, Vi\xean Th\xf4ng \u0110i\u1ec7n c\xf9ng h\u01a1n 60 gian nh\xe0 \u0111\xe1 \u0111\u1ec3 l\xe0m \u0111\u1ea1o tr\xe0ng cho ng\u01b0\u1eddi tu h\xe0nh t\u01b0\u01a1ng lai. Ng\xe0i c\xf2n t\u1ef1 b\u1ecf ti\u1ec1n mua m\xe0u v\u1ec1 nh\u1eafm m\u1eaft qu\xe1n t\u01b0\u1edfng \u0111\u1ec3 v\u1ebd 32 b\u1ee9c t\u01b0\u1ee3ng B\u1ed3 T\xe1t Qu\xe1n Th\u1ebf \xc2m l\xean t\u01b0\u1eddng \u0111\u1ea5t.\n\n4. K\u1ef7 l\u1ee5c tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam v\xe0 nh\u1eefng hi\u1ec7n t\u01b0\u1ee3ng k\u1ef3 di\u1ec7u\n\n\u2022 K\u1ef7 l\u1ee5c 5,6 tri\u1ec7u bi\u1ebfn L\u0103ng Nghi\xeam: Ng\xe0i d\xe0nh tr\u1ecdn h\u01a1n 100 n\u0103m cu\u1ed9c \u0111\u1eddi chuy\xean tr\xec Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam. Trung b\xecnh m\u1ed7i ng\xe0y Ng\xe0i t\u1ee5ng 108 bi\u1ebfn (ho\u1eb7c 210 bi\u1ebfn m\u1ed7i 10 ng\xe0y), t\u1ed5ng c\u1ed9ng \u0111\xe3 t\xedch l\u0169y h\u01a1n 5,6 tri\u1ec7u bi\u1ebfn \u2013 m\u1ed9t con s\u1ed1 k\u1ef7 l\u1ee5c trong l\u1ecbch s\u1eed Ph\u1eadt gi\xe1o.\n\n\u2022 Th\xe2n th\u1ec3 kim c\u01b0\u01a1ng b\u1ea5t ho\u1ea1i k\u1ef3 di\u1ec7u:\n\n  \u2022 Di\u1ec7n m\u1ea1o tr\u1ebb th\u01a1: \u1ede tu\u1ed5i 120+, da d\u1ebb Ng\xe0i v\u1eabn h\u1ed3ng h\xe0o, m\u1eaft s\xe1ng tai t\u01b0\u1eddng, gi\u1ecdng n\xf3i vang d\u1ed9i nh\u01b0 chu\xf4ng. R\u0103ng c\u1ee7a Ng\xe0i \u0111\xe3 r\u1ee5ng v\xe0 m\u1ecdc m\u1edbi l\u1ea1i 3 l\u1ea7n, s\u1edf h\u1eefu 36 chi\u1ebfc r\u0103ng tr\u1eafng \u0111\u1ec1u.\n\n  \u2022 T\u1ef1 t\u1ecfa h\u01b0\u01a1ng chi\xean \u0111\xe0n: D\xf9 h\u1ea7u nh\u01b0 kh\xf4ng t\u1eafm r\u1eeda hay thay gi\u1eb7t th\u01b0\u1eddng xuy\xean, th\xe2n th\u1ec3 v\xe0 qu\u1ea7n \xe1o Ng\xe0i lu\xf4n t\u1ecfa ra m\xf9i h\u01b0\u01a1ng hoa \u0111\xe0n thanh nh\xe3. Chu\u1ed7i h\u1ea1t \u0111\u01b0\u1ee3c Ng\xe0i c\u1ea7m xoa qua l\u1eadp t\u1ee9c \u0111\u01b0\u1ee3m m\xf9i \u0111\xe0n h\u01b0\u01a1ng ng\u1ea1t ng\xe0o.\n\n  \u2022 C\u01a1 b\u1eafp nh\u01b0 \u0111\u1ed3ng s\u1eaft: D\xf9 ch\u1ec9 \u0103n b\u1eafp c\u1ea3i, \u0111\u1eadu ph\u1ee5 v\xe0 mu\u1ed1i, c\u01a1 b\u1eafp Ng\xe0i v\u1eabn c\u1ee9ng ch\u1eafc nh\u01b0 \u0111\xe1. \u0110\xeam \u0111\u1ebfn, h\u1ea7u nh\u01b0 Ng\xe0i kh\xf4ng ng\u1ee7, Ng\xe0i v\u1eeba \u0111i v\u1eeba tr\xec t\u1ee5ng 108 bi\u1ebfn L\u0103ng Nghi\xeam'],q,q),A.Y(["title","C\u1ed9t M\u1ed1c 36.000 Bi\u1ebfn & \u0110\xe0i Sen N\xe2ng \u0110\u1ee1","meta",r,"preview","Khi m\u1ed9t h\xe0nh gi\u1ea3 ch\xed t\xe2m tr\xec t\u1ee5ng \u0111\u1ea1t t\u1edbi c\u1ed9t m\u1ed1c t\u1ed1i th\u01b0\u1ee3ng 36.000 bi\u1ebfn, nh\u1eefng ph\xe9p m\u1ea7u hi\u1ec7n ti\u1ec1n s\u1ebd h\xf3a sinh. T\xedch l\u0169y \u0111\u1ee7 36.000 l\u1ea7n m\u1ed9t c\xe1ch chu\u1ea9n x\xe1c, m\u1ed9t hi\u1ec7n t\u01b0\u1ee3ng vi di\u1ec7u s\u1ebd xu\u1ea5t hi\u1ec7n: d\u01b0\u1edbi th\xe2n ng\u01b0\u1eddi \u0111\xf3 s\u1ebd hi\u1ec7n ra m\u1ed9t \u0111\xe0i sen n\xe2ng \u0111\u1ee1 trong kho\u1ea3ng kh\xf4ng v\xf4 h\xecnh."],q,q),A.Y(["title","\u0110\u1ecbnh Qu\u1ed1c V\xe3ng Sinh \u2014 36.000 \u0110\u1ea1o H\xe0o Quang","meta",r,"preview","M\u1ed7i bi\u1ebfn Ch\xfa L\u0103ng Nghi\xeam \u0111\u01b0\u1ee3c t\u1ee5ng l\xean gi\u1ed1ng nh\u01b0 vi\u1ec7c v\u1ebd m\u1ed9t \u0111\u1ea1o h\xe0o quang r\u1ef1c r\u1ee1 bao b\u1ecdc xung quanh c\u01a1 th\u1ec3. Do \u0111\xf3, khi t\u1ee5ng \u0111\u1ee7 36.000 bi\u1ebfn, th\xe2n t\xe2m h\xe0nh gi\u1ea3 s\u1ebd c\xf3 36.000 \u0111\u1ea1o h\xe0o quang ki\xean c\u1ed1 b\u1ea3o v\u1ec7, ch\u1eafc ch\u1eafn tho\xe1t kh\u1ecfi ba \u0111\u01b0\u1eddng \xe1c nghi\u1ec7p."],q,q),A.Y(["title","C\u1ee9u \u0110\u1ed9 Cha M\u1eb9 Trong B\u1ea3y \u0110\u1eddi Nhi\u1ec1u Ki\u1ebfp","meta",r,"preview","N\u0103ng l\u1ef1c c\u1ee7a 36.000 bi\u1ebfn t\u1ee5ng kh\xf4ng ch\u1ec9 \u0111em l\u1ea1i s\u1ef1 th\xe0nh t\u1ef1u ri\xeang cho b\u1ea3n th\xe2n, m\xe0 c\xf2n t\u1ecfa n\u0103ng l\u01b0\u1ee3ng c\u1ee9u \u0111\u1ed9 to l\u1edbn. C\xf4ng \u0111\u1ee9c th\xf9 th\u1eafng n\xe0y c\xf3 th\u1ec3 gi\xfap c\u1ee9u \u0111\u1ed9 cha m\u1eb9 trong b\u1ea3y \u0111\u1eddi, th\u1eadm ch\xed l\xe0 cha m\u1eb9 trong nhi\u1ec1u ki\u1ebfp qu\xe1 kh\u1ee9 \u0111\u1ec1u \u0111\u01b0\u1ee3c gi\u1ea3i tho\xe1t si\xeau sinh."],q,q),A.Y(["title","S\u1ef1 T\u1ed3n Vong C\u1ee7a Ch\xe1nh Ph\xe1p","meta",s,"preview","Ch\xfa L\u0103ng Nghi\xeam l\xe0 linh v\u0103n c\u1ee9u m\u1ea1ng c\u1ee7a tr\u1eddi \u0111\u1ea5t. B\u1ea5t c\u1ee9 l\xfac n\xe0o c\u0169ng ph\u1ea3i c\xf3 ng\u01b0\u1eddi tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam \u0111\u1ec3 ch\u1ed1ng \u0111\u1ee1 tr\u1eddi \u0111\u1ea5t, kh\xf4ng \u0111\u1ec3 cho th\u1ebf gi\u1edbi \u0111i \u0111\u1ebfn ch\u1ed7 ho\u1ea1i di\u1ec7t. N\u1ebfu kh\xf4ng c\xf2n ai t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam n\u1eefa, th\u1ebf gi\u1edbi n\xe0y s\u1ebd nhanh ch\xf3ng \u0111i \u0111\u1ebfn c\xf5i di\u1ec7t."],q,q),A.Y(["title","C\u1ea3nh Gi\u1edbi Th\xe2n Kim Cang B\u1ea5t Ho\u1ea1i","meta",r,"preview","Qu\xe1 tr\xecnh tinh t\u1ea5n tr\xec t\u1ee5ng \u0111\u1ea1i th\u1ea7n ch\xfa gi\xfap tr\u01b0\u1ee3c kh\xed gi\u1ea3m s\xe2u, thanh kh\xed th\u0103ng ti\u1ebfn, chuy\u1ec3n h\xf3a ph\xe0m th\xe2n th\xe0nh Th\xe2n Kim Cang. C\u01a1 th\u1ec3 tr\u1edf n\xean c\u1ee9ng ch\u1eafc nh\u01b0 \u0111\u1ed3ng s\u1eaft, h\xe0m r\u0103ng 36 chi\u1ebfc t\u1ef1 m\u1ecdc l\u1ea1i, v\xe0 th\xe2n th\u1ec3 t\u1ef1 t\u1ecfa m\xf9i h\u01b0\u01a1ng \u0111\xe0n h\u01b0\u01a1ng n\u1ed3ng n\xe0n b\u1ea5t bi\u1ebfn."],q,q),A.Y(["title","B\xe1ch \u0110\u1ed9c B\u1ea5t S\xe2m & Th\u1ea7n Th\xf4ng Mu\xf4ng Th\xfa","meta",r,"preview","Th\xe2n th\u1ec3 mi\u1ec5n nhi\u1ec5m ho\xe0n to\xe0n v\u1edbi t\u1ea5t c\u1ea3 b\u1ec7nh t\u1eadt, \u0111\u1ed9c ch\u1ea5t. \u0110\u1eb7c bi\u1ec7t, khi h\xe0nh gi\u1ea3 tr\xec t\u1ee5ng v\u01b0\u1ee3t qua m\u1ed1c 1.000.000 bi\u1ebfn, h\u1ecd s\u1ebd \u0111\u1eafc \u0111\u01b0\u1ee3c kh\u1ea3 n\u0103ng th\u1ea5u hi\u1ec3u ng\xf4n ng\u1eef c\u1ee7a mu\xf4n lo\xe0i \u0111\u1ed9ng v\u1eadt, tho\xe1t kh\u1ecfi th\u1ebf gi\u1edbi h\u01b0 \u1ea3o huy\u1ec5n c\u1ea3nh."],q,q),A.Y(["title","V\xec Sao Tr\xec L\u0103ng Nghi\xeam Ch\xfa Ph\u1ea3i Ni\u1ec7m L\u1edbn Ti\u1ebfng","meta",r,"preview","Ph\xe0m l\xe0 ng\u01b0\u1eddi \u0111\u1ebfn Quan \xc2m C\u1ed5 \u0110\u1ed9ng tu h\xe0nh th\xec nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i ni\u1ec7m l\u1edbn ti\u1ebfng. V\xec sao th\u1ea7y k\xeau c\xe1c Ph\u1eadt t\u1eed ni\u1ec7m l\u1edbn ti\u1ebfng? Ni\u1ec7m l\u1edbn ti\u1ebfng L\u0103ng Nghi\xeam Ch\xfa, th\xec hoa sen c\u1ee7a c\xe1c Ph\u1eadt t\u1eed c\u0169ng l\u1edbn theo. Ni\u1ec7m cho t\u1ed1t th\xec cha m\u1eb9 \u0111\u1ec1u \u0111\u01b0\u1ee3c l\u1ee3i \xedch, \u0111\u1ec1u \u0111\u01b0\u1ee3c ng\u1ed3i tr\xean hoa sen. C\xe1c Ph\u1eadt t\u1eed xem Th\xedch Ca M\xe2u Ni Ph\u1eadt, D\u01b0\u1ee3c S\u01b0 Ph\u1eadt, A Di \u0110\xe0 Ph\u1eadt trong \u0110\u1ea1i H\xf9ng B\u1ea3o \u0110i\u1ec7n, c\xe1c Ng\xe0i \u0111\u1ec1u ng\u1ed3i tr\xean hoa sen 5 t\u1ea7ng.\n\nNi\u1ec7m l\u1edbn ti\u1ebfng L\u0103ng Nghi\xeam Ch\xfa kh\xf4ng ch\u1ec9 c\xf3 l\u1ee3i cho b\u1ea3n th\xe2n. N\xf3 c\xf2n c\xf3 th\u1ec3 \u0111\u1ea3 th\xf4ng to\xe0n b\u1ed9 kinh m\u1ea1ch trong th\xe2n th\u1ec3. Ni\u1ec7m l\u1edbn ti\u1ebfng th\xec s\u1ebd kh\xf4ng c\xf2n \u0111\u1ee7 th\u1ee9 v\u1ecdng t\u01b0\u1edfng n\u1eefa.\n\nV\xec sao c\u1ea3 \u0111\u1eddi th\u1ea7y kh\xf4ng cho ph\xe9p m\u1eb7c ni\u1ec7m v\xe0 ni\u1ec7m nh\u1ecf ti\u1ebfng? Ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa ph\u1ea3i h\xe9t to ra, \xe2m thanh c\xe0ng l\u1edbn c\xe0ng t\u1ed1t. Th\u1ea7y th\xedch nh\u1ea5t l\xe0 ng\u01b0\u1eddi c\xf3 \xe2m thanh l\u1edbn. Khi h\xe9t to ra r\u1ed3i, th\xec th\xe2n v\xe0 t\xe2m c\u1ee7a Ph\u1eadt t\u1eed \u0111\u1ec1u \u1edf trong c\xe2u ch\xfa, s\u1ebd kh\xf4ng \u0111i kh\u1edfi v\u1ecdng t\u01b0\u1edfng n\u1eefa. \u0110\u1ee7 th\u1ee9 b\u1ec7nh t\u1eadt c\u0169ng kh\xf4ng c\xf2n. C\u0169ng s\u1ebd kh\xf4ng c\xf3 50 lo\u1ea1i \u1ea5m ma. \u1ea4m ma l\xe0 g\xec? Ch\xednh l\xe0 t\xe0 t\u01b0 t\xe0 ki\u1ebfn trong t\xe2m c\u1ee7a ch\xednh m\xecnh, nh\u01b0 v\u1eady l\xe0 b\u1ecb ma \xe1m r\u1ed3i.\n\nNi\u1ec7m l\u1edbn ti\u1ebfng L\u0103ng Nghi\xeam Ch\xfa, h\u1ebft th\u1ea3y ma \u0111\u1ec1u kh\xf4ng c\xf2n. Ch\xfang n\xf3 t\u1eeb xa \u0111\u1ec1u qu\u1ef3 xu\u1ed1ng d\u1eadp \u0111\u1ea7u \u0111\u1ea3nh l\u1ec5 Ph\u1eadt t\u1eed. Cho \u0111\u1ebfn nh\u1eefng con tr\xf9ng con ki\u1ebfn, t\u1ea5t c\u1ea3 ch\xfang sinh, ch\u1ec9 c\u1ea7n nghe \u0111\u01b0\u1ee3c th\xf4i, v\u1ecb lai \u0111\u1ec1u s\u1ebd th\xe0nh Ph\u1eadt.\n\nM\u1ed7i m\u1ed9t ch\u1eef m\u1ed7i m\u1ed9t c\xe2u c\u1ee7a L\u0103ng Nghi\xeam Ch\xfa \u0111\u1ec1u l\xe0 ph\xe1 \u0111\u1ecba ng\u1ee5c. Nh\u1eefng ch\xfang sinh \u0111ang ch\u1ecbu kh\u1ed5 trong \u0111\u1ecba ng\u1ee5c \u0111\u1ec1u c\xf3 th\u1ec3 \u0111\u01b0\u1ee3c \u0111\u1ed9. Cho n\xean uy l\u1ef1c c\u1ee7a L\u0103ng Nghi\xeam Ch\xfa ch\xednh l\xe0 l\u1edbn nh\u01b0 v\u1eady \u0111\xf3."],q,q),A.Y(["title","C\u1ea5u Tr\xfac Kh\u1edfi \u0110\u1ea7u C\u1ee7a B\xe0i T\u1ee5ng","meta",r,"preview",'\u0110\u1ec3 b\xe0i tr\xec ch\xfa c\xf3 hi\u1ec7u qu\u1ea3 t\u1ed1t nh\u1ea5t, tuy\u1ec7t \u0111\u1ed1i kh\xf4ng n\xean b\u1ecf qua nghi th\u1ee9c kh\u1edfi \u0111\u1ea7u: Lu\xf4n ph\u1ea3i ni\u1ec7m 3 l\u1ea7n c\xe2u "\u0110\u1ea1i Ph\u1eadt \u0110\u1ea3nh Th\u1ee7 L\u0103ng Nghi\xeam Th\u1ea7n Ch\xfa". C\xe2u n\xe0y gi\u1ed1ng nh\u01b0 c\xe1i \u0111\u1ea7u, ph\u1ea7n th\u1ea7n ch\xfa l\xe0 th\xe2n th\u1ec3; n\u1ebfu kh\xf4ng t\u1ee5ng gi\u1ed1ng nh\u01b0 c\u01a1 th\u1ec3 kh\xf4ng c\xf3 \u0111\u1ea7u.'],q,q),A.Y(["title","S\u1ef1 B\u1ea3o V\u1ec7 C\u1ee7a 8 V\u1ea1n 4 Ng\xe0n Kim Cang T\u1ea1ng","meta",s,"preview","B\u1ea1n t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, d\xf9 b\u1ea1n ch\u1ec9 t\u1ee5ng m\u1ed9t ch\u1eef, m\u1ed9t c\xe2u, m\u1ed9t h\u1ed9i, hay to\xe0n b\u1ed9, th\xec t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t c\xf9ng quy\u1ebfn thu\u1ed9c c\u1ee7a c\xe1c ng\xe0i c\u0169ng lu\xf4n lu\xf4n theo b\u1ea3o v\u1ec7 b\u1ea1n c\u1ea9n th\u1eadn, kh\xf4ng \u0111\u1ec3 cho b\u1ea5t k\u1ef3 lo\xe0i ma qu\u1ef7 n\xe0o \u0111\u1ebfn qu\u1ea5y nhi\u1ec5u."],q,q),A.Y(["title","Kh\xf4ng N\xean \u0102n Tr\u1ee9ng Khi Tr\xec Ch\xfa","meta",r,"preview","Kh\xf4ng n\xean \u0103n tr\u1ee9ng khi tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam. Vi\u1ec7c \u0103n tr\u1ee9ng g\xe0 mang t\u1ed9i n\u1eb7ng h\u01a1n c\u1ea3 \u0103n th\u1ecbt th\xf4ng th\u01b0\u1eddng, b\u1edfi l\u1ebd m\u1ed7i qu\u1ea3 tr\u1ee9ng \u0111\u1ea1i di\u1ec7n cho m\u1ed9t sinh m\u1ea1ng nguy\xean v\u1eb9n. \u0102n tr\u1ee9ng mang m\xf9i tanh, ng\u0103n c\u1ea3n th\xe2n t\xe2m \u0111\u1ea1t \u0111\u1ebfn thu\u1ea7n t\u1ecbnh L\u0103ng Nghi\xeam Tam Mu\u1ed9i."],q,q),A.Y(["title","B\u1ea3o Ph\xe1p Ng\u0169 \u0110\u1ea1i T\xe2m Ch\xfa Cho Ng\u01b0\u1eddi B\u1eadn R\u1ed9n","meta",r,"preview","N\u1ebfu kh\xf4ng \u0111\u1ee7 th\u1eddi gian tr\xec to\xe0n b\u1ed9, h\xe3y t\u1ee5ng Ng\u0169 \u0110\u1ea1i T\xe2m Ch\xfa: S\u1ea4T \u0110\xc0N N\u1ec2 \u2014 A CA GIA \u2014 M\u1eacT R\u1eca TR\u1ee4 \u2014 B\xc1T R\u1eca \u0110\xc1T RA GIA \u2014 N\u1ea2NH Y\u1ebeT R\u1eca. Ch\u1ec9 c\u1ea7n tr\xec 7 bi\u1ebfn h\u1eb1ng ng\xe0y, c\xf4ng \u0111\u1ee9c t\u1ea1o ra c\xf2n to l\u1edbn h\u01a1n c\u1ea3 vi\u1ec7c tr\xec t\u1ee5ng \u0111\u1ee7 108 bi\u1ebfn Ch\xfa \u0110\u1ea1i Bi tinh t\u1ea5n."],q,q),A.Y(["title","H\xe0ng Ph\u1ee5c Ma Qu\xe2n","meta",s,"preview","Ch\xfa L\u0103ng Nghi\xeam l\xe0 th\u1ea7n ch\xfa uy l\u1ef1c nh\u1ea5t \u0111\u1ec3 h\xe0ng ph\u1ee5c ma o\xe1n. Khi b\u1ea1n t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, t\u1ea5t c\u1ea3 t\xe0 ma ngo\u1ea1i \u0111\u1ea1o, y\xeau ma qu\u1ef7 qu\xe1i \u0111\u1ec1u khi\u1ebfp s\u1ee3 v\xe0 kh\xf4ng d\xe1m \u0111\u1ebfn g\u1ea7n. \u0110\xf3 l\xe0 v\xec Ch\xfa L\u0103ng Nghi\xeam ph\xe1t ra h\xe0o quang r\u1ef1c r\u1ee1 c\u1ee7a Ph\u1eadt, soi s\xe1ng kh\u1eafp ph\xe1p gi\u1edbi."],q,q),A.Y(["title","V\u1ee5 Tr\u1ee9ng G\xe0","meta",s,"preview","\u201cB\u1ea1n cho r\u1eb1ng \u0103n chay th\xec \u0103n tr\u1ee9ng c\u0169ng \u0111\u01b0\u1ee3c? C\u0169ng \u0111\u01b0\u1ee3c! Ch\u1edd t\u1edbi khi b\u1ea1n \u0111\u1ea7u thai l\xe0m g\xe0 r\u1ed3i khi \u0111\xf3 b\u1ea1n s\u1ebd hi\u1ec3u (ph\u1eadn l\xe0m g\xe0) ch\xednh do \u0103n tr\u1ee9ng g\xe0 m\xe0 ra\u201d.\n\nH\u1ecfi: L\xe0 \u0111\u1ec7 t\u1eed Ph\u1eadt th\xec c\xf3 th\u1ec3 \u0103n tr\u1ee9ng kh\xf4ng?\n\u0110\xe1p: N\u1ebfu qu\xfd v\u1ecb th\xe8m mu\u1ed1n \u0103n nh\u1eefng th\u1ee9 dinh d\u01b0\u1ee1ng \u0111\xf3, th\xec c\u1ea7n g\xec ph\u1ea3i h\u1ecfi t\xf4i?\n\nH\u1ecfi: T\u1ea1i sao ng\u01b0\u1eddi \u0103n chay kh\xf4ng \u0111\u01b0\u1ee3c \u0103n tr\u1ee9ng?\n\u0110\xe1p: Kh\xf4ng c\xf3 g\xe0 tr\u1ed1ng, g\xe0 m\xe1i c\u0169ng c\xf3 th\u1ec3 \u1ea5p tr\u1ee9ng n\u1edf ra g\xe0 con nh\u01b0 th\u01b0\u1eddng. Ng\xe0y x\u01b0a ng\u01b0\u1eddi ta kh\xf4ng hi\u1ec3u \u0111i\u1ec1u n\xe0y n\xean h\u1ecd n\xf3i l\xe0, n\u1ebfu tr\u1ee9ng kh\xf4ng c\xf3 tr\u1ed1ng th\xec kh\xf4ng th\u1ec3 n\u1edf ra g\xe0 con. Nh\u01b0ng l\u1ed1i n\xf3i n\xe0y c\u0169ng kh\xf4ng \u0111\xfang s\u1ef1 th\u1eadt. B\u1edfi v\xec \u0111\u1ea1o l\xfd v\u1ed1n kh\xf4ng c\xf3 tuy\u1ec7t \u0111\u1ed1i, cho n\xean ch\xfang ta \u0103n chay quy\u1ebft kh\xf4ng n\xean \u0103n tr\u1ee9ng.\n\nH\u1ecfi: L\xfac \u0103n chay c\xf3 th\u1ec3 \u0103n tr\u1ee9ng g\xe0 kh\xf4ng?\n\u0110\xe1p: B\u1ea1n ch\u01b0a \u0103n \u0111\xe3 mu\u1ed1n bi\u1ebft! C\xf9ng v\u1edbi kh\xf4ng \u0103n th\xec th\u1ebf n\xe0o? \u0102n th\xec th\u1ebf n\xe0o?"],q,q),A.Y(["title","S\u1ef1 B\u1ea3o V\u1ec7 C\u1ee7a Ng\xe0n \u0110\xf3a Hoa Sen","meta",s,"preview",'Hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa \u0111\u1ea7u ti\xean, m\u1ed9t khi ni\u1ec7m ra th\xec s\u1ebd xu\u1ea5t hi\u1ec7n m\u1ed9t c\u1ea3nh gi\u1edbi l\xe0: b\u1ed1n m\u1eb7t t\xe1m ph\u01b0\u01a1ng c\xf3 r\u1ea5t nhi\u1ec1u hoa sen \u0111\u1ecf \u0111\u1ebfn \u1ee7ng h\u1ed9 ng\u01b0\u1eddi tr\xec Ch\xfa n\xe0y, cho n\xean n\xf3i: "Ng\xe0n \u0111\xf3a sen \u0111\u1ecf h\u1ed9 ng\u01b0\u1eddi tr\xec." (Thi\xean \u0111\xf3a h\u1ed3ng li\xean h\u1ed9 tr\u1ee5 th\xe2n). T\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang t\u1ea1ng B\u1ed3 t\xe1t c\u0169ng \u0111\u1ebfn gia h\u1ed9 b\u1ea1n, cho n\xean n\xf3i: "Ng\u1ed3i tr\xean hoa sen \u0111i m\xe2y tr\u1eafng" (T\u1ecda li\xean phi th\u1eeba b\u1ea1ch v\xe2n \u0111\xf4n). C\xe2u Ch\xfa n\xe0y (Nam M\xf4 T\xe1t \u0110\xe1t Tha) v\u1ed1n d\u0129 b\u1ea3o h\u1ed9 ng\u01b0\u1eddi t\u1ee5ng, ai m\xe0 tr\xec c\xe2u Ch\xfa n\xe0y th\xec Ma v\u01b0\u01a1ng Ba Tu\u1ea7n kh\xf4ng c\xf3 c\xe1ch g\xec l\u1ea1i g\u1ea7n \u0111\u01b0\u1ee3c.'],q,q),A.Y(["title","T\u1ea1i Sao Ng\u01b0\u1eddi Ta Mu\u1ed1n T\u1ef1 S\xe1t?","meta",s,"preview","T\xf4i n\xf3i cho qu\xfd v\u1ecb bi\u1ebft, nh\u1eefng ng\u01b0\u1eddi t\u1ef1 s\xe1t \u0111a s\u1ed1 \u0111\u1ec1u b\u1ecb ma qu\u1ef7 k\xeau h\u1ecd \u0111\u1ebfn \u0111\xf3. Con qu\u1ef7 \u0111\xf3 \u0111\u1ed1i v\u1edbi ng\u01b0\u1eddi t\u1ef1 s\xe1t \u0111\xe3 ni\u1ec7m m\u1ed9t b\xe0i ch\xfa. Qu\u1ef7 ni\u1ec7m ch\xfa g\xec? N\xf3 n\xf3i: \u201cM\xe0y \u0111i ch\u1ebft \u0111i! M\xe0y \u0111i ch\u1ebft \u0111i! Ch\u1ebft \u0111i l\xe0 t\u1ed1t l\u1eafm! Ch\u1ebft \u0111i l\xe0 t\u1ed1t nh\u1ea5t \u0111\xf3!\u201d. Con qu\u1ef7 \u0111\xf3 c\xf3 tha t\xe2m th\xf4ng, n\xf3 l\u1ea5y qu\u1ef7 kh\xed x\xe2m nh\u1eadp v\xe0o t\xe2m c\u1ee7a ng\u01b0\u1eddi \u0111\xf3 khi\u1ebfn ng\u01b0\u1eddi \u0111\xf3 ngh\u0129 r\u1eb1ng: \u201cA! Ch\u1ebft \u0111i l\xe0 t\u1ed1t! Ch\u1ebft \u0111i l\xe0 t\u1ed1t!\u201d. Th\u1ebf l\xe0 ng\u01b0\u1eddi \u0111\xf3 b\xe8n \u0111i u\u1ed1ng thu\u1ed1c \u0111\u1ed9c t\u1ef1 t\u1eed, treo c\u1ed5, nh\u1ea3y xu\u1ed1ng bi\u1ec3n... V\xec v\u1eady b\u1ea5t c\u1ee9 l\xfac n\xe0o, m\u1ecdi ng\u01b0\u1eddi c\u1ea7n ph\u1ea3i ni\u1ec7m Ph\u1eadt, ni\u1ec7m ch\xfa. Qu\xfd v\u1ecb ni\u1ec7m Ph\u1eadt ni\u1ec7m ch\xfa th\xec l\xfac \u0111\xf3 c\xf3 Ph\u1eadt quang ph\u1ed5 chi\u1ebfu, ma qu\u1ef7 s\u1ebd b\u1ecf ch\u1ea1y \u0111i m\u1ea5t."],q,q),A.Y(["title","B\u1ed3 T\xe1t Kim Cang T\u1ea1ng \xc2m Th\u1ea7m Th\xfac Gi\u1ee5c","meta",s,"preview","Gi\u1ea3 s\u1eed t\xe2m ni\u1ec7m c\u1ee7a qu\xfd v\u1ecb v\xf4 c\xf9ng t\xe1n lo\u1ea1n, kh\xf4ng th\u1ec3 chuy\xean nh\u1ea5t, nh\u01b0ng n\u1ebfu mi\u1ec7ng c\u1ee7a qu\xfd v\u1ecb li\u1ec1n tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, th\xec B\u1ed3 T\xe1t Kim Cang T\u1ea1ng V\u01b0\u01a1ng li\u1ec1n d\xf9ng t\xe2m tinh ch\xe2n thu\u1ea7n th\u1ee5c \u0111i theo \xe2m th\u1ea7m th\xfac gi\u1ee5c. Ch\u1eef \u201c\xe2m th\u1ea7m th\xfac gi\u1ee5c\u201d n\xe0y v\xf4 c\xf9ng quan tr\u1ecdng, c\xf3 ngh\u0129a l\xe0 \u1edf ph\xeda sau \xe2m th\u1ea7m \u0111\u1ea9y b\u1ea1n m\u1ed9t c\xe1i, \xe2m th\u1ea7m h\u01b0\u1edbng d\u1eabn b\u1ea1n, nh\u1eafc nh\u1edf b\u1ea1n. Khi\u1ebfn t\xe2m t\xe1n lo\u1ea1n c\u1ee7a qu\xfd v\u1ecb d\u1ea7n m\u1ea5t \u0111i, m\u1ed9t ch\xfat, m\u1ed9t ch\xfat m\u1ed9t sinh ra \u0111\u1ecbnh l\u1ef1c, r\u1ed3i \u0111\u1ea1t \u0111\u01b0\u1ee3c \u0111\u1ecbnh l\u1ef1c, d\u1ea7n d\u1ea7n qu\xfd v\u1ecb s\u1ebd \u0111\u01b0\u1ee3c khai m\u1edf tr\xed hu\u1ec7."],q,q),A.Y(["title","Tr\xec Ch\xfa L\u0103ng Nghi\xeam Nh\u1ea5t T\xe2m","meta",s,"preview","Khi t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam kh\xf4ng n\xean c\xf3 t\xe2m mong c\u1ea7u, kh\xf4ng mong c\u1ea7u \u0111\u1eafc th\u1ea7n th\xf4ng, kh\xf4ng mong c\u1ea7u \u0111\u1eafc Ph\u1eadt nh\xe3n, kh\xf4ng mong c\u1ea7u ti\xeau tai, kh\xf4ng mong c\u1ea7u kh\u1ecfi b\u1ec7nh... Ch\u1ec9 c\u1ea7n nh\u1ea5t t\xe2m t\u1ee5ng tr\xec, th\xec c\xf4ng \u0111\u1ee9c m\u1edbi l\u1edbn. Gi\u1ed1ng nh\u01b0 \u0111\u1ee9a tr\u1ebb b\xfa m\u1eb9, ch\u1ec9 bi\u1ebft b\xfa th\xf4i ch\u1ee9 \u0111\xe2u c\xf3 ngh\u0129 g\xec kh\xe1c. B\xfa no r\u1ed3i th\xec ng\u1ee7, ng\u1ee7 d\u1eady l\u1ea1i b\xfa. Ng\u01b0\u1eddi t\u1ee5ng ch\xfa c\u0169ng ph\u1ea3i nh\u01b0 th\u1ebf, kh\xf4ng \u0111\u01b0\u1ee3c c\xf3 m\u1ed9t v\u1ecdng ni\u1ec7m n\xe0o xen v\xe0o."],q,q),A.Y(["title","Kh\xf4ng \u0102n Ng\u0169 V\u1ecb T\xe2n","meta",s,"preview","\u0110\u1ee9c Ph\u1eadt d\u1ea1y trong Kinh L\u0103ng Nghi\xeam: C\xe1c ch\xfang sinh c\u1ea7u qu\u1ea3 B\u1ed3 \u0110\u1ec1, c\u1ed1t y\u1ebfu l\xe0 kh\xf4ng \u0111\u01b0\u1ee3c \u0103n ng\u0169 v\u1ecb t\xe2n (h\xe0nh, t\u1ecfi, n\xe9n, h\u1eb9, h\u01b0ng h\xe0o). V\xec n\u0103m th\u1ee9 v\u1ecb cay n\xe0y, \u0103n ch\xedn th\xec ph\xe1t d\xe2m, \u0103n s\u1ed1ng th\xec th\xeam ph\u1eabn n\u1ed9. Nh\u1eefng ng\u01b0\u1eddi \u0103n n\u0103m th\u1ee9 v\u1ecb cay n\xe0y, tuy c\xf3 t\u1ee5ng tr\xec m\u01b0\u1eddi hai b\u1ed9 kinh Ph\u1eadt, m\u01b0\u1eddi ph\u01b0\u01a1ng Thi\xean ti\xean c\u0169ng \u0111\u1ec1u ch\xea m\xf9i h\xf4i th\u1ed1i m\xe0 tr\xe1nh xa. C\xe1c ng\u1ea1 qu\u1ef7 s\u1ebd th\u01b0\u1eddng li\u1ebfm m\xf4i mi\u1ec7ng c\u1ee7a ng\u01b0\u1eddi \u1ea5y, do lu\xf4n s\u1ed1ng chung v\u1edbi qu\u1ef7 n\xean ph\u01b0\u1edbc \u0111\u1ee9c ng\xe0y c\xe0ng ti\xeau m\xf2n, ch\u1eb3ng l\u1ee3i \xedch g\xec."],q,q),A.Y(["title","C\u1ea3nh Gi\u1edbi Nhi\u1ec7m M\xe0u","meta",r,"preview",'Khi ni\u1ec7m c\xe2u "Nam M\xf4 L\u0103ng Nghi\xeam H\u1ed9i Th\u01b0\u1ee3ng Ph\u1eadt B\u1ed3 T\xe1t" \u0111\u1ee7 ba l\u1ea7n, tr\xean h\u01b0 kh\xf4ng b\u1ed7ng hi\u1ec7n ra m\u1ed9t \u0110\xe0n th\xe0nh L\u0103ng Nghi\xeam r\u1ed9ng l\u1edbn \u0111\u1ebfn m\u1ee9c kh\xf4ng th\u1ea5y bi\xean gi\u1edbi. \u0110\xe0n th\xe0nh \u1ea5y nh\u01b0 m\u1ed9t c\xe1i \xf4 kh\u1ed5ng l\u1ed3 b\u1eb1ng \xe1nh s\xe1ng bao ph\u1ee7 t\u1eeb tr\xean kh\xf4ng trung xu\u1ed1ng. B\xean trong \u0110\xe0n th\xe0nh c\xf3 v\xf4 s\u1ed1 ch\u01b0 Ph\u1eadt, ch\u01b0 \u0110\u1ea1i B\u1ed3 T\xe1t c\xf9ng t\xe1m v\u1ea1n b\u1ed1n ng\xe0n Kim Cang T\u1ea1ng B\u1ed3 T\xe1t. T\u1ea5t c\u1ea3 c\xe1c Ng\xe0i \u0111\u1ec1u ph\xf3ng ra \u0111\u1ee7 th\u1ee9 h\xe0o quang v\xf4 c\xf9ng r\u1ef1c r\u1ee1 v\xe0 vi di\u1ec7u, chi\u1ebfu r\u1ecdi kh\u1eafp n\u01a1i v\xe0 gia tr\xec cho t\u1ea5t c\u1ea3 m\u1ecdi ng\u01b0\u1eddi. S\u1ef1 hi\u1ec7n di\u1ec7n v\xe0 \xe1nh s\xe1ng t\u1eeb \u0110\xe0n th\xe0nh kh\xf4ng ch\u1ec9 b\u1ea3o v\u1ec7 m\xe0 c\xf2n \u0111em l\u1ea1i l\u1ee3i \xedch l\u1edbn lao cho nh\u1eefng ai th\xe0nh t\xe2m tr\xec t\u1ee5ng, gi\xfap h\u1ecd ti\xeau tr\u1eeb nghi\u1ec7p ch\u01b0\u1edbng, t\xe2m tr\xed thanh t\u1ecbnh v\xe0 ng\xe0y c\xe0ng tinh t\u1ea5n tr\xean con \u0111\u01b0\u1eddng tu h\xe0nh.'],q,q),A.Y(["title","T\xe2m C\u1ee7a Ph\u1eadt - Th\xe2n C\u1ee7a Ph\u1eadt","meta",r,"preview","B\u1ea1ch \xe2n s\u01b0 Ph\u1ed5 Quang! Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam t\u1ea1i sao l\u1ea1i c\xf3 s\u1ee9c m\u1ea1nh l\u1edbn nh\u01b0 v\u1eady \u1ea1?\nHT. Ph\u1ed5 Quang: Th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam n\xe0y l\xe0 ph\xe1p m\xf4n th\xf9 th\u1eafng nh\u1ea5t trong c\xe1c ph\xe1p m\xf4n. B\u1edfi v\xec n\xf3 ch\xednh l\xe0 t\xe2m c\u1ee7a Ph\u1eadt, l\xe0 th\xe2n c\u1ee7a Ph\u1eadt. Kh\xf4ng c\xf3 th\u1ea7n Ch\xfa L\u0103ng Nghi\xeam, th\xec kh\xf4ng c\xf3 t\u1ea5t c\u1ea3 ch\u01b0 Ph\u1eadt! ... Con ng\u01b0\u1eddi n\u1ebfu th\u1eadt s\u1ef1 hi\u1ec3u \u0111\u01b0\u1ee3c \u0111i\u1ec1u n\xe0y, th\xec \u0111\xe3 kh\xf4ng c\xf2n l\xe0 ph\xe0m phu n\u1eefa r\u1ed3i! Ni\u1ec7m \u0111\u1ee7 36.000 bi\u1ebfn, d\u01b0\u1edbi hai b\xe0n ch\xe2n c\u1ee7a con c\u0169ng c\xf3 hoa sen, khi con \u0111i \u0111\u1ee9ng, th\u1ef1c ra l\xe0 c\xf3 hoa sen n\xe2ng \u0111\u1ee1, ch\u1ec9 l\xe0 nh\u1ee5c nh\xe3n c\u1ee7a con nh\xecn kh\xf4ng th\u1ea5y m\xe0 th\xf4i."],q,q),A.Y(["title","C\u1ea3nh Gi\u1edbi \u0110\u1ea1i T\u1ef1 T\u1ea1i","meta",r,"preview",'C\xf3 c\xe2u: "L\xe0m ng\u01b0\u1eddi th\xec hi\u1ebfm khi kh\u1edd kh\u1ea1o", nh\u01b0ng tu h\xe0nh th\xec ph\u1ea3i \u0111\u1ea3o ng\u01b0\u1ee3c l\u1ea1i! Tu h\xe0nh l\xe0 ph\u1ea3i h\u1ecdc c\xe1ch kh\u1edd kh\u1ea1o... N\u1ebfu nh\u01b0 b\u1ea1n ch\u1eb3ng c\xf3 tr\xed tu\u1ec7, b\u1ea1n s\u1ebd ch\u1eb3ng th\u1ec3 kh\u1edd kh\u1ea1o \u0111\u01b0\u1ee3c. Gi\u1ed1ng nh\u01b0 B\u1ed3 T\xe1t B\u1ed1 \u0110\u1ea1i v\u1eady, Ng\xe0i kh\u1edd nh\u01b0ng m\xe0 Ng\xe0i l\u1ea1i s\u1ed1ng r\u1ea5t sung s\u01b0\u1edbng! S\u1ed1ng tr\xean \u0111\u1eddi \u0111\u1eebng bao gi\u1edd d\u1eb1n v\u1eb7t ng\u01b0\u1eddi kh\xe1c, c\u0169ng \u0111\u1eebng d\u1eb1n v\u1eb7t ch\xednh m\xecnh! Chuy\u1ec7n l\xfac t\xe1m gi\u1edd th\xec \u0111\u1ebfn ch\xedn gi\u1edd l\xe0 ph\u1ea3i qu\xean \u0111i r\u1ed3i. \u0110\u1ec3 nh\u1eefng chuy\u1ec7n phi\u1ec1n n\xe3o \u0111\xf3 trong l\xf2ng l\xe0m chi? Vi\u1ec7c g\xec \u0111\xe3 qua th\xec c\u1ee9 \u0111\u1ec3 n\xf3 qua \u0111i! \u0110\xf3 m\u1edbi l\xe0 Ph\u1eadt, B\u1ed3-t\xe1t, \u0111\xf3 m\u1edbi l\xe0 khai \u0111\u1ea1i ng\u1ed9! Cho n\xean ph\u1ea3i ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam, ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam m\u1edbi c\xf3 th\u1ec3 c\xf3 \u0111\u1ecbnh l\u1ef1c, m\u1edbi c\xf3 th\u1ec3 khai m\u1edf tr\xed tu\u1ec7, m\u1ed9t \u0111\u1eddi th\xe0nh Ph\u1eadt \u0111\u1ea1o.'],q,q),A.Y(["title","C\xf4ng \u0110\u1ee9c B\u1eb1ng 10 Toa T\xe0u H\u1ecfa Kinh \u0110\u1ea1i T\u1ea1ng","meta",r,"preview","Kinh \u0110\u1ea1i T\u1ea1ng nhi\u1ec1u nh\u01b0 v\u1eady, ni\u1ec7m t\u1edbi bao gi\u1edd m\u1edbi h\u1ebft? Nh\u01b0ng ni\u1ec7m m\u1ed9t bi\u1ebfn ch\xfa L\u0103ng Nghi\xeam th\xec c\xf4ng \u0111\u1ee9c b\u1eb1ng c\u1ea3 ni\u1ec7m 10 toa t\xe0u h\u1ecfa \u0111\u1ea7y \u1eafp kinh \u0110\u1ea1i T\u1ea1ng! Ai mu\u1ed1n t\u1ee5ng h\u1ebft b\u1ed9 kinh \u0110\u1ea1i T\u1ea1ng th\xec th\xe0 ni\u1ec7m m\u1ed9t bi\u1ebfn ch\xfa L\u0103ng Nghi\xeam c\xf2n h\u01a1n. C\xf3 ng\u01b0\u1eddi tu thi\u1ec1n, c\xf3 ng\u01b0\u1eddi ni\u1ec7m Ph\u1eadt, c\xf3 ng\u01b0\u1eddi tr\xec ch\xfa... c\xf3 t\u1edbi 8 v\u1ea1n 4 ng\xe0n ph\xe1p m\xf4n, nh\u01b0ng cho d\xf9 c\xf3 tu ph\xe1p n\xe0o \u0111i n\u1eefa, c\u0169ng ch\u1eb3ng b\u1eb1ng chuy\xean t\xe2m tu m\u1ed9t m\xecnh ch\xfa L\u0103ng Nghi\xeam. Cho n\xean, ai tu \u0111\u01b0\u1ee3c ch\xfa L\u0103ng Nghi\xeam, ng\u01b0\u1eddi \u0111\xf3 th\u1eadt s\u1ef1 l\xe0 c\xf3 \u0111\u1ea1i ph\xfac b\xe1o!"],q,q),A.Y(["title","Si\xeau \u0110\u1ed9 Cho Ng\u01b0\u1eddi \u0110\xe3 Khu\u1ea5t","meta",r,"preview","C\xf3 ng\u01b0\u1eddi h\u1ecfi v\u1ec1 c\xe1ch si\xeau \u0111\u1ed9 cho ng\u01b0\u1eddi th\xe2n \u0111\xe3 khu\u1ea5t. H\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang \u0111\xe1p: Khi v\u1eeba ni\u1ec7m ch\xfa, b\u1ea1n ph\u1ea3i v\u1eeba qu\xe1n t\u01b0\u1edfng l\u1ea1i g\u01b0\u01a1ng m\u1eb7t v\u1edbi ng\u0169 quan \u0111ang m\u1ec9m c\u01b0\u1eddi l\xfac sinh ti\u1ec1n c\u1ee7a ng\u01b0\u1eddi ch\u1ebft. C\u1ee9 nh\u1ea5t t\xe2m ni\u1ec7m nh\u01b0 v\u1eady th\xec d\u01b0\u1edbi ch\xe2n th\u1ea7n th\u1ee9c c\u1ee7a ng\u01b0\u1eddi m\u1ea5t s\u1ebd l\u1eadp t\u1ee9c hi\u1ec7n ra m\u1ed9t \u0111\xf3a hoa sen, ng\u01b0\u1eddi m\u1ea5t t\u1ef1 nhi\xean s\u1ebd nh\u1eadn \u0111\u01b0\u1ee3c l\u1ee3i \xedch si\xeau tho\xe1t."],q,q),A.Y(["title","Ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa Nh\u01b0 \u0110i Thang M\xe1y","meta",r,"preview","M\u1ecdi ng\u01b0\u1eddi c\xf9ng nhau ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa th\xec th\u1ebf gi\u1edbi s\u1ebd b\xecnh y\xean, \u0111\u1ea5t n\u01b0\u1edbc s\u1ebd tai qua n\u1ea1n kh\u1ecfi.\n\nM\u1ed7i b\u1ed9 kinh chia ra r\u1ea5t nhi\u1ec1u ph\u1ea7n. \u0110\u1ecdc c\u1ea3 \u0111\u1eddi c\u0169ng kh\xf4ng h\u1ebft. Nh\u01b0ng L\u0103ng Nghi\xeam Ch\xfa \u0111\xe3 bao g\u1ed3m h\u1ebft t\u1ea5t c\u1ea3 kinh \u0111i\u1ec3n r\u1ed3i. Kinh T\xe2m Kinh ch\xednh l\xe0 ph\u1ea7n tinh t\xfay nh\u1ea5t c\u1ee7a t\u1ea5t c\u1ea3 kinh. L\xe0 \u0111\u1ec3 cho m\xecnh hi\u1ec3u v\xe0 ng\u1ed9 ra.\n\nNi\u1ec7m A Di \u0110\xe0 Ph\u1eadt th\xec tho\xe1t \u0111\u01b0\u1ee3c sinh t\u1eed, nh\u01b0ng ph\u1ea3i th\u1eadt nh\u1ea5t t\xe2m, t\xe2m ph\u1ea3i th\u1eadt s\u1ea1ch. Tham, s\xe2n, si, ki\xeau m\u1ea1n, nghi ng\u1edd... m\u1ed7i ch\u1eef l\xe0 m\u1ed9t c\u1ea3nh. S\u1ebd \u0111\u1ecda v\xe0o \u0111\u01b0\u1eddng A Tu La, \u0111\u01b0\u1eddng ng\u1ea1 qu\u1ef7... r\u01a1i v\xe0o \u0111\u01b0\u1eddng n\xe0o th\xec theo \u0111\u01b0\u1eddng \u0111\xf3.\n\nNi\u1ec7m \u0110\u1ea1i Bi Ch\xfa 108 l\u1ea7n c\u0169ng kh\xf4ng b\u1eb1ng ni\u1ec7m 1 l\u1ea7n L\u0103ng Nghi\xeam Ch\xfa. Kh\xf4ng b\u1eb1ng ni\u1ec7m 7 l\u1ea7n Ng\u0169 \u0110\u1ea1i T\xe2m Ch\xfa. \u0110\u1ea1i Bi Ch\xfa l\xe0 \u0111\u1ec3 c\u1ee9u kh\u1ed5. Ni\u1ec7m \u0111\u1ebfn m\u1ee9c cao nh\u1ea5t th\xec to\xe0n th\xe2n s\xe1ng l\xean, c\xf3 th\u1ec3 th\xe0nh B\u1ed3 T\xe1t, nh\u01b0ng v\u1eabn ch\u01b0a th\xe0nh Ph\u1eadt \u0111\u01b0\u1ee3c. Mu\u1ed1n th\xe0nh Ph\u1eadt th\xec ph\u1ea3i ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa n\xe0y.\n\nNi\u1ec7m kinh kh\xe1c th\xec ph\u1ea3i h\u1ed3i h\u01b0\u1edbng. Nh\u01b0ng ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa n\xe0y v\xe0 Kinh Kim Cang th\xec kh\xf4ng c\u1ea7n h\u1ed3i h\u01b0\u1edbng. \u0110\u1ee9c Ph\u1eadt \u0111\xe3 \u1ea5n ch\u1ee9ng r\u1ed3i. Kh\xf4ng c\u1ea7n ph\u1ea3i l\xe0m th\xeam n\u1eefa. Ni\u1ec7m L\u0103ng Nghi\xeam Ch\xfa, m\u1ed9t \u0111\u1eddi n\xe0y l\xe0 th\xe0nh Ph\u1eadt.\n\nNi\u1ec7m L\u0103ng Nghi\xeam Ch\xfa gi\u1ed1ng nh\u01b0 \u0111i thang m\xe1y v\u1eady \u0111\xf3. V\xc8O m\u1ed9t c\xe1i l\xe0 th\xe0nh Ph\u1eadt r\u1ed3i!"],q,q),A.Y(["title","\u0110\u1ed9ng T\u1eeb Bi","meta",r,"preview","\u0110\u1ed9ng T\u1eeb Bi, t\u1eeb x\u01b0a \u0111\u1ebfn nay kh\xf4ng bi\u1ebft \u0111\xe3 c\xf3 bao nhi\xeau v\u1ecb \u0111\u1ea1i \u0111\u1ee9c (b\u1eadc tu h\xe0nh cao th\xe2m) \u0111\u1ebfn \u0111\xe2y \u0111\xf3ng c\u1eeda \u1ea9n tu r\u1ed3i. S\u01b0 ph\u1ee5 l\xe0 h\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang k\u1ec3 l\u1ea1i r\u1eb1ng, nh\u1eefng gi\u1ecdt n\u01b0\u1edbc r\u1ec9 ra t\u1eeb khe \u0111\xe1 trong \u0111\u1ed9ng ch\xednh l\xe0 n\u01b0\u1edbc m\u1eaft c\u1ee7a Ph\u1eadt B\u1ed3 T\xe1t. N\u01b0\u1edbc n\xe0y c\xf3 th\u1ec3 u\u1ed1ng ch\u1ee9 kh\xf4ng \u0111\u01b0\u1ee3c l\xe3ng ph\xed, v\xe0 c\xf2n ch\u1eefa \u0111\u01b0\u1ee3c b\xe1ch b\u1ec7nh. C\u0103n nh\xe0 \u0111\xe1 nh\u1ecf nh\u1eafn, gi\u1ea3n d\u1ecb kia ch\xednh l\xe0 n\u01a1i h\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang t\u1eebng tu h\xe0nh l\xfac c\xf2n tr\u1ebb. Th\u1eddi D\xe2n Qu\u1ed1c, c\xe1c v\u1ecb h\xf2a th\u01b0\u1ee3ng n\u1ed5i ti\u1ebfng nh\u01b0 ng\xe0i H\u01b0 V\xe2n, ph\xe1p s\u01b0 Vi\xean Anh, v\xe0 h\xf2a th\u01b0\u1ee3ng Lai Qu\u1ea3 c\u0169ng \u0111\u1ec1u t\u1eebng tu h\xe0nh \u1edf n\u01a1i n\xe0y."],q,q),A.Y(["title","TH\u1ea6N CH\xda KHAI M\u1ede TR\xcd TU\u1ec6","meta",s,"preview","V\u1ea5n \u0111\xe1p c\xf9ng Ho\xe0 Th\u01b0\u1ee3ng Tuy\xean Ho\xe1 v\xe0o ng\xe0y 10 th\xe1ng 01 n\u0103m 1993\n\nt\u1ea1i H\u1ecdc Vi\u1ec7n C\xf4ng Nghi\u1ec7p K\u1ef9 Thu\u1eadt Qu\u1ed1c L\u1eadp - \u0110\xe0i Loan\n\nPhi\xean d\u1ecbch b\u1edfi Vi\u1ec7n D\u1ecbch Kinh Qu\u1ed1c T\u1ebf\n\nhttps://www.drbachinese.org/vbs/publish/453/vbs453p020.pdf\n\nH\u1ecfi: Con l\xe0 m\u1ed9t \u0111\u1ec7 t\u1eed, v\xe0 con r\u1ea5t th\xedch \u0111\u1ecdc nh\u1eefng s\xe1ch c\u1ee7a H\xf2a Th\u01b0\u1ee3ng. Con c\xf3 m\u1ed9t c\xe2u h\u1ecfi quan tr\u1ecdng nh\u01b0 sau. H\xf2a Th\u01b0\u1ee3ng \u0111\xe3 \u0111\u1ec1 c\u1eadp r\u1eb1ng c\xf3 hai c\xe2u ch\xfa trong Ch\xfa L\u0103ng Nghi\xeam c\xf3 th\u1ec3 khai m\u1edf tr\xed tu\u1ec7 cho ch\xfang ta. Xin Ho\xe0 Th\u01b0\u1ee3ng h\xe3y n\xf3i cho ch\xfang con bi\u1ebft \u0111\xf3 l\xe0 hai c\xe2u ch\xfa n\xe0o? T\u1ea1 \u01a1n s\u1ef1 t\u1eeb bi ch\u1ec9 d\u1eabn c\u1ee7a ng\xe0i. Nam M\xf4 \u0110\u1ea1i T\u1eeb \u0110\u1ea1i Bi Qu\xe1n Th\u1ebf \xc2m B\u1ed3 T\xe1t.\n\n\u0110\xe1p: \u0110\xfang v\u1eady, ta c\xf3 th\u1ec3 n\xf3i cho qu\xfd v\u1ecb, nh\u01b0ng tin hay kh\xf4ng tin l\xe0 t\xf9y qu\xfd v\u1ecb. Ta c\u0169ng kh\xf4ng th\u1ec3 t\xf9y ti\u1ec7n n\xf3i cho qu\xfd v\u1ecb nghe. Tr\u01b0\u1edbc h\u1ebft qu\xfd v\u1ecb h\xe3y cho ta bi\u1ebft l\xe0 qu\xfd v\u1ecb c\xf3 th\xe0nh th\u1eadt ni\u1ec7m hay kh\xf4ng? N\u1ebfu ta n\xf3i cho qu\xfd v\u1ecb nghe, r\u1ed3i qu\xfd v\u1ecb c\u0169ng qu\xean m\u1ea5t, \u0111\u1ed3ng th\u1eddi c\u0169ng kh\xf4ng t\u1ee5ng ni\u1ec7m. Qua m\u1ed9t th\u1eddi gian, qu\xfd v\u1ecb l\u1ea1i h\u1ecfi: \u201cXin S\u01b0 Ph\u1ee5 n\xf3i cho con bi\u1ebft hai c\xe2u ch\xfa n\xe0y, cho \u0111\u1ebfn b\xe2y gi\u1edd con v\u1eabn ch\u01b0a khai tr\xed tu\u1ec7.\u201d T\u1ea1i sao tr\xed tu\u1ec7 c\u1ee7a qu\xfd v\u1ecb ch\u01b0a khai m\u1edf? L\xe0 do qu\xfd v\u1ecb kh\xf4ng t\u1ee5ng ni\u1ec7m, v\u1eady th\xec l\xe0m sao tr\xed tu\u1ec7 c\u1ee7a qu\xfd v\u1ecb c\xf3 th\u1ec3 khai m\u1edf \u0111\u01b0\u1ee3c? Do \u0111\xf3, n\u1ebfu qu\xfd v\u1ecb mu\u1ed1n h\u1ecdc hai c\xe2u Th\u1ea7n ch\xfa n\xe0y, th\xec nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i nh\u1ea5t t\xe2m d\u1ee5ng c\xf4ng t\u1ee5ng ni\u1ec7m, th\u1eadm ch\xed kh\xf4ng \u0103n c\u0169ng \u0111\u01b0\u1ee3c nh\u01b0ng kh\xf4ng th\u1ec3 kh\xf4ng ni\u1ec7m Th\u1ea7n ch\xfa n\xe0y, th\u1eadm ch\xed kh\xf4ng m\u1eb7c \u0111\u1ed3 c\u0169ng \u0111\u01b0\u1ee3c nh\u01b0ng kh\xf4ng th\u1ec3 kh\xf4ng ni\u1ec7m Th\u1ea7n ch\xfa n\xe0y, th\u1eadm ch\xed kh\xf4ng ng\u1ee7 c\u0169ng \u0111\u01b0\u1ee3c nh\u01b0ng kh\xf4ng th\u1ec3 kh\xf4ng ni\u1ec7m Th\u1ea7n ch\xfa n\xe0y. N\u1ebfu qu\xfd v\u1ecb c\xf3 quy\u1ebft t\xe2m nh\u01b0 v\u1eady, th\xec tr\xed tu\u1ec7 c\u1ee7a qu\xfd v\u1ecb ch\u1eafc ch\u1eafn s\u1ebd khai m\u1edf. N\u1ebfu qu\xfd v\u1ecb kh\xf4ng c\xf3 \u0111\u01b0\u1ee3c quy\u1ebft t\xe2m nh\u01b0 v\u1eady m\xe0 ch\u1ec9 mu\u1ed1n t\xecm c\u01a1 h\u1ed9i \u0111i \u0111\u01b0\u1eddng t\u1eaft, mong ta ch\u1ec9 gi\xe1o v\xe0i c\xe2u, r\u1ed3i ngh\u0129 r\u1eb1ng nh\u01b0 th\u1ebf l\xe0 c\xf3 \u0111\u01b0\u1ee3c b\u1ea3o b\u1ed1i, th\xec r\u1ed1t cu\u1ed9c qu\xfd v\u1ecb c\u0169ng ch\u1eb3ng \u0111\u01b0\u1ee3c g\xec c\u1ea3.\n\nB\xe2y gi\u1edd th\xec ta c\xf3 th\u1ec3 gi\u1ea3i th\xedch m\u1ed9t ch\xfat. Hai c\xe2u ch\xfa n\xe0y l\xe0:\n\n\u201cTh\u1ec9nh c\u1ea7u ch\u01b0 Ph\u1eadt v\xe0 ch\u01b0 v\u1ecb B\u1ed3 T\xe1t khai m\u1edf tr\xed tu\u1ec7, khai m\u1edf tr\xed tu\u1ec7 ch\xe2n ch\xe1nh, kh\xf4ng ph\u1ea3i tr\xed tu\u1ec7 th\u1ebf gian. Khi\u1ebfn con c\xf3 th\u1ec3 nh\u1eadn th\u1ee9c r\xf5 t\u1ea5t c\u1ea3 c\xe1c Ph\xe1p v\xe0 phi Ph\xe1p. C\xf3 \u0111\u01b0\u1ee3c Tr\u1ea1ch Ph\xe1p Nh\xe3n (m\u1eaft ch\u1ecdn Ph\xe1p).\u201d\n\nCh\xfa n\xe0y \u0111\u01b0\u1ee3c n\xf3i ra b\u1edfi Ho\xe1 Ph\u1eadt tr\xean \u0111\u1ea3nh \u0111\u1ea7u (V\xf4 Ki\u1ebfn \u0110\u1ea3nh T\u01b0\u1edbng) c\u1ee7a Ph\u1eadt Th\xedch Ca M\xe2u Ni. B\u1edfi v\u1eady m\u1ed7i c\xe2u ch\xfa n\xe0y \u0111\u1ec1u l\xe0 nh\u1eefng linh v\u0103n, \u0111\u1ec1u l\xe0 ch\xe2n ng\xf4n di\u1ec7u ng\u1eef, do \u0111\xf3 hai c\xe2u ch\xfa n\xe0y n\xf3i r\u1eb1ng, \u201cTh\u1ec9nh ch\u01b0 Ph\u1eadt v\xe0 ch\u01b0 v\u1ecb B\u1ed3 T\xe1t, xin h\xe3y gia h\u1ed9 cho con, khi\u1ebfn con \u0111\u01b0\u1ee3c khai m\u1edf \u0111\u1ea1i tr\xed tu\u1ec7.\u201d\n\n\xdd ngh\u0129a c\u1ee7a Th\u1ea7n ch\xfa n\xe0y c\u0169ng g\u1ecdi l\xe0 \u201cch\xe2n ng\xf4n\u201d, c\u0169ng g\u1ecdi l\xe0 \u201clinh v\u0103n\u201d.\n\nT\u1ea1i sao g\u1ecdi l\xe0 \u201cch\xe2n ng\xf4n\u201d? B\u1edfi v\xec Th\u1ea7n ch\xfa n\xe0y kh\xf4ng c\xf3 m\u1ed9t ch\xfat gi\u1ea3 d\u1ed1i n\xe0o c\u1ea3.\n\nT\u1ea1i sao g\u1ecdi l\xe0 \u201clinh v\u0103n\u201d? B\u1edfi v\xec Th\u1ea7n ch\xfa n\xe0y v\u1ed1n l\xe0 c\u1ee7a tr\u1eddi Ph\u1ea1m Thi\xean v\xe0 \u0111\u01b0\u1ee3c \u0110\u1ee9c Ph\u1eadt Th\xedch Ca M\xe2u Ni d\xf9ng ch\xfa n\xe0y \u0111\u1ec3 gi\u1ea3i c\u1ee9u ng\xe0i A-nan. Do \u0111\xf3 m\u1ed9t s\u1ed1 ng\u01b0\u1eddi kh\xf4ng bi\u1ebft c\xe1ch \u0111\u1ec3 s\u1eed d\u1ee5ng Th\u1ea7n ch\xfa n\xe0y. Ta l\u1ea1i n\xf3i th\xeam cho qu\xfd v\u1ecb nghe r\u1eb1ng t\u1eeb l\xfac ta c\xf2n nh\u1ecf, ta \u0111\xe3 \u0111i kh\u1eafp n\u01a1i h\xe0ng ph\u1ee5c y\xeau ma v\xe0 b\u1eaft qu\u1ef7 qu\xe1i. Nh\u1eefng lo\xe0i y\xeau ma qu\u1ef7 qu\xe1i c\xf3 th\u1ec3 bi\u1ebfn h\xf3a th\xe0nh ng\u01b0\u1eddi. ta \u0111\xe3 g\u1eb7p h\u01a1n m\u1ed9t tr\u0103m lo\u1ea1i n\xe0y. Ch\xfang \u0111i \u0111\xe2u l\xe0 h\u1ea1i ng\u01b0\u1eddi \u0111\u1ebfn \u0111\xf3, v\xec th\u1ebf ta \u0111\xe3 d\xf9ng Ch\xfa L\u0103ng Nghi\xeam \u0111\u1ec3 h\xe0ng ph\u1ee5c ch\xfang. K\u1ebft cu\u1ed9c l\xe0 t\u1ea5t c\u1ea3 y\xeau ma qu\u1ef7 qu\xe1i \u0111\u1ec1u mu\u1ed1n c\xf9ng ta nh\u1ea5t quy\u1ebft t\u1eed chi\u1ebfn, v\xec v\u1eady phi\u1ec1n ph\u1ee9c l\u1ea1i k\xe9o \u0111\u1ebfn, g\xe2y ra r\u1ea5t nhi\u1ec1u r\u1eafc r\u1ed1i. Do nh\xe2n duy\xean \u0111\xf3, nay tu\u1ed5i ta \u0111\xe3 l\u1edbn, c\xf3 l\u1ebd c\u0169ng \u0111\xe3 t\u1eebng tr\u1ea3i, n\xean kh\xf4ng c\xf2n mu\u1ed1n tranh \u0111\u1ea5u v\u1edbi ch\xfang.\n\nNh\xe2n v\xec:\n\nTranh l\xe0 ph\xe2n th\u1eafng b\u1ea1i,\n\n\u0110i ng\u01b0\u1ee3c l\u1ea1i v\u1edbi \u0110\u1ea1o.\n\nTrong T\xe2m sanh b\u1ed1n t\u01b0\u1edbng,\n\nL\xe0m sao v\xe0o Tam Mu\u1ed9i (\u0110\u1ecbnh)? (1)\n\nTam Mu\u1ed9i, ch\xednh l\xe0 Ch\xe1nh \u0110\u1ecbnh, Ch\xe1nh Th\u1ecd. Khi ch\xfang ta c\xf9ng ng\u01b0\u1eddi tranh ch\u1ea5p, t\u1ee9c l\xe0 c\xf3 t\xe2m h\u01a1n thua: ho\u1eb7c ta th\u1eafng ng\u01b0\u1eddi thua, ho\u1eb7c ta thua ng\u01b0\u1eddi th\u1eafng. T\xe2m tranh th\u1eafng b\u1ea1i \u1ea5y ch\xednh l\xe0 \u201c\u0110i ng\u01b0\u1ee3c l\u1ea1i v\u1edbi \u0110\u1ea1o\u201d. V\xec ng\u01b0\u1ee3c l\u1ea1i v\u1edbi \u0110\u1ea1o, t\xe2m sanh kh\u1edfi b\u1ed1n t\u01b0\u1edbng: ng\xe3 t\u01b0\u1edbng, nh\xe2n t\u01b0\u1edbng, ch\xfang sanh t\u01b0\u1edbng, th\u1ecd gi\u1ea3 t\u01b0\u1edbng.\n\nKhi b\u1ed1n t\u01b0\u1edbng hi\u1ec7n ti\u1ec1n, l\xe0m sao c\xf3 \u0111\u01b0\u1ee3c \u0111\u1ecbnh l\u1ef1c? L\xe0m sao c\xf3 th\u1ec3 ch\u1ee9ng \u0111\u1eafc Ch\xe1nh \u0110\u1ecbnh, Ch\xe1nh Th\u1ecd?\n\nCho n\xean, b\u1ea5t lu\u1eadn vi\u1ec7c g\xec, ch\xfang ta c\u0169ng kh\xf4ng n\xean d\xf9ng b\u1ea1o l\u1ef1c \u0111\u1ec3 gi\u1ea3i quy\u1ebft v\u1ea5n \u0111\u1ec1, m\xe0 c\u1ea7n ph\u1ea3i gi\u1ea3i quy\u1ebft trong tinh th\u1ea7n h\xf2a b\xecnh. Kh\xf4ng n\xean tr\xean d\u01b0\u1edbi c\xf9ng nhau tranh l\u1ee3i, m\xe0 ch\xfang ta c\u1ea7n ph\u1ea3i d\xf9ng h\xf2a kh\xed, t\u1eeb bi \u0111\u1ec3 \u0111\u1ed1i \u0111\xe3i.\n\nN\u1ebfu m\u1ed9t qu\u1ed1c gia, m\u1ecdi ng\u01b0\u1eddi \u0111\u1ec1u h\xf2a thu\u1eadn, c\xf3 h\xf2a kh\xed, th\xec qu\u1ed1c gia \u1ea5y nh\u1ea5t \u0111\u1ecbnh s\u1ebd h\u01b0ng th\u1ecbnh. C\xf2n n\u1ebfu su\u1ed1t ng\xe0y tranh \u0111\u1ea5u, k\u1ebb n\xe0y gi\xe0nh c\u1ee7a k\u1ebb kia, ng\u01b0\u1eddi n\xe0y \u0111\xe1nh m\u1eafng ng\u01b0\u1eddi kia, th\xec th\u1eadt ch\u1eb3ng t\u1ed1t \u0111\u1eb9p, ch\u1eb3ng c\xe1t t\u01b0\u1eddng ch\xfat n\xe0o c\u1ea3.\n\nGhi ch\xfa:\n\nNguy\xean v\u0103n Hoa ng\u1eef:\n\n(1)\n\n\u722d\u662f\u52dd\u8ca0\u5fc3\uff0c\n\n\u8207\u9053\u76f8\u9055\u80cc\uff0c\n\n\u4fbf\u751f\u56db\u76f8\u5fc3,\n\n\u7531\u4f55\u5f97\u4e09\u6627\uff1f\n\nTranh th\u1ecb th\u1eafng ph\u1ee5 t\xe2m,\n\nD\u1eef \u0111\u1ea1o t\u01b0\u01a1ng vi b\u1ed1i\uff0c\n\nTi\u1ec7n sanh t\u1ee9 t\u01b0\u01a1ng t\xe2m\uff0c\n\nDo h\xe0 \u0111\u1eafc tam mu\u1ed9i\uff1f"],q,q),A.Y(["title","TH\u1eacT S\u1ef0 C\xd3 TH\u1ec2 TR\xcc CH\xda L\u0102NG NGHI\xcaM, TRONG H\u01af KH\xd4NG LI\u1ec0N C\xd3 M\u1ed8T \u0110\u1ea0I B\u1ea0CH T\xc1N C\xc1I, C\xd3 OAI TH\u1ea6N L\u1ef0C \u201cPH\u1ed4 \u1ea4M MU\xd4N PH\u01af\u01a0NG\u201d!","meta",s,"preview","Tuy\xean C\xf4ng Th\u01b0\u1ee3ng Nh\xe2n khai th\u1ecb\n\n\u201cThi\xean t\xe1n c\xe1i v\xe2n\u201d: \u201cThi\xean t\xe1n c\xe1i v\xe2n\u201d ngh\u0129a l\xe0 h\u01b0\u01a1ng m\xe0 b\u1ea1n \u0111\u1ed1t k\u1ebft t\u1ee5 gi\u1eefa h\u01b0 kh\xf4ng, h\xecnh th\xe0nh m\u1ed9t c\xe1i l\u1ecdng gi\u1ed1ng nh\u01b0 chi\u1ebfc d\xf9, che ph\u1ee7 v\xe0 b\u1ea3o h\u1ed9 ch\xfang sinh. Trong Ch\xfa L\u0103ng Nghi\xeam c\xf3 \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i. Khi b\u1ea1n t\u1ee5ng ch\xfa n\xe0y, trong h\u01b0 kh\xf4ng li\u1ec1n hi\u1ec7n ra m\u1ed9t \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i. N\u01a1i \u0111\u01b0\u1ee3c \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i che ph\u1ee7 th\xec kh\xf4ng c\xf3 c\xe1c lo\u1ea1i tai n\u1ea1n, kh\xf4ng c\xf3 \u0111\u1ed9ng \u0111\u1ea5t, kh\xf4ng c\xf3 thi\xean tai, t\u1ea5t c\u1ea3 tai n\u1ea1n \u0111\u1ec1u kh\xf4ng x\u1ea3y \u0111\u1ebfn!\n\nCh\u1eef \u201cC\xe1i\u201d trong c\xe2u \u201cch\u1ea5p tr\xec nh\u1ea5t c\xe1i\u201d, theo M\u1eadt t\xf4ng, ch\xednh l\xe0 ch\u1ec9 \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i trong Ch\xfa L\u0103ng Nghi\xeam. Trong Ch\xfa L\u0103ng Nghi\xeam c\xf3 ch\xfa t\xe2m \u2014 \u201c\u6089\u601b\u591a\u9262\u601b\u56c9\u201d (T\u1ea5t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La). S\xe1u ch\u1eef n\xe0y ch\xednh l\xe0 ch\xfa t\xe2m. N\u1ebfu nh\u1ea5t t\xe2m chuy\xean ch\xfa, t\xe2m kh\xf4ng t\u1ea1p ni\u1ec7m, ch\xed th\xe0nh tr\xec t\u1ee5ng th\xec trong h\u01b0 kh\xf4ng c\xf3 th\u1ec3 hi\u1ec7n ra m\u1ed9t \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i. \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i \u1ea5y c\xf3 oai th\u1ea7n l\u1ef1c \u201cph\u1ed5 \u1ea5m mu\xf4n ph\u01b0\u01a1ng\u201d, t\u1ee9c che ch\u1edf kh\u1eafp m\u1ecdi ph\u01b0\u01a1ng.\n\nPh\xe0m n\u01a1i n\xe0o \u0111\u01b0\u1ee3c n\xf3 che ph\u1ee7 th\xec \u0111ao binh kh\xf4ng kh\u1edfi, \xf4n d\u1ecbch kh\xf4ng sinh, n\u01b0\u1edbc l\u1eeda v\xe0 tr\u1ed9m c\u01b0\u1edbp \u0111\u1ec1u d\u1ee9t s\u1ea1ch; ch\u1ec9 c\xf3 nh\u01b0 \xfd c\xe1t t\u01b0\u1eddng, m\u01b0a thu\u1eadn gi\xf3 h\xf2a, nh\xe2n d\xe2n an l\u1ea1c, kh\xf4ng c\xf3 b\u1ea5t k\u1ef3 tai n\u1ea1n n\xe0o.\n\nN\u1ebfu n\xf3i theo gi\xe1o ph\xe1p, ch\u1eef \u201cc\xe1i\u201d n\xe0y ch\xednh l\xe0 di\u1ec7u ph\xe1p c\u1ee7a th\u1eadt t\u01b0\u1edbng. Th\u1eadt t\u01b0\u1edbng kh\xf4ng c\xf3 t\u01b0\u1edbng, nh\u01b0ng l\u1ea1i kh\xf4ng g\xec ch\u1eb3ng ph\u1ea3i t\u01b0\u1edbng. T\u1eeb th\u1eadt t\u01b0\u1edbng m\xe0 sinh ra t\u1ea5t c\u1ea3 c\xe1c ph\xe1p, d\xf9ng t\u1ea5t c\u1ea3 c\xe1c ph\xe1p \u0111\u1ec3 gi\xe1o h\xf3a ch\xfang sinh trong ch\xedn ph\xe1p gi\u1edbi. \u0110\xe2y ch\xednh l\xe0 \u0111\u1ea1o l\xfd:\n\n\u201cM\u1ed9t g\u1ed1c ph\xe2n t\xe1n th\xe0nh mu\xf4n h\xecnh v\u1ea1n tr\u1ea1ng, mu\xf4n h\xecnh v\u1ea1n tr\u1ea1ng cu\u1ed1i c\xf9ng v\u1eabn quy v\u1ec1 m\u1ed9t g\u1ed1c.\u201d\n\nTr\xec t\u1ee5ng c\xe2u ch\xfa t\xe2m n\xe0y th\xec tr\xean \u0111\u1ec9nh \u0111\u1ea7u s\u1ebd c\xf3 c\xe1c lo\u1ea1i b\u1ea3o c\xe1i h\u1ed9 tr\xec b\u1ea1n.\n\n\u201c\u6089\u601b\u591a\u9262\u601b\u56c9\u201d (T\u1ea5t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La) l\xe0 ch\xfa t\xe2m c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam, cho n\xean c\xf3 ng\u01b0\u1eddi th\u01b0\u1eddng xuy\xean tr\xec t\u1ee5ng c\xe2u ch\xfa n\xe0y. Tr\xec t\u1ee5ng c\xe2u ch\xfa n\xe0y th\xec c\xf3 c\xe1c lo\u1ea1i b\u1ea3o c\xe1i; trong \u0111\xf3 ch\u1ee7 y\u1ebfu l\xe0 d\u1ef1ng n\xean \u0110\u1ea1i B\u1ea1ch T\xe1n C\xe1i.\n\nCh\xfang ta m\u1ed7i ng\xe0y c\xf3 th\u1ec3 tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, ch\xednh l\xe0 \u0111ang gi\xfap \u0111\u1ee1 to\xe0n th\u1ebf gi\u1edbi, khi\u1ebfn tai n\u1ea1n tr\xean to\xe0n th\u1ebf gi\u1edbi c\xf3 th\u1ec3 gi\u1ea3m b\u1edbt m\u1ed9t ph\u1ea7n, nghi\u1ec7p ma c\u0169ng gi\u1ea3m b\u1edbt m\u1ed9t ph\u1ea7n. V\xec v\u1eady, Ch\xfa L\u0103ng Nghi\xeam v\xf4 c\xf9ng quan tr\u1ecdng!\n\nB\u1ea3o c\xe1i c\xf3 r\u1ea5t nhi\u1ec1u lo\u1ea1i, cho n\xean n\xf3i l\xe0 c\xe1c lo\u1ea1i b\u1ea3o c\xe1i; l\u1ea1i c\xf3 c\xe1c lo\u1ea1i m\xe2y h\u01b0\u01a1ng, m\xe2y hoa, ch\u1ee9 kh\xf4ng ph\u1ea3i ch\u1ec9 c\xf3 m\u1ed9t lo\u1ea1i. Nh\u1eefng b\u1ea3o c\xe1i, m\xe2y h\u01b0\u01a1ng v\xe0 m\xe2y hoa n\xe0y th\u01b0\u1eddng \u1edf tr\xean \u0111\u1ec9nh \u0111\u1ea7u b\u1ea1n \u0111\u1ec3 h\u1ed9 tr\xec b\u1ea1n. V\xec th\u1ebf, r\u1ea5t nhi\u1ec1u vi\u1ec7c v\u1ed1n c\xf3 v\u1ea5n \u0111\u1ec1 c\u0169ng tr\u1edf th\xe0nh kh\xf4ng c\xf3 v\u1ea5n \u0111\u1ec1; d\xf9 c\xf3 chuy\u1ec7n b\u1ea5t ng\u1edd c\u0169ng kh\xf4ng x\u1ea3y ra tai n\u1ea1n. \u0110\xe2y l\xe0 s\u1ef1 l\u1ee3i \xedch \u0111\u1ed1i v\u1edbi t\u1ea5t c\u1ea3 m\u1ecdi ng\u01b0\u1eddi tr\xean th\u1ebf gi\u1edbi.\n\nV\xec v\u1eady, ch\xfang ta tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam ch\xednh l\xe0 \u0111ang gi\xfap \u0111\u1ee1 th\u1ebf gi\u1edbi, khi\u1ebfn th\u1ebf gi\u1edbi gi\u1ea3m b\u1edbt nh\u1eefng tai n\u1ea1n nh\u01b0 tai n\u1ea1n h\xe0ng kh\xf4ng, tai n\u1ea1n giao th\xf4ng. Ch\u1eb3ng h\u1ea1n nh\u01b0 tai n\u1ea1n t\xe0u h\u1ecfa, tai n\u1ea1n \xf4 t\xf4, tai n\u1ea1n m\xe1y bay, xe bu\xfdt, th\u1eadm ch\xed c\u1ea3 chi\u1ebfn tranh, \u0111\u1ea1n ph\xe1o \u2014 nh\u1eefng tai n\u1ea1n \u1ea5y \u0111\u1ec1u c\xf3 th\u1ec3 \u0111\u01b0\u1ee3c \xe2m th\u1ea7m h\xf3a gi\u1ea3i. \u0110\u1ed3ng th\u1eddi c\u0169ng ti\xeau tr\u1eeb tai ch\u01b0\u1edbng c\u1ee7a ch\xfang sinh. Khi tai ch\u01b0\u1edbng kh\xf4ng c\xf2n, con ng\u01b0\u1eddi li\u1ec1n \u0111\u01b0\u1ee3c b\xecnh an. \u0110\xe2y ch\xednh l\xe0 l\u1ee3i \xedch cho qu\u1ea7n ch\xfang.\n\nB\u1ea1n c\xf3 th\u1ec3 m\u1ed7i ng\xe0y m\u1ed9t gi\xe2y c\u0169ng kh\xf4ng gi\xe1n \u0111o\u1ea1n tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, nh\u1ea5t \u0111\u1ecbnh s\u1ebd c\xf3 \u0111\u1ea1i c\u1ea3m \u1ee9ng. Ch\u1ec9 c\u1ea7n kh\xf4ng gi\xe1n \u0111o\u1ea1n; kh\xf4ng gi\xe1n \u0111o\u1ea1n ch\xednh l\xe0 Tam-mu\u1ed9i.\n\nCh\u01b0 Ph\u1eadt c\xf3 n\u0103m b\u1ed9:\n\nPh\u01b0\u01a1ng \u0110\xf4ng: Kim Cang B\u1ed9\n\nPh\u01b0\u01a1ng Nam: B\u1ea3o Sinh B\u1ed9\n\nPh\u01b0\u01a1ng T\xe2y: Li\xean Hoa B\u1ed9\n\nPh\u01b0\u01a1ng B\u1eafc: Y\u1ebft Ma B\u1ed9\n\nTrung \u01b0\u01a1ng: Ph\u1eadt B\u1ed9\n\n\u201c\u6089\u601b\u591a\u9262\u601b\u56c9\u201d (T\u1ea5t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t La) l\xe0 ph\xe1p c\u1ee7a Ph\u1eadt B\u1ed9 Trung \u01b0\u01a1ng, cho n\xean c\xf3 th\u1ec3 nhi\u1ebfp ph\u1ee5c n\u0103m \u0111\u1ea1i ma qu\xe2n.\n\nN\u1ebfu kh\xf4ng c\xf3 ch\u01b0 Ph\u1eadt n\u0103m ph\u01b0\u01a1ng, n\u0103m \u0111\u1ea1i ma qu\xe2n s\u1ebd ng\xe0y ng\xe0y tung ho\xe0nh tr\xean th\u1ebf gi\u1edbi \u2014 ch\xfang ngang d\u1ecdc kh\xf4ng ki\xeang n\u1ec3, kh\xf4ng ch\xfat e d\xe8. May thay c\xf3 ch\u01b0 Ph\u1eadt \u1edf n\u0103m ph\u01b0\u01a1ng \xe2m th\u1ea7m tr\u1ea5n ph\u1ee5c ch\xfang, n\xean ch\xfang kh\xf4ng d\xe1m c\xf4ng khai ho\xe0nh h\xe0nh.\n\nB\u1ea5t lu\u1eadn l\xe0 lo\u1ea1i y\xeau ma qu\u1ef7 qu\xe1i n\xe0o, thi\xean ma hay ngo\u1ea1i \u0111\u1ea1o, t\u1ea5t c\u1ea3 \u0111\u1ec1u ph\u1ea3i thu\u1eadn theo s\u1ee9c m\u1ea1nh c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam. N\u1ebfu kh\xf4ng thu\u1eadn theo th\xec s\u1ebd b\u1ecb ti\xeau di\u1ec7t. Ch\xfa L\u0103ng Nghi\xeam c\xf3 ph\xe1p l\u1ef1c ti\xeau di\u1ec7t v\xe0 ph\xe1 tan t\u1ea5t c\u1ea3 ma qu\xe2n.\n\nV\xec v\u1eady, ng\u01b0\u1eddi bi\u1ebft tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam, thi\xean ma ngo\u1ea1i \u0111\u1ea1o v\xe0 t\u1ea5t c\u1ea3 qu\u1ef7 qu\xe1i \u0111\u1ec1u s\u1ee3 b\u1ea1n. N\u1ebfu ch\xfang kh\xf4ng s\u1ee3, cu\u1ed1i c\xf9ng ch\xfang v\u1eabn s\u1ebd b\u1ecb h\xe0ng ph\u1ee5c d\u01b0\u1edbi s\u1ee9c m\u1ea1nh c\u1ee7a b\u1ea1n."],q,q),A.Y(["title","Tr\xec Ch\xfa C\u1ea7n Ch\xed Th\xe0nh Chuy\xean Nh\u1ea5t","meta",r,"preview",'Ph\u1ed5 Quang L\xe3o H\xf2a Th\u01b0\u1ee3ng\nTr\xedch t\u1eeb "Chung Nam S\u01a1n Quan \xc2m C\u1ed5 \u0110\u1ed9ng Khai Th\u1ecb L\u1ee5c"\n\nChuy\u1ec7n tr\xec ch\xfa , quan tr\u1ecdng nh\u1ea5t ch\xednh l\xe0 4 ch\u1eef \u300eCh\xed Th\xe0nh Chuy\xean Nh\u1ea5t\u300f!\n\nC\xe1c Ph\u1eadt t\u1eed th\u1ea5y kh\xf4ng, Th\u1ea7y h\u01a1n 100 tu\u1ed5i r\u1ed3i m\xe0 m\u1ed7i ng\xe0y v\u1eabn th\xe0nh th\u1eadt ni\u1ec7m ch\xfa. V\xec sao? V\xec th\u1ea7y bi\u1ebft ch\xfa n\xe0y linh nghi\u1ec7m l\u1eafm.\n\nTh\u1ebf n\xe0o l\xe0 Ch\xed Th\xe0nh Chuy\xean Nh\u1ea5t? Th\u1ea7y n\xf3i cho c\xe1c Ph\u1eadt t\u1eed nghe:\nTh\u1ee9 nh\u1ea5t - T\xe2m ph\u1ea3i th\xe0nh, \u0111\u1eebng c\xf3 l\u0103ng x\u0103ng.\nMi\u1ec7ng th\xec ni\u1ec7m ch\xfa m\xe0 t\xe2m l\u1ea1i ngh\u0129 chuy\u1ec7n kh\xe1c, g\u1ecdi l\xe0 \u300emi\u1ec7ng ni\u1ec7m t\xe2m kh\xf4ng theo\u300f, v\u1eady th\xec v\xf4 \xedch!\n\nTh\u1ee9 hai - Ph\u1ea3i chuy\xean nh\u1ea5t m\u1ed9t m\xf4n.\n\u0110\u1eebng h\xf4m nay ni\u1ec7m ch\xfa n\xe0y, ng\xe0y mai \u0111\u1ed5i ch\xfa kh\xe1c. C\u1ea3 \u0111\u1eddi th\u1ea7y ch\u1ec9 tr\xec m\u1ed9t b\u1ed9 L\u0103ng Nghi\xeam Ch\xfa, \u0111\xe3 h\u01a1n 80 n\u0103m r\u1ed3i.\n\nTh\u1ee9 ba - Ph\u1ea3i m\u1ed9t l\xf2ng m\u1ed9t d\u1ea1, ki\xean \u0111\u1ecbnh.\nD\xf9 tr\u1eddi c\xf3 s\u1eadp xu\u1ed1ng th\u1ea7y v\u1eabn ng\u1ed3i ni\u1ec7m ch\xfa.\n\nC\xe1c Ph\u1eadt t\u1eed xem c\xe1i am tranh c\u1ee7a th\u1ea7y \u0111\xf3, ch\u1eb3ng c\xf3 g\xec h\u1ebft, ch\u1ec9 c\xf3 m\u1ed7i c\xe1i gi\u01b0\u1eddng v\xe1n. T\u1ea1i sao? L\xe0 \u0111\u1ec3 c\u1eaft \u0111\u1ee9t v\u1ecdng t\u01b0\u1edfng! \u1ede \u0111\xe2y ngo\xe0i vi\u1ec7c ni\u1ec7m ch\xfa ra th\xec kh\xf4ng ngh\u0129 g\xec kh\xe1c.\n\nC\xf3 ng\u01b0\u1eddi h\u1ecfi th\u1ea7y: \u300eB\u1ea1ch L\xe3o H\xf2a Th\u01b0\u1ee3ng, H\xf2a Th\u01b0\u1ee3ng ni\u1ec7m ch\xfa c\xf3 th\u1ea5y c\u1ea3nh gi\u1edbi g\xec kh\xf4ng \u1ea1?\u300f\nTh\u1ea7y tr\u1ea3 l\u1eddi: \u300eTh\u1ea7y ch\u1eb3ng th\u1ea5y c\u1ea3nh gi\u1edbi g\xec c\u1ea3, ch\u1ec9 bi\u1ebft th\xe0nh th\u1eadt m\xe0 ni\u1ec7m th\xf4i!\u300f\nC\xe1c Ph\u1eadt t\u1eed nh\u1edb nha: \u0110\u1eebng c\xf3 mong c\u1ea7u c\u1ea3nh gi\u1edbi, c\xe0ng c\u1ea7u l\xe0 c\xe0ng b\u1ecb ma ch\u01b0\u1edbng. C\u1ee9 th\xe0nh th\u1eadt ni\u1ec7m, t\u1ef1 nhi\xean s\u1ebd c\xf3 l\u1ee3i \xedch.\n\nTh\u1ea7y m\u1ed7i ng\xe0y 3 gi\u1edd r\u01b0\u1ee1i s\xe1ng l\xe0 th\u1ee9c d\u1eady. L\u1ea1y Ph\u1eadt 100 l\u1ea1y tr\u01b0\u1edbc, r\u1ed3i b\u1eaft \u0111\u1ea7u tr\xec ch\xfa. M\u1ed9t ng\xe0y \xedt nh\u1ea5t 108 bi\u1ebfn, d\xf9 m\u01b0a hay n\u1eafng c\u0169ng kh\xf4ng b\u1ecf.\nV\xec sao ph\u1ea3i v\u1eady? V\xec chuy\u1ec7n sinh t\u1eed r\u1ea5t l\u1edbn, v\xf4 th\u01b0\u1eddng \u0111\u1ebfn nhanh l\u1eafm!\n\nB\xe2y gi\u1edd c\xf3 nhi\u1ec1u ng\u01b0\u1eddi v\u1eeba ni\u1ec7m ch\xfa v\u1eeba b\u1ea5m \u0111i\u1ec7n tho\u1ea1i. V\u1eady g\u1ecdi l\xe0 tr\xec ch\xfa g\xec? \u0110\xf3 l\xe0 gi\u1ee1n ch\u01a1i \u0111\xf3!\n\u0110\xe3 ni\u1ec7m th\xec ph\u1ea3i ni\u1ec7m cho nghi\xeam t\xfac. Kh\xf4ng ni\u1ec7m th\xec th\xf4i. Ph\u1eadt B\u1ed3 T\xe1t kh\xf4ng g\u1ea1t ai bao gi\u1edd, ch\u1ec9 c\xf3 m\xecnh t\u1ef1 g\u1ea1t m\xecnh th\xec kh\xf4ng ai c\u1ee9u \u0111\u01b0\u1ee3c.\n\nCu\u1ed1i c\xf9ng th\u1ea7y t\u1eb7ng c\xe1c Ph\u1eadt t\u1eed m\u1ed9t c\xe2u:\n\u300e\u0110\xe1nh tan v\u1ecdng t\u01b0\u1edfng, th\xec ph\xe1p th\xe2n s\u1ebd hi\u1ec3n l\u1ed9\u300f\n= Khi n\xe0o qu\xfd v\u1ecb d\u1eb9p \u0111\u01b0\u1ee3c h\u1ebft v\u1ecdng t\u01b0\u1edfng trong \u0111\u1ea7u, th\xec t\xe1nh Ph\u1eadt c\u1ee7a qu\xfd v\u1ecb s\u1ebd s\u1ed1ng l\u1ea1i. L\xfac \u0111\xf3 tr\xec ch\xfa m\u1edbi linh nghi\u1ec7m!'],q,q),A.Y(["title","MU\u1ed0N NHANH CH\xd3NG TH\xc0NH T\u1ef0U, H\xc3Y T\u1ee4NG THU\u1ed8C CH\xda L\u0102NG NGHI\xcaM","meta",r,"preview","L\u1eddi H\xf2a th\u01b0\u1ee3ng Ph\u1ed5 Quang\n\nNi\u1ec7m A Di \u0110\xe0 Ph\u1eadt, sau m\u1ed9t tr\u0103m l\u1ebb t\xe1m ngh\xecn n\u0103m s\u1ebd th\xe0nh Ph\u1eadt, nh\u1ea5t \u0111\u1ecbnh s\u1ebd th\xe0nh Ph\u1eadt! \u0110\u1ee9c A Di \u0110\xe0 t\u1eeb bi, ng\u01b0\u1eddi n\xe0o ni\u1ec7m danh hi\u1ec7u Ng\xe0i \u0111\u1ec1u c\xf3 th\u1ec3 th\xe0nh Ph\u1eadt. Nh\u01b0ng n\u1ebfu b\u1ea1n mu\u1ed1n nhanh ch\xf3ng th\xe0nh t\u1ef1u, h\xe3y hi\u1ebfu thu\u1eadn v\u1edbi cha m\u1eb9 v\xe0 t\u1ee5ng thu\u1ed9c Ch\xfa L\u0103ng Nghi\xeam.\n\nT\u1ea1i sao khi t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam l\u1ea1i ph\u1ea3i ph\xe1t \xe2m vang r\xf5?\n\nN\u1ebfu \xe2m thanh qu\xe1 nh\u1ecf th\xec qu\u1ef7 th\u1ea7n c\xf2n kh\xf4ng nghe th\u1ea5y, v\u1eady b\u1ea1n \u0111\u1ed9 ai?\n\n\xc2m thanh l\u1edbn, ngay c\u1ea3 c\xe1c lo\xe0i c\xf4n tr\xf9ng, ki\u1ebfn c\u0169ng c\xf3 th\u1ec3 nghe \u0111\u01b0\u1ee3c m\xe0 k\u1ebft duy\xean th\xe0nh Ph\u1eadt. \u0110\u1ed3ng th\u1eddi, vi\u1ec7c tr\xec t\u1ee5ng c\xf2n c\xf3 th\u1ec3 l\xe0m ti\xeau tr\u1eeb nh\u1eefng v\u1ecdng ni\u1ec7m c\u1ee7a ch\xednh m\xecnh, khi\u1ebfn v\u1ecdng ni\u1ec7m kh\xf4ng th\u1ec3 qu\u1ea5y nhi\u1ec5u t\xe2m t\xednh, h\xe0ng ph\u1ee5c c\u01a1n bu\u1ed3n ng\u1ee7, khai th\xf4ng kinh m\u1ea1ch, b\u1ed5 sung d\u01b0\u01a1ng kh\xed v\xe0 t\u0103ng c\u01b0\u1eddng th\u1ec3 ch\u1ea5t.\n\nN\u0102M \u0110\u1ea0I T\xc2M CH\xda:\n\n\u53f1\u9640\u4f60 / S\u1ea4T \u0110\xc0 N\u1ec2\n\u963f\u8fe6\u56c9 / A CA LA\n\u5bc6\u550e\u67f1 / M\u1eacT R\u1eca TR\u1ee4\n\u822c\u550e\u601b\u56c9\u8036 / B\xc1T R\u1eca \u0110\xc1T RA DA\n\u511c\u63ed\u550e / N\u1ea2NH Y\u1ebeT R\u1eca\n\nBa ch\u1eef l\xe0 m\u1ed9t c\xe2u. N\u0103m c\xe2u n\xe0y bi\u1ec3u th\u1ecb Ng\u0169 ph\u01b0\u01a1ng Ph\u1eadt h\xe0ng ph\u1ee5c Ng\u0169 ph\u01b0\u01a1ng ma.\n\nT\xf4i n\xf3i \u0111\xe2y l\xe0 t\xe2m ch\xfa ch\xednh th\u1ed1ng c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam (\u0111\u1ea1i t\xe2m ch\xfa). C\xf3 ng\u01b0\u1eddi n\xf3i t\xe2m ch\xfa c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam l\xe0 c\xe2u cu\u1ed1i c\xf9ng, t\u1ee9c c\xe2u ch\xfa t\xe2m. T\xe2m ch\xfa c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam ch\xednh th\u1ed1ng ch\xednh l\xe0 tr\xe1i tim c\u1ee7a ch\u01b0 Ph\u1eadt. Ch\xednh c\xe2u n\xe0y c\xf3 n\u0103ng l\u1ef1c khi\u1ebfn thi\xean h\u1ea1 h\xf2a b\xecnh.\n\nCh\xfa L\u0103ng Nghi\xeam ch\xednh l\xe0 do \u0110\u1ee9c Ph\u1eadt Th\xedch Ca M\xe2u Ni tuy\xean thuy\u1ebft. \xc2n \u0111\u1ee9c c\u1ee7a Ph\u1eadt th\u1eadt kh\xf3 b\xe1o \u0111\xe1p. Ch\xfa L\u0103ng Nghi\xeam c\xf2n li\xean quan \u0111\u1ebfn s\u1ef1 h\u01b0ng suy c\u1ee7a to\xe0n th\u1ec3 Ph\u1eadt gi\xe1o, li\xean quan \u0111\u1ebfn h\u1ebft th\u1ea3y ch\xfang sinh. Trong tr\u1eddi \u0111\u1ea5t n\xe0y, kh\xf4ng c\xf3 g\xec quan tr\u1ecdng h\u01a1n Ch\xfa L\u0103ng Nghi\xeam.\n\nV\xec v\u1eady, ch\u1ec9 c\u1ea7n t\xf4i c\xf2n m\u1ed9t h\u01a1i th\u1edf, t\xf4i v\u1eabn s\u1ebd h\u1ebft l\xf2ng ho\u1eb1ng d\u01b0\u01a1ng th\u1ea7n ch\xfa L\u0103ng Nghi\xeam n\xe0y.\n\nT\u1ea5t c\u1ea3 m\u1ecdi th\u1ee9 tr\xean th\u1ebf gian \u0111\u1ec1u l\xe0 gi\u1ea3, ngay c\u1ea3 th\xe2n th\u1ec3 c\u1ee7a l\xe3o Ph\u1ed5 Quang t\xf4i \u0111\xe2y c\u0169ng l\xe0 gi\u1ea3. Ch\u1ec9 c\xf3 Ch\xfa L\u0103ng Nghi\xeam l\xe0 ch\xe2n th\u1eadt nh\u1ea5t. V\xec v\u1eady, t\xf4i ngay c\u1ea3 ch\xednh m\xecnh c\u0169ng kh\xf4ng tin, ch\u1ec9 tin v\xe0o Ch\xfa L\u0103ng Nghi\xeam n\xe0y.\n\nCho n\xean, khi m\u1ecdi ng\u01b0\u1eddi tham gia ph\xe1p h\u1ed9i th\u1ea5t nh\u1eadt, m\u1ed7i ng\xe0y tr\xec t\u1ee5ng th\u1ea7n ch\xfa, nh\u1ea5t \u0111\u1ecbnh ph\u1ea3i d\xf9ng t\xe2m m\xe0 ni\u1ec7m, ph\u1ea3i \u0111em t\xe2m ch\xe2n th\xe0nh ra \u0111\u1ec3 tr\xec t\u1ee5ng. \u0110\u1eebng v\u1eeba ni\u1ec7m v\u1eeba kh\u1edfi v\u1ecdng t\u01b0\u1edfng, v\u1eeba ni\u1ec7m v\u1eeba nghi ng\u1edd.\n\nB\u1ea1n xem, khi t\xf4i v\u1eeba ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam th\xec ngay c\u1ea3 l\xe3o Ph\u1ed5 Quang t\xf4i c\u0169ng kh\xf4ng c\xf2n n\u1eefa. To\xe0n t\xe2m \u0111\u1ec1u h\xf2a nh\u1eadp v\xe0o vi\u1ec7c tr\xec ch\xfa.\n\nKhi t\u1ee5ng thu\u1ed9c c\xe2u tr\u01b0\u1edbc th\xec ngh\u0129 \u0111\u1ebfn c\xe2u ti\u1ebfp theo; t\u1ee5ng \u0111\u1ebfn ch\u1eef tr\u01b0\u1edbc th\xec ngh\u0129 \u0111\u1ebfn ch\u1eef ti\u1ebfp theo. C\u1ee9 nh\u01b0 v\u1eady, nh\u1ea5t t\xe2m b\u1ea5t lo\u1ea1n m\xe0 tr\xec t\u1ee5ng th\u1ea7n ch\xfa. C\u1ee9 b\xe1m ch\u1eb7t l\u1ea5y Ch\xfa L\u0103ng Nghi\xeam, kh\xf4ng bu\xf4ng b\u1ecf, th\xec trong \u0111\u1eddi n\xe0y nh\u1ea5t \u0111\u1ecbnh c\xf3 th\u1ec3 th\xe0nh t\u1ef1u."],q,q),A.Y(["title","NI\u1ec6M CH\xda L\u0102NG NGHI\xcaM B\u1ea2Y NG\xc0Y, C\u0102N B\u1ec6NH L\u1ea0 B\u1ed6NG NHI\xcaN KH\u1eceI H\u1eb2N","meta",s,"preview",'\u5ba3\u5316\u4e0a\u4eba - Tuy\xean H\xf3a Th\u01b0\u1ee3ng Nh\xe2n:\nT\xf4i k\u1ec3 cho c\xe1c b\u1ea1n nghe m\u1ed9t c\xe2u chuy\u1ec7n c\xf3 th\u1eadt th\u1ebf n\xe0y: \u1ede v\xf9ng \u0110\xf4ng B\u1eafc Trung Qu\u1ed1c, c\xf3 m\u1ed9t ng\u01b0\u1eddi m\u1eafc ph\u1ea3i c\u0103n b\u1ec7nh l\u1ea1, bao nhi\xeau b\xe1c s\u0129 \u0111\u1ec1u ch\u1eefa kh\xf4ng kh\u1ecfi. Sau \u0111\xf3, \xf4ng \u1ea5y g\u1eb7p \u0111\u01b0\u1ee3c m\u1ed9t v\u1ecb l\xe3o tu h\xe0nh d\u1ea1y cho c\xe1ch ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam. \xd4ng \u1ea5y \u0111\xe3 th\xe0nh t\xe2m th\xe0nh \xfd ni\u1ec7m su\u1ed1t b\u1ea3y ng\xe0y, v\xe0 b\u1ec7nh t\xecnh li\u1ec1n kh\u1ecfi h\u1eb3n! \u0110\xe2y kh\xf4ng ph\u1ea3i l\xe0 m\xea t\xedn, m\xe0 ch\xednh l\xe0 uy th\u1ea7n l\u1ef1c c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam!\n\nNg\u01b0\u1eddi tr\xec t\u1ee5ng Ch\xfa L\u0103ng Nghi\xeam th\xec \u0111i \u0111\u1ebfn \u0111\xe2u c\u0169ng c\xf3 thi\u1ec7n th\u1ea7n h\u1ed9 ph\xe1p \u0111i theo b\u1ea3o v\u1ec7. C\xe1c b\u1ea1n nh\xecn T\u1ebf C\xf4ng H\xf2a Th\u01b0\u1ee3ng xem, t\u1ea1i sao ng\xe0i l\u1ea1i c\xf3 th\u1ec3 h\xe0ng y\xeau ph\u1ee5c ma? Ch\xednh l\xe0 d\u1ef1a v\xe0o s\u1ee9c m\u1ea1nh c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam! Th\u1ea7n ch\xfa n\xe0y v\u1eeba ni\u1ec7m l\xean m\u1ed9t c\xe1i l\xe0 y\xeau ma qu\u1ef7 qu\xe1i \u0111\u1ec1u s\u1ee3 h\xe3i m\xe0 ch\u1ea1y tr\u1ed1n th\u1eadt xa.\n\nTh\u1ebf nh\u01b0ng, c\xe1c b\u1ea1n \u0111\u1eebng c\xf3 ngh\u0129 r\u1eb1ng h\u1ec5 ni\u1ec7m v\xe0i bi\u1ebfn l\xe0 c\xf3 \u0111\u1ea1i th\u1ea7n th\xf4ng ngay nh\xe9. Th\u1eddi tr\u1ebb khi t\xf4i ni\u1ec7m Ch\xfa L\u0103ng Nghi\xeam, ni\u1ec7m \u0111\u1ebfn m\u1ee9c r\u1ed9p c\u1ea3 mi\u1ec7ng ra m\xe0 v\u1eabn ti\u1ebfp t\u1ee5c ni\u1ec7m. T\u1ea1i sao v\u1eady? B\u1edfi v\xec t\xf4i bi\u1ebft c\xf4ng \u0111\u1ee9c c\u1ee7a th\u1ea7n ch\xfa n\xe0y l\xe0 kh\xf4ng th\u1ec3 ngh\u0129 b\xe0n!\n\nB\xe2y gi\u1edd c\xf3 r\u1ea5t nhi\u1ec1u ng\u01b0\u1eddi c\u1ee9 mong c\u1ea7u c\u1ea3m \u1ee9ng, ni\u1ec7m \u0111\u01b0\u1ee3c v\xe0i ng\xe0y kh\xf4ng th\u1ea5y h\xe0o quang c\u1ee7a Ph\u1eadt hi\u1ec7n ra l\xe0 li\u1ec1n b\u1ecf kh\xf4ng ni\u1ec7m n\u1eefa. Nh\u01b0 v\u1eady th\xec g\u1ecdi g\xec l\xe0 tu h\xe0nh? Kinh L\u0103ng Nghi\xeam n\xf3i r\u1ea5t r\xf5 r\xe0ng: "N\u1ebfu kh\xf4ng tr\xec gi\u1edbi, d\u1eabu c\xf3 t\u1ee5ng ch\xfa, chung quy c\u0169ng kh\xf4ng ph\u1ea3i l\xe0 ch\xednh \u0111\u1ecbnh." B\u1ea1n v\u1eeba \u0103n th\u1ecbt u\u1ed1ng r\u01b0\u1ee3u, l\u1ea1i v\u1eeba ni\u1ec7m ch\xfa, th\xec l\xe0m sao m\xe0 c\xf3 hi\u1ec7u qu\u1ea3 cho \u0111\u01b0\u1ee3c?\n\nH\xe3y nh\u1edb k\u1ef9 l\u1eddi n\xe0y c\u1ee7a t\xf4i: Tr\xec Ch\xfa L\u0103ng Nghi\xeam th\xec ph\u1ea3i gi\u1ed1ng nh\u01b0 \u0103n c\u01a1m v\u1eady, m\u1ed9t ng\xe0y c\u0169ng kh\xf4ng th\u1ec3 thi\u1ebfu. S\xe1ng ni\u1ec7m, t\u1ed1i ni\u1ec7m, \u0111i \u0111\u01b0\u1eddng ni\u1ec7m, ng\u1ed3i xe ni\u1ec7m, h\xe3y ni\u1ec7m b\xe0i ch\xfa n\xe0y v\xe0o t\u1eadn trong t\xe2m c\u1ee7a m\xecnh. C\u1ee9 ni\u1ec7m nh\u01b0 v\u1eady su\u1ed1t ba n\u0103m, b\u1ea1n s\u1ebd t\u1ef1 bi\u1ebft c\xe1i l\u1ee3i \xedch c\u1ee7a n\xf3.\n\nCu\u1ed1i c\xf9ng t\xf4i n\xf3i cho c\xe1c b\u1ea1n bi\u1ebft: C\xe1i l\u1ee3i \xedch l\u1edbn nh\u1ea5t c\u1ee7a vi\u1ec7c tr\xec Ch\xfa L\u0103ng Nghi\xeam kh\xf4ng ph\u1ea3i l\xe0 c\u1ea7u ph\xe1t t\xe0i, c\u1ea7u b\xecnh an, m\xe0 l\xe0 \u0111\u1ec3 khai m\u1edf tr\xed tu\u1ec7, \u0111\u1ec3 minh t\xe2m ki\u1ebfn t\xednh. C\xe1c b\u1ea1n nh\xecn H\u01b0 V\xe2n L\xe3o H\xf2a Th\u01b0\u1ee3ng xem, t\u1ea1i sao ng\xe0i l\u1ea1i c\xf3 th\u1ec3 s\u1ed1ng \u0111\u1ebfn 120 tu\u1ed5i? Ch\xednh l\xe0 v\xec ng\xe0y ng\xe0y ng\xe0i \u0111\u1ec1u tr\xec Ch\xfa L\u0103ng Nghi\xeam!\n\n(Tr\xedch t\u1eeb b\xe0i khai th\u1ecb "C\xf4ng \u0111\u1ee9c c\u1ee7a Ch\xfa L\u0103ng Nghi\xeam" c\u1ee7a Tuy\xean H\xf3a Th\u01b0\u1ee3ng Nh\xe2n, V\u1ea1n Ph\u1eadt Th\xe1nh Th\xe0nh)'],q,q)],t.m0),new A.atx(this),p),p.i("B.E"))
 return q},
 a6W(a,b){var s,r,q,p,o,n,m,l,k,j,i,h,g,f=null
 if(this.d===0)s=b?A.eZ(B.pa,0,A.kr(3,"count",t.S),t.N).eh(0):B.pa
-else s=B.Kc
+else s=B.Kb
 r=A.cA(22)
 q=b?84:185
 p=b?8:14
@@ -90468,7 +90468,7 @@ k.toString
 k=A.cq(k,r,r,r,A.ez(r,r,B.dL,r,r,r,r,r,r,r,r,o?17:19,r,r,B.ay,r,1.3,!0,r,r,r,r,r,r,r,r),r,r)
 s=q.h(0,"preview")
 s.toString
-return A.cP(r,A.cB(A.b([k,B.bw,A.cq(s,r,r,r,A.ez(r,r,B.d9,r,r,r,r,r,r,r,r,o?15:16,r,r,r,r,1.65,!0,r,r,r,r,r,r,r,r),r,r)],t.p),B.at,B.x,B.K),B.u,r,r,new A.c1(B.aa,r,l,m,B.JG,r,B.ae),r,r,new A.bQ("teaching-"+A.k(p),t.c),r,new A.a8(n,n,n,n),r,r,r)},
+return A.cP(r,A.cB(A.b([k,B.bw,A.cq(s,r,r,r,A.ez(r,r,B.d9,r,r,r,r,r,r,r,r,o?15:16,r,r,r,r,1.65,!0,r,r,r,r,r,r,r,r),r,r)],t.p),B.at,B.x,B.K),B.u,r,r,new A.c1(B.aa,r,l,m,B.JF,r,B.ae),r,r,new A.bQ("teaching-"+A.k(p),t.c),r,new A.a8(n,n,n,n),r,r,r)},
 $S:565}
 A.JO.prototype={}
 A.ac3.prototype={
@@ -90592,7 +90592,7 @@ i.ao(new A.oH())
 b3=A.b1()
 b3.st2(B.Ii.Ig(A.a_n(i.giF().a.getBounds())))
 b7.j0(i,b3)
-for(b1=b7.a,b2+=32,b3=a6*2,h=0;h<54;++h){g=B.JB[B.j.bu(h,18)]
+for(b1=b7.a,b2+=32,b3=a6*2,h=0;h<54;++h){g=B.JA[B.j.bu(h,18)]
 b5=B.j.bu(h,3)
 f=0.5+0.5*Math.sin(a6*(2+b5)+h*1.31)
 b6=B.j.e0(h,18)
@@ -91372,7 +91372,7 @@ n=l.k(0)}else if(q.hY(m)>0){o=!q.n4(m)
 n=m}else{if(!(m.length!==0&&q.I6(m[0])))if(p)n+=q.gpz()
 n+=m}p=q.vW(m)}return n.charCodeAt(0)==0?n:n},
 wW(a,b){var s=A.NE(b,this.a),r=s.d,q=A.a2(r).i("aN<1>")
-r=A.Z(new A.aN(r,new A.a2b(),q),q.i("B.E"))
+r=A.a_(new A.aN(r,new A.a2b(),q),q.i("B.E"))
 s.d=r
 q=s.b
 if(q!=null)B.c.n1(r,0,q)
@@ -91583,7 +91583,7 @@ D(a,b){return this.atW(0,b)},
 atW(a,b){var s=0,r=A.N(t.y),q,p
 var $async$D=A.O(function(c,d){if(c===1)return A.K(d,r)
 for(;;)switch(s){case 0:s=3
-return A.G(B.lb.lh("remove",A.a_(["key",b],t.N,t.z),!1,t.y),$async$D)
+return A.G(B.lb.lh("remove",A.Y(["key",b],t.N,t.z),!1,t.y),$async$D)
 case 3:p=d
 p.toString
 q=p
@@ -91595,7 +91595,7 @@ nF(a,b,c){return this.a0Z(a,b,c)},
 a0Z(a,b,c){var s=0,r=A.N(t.y),q,p
 var $async$nF=A.O(function(d,e){if(d===1)return A.K(e,r)
 for(;;)switch(s){case 0:s=3
-return A.G(B.lb.lh("set"+a,A.a_(["key",b,"value",c],t.N,t.z),!1,t.y),$async$nF)
+return A.G(B.lb.lh("set"+a,A.Y(["key",b,"value",c],t.N,t.z),!1,t.y),$async$nF)
 case 3:p=e
 p.toString
 q=p
@@ -94150,8 +94150,8 @@ p(A.ao,[A.fs,A.av,A.hP,A.DC])
 p(A.av,[A.BS,A.dS,A.PB,A.Bl,A.mK,A.Ap,A.Fc,A.qD,A.qS,A.me,A.oz,A.kK,A.yZ,A.kN,A.oy,A.pM,A.qQ])
 q(A.a2L,A.SS)
 p(A.a2L,[A.f,A.b5,A.dV,A.Pp,A.agW])
-p(A.f,[A.Y,A.aq,A.aj,A.aK,A.BV,A.UZ,A.rg])
-p(A.Y,[A.yt,A.oP,A.yw,A.yv,A.vS,A.uF,A.Ev,A.mo,A.An,A.xE,A.xQ,A.re,A.xW,A.Bh,A.GK,A.pl,A.F9,A.E6,A.F1,A.pn,A.De,A.Am,A.Mh,A.oa,A.ob,A.wn,A.FP,A.FQ,A.O1,A.C0,A.ER,A.BY,A.v5,A.Db,A.Hg,A.Dw,A.DP,A.or,A.p3,A.xs,A.xu,A.DN,A.rP,A.yM,A.mq,A.tD,A.GA,A.p0,A.zm,A.i5,A.pf,A.zC,A.pz,A.Fq,A.xw,A.AN,A.m0,A.uo,A.AW,A.zv,A.CQ,A.uv,A.Bj,A.nj,A.BU,A.OU,A.wf,A.wC,A.C8,A.Ca,A.GH,A.qx,A.Ct,A.qE,A.Cu,A.CW,A.GL,A.o2,A.GM,A.Dh,A.Do,A.Ds,A.vz,A.kc,A.vF,A.pC,A.CH,A.xj,A.Aj,A.B2,A.Cs,A.D5,A.ot,A.nm])
+p(A.f,[A.Z,A.aq,A.aj,A.aK,A.BV,A.UZ,A.rg])
+p(A.Z,[A.yt,A.oP,A.yw,A.yv,A.vS,A.uF,A.Ev,A.mo,A.An,A.xE,A.xQ,A.re,A.xW,A.Bh,A.GK,A.pl,A.F9,A.E6,A.F1,A.pn,A.De,A.Am,A.Mh,A.oa,A.ob,A.wn,A.FP,A.FQ,A.O1,A.C0,A.ER,A.BY,A.v5,A.Db,A.Hg,A.Dw,A.DP,A.or,A.p3,A.xs,A.xu,A.DN,A.rP,A.yM,A.mq,A.tD,A.GA,A.p0,A.zm,A.i5,A.pf,A.zC,A.pz,A.Fq,A.xw,A.AN,A.m0,A.uo,A.AW,A.zv,A.CQ,A.uv,A.Bj,A.nj,A.BU,A.OU,A.wf,A.wC,A.C8,A.Ca,A.GH,A.qx,A.Ct,A.qE,A.Cu,A.CW,A.GL,A.o2,A.GM,A.Dh,A.Do,A.Ds,A.vz,A.kc,A.vF,A.pC,A.CH,A.xj,A.Aj,A.B2,A.Cs,A.D5,A.ot,A.nm])
 q(A.a7,A.Xx)
 p(A.a7,[A.HY,A.Er,A.HZ,A.St,A.vT,A.wt,A.I_,A.Eu,A.Fm,A.DY,A.E8,A.we,A.HV,A.Ia,A.X2,A.Fa,A.I5,A.HU,A.I4,A.I6,A.Hd,A.Ze,A.w5,A.Il,A.Im,A.FJ,A.Zk,A.I9,A.HX,A.Gx,A.I2,A.Gy,A.GX,A.Ik,A.ZM,A.Yh,A.Z_,A.DS,A.EV,A.Z5,A.HS,A.a_9,A.E0,A.I0,A.EJ,A.EL,A.WU,A.vX,A.TE,A.uD,A.w3,A.Zc,A.Ur,A.Zf,A.FC,A.FF,A.V7,A.V6,A.I3,A.Ij,A.FO,A.FU,A.ZE,A.Gt,A.wS,A.kj,A.ZJ,A.Pb,A.GI,A.WX,A.ZI,A.Xf,A.GV,A.GU,A.XH,A.X4,A.Ih,A.Ig,A.Hf,A.Yc,A.Ye,A.DV,A.Hn,A.wO,A.a_6,A.Uw,A.Ii,A.DT,A.Fk,A.FL,A.GR,A.XT,A.HT,A.GB])
 q(A.Eq,A.HY)
@@ -95138,12 +95138,12 @@ s(A.YV,A.a4)
 s(A.Z6,A.nK)
 r(A.Ii,A.eX)
 r(A.HT,A.eX)})()
-var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{n:"int",P:"double",d1:"num",o:"String",J:"bool",bs:"Null",R:"List",E:"Object",aO:"Map",aR:"JSObject"},mangledNames:{},types:["~()","P(P)","~(aR)","qU(dD)","P(dD)","~(aS)","y(b8<c6>)","~(hL)","bs(~)","yX(dD)","~(q2,h)","~(J)","J(kC,h)","~(q)","~(b5)","~(E?)","~(E,df)","f(S)","ap<~>()","~(tC)","eA(dD)","bs(E,df)","bs()","J(E?)","R<du>()","~(bh)","~(cO?)","J(o)","~(h9)","av<P>(@)","~(n)","~(vi)","J(cJ)","J(b5)","~(f5)","J()","P(w)","~(dx)","J(jB)","z(w,a5)","~(n6)","n(cJ,cJ)","J(fk)","J(ho)","bs(aR)","~(@)","J(bY)","~(n5)","~(eh)","~(e0<E?>,~())","m(b8<c6>)","P(w,P)","y?(b8<c6>)","bs(@)","J(fM)","J(n)","~(o)","~(li)","y(y)","J(e3)","ap<@>(iO)","o()","~(~())","hz()","n()","rJ(S)","bG<y?>?(bv?)","o(pG)","cT(S)","~(E?,E?)","f(S)?(rF?)","aR(E?)","dS(@)","n(n)","o(n)","n(q,q)","o(o)","~(vj)","h(h)","~(pU)","R<e3>()","~(CZ)","~(p6)","cY(S,bp<P>,f?)","J(dV)","e2(e2)","~(ayD)","bs(E)","P(b8<c6>)","J(q)","~({curve:ff,descendant:q?,duration:aS,rect:t?})","aR()","bG<z?>?(bv?)","~(nt)","~(fU)","n(bY,bY)","ap<~>(iO)","fU()","dw(b8<c6>)","J(p3)","f(S,f?)","n(@,@)","n(E?)","br(P)","J(E?,E?)","kN(@)","J(fO)","J(fa)","hD()","bs(J)","J(qr)","~(hD)","P()","o(pF)","f(S,bp<P>,bp<P>)","b8<0^>()<E?>","@(@)","~(P)","aR?(n)","aI(b8<c6>)","~(D2)","~(hg)","ap<aR>([aR?])","aR([aR?])","bs(E?)","~([b0?])","bs(o)","fO()","~(E)","~(vH)","~(iv)","y?(y?)","R<aR>()","~(R<aR>,aR)","o(E?)","B7?()","~(fk)","ns(S,f?)","bG<P?>?(bv?)","f(S,b8<c6>,f?)?(bv?)","~(J,E?)","~(p9)","J(qC)","t()","~(my)","t2(R<dx>)","~(w?)","oa(S,bp<P>,f?)","ob(S,bp<P>,f?)","lI(S,f?)","or(S)","J(he<ag>)","e8(S,P,f?)","~(iH,J)","pk()","n(eh,eh)","P?(+(a5,nA))","a5(w)","ap<J>()","o(P,P,o)","ds(dx)","n(dM,dM)","~(kn)","+boundaryEnd,boundaryStart(ac,ac)(ac)","J(kC)","~(ly)","P({from!P,to!P})","~(h,w)","z(w)","~(R<mA>)","~(bY)","J(E,bY)","@(o)","J(E,b8<bY>)","n(bY)","R<bY>(jb)","ap<cO?>(cO?)","~(dq)","aO<E?,E?>()","J(E)","J(lc)","jI(cJ,hX)","ap<~>(@)","J(a33)","~([aS?])","ac(ac,J,hz)","~(Qt)","dV(dV)","P?(w,a5,nA)","P(w,a5)","~(iM)","hf()","~(hf)","iS()","~(iS)","av<@>?(av<@>?,@,av<@>(@))","me(@)","kK(@)","t(br,t)","@()","~(ka,n,n)","w(n)","j4(bh)","~(o,@)","~(kM)","~(f6)","J(eh,P)","J(eh)","~(D1)","~(u9)","~(Ai)","~(u8)","~(D0)","~(D_)","iD(n)","ty(S)","E?(E?)","oL(S,n,f?)","lT()","J(o?)","~(E?,o,o)","f?(S,bp<P>,bp<P>,J,f?)","f(S,bp<P>,bp<P>,f)","iM()","n(ie,ie)","y(nS)","ns(S)","oF(f)","hQ()","b5(n)","J(d5)","R<dx>()","~(@,E?)","~(o,tH)","~(iC?,vm?)","y?(y?,y?,y?[y?])","Y?(S,pB,bK<la>)","J(hj)","~(o?)","P(@)","qD(@)","~(~)","~(D3)","t8(q_)","mF(S,bp<P>,f?)","f(S,bp<P>,bp<P>,J,f?)","jT?(f7)","f(S,m1,n7?,n7?)","~(vL)","uf(S,f?)","n(aR)","tL(o)","aOf?()","J(b8<c6>)","~(iA)","qh?(jo,o,o)","~(fq,i6?)","pn(S,f?)","qS(@)","mg()","ib()","aT<E,k9<@>>(E,k9<@>)","J(aT<E,k9<@>>)","h(vt)","cY(S,bp<P>)","ap<eK>(mH{allowUpscaling:J,cacheHeight:n?,cacheWidth:n?})","ap<eK>(mH{getTargetSize:aRm(n,n)?})","cH(cH,bS)","bS(bS)","J(bS)","o(bS)","ap<nv>(o,aO<o,o>)","J(P)","y(P)","wa()","~(iH?,J)","ap<~>(E,df?)","J(P?,P)","bs(a0n)","o(cR)","~(E,df?)?(hg)","~(eK)","ox(aR)","NA(dk)","t(dk)","NF(dk)","J(n,J)","mC?()","ap<+(o,fK?)>()","mS(mS)","tQ(@)","l1(h,n)","z()","P?()","z(a5)","w0()","~(fq)","J(l5)","t(t?,e2)","ka()","~(B6)","dw(jP)","~(jP,br)","J(jP)","~(z?)","P?(n)","n(em,em)","pR()","t7(pY)","~(R<ds>{isMergeUp:J})","dx?(ds)","J(i4)","R<ds>(R<ds>)","R<em>(em)","dL?(i4)","b8<d5>(b8<d5>)","o(P)","J(kn)","~(wH)","+boundaryEnd,boundaryStart(ac,ac)(ac,o)","J(v2{crossAxisPosition!P,mainAxisPosition!P})","aO<~(bh),br?>()","~(~(bh),br?)","J(w)","vO()","ap<~>(ho)","J(cz)","o(o,y)","jo(E?)","rd()","~(n,vZ)","@(@,o)","~(R<dx>)","~(eb)","mo(da)","tw(da)","oP(da)","ud(t?,t?)","bY(m6)","jv(dm)","aT<n,o>(aT<o,o>)","bY(n)","b8<bY>()","~(d5)","~(cw,~(E?))","ap<o>()","cO(cO?)","ap<r_>(o)","mh(aO<E?,E?>)","ei<hY>()","ap<o?>(o?)","ap<~>(cO?,~(cO?))","ap<aO<o,@>>(@)","~(lo)","b8<i>(i)","acu(acv)","Bi()","ap<bs>()","mW<0^>(hs,f(S))<E?>","pZ()","R<dq>()","R<dq>(R<dq>)","P(d1)","R<@>(o)","R<d1>(qz)","aO<o,@>(eQ)","qY(S,f?)","bs(C<E?>,aR)","aq(qX)","bs(~())","ap<aR>()","~(b4<b0>)","bs(@,df)","~(nO)","f(nO)","J(f)","P(lV)","cn<@>?(hs)","cn<@>(hs)","J(axD)","pz(S,f?)","J(u3)","~(n,@)","td(S)","~(dm,n)","ap<J>(iO)","mp(S)","bm(S)","ap<~>(hL)","~(f5{isClosing:J?})","t(a33)","~(ec)","bs(eb,eb)","~(z)","n(ho,ho)","~(nE)","~(iT)","~(lv)","~(ev)","~(id)","E?(fI)","cr(cr,qN)","~(aR,R<i4>)","vn(S)","~(ll)","~(cr)","J(cr?,cr)","cr(cr)","~(E[df?])","th(S,hE)","~({allowPlatformDefault:J})","~([cJ?])","~(R<E?>)","J(A2)","~(vY)","J(vU)","~(@,@)","J(nF)","b8<fH>(dM)","0^?(0^?(bv?))<E?>","R<fH>(S)","t(dM)","n(kl,kl)","R<dM>(dM,B<dM>)","J(dM)","ju<b5>(b5)","b5?(b5)","E?(n,b5?)","iB()","~(iB)","0^?(bG<0^>?(bv?))<E?>","y?()","qi()","bG<m?>?(bv?)","vN()","bG<cH?>?(bv?)","~(lk)","~(lr)","~(hv,E)","qc(S,f?)","~(lY)","f(S,bp<P>,tU,S,S)","J(lY)","i0(S,f?)","pj(S)","wr()","bG<aI?>?(bv?)","~(lb)","bG<d3?>?(bv?)","oz(@)","pM(@)","av<h>(@)","qQ(@)","oy(@)","rt(n)","~(kI)","ap<@>(wo)","aO<hA,@>(R<@>)","dw?(b8<c6>)","bs(aO<hA,@>)","i0(S)","~(lt?,J)","J(cn<@>?)","ap<bs>(@)","J(n_)","dw?(bv?)","~(a0u)","~([0^?])<E?>","e3(cn<@>)","~(CV,@)","aT<o?,R<E>>(@,@)","w?()","wk(S)","rl()","y?(bv?)","~(a5)","te(S,f?)","f(S,+(z,br,z))","J(lp)","bs(dq?)","~(e0<E?>)","dg<J>(J)","J(nZ)","nj(S,f?)","mF(S,f?)","ph(bh)","ub(bh)","lP?(bv?)","pH?(bv?)","0&()","f(S,hE)","bs(R<~>)","aS?(bv?)","J?(bv?)","fz?(bv?)","~(h)","~(o,E?)","~(h8)","nT()","o8()","ko()","~(ko)","~(lj)","u0?(bv?)","t(t)","J(t)","~(v_,b0)","R<nM>()","b4<b0>?()","wE(S,hE)","f?(S,n)","n?(f,n)","~(w)","b5?()","eQ(fg)","J(ng)","o2(S)","0&(o,n?)","~(o,o?)","~(n,J(jB))","~(kQ)","h(z,P)","J(n,n)","wi(S)","pl(S,f?)","J(cn<@>,@)","k6()","~(k6)","k7()","~(k7)","iE()","~(iE)","~(nG)","~(nd)","rs(S,lf)","o(aT<o,o>)","~(n,n,n)","ap<~>(o,cO?,~(cO?)?)","J(fR)","o(fV)","E(fR)","ap<mB>(B<fE>{generationConfig:aO1?,safetySettings:R<aeQ>?,toolConfig:aRQ?,tools:R<ayU>?})","aO<o,E?>(fE)","E(aeQ)","aO<o,E>(ayU)","ap<ni>(a1I)","J(o,o)","n(o)","bs(o,o[E?])","~(abH<R<n>>)","~(R<n>)","At()","~(o,o)","ot(S,f?)","pC(S)","bm(n)","R<jV>()","fH(S)","f(S,n)","w_(S)","o?(o)","uO(S)","uy(S)","J(aO<o,o>)","bm(S,n)","tl(S,n)","lD(S,a5)","lD(S,f?)","~(ME)","~({allowPlatformDefault!J})","p5(@)","ap<~>([aR?])","n(hd,hd)","o(o?)","o?()","n(j8)","eb()","E(j8)","E(fa)","n(fa,fa)","R<j8>(aT<E,R<fa>>)","lC()","o(o,o)","aR(n{params:E?})","aI?(b8<c6>)","ap<~>(~)","n(bU<@>,bU<@>)","R<o>()","R<o>(o,R<o>)","z?(z?,z?,P)","P?(d1?,d1?,P)","y?(y?,y?,P)","t()?(w)","f(S,h,h,f)","~(aU{forceReport:J})","du(o)","j_?(o)","P(P,P,P)","~(b0?)","qT({from:P?})","~(w,h)","f(S,bp<P>)","J?(J?,J?,P)","f(S,ms)","f(S,f)","d3?(d3?,d3?,P)","cH?(cH?,cH?,P)","m?(m?,m?,P)","n(Ha<@>,Ha<@>)","J({priority!n,scheduler!k1})","R<hY>(o)","f(f,bp<P>)","f(f?,R<f>)","~(cJ{alignment:P?,alignmentPolicy:qt?,curve:ff?,duration:aS?})","n(b5,b5)","d_(d_?,d_?,P)","f?(S,pB,bK<la>)","R<cn<@>>(iQ,o)","n(f,n)","J(mJ?)","mB(E)","oC(E?)","uP(E?)","t4(E?)","fR(E?)","ap<ni>(vE{body:E?,encoding:jy?,headers:aO<o,o>?})","0^(0^,0^)<d1>","~(o?{wrapWidth:n?})","aO<hA,@>(aO<hA,@>)","b8<d5>?(ds)"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.ae&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.W0&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.W1&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.FY&&a.b(c.a)&&b.b(c.b),"2;inside,outside":(a,b)=>c=>c instanceof A.W2&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.W3&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.W4&&a.b(c.a)&&b.b(c.b),"2;name,prefix":(a,b)=>c=>c instanceof A.FZ&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.W5&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.fZ&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.W6&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.W7&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.G_&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.G0&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.W8&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.W9&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;textConstraints,tileSize,titleY":(a,b,c)=>d=>d instanceof A.Wa&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.G1&&A.aHW(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.G2&&A.aHW(a,b.a)}}
-A.aTn(v.typeUniverse,JSON.parse('{"eb":"mR","NM":"mR","lL":"mR","aZu":"uj","y7":{"eK":[]},"y4":{"eK":[]},"ta":{"acu":[]},"t7":{"ac8":[]},"t8":{"AU":[],"jv":[]},"pY":{"xZ":["aR"]},"q_":{"xZ":["aR"]},"dm":{"mm":[]},"kH":{"mm":[]},"pR":{"vI":[]},"pZ":{"vI":[]},"qi":{"jv":[]},"AU":{"jv":[]},"fK":{"bV":[]},"aEn":{"es":[]},"jV":{"es":[]},"a8o":{"acv":[]},"kQ":{"aCJ":[]},"D9":{"ie":[]},"B3":{"ie":[]},"kP":{"a5v":[]},"K0":{"ME":[]},"K1":{"hi":[]},"t6":{"hi":[]},"K3":{"hi":[]},"K6":{"hi":[]},"t5":{"hi":[]},"K5":{"eK":[]},"h6":{"a0u":[]},"K2":{"hi":[]},"y5":{"hi":[]},"Ef":{"hi":[]},"Eh":{"hi":[]},"Eg":{"hi":[]},"K_":{"eK":[]},"yb":{"qW":["1"]},"y6":{"tm":["1","2"]},"jp":{"NA":[]},"kG":{"a8o":[],"acv":[]},"y8":{"mS":[]},"z5":{"hi":[]},"Nm":{"lE":["ac8","pY"],"lE.C":"ac8"},"No":{"lE":["AU","q_"],"lE.C":"AU"},"LW":{"aCH":[]},"LV":{"bD":[]},"zz":{"bD":[]},"r6":{"B":["1"],"B.E":"1"},"Lw":{"fK":[],"bV":[]},"zo":{"fK":[],"bV":[]},"zp":{"fK":[],"bV":[]},"F4":{"bD":[]},"zy":{"eK":[]},"LU":{"eK":[]},"Px":{"a5O":[]},"JN":{"eK":[]},"rK":{"a5O":[]},"OP":{"eK":[]},"zD":{"bD":[]},"zF":{"bD":[]},"ys":{"es":[]},"OR":{"es":[]},"Jt":{"es":[],"aBm":[]},"Ka":{"es":[],"aBD":[]},"Kc":{"es":[],"aBG":[]},"Kb":{"es":[],"aBF":[]},"Nq":{"es":[],"aDF":[]},"Dz":{"es":[],"ayY":[]},"AR":{"es":[],"ayY":[],"aDD":[]},"Mg":{"es":[],"aCK":[]},"ui":{"B":["iP"],"B.E":"iP"},"B1":{"C3":[]},"et":{"cK":[]},"c9":{"cK":[]},"tn":{"cK":[]},"Kq":{"cK":[]},"Jg":{"cK":[]},"Jh":{"cK":[]},"fy":{"cK":[]},"kx":{"cK":[]},"md":{"cK":[]},"e7":{"cK":[]},"rI":{"cK":[]},"Pu":{"cK":[]},"J7":{"cK":[]},"oH":{"cK":[]},"bC":{"NF":[],"aBI":[]},"uT":{"fT":[]},"y1":{"fT":[]},"rY":{"fT":[]},"Li":{"fT":[]},"p2":{"fT":[]},"My":{"fT":[]},"mT":{"fT":[]},"OO":{"fT":[]},"Pm":{"nr":[]},"Pj":{"nr":[]},"Pi":{"nr":[]},"qo":{"fT":[]},"Ps":{"ayD":[]},"k8":{"fT":[]},"wM":{"aJ":["1"],"R":["1"],"az":["1"],"B":["1"]},"Ua":{"wM":["n"],"aJ":["n"],"R":["n"],"az":["n"],"B":["n"]},"Qx":{"wM":["n"],"aJ":["n"],"R":["n"],"az":["n"],"B":["n"],"aJ.E":"n","B.E":"n"},"NN":{"bD":[]},"tK":{"mS":[]},"L6":{"ie":[]},"lG":{"pt":[]},"jW":{"pt":[]},"tF":{"lG":[],"pt":[]},"q3":{"ur":[]},"qP":{"ur":[]},"JV":{"vf":[]},"OS":{"vf":[]},"Th":{"kP":[],"a5v":[]},"tI":{"kP":[],"a5v":[]},"C":{"R":["1"],"az":["1"],"cf":[],"aR":[],"B":["1"],"eR":["1"],"B.E":"1"},"zT":{"cf":[],"J":[],"cs":[]},"u2":{"cf":[],"bs":[],"cs":[]},"zW":{"cf":[],"aR":[]},"mR":{"cf":[],"aR":[]},"mP":{"cf":[]},"mQ":{"cf":[]},"Mp":{"BX":[]},"a7U":{"C":["1"],"R":["1"],"az":["1"],"cf":[],"aR":[],"B":["1"],"eR":["1"],"B.E":"1"},"mO":{"P":[],"d1":[],"cf":[],"bU":["d1"]},"u1":{"P":[],"n":[],"d1":[],"cf":[],"bU":["d1"],"cs":[]},"zV":{"P":[],"d1":[],"cf":[],"bU":["d1"],"cs":[]},"l6":{"o":[],"cf":[],"bU":["o"],"eR":["@"],"cs":[]},"j6":{"B":["2"]},"oD":{"j6":["1","2"],"B":["2"],"B.E":"2"},"EO":{"oD":["1","2"],"j6":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"Ed":{"aJ":["2"],"R":["2"],"j6":["1","2"],"az":["2"],"B":["2"]},"dl":{"Ed":["1","2"],"aJ":["2"],"R":["2"],"j6":["1","2"],"az":["2"],"B":["2"],"aJ.E":"2","B.E":"2"},"kF":{"b8":["2"],"j6":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"oE":{"bk":["3","4"],"aO":["3","4"],"bk.V":"4","bk.K":"3"},"kE":{"j6":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"iL":{"bV":[]},"Ob":{"bV":[]},"fC":{"aJ":["n"],"R":["n"],"az":["n"],"B":["n"],"aJ.E":"n","B.E":"n"},"az":{"B":["1"]},"al":{"az":["1"],"B":["1"]},"hx":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"eU":{"B":["2"],"B.E":"2"},"kO":{"eU":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"aa":{"al":["2"],"az":["2"],"B":["2"],"B.E":"2","al.E":"2"},"aN":{"B":["1"],"B.E":"1"},"eM":{"B":["2"],"B.E":"2"},"qJ":{"B":["1"],"B.E":"1"},"z0":{"qJ":["1"],"az":["1"],"B":["1"],"B.E":"1"},"lx":{"B":["1"],"B.E":"1"},"tE":{"lx":["1"],"az":["1"],"B":["1"],"B.E":"1"},"Cz":{"B":["1"],"B.E":"1"},"ha":{"az":["1"],"B":["1"],"B.E":"1"},"kZ":{"B":["1"],"B.E":"1"},"z_":{"kZ":["1"],"az":["1"],"B":["1"],"B.E":"1"},"c_":{"B":["1"],"B.E":"1"},"vC":{"aJ":["1"],"R":["1"],"az":["1"],"B":["1"]},"cb":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"f_":{"CV":[]},"oM":{"lM":["1","2"],"aO":["1","2"]},"tk":{"aO":["1","2"]},"bM":{"tk":["1","2"],"aO":["1","2"]},"rc":{"B":["1"],"B.E":"1"},"dv":{"tk":["1","2"],"aO":["1","2"]},"yp":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"]},"fD":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"eN":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"Mm":{"l0":[]},"jG":{"l0":[]},"AP":{"lJ":[],"bV":[]},"Mq":{"bV":[]},"QC":{"bV":[]},"Nj":{"bD":[]},"H3":{"df":[]},"ml":{"l0":[]},"Kg":{"l0":[]},"Kh":{"l0":[]},"Qa":{"l0":[]},"Q_":{"l0":[]},"rU":{"l0":[]},"OV":{"bV":[]},"eS":{"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"b2":{"az":["1"],"B":["1"],"B.E":"1"},"ba":{"az":["1"],"B":["1"],"B.E":"1"},"ed":{"az":["aT<1,2>"],"B":["aT<1,2>"],"B.E":"aT<1,2>"},"zX":{"eS":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"pp":{"eS":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"wc":{"Od":[],"pF":[]},"R9":{"B":["Od"],"B.E":"Od"},"vc":{"pF":[]},"XA":{"B":["pF"],"B.E":"pF"},"lb":{"hn":[],"ka":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"uj":{"cf":[],"aR":[],"jo":[],"cs":[]},"pT":{"cf":[],"aR":[],"jo":[],"cs":[]},"AH":{"cf":[],"aR":[],"dh":[]},"YN":{"jo":[]},"AC":{"cO":[],"cf":[],"aR":[],"dh":[],"cs":[]},"uk":{"hh":["1"],"cf":[],"aR":[],"dh":[],"eR":["1"]},"AG":{"aJ":["P"],"R":["P"],"hh":["P"],"az":["P"],"cf":[],"aR":[],"dh":[],"eR":["P"],"B":["P"]},"hn":{"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"]},"AD":{"a5h":[],"aJ":["P"],"R":["P"],"hh":["P"],"az":["P"],"cf":[],"aR":[],"dh":[],"eR":["P"],"B":["P"],"cs":[],"aJ.E":"P","B.E":"P"},"AE":{"a5i":[],"aJ":["P"],"R":["P"],"hh":["P"],"az":["P"],"cf":[],"aR":[],"dh":[],"eR":["P"],"B":["P"],"cs":[],"aJ.E":"P","B.E":"P"},"N9":{"hn":[],"a7L":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"AF":{"hn":[],"a7M":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"Na":{"hn":[],"a7N":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"AI":{"hn":[],"ajp":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"AJ":{"hn":[],"vy":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"ul":{"hn":[],"ajq":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"Hl":{"hA":[]},"Ti":{"bV":[]},"Hm":{"lJ":[],"bV":[]},"kf":{"vb":["1"]},"Hj":{"Qt":[]},"DZ":{"Kl":["1"]},"hG":{"B":["1"],"B.E":"1"},"di":{"bV":[]},"d6":{"kh":["1"],"ei":["1"],"ei.T":"1"},"r1":{"kf":["1"],"vb":["1"]},"H8":{"nN":["1"]},"E_":{"nN":["1"]},"vs":{"bD":[]},"vP":{"Kl":["1"]},"b3":{"vP":["1"],"Kl":["1"]},"ah":{"ap":["1"]},"CO":{"ei":["1"]},"ke":{"wF":["1"]},"kh":{"ei":["1"],"ei.T":"1"},"r2":{"kf":["1"],"vb":["1"]},"H6":{"ei":["1"]},"vV":{"vb":["1"]},"EP":{"ei":["1"],"ei.T":"1"},"Fu":{"ei":["1"],"ei.T":"1"},"Fv":{"ke":["1"],"wF":["1"],"abH":["1"]},"lX":{"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"nU":{"lX":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"Ey":{"lX":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"ra":{"az":["1"],"B":["1"],"B.E":"1"},"w8":{"eS":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"ki":{"wD":["1"],"i8":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"fY":{"wD":["1"],"i8":["1"],"aOA":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"pw":{"B":["1"],"B.E":"1"},"aJ":{"R":["1"],"az":["1"],"B":["1"]},"bk":{"aO":["1","2"]},"Fl":{"az":["2"],"B":["2"],"B.E":"2"},"Ak":{"aO":["1","2"]},"lM":{"aO":["1","2"]},"EE":{"EF":["1"],"aCb":["1"]},"EG":{"EF":["1"]},"yT":{"az":["1"],"B":["1"],"B.E":"1"},"Ab":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"i8":{"b8":["1"],"az":["1"],"B":["1"]},"wD":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"]},"CI":{"bk":["1","2"],"o3":["1","fu<1,2>"],"aO":["1","2"],"bk.V":"2","bk.K":"1","o3.K":"1"},"m4":{"az":["1"],"B":["1"],"B.E":"1"},"ro":{"az":["2"],"B":["2"],"B.E":"2"},"GY":{"az":["aT<1,2>"],"B":["aT<1,2>"],"B.E":"aT<1,2>"},"m5":{"jc":["1","2","1"],"jc.T":"1"},"H2":{"jc":["1","fu<1,2>","2"],"jc.T":"2"},"rn":{"jc":["1","fu<1,2>","aT<1,2>"],"jc.T":"aT<1,2>"},"v9":{"i8":["1"],"b8":["1"],"az":["1"],"o3":["1","fv<1>"],"B":["1"],"B.E":"1","o3.K":"1"},"jy":{"d9":["o","R<n>"]},"Ud":{"bk":["o","@"],"aO":["o","@"],"bk.V":"@","bk.K":"o"},"Ue":{"al":["o"],"az":["o"],"B":["o"],"B.E":"o","al.E":"o"},"Fe":{"j0":[]},"Ji":{"jy":[],"d9":["o","R<n>"],"d9.S":"o","d9.T":"R<n>"},"YK":{"bF":["o","R<n>"]},"Jk":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"YL":{"j0":[]},"YJ":{"bF":["R<n>","o"]},"Jj":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"Jv":{"d9":["R<n>","o"],"d9.S":"R<n>","d9.T":"o"},"Jx":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"Jw":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"RG":{"j0":[]},"EW":{"d9":["1","3"],"d9.S":"1","d9.T":"3"},"EX":{"bF":["1","3"],"bF.S":"1","bF.T":"3"},"zZ":{"bV":[]},"Mr":{"bV":[]},"zY":{"d9":["E?","o"],"d9.S":"E?","d9.T":"o"},"Mt":{"bF":["E?","o"],"bF.S":"E?","bF.T":"o"},"Mu":{"bF":["E?","R<n>"],"bF.S":"E?","bF.T":"R<n>"},"Ms":{"bF":["o","E?"],"bF.S":"o","bF.T":"E?"},"MB":{"jy":[],"d9":["o","R<n>"],"d9.S":"o","d9.T":"R<n>"},"MD":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"MC":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"wG":{"j0":[]},"rq":{"j0":[]},"QI":{"jy":[],"d9":["o","R<n>"],"d9.S":"o","d9.T":"R<n>"},"QK":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"HB":{"j0":[]},"QJ":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"hQ":{"bU":["hQ"]},"P":{"d1":[],"bU":["d1"]},"aS":{"bU":["aS"]},"n":{"d1":[],"bU":["d1"]},"R":{"az":["1"],"B":["1"]},"d1":{"bU":["d1"]},"Od":{"pF":[]},"b8":{"az":["1"],"B":["1"]},"o":{"bU":["o"]},"ou":{"bV":[]},"lJ":{"bV":[]},"hM":{"bV":[]},"uB":{"bV":[]},"zH":{"bV":[]},"Nf":{"bV":[]},"nH":{"bV":[]},"QB":{"nH":[],"bV":[]},"fo":{"bV":[]},"Kp":{"bV":[]},"Nt":{"bV":[]},"CM":{"bV":[]},"Tj":{"bD":[]},"eq":{"bD":[]},"EY":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"XC":{"df":[]},"Hv":{"vE":[]},"il":{"vE":[]},"SE":{"vE":[]},"Ni":{"bD":[]},"cO":{"dh":[]},"a7N":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"ka":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"ajq":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"a7L":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"ajp":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"a7M":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"vy":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"a5h":{"R":["P"],"az":["P"],"dh":[],"B":["P"]},"a5i":{"R":["P"],"az":["P"],"dh":[],"B":["P"]},"jY":{"ws":["jY"]},"qe":{"ws":["qe"]},"ex":{"B":["o"],"B.E":"o"},"bI":{"aO":["2","3"]},"vD":{"o5":["1","B<1>"],"o5.E":"1"},"uY":{"o5":["1","b8<1>"],"o5.E":"1"},"bp":{"af":[]},"rM":{"bp":["P"],"af":[]},"Ra":{"bp":["P"],"af":[]},"Rb":{"bp":["P"],"af":[]},"Bc":{"bp":["P"],"af":[]},"fS":{"bp":["P"],"af":[]},"yz":{"bp":["P"],"af":[]},"qV":{"bp":["P"],"af":[]},"tj":{"bp":["1"],"af":[]},"xz":{"bp":["1"],"af":[]},"Fi":{"ff":[]},"ea":{"ff":[]},"CJ":{"ff":[]},"Dm":{"ff":[]},"dT":{"ff":[]},"Dl":{"ff":[]},"kX":{"ff":[]},"SG":{"ff":[]},"av":{"ao":["1"],"ao.T":"1","av.T":"1"},"dS":{"av":["y?"],"ao":["y?"],"ao.T":"y?","av.T":"y?"},"ar":{"bp":["1"],"af":[]},"fs":{"ao":["1"],"ao.T":"1"},"BS":{"av":["1"],"ao":["1"],"ao.T":"1","av.T":"1"},"PB":{"av":["z?"],"ao":["z?"],"ao.T":"z?","av.T":"z?"},"Bl":{"av":["t?"],"ao":["t?"],"ao.T":"t?","av.T":"t?"},"mK":{"av":["n"],"ao":["n"],"ao.T":"n","av.T":"n"},"hP":{"ao":["P"],"ao.T":"P"},"DC":{"ao":["1"],"ao.T":"1"},"yt":{"Y":[],"f":[]},"Eq":{"a7":["yt"]},"cy":{"y":[]},"Sp":{"j2":[]},"Kt":{"aq":[],"f":[]},"oP":{"Y":[],"f":[]},"Er":{"a7":["oP"]},"Ku":{"d_":[]},"aMp":{"b_":[],"aK":[],"f":[]},"Ss":{"fh":["yu"],"fh.T":"yu"},"KG":{"yu":[]},"yw":{"Y":[],"f":[]},"Et":{"a7":["yw"]},"Kv":{"aq":[],"f":[]},"yv":{"Y":[],"f":[]},"vS":{"Y":[],"f":[]},"St":{"a7":["yv"]},"vT":{"a7":["vS<1>"]},"j7":{"hR":[]},"Kw":{"jT":[]},"to":{"Y":[],"f":[]},"Es":{"jZ":["to"],"a7":["to"]},"Sv":{"af":[]},"Kx":{"j2":[]},"Ev":{"Y":[],"f":[]},"Ky":{"aq":[],"f":[]},"Sx":{"aY":[],"aj":[],"f":[]},"Wf":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ew":{"a7":["Ev"]},"Uk":{"af":[]},"WM":{"af":[]},"So":{"af":[]},"Ex":{"aj":[],"f":[]},"Sw":{"aV":[],"b5":[],"S":[]},"rj":{"cU":["w","f8"],"w":[],"a6":["w","f8"],"q":[],"ag":[],"a6.1":"f8","cU.1":"f8","a6.0":"w"},"mo":{"Y":[],"f":[]},"Eu":{"a7":["mo"]},"Up":{"af":[]},"zJ":{"cu":[],"b_":[],"aK":[],"f":[]},"yy":{"aq":[],"f":[]},"nR":{"du":[]},"tL":{"nR":[],"du":[]},"Le":{"nR":[],"du":[]},"Ld":{"nR":[],"du":[]},"mw":{"ou":[],"bV":[]},"KQ":{"du":[]},"Tv":{"du":[]},"fe":{"af":[]},"bK":{"af":[]},"nX":{"af":[]},"ju":{"du":[]},"yH":{"du":[]},"KP":{"du":[]},"yI":{"du":[]},"MS":{"eT":[]},"kb":{"eT":[]},"bQ":{"eT":[],"bQ.T":"1"},"A9":{"hY":[]},"bb":{"B":["1"],"B.E":"1"},"eP":{"B":["1"],"B.E":"1"},"dg":{"ap":["1"]},"zj":{"aU":[]},"dL":{"bh":[]},"lj":{"bh":[]},"n5":{"bh":[]},"n6":{"bh":[]},"li":{"bh":[]},"ll":{"bh":[]},"f6":{"bh":[]},"lk":{"bh":[]},"R4":{"bh":[]},"Ys":{"bh":[]},"q4":{"bh":[]},"Yo":{"q4":[],"bh":[]},"q9":{"bh":[]},"Yz":{"q9":[],"bh":[]},"Yu":{"lj":[],"bh":[]},"Yr":{"n5":[],"bh":[]},"Yt":{"n6":[],"bh":[]},"Yq":{"li":[],"bh":[]},"q6":{"bh":[]},"Yv":{"q6":[],"bh":[]},"YD":{"ll":[],"bh":[]},"qa":{"f6":[],"bh":[]},"YB":{"qa":[],"f6":[],"bh":[]},"qb":{"f6":[],"bh":[]},"YC":{"qb":[],"f6":[],"bh":[]},"NP":{"f6":[],"bh":[]},"YA":{"f6":[],"bh":[]},"Yx":{"lk":[],"bh":[]},"q8":{"bh":[]},"Yy":{"q8":[],"bh":[]},"q7":{"bh":[]},"Yw":{"q7":[],"bh":[]},"q5":{"bh":[]},"Yp":{"q5":[],"bh":[]},"iE":{"cS":[],"cR":[]},"Fp":{"wL":[]},"wj":{"wL":[]},"iM":{"cS":[],"cR":[]},"h8":{"cS":[],"cR":[]},"hD":{"h8":[],"cS":[],"cR":[]},"hf":{"h8":[],"cS":[],"cR":[]},"iS":{"h8":[],"cS":[],"cR":[]},"iB":{"cS":[],"cR":[]},"cS":{"cR":[]},"AT":{"cS":[],"cR":[]},"uw":{"cS":[],"cR":[]},"fU":{"cS":[],"cR":[]},"JA":{"cS":[],"cR":[]},"k6":{"cS":[],"cR":[]},"k7":{"cS":[],"cR":[]},"xL":{"cS":[],"cR":[]},"vO":{"cR":[]},"am9":{"tS":[]},"ph":{"j4":[]},"ub":{"j4":[]},"R5":{"aq":[],"f":[]},"qZ":{"aq":[],"f":[]},"Jr":{"aq":[],"f":[]},"Jq":{"aq":[],"f":[]},"Kf":{"aq":[],"f":[]},"Ke":{"aq":[],"f":[]},"L2":{"aq":[],"f":[]},"L1":{"aq":[],"f":[]},"L9":{"aq":[],"f":[]},"L8":{"aq":[],"f":[]},"aLg":{"cu":[],"b_":[],"aK":[],"f":[]},"J6":{"aq":[],"f":[]},"An":{"Y":[],"f":[]},"Fm":{"a7":["An"]},"xE":{"Y":[],"f":[]},"VM":{"z":[]},"DY":{"a7":["xE"]},"Rw":{"aY":[],"aj":[],"f":[]},"Wc":{"w":[],"aB":["w"],"q":[],"ag":[]},"aLq":{"cu":[],"b_":[],"aK":[],"f":[]},"ud":{"av":["t?"],"ao":["t?"],"ao.T":"t?","av.T":"t?"},"Ap":{"av":["h"],"ao":["h"],"ao.T":"h","av.T":"h"},"aOM":{"cu":[],"b_":[],"aK":[],"f":[]},"xQ":{"Y":[],"f":[]},"re":{"Y":[],"f":[]},"E8":{"a7":["xQ"]},"T4":{"aq":[],"f":[]},"RM":{"aY":[],"aj":[],"f":[]},"G3":{"w":[],"aB":["w"],"q":[],"ag":[]},"we":{"a7":["re<1>"]},"Aw":{"dF":["1"],"ek":["1"],"cn":["1"]},"E7":{"aq":[],"f":[]},"xW":{"Y":[],"f":[]},"E9":{"a7":["xW"]},"UJ":{"dw":[],"bG":["dw"]},"U9":{"aY":[],"aj":[],"f":[]},"Gc":{"w":[],"aB":["w"],"q":[],"ag":[]},"JS":{"aq":[],"f":[]},"aLM":{"b_":[],"aK":[],"f":[]},"Bh":{"Y":[],"f":[]},"FS":{"a7":["Bh"]},"U3":{"bG":["y?"]},"RY":{"aY":[],"aj":[],"f":[]},"Wd":{"w":[],"aB":["w"],"q":[],"ag":[]},"S_":{"eY":["kg","w"],"aj":[],"f":[],"eY.0":"kg","eY.1":"w"},"G4":{"w":[],"i9":["kg","w"],"q":[],"ag":[]},"aLV":{"cu":[],"b_":[],"aK":[],"f":[]},"JW":{"aq":[],"f":[]},"JY":{"aq":[],"f":[]},"MZ":{"jq":["n"],"y":[],"jq.T":"n"},"MX":{"jq":["n"],"y":[],"jq.T":"n"},"SR":{"j2":[]},"KN":{"aq":[],"f":[]},"tw":{"aq":[],"f":[]},"ty":{"aq":[],"f":[]},"rJ":{"aq":[],"f":[]},"w_":{"aq":[],"f":[]},"wi":{"aq":[],"f":[]},"tz":{"nb":["1"],"dF":["1"],"ek":["1"],"cn":["1"]},"ST":{"aq":[],"f":[]},"r5":{"jS":["~"],"hs":[]},"yJ":{"cu":[],"b_":[],"aK":[],"f":[]},"KY":{"aq":[],"f":[]},"aMQ":{"cu":[],"b_":[],"aK":[],"f":[]},"L5":{"Y":[],"f":[]},"Tf":{"bv":[]},"aNq":{"cu":[],"b_":[],"aK":[],"f":[]},"zc":{"Y":[],"f":[]},"Tq":{"aq":[],"f":[]},"To":{"bv":[]},"aNH":{"cu":[],"b_":[],"aK":[],"f":[]},"zf":{"b_":[],"aK":[],"f":[]},"DX":{"bp":["1"],"af":[]},"GK":{"Y":[],"f":[]},"zA":{"aq":[],"f":[]},"X2":{"a7":["GK"]},"TX":{"Y":[],"f":[]},"TW":{"bv":[]},"Tr":{"bv":[]},"Ts":{"bv":[]},"V4":{"bv":[]},"zB":{"cu":[],"b_":[],"aK":[],"f":[]},"pl":{"Y":[],"f":[]},"Fa":{"a7":["pl"]},"zL":{"jF":[]},"mJ":{"mL":[],"jF":[]},"zN":{"mL":[],"jF":[]},"zO":{"mL":[],"jF":[]},"mL":{"jF":[]},"FK":{"b_":[],"aK":[],"f":[]},"F9":{"Y":[],"f":[]},"zM":{"aq":[],"f":[]},"F8":{"a7":["F9"],"azg":[]},"Ml":{"aq":[],"f":[]},"hW":{"bS":[]},"ic":{"hW":[],"bS":[]},"fQ":{"hW":[],"bS":[]},"E6":{"Y":[],"f":[]},"F1":{"Y":[],"f":[]},"pn":{"Y":[],"f":[]},"aOl":{"cu":[],"b_":[],"aK":[],"f":[]},"Fb":{"af":[]},"Fc":{"av":["hW"],"ao":["hW"],"ao.T":"hW","av.T":"hW"},"U7":{"af":[]},"RI":{"a7":["E6"]},"F2":{"a7":["F1"]},"G7":{"w":[],"i9":["eC","w"],"q":[],"ag":[]},"SL":{"eY":["eC","w"],"aj":[],"f":[],"eY.0":"eC","eY.1":"w"},"Fd":{"a7":["pn"]},"MN":{"aq":[],"f":[]},"U4":{"bG":["y?"]},"Un":{"eY":["j9","w"],"aj":[],"f":[],"eY.0":"j9","eY.1":"w"},"Gg":{"w":[],"i9":["j9","w"],"q":[],"ag":[]},"aOD":{"cu":[],"b_":[],"aK":[],"f":[]},"De":{"Y":[],"f":[]},"Hd":{"a7":["De"]},"MU":{"aq":[],"f":[]},"Am":{"Y":[],"f":[]},"Gb":{"w":[],"aB":["w"],"q":[],"ag":[]},"qD":{"av":["bS?"],"ao":["bS?"],"ao.T":"bS?","av.T":"bS?"},"Fn":{"Y":[],"f":[]},"UC":{"a7":["Am"]},"U6":{"aY":[],"aj":[],"f":[]},"Uz":{"a7":["Fn"]},"GS":{"aq":[],"f":[]},"GT":{"af":[]},"UA":{"fh":["pG"],"fh.T":"pG"},"KI":{"pG":[]},"Nu":{"Y":[],"f":[]},"V3":{"aq":[],"f":[]},"V1":{"bv":[]},"aPl":{"cu":[],"b_":[],"aK":[],"f":[]},"mW":{"N_":["1"],"i3":["1"],"dF":["1"],"ek":["1"],"cn":["1"]},"oa":{"Y":[],"f":[]},"ob":{"Y":[],"f":[]},"wn":{"Y":[],"f":[]},"Z3":{"aq":[],"f":[]},"Z1":{"a7":["oa"]},"Z2":{"a7":["ob"]},"Tm":{"aq":[],"f":[]},"R2":{"jT":[]},"FJ":{"a7":["wn<1>"]},"HP":{"af":[]},"HQ":{"af":[]},"FP":{"Y":[],"f":[]},"FQ":{"Y":[],"f":[]},"NS":{"jT":[]},"VK":{"a7":["FP"],"cL":[]},"VL":{"a7":["FQ"]},"y3":{"Y":[],"f":[]},"O1":{"Y":[],"f":[]},"S1":{"af":[]},"S2":{"a7":["y3"]},"aPV":{"cu":[],"b_":[],"aK":[],"f":[]},"C0":{"Y":[],"f":[]},"Gw":{"b_":[],"aK":[],"f":[]},"ER":{"Y":[],"f":[]},"BY":{"Y":[],"f":[]},"C2":{"a7":["BY"],"cL":[]},"aT8":{"Y":[],"f":[]},"C1":{"a7":["C0"]},"WR":{"af":[]},"E5":{"a5":[],"kI":[]},"RH":{"aq":[],"f":[]},"ES":{"a7":["ER"]},"SY":{"b4":["fI"],"b4.T":"fI"},"WS":{"b_":[],"aK":[],"f":[]},"TP":{"aq":[],"f":[]},"wd":{"Y":[],"f":[]},"Pe":{"aq":[],"f":[]},"UB":{"jZ":["wd"],"a7":["wd"]},"aQA":{"cu":[],"b_":[],"aK":[],"f":[]},"v5":{"Y":[],"f":[]},"GX":{"a7":["v5"]},"aR0":{"cu":[],"b_":[],"aK":[],"f":[]},"Qc":{"Y":[],"f":[]},"XU":{"bv":[]},"aRp":{"cu":[],"b_":[],"aK":[],"f":[]},"Db":{"Y":[],"f":[]},"Hb":{"a7":["Db"]},"N0":{"j2":[]},"Y_":{"af":[]},"aRx":{"cu":[],"b_":[],"aK":[],"f":[]},"Hg":{"Y":[],"f":[]},"Qp":{"aq":[],"f":[]},"Y5":{"a7":["Hg"]},"Y6":{"aY":[],"aj":[],"f":[]},"Y7":{"w":[],"aB":["w"],"q":[],"ag":[]},"Y2":{"ef":[],"aj":[],"f":[]},"Y3":{"aV":[],"b5":[],"S":[]},"WA":{"w":[],"a6":["w","f8"],"q":[],"ag":[],"a6.1":"f8","a6.0":"w"},"Y1":{"aq":[],"f":[]},"Y4":{"aq":[],"f":[]},"Qr":{"aq":[],"f":[]},"F7":{"cu":[],"b_":[],"aK":[],"f":[]},"qS":{"av":["ib"],"ao":["ib"],"ao.T":"ib","av.T":"ib"},"xv":{"Y":[],"f":[]},"qR":{"aq":[],"f":[]},"Rn":{"a7":["xv"]},"Dw":{"Y":[],"f":[]},"Dx":{"a7":["Dw"]},"Yg":{"aq":[],"f":[]},"aRR":{"cu":[],"b_":[],"aK":[],"f":[]},"dC":{"fz":[]},"f3":{"fz":[]},"Fr":{"fz":[]},"XI":{"af":[]},"d3":{"bS":[]},"ig":{"bS":[]},"JG":{"bS":[]},"dj":{"bS":[]},"eJ":{"bS":[]},"c1":{"hR":[]},"dk":{"iX":[]},"dt":{"d3":[],"bS":[]},"jq":{"y":[]},"E4":{"tu":[]},"a8":{"cH":[]},"d2":{"cH":[]},"nY":{"cH":[]},"Jn":{"iI":["jk"]},"rN":{"iI":["jk"],"iI.T":"jk"},"NL":{"dV":[]},"c4":{"d3":[],"bS":[]},"k_":{"d3":[],"bS":[]},"wz":{"eE":["c4"],"d3":[],"bS":[],"eE.T":"c4"},"wA":{"eE":["k_"],"d3":[],"bS":[],"eE.T":"k_"},"eE":{"d3":[],"bS":[]},"hu":{"hR":[]},"fn":{"d3":[],"bS":[]},"fb":{"d3":[],"bS":[]},"fc":{"d3":[],"bS":[]},"vK":{"hz":[]},"YO":{"hz":[]},"ey":{"dV":[],"jP":[],"ag":[]},"Bq":{"w":[],"aB":["w"],"q":[],"ag":[]},"E3":{"af":[]},"SM":{"lf":[]},"WI":{"nh":[],"aB":["w"],"q":[],"ag":[]},"a5":{"kI":[]},"kC":{"l1":[]},"w":{"q":[],"ag":[]},"oA":{"he":["w"]},"f4":{"cp":[]},"yr":{"f4":[],"dn":["1"],"cp":[]},"i1":{"f4":[],"dn":["w"],"cp":[]},"Bu":{"cU":["w","i1"],"w":[],"a6":["w","i1"],"q":[],"ag":[],"a6.1":"i1","cU.1":"i1","a6.0":"w"},"KA":{"af":[]},"Bv":{"w":[],"aB":["w"],"q":[],"ag":[]},"ne":{"af":[]},"qj":{"w":[],"a6":["w","ia"],"q":[],"ag":[],"a6.1":"ia","a6.0":"w"},"Wh":{"w":[],"q":[],"ag":[]},"Hc":{"ne":[],"af":[]},"Ec":{"ne":[],"af":[]},"vQ":{"ne":[],"af":[]},"Bx":{"w":[],"q":[],"ag":[]},"fJ":{"f4":[],"dn":["w"],"cp":[]},"By":{"cU":["w","fJ"],"w":[],"a6":["w","fJ"],"q":[],"ag":[],"a6.1":"fJ","cU.1":"fJ","a6.0":"w"},"BB":{"w":[],"q":[],"ag":[]},"eL":{"ec":[]},"yh":{"eL":[],"ec":[]},"yd":{"eL":[],"ec":[]},"vu":{"iR":[],"eL":[],"ec":[]},"Nr":{"iR":[],"eL":[],"ec":[]},"A8":{"eL":[],"ec":[]},"xC":{"eL":[],"ec":[]},"NK":{"ec":[]},"iR":{"eL":[],"ec":[]},"yf":{"eL":[],"ec":[]},"zG":{"iR":[],"eL":[],"ec":[]},"xJ":{"eL":[],"ec":[]},"zn":{"eL":[],"ec":[]},"N6":{"af":[]},"q":{"ag":[]},"dn":{"cp":[]},"em":{"ds":[]},"F6":{"ds":[]},"lg":{"d5":[]},"ia":{"dn":["w"],"cp":[]},"kn":{"eh":[],"af":[]},"nf":{"w":[],"a6":["w","ia"],"q":[],"ag":[],"a6.1":"ia","a6.0":"w"},"nw":{"af":[]},"Bn":{"w":[],"aB":["w"],"q":[],"ag":[]},"lr":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oz":{"w":[],"aB":["w"],"q":[],"ag":[]},"BJ":{"w":[],"aB":["w"],"q":[],"ag":[]},"uI":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ot":{"w":[],"aB":["w"],"q":[],"ag":[]},"Bs":{"w":[],"aB":["w"],"q":[],"ag":[]},"BD":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ov":{"w":[],"aB":["w"],"q":[],"ag":[]},"Og":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oh":{"w":[],"aB":["w"],"q":[],"ag":[]},"yA":{"af":[]},"wu":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ol":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ok":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oj":{"w":[],"aB":["w"],"q":[],"ag":[]},"Gi":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ow":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ox":{"w":[],"aB":["w"],"q":[],"ag":[]},"Om":{"w":[],"aB":["w"],"q":[],"ag":[]},"OK":{"w":[],"aB":["w"],"q":[],"ag":[]},"Op":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oy":{"w":[],"aB":["w"],"q":[],"ag":[]},"BF":{"w":[],"aB":["w"],"q":[],"jP":[],"ag":[]},"OB":{"w":[],"aB":["w"],"q":[],"ag":[]},"BA":{"w":[],"aB":["w"],"q":[],"ag":[]},"BG":{"w":[],"aB":["w"],"q":[],"ag":[]},"BE":{"w":[],"aB":["w"],"q":[],"ag":[]},"OC":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oi":{"w":[],"aB":["w"],"q":[],"ag":[]},"On":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oq":{"w":[],"aB":["w"],"q":[],"ag":[]},"Os":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oo":{"w":[],"aB":["w"],"q":[],"ag":[]},"Br":{"w":[],"aB":["w"],"q":[],"ag":[]},"eh":{"af":[]},"qk":{"w":[],"aB":["w"],"q":[],"ag":[]},"BH":{"w":[],"aB":["w"],"q":[],"ag":[]},"Of":{"w":[],"aB":["w"],"q":[],"ag":[]},"BI":{"w":[],"aB":["w"],"q":[],"ag":[]},"Bz":{"w":[],"aB":["w"],"q":[],"ag":[]},"Bw":{"w":[],"aB":["w"],"q":[],"ag":[]},"ly":{"kI":[]},"v2":{"l1":[]},"lz":{"lA":[],"dn":["cz"],"cp":[]},"lB":{"k3":[],"dn":["cz"],"cp":[]},"cz":{"q":[],"ag":[]},"PL":{"he":["cz"]},"lA":{"cp":[]},"k3":{"cp":[]},"OI":{"cz":[],"aB":["w"],"q":[],"ag":[]},"OJ":{"cz":[],"aB":["w"],"q":[],"ag":[]},"v1":{"fm":[],"lA":[],"dn":["w"],"iK":[],"cp":[]},"OE":{"ql":[],"cz":[],"a6":["w","fm"],"q":[],"ag":[],"a6.1":"fm","a6.0":"w"},"OG":{"ql":[],"cz":[],"a6":["w","fm"],"q":[],"ag":[],"a6.1":"fm","a6.0":"w"},"iK":{"cp":[]},"fm":{"lA":[],"dn":["w"],"iK":[],"cp":[]},"ql":{"cz":[],"a6":["w","fm"],"q":[],"ag":[]},"BK":{"cz":[],"aB":["cz"],"q":[],"ag":[]},"OH":{"cz":[],"aB":["cz"],"q":[],"ag":[]},"dy":{"f4":[],"dn":["w"],"cp":[]},"uJ":{"cU":["w","dy"],"w":[],"a6":["w","dy"],"q":[],"ag":[],"a6.1":"dy","cU.1":"dy","a6.0":"w"},"BC":{"cU":["w","dy"],"w":[],"a6":["w","dy"],"q":[],"ag":[],"a6.1":"dy","cU.1":"dy","a6.0":"w"},"me":{"av":["fz?"],"ao":["fz?"],"ao.T":"fz?","av.T":"fz?"},"nh":{"aB":["w"],"q":[],"ag":[]},"uL":{"ik":["1"],"w":[],"a6":["cz","1"],"Bo":[],"q":[],"ag":[]},"BL":{"ik":["lB"],"w":[],"a6":["cz","lB"],"Bo":[],"q":[],"ag":[],"a6.1":"lB","ik.0":"lB","a6.0":"cz"},"OD":{"ik":["lz"],"w":[],"a6":["cz","lz"],"Bo":[],"q":[],"ag":[],"a6.1":"lz","ik.0":"lz","a6.0":"cz"},"hE":{"af":[]},"kd":{"f4":[],"dn":["w"],"cp":[]},"BM":{"cU":["w","kd"],"w":[],"a6":["w","kd"],"q":[],"ag":[],"a6.1":"kd","cU.1":"kd","a6.0":"w"},"qT":{"ap":["~"]},"Dn":{"bD":[]},"lQ":{"bU":["lQ"]},"jb":{"bU":["jb"]},"m6":{"bU":["m6"]},"uX":{"bU":["uX"]},"Xb":{"du":[]},"Cp":{"af":[]},"q0":{"bU":["uX"]},"r_":{"a0n":[]},"l7":{"hX":[]},"pr":{"hX":[]},"pq":{"hX":[]},"B5":{"bD":[]},"Av":{"bD":[]},"SP":{"dw":[]},"XJ":{"Ax":[]},"nz":{"dw":[]},"nc":{"lo":[]},"uE":{"lo":[]},"BR":{"af":[]},"t0":{"hz":[]},"u5":{"hz":[]},"n1":{"hz":[]},"yQ":{"hz":[]},"Qf":{"nC":[]},"Qe":{"nC":[]},"Qg":{"nC":[]},"vl":{"nC":[]},"Ln":{"qN":[]},"Vc":{"Dd":[]},"M_":{"eQ":[]},"M0":{"eQ":[]},"M3":{"eQ":[]},"M5":{"eQ":[]},"M2":{"eQ":[]},"M4":{"eQ":[]},"M6":{"eQ":[]},"M1":{"eQ":[]},"qY":{"fN":["wQ"],"b_":[],"aK":[],"f":[],"fN.T":"wQ"},"HO":{"b_":[],"aK":[],"f":[]},"DP":{"Y":[],"f":[]},"KR":{"aq":[],"f":[]},"R0":{"af":[]},"Z_":{"a7":["DP"]},"or":{"Y":[],"f":[]},"DR":{"b_":[],"aK":[],"f":[]},"p3":{"Y":[],"f":[]},"az0":{"b0":[]},"aMU":{"b0":[]},"aMT":{"b0":[]},"rH":{"b0":[]},"rV":{"b0":[]},"fI":{"b0":[]},"lm":{"b0":[]},"ct":{"b4":["1"]},"d8":{"b4":["1"],"b4.T":"1"},"DS":{"a7":["or"]},"EV":{"a7":["p3"]},"QR":{"b4":["az0"],"b4.T":"az0"},"yO":{"b4":["b0"],"b4.T":"b0"},"KU":{"b4":["fI"]},"O0":{"ct":["lm"],"b4":["lm"],"ct.T":"lm","b4.T":"lm"},"FG":{"ct":["1"],"wm":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"FH":{"ct":["1"],"wm":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"Eo":{"b4":["1"],"b4.T":"1"},"xs":{"Y":[],"f":[]},"Rl":{"a7":["xs"]},"Rk":{"aY":[],"aj":[],"f":[]},"xu":{"Y":[],"f":[]},"DW":{"a7":["xu"]},"xB":{"aY":[],"aj":[],"f":[]},"DN":{"Y":[],"f":[]},"HG":{"a7":["DN"],"cL":[]},"Jf":{"cL":[]},"rP":{"Y":[],"f":[]},"E0":{"a7":["rP"]},"A0":{"af":[]},"UX":{"aq":[],"f":[]},"fH":{"b_":[],"aK":[],"f":[]},"te":{"aY":[],"aj":[],"f":[]},"td":{"aY":[],"aj":[],"f":[]},"lI":{"aY":[],"aj":[],"f":[]},"th":{"aY":[],"aj":[],"f":[]},"e8":{"aY":[],"aj":[],"f":[]},"oF":{"aY":[],"aj":[],"f":[]},"A7":{"dZ":["i1"],"aK":[],"f":[],"dZ.T":"i1"},"bm":{"aY":[],"aj":[],"f":[]},"lD":{"ef":[],"aj":[],"f":[]},"qc":{"dZ":["dy"],"aK":[],"f":[],"dZ.T":"dy"},"oL":{"ef":[],"aj":[],"f":[]},"iD":{"dZ":["fJ"],"aK":[],"f":[],"dZ.T":"fJ"},"aMz":{"b_":[],"aK":[],"f":[]},"mF":{"aY":[],"aj":[],"f":[]},"ns":{"aY":[],"aj":[],"f":[]},"YF":{"fM":[],"b5":[],"S":[]},"YG":{"b_":[],"aK":[],"f":[]},"Np":{"aY":[],"aj":[],"f":[]},"Js":{"aY":[],"aj":[],"f":[]},"yC":{"aY":[],"aj":[],"f":[]},"ye":{"aY":[],"aj":[],"f":[]},"NI":{"aY":[],"aj":[],"f":[]},"NJ":{"aY":[],"aj":[],"f":[]},"Km":{"aY":[],"aj":[],"f":[]},"Ly":{"aY":[],"aj":[],"f":[]},"bx":{"aY":[],"aj":[],"f":[]},"kJ":{"aY":[],"aj":[],"f":[]},"yB":{"ef":[],"aj":[],"f":[]},"ep":{"aY":[],"aj":[],"f":[]},"Lz":{"aY":[],"aj":[],"f":[]},"ML":{"aY":[],"aj":[],"f":[]},"AS":{"aY":[],"aj":[],"f":[]},"V0":{"aV":[],"b5":[],"S":[]},"Jl":{"aY":[],"aj":[],"f":[]},"Mn":{"aY":[],"aj":[],"f":[]},"PM":{"aY":[],"aj":[],"f":[]},"v4":{"aY":[],"aj":[],"f":[]},"X8":{"aY":[],"aj":[],"f":[]},"NR":{"aq":[],"f":[]},"Lp":{"ef":[],"aj":[],"f":[]},"uN":{"ef":[],"aj":[],"f":[]},"jA":{"dZ":["fJ"],"aK":[],"f":[],"dZ.T":"fJ"},"R1":{"ef":[],"aj":[],"f":[]},"OQ":{"ef":[],"aj":[],"f":[]},"O6":{"aj":[],"f":[]},"MQ":{"aY":[],"aj":[],"f":[]},"Ay":{"aY":[],"aj":[],"f":[]},"hr":{"aY":[],"aj":[],"f":[]},"J3":{"aY":[],"aj":[],"f":[]},"N5":{"aY":[],"aj":[],"f":[]},"JC":{"aY":[],"aj":[],"f":[]},"mt":{"aY":[],"aj":[],"f":[]},"zI":{"aY":[],"aj":[],"f":[]},"jJ":{"aq":[],"f":[]},"d7":{"aq":[],"f":[]},"Kk":{"aY":[],"aj":[],"f":[]},"G5":{"w":[],"aB":["w"],"q":[],"ag":[]},"BV":{"f":[]},"BT":{"b5":[],"S":[]},"R_":{"k1":[],"ag":[]},"tl":{"aq":[],"f":[]},"ts":{"aY":[],"aj":[],"f":[]},"SI":{"af":[]},"mp":{"cu":[],"b_":[],"aK":[],"f":[]},"UY":{"aq":[],"f":[]},"KK":{"aq":[],"f":[]},"EC":{"cn":["1"]},"yM":{"Y":[],"f":[]},"ED":{"a7":["yM"]},"yN":{"aq":[],"f":[]},"mq":{"Y":[],"f":[]},"EJ":{"a7":["mq"]},"tD":{"Y":[],"f":[]},"ms":{"a7":["tD"],"cL":[]},"GA":{"Y":[],"f":[]},"m3":{"vJ":[],"dV":[]},"S5":{"aY":[],"aj":[],"f":[]},"We":{"w":[],"aB":["w"],"q":[],"ag":[]},"qL":{"bK":["cr"],"af":[]},"EK":{"ef":[],"aj":[],"f":[]},"WU":{"a7":["GA"],"aEi":[]},"lU":{"ct":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"Ht":{"ct":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"Hu":{"ct":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"HD":{"d8":["1"],"b4":["1"],"b4.T":"1"},"X1":{"ct":["lw"],"b4":["lw"],"ct.T":"lw","b4.T":"lw"},"Sm":{"ct":["js"],"b4":["js"],"ct.T":"js","b4.T":"js"},"V9":{"ct":["le"],"b4":["le"],"ct.T":"le","b4.T":"le"},"YS":{"bK":["tg"],"af":[],"cL":[]},"Td":{"ct":["jw"],"b4":["jw"],"ct.T":"jw","b4.T":"jw"},"Te":{"ct":["jx"],"b4":["jx"],"ct.T":"jx","b4.T":"jx"},"cJ":{"af":[]},"kY":{"cJ":[],"af":[]},"Rx":{"cL":[]},"zk":{"af":[]},"p0":{"Y":[],"f":[]},"ET":{"jE":["cJ"],"b_":[],"aK":[],"f":[],"jE.T":"cJ"},"vX":{"a7":["p0"]},"zl":{"Y":[],"f":[]},"TD":{"Y":[],"f":[]},"TC":{"a7":["p0"]},"Lg":{"aq":[],"f":[]},"zm":{"Y":[],"f":[]},"ayv":{"b0":[]},"pV":{"b0":[]},"qd":{"b0":[]},"axu":{"b0":[]},"EU":{"cJ":[],"af":[]},"TE":{"a7":["zm"]},"ON":{"b4":["ayv"],"b4.T":"ayv"},"Ne":{"b4":["pV"],"b4.T":"pV"},"NU":{"b4":["qd"],"b4.T":"qd"},"yL":{"b4":["axu"],"b4.T":"axu"},"iF":{"eT":[]},"bj":{"iF":["1"],"eT":[]},"aq":{"f":[]},"Y":{"f":[]},"b5":{"S":[]},"hv":{"b5":[],"S":[]},"n3":{"b5":[],"S":[]},"fM":{"b5":[],"S":[]},"pb":{"iF":["1"],"eT":[]},"aK":{"f":[]},"dZ":{"aK":[],"f":[]},"b_":{"aK":[],"f":[]},"aj":{"f":[]},"MJ":{"aj":[],"f":[]},"aY":{"aj":[],"f":[]},"ef":{"aj":[],"f":[]},"Lf":{"aj":[],"f":[]},"yo":{"b5":[],"S":[]},"PZ":{"b5":[],"S":[]},"Bd":{"b5":[],"S":[]},"aV":{"b5":[],"S":[]},"MI":{"aV":[],"b5":[],"S":[]},"Cw":{"aV":[],"b5":[],"S":[]},"hm":{"aV":[],"b5":[],"S":[]},"OL":{"aV":[],"b5":[],"S":[]},"UW":{"b5":[],"S":[]},"UZ":{"f":[]},"i5":{"Y":[],"f":[]},"uD":{"a7":["i5"]},"ce":{"pa":["1"]},"LH":{"aq":[],"f":[]},"TK":{"aY":[],"aj":[],"f":[]},"pf":{"Y":[],"f":[]},"w3":{"a7":["pf"]},"zw":{"pU":[]},"db":{"aq":[],"f":[]},"pj":{"cu":[],"b_":[],"aK":[],"f":[]},"zC":{"Y":[],"f":[]},"F5":{"a7":["zC"],"cL":[]},"oz":{"av":["a5"],"ao":["a5"],"ao.T":"a5","av.T":"a5"},"kK":{"av":["hR"],"ao":["hR"],"ao.T":"hR","av.T":"hR"},"kN":{"av":["cH"],"ao":["cH"],"ao.T":"cH","av.T":"cH"},"oy":{"av":["ck?"],"ao":["ck?"],"ao.T":"ck?","av.T":"ck?"},"pM":{"av":["br"],"ao":["br"],"ao.T":"br","av.T":"br"},"qQ":{"av":["m"],"ao":["m"],"ao.T":"m","av.T":"m"},"xk":{"Y":[],"f":[]},"xo":{"Y":[],"f":[]},"xq":{"Y":[],"f":[]},"xr":{"Y":[],"f":[]},"xt":{"Y":[],"f":[]},"xn":{"Y":[],"f":[]},"xl":{"Y":[],"f":[]},"xp":{"Y":[],"f":[]},"yZ":{"av":["a8"],"ao":["a8"],"ao.T":"a8","av.T":"a8"},"Mh":{"Y":[],"f":[]},"tZ":{"a7":["1"]},"rL":{"a7":["1"]},"Rd":{"a7":["xk"]},"Rg":{"a7":["xo"]},"Ri":{"a7":["xq"]},"Rj":{"a7":["xr"]},"Rm":{"a7":["xt"]},"Rf":{"a7":["xn"]},"Re":{"a7":["xl"]},"Rh":{"a7":["xp"]},"rt":{"b_":[],"aK":[],"f":[]},"Mj":{"aq":[],"f":[]},"FT":{"ef":[],"aj":[],"f":[]},"U2":{"aV":[],"b5":[],"S":[]},"fN":{"b_":[],"aK":[],"f":[]},"zK":{"fM":[],"b5":[],"S":[]},"jE":{"b_":[],"aK":[],"f":[]},"w6":{"fM":[],"b5":[],"S":[]},"cu":{"b_":[],"aK":[],"f":[]},"lR":{"aq":[],"f":[]},"hK":{"aj":[],"f":[]},"yq":{"hK":["1"],"aj":[],"f":[]},"w7":{"aV":[],"b5":[],"S":[]},"MH":{"hK":["a5"],"aj":[],"f":[],"hK.0":"a5"},"Ge":{"dH":["a5","w"],"w":[],"aB":["w"],"q":[],"ag":[],"dH.0":"a5"},"Fj":{"b_":[],"aK":[],"f":[]},"pz":{"Y":[],"f":[]},"u7":{"af":[],"cL":[]},"YZ":{"fh":["DO"],"fh.T":"DO"},"KM":{"DO":[]},"Ur":{"a7":["pz"]},"ua":{"b_":[],"aK":[],"f":[]},"O9":{"aq":[],"f":[]},"UU":{"af":[]},"Uv":{"aY":[],"aj":[],"f":[]},"Wm":{"w":[],"aB":["w"],"q":[],"ag":[]},"i0":{"fN":["cM"],"b_":[],"aK":[],"f":[],"fN.T":"cM"},"Fq":{"Y":[],"f":[]},"UE":{"a7":["Fq"],"cL":[]},"uf":{"aq":[],"f":[]},"vM":{"cS":[],"cR":[]},"X9":{"aY":[],"aj":[],"f":[]},"Wr":{"w":[],"aB":["w"],"q":[],"ag":[]},"Jb":{"Y":[],"f":[]},"Rs":{"pa":["vM"]},"UI":{"aq":[],"f":[]},"Nc":{"aq":[],"f":[]},"jS":{"hs":[]},"pg":{"b_":[],"aK":[],"f":[]},"AN":{"Y":[],"f":[]},"e3":{"lt":[]},"iQ":{"a7":["AN"]},"wh":{"o_":[]},"wg":{"o_":[]},"FA":{"o_":[]},"FB":{"o_":[]},"TN":{"B":["e3"],"af":[],"B.E":"e3"},"TO":{"e0":["aO<o?,R<E>>?"],"af":[]},"dd":{"aK":[],"f":[]},"FE":{"b5":[],"S":[]},"kk":{"f4":[],"dn":["w"],"cp":[]},"Nv":{"ef":[],"aj":[],"f":[]},"wx":{"cU":["w","kk"],"w":[],"a6":["w","kk"],"q":[],"ag":[],"a6.1":"kk","cU.1":"kk","a6.0":"w"},"n_":{"af":[]},"m0":{"Y":[],"f":[]},"FF":{"a7":["m0"]},"uo":{"Y":[],"f":[]},"AX":{"a7":["uo"]},"rk":{"w":[],"a6":["w","dy"],"q":[],"ag":[],"a6.1":"dy","a6.0":"w"},"AW":{"Y":[],"f":[]},"rh":{"i_":["rh"],"i_.E":"rh"},"rl":{"b_":[],"aK":[],"f":[]},"m2":{"w":[],"aB":["w"],"q":[],"ag":[],"i_":["m2"],"i_.E":"m2"},"Gf":{"w":[],"aB":["w"],"q":[],"ag":[]},"wk":{"hK":["+(z,br,z)"],"aj":[],"f":[],"hK.0":"+(z,br,z)"},"Hi":{"ef":[],"aj":[],"f":[]},"Ya":{"aV":[],"b5":[],"S":[]},"wK":{"dy":[],"f4":[],"dn":["w"],"cp":[]},"V6":{"a7":["AW"]},"wl":{"aj":[],"f":[]},"V5":{"aV":[],"b5":[],"S":[]},"SO":{"aY":[],"aj":[],"f":[]},"Gd":{"dH":["+(z,br,z)","w"],"w":[],"aB":["w"],"q":[],"ag":[],"dH.0":"+(z,br,z)"},"zv":{"Y":[],"f":[]},"CQ":{"Y":[],"f":[]},"F_":{"a7":["zv"]},"EZ":{"af":[]},"TL":{"af":[]},"H7":{"a7":["CQ"]},"Xz":{"af":[]},"AY":{"fr":[]},"aDI":{"bQ":["1"],"eT":[]},"uq":{"aq":[],"f":[]},"i3":{"dF":["1"],"ek":["1"],"cn":["1"]},"AZ":{"i3":["1"],"dF":["1"],"ek":["1"],"cn":["1"]},"uv":{"Y":[],"f":[]},"FO":{"a7":["uv<1>"],"ayr":["1"]},"Ba":{"aq":[],"f":[]},"ux":{"b_":[],"aK":[],"f":[]},"Bj":{"Y":[],"f":[]},"lp":{"a7":["Bj"]},"Tk":{"aY":[],"aj":[],"f":[]},"Wj":{"w":[],"aB":["w"],"q":[],"jP":[],"ag":[]},"nj":{"Y":[],"f":[]},"DE":{"b_":[],"aK":[],"f":[]},"BU":{"Y":[],"f":[]},"e0":{"af":[]},"WH":{"a7":["nj"]},"Gt":{"a7":["BU"]},"c3":{"e0":["1"],"af":[]},"ja":{"c3":["1"],"e0":["1"],"af":[]},"Gr":{"ja":["1"],"c3":["1"],"e0":["1"],"af":[]},"BQ":{"ja":["1"],"c3":["1"],"e0":["1"],"af":[],"c3.T":"1","ja.T":"1"},"BP":{"ja":["J"],"c3":["J"],"e0":["J"],"af":[],"c3.T":"J","ja.T":"J"},"OU":{"Y":[],"f":[]},"aXW":{"b_z":["ap<J>"]},"wB":{"a7":["OU<1>"]},"WQ":{"b_":[],"aK":[],"f":[]},"WE":{"c3":["nl?"],"e0":["nl?"],"af":[],"c3.T":"nl?"},"Ft":{"fN":["nZ"],"b_":[],"aK":[],"f":[],"fN.T":"nZ"},"wf":{"Y":[],"f":[]},"kj":{"a7":["wf<1>"]},"up":{"cn":["1"]},"ek":{"cn":["1"]},"SZ":{"b4":["fI"],"b4.T":"fI"},"dF":{"ek":["1"],"cn":["1"]},"B9":{"dF":["1"],"ek":["1"],"cn":["1"]},"nb":{"dF":["1"],"ek":["1"],"cn":["1"]},"uO":{"aq":[],"f":[]},"uQ":{"iI":["1"],"iI.T":"1"},"C5":{"b_":[],"aK":[],"f":[]},"C6":{"af":[]},"wC":{"Y":[],"f":[]},"rm":{"bQ":["eT"],"eT":[],"bQ.T":"eT"},"GO":{"a7":["wC"]},"fk":{"hj":[],"fr":[]},"qv":{"fk":[],"hj":[],"fr":[]},"no":{"fk":[],"hj":[],"fr":[]},"jR":{"fk":[],"hj":[],"fr":[]},"iW":{"fk":[],"hj":[],"fr":[]},"QH":{"fk":[],"hj":[],"fr":[]},"GD":{"b_":[],"aK":[],"f":[]},"m_":{"i_":["m_"],"i_.E":"m_"},"C8":{"Y":[],"f":[]},"Pb":{"a7":["C8"]},"lu":{"hE":[],"af":[]},"qr":{"fr":[]},"C9":{"lu":[],"hE":[],"af":[]},"Pc":{"aq":[],"f":[]},"KB":{"aq":[],"f":[]},"JI":{"aq":[],"f":[]},"MO":{"aq":[],"f":[]},"LM":{"aq":[],"f":[]},"Ca":{"Y":[],"f":[]},"GF":{"b_":[],"aK":[],"f":[]},"qw":{"a7":["Ca"]},"GH":{"Y":[],"f":[]},"WX":{"a7":["GH"]},"GG":{"af":[]},"WW":{"aY":[],"aj":[],"f":[]},"Gm":{"w":[],"aB":["w"],"q":[],"ag":[]},"WF":{"c3":["P?"],"e0":["P?"],"af":[],"c3.T":"P?"},"ev":{"b0":[]},"C4":{"ct":["ev"],"b4":["ev"],"ct.T":"ev","b4.T":"ev"},"uF":{"Y":[],"f":[]},"ko":{"fU":[],"cS":[],"cR":[]},"o8":{"hD":[],"h8":[],"cS":[],"cR":[]},"nT":{"hf":[],"h8":[],"cS":[],"cR":[]},"uS":{"af":[]},"jZ":{"a7":["1"]},"aQH":{"Y":[],"f":[]},"va":{"af":[]},"uh":{"af":[]},"qx":{"Y":[],"f":[]},"uV":{"b_":[],"aK":[],"f":[]},"X5":{"eh":[],"a7":["qx"],"af":[]},"Pf":{"af":[]},"Ct":{"Y":[],"f":[]},"Xf":{"a7":["Ct"]},"Xg":{"fN":["E"],"b_":[],"aK":[],"f":[],"fN.T":"E"},"ad":{"v_":[]},"qE":{"Y":[],"f":[]},"Cu":{"Y":[],"f":[]},"v0":{"af":[]},"GV":{"a7":["qE"]},"Cv":{"af":[]},"GU":{"a7":["Cu"]},"Xj":{"b_":[],"aK":[],"f":[]},"wE":{"aY":[],"aj":[],"f":[]},"Pw":{"aq":[],"f":[]},"Xo":{"aV":[],"b5":[],"S":[]},"Go":{"w":[],"aB":["w"],"Bo":[],"q":[],"ag":[]},"Py":{"hj":[]},"Pz":{"aY":[],"aj":[],"f":[]},"Ws":{"w":[],"aB":["w"],"q":[],"ag":[]},"PN":{"aj":[],"f":[]},"ny":{"aj":[],"f":[]},"CB":{"ny":[],"aj":[],"f":[]},"PK":{"ny":[],"aj":[],"f":[]},"v3":{"aV":[],"b5":[],"S":[]},"A_":{"dZ":["iK"],"aK":[],"f":[],"dZ.T":"iK"},"CC":{"eY":["1","2"],"aj":[],"f":[]},"CD":{"aV":[],"b5":[],"S":[]},"CE":{"af":[]},"PQ":{"aY":[],"aj":[],"f":[]},"wy":{"w":[],"aB":["w"],"q":[],"ag":[]},"PP":{"af":[]},"EA":{"af":[]},"Q2":{"aq":[],"f":[]},"CW":{"Y":[],"f":[]},"XH":{"a7":["CW"]},"LY":{"fg":[]},"LZ":{"fg":[]},"M9":{"fg":[]},"Mb":{"fg":[]},"M8":{"fg":[]},"Ma":{"fg":[]},"Mc":{"fg":[]},"M7":{"fg":[]},"uK":{"w":[],"aB":["w"],"q":[],"ag":[]},"ng":{"w":[],"aB":["w"],"q":[],"ag":[]},"vn":{"aY":[],"aj":[],"f":[]},"Q9":{"aY":[],"aj":[],"f":[]},"T9":{"cR":[]},"D4":{"aY":[],"aj":[],"f":[]},"tv":{"cu":[],"b_":[],"aK":[],"f":[]},"aMC":{"cu":[],"b_":[],"aK":[],"f":[]},"GL":{"Y":[],"f":[]},"V_":{"aq":[],"f":[]},"d":{"aq":[],"f":[]},"X4":{"a7":["GL"]},"WL":{"aq":[],"f":[]},"X3":{"af":[]},"yP":{"b0":[]},"oR":{"b0":[]},"oT":{"b0":[]},"oS":{"b0":[]},"yK":{"b0":[]},"kS":{"b0":[]},"kV":{"b0":[]},"oZ":{"b0":[]},"oW":{"b0":[]},"oX":{"b0":[]},"hb":{"b0":[]},"mu":{"b0":[]},"kW":{"b0":[]},"kU":{"b0":[]},"oY":{"b0":[]},"kT":{"b0":[]},"lv":{"b0":[]},"lw":{"b0":[]},"js":{"b0":[]},"le":{"b0":[]},"nd":{"b0":[]},"iT":{"b0":[]},"nG":{"b0":[]},"id":{"b0":[]},"nE":{"b0":[]},"jw":{"b0":[]},"jx":{"b0":[]},"KT":{"b0":[]},"f8":{"f4":[],"dn":["w"],"cp":[]},"o2":{"Y":[],"f":[]},"GM":{"Y":[],"f":[]},"Dh":{"Y":[],"f":[]},"GP":{"a7":["o2"]},"GN":{"a7":["GM"]},"Hf":{"a7":["Dh"]},"yj":{"bK":["tg"],"af":[],"cL":[]},"Do":{"Y":[],"f":[]},"EN":{"b_":[],"aK":[],"f":[]},"Yc":{"a7":["Do"]},"S6":{"af":[]},"Ds":{"Y":[],"f":[]},"Ye":{"a7":["Ds"]},"xw":{"Y":[],"f":[]},"cY":{"aY":[],"aj":[],"f":[]},"DV":{"a7":["xw"]},"PH":{"Y":[],"f":[]},"Ar":{"Y":[],"f":[]},"OX":{"Y":[],"f":[]},"OT":{"Y":[],"f":[]},"PA":{"Y":[],"f":[]},"KD":{"Y":[],"f":[]},"jM":{"Y":[],"f":[]},"Ja":{"Y":[],"f":[]},"vz":{"Y":[],"f":[]},"vA":{"a7":["vz<1>"]},"DD":{"bK":["vB"],"af":[]},"kc":{"Y":[],"f":[]},"wO":{"a7":["kc<1>"]},"vF":{"Y":[],"f":[]},"rs":{"b_":[],"aK":[],"f":[]},"FM":{"b_":[],"aK":[],"f":[]},"HC":{"a7":["vF"],"cL":[]},"Oa":{"aq":[],"f":[]},"FW":{"aj":[],"f":[]},"FV":{"aV":[],"b5":[],"S":[]},"rg":{"f":[]},"QM":{"rg":[],"f":[]},"QL":{"aq":[],"f":[]},"UN":{"b5":[],"S":[]},"EB":{"iF":["1"],"eT":[]},"DI":{"ef":[],"aj":[],"f":[]},"YQ":{"aV":[],"b5":[],"S":[]},"Pv":{"ef":[],"aj":[],"f":[]},"vJ":{"dV":[]},"YT":{"dZ":["ia"],"aK":[],"f":[],"dZ.T":"ia"},"RC":{"aY":[],"aj":[],"f":[]},"Gl":{"w":[],"aB":["w"],"q":[],"ag":[]},"c6":{"nK":[]},"Rt":{"nK":[]},"QU":{"y":[],"bG":["y"]},"wP":{"y":[],"bG":["y"]},"QV":{"dw":[],"bG":["dw"]},"HE":{"dw":[],"bG":["dw"]},"QT":{"aI":[],"bG":["aI?"]},"Ul":{"bG":["aI?"]},"io":{"aI":[],"bG":["aI?"]},"QW":{"m":[],"bG":["m"]},"YW":{"m":[],"bG":["m"]},"Fg":{"bG":["1?"]},"bB":{"bG":["1"]},"f0":{"bG":["1"]},"aX":{"bG":["1"]},"QX":{"bK":["b8<c6>"],"af":[]},"Ng":{"bV":[]},"tP":{"bV":[]},"tG":{"bV":[]},"fV":{"fR":[]},"LD":{"fR":[]},"Lh":{"fR":[]},"Ki":{"fR":[]},"LE":{"bD":[]},"Mo":{"bD":[]},"QF":{"bD":[]},"Pt":{"bD":[]},"LF":{"bD":[]},"OM":{"bD":[]},"Jy":{"a1I":[]},"JM":{"a1I":[]},"oB":{"ei":["R<n>"],"ei.T":"R<n>"},"oG":{"bD":[]},"Q1":{"CP":[]},"y0":{"bI":["o","o","1"],"aO":["o","1"],"bI.V":"1","bI.K":"o","bI.C":"o"},"pC":{"Y":[],"f":[]},"Mz":{"aq":[],"f":[]},"hF":{"aq":[],"f":[]},"Uw":{"a7":["pC"]},"CH":{"Y":[],"f":[]},"xj":{"Y":[],"f":[]},"Xw":{"a7":["CH"]},"DT":{"a7":["xj"]},"LT":{"aq":[],"f":[]},"Aj":{"Y":[],"f":[]},"Fk":{"a7":["Aj"]},"B2":{"Y":[],"f":[]},"FL":{"a7":["B2"]},"uy":{"aq":[],"f":[]},"Cs":{"Y":[],"f":[]},"GR":{"a7":["Cs"]},"D5":{"Y":[],"f":[]},"XT":{"a7":["D5"]},"ot":{"Y":[],"f":[]},"Ru":{"a7":["ot"]},"Rc":{"af":[]},"nm":{"Y":[],"f":[]},"GB":{"a7":["nm"]},"OY":{"dD":[]},"OZ":{"dD":[]},"P_":{"dD":[]},"P0":{"dD":[]},"P1":{"dD":[]},"P2":{"dD":[]},"P3":{"dD":[]},"P4":{"dD":[]},"P5":{"dD":[]},"NG":{"bD":[]},"Lm":{"iY":[],"bU":["iY"]},"vW":{"lC":[],"bU":["PU"]},"iY":{"bU":["iY"]},"PT":{"iY":[],"bU":["iY"]},"PU":{"bU":["PU"]},"PV":{"bU":["PU"]},"PW":{"bD":[]},"v7":{"eq":[],"bD":[]},"v8":{"bU":["PU"]},"lC":{"bU":["PU"]},"Q3":{"eq":[],"bD":[]},"aOL":{"Y":[],"f":[]},"aNb":{"Y":[],"f":[]},"aNc":{"a7":["aNb"]},"aTd":{"b_":[],"aK":[],"f":[]},"aSg":{"b_":[],"aK":[],"f":[]},"axD":{"fr":[]}}'))
+var v={G:typeof self!="undefined"?self:globalThis,typeUniverse:{eC:new Map(),tR:{},eT:{},tPV:{},sEA:[]},mangledGlobalNames:{n:"int",P:"double",d1:"num",o:"String",J:"bool",bs:"Null",R:"List",E:"Object",aO:"Map",aR:"JSObject"},mangledNames:{},types:["~()","P(P)","~(aR)","qU(dD)","P(dD)","~(aS)","y(b8<c6>)","~(hL)","bs(~)","yX(dD)","~(q2,h)","~(J)","J(kC,h)","~(q)","~(b5)","~(E?)","~(E,df)","f(S)","ap<~>()","~(tC)","eA(dD)","bs(E,df)","bs()","J(E?)","R<du>()","~(bh)","~(cO?)","J(o)","~(h9)","av<P>(@)","~(n)","~(vi)","J(cJ)","J(b5)","~(f5)","J()","P(w)","~(dx)","J(jB)","z(w,a5)","~(n6)","n(cJ,cJ)","J(fk)","J(ho)","bs(aR)","~(@)","J(bY)","~(n5)","~(eh)","~(e0<E?>,~())","m(b8<c6>)","P(w,P)","y?(b8<c6>)","bs(@)","J(fM)","J(n)","~(o)","~(li)","y(y)","J(e3)","ap<@>(iO)","o()","~(~())","hz()","n()","rJ(S)","bG<y?>?(bv?)","o(pG)","cT(S)","~(E?,E?)","f(S)?(rF?)","aR(E?)","dS(@)","n(n)","o(n)","n(q,q)","o(o)","~(vj)","h(h)","~(pU)","R<e3>()","~(CZ)","~(p6)","cY(S,bp<P>,f?)","J(dV)","e2(e2)","~(ayD)","bs(E)","P(b8<c6>)","J(q)","~({curve:ff,descendant:q?,duration:aS,rect:t?})","aR()","bG<z?>?(bv?)","~(nt)","~(fU)","n(bY,bY)","ap<~>(iO)","fU()","dw(b8<c6>)","J(p3)","f(S,f?)","n(@,@)","n(E?)","br(P)","J(E?,E?)","kN(@)","J(fO)","J(fa)","hD()","bs(J)","J(qr)","~(hD)","P()","o(pF)","f(S,bp<P>,bp<P>)","b8<0^>()<E?>","@(@)","~(P)","aR?(n)","aI(b8<c6>)","~(D2)","~(hg)","ap<aR>([aR?])","aR([aR?])","bs(E?)","~([b0?])","bs(o)","fO()","~(E)","~(vH)","~(iv)","y?(y?)","R<aR>()","~(R<aR>,aR)","o(E?)","B7?()","~(fk)","ns(S,f?)","bG<P?>?(bv?)","f(S,b8<c6>,f?)?(bv?)","~(J,E?)","~(p9)","J(qC)","t()","~(my)","t2(R<dx>)","~(w?)","oa(S,bp<P>,f?)","ob(S,bp<P>,f?)","lI(S,f?)","or(S)","J(he<ag>)","e8(S,P,f?)","~(iH,J)","pk()","n(eh,eh)","P?(+(a5,nA))","a5(w)","ap<J>()","o(P,P,o)","ds(dx)","n(dM,dM)","~(kn)","+boundaryEnd,boundaryStart(ac,ac)(ac)","J(kC)","~(ly)","P({from!P,to!P})","~(h,w)","z(w)","~(R<mA>)","~(bY)","J(E,bY)","@(o)","J(E,b8<bY>)","n(bY)","R<bY>(jb)","ap<cO?>(cO?)","~(dq)","aO<E?,E?>()","J(E)","J(lc)","jI(cJ,hX)","ap<~>(@)","J(a33)","~([aS?])","ac(ac,J,hz)","~(Qt)","dV(dV)","P?(w,a5,nA)","P(w,a5)","~(iM)","hf()","~(hf)","iS()","~(iS)","av<@>?(av<@>?,@,av<@>(@))","me(@)","kK(@)","t(br,t)","@()","~(ka,n,n)","w(n)","j4(bh)","~(o,@)","~(kM)","~(f6)","J(eh,P)","J(eh)","~(D1)","~(u9)","~(Ai)","~(u8)","~(D0)","~(D_)","iD(n)","ty(S)","E?(E?)","oL(S,n,f?)","lT()","J(o?)","~(E?,o,o)","f?(S,bp<P>,bp<P>,J,f?)","f(S,bp<P>,bp<P>,f)","iM()","n(ie,ie)","y(nS)","ns(S)","oF(f)","hQ()","b5(n)","J(d5)","R<dx>()","~(@,E?)","~(o,tH)","~(iC?,vm?)","y?(y?,y?,y?[y?])","Z?(S,pB,bK<la>)","J(hj)","~(o?)","P(@)","qD(@)","~(~)","~(D3)","t8(q_)","mF(S,bp<P>,f?)","f(S,bp<P>,bp<P>,J,f?)","jT?(f7)","f(S,m1,n7?,n7?)","~(vL)","uf(S,f?)","n(aR)","tL(o)","aOf?()","J(b8<c6>)","~(iA)","qh?(jo,o,o)","~(fq,i6?)","pn(S,f?)","qS(@)","mg()","ib()","aT<E,k9<@>>(E,k9<@>)","J(aT<E,k9<@>>)","h(vt)","cY(S,bp<P>)","ap<eK>(mH{allowUpscaling:J,cacheHeight:n?,cacheWidth:n?})","ap<eK>(mH{getTargetSize:aRm(n,n)?})","cH(cH,bS)","bS(bS)","J(bS)","o(bS)","ap<nv>(o,aO<o,o>)","J(P)","y(P)","wa()","~(iH?,J)","ap<~>(E,df?)","J(P?,P)","bs(a0n)","o(cR)","~(E,df?)?(hg)","~(eK)","ox(aR)","NA(dk)","t(dk)","NF(dk)","J(n,J)","mC?()","ap<+(o,fK?)>()","mS(mS)","tQ(@)","l1(h,n)","z()","P?()","z(a5)","w0()","~(fq)","J(l5)","t(t?,e2)","ka()","~(B6)","dw(jP)","~(jP,br)","J(jP)","~(z?)","P?(n)","n(em,em)","pR()","t7(pY)","~(R<ds>{isMergeUp:J})","dx?(ds)","J(i4)","R<ds>(R<ds>)","R<em>(em)","dL?(i4)","b8<d5>(b8<d5>)","o(P)","J(kn)","~(wH)","+boundaryEnd,boundaryStart(ac,ac)(ac,o)","J(v2{crossAxisPosition!P,mainAxisPosition!P})","aO<~(bh),br?>()","~(~(bh),br?)","J(w)","vO()","ap<~>(ho)","J(cz)","o(o,y)","jo(E?)","rd()","~(n,vZ)","@(@,o)","~(R<dx>)","~(eb)","mo(da)","tw(da)","oP(da)","ud(t?,t?)","bY(m6)","jv(dm)","aT<n,o>(aT<o,o>)","bY(n)","b8<bY>()","~(d5)","~(cw,~(E?))","ap<o>()","cO(cO?)","ap<r_>(o)","mh(aO<E?,E?>)","ei<hY>()","ap<o?>(o?)","ap<~>(cO?,~(cO?))","ap<aO<o,@>>(@)","~(lo)","b8<i>(i)","acu(acv)","Bi()","ap<bs>()","mW<0^>(hs,f(S))<E?>","pZ()","R<dq>()","R<dq>(R<dq>)","P(d1)","R<@>(o)","R<d1>(qz)","aO<o,@>(eQ)","qY(S,f?)","bs(C<E?>,aR)","aq(qX)","bs(~())","ap<aR>()","~(b4<b0>)","bs(@,df)","~(nO)","f(nO)","J(f)","P(lV)","cn<@>?(hs)","cn<@>(hs)","J(axD)","pz(S,f?)","J(u3)","~(n,@)","td(S)","~(dm,n)","ap<J>(iO)","mp(S)","bm(S)","ap<~>(hL)","~(f5{isClosing:J?})","t(a33)","~(ec)","bs(eb,eb)","~(z)","n(ho,ho)","~(nE)","~(iT)","~(lv)","~(ev)","~(id)","E?(fI)","cr(cr,qN)","~(aR,R<i4>)","vn(S)","~(ll)","~(cr)","J(cr?,cr)","cr(cr)","~(E[df?])","th(S,hE)","~({allowPlatformDefault:J})","~([cJ?])","~(R<E?>)","J(A2)","~(vY)","J(vU)","~(@,@)","J(nF)","b8<fH>(dM)","0^?(0^?(bv?))<E?>","R<fH>(S)","t(dM)","n(kl,kl)","R<dM>(dM,B<dM>)","J(dM)","ju<b5>(b5)","b5?(b5)","E?(n,b5?)","iB()","~(iB)","0^?(bG<0^>?(bv?))<E?>","y?()","qi()","bG<m?>?(bv?)","vN()","bG<cH?>?(bv?)","~(lk)","~(lr)","~(hv,E)","qc(S,f?)","~(lY)","f(S,bp<P>,tU,S,S)","J(lY)","i0(S,f?)","pj(S)","wr()","bG<aI?>?(bv?)","~(lb)","bG<d3?>?(bv?)","oz(@)","pM(@)","av<h>(@)","qQ(@)","oy(@)","rt(n)","~(kI)","ap<@>(wo)","aO<hA,@>(R<@>)","dw?(b8<c6>)","bs(aO<hA,@>)","i0(S)","~(lt?,J)","J(cn<@>?)","ap<bs>(@)","J(n_)","dw?(bv?)","~(a0u)","~([0^?])<E?>","e3(cn<@>)","~(CV,@)","aT<o?,R<E>>(@,@)","w?()","wk(S)","rl()","y?(bv?)","~(a5)","te(S,f?)","f(S,+(z,br,z))","J(lp)","bs(dq?)","~(e0<E?>)","dg<J>(J)","J(nZ)","nj(S,f?)","mF(S,f?)","ph(bh)","ub(bh)","lP?(bv?)","pH?(bv?)","0&()","f(S,hE)","bs(R<~>)","aS?(bv?)","J?(bv?)","fz?(bv?)","~(h)","~(o,E?)","~(h8)","nT()","o8()","ko()","~(ko)","~(lj)","u0?(bv?)","t(t)","J(t)","~(v_,b0)","R<nM>()","b4<b0>?()","wE(S,hE)","f?(S,n)","n?(f,n)","~(w)","b5?()","eQ(fg)","J(ng)","o2(S)","0&(o,n?)","~(o,o?)","~(n,J(jB))","~(kQ)","h(z,P)","J(n,n)","wi(S)","pl(S,f?)","J(cn<@>,@)","k6()","~(k6)","k7()","~(k7)","iE()","~(iE)","~(nG)","~(nd)","rs(S,lf)","o(aT<o,o>)","~(n,n,n)","ap<~>(o,cO?,~(cO?)?)","J(fR)","o(fV)","E(fR)","ap<mB>(B<fE>{generationConfig:aO1?,safetySettings:R<aeQ>?,toolConfig:aRQ?,tools:R<ayU>?})","aO<o,E?>(fE)","E(aeQ)","aO<o,E>(ayU)","ap<ni>(a1I)","J(o,o)","n(o)","bs(o,o[E?])","~(abH<R<n>>)","~(R<n>)","At()","~(o,o)","ot(S,f?)","pC(S)","bm(n)","R<jV>()","fH(S)","f(S,n)","w_(S)","o?(o)","uO(S)","uy(S)","J(aO<o,o>)","bm(S,n)","tl(S,n)","lD(S,a5)","lD(S,f?)","~(ME)","~({allowPlatformDefault!J})","p5(@)","ap<~>([aR?])","n(hd,hd)","o(o?)","o?()","n(j8)","eb()","E(j8)","E(fa)","n(fa,fa)","R<j8>(aT<E,R<fa>>)","lC()","o(o,o)","aR(n{params:E?})","aI?(b8<c6>)","ap<~>(~)","n(bU<@>,bU<@>)","R<o>()","R<o>(o,R<o>)","z?(z?,z?,P)","P?(d1?,d1?,P)","y?(y?,y?,P)","t()?(w)","f(S,h,h,f)","~(aU{forceReport:J})","du(o)","j_?(o)","P(P,P,P)","~(b0?)","qT({from:P?})","~(w,h)","f(S,bp<P>)","J?(J?,J?,P)","f(S,ms)","f(S,f)","d3?(d3?,d3?,P)","cH?(cH?,cH?,P)","m?(m?,m?,P)","n(Ha<@>,Ha<@>)","J({priority!n,scheduler!k1})","R<hY>(o)","f(f,bp<P>)","f(f?,R<f>)","~(cJ{alignment:P?,alignmentPolicy:qt?,curve:ff?,duration:aS?})","n(b5,b5)","d_(d_?,d_?,P)","f?(S,pB,bK<la>)","R<cn<@>>(iQ,o)","n(f,n)","J(mJ?)","mB(E)","oC(E?)","uP(E?)","t4(E?)","fR(E?)","ap<ni>(vE{body:E?,encoding:jy?,headers:aO<o,o>?})","0^(0^,0^)<d1>","~(o?{wrapWidth:n?})","aO<hA,@>(aO<hA,@>)","b8<d5>?(ds)"],interceptorsByTag:null,leafTags:null,arrayRti:Symbol("$ti"),rttc:{"2;":(a,b)=>c=>c instanceof A.ae&&a.b(c.a)&&b.b(c.b),"2;boundaryEnd,boundaryStart":(a,b)=>c=>c instanceof A.W0&&a.b(c.a)&&b.b(c.b),"2;end,start":(a,b)=>c=>c instanceof A.W1&&a.b(c.a)&&b.b(c.b),"2;endGlyphHeight,startGlyphHeight":(a,b)=>c=>c instanceof A.FY&&a.b(c.a)&&b.b(c.b),"2;inside,outside":(a,b)=>c=>c instanceof A.W2&&a.b(c.a)&&b.b(c.b),"2;key,value":(a,b)=>c=>c instanceof A.W3&&a.b(c.a)&&b.b(c.b),"2;localPosition,paragraph":(a,b)=>c=>c instanceof A.W4&&a.b(c.a)&&b.b(c.b),"2;name,prefix":(a,b)=>c=>c instanceof A.FZ&&a.b(c.a)&&b.b(c.b),"2;representation,targetSize":(a,b)=>c=>c instanceof A.W5&&a.b(c.a)&&b.b(c.b),"3;":(a,b,c)=>d=>d instanceof A.fZ&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;ascent,bottomHeight,subtextHeight":(a,b,c)=>d=>d instanceof A.W6&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;breaks,graphemes,words":(a,b,c)=>d=>d instanceof A.W7&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;completer,recorder,scene":(a,b,c)=>d=>d instanceof A.G_&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;data,event,timeStamp":(a,b,c)=>d=>d instanceof A.G0&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;domSize,representation,targetSize":(a,b,c)=>d=>d instanceof A.W8&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;large,medium,small":(a,b,c)=>d=>d instanceof A.W9&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"3;textConstraints,tileSize,titleY":(a,b,c)=>d=>d instanceof A.Wa&&a.b(d.a)&&b.b(d.b)&&c.b(d.c),"4;domBlurListener,domFocusListener,element,semanticsNodeId":a=>b=>b instanceof A.G1&&A.aHW(a,b.a),"4;queue,started,target,timer":a=>b=>b instanceof A.G2&&A.aHW(a,b.a)}}
+A.aTn(v.typeUniverse,JSON.parse('{"eb":"mR","NM":"mR","lL":"mR","aZu":"uj","y7":{"eK":[]},"y4":{"eK":[]},"ta":{"acu":[]},"t7":{"ac8":[]},"t8":{"AU":[],"jv":[]},"pY":{"xZ":["aR"]},"q_":{"xZ":["aR"]},"dm":{"mm":[]},"kH":{"mm":[]},"pR":{"vI":[]},"pZ":{"vI":[]},"qi":{"jv":[]},"AU":{"jv":[]},"fK":{"bV":[]},"aEn":{"es":[]},"jV":{"es":[]},"a8o":{"acv":[]},"kQ":{"aCJ":[]},"D9":{"ie":[]},"B3":{"ie":[]},"kP":{"a5v":[]},"K0":{"ME":[]},"K1":{"hi":[]},"t6":{"hi":[]},"K3":{"hi":[]},"K6":{"hi":[]},"t5":{"hi":[]},"K5":{"eK":[]},"h6":{"a0u":[]},"K2":{"hi":[]},"y5":{"hi":[]},"Ef":{"hi":[]},"Eh":{"hi":[]},"Eg":{"hi":[]},"K_":{"eK":[]},"yb":{"qW":["1"]},"y6":{"tm":["1","2"]},"jp":{"NA":[]},"kG":{"a8o":[],"acv":[]},"y8":{"mS":[]},"z5":{"hi":[]},"Nm":{"lE":["ac8","pY"],"lE.C":"ac8"},"No":{"lE":["AU","q_"],"lE.C":"AU"},"LW":{"aCH":[]},"LV":{"bD":[]},"zz":{"bD":[]},"r6":{"B":["1"],"B.E":"1"},"Lw":{"fK":[],"bV":[]},"zo":{"fK":[],"bV":[]},"zp":{"fK":[],"bV":[]},"F4":{"bD":[]},"zy":{"eK":[]},"LU":{"eK":[]},"Px":{"a5O":[]},"JN":{"eK":[]},"rK":{"a5O":[]},"OP":{"eK":[]},"zD":{"bD":[]},"zF":{"bD":[]},"ys":{"es":[]},"OR":{"es":[]},"Jt":{"es":[],"aBm":[]},"Ka":{"es":[],"aBD":[]},"Kc":{"es":[],"aBG":[]},"Kb":{"es":[],"aBF":[]},"Nq":{"es":[],"aDF":[]},"Dz":{"es":[],"ayY":[]},"AR":{"es":[],"ayY":[],"aDD":[]},"Mg":{"es":[],"aCK":[]},"ui":{"B":["iP"],"B.E":"iP"},"B1":{"C3":[]},"et":{"cK":[]},"c9":{"cK":[]},"tn":{"cK":[]},"Kq":{"cK":[]},"Jg":{"cK":[]},"Jh":{"cK":[]},"fy":{"cK":[]},"kx":{"cK":[]},"md":{"cK":[]},"e7":{"cK":[]},"rI":{"cK":[]},"Pu":{"cK":[]},"J7":{"cK":[]},"oH":{"cK":[]},"bC":{"NF":[],"aBI":[]},"uT":{"fT":[]},"y1":{"fT":[]},"rY":{"fT":[]},"Li":{"fT":[]},"p2":{"fT":[]},"My":{"fT":[]},"mT":{"fT":[]},"OO":{"fT":[]},"Pm":{"nr":[]},"Pj":{"nr":[]},"Pi":{"nr":[]},"qo":{"fT":[]},"Ps":{"ayD":[]},"k8":{"fT":[]},"wM":{"aJ":["1"],"R":["1"],"az":["1"],"B":["1"]},"Ua":{"wM":["n"],"aJ":["n"],"R":["n"],"az":["n"],"B":["n"]},"Qx":{"wM":["n"],"aJ":["n"],"R":["n"],"az":["n"],"B":["n"],"aJ.E":"n","B.E":"n"},"NN":{"bD":[]},"tK":{"mS":[]},"L6":{"ie":[]},"lG":{"pt":[]},"jW":{"pt":[]},"tF":{"lG":[],"pt":[]},"q3":{"ur":[]},"qP":{"ur":[]},"JV":{"vf":[]},"OS":{"vf":[]},"Th":{"kP":[],"a5v":[]},"tI":{"kP":[],"a5v":[]},"C":{"R":["1"],"az":["1"],"cf":[],"aR":[],"B":["1"],"eR":["1"],"B.E":"1"},"zT":{"cf":[],"J":[],"cs":[]},"u2":{"cf":[],"bs":[],"cs":[]},"zW":{"cf":[],"aR":[]},"mR":{"cf":[],"aR":[]},"mP":{"cf":[]},"mQ":{"cf":[]},"Mp":{"BX":[]},"a7U":{"C":["1"],"R":["1"],"az":["1"],"cf":[],"aR":[],"B":["1"],"eR":["1"],"B.E":"1"},"mO":{"P":[],"d1":[],"cf":[],"bU":["d1"]},"u1":{"P":[],"n":[],"d1":[],"cf":[],"bU":["d1"],"cs":[]},"zV":{"P":[],"d1":[],"cf":[],"bU":["d1"],"cs":[]},"l6":{"o":[],"cf":[],"bU":["o"],"eR":["@"],"cs":[]},"j6":{"B":["2"]},"oD":{"j6":["1","2"],"B":["2"],"B.E":"2"},"EO":{"oD":["1","2"],"j6":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"Ed":{"aJ":["2"],"R":["2"],"j6":["1","2"],"az":["2"],"B":["2"]},"dl":{"Ed":["1","2"],"aJ":["2"],"R":["2"],"j6":["1","2"],"az":["2"],"B":["2"],"aJ.E":"2","B.E":"2"},"kF":{"b8":["2"],"j6":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"oE":{"bk":["3","4"],"aO":["3","4"],"bk.V":"4","bk.K":"3"},"kE":{"j6":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"iL":{"bV":[]},"Ob":{"bV":[]},"fC":{"aJ":["n"],"R":["n"],"az":["n"],"B":["n"],"aJ.E":"n","B.E":"n"},"az":{"B":["1"]},"al":{"az":["1"],"B":["1"]},"hx":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"eU":{"B":["2"],"B.E":"2"},"kO":{"eU":["1","2"],"az":["2"],"B":["2"],"B.E":"2"},"aa":{"al":["2"],"az":["2"],"B":["2"],"B.E":"2","al.E":"2"},"aN":{"B":["1"],"B.E":"1"},"eM":{"B":["2"],"B.E":"2"},"qJ":{"B":["1"],"B.E":"1"},"z0":{"qJ":["1"],"az":["1"],"B":["1"],"B.E":"1"},"lx":{"B":["1"],"B.E":"1"},"tE":{"lx":["1"],"az":["1"],"B":["1"],"B.E":"1"},"Cz":{"B":["1"],"B.E":"1"},"ha":{"az":["1"],"B":["1"],"B.E":"1"},"kZ":{"B":["1"],"B.E":"1"},"z_":{"kZ":["1"],"az":["1"],"B":["1"],"B.E":"1"},"c_":{"B":["1"],"B.E":"1"},"vC":{"aJ":["1"],"R":["1"],"az":["1"],"B":["1"]},"cb":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"f_":{"CV":[]},"oM":{"lM":["1","2"],"aO":["1","2"]},"tk":{"aO":["1","2"]},"bM":{"tk":["1","2"],"aO":["1","2"]},"rc":{"B":["1"],"B.E":"1"},"dv":{"tk":["1","2"],"aO":["1","2"]},"yp":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"]},"fD":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"eN":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"Mm":{"l0":[]},"jG":{"l0":[]},"AP":{"lJ":[],"bV":[]},"Mq":{"bV":[]},"QC":{"bV":[]},"Nj":{"bD":[]},"H3":{"df":[]},"ml":{"l0":[]},"Kg":{"l0":[]},"Kh":{"l0":[]},"Qa":{"l0":[]},"Q_":{"l0":[]},"rU":{"l0":[]},"OV":{"bV":[]},"eS":{"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"b2":{"az":["1"],"B":["1"],"B.E":"1"},"ba":{"az":["1"],"B":["1"],"B.E":"1"},"ed":{"az":["aT<1,2>"],"B":["aT<1,2>"],"B.E":"aT<1,2>"},"zX":{"eS":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"pp":{"eS":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"wc":{"Od":[],"pF":[]},"R9":{"B":["Od"],"B.E":"Od"},"vc":{"pF":[]},"XA":{"B":["pF"],"B.E":"pF"},"lb":{"hn":[],"ka":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"uj":{"cf":[],"aR":[],"jo":[],"cs":[]},"pT":{"cf":[],"aR":[],"jo":[],"cs":[]},"AH":{"cf":[],"aR":[],"dh":[]},"YN":{"jo":[]},"AC":{"cO":[],"cf":[],"aR":[],"dh":[],"cs":[]},"uk":{"hh":["1"],"cf":[],"aR":[],"dh":[],"eR":["1"]},"AG":{"aJ":["P"],"R":["P"],"hh":["P"],"az":["P"],"cf":[],"aR":[],"dh":[],"eR":["P"],"B":["P"]},"hn":{"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"]},"AD":{"a5h":[],"aJ":["P"],"R":["P"],"hh":["P"],"az":["P"],"cf":[],"aR":[],"dh":[],"eR":["P"],"B":["P"],"cs":[],"aJ.E":"P","B.E":"P"},"AE":{"a5i":[],"aJ":["P"],"R":["P"],"hh":["P"],"az":["P"],"cf":[],"aR":[],"dh":[],"eR":["P"],"B":["P"],"cs":[],"aJ.E":"P","B.E":"P"},"N9":{"hn":[],"a7L":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"AF":{"hn":[],"a7M":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"Na":{"hn":[],"a7N":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"AI":{"hn":[],"ajp":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"AJ":{"hn":[],"vy":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"ul":{"hn":[],"ajq":[],"aJ":["n"],"R":["n"],"hh":["n"],"az":["n"],"cf":[],"aR":[],"dh":[],"eR":["n"],"B":["n"],"cs":[],"aJ.E":"n","B.E":"n"},"Hl":{"hA":[]},"Ti":{"bV":[]},"Hm":{"lJ":[],"bV":[]},"kf":{"vb":["1"]},"Hj":{"Qt":[]},"DZ":{"Kl":["1"]},"hG":{"B":["1"],"B.E":"1"},"di":{"bV":[]},"d6":{"kh":["1"],"ei":["1"],"ei.T":"1"},"r1":{"kf":["1"],"vb":["1"]},"H8":{"nN":["1"]},"E_":{"nN":["1"]},"vs":{"bD":[]},"vP":{"Kl":["1"]},"b3":{"vP":["1"],"Kl":["1"]},"ah":{"ap":["1"]},"CO":{"ei":["1"]},"ke":{"wF":["1"]},"kh":{"ei":["1"],"ei.T":"1"},"r2":{"kf":["1"],"vb":["1"]},"H6":{"ei":["1"]},"vV":{"vb":["1"]},"EP":{"ei":["1"],"ei.T":"1"},"Fu":{"ei":["1"],"ei.T":"1"},"Fv":{"ke":["1"],"wF":["1"],"abH":["1"]},"lX":{"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"nU":{"lX":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"Ey":{"lX":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"ra":{"az":["1"],"B":["1"],"B.E":"1"},"w8":{"eS":["1","2"],"bk":["1","2"],"aO":["1","2"],"bk.V":"2","bk.K":"1"},"ki":{"wD":["1"],"i8":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"fY":{"wD":["1"],"i8":["1"],"aOA":["1"],"b8":["1"],"az":["1"],"B":["1"],"B.E":"1"},"pw":{"B":["1"],"B.E":"1"},"aJ":{"R":["1"],"az":["1"],"B":["1"]},"bk":{"aO":["1","2"]},"Fl":{"az":["2"],"B":["2"],"B.E":"2"},"Ak":{"aO":["1","2"]},"lM":{"aO":["1","2"]},"EE":{"EF":["1"],"aCb":["1"]},"EG":{"EF":["1"]},"yT":{"az":["1"],"B":["1"],"B.E":"1"},"Ab":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"i8":{"b8":["1"],"az":["1"],"B":["1"]},"wD":{"i8":["1"],"b8":["1"],"az":["1"],"B":["1"]},"CI":{"bk":["1","2"],"o3":["1","fu<1,2>"],"aO":["1","2"],"bk.V":"2","bk.K":"1","o3.K":"1"},"m4":{"az":["1"],"B":["1"],"B.E":"1"},"ro":{"az":["2"],"B":["2"],"B.E":"2"},"GY":{"az":["aT<1,2>"],"B":["aT<1,2>"],"B.E":"aT<1,2>"},"m5":{"jc":["1","2","1"],"jc.T":"1"},"H2":{"jc":["1","fu<1,2>","2"],"jc.T":"2"},"rn":{"jc":["1","fu<1,2>","aT<1,2>"],"jc.T":"aT<1,2>"},"v9":{"i8":["1"],"b8":["1"],"az":["1"],"o3":["1","fv<1>"],"B":["1"],"B.E":"1","o3.K":"1"},"jy":{"d9":["o","R<n>"]},"Ud":{"bk":["o","@"],"aO":["o","@"],"bk.V":"@","bk.K":"o"},"Ue":{"al":["o"],"az":["o"],"B":["o"],"B.E":"o","al.E":"o"},"Fe":{"j0":[]},"Ji":{"jy":[],"d9":["o","R<n>"],"d9.S":"o","d9.T":"R<n>"},"YK":{"bF":["o","R<n>"]},"Jk":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"YL":{"j0":[]},"YJ":{"bF":["R<n>","o"]},"Jj":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"Jv":{"d9":["R<n>","o"],"d9.S":"R<n>","d9.T":"o"},"Jx":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"Jw":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"RG":{"j0":[]},"EW":{"d9":["1","3"],"d9.S":"1","d9.T":"3"},"EX":{"bF":["1","3"],"bF.S":"1","bF.T":"3"},"zZ":{"bV":[]},"Mr":{"bV":[]},"zY":{"d9":["E?","o"],"d9.S":"E?","d9.T":"o"},"Mt":{"bF":["E?","o"],"bF.S":"E?","bF.T":"o"},"Mu":{"bF":["E?","R<n>"],"bF.S":"E?","bF.T":"R<n>"},"Ms":{"bF":["o","E?"],"bF.S":"o","bF.T":"E?"},"MB":{"jy":[],"d9":["o","R<n>"],"d9.S":"o","d9.T":"R<n>"},"MD":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"MC":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"wG":{"j0":[]},"rq":{"j0":[]},"QI":{"jy":[],"d9":["o","R<n>"],"d9.S":"o","d9.T":"R<n>"},"QK":{"bF":["o","R<n>"],"bF.S":"o","bF.T":"R<n>"},"HB":{"j0":[]},"QJ":{"bF":["R<n>","o"],"bF.S":"R<n>","bF.T":"o"},"hQ":{"bU":["hQ"]},"P":{"d1":[],"bU":["d1"]},"aS":{"bU":["aS"]},"n":{"d1":[],"bU":["d1"]},"R":{"az":["1"],"B":["1"]},"d1":{"bU":["d1"]},"Od":{"pF":[]},"b8":{"az":["1"],"B":["1"]},"o":{"bU":["o"]},"ou":{"bV":[]},"lJ":{"bV":[]},"hM":{"bV":[]},"uB":{"bV":[]},"zH":{"bV":[]},"Nf":{"bV":[]},"nH":{"bV":[]},"QB":{"nH":[],"bV":[]},"fo":{"bV":[]},"Kp":{"bV":[]},"Nt":{"bV":[]},"CM":{"bV":[]},"Tj":{"bD":[]},"eq":{"bD":[]},"EY":{"al":["1"],"az":["1"],"B":["1"],"B.E":"1","al.E":"1"},"XC":{"df":[]},"Hv":{"vE":[]},"il":{"vE":[]},"SE":{"vE":[]},"Ni":{"bD":[]},"cO":{"dh":[]},"a7N":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"ka":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"ajq":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"a7L":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"ajp":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"a7M":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"vy":{"R":["n"],"az":["n"],"dh":[],"B":["n"]},"a5h":{"R":["P"],"az":["P"],"dh":[],"B":["P"]},"a5i":{"R":["P"],"az":["P"],"dh":[],"B":["P"]},"jY":{"ws":["jY"]},"qe":{"ws":["qe"]},"ex":{"B":["o"],"B.E":"o"},"bI":{"aO":["2","3"]},"vD":{"o5":["1","B<1>"],"o5.E":"1"},"uY":{"o5":["1","b8<1>"],"o5.E":"1"},"bp":{"af":[]},"rM":{"bp":["P"],"af":[]},"Ra":{"bp":["P"],"af":[]},"Rb":{"bp":["P"],"af":[]},"Bc":{"bp":["P"],"af":[]},"fS":{"bp":["P"],"af":[]},"yz":{"bp":["P"],"af":[]},"qV":{"bp":["P"],"af":[]},"tj":{"bp":["1"],"af":[]},"xz":{"bp":["1"],"af":[]},"Fi":{"ff":[]},"ea":{"ff":[]},"CJ":{"ff":[]},"Dm":{"ff":[]},"dT":{"ff":[]},"Dl":{"ff":[]},"kX":{"ff":[]},"SG":{"ff":[]},"av":{"ao":["1"],"ao.T":"1","av.T":"1"},"dS":{"av":["y?"],"ao":["y?"],"ao.T":"y?","av.T":"y?"},"ar":{"bp":["1"],"af":[]},"fs":{"ao":["1"],"ao.T":"1"},"BS":{"av":["1"],"ao":["1"],"ao.T":"1","av.T":"1"},"PB":{"av":["z?"],"ao":["z?"],"ao.T":"z?","av.T":"z?"},"Bl":{"av":["t?"],"ao":["t?"],"ao.T":"t?","av.T":"t?"},"mK":{"av":["n"],"ao":["n"],"ao.T":"n","av.T":"n"},"hP":{"ao":["P"],"ao.T":"P"},"DC":{"ao":["1"],"ao.T":"1"},"yt":{"Z":[],"f":[]},"Eq":{"a7":["yt"]},"cy":{"y":[]},"Sp":{"j2":[]},"Kt":{"aq":[],"f":[]},"oP":{"Z":[],"f":[]},"Er":{"a7":["oP"]},"Ku":{"d_":[]},"aMp":{"b_":[],"aK":[],"f":[]},"Ss":{"fh":["yu"],"fh.T":"yu"},"KG":{"yu":[]},"yw":{"Z":[],"f":[]},"Et":{"a7":["yw"]},"Kv":{"aq":[],"f":[]},"yv":{"Z":[],"f":[]},"vS":{"Z":[],"f":[]},"St":{"a7":["yv"]},"vT":{"a7":["vS<1>"]},"j7":{"hR":[]},"Kw":{"jT":[]},"to":{"Z":[],"f":[]},"Es":{"jZ":["to"],"a7":["to"]},"Sv":{"af":[]},"Kx":{"j2":[]},"Ev":{"Z":[],"f":[]},"Ky":{"aq":[],"f":[]},"Sx":{"aY":[],"aj":[],"f":[]},"Wf":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ew":{"a7":["Ev"]},"Uk":{"af":[]},"WM":{"af":[]},"So":{"af":[]},"Ex":{"aj":[],"f":[]},"Sw":{"aV":[],"b5":[],"S":[]},"rj":{"cU":["w","f8"],"w":[],"a6":["w","f8"],"q":[],"ag":[],"a6.1":"f8","cU.1":"f8","a6.0":"w"},"mo":{"Z":[],"f":[]},"Eu":{"a7":["mo"]},"Up":{"af":[]},"zJ":{"cu":[],"b_":[],"aK":[],"f":[]},"yy":{"aq":[],"f":[]},"nR":{"du":[]},"tL":{"nR":[],"du":[]},"Le":{"nR":[],"du":[]},"Ld":{"nR":[],"du":[]},"mw":{"ou":[],"bV":[]},"KQ":{"du":[]},"Tv":{"du":[]},"fe":{"af":[]},"bK":{"af":[]},"nX":{"af":[]},"ju":{"du":[]},"yH":{"du":[]},"KP":{"du":[]},"yI":{"du":[]},"MS":{"eT":[]},"kb":{"eT":[]},"bQ":{"eT":[],"bQ.T":"1"},"A9":{"hY":[]},"bb":{"B":["1"],"B.E":"1"},"eP":{"B":["1"],"B.E":"1"},"dg":{"ap":["1"]},"zj":{"aU":[]},"dL":{"bh":[]},"lj":{"bh":[]},"n5":{"bh":[]},"n6":{"bh":[]},"li":{"bh":[]},"ll":{"bh":[]},"f6":{"bh":[]},"lk":{"bh":[]},"R4":{"bh":[]},"Ys":{"bh":[]},"q4":{"bh":[]},"Yo":{"q4":[],"bh":[]},"q9":{"bh":[]},"Yz":{"q9":[],"bh":[]},"Yu":{"lj":[],"bh":[]},"Yr":{"n5":[],"bh":[]},"Yt":{"n6":[],"bh":[]},"Yq":{"li":[],"bh":[]},"q6":{"bh":[]},"Yv":{"q6":[],"bh":[]},"YD":{"ll":[],"bh":[]},"qa":{"f6":[],"bh":[]},"YB":{"qa":[],"f6":[],"bh":[]},"qb":{"f6":[],"bh":[]},"YC":{"qb":[],"f6":[],"bh":[]},"NP":{"f6":[],"bh":[]},"YA":{"f6":[],"bh":[]},"Yx":{"lk":[],"bh":[]},"q8":{"bh":[]},"Yy":{"q8":[],"bh":[]},"q7":{"bh":[]},"Yw":{"q7":[],"bh":[]},"q5":{"bh":[]},"Yp":{"q5":[],"bh":[]},"iE":{"cS":[],"cR":[]},"Fp":{"wL":[]},"wj":{"wL":[]},"iM":{"cS":[],"cR":[]},"h8":{"cS":[],"cR":[]},"hD":{"h8":[],"cS":[],"cR":[]},"hf":{"h8":[],"cS":[],"cR":[]},"iS":{"h8":[],"cS":[],"cR":[]},"iB":{"cS":[],"cR":[]},"cS":{"cR":[]},"AT":{"cS":[],"cR":[]},"uw":{"cS":[],"cR":[]},"fU":{"cS":[],"cR":[]},"JA":{"cS":[],"cR":[]},"k6":{"cS":[],"cR":[]},"k7":{"cS":[],"cR":[]},"xL":{"cS":[],"cR":[]},"vO":{"cR":[]},"am9":{"tS":[]},"ph":{"j4":[]},"ub":{"j4":[]},"R5":{"aq":[],"f":[]},"qZ":{"aq":[],"f":[]},"Jr":{"aq":[],"f":[]},"Jq":{"aq":[],"f":[]},"Kf":{"aq":[],"f":[]},"Ke":{"aq":[],"f":[]},"L2":{"aq":[],"f":[]},"L1":{"aq":[],"f":[]},"L9":{"aq":[],"f":[]},"L8":{"aq":[],"f":[]},"aLg":{"cu":[],"b_":[],"aK":[],"f":[]},"J6":{"aq":[],"f":[]},"An":{"Z":[],"f":[]},"Fm":{"a7":["An"]},"xE":{"Z":[],"f":[]},"VM":{"z":[]},"DY":{"a7":["xE"]},"Rw":{"aY":[],"aj":[],"f":[]},"Wc":{"w":[],"aB":["w"],"q":[],"ag":[]},"aLq":{"cu":[],"b_":[],"aK":[],"f":[]},"ud":{"av":["t?"],"ao":["t?"],"ao.T":"t?","av.T":"t?"},"Ap":{"av":["h"],"ao":["h"],"ao.T":"h","av.T":"h"},"aOM":{"cu":[],"b_":[],"aK":[],"f":[]},"xQ":{"Z":[],"f":[]},"re":{"Z":[],"f":[]},"E8":{"a7":["xQ"]},"T4":{"aq":[],"f":[]},"RM":{"aY":[],"aj":[],"f":[]},"G3":{"w":[],"aB":["w"],"q":[],"ag":[]},"we":{"a7":["re<1>"]},"Aw":{"dF":["1"],"ek":["1"],"cn":["1"]},"E7":{"aq":[],"f":[]},"xW":{"Z":[],"f":[]},"E9":{"a7":["xW"]},"UJ":{"dw":[],"bG":["dw"]},"U9":{"aY":[],"aj":[],"f":[]},"Gc":{"w":[],"aB":["w"],"q":[],"ag":[]},"JS":{"aq":[],"f":[]},"aLM":{"b_":[],"aK":[],"f":[]},"Bh":{"Z":[],"f":[]},"FS":{"a7":["Bh"]},"U3":{"bG":["y?"]},"RY":{"aY":[],"aj":[],"f":[]},"Wd":{"w":[],"aB":["w"],"q":[],"ag":[]},"S_":{"eY":["kg","w"],"aj":[],"f":[],"eY.0":"kg","eY.1":"w"},"G4":{"w":[],"i9":["kg","w"],"q":[],"ag":[]},"aLV":{"cu":[],"b_":[],"aK":[],"f":[]},"JW":{"aq":[],"f":[]},"JY":{"aq":[],"f":[]},"MZ":{"jq":["n"],"y":[],"jq.T":"n"},"MX":{"jq":["n"],"y":[],"jq.T":"n"},"SR":{"j2":[]},"KN":{"aq":[],"f":[]},"tw":{"aq":[],"f":[]},"ty":{"aq":[],"f":[]},"rJ":{"aq":[],"f":[]},"w_":{"aq":[],"f":[]},"wi":{"aq":[],"f":[]},"tz":{"nb":["1"],"dF":["1"],"ek":["1"],"cn":["1"]},"ST":{"aq":[],"f":[]},"r5":{"jS":["~"],"hs":[]},"yJ":{"cu":[],"b_":[],"aK":[],"f":[]},"KY":{"aq":[],"f":[]},"aMQ":{"cu":[],"b_":[],"aK":[],"f":[]},"L5":{"Z":[],"f":[]},"Tf":{"bv":[]},"aNq":{"cu":[],"b_":[],"aK":[],"f":[]},"zc":{"Z":[],"f":[]},"Tq":{"aq":[],"f":[]},"To":{"bv":[]},"aNH":{"cu":[],"b_":[],"aK":[],"f":[]},"zf":{"b_":[],"aK":[],"f":[]},"DX":{"bp":["1"],"af":[]},"GK":{"Z":[],"f":[]},"zA":{"aq":[],"f":[]},"X2":{"a7":["GK"]},"TX":{"Z":[],"f":[]},"TW":{"bv":[]},"Tr":{"bv":[]},"Ts":{"bv":[]},"V4":{"bv":[]},"zB":{"cu":[],"b_":[],"aK":[],"f":[]},"pl":{"Z":[],"f":[]},"Fa":{"a7":["pl"]},"zL":{"jF":[]},"mJ":{"mL":[],"jF":[]},"zN":{"mL":[],"jF":[]},"zO":{"mL":[],"jF":[]},"mL":{"jF":[]},"FK":{"b_":[],"aK":[],"f":[]},"F9":{"Z":[],"f":[]},"zM":{"aq":[],"f":[]},"F8":{"a7":["F9"],"azg":[]},"Ml":{"aq":[],"f":[]},"hW":{"bS":[]},"ic":{"hW":[],"bS":[]},"fQ":{"hW":[],"bS":[]},"E6":{"Z":[],"f":[]},"F1":{"Z":[],"f":[]},"pn":{"Z":[],"f":[]},"aOl":{"cu":[],"b_":[],"aK":[],"f":[]},"Fb":{"af":[]},"Fc":{"av":["hW"],"ao":["hW"],"ao.T":"hW","av.T":"hW"},"U7":{"af":[]},"RI":{"a7":["E6"]},"F2":{"a7":["F1"]},"G7":{"w":[],"i9":["eC","w"],"q":[],"ag":[]},"SL":{"eY":["eC","w"],"aj":[],"f":[],"eY.0":"eC","eY.1":"w"},"Fd":{"a7":["pn"]},"MN":{"aq":[],"f":[]},"U4":{"bG":["y?"]},"Un":{"eY":["j9","w"],"aj":[],"f":[],"eY.0":"j9","eY.1":"w"},"Gg":{"w":[],"i9":["j9","w"],"q":[],"ag":[]},"aOD":{"cu":[],"b_":[],"aK":[],"f":[]},"De":{"Z":[],"f":[]},"Hd":{"a7":["De"]},"MU":{"aq":[],"f":[]},"Am":{"Z":[],"f":[]},"Gb":{"w":[],"aB":["w"],"q":[],"ag":[]},"qD":{"av":["bS?"],"ao":["bS?"],"ao.T":"bS?","av.T":"bS?"},"Fn":{"Z":[],"f":[]},"UC":{"a7":["Am"]},"U6":{"aY":[],"aj":[],"f":[]},"Uz":{"a7":["Fn"]},"GS":{"aq":[],"f":[]},"GT":{"af":[]},"UA":{"fh":["pG"],"fh.T":"pG"},"KI":{"pG":[]},"Nu":{"Z":[],"f":[]},"V3":{"aq":[],"f":[]},"V1":{"bv":[]},"aPl":{"cu":[],"b_":[],"aK":[],"f":[]},"mW":{"N_":["1"],"i3":["1"],"dF":["1"],"ek":["1"],"cn":["1"]},"oa":{"Z":[],"f":[]},"ob":{"Z":[],"f":[]},"wn":{"Z":[],"f":[]},"Z3":{"aq":[],"f":[]},"Z1":{"a7":["oa"]},"Z2":{"a7":["ob"]},"Tm":{"aq":[],"f":[]},"R2":{"jT":[]},"FJ":{"a7":["wn<1>"]},"HP":{"af":[]},"HQ":{"af":[]},"FP":{"Z":[],"f":[]},"FQ":{"Z":[],"f":[]},"NS":{"jT":[]},"VK":{"a7":["FP"],"cL":[]},"VL":{"a7":["FQ"]},"y3":{"Z":[],"f":[]},"O1":{"Z":[],"f":[]},"S1":{"af":[]},"S2":{"a7":["y3"]},"aPV":{"cu":[],"b_":[],"aK":[],"f":[]},"C0":{"Z":[],"f":[]},"Gw":{"b_":[],"aK":[],"f":[]},"ER":{"Z":[],"f":[]},"BY":{"Z":[],"f":[]},"C2":{"a7":["BY"],"cL":[]},"aT8":{"Z":[],"f":[]},"C1":{"a7":["C0"]},"WR":{"af":[]},"E5":{"a5":[],"kI":[]},"RH":{"aq":[],"f":[]},"ES":{"a7":["ER"]},"SY":{"b4":["fI"],"b4.T":"fI"},"WS":{"b_":[],"aK":[],"f":[]},"TP":{"aq":[],"f":[]},"wd":{"Z":[],"f":[]},"Pe":{"aq":[],"f":[]},"UB":{"jZ":["wd"],"a7":["wd"]},"aQA":{"cu":[],"b_":[],"aK":[],"f":[]},"v5":{"Z":[],"f":[]},"GX":{"a7":["v5"]},"aR0":{"cu":[],"b_":[],"aK":[],"f":[]},"Qc":{"Z":[],"f":[]},"XU":{"bv":[]},"aRp":{"cu":[],"b_":[],"aK":[],"f":[]},"Db":{"Z":[],"f":[]},"Hb":{"a7":["Db"]},"N0":{"j2":[]},"Y_":{"af":[]},"aRx":{"cu":[],"b_":[],"aK":[],"f":[]},"Hg":{"Z":[],"f":[]},"Qp":{"aq":[],"f":[]},"Y5":{"a7":["Hg"]},"Y6":{"aY":[],"aj":[],"f":[]},"Y7":{"w":[],"aB":["w"],"q":[],"ag":[]},"Y2":{"ef":[],"aj":[],"f":[]},"Y3":{"aV":[],"b5":[],"S":[]},"WA":{"w":[],"a6":["w","f8"],"q":[],"ag":[],"a6.1":"f8","a6.0":"w"},"Y1":{"aq":[],"f":[]},"Y4":{"aq":[],"f":[]},"Qr":{"aq":[],"f":[]},"F7":{"cu":[],"b_":[],"aK":[],"f":[]},"qS":{"av":["ib"],"ao":["ib"],"ao.T":"ib","av.T":"ib"},"xv":{"Z":[],"f":[]},"qR":{"aq":[],"f":[]},"Rn":{"a7":["xv"]},"Dw":{"Z":[],"f":[]},"Dx":{"a7":["Dw"]},"Yg":{"aq":[],"f":[]},"aRR":{"cu":[],"b_":[],"aK":[],"f":[]},"dC":{"fz":[]},"f3":{"fz":[]},"Fr":{"fz":[]},"XI":{"af":[]},"d3":{"bS":[]},"ig":{"bS":[]},"JG":{"bS":[]},"dj":{"bS":[]},"eJ":{"bS":[]},"c1":{"hR":[]},"dk":{"iX":[]},"dt":{"d3":[],"bS":[]},"jq":{"y":[]},"E4":{"tu":[]},"a8":{"cH":[]},"d2":{"cH":[]},"nY":{"cH":[]},"Jn":{"iI":["jk"]},"rN":{"iI":["jk"],"iI.T":"jk"},"NL":{"dV":[]},"c4":{"d3":[],"bS":[]},"k_":{"d3":[],"bS":[]},"wz":{"eE":["c4"],"d3":[],"bS":[],"eE.T":"c4"},"wA":{"eE":["k_"],"d3":[],"bS":[],"eE.T":"k_"},"eE":{"d3":[],"bS":[]},"hu":{"hR":[]},"fn":{"d3":[],"bS":[]},"fb":{"d3":[],"bS":[]},"fc":{"d3":[],"bS":[]},"vK":{"hz":[]},"YO":{"hz":[]},"ey":{"dV":[],"jP":[],"ag":[]},"Bq":{"w":[],"aB":["w"],"q":[],"ag":[]},"E3":{"af":[]},"SM":{"lf":[]},"WI":{"nh":[],"aB":["w"],"q":[],"ag":[]},"a5":{"kI":[]},"kC":{"l1":[]},"w":{"q":[],"ag":[]},"oA":{"he":["w"]},"f4":{"cp":[]},"yr":{"f4":[],"dn":["1"],"cp":[]},"i1":{"f4":[],"dn":["w"],"cp":[]},"Bu":{"cU":["w","i1"],"w":[],"a6":["w","i1"],"q":[],"ag":[],"a6.1":"i1","cU.1":"i1","a6.0":"w"},"KA":{"af":[]},"Bv":{"w":[],"aB":["w"],"q":[],"ag":[]},"ne":{"af":[]},"qj":{"w":[],"a6":["w","ia"],"q":[],"ag":[],"a6.1":"ia","a6.0":"w"},"Wh":{"w":[],"q":[],"ag":[]},"Hc":{"ne":[],"af":[]},"Ec":{"ne":[],"af":[]},"vQ":{"ne":[],"af":[]},"Bx":{"w":[],"q":[],"ag":[]},"fJ":{"f4":[],"dn":["w"],"cp":[]},"By":{"cU":["w","fJ"],"w":[],"a6":["w","fJ"],"q":[],"ag":[],"a6.1":"fJ","cU.1":"fJ","a6.0":"w"},"BB":{"w":[],"q":[],"ag":[]},"eL":{"ec":[]},"yh":{"eL":[],"ec":[]},"yd":{"eL":[],"ec":[]},"vu":{"iR":[],"eL":[],"ec":[]},"Nr":{"iR":[],"eL":[],"ec":[]},"A8":{"eL":[],"ec":[]},"xC":{"eL":[],"ec":[]},"NK":{"ec":[]},"iR":{"eL":[],"ec":[]},"yf":{"eL":[],"ec":[]},"zG":{"iR":[],"eL":[],"ec":[]},"xJ":{"eL":[],"ec":[]},"zn":{"eL":[],"ec":[]},"N6":{"af":[]},"q":{"ag":[]},"dn":{"cp":[]},"em":{"ds":[]},"F6":{"ds":[]},"lg":{"d5":[]},"ia":{"dn":["w"],"cp":[]},"kn":{"eh":[],"af":[]},"nf":{"w":[],"a6":["w","ia"],"q":[],"ag":[],"a6.1":"ia","a6.0":"w"},"nw":{"af":[]},"Bn":{"w":[],"aB":["w"],"q":[],"ag":[]},"lr":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oz":{"w":[],"aB":["w"],"q":[],"ag":[]},"BJ":{"w":[],"aB":["w"],"q":[],"ag":[]},"uI":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ot":{"w":[],"aB":["w"],"q":[],"ag":[]},"Bs":{"w":[],"aB":["w"],"q":[],"ag":[]},"BD":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ov":{"w":[],"aB":["w"],"q":[],"ag":[]},"Og":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oh":{"w":[],"aB":["w"],"q":[],"ag":[]},"yA":{"af":[]},"wu":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ol":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ok":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oj":{"w":[],"aB":["w"],"q":[],"ag":[]},"Gi":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ow":{"w":[],"aB":["w"],"q":[],"ag":[]},"Ox":{"w":[],"aB":["w"],"q":[],"ag":[]},"Om":{"w":[],"aB":["w"],"q":[],"ag":[]},"OK":{"w":[],"aB":["w"],"q":[],"ag":[]},"Op":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oy":{"w":[],"aB":["w"],"q":[],"ag":[]},"BF":{"w":[],"aB":["w"],"q":[],"jP":[],"ag":[]},"OB":{"w":[],"aB":["w"],"q":[],"ag":[]},"BA":{"w":[],"aB":["w"],"q":[],"ag":[]},"BG":{"w":[],"aB":["w"],"q":[],"ag":[]},"BE":{"w":[],"aB":["w"],"q":[],"ag":[]},"OC":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oi":{"w":[],"aB":["w"],"q":[],"ag":[]},"On":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oq":{"w":[],"aB":["w"],"q":[],"ag":[]},"Os":{"w":[],"aB":["w"],"q":[],"ag":[]},"Oo":{"w":[],"aB":["w"],"q":[],"ag":[]},"Br":{"w":[],"aB":["w"],"q":[],"ag":[]},"eh":{"af":[]},"qk":{"w":[],"aB":["w"],"q":[],"ag":[]},"BH":{"w":[],"aB":["w"],"q":[],"ag":[]},"Of":{"w":[],"aB":["w"],"q":[],"ag":[]},"BI":{"w":[],"aB":["w"],"q":[],"ag":[]},"Bz":{"w":[],"aB":["w"],"q":[],"ag":[]},"Bw":{"w":[],"aB":["w"],"q":[],"ag":[]},"ly":{"kI":[]},"v2":{"l1":[]},"lz":{"lA":[],"dn":["cz"],"cp":[]},"lB":{"k3":[],"dn":["cz"],"cp":[]},"cz":{"q":[],"ag":[]},"PL":{"he":["cz"]},"lA":{"cp":[]},"k3":{"cp":[]},"OI":{"cz":[],"aB":["w"],"q":[],"ag":[]},"OJ":{"cz":[],"aB":["w"],"q":[],"ag":[]},"v1":{"fm":[],"lA":[],"dn":["w"],"iK":[],"cp":[]},"OE":{"ql":[],"cz":[],"a6":["w","fm"],"q":[],"ag":[],"a6.1":"fm","a6.0":"w"},"OG":{"ql":[],"cz":[],"a6":["w","fm"],"q":[],"ag":[],"a6.1":"fm","a6.0":"w"},"iK":{"cp":[]},"fm":{"lA":[],"dn":["w"],"iK":[],"cp":[]},"ql":{"cz":[],"a6":["w","fm"],"q":[],"ag":[]},"BK":{"cz":[],"aB":["cz"],"q":[],"ag":[]},"OH":{"cz":[],"aB":["cz"],"q":[],"ag":[]},"dy":{"f4":[],"dn":["w"],"cp":[]},"uJ":{"cU":["w","dy"],"w":[],"a6":["w","dy"],"q":[],"ag":[],"a6.1":"dy","cU.1":"dy","a6.0":"w"},"BC":{"cU":["w","dy"],"w":[],"a6":["w","dy"],"q":[],"ag":[],"a6.1":"dy","cU.1":"dy","a6.0":"w"},"me":{"av":["fz?"],"ao":["fz?"],"ao.T":"fz?","av.T":"fz?"},"nh":{"aB":["w"],"q":[],"ag":[]},"uL":{"ik":["1"],"w":[],"a6":["cz","1"],"Bo":[],"q":[],"ag":[]},"BL":{"ik":["lB"],"w":[],"a6":["cz","lB"],"Bo":[],"q":[],"ag":[],"a6.1":"lB","ik.0":"lB","a6.0":"cz"},"OD":{"ik":["lz"],"w":[],"a6":["cz","lz"],"Bo":[],"q":[],"ag":[],"a6.1":"lz","ik.0":"lz","a6.0":"cz"},"hE":{"af":[]},"kd":{"f4":[],"dn":["w"],"cp":[]},"BM":{"cU":["w","kd"],"w":[],"a6":["w","kd"],"q":[],"ag":[],"a6.1":"kd","cU.1":"kd","a6.0":"w"},"qT":{"ap":["~"]},"Dn":{"bD":[]},"lQ":{"bU":["lQ"]},"jb":{"bU":["jb"]},"m6":{"bU":["m6"]},"uX":{"bU":["uX"]},"Xb":{"du":[]},"Cp":{"af":[]},"q0":{"bU":["uX"]},"r_":{"a0n":[]},"l7":{"hX":[]},"pr":{"hX":[]},"pq":{"hX":[]},"B5":{"bD":[]},"Av":{"bD":[]},"SP":{"dw":[]},"XJ":{"Ax":[]},"nz":{"dw":[]},"nc":{"lo":[]},"uE":{"lo":[]},"BR":{"af":[]},"t0":{"hz":[]},"u5":{"hz":[]},"n1":{"hz":[]},"yQ":{"hz":[]},"Qf":{"nC":[]},"Qe":{"nC":[]},"Qg":{"nC":[]},"vl":{"nC":[]},"Ln":{"qN":[]},"Vc":{"Dd":[]},"M_":{"eQ":[]},"M0":{"eQ":[]},"M3":{"eQ":[]},"M5":{"eQ":[]},"M2":{"eQ":[]},"M4":{"eQ":[]},"M6":{"eQ":[]},"M1":{"eQ":[]},"qY":{"fN":["wQ"],"b_":[],"aK":[],"f":[],"fN.T":"wQ"},"HO":{"b_":[],"aK":[],"f":[]},"DP":{"Z":[],"f":[]},"KR":{"aq":[],"f":[]},"R0":{"af":[]},"Z_":{"a7":["DP"]},"or":{"Z":[],"f":[]},"DR":{"b_":[],"aK":[],"f":[]},"p3":{"Z":[],"f":[]},"az0":{"b0":[]},"aMU":{"b0":[]},"aMT":{"b0":[]},"rH":{"b0":[]},"rV":{"b0":[]},"fI":{"b0":[]},"lm":{"b0":[]},"ct":{"b4":["1"]},"d8":{"b4":["1"],"b4.T":"1"},"DS":{"a7":["or"]},"EV":{"a7":["p3"]},"QR":{"b4":["az0"],"b4.T":"az0"},"yO":{"b4":["b0"],"b4.T":"b0"},"KU":{"b4":["fI"]},"O0":{"ct":["lm"],"b4":["lm"],"ct.T":"lm","b4.T":"lm"},"FG":{"ct":["1"],"wm":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"FH":{"ct":["1"],"wm":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"Eo":{"b4":["1"],"b4.T":"1"},"xs":{"Z":[],"f":[]},"Rl":{"a7":["xs"]},"Rk":{"aY":[],"aj":[],"f":[]},"xu":{"Z":[],"f":[]},"DW":{"a7":["xu"]},"xB":{"aY":[],"aj":[],"f":[]},"DN":{"Z":[],"f":[]},"HG":{"a7":["DN"],"cL":[]},"Jf":{"cL":[]},"rP":{"Z":[],"f":[]},"E0":{"a7":["rP"]},"A0":{"af":[]},"UX":{"aq":[],"f":[]},"fH":{"b_":[],"aK":[],"f":[]},"te":{"aY":[],"aj":[],"f":[]},"td":{"aY":[],"aj":[],"f":[]},"lI":{"aY":[],"aj":[],"f":[]},"th":{"aY":[],"aj":[],"f":[]},"e8":{"aY":[],"aj":[],"f":[]},"oF":{"aY":[],"aj":[],"f":[]},"A7":{"dZ":["i1"],"aK":[],"f":[],"dZ.T":"i1"},"bm":{"aY":[],"aj":[],"f":[]},"lD":{"ef":[],"aj":[],"f":[]},"qc":{"dZ":["dy"],"aK":[],"f":[],"dZ.T":"dy"},"oL":{"ef":[],"aj":[],"f":[]},"iD":{"dZ":["fJ"],"aK":[],"f":[],"dZ.T":"fJ"},"aMz":{"b_":[],"aK":[],"f":[]},"mF":{"aY":[],"aj":[],"f":[]},"ns":{"aY":[],"aj":[],"f":[]},"YF":{"fM":[],"b5":[],"S":[]},"YG":{"b_":[],"aK":[],"f":[]},"Np":{"aY":[],"aj":[],"f":[]},"Js":{"aY":[],"aj":[],"f":[]},"yC":{"aY":[],"aj":[],"f":[]},"ye":{"aY":[],"aj":[],"f":[]},"NI":{"aY":[],"aj":[],"f":[]},"NJ":{"aY":[],"aj":[],"f":[]},"Km":{"aY":[],"aj":[],"f":[]},"Ly":{"aY":[],"aj":[],"f":[]},"bx":{"aY":[],"aj":[],"f":[]},"kJ":{"aY":[],"aj":[],"f":[]},"yB":{"ef":[],"aj":[],"f":[]},"ep":{"aY":[],"aj":[],"f":[]},"Lz":{"aY":[],"aj":[],"f":[]},"ML":{"aY":[],"aj":[],"f":[]},"AS":{"aY":[],"aj":[],"f":[]},"V0":{"aV":[],"b5":[],"S":[]},"Jl":{"aY":[],"aj":[],"f":[]},"Mn":{"aY":[],"aj":[],"f":[]},"PM":{"aY":[],"aj":[],"f":[]},"v4":{"aY":[],"aj":[],"f":[]},"X8":{"aY":[],"aj":[],"f":[]},"NR":{"aq":[],"f":[]},"Lp":{"ef":[],"aj":[],"f":[]},"uN":{"ef":[],"aj":[],"f":[]},"jA":{"dZ":["fJ"],"aK":[],"f":[],"dZ.T":"fJ"},"R1":{"ef":[],"aj":[],"f":[]},"OQ":{"ef":[],"aj":[],"f":[]},"O6":{"aj":[],"f":[]},"MQ":{"aY":[],"aj":[],"f":[]},"Ay":{"aY":[],"aj":[],"f":[]},"hr":{"aY":[],"aj":[],"f":[]},"J3":{"aY":[],"aj":[],"f":[]},"N5":{"aY":[],"aj":[],"f":[]},"JC":{"aY":[],"aj":[],"f":[]},"mt":{"aY":[],"aj":[],"f":[]},"zI":{"aY":[],"aj":[],"f":[]},"jJ":{"aq":[],"f":[]},"d7":{"aq":[],"f":[]},"Kk":{"aY":[],"aj":[],"f":[]},"G5":{"w":[],"aB":["w"],"q":[],"ag":[]},"BV":{"f":[]},"BT":{"b5":[],"S":[]},"R_":{"k1":[],"ag":[]},"tl":{"aq":[],"f":[]},"ts":{"aY":[],"aj":[],"f":[]},"SI":{"af":[]},"mp":{"cu":[],"b_":[],"aK":[],"f":[]},"UY":{"aq":[],"f":[]},"KK":{"aq":[],"f":[]},"EC":{"cn":["1"]},"yM":{"Z":[],"f":[]},"ED":{"a7":["yM"]},"yN":{"aq":[],"f":[]},"mq":{"Z":[],"f":[]},"EJ":{"a7":["mq"]},"tD":{"Z":[],"f":[]},"ms":{"a7":["tD"],"cL":[]},"GA":{"Z":[],"f":[]},"m3":{"vJ":[],"dV":[]},"S5":{"aY":[],"aj":[],"f":[]},"We":{"w":[],"aB":["w"],"q":[],"ag":[]},"qL":{"bK":["cr"],"af":[]},"EK":{"ef":[],"aj":[],"f":[]},"WU":{"a7":["GA"],"aEi":[]},"lU":{"ct":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"Ht":{"ct":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"Hu":{"ct":["1"],"b4":["1"],"ct.T":"1","b4.T":"1"},"HD":{"d8":["1"],"b4":["1"],"b4.T":"1"},"X1":{"ct":["lw"],"b4":["lw"],"ct.T":"lw","b4.T":"lw"},"Sm":{"ct":["js"],"b4":["js"],"ct.T":"js","b4.T":"js"},"V9":{"ct":["le"],"b4":["le"],"ct.T":"le","b4.T":"le"},"YS":{"bK":["tg"],"af":[],"cL":[]},"Td":{"ct":["jw"],"b4":["jw"],"ct.T":"jw","b4.T":"jw"},"Te":{"ct":["jx"],"b4":["jx"],"ct.T":"jx","b4.T":"jx"},"cJ":{"af":[]},"kY":{"cJ":[],"af":[]},"Rx":{"cL":[]},"zk":{"af":[]},"p0":{"Z":[],"f":[]},"ET":{"jE":["cJ"],"b_":[],"aK":[],"f":[],"jE.T":"cJ"},"vX":{"a7":["p0"]},"zl":{"Z":[],"f":[]},"TD":{"Z":[],"f":[]},"TC":{"a7":["p0"]},"Lg":{"aq":[],"f":[]},"zm":{"Z":[],"f":[]},"ayv":{"b0":[]},"pV":{"b0":[]},"qd":{"b0":[]},"axu":{"b0":[]},"EU":{"cJ":[],"af":[]},"TE":{"a7":["zm"]},"ON":{"b4":["ayv"],"b4.T":"ayv"},"Ne":{"b4":["pV"],"b4.T":"pV"},"NU":{"b4":["qd"],"b4.T":"qd"},"yL":{"b4":["axu"],"b4.T":"axu"},"iF":{"eT":[]},"bj":{"iF":["1"],"eT":[]},"aq":{"f":[]},"Z":{"f":[]},"b5":{"S":[]},"hv":{"b5":[],"S":[]},"n3":{"b5":[],"S":[]},"fM":{"b5":[],"S":[]},"pb":{"iF":["1"],"eT":[]},"aK":{"f":[]},"dZ":{"aK":[],"f":[]},"b_":{"aK":[],"f":[]},"aj":{"f":[]},"MJ":{"aj":[],"f":[]},"aY":{"aj":[],"f":[]},"ef":{"aj":[],"f":[]},"Lf":{"aj":[],"f":[]},"yo":{"b5":[],"S":[]},"PZ":{"b5":[],"S":[]},"Bd":{"b5":[],"S":[]},"aV":{"b5":[],"S":[]},"MI":{"aV":[],"b5":[],"S":[]},"Cw":{"aV":[],"b5":[],"S":[]},"hm":{"aV":[],"b5":[],"S":[]},"OL":{"aV":[],"b5":[],"S":[]},"UW":{"b5":[],"S":[]},"UZ":{"f":[]},"i5":{"Z":[],"f":[]},"uD":{"a7":["i5"]},"ce":{"pa":["1"]},"LH":{"aq":[],"f":[]},"TK":{"aY":[],"aj":[],"f":[]},"pf":{"Z":[],"f":[]},"w3":{"a7":["pf"]},"zw":{"pU":[]},"db":{"aq":[],"f":[]},"pj":{"cu":[],"b_":[],"aK":[],"f":[]},"zC":{"Z":[],"f":[]},"F5":{"a7":["zC"],"cL":[]},"oz":{"av":["a5"],"ao":["a5"],"ao.T":"a5","av.T":"a5"},"kK":{"av":["hR"],"ao":["hR"],"ao.T":"hR","av.T":"hR"},"kN":{"av":["cH"],"ao":["cH"],"ao.T":"cH","av.T":"cH"},"oy":{"av":["ck?"],"ao":["ck?"],"ao.T":"ck?","av.T":"ck?"},"pM":{"av":["br"],"ao":["br"],"ao.T":"br","av.T":"br"},"qQ":{"av":["m"],"ao":["m"],"ao.T":"m","av.T":"m"},"xk":{"Z":[],"f":[]},"xo":{"Z":[],"f":[]},"xq":{"Z":[],"f":[]},"xr":{"Z":[],"f":[]},"xt":{"Z":[],"f":[]},"xn":{"Z":[],"f":[]},"xl":{"Z":[],"f":[]},"xp":{"Z":[],"f":[]},"yZ":{"av":["a8"],"ao":["a8"],"ao.T":"a8","av.T":"a8"},"Mh":{"Z":[],"f":[]},"tZ":{"a7":["1"]},"rL":{"a7":["1"]},"Rd":{"a7":["xk"]},"Rg":{"a7":["xo"]},"Ri":{"a7":["xq"]},"Rj":{"a7":["xr"]},"Rm":{"a7":["xt"]},"Rf":{"a7":["xn"]},"Re":{"a7":["xl"]},"Rh":{"a7":["xp"]},"rt":{"b_":[],"aK":[],"f":[]},"Mj":{"aq":[],"f":[]},"FT":{"ef":[],"aj":[],"f":[]},"U2":{"aV":[],"b5":[],"S":[]},"fN":{"b_":[],"aK":[],"f":[]},"zK":{"fM":[],"b5":[],"S":[]},"jE":{"b_":[],"aK":[],"f":[]},"w6":{"fM":[],"b5":[],"S":[]},"cu":{"b_":[],"aK":[],"f":[]},"lR":{"aq":[],"f":[]},"hK":{"aj":[],"f":[]},"yq":{"hK":["1"],"aj":[],"f":[]},"w7":{"aV":[],"b5":[],"S":[]},"MH":{"hK":["a5"],"aj":[],"f":[],"hK.0":"a5"},"Ge":{"dH":["a5","w"],"w":[],"aB":["w"],"q":[],"ag":[],"dH.0":"a5"},"Fj":{"b_":[],"aK":[],"f":[]},"pz":{"Z":[],"f":[]},"u7":{"af":[],"cL":[]},"YZ":{"fh":["DO"],"fh.T":"DO"},"KM":{"DO":[]},"Ur":{"a7":["pz"]},"ua":{"b_":[],"aK":[],"f":[]},"O9":{"aq":[],"f":[]},"UU":{"af":[]},"Uv":{"aY":[],"aj":[],"f":[]},"Wm":{"w":[],"aB":["w"],"q":[],"ag":[]},"i0":{"fN":["cM"],"b_":[],"aK":[],"f":[],"fN.T":"cM"},"Fq":{"Z":[],"f":[]},"UE":{"a7":["Fq"],"cL":[]},"uf":{"aq":[],"f":[]},"vM":{"cS":[],"cR":[]},"X9":{"aY":[],"aj":[],"f":[]},"Wr":{"w":[],"aB":["w"],"q":[],"ag":[]},"Jb":{"Z":[],"f":[]},"Rs":{"pa":["vM"]},"UI":{"aq":[],"f":[]},"Nc":{"aq":[],"f":[]},"jS":{"hs":[]},"pg":{"b_":[],"aK":[],"f":[]},"AN":{"Z":[],"f":[]},"e3":{"lt":[]},"iQ":{"a7":["AN"]},"wh":{"o_":[]},"wg":{"o_":[]},"FA":{"o_":[]},"FB":{"o_":[]},"TN":{"B":["e3"],"af":[],"B.E":"e3"},"TO":{"e0":["aO<o?,R<E>>?"],"af":[]},"dd":{"aK":[],"f":[]},"FE":{"b5":[],"S":[]},"kk":{"f4":[],"dn":["w"],"cp":[]},"Nv":{"ef":[],"aj":[],"f":[]},"wx":{"cU":["w","kk"],"w":[],"a6":["w","kk"],"q":[],"ag":[],"a6.1":"kk","cU.1":"kk","a6.0":"w"},"n_":{"af":[]},"m0":{"Z":[],"f":[]},"FF":{"a7":["m0"]},"uo":{"Z":[],"f":[]},"AX":{"a7":["uo"]},"rk":{"w":[],"a6":["w","dy"],"q":[],"ag":[],"a6.1":"dy","a6.0":"w"},"AW":{"Z":[],"f":[]},"rh":{"i_":["rh"],"i_.E":"rh"},"rl":{"b_":[],"aK":[],"f":[]},"m2":{"w":[],"aB":["w"],"q":[],"ag":[],"i_":["m2"],"i_.E":"m2"},"Gf":{"w":[],"aB":["w"],"q":[],"ag":[]},"wk":{"hK":["+(z,br,z)"],"aj":[],"f":[],"hK.0":"+(z,br,z)"},"Hi":{"ef":[],"aj":[],"f":[]},"Ya":{"aV":[],"b5":[],"S":[]},"wK":{"dy":[],"f4":[],"dn":["w"],"cp":[]},"V6":{"a7":["AW"]},"wl":{"aj":[],"f":[]},"V5":{"aV":[],"b5":[],"S":[]},"SO":{"aY":[],"aj":[],"f":[]},"Gd":{"dH":["+(z,br,z)","w"],"w":[],"aB":["w"],"q":[],"ag":[],"dH.0":"+(z,br,z)"},"zv":{"Z":[],"f":[]},"CQ":{"Z":[],"f":[]},"F_":{"a7":["zv"]},"EZ":{"af":[]},"TL":{"af":[]},"H7":{"a7":["CQ"]},"Xz":{"af":[]},"AY":{"fr":[]},"aDI":{"bQ":["1"],"eT":[]},"uq":{"aq":[],"f":[]},"i3":{"dF":["1"],"ek":["1"],"cn":["1"]},"AZ":{"i3":["1"],"dF":["1"],"ek":["1"],"cn":["1"]},"uv":{"Z":[],"f":[]},"FO":{"a7":["uv<1>"],"ayr":["1"]},"Ba":{"aq":[],"f":[]},"ux":{"b_":[],"aK":[],"f":[]},"Bj":{"Z":[],"f":[]},"lp":{"a7":["Bj"]},"Tk":{"aY":[],"aj":[],"f":[]},"Wj":{"w":[],"aB":["w"],"q":[],"jP":[],"ag":[]},"nj":{"Z":[],"f":[]},"DE":{"b_":[],"aK":[],"f":[]},"BU":{"Z":[],"f":[]},"e0":{"af":[]},"WH":{"a7":["nj"]},"Gt":{"a7":["BU"]},"c3":{"e0":["1"],"af":[]},"ja":{"c3":["1"],"e0":["1"],"af":[]},"Gr":{"ja":["1"],"c3":["1"],"e0":["1"],"af":[]},"BQ":{"ja":["1"],"c3":["1"],"e0":["1"],"af":[],"c3.T":"1","ja.T":"1"},"BP":{"ja":["J"],"c3":["J"],"e0":["J"],"af":[],"c3.T":"J","ja.T":"J"},"OU":{"Z":[],"f":[]},"aXW":{"b_z":["ap<J>"]},"wB":{"a7":["OU<1>"]},"WQ":{"b_":[],"aK":[],"f":[]},"WE":{"c3":["nl?"],"e0":["nl?"],"af":[],"c3.T":"nl?"},"Ft":{"fN":["nZ"],"b_":[],"aK":[],"f":[],"fN.T":"nZ"},"wf":{"Z":[],"f":[]},"kj":{"a7":["wf<1>"]},"up":{"cn":["1"]},"ek":{"cn":["1"]},"SZ":{"b4":["fI"],"b4.T":"fI"},"dF":{"ek":["1"],"cn":["1"]},"B9":{"dF":["1"],"ek":["1"],"cn":["1"]},"nb":{"dF":["1"],"ek":["1"],"cn":["1"]},"uO":{"aq":[],"f":[]},"uQ":{"iI":["1"],"iI.T":"1"},"C5":{"b_":[],"aK":[],"f":[]},"C6":{"af":[]},"wC":{"Z":[],"f":[]},"rm":{"bQ":["eT"],"eT":[],"bQ.T":"eT"},"GO":{"a7":["wC"]},"fk":{"hj":[],"fr":[]},"qv":{"fk":[],"hj":[],"fr":[]},"no":{"fk":[],"hj":[],"fr":[]},"jR":{"fk":[],"hj":[],"fr":[]},"iW":{"fk":[],"hj":[],"fr":[]},"QH":{"fk":[],"hj":[],"fr":[]},"GD":{"b_":[],"aK":[],"f":[]},"m_":{"i_":["m_"],"i_.E":"m_"},"C8":{"Z":[],"f":[]},"Pb":{"a7":["C8"]},"lu":{"hE":[],"af":[]},"qr":{"fr":[]},"C9":{"lu":[],"hE":[],"af":[]},"Pc":{"aq":[],"f":[]},"KB":{"aq":[],"f":[]},"JI":{"aq":[],"f":[]},"MO":{"aq":[],"f":[]},"LM":{"aq":[],"f":[]},"Ca":{"Z":[],"f":[]},"GF":{"b_":[],"aK":[],"f":[]},"qw":{"a7":["Ca"]},"GH":{"Z":[],"f":[]},"WX":{"a7":["GH"]},"GG":{"af":[]},"WW":{"aY":[],"aj":[],"f":[]},"Gm":{"w":[],"aB":["w"],"q":[],"ag":[]},"WF":{"c3":["P?"],"e0":["P?"],"af":[],"c3.T":"P?"},"ev":{"b0":[]},"C4":{"ct":["ev"],"b4":["ev"],"ct.T":"ev","b4.T":"ev"},"uF":{"Z":[],"f":[]},"ko":{"fU":[],"cS":[],"cR":[]},"o8":{"hD":[],"h8":[],"cS":[],"cR":[]},"nT":{"hf":[],"h8":[],"cS":[],"cR":[]},"uS":{"af":[]},"jZ":{"a7":["1"]},"aQH":{"Z":[],"f":[]},"va":{"af":[]},"uh":{"af":[]},"qx":{"Z":[],"f":[]},"uV":{"b_":[],"aK":[],"f":[]},"X5":{"eh":[],"a7":["qx"],"af":[]},"Pf":{"af":[]},"Ct":{"Z":[],"f":[]},"Xf":{"a7":["Ct"]},"Xg":{"fN":["E"],"b_":[],"aK":[],"f":[],"fN.T":"E"},"ad":{"v_":[]},"qE":{"Z":[],"f":[]},"Cu":{"Z":[],"f":[]},"v0":{"af":[]},"GV":{"a7":["qE"]},"Cv":{"af":[]},"GU":{"a7":["Cu"]},"Xj":{"b_":[],"aK":[],"f":[]},"wE":{"aY":[],"aj":[],"f":[]},"Pw":{"aq":[],"f":[]},"Xo":{"aV":[],"b5":[],"S":[]},"Go":{"w":[],"aB":["w"],"Bo":[],"q":[],"ag":[]},"Py":{"hj":[]},"Pz":{"aY":[],"aj":[],"f":[]},"Ws":{"w":[],"aB":["w"],"q":[],"ag":[]},"PN":{"aj":[],"f":[]},"ny":{"aj":[],"f":[]},"CB":{"ny":[],"aj":[],"f":[]},"PK":{"ny":[],"aj":[],"f":[]},"v3":{"aV":[],"b5":[],"S":[]},"A_":{"dZ":["iK"],"aK":[],"f":[],"dZ.T":"iK"},"CC":{"eY":["1","2"],"aj":[],"f":[]},"CD":{"aV":[],"b5":[],"S":[]},"CE":{"af":[]},"PQ":{"aY":[],"aj":[],"f":[]},"wy":{"w":[],"aB":["w"],"q":[],"ag":[]},"PP":{"af":[]},"EA":{"af":[]},"Q2":{"aq":[],"f":[]},"CW":{"Z":[],"f":[]},"XH":{"a7":["CW"]},"LY":{"fg":[]},"LZ":{"fg":[]},"M9":{"fg":[]},"Mb":{"fg":[]},"M8":{"fg":[]},"Ma":{"fg":[]},"Mc":{"fg":[]},"M7":{"fg":[]},"uK":{"w":[],"aB":["w"],"q":[],"ag":[]},"ng":{"w":[],"aB":["w"],"q":[],"ag":[]},"vn":{"aY":[],"aj":[],"f":[]},"Q9":{"aY":[],"aj":[],"f":[]},"T9":{"cR":[]},"D4":{"aY":[],"aj":[],"f":[]},"tv":{"cu":[],"b_":[],"aK":[],"f":[]},"aMC":{"cu":[],"b_":[],"aK":[],"f":[]},"GL":{"Z":[],"f":[]},"V_":{"aq":[],"f":[]},"d":{"aq":[],"f":[]},"X4":{"a7":["GL"]},"WL":{"aq":[],"f":[]},"X3":{"af":[]},"yP":{"b0":[]},"oR":{"b0":[]},"oT":{"b0":[]},"oS":{"b0":[]},"yK":{"b0":[]},"kS":{"b0":[]},"kV":{"b0":[]},"oZ":{"b0":[]},"oW":{"b0":[]},"oX":{"b0":[]},"hb":{"b0":[]},"mu":{"b0":[]},"kW":{"b0":[]},"kU":{"b0":[]},"oY":{"b0":[]},"kT":{"b0":[]},"lv":{"b0":[]},"lw":{"b0":[]},"js":{"b0":[]},"le":{"b0":[]},"nd":{"b0":[]},"iT":{"b0":[]},"nG":{"b0":[]},"id":{"b0":[]},"nE":{"b0":[]},"jw":{"b0":[]},"jx":{"b0":[]},"KT":{"b0":[]},"f8":{"f4":[],"dn":["w"],"cp":[]},"o2":{"Z":[],"f":[]},"GM":{"Z":[],"f":[]},"Dh":{"Z":[],"f":[]},"GP":{"a7":["o2"]},"GN":{"a7":["GM"]},"Hf":{"a7":["Dh"]},"yj":{"bK":["tg"],"af":[],"cL":[]},"Do":{"Z":[],"f":[]},"EN":{"b_":[],"aK":[],"f":[]},"Yc":{"a7":["Do"]},"S6":{"af":[]},"Ds":{"Z":[],"f":[]},"Ye":{"a7":["Ds"]},"xw":{"Z":[],"f":[]},"cY":{"aY":[],"aj":[],"f":[]},"DV":{"a7":["xw"]},"PH":{"Z":[],"f":[]},"Ar":{"Z":[],"f":[]},"OX":{"Z":[],"f":[]},"OT":{"Z":[],"f":[]},"PA":{"Z":[],"f":[]},"KD":{"Z":[],"f":[]},"jM":{"Z":[],"f":[]},"Ja":{"Z":[],"f":[]},"vz":{"Z":[],"f":[]},"vA":{"a7":["vz<1>"]},"DD":{"bK":["vB"],"af":[]},"kc":{"Z":[],"f":[]},"wO":{"a7":["kc<1>"]},"vF":{"Z":[],"f":[]},"rs":{"b_":[],"aK":[],"f":[]},"FM":{"b_":[],"aK":[],"f":[]},"HC":{"a7":["vF"],"cL":[]},"Oa":{"aq":[],"f":[]},"FW":{"aj":[],"f":[]},"FV":{"aV":[],"b5":[],"S":[]},"rg":{"f":[]},"QM":{"rg":[],"f":[]},"QL":{"aq":[],"f":[]},"UN":{"b5":[],"S":[]},"EB":{"iF":["1"],"eT":[]},"DI":{"ef":[],"aj":[],"f":[]},"YQ":{"aV":[],"b5":[],"S":[]},"Pv":{"ef":[],"aj":[],"f":[]},"vJ":{"dV":[]},"YT":{"dZ":["ia"],"aK":[],"f":[],"dZ.T":"ia"},"RC":{"aY":[],"aj":[],"f":[]},"Gl":{"w":[],"aB":["w"],"q":[],"ag":[]},"c6":{"nK":[]},"Rt":{"nK":[]},"QU":{"y":[],"bG":["y"]},"wP":{"y":[],"bG":["y"]},"QV":{"dw":[],"bG":["dw"]},"HE":{"dw":[],"bG":["dw"]},"QT":{"aI":[],"bG":["aI?"]},"Ul":{"bG":["aI?"]},"io":{"aI":[],"bG":["aI?"]},"QW":{"m":[],"bG":["m"]},"YW":{"m":[],"bG":["m"]},"Fg":{"bG":["1?"]},"bB":{"bG":["1"]},"f0":{"bG":["1"]},"aX":{"bG":["1"]},"QX":{"bK":["b8<c6>"],"af":[]},"Ng":{"bV":[]},"tP":{"bV":[]},"tG":{"bV":[]},"fV":{"fR":[]},"LD":{"fR":[]},"Lh":{"fR":[]},"Ki":{"fR":[]},"LE":{"bD":[]},"Mo":{"bD":[]},"QF":{"bD":[]},"Pt":{"bD":[]},"LF":{"bD":[]},"OM":{"bD":[]},"Jy":{"a1I":[]},"JM":{"a1I":[]},"oB":{"ei":["R<n>"],"ei.T":"R<n>"},"oG":{"bD":[]},"Q1":{"CP":[]},"y0":{"bI":["o","o","1"],"aO":["o","1"],"bI.V":"1","bI.K":"o","bI.C":"o"},"pC":{"Z":[],"f":[]},"Mz":{"aq":[],"f":[]},"hF":{"aq":[],"f":[]},"Uw":{"a7":["pC"]},"CH":{"Z":[],"f":[]},"xj":{"Z":[],"f":[]},"Xw":{"a7":["CH"]},"DT":{"a7":["xj"]},"LT":{"aq":[],"f":[]},"Aj":{"Z":[],"f":[]},"Fk":{"a7":["Aj"]},"B2":{"Z":[],"f":[]},"FL":{"a7":["B2"]},"uy":{"aq":[],"f":[]},"Cs":{"Z":[],"f":[]},"GR":{"a7":["Cs"]},"D5":{"Z":[],"f":[]},"XT":{"a7":["D5"]},"ot":{"Z":[],"f":[]},"Ru":{"a7":["ot"]},"Rc":{"af":[]},"nm":{"Z":[],"f":[]},"GB":{"a7":["nm"]},"OY":{"dD":[]},"OZ":{"dD":[]},"P_":{"dD":[]},"P0":{"dD":[]},"P1":{"dD":[]},"P2":{"dD":[]},"P3":{"dD":[]},"P4":{"dD":[]},"P5":{"dD":[]},"NG":{"bD":[]},"Lm":{"iY":[],"bU":["iY"]},"vW":{"lC":[],"bU":["PU"]},"iY":{"bU":["iY"]},"PT":{"iY":[],"bU":["iY"]},"PU":{"bU":["PU"]},"PV":{"bU":["PU"]},"PW":{"bD":[]},"v7":{"eq":[],"bD":[]},"v8":{"bU":["PU"]},"lC":{"bU":["PU"]},"Q3":{"eq":[],"bD":[]},"aOL":{"Z":[],"f":[]},"aNb":{"Z":[],"f":[]},"aNc":{"a7":["aNb"]},"aTd":{"b_":[],"aK":[],"f":[]},"aSg":{"b_":[],"aK":[],"f":[]},"axD":{"fr":[]}}'))
 A.aTm(v.typeUniverse,JSON.parse('{"MG":1,"nJ":1,"PF":1,"PG":1,"L7":1,"Lv":1,"ze":1,"QE":1,"vC":1,"HW":2,"yp":1,"ee":1,"cC":1,"uk":1,"vb":1,"abH":1,"kf":1,"jd":1,"CO":1,"RB":1,"r2":1,"H6":1,"SQ":1,"r4":1,"wp":1,"vV":1,"Xy":1,"YM":2,"Ak":2,"H_":2,"GZ":2,"H0":1,"H1":1,"Hs":2,"JX":1,"wG":1,"bU":1,"o9":1,"z9":1,"KH":1,"xA":1,"tj":1,"Ek":1,"El":1,"Em":1,"B_":1,"HR":1,"Ep":1,"bK":1,"ju":1,"yH":1,"B0":2,"Fo":1,"wR":1,"yr":1,"En":1,"MF":1,"dn":1,"eu":1,"Bp":1,"yA":1,"wu":1,"Gi":1,"uL":1,"Ha":1,"I7":1,"I8":1,"mi":1,"KX":1,"tZ":1,"rL":1,"w5":1,"yq":1,"Qw":1,"KL":1,"aDI":1,"e0":1,"iU":1,"Gr":1,"wS":1,"ayr":1,"up":1,"MR":1,"B9":1,"rf":1,"wt":1,"CC":2,"GW":2,"eX":1,"dr":1,"Hn":1}'))
 var u={S:"\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\x00\u03f6\x00\u0404\u03f4 \u03f4\u03f6\u01f6\u01f6\u03f6\u03fc\u01f4\u03ff\u03ff\u0584\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u05d4\u01f4\x00\u01f4\x00\u0504\u05c4\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0400\x00\u0400\u0200\u03f7\u0200\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u03ff\u0200\u0200\u0200\u03f7\x00",t:"\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x00\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01(<<\xb4\x8c\x15(PdxPP\xc8<<<\xf1\xf0\x01\x01)==\xb5\x8d\x15(PeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(PdyPQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QdxPP\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u011a==\xf1\xf0\xf0\xf0\xf0\xf0\xf0\xdc\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\xf0\x01\x01)==\u0156\x8d\x15(QeyQQ\xc9===\xf1\xf0\x01\x01)==\xb5\x8d\x15(QeyQQ\xc9\u012e\u012e\u0142\xf1\xf0\x01\x01)==\xa1\x8d\x15(QeyQQ\xc9===\xf1\xf0\x00\x00(<<\xb4\x8c\x14(PdxPP\xc8<<<\xf0\xf0\x01\x01)==\xb5\x8d\x15)QeyQQ\xc9===\xf0\xf0??)\u0118=\xb5\x8c?)QeyQQ\xc9=\u0118\u0118?\xf0??)==\xb5\x8d?)QeyQQ\xc9\u012c\u012c\u0140?\xf0??)==\xb5\x8d?)QeyQQ\xc8\u0140\u0140\u0140?\xf0\xdc\xdc\xdc\xdc\xdc\u0168\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\xdc\x00\xa1\xa1\xa1\xa1\xa1\u0154\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\xa1\x00",e:"\x10\x10\b\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x10\x10\x10\x02\x02\x02\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x02\x02\x02\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x04\x10\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x06\x06\x06\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\x10\x04\x04\x04\x04\x02\x10\x10\x10\x02\x10\x10\x10\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x0e\x0e\x0e\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x02\x10\x10\x04\x04\x10\x10\x02\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x10\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x11\x04\x04\x02\x10\x10\x10\x10\x10\x10\x10\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\r\f\r\r\r\r\r\r\r\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x02\x02\x02\x02\x04\x10\x10\x10\x10\x02\x04\x04\x04\x02\x04\x04\x04\x11\b\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x01\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\x02\x02\x02\x04\x04\x10\x04\x04\x10\x04\x04\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x02\x0e\x0e\x02\x0e\x0e\x0e\x0e\x0e\x02\x02\x10\x02\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x02\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x0e\x0e\x02\x0e\n\n\n\n\n\n\n\x02\x02\x02\x02\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\v\x10\x10\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x10\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x02\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x02\x10\x10\x02\x04\x04\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x04\x04\x02\x04\x04\x02\x02\x10\x10\x10\x10\b\x04\b\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x02\x02\x10\x10\x04\x04\x04\x04\x10\x02\x02\x02\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x07\x01\x01\x00\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x04\x04\x10\x10\x04\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\b\x02\x10\x10\x10\x10\x02\x10\x10\x10\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x04\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x04\x10\x10\x04\x04\x04\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x03\x0f\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x01\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x10\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x02\x10\x02\x04\x04\x04\x04\x04\x04\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x04\x10\x10\x10\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x10\x02\x10\x04\x04\x02\x02\x02\x04\x04\x04\x02\x04\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x10\x04\x10\x04\x04\x04\x04\x02\x02\x04\x04\x02\x02\x04\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x02\x10\x02\x02\x10\x02\x10\x10\x10\x04\x02\x04\x04\x10\x10\x10\b\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x10\x10\x02\x02\x02\x02\x10\x10\x02\x02\x10\x10\x10\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x10\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x04\x04\x10\x10\x04\x04\x04\x02\x02\x02\x02\x04\x04\x10\x04\x04\x04\x04\x04\x04\x10\x10\x10\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x0e\x10\x04\x10\x02\x04\x04\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\b\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x01\x10\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x02\x02\x04\x04\x04\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x10\x02\x02\x10\x10\x10\x10\x04\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x10\x10\x10\x10\x10\x10\x04\x10\x04\x04\x10\x04\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x04\x10\x10\x10\x04\x04\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x10\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\x05\b\b\b\b\b\b\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x01\x02\x02\x02\x10\x10\x02\x10\x10\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x02\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\b\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\b\b\b\b\b\b\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x10\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\n\x02\x02\x02\n\n\n\n\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x02\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x06\x02\x06\x02\x06\x02\x02\x02\x02\x02\x02\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x06\x06\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x10\x02\x10\x02\x02\x02\x02\x04\x04\x04\x04\x04\x04\x04\x04\x10\x10\x10\x10\x10\x10\x10\x10\x04\x04\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x10\x02\x04\x10\x10\x10\x10\x10\x10\x10\x10\x10\x02\x02\x02\x04\x10\x10\x10\x10\x10\x02\x10\x10\x04\x02\x04\x04\x11\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x04\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x02\x04\x10\x10\x04\x04\x02\x02\x02\x02\x02\x04\x10\x02\x02\x02\x02\x02\x02\x02\x02\x02",U:"\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf1\xf0\x15\x01)))\xb5\x8d\x00=Qeyey\xc9)))\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01(((\xb4\x8c\x01<Pdxdx\xc8(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Pdydx\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qdxey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qexey\xc9(((\xf1\xf0\x15\x01)\x8c(\xb5\x8d\x01=Qeyey\xc9\xa0\x8c\x8c\xf1\xf0\x15\x01)((\xb5\x8c\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)(((\x8d\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc9\xc8\xc8\xdc\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\xc8\xdc\xdc\xdc\xf1\xf0\x14\x00(((\xb4\x8c\x00<Pdxdx\xc8(((\xf0\xf0\x15\x01)))\xb5\x8d\x01=Qeyey\xc9)))\xf0\xf0\x15\x01(\u01b8(\u01e0\x8d\x01<Pdxdx\xc8\u012c\u0140\u0154\xf0\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u012e\u0168\u0140\u0154\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\u0142\u017c\u0154\u0154\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u012e\u0190\u0190\u01a4\xf1\xf0\x15\x01)((\xb5\x8d\x01=Qeyey\u0142\u01a4\u01a4\u01a4\xf1\xf0\x15\x01)\u01b8(\xb5\x8d\x01=Qeyey\xc9\u01cc\u01b8\u01b8\xf1\xf0\x15\x01)((\xb5\u011a\x01=Qeyey\xc9(((\xf1\xf0\x15\x01)((\u0156\x8d\x01=Qeyey\xc9(((\xf1\xf0",D:" must not be greater than the number of characters in the file, ",r:'"recorder" must not already be associated with another Canvas.',T:"% of the way to being a CircleBorder that is ",z:"ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/",q:"Called rasterize() with a different number of canvases and pictures.",A:"Cannot extract a file path from a URI with a fragment component",B:"Cannot extract a file path from a URI with a query component",Q:"Cannot extract a non-Windows file path from a file URI with an authority",c:"Cannot fire new event. Controller is already firing an event",l:"Error handler must accept one Object or one Object and a StackTrace as arguments, and return a value of the returned future's type",V:"Stream has been disposed.\nAn ImageStream is considered disposed once at least one listener has been added and subsequently all listeners have been removed and no handles are outstanding from the keepAlive method.\nTo resolve this error, maintain at least one listener on the stream, or create an ImageStreamCompleterHandle from the keepAlive method, or create a new stream for the image.",p:"SystemChrome.setApplicationSwitcherDescription",s:"TextInputClient.updateEditingStateWithDeltas",w:"TextInputClient.updateEditingStateWithTag",i:"The downloaded CanvasKit version does not support WebParagraph",u:"There was a problem trying to load FontManifest.json",K:"Windowing APIs are not enabled.\n\nWindowing APIs are currently experimental. Do not use windowing APIs in\nproduction applications or plugins published to pub.dev.\n\nTo try experimental windowing APIs:\n1. Switch to Flutter's main release channel.\n2. Turn on the windowing feature flag.\n\nSee: https://github.com/flutter/flutter/issues/30701.\n",C:"while dispatching notifications for WidgetsBindingObserver.didPushRouteInformation",j:"\u1132\u166c\u166c\u206f\u11c0\u13fb\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u1bff\u1c36\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1aee\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1fb5\u059c\u266d\u166c\u264e\u166c\u0a70\u175c\u166c\u166c\u1310\u033a\u1ebd\u0a6b\u2302\u166c\u166c\u22fc\u166c\u1ef8\u269d\u132f\u03b8\u166c\u1be8\u166c\u0a71\u0915\u1f5a\u1f6f\u04a2\u0202\u086b\u021a\u029a\u1427\u1518\u0147\u1eab\u13b9\u089f\u08b6\u2a91\u02d8\u086b\u0882\u08d5\u0789\u176a\u251c\u1d6c\u166c\u0365\u037c\u02ba\u22af\u07bf\u07c3\u0238\u024b\u1d39\u1d4e\u054a\u22af\u07bf\u166c\u1456\u2a9f\u166c\u07ce\u2a61\u166c\u166c\u2a71\u1ae9\u166c\u0466\u2a2e\u166c\u133e\u05b5\u0932\u1766\u166c\u166c\u0304\u1e94\u1ece\u1443\u166c\u166c\u166c\u07ee\u07ee\u07ee\u0506\u0506\u051e\u0526\u0526\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u196b\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1798\u1657\u046c\u046c\u166c\u0348\u146f\u166c\u0578\u166c\u166c\u166c\u22ac\u1763\u166c\u166c\u166c\u1f3a\u166c\u166c\u166c\u166c\u166c\u166c\u0482\u166c\u1364\u0322\u166c\u0a6b\u1fc6\u166c\u1359\u1f1f\u270e\u1ee3\u200e\u148e\u166c\u1394\u166c\u2a48\u166c\u166c\u166c\u166c\u0588\u137a\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u13a9\u13e8\u2574\u12b0\u166c\u166c\u0a6b\u1c35\u166c\u076b\u166c\u166c\u25a6\u2a23\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0747\u2575\u166c\u166c\u2575\u166c\u256e\u07a0\u166c\u166c\u166c\u166c\u166c\u166c\u257b\u166c\u166c\u166c\u166c\u166c\u166c\u0757\u255d\u0c6d\u0d76\u28f0\u28f0\u28f0\u29ea\u28f0\u28f0\u28f0\u2a04\u2a19\u027a\u2693\u2546\u0832\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u074d\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u084c\u166c\u081e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u165a\u166c\u166c\u166c\u174d\u166c\u166c\u166c\u1bff\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0261\u166c\u166c\u0465\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u2676\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u26a4\u196a\u166c\u166c\u046e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1f13\u12dd\u166c\u166c\u14de\u12ea\u1306\u02f2\u166c\u2a62\u0563\u07f1\u200d\u1d8e\u198c\u1767\u166c\u13d0\u1d80\u1750\u166c\u140b\u176b\u2ab4\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u080e\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04d2\u04d6\u04da\u04c2\u04c6\u04ca\u04ce\u04f6\u08f5\u052a\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u174e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1c36\u1c36\u166c\u166c\u166c\u166c\u166c\u206f\u166c\u166c\u166c\u166c\u196a\u166c\u166c\u12c0\u166c\u166f\u168c\u1912\u166c\u166c\u166c\u166c\u166c\u166c\u0399\u166c\u166c\u1786\u2206\u22bc\u1f8e\u1499\u245b\u1daa\u2387\u20b4\u1569\u2197\u19e6\u0b88\u26b7\u166c\u09e9\u0ab8\u1c46\x00\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u205e\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1868\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1898\u1ac1\u166c\u2754\u166c\u0114\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166cc\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1bff\u166c\u0661\u1627\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u0918\u166c\u166c\u166c\u166c\u166c\u05c6\u1ac1\u16be\u166c\u1af8\u21c3\u166c\u166c\u1a21\u1aad\u166c\u166c\u166c\u166c\u166c\u166c\u28f0\u254e\u0d89\u0f41\u28f0\u0efb\u0e39\u27e0\u0c7c\u28a9\u28f0\u166c\u28f0\u28f0\u28f0\u28f2\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u1140\u103c\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u11c0\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c\u166c"}
 var t=(function rtii(){var s=A.at
-return{S6:s("@<nK>"),vH:s("aLg"),od:s("b4<b0>"),gj:s("aLk<E>"),pC:s("fz"),so:s("bp<h>"),B:s("bp<P>"),Bs:s("bp<y?>"),ph:s("xB<k5>"),qH:s("aLq"),s1:s("xF"),vp:s("ou"),S7:s("xI"),jo:s("a0n"),Ak:s("mh"),u2:s("a0u"),Al:s("mj<E?>"),m_:s("ck"),k:s("a5"),q:s("f4"),pI:s("jo"),V4:s("cO"),wY:s("d8<rH>"),nz:s("d8<rV>"),OX:s("d8<fI>"),fN:s("d8<nd>"),Tx:s("d8<iT>"),fn:s("d8<ev>"),j5:s("d8<nE>"),_n:s("d8<nG>"),ZQ:s("d8<id>"),CP:s("oC"),Am:s("aLM"),WG:s("y0<o>"),d0:s("dl<cn<@>?,cn<@>>"),aL:s("aLV"),oV:s("t4"),Lh:s("y4"),PO:s("y7"),Ub:s("h6"),m6:s("y9"),Bn:s("ta"),S3:s("ya"),BQ:s("tb"),nR:s("yc"),Hz:s("fC"),hP:s("eK"),G:s("y"),IC:s("dS"),b8:s("bU<@>"),v4:s("Kl<pA>"),Ss:s("dm"),id:s("mm"),qO:s("oM<CV,@>"),li:s("bM<o,o>"),eL:s("bM<o,n>"),VJ:s("bM<o,R<o>>"),fF:s("fD<o>"),Nq:s("kI"),vn:s("ys"),pU:s("a6<q,dn<q>>"),ho:s("yu"),H5:s("aMp"),HY:s("hP"),ip:s("yC"),I7:s("tr"),Hw:s("hR"),u5:s("tu"),l4:s("aMz"),Uf:s("mp"),XP:s("aMC"),yS:s("tv"),Je:s("aYd"),EX:s("du"),jh:s("yJ"),I:s("fH"),ra:s("aYe"),xm:s("fI"),Jj:s("aMQ"),YH:s("KZ<aR>"),uL:s("h9"),zk:s("tC"),Tu:s("aS"),ML:s("dD"),A0:s("cH"),Zi:s("jw"),Rz:s("jx"),Ee:s("az<@>"),Q:s("b5"),dq:s("aNq"),GB:s("aYh"),lz:s("kP"),ay:s("kQ"),sB:s("bC"),Lt:s("bV"),VI:s("bD"),IX:s("eM<jb,bY>"),bh:s("oW"),oB:s("oX"),_w:s("kS"),HH:s("kT"),OO:s("hb"),cP:s("kU"),b5:s("oY"),P9:s("kV"),eI:s("oZ"),Ie:s("tO"),PA:s("zb"),Q9:s("aNH"),US:s("fJ"),N8:s("zf"),s4:s("a5h"),OE:s("a5i"),Kw:s("a5v"),mx:s("cJ"),l5:s("kY"),zq:s("tQ"),ia:s("p4"),VW:s("p5"),FK:s("fK"),jT:s("zq"),c4:s("jC"),bE:s("eq"),Uy:s("a5O"),_8:s("l0"),Z9:s("ap<nv>"),Ev:s("ap<J>()"),L0:s("ap<@>"),T8:s("ap<cO?>"),uz:s("ap<~>"),Fp:s("dv<v_,b0>"),pl:s("dv<n,y>"),Lu:s("eN<jX>"),Nf:s("mB"),SP:s("tS"),cD:s("cS"),uA:s("ce<iB>"),C1:s("ce<iE>"),Uv:s("ce<hf>"),jn:s("ce<iM>"),YC:s("ce<iS>"),hg:s("ce<k6>"),Qm:s("ce<k7>"),UN:s("ce<fU>"),ok:s("ce<hD>"),lh:s("ce<nT>"),Bk:s("ce<ko>"),Pw:s("ce<o8>"),xR:s("pa<cS>"),yi:s("iF<a7<Y>>"),TX:s("pb<iQ>"),bT:s("pb<a7<Y>>"),rQ:s("aYw"),GF:s("eP<jI(hX)>"),PD:s("eP<~()>"),op:s("eP<~(my)>"),bq:s("hd"),G7:s("LR<Ha<@>>"),rA:s("pf"),mS:s("pg"),AL:s("he<ag>"),Fn:s("l1"),zE:s("ag"),Lk:s("aCH"),g5:s("zB"),Oh:s("pj"),lu:s("aCJ"),dW:s("hg"),SG:s("mH"),Bc:s("mI<b5?>"),ri:s("zJ"),IS:s("fM"),og:s("cu"),WB:s("b_"),U1:s("hW"),lA:s("aOl"),JZ:s("a7L"),XO:s("a7M"),pT:s("a7N"),gD:s("mK"),C:s("b0"),nQ:s("mL"),Ya:s("u0"),ud:s("cf"),JY:s("B<@>"),VG:s("B<E?>"),lY:s("C<aLk<E>>"),QP:s("C<iv>"),NS:s("C<cF>"),tM:s("C<ox>"),sq:s("C<dk>"),I0:s("C<JO>"),gb:s("C<jo>"),Qh:s("C<oC>"),AT:s("C<tb>"),s8:s("C<aBI>"),t_:s("C<y>"),EV:s("C<mm>"),KV:s("C<eL>"),kQ:s("C<fE>"),ZD:s("C<da>"),D:s("C<du>"),vl:s("C<fH>"),Up:s("C<L_>"),lX:s("C<b5>"),LE:s("C<Lb>"),XS:s("C<tO>"),bp:s("C<cJ>"),z8:s("C<p5>"),uf:s("C<jC>"),no:s("C<mA>"),wQ:s("C<ap<p4>>"),Rh:s("C<ap<+(o,fK?)>>"),mo:s("C<ap<~>>"),iQ:s("C<cR>"),DU:s("C<hd>"),om:s("C<he<ag>>"),kr:s("C<fg>"),XZ:s("C<hg>"),Fa:s("C<fM>"),fJ:s("C<cu>"),VB:s("C<jF>"),VO:s("C<dV>"),O_:s("C<l5>"),O:s("C<aR>"),DS:s("C<eb>"),K0:s("C<hX>"),CE:s("C<jI>"),k5:s("C<es>"),k_:s("C<ME>"),HU:s("C<hi>"),xj:s("C<a8o>"),s9:s("C<A7>"),Y4:s("C<hY>"),MH:s("C<pt>"),_f:s("C<pu>"),ER:s("C<mS>"),X_:s("C<R<dx>>"),fQ:s("C<R<ds>>"),zg:s("C<R<P>>"),Zb:s("C<R<n>>"),Eo:s("C<af>"),H8:s("C<MP>"),ss:s("C<py>"),a9:s("C<fh<@>>"),IO:s("C<fh<E?>>"),en:s("C<i>"),m0:s("C<aO<o,o>>"),H7:s("C<aO<o,@>>"),Xr:s("C<br>"),YE:s("C<iP>"),tc:s("C<pU>"),Qg:s("C<ho>"),jl:s("C<E>"),Rd:s("C<ac8>"),sF:s("C<AU>"),wi:s("C<n_>"),g8:s("C<aDI<@>>"),Ql:s("C<jS<~>>"),zY:s("C<ur>"),OM:s("C<n3<cp>>"),Uz:s("C<fR>"),v:s("C<cK>"),RR:s("C<jV>"),tg:s("C<B3>"),tZ:s("C<us>"),D9:s("C<i4>"),RW:s("C<uz>"),L7:s("C<+representation,targetSize(Cy,z)>"),Co:s("C<+(o,DF)>"),lN:s("C<+data,event,timeStamp(R<i4>,aR,aS)>"),Nt:s("C<+domSize,representation,targetSize(z,Cy,z)>"),AO:s("C<t>"),Pc:s("C<qh>"),Ik:s("C<w>"),xT:s("C<ne>"),TT:s("C<q>"),Ry:s("C<cz>"),QT:s("C<dq>"),Fm:s("C<lt>"),y8:s("C<C3>"),ZP:s("C<lu>"),D1:s("C<eh>"),u1:s("C<qz>"),JO:s("C<fT>"),q1:s("C<dx>"),QF:s("C<bY>"),o4:s("C<Pq>"),Qo:s("C<qC>"),Ay:s("C<aEn>"),kO:s("C<iX>"),N_:s("C<bS>"),Gl:s("C<vb<~>>"),s:s("C<o>"),oU:s("C<aRd>"),PL:s("C<vf>"),bt:s("C<vg>"),Lx:s("C<e2>"),bG:s("C<D9>"),sD:s("C<nC>"),VS:s("C<qN>"),zs:s("C<Qm>"),AS:s("C<qO>"),Ne:s("C<ey>"),FO:s("C<k9<k9<@>>>"),LX:s("C<DF>"),Uu:s("C<ie>"),p:s("C<f>"),GA:s("C<cL>"),my:s("C<qX>"),Na:s("C<nM>"),SW:s("C<RD>"),TV:s("C<lQ>"),Kj:s("C<vU>"),_Y:s("C<fa>"),mz:s("C<Uc>"),Kx:s("C<j8>"),zj:s("C<m0>"),IR:s("C<azg>"),m3:s("C<wo>"),jE:s("C<kl>"),qi:s("C<dM>"),z_:s("C<em>"),uD:s("C<e3>"),M6:s("C<Gv>"),s6:s("C<m3>"),lb:s("C<kn>"),bd:s("C<ds>"),YK:s("C<jb>"),Z5:s("C<aT8>"),cR:s("C<wL>"),NM:s("C<m6>"),HZ:s("C<J>"),n:s("C<P>"),ee:s("C<@>"),t:s("C<n>"),L:s("C<i?>"),ef:s("C<E?>"),iG:s("C<w?>"),ny:s("C<cn<@>?>"),Fi:s("C<bS?>"),_m:s("C<o?>"),Z:s("C<n?>"),a0:s("C<d1>"),Zt:s("C<ap<J>()>"),iL:s("C<ei<hY>()>"),sA:s("C<J(hX)>"),qj:s("C<~()>"),SM:s("C<~(E,df?)>"),e:s("C<~(b4<b0>)>"),J:s("C<~(hL)>"),LY:s("C<~(iv)>"),j1:s("C<~(aS)>"),s2:s("C<~(p9)>"),Jh:s("C<~(R<mA>)>"),hi:s("C<~(nt)>"),ha:s("eR<@>"),bz:s("u2"),m:s("aR"),lT:s("eb"),dC:s("hh<@>"),Hf:s("eS<CV,@>"),zi:s("aYC"),Cl:s("iK"),D2:s("eT"),XU:s("jI(hX)"),SQ:s("u4"),Di:s("ps"),jk:s("bj<aNc>"),NE:s("bj<ms>"),ku:s("bj<AX>"),hA:s("bj<uD>"),cF:s("bj<lp>"),A:s("bj<a7<Y>>"),sY:s("bj<kj<~>>"),af:s("bj<FF>"),E9:s("ME"),Cc:s("a8o"),rf:s("A8"),hz:s("hY"),JB:s("i_<@>"),y4:s("pw<m_>"),oM:s("pw<rh>"),NH:s("aOD"),Rk:s("R<mh>"),cb:s("R<tO>"),Lc:s("R<aR>"),qC:s("R<hY>"),UX:s("R<E>"),gm:s("R<jV>"),jQ:s("R<uz>"),I1:s("R<dq>"),lD:s("R<dx>"),xc:s("R<bY>"),yp:s("R<o>"),Xw:s("R<nM>"),Z4:s("R<e3>"),rg:s("R<ds>"),Ly:s("R<P>"),j:s("R<@>"),Dn:s("R<E?>"),I_:s("af"),da:s("py"),E:s("i"),bS:s("ua"),tO:s("aT<h,ac>"),mT:s("aT<o,o>"),UH:s("aT<ac,nq>"),DC:s("aT<n,h>"),q9:s("aT<n,o>"),sw:s("aT<E,k9<@>>"),qE:s("aT<o?,R<E>>"),Dx:s("pD<@,@>"),kY:s("aO<v_,b0>"),nf:s("aO<o,E>"),GU:s("aO<o,o>"),a:s("aO<o,@>"),_P:s("aO<o,n>"),e3:s("aO<hA,@>"),f:s("aO<@,@>"),xE:s("aO<o,E?>"),F:s("aO<E?,E?>"),rr:s("aO<~(bh),br?>"),C9:s("eU<o,j_?>"),Gf:s("aa<o,@>"),rB:s("aa<m6,bY>"),qn:s("aa<n,bY>"),gn:s("aa<n,o>"),Tr:s("aa<f7,jT?>"),iB:s("aOM"),T:s("pG"),i1:s("pH"),xV:s("br"),w:s("i0"),eO:s("Aw<~>"),xS:s("hl"),Pb:s("dw"),ZA:s("Ax"),_h:s("jP"),Wz:s("i1"),Lb:s("ef"),Es:s("pR"),LZ:s("pT"),A3:s("hn"),u9:s("lb"),uK:s("iQ"),K3:s("dd<axD>"),Jc:s("dd<u3>"),Tm:s("dd<hj>"),w3:s("dd<lc>"),ji:s("dd<qr>"),WA:s("dd<fk>"),Te:s("ho"),P:s("bs"),K:s("E"),xA:s("E(n)"),_a:s("E(n{params:E?})"),yw:s("bb<azg>"),d:s("bb<~(b4<b0>)>"),g:s("bb<~(hL)>"),Xx:s("bb<~(nt)>"),yF:s("pZ"),o:s("h"),gY:s("iR"),Fj:s("AU"),BR:s("aPl"),Ms:s("n_"),oz:s("AZ<~>"),Mf:s("uq"),pw:s("jS<@>"),sd:s("jS<E?>"),Q2:s("NA"),Fw:s("dZ<iK>"),IL:s("dZ<cp>"),z2:s("fR"),ke:s("NF"),Ud:s("cK"),v3:s("p"),sT:s("jV"),sv:s("lf"),mX:s("q3"),qa:s("aZD"),ge:s("q4"),Ko:s("q5"),Au:s("jX"),pY:s("li"),qL:s("bh"),GG:s("aZJ"),XA:s("lj"),n2:s("q6"),WQ:s("q7"),w5:s("lk"),DB:s("q8"),PB:s("q9"),Mj:s("qa"),xb:s("qb"),ks:s("f6"),oN:s("ll"),f9:s("ayr<E?>"),VM:s("uv<E>"),bb:s("ux"),C0:s("aPV"),yH:s("aK"),jU:s("uF"),pK:s("aZO"),Rp:s("+()"),BZ:s("+(o,fK?)"),Yr:s("+(rb,P)"),mi:s("+(E?,E?)"),YT:s("t"),Qz:s("Od"),CZ:s("Bn"),NW:s("Bo"),x:s("w"),vz:s("qi"),DW:s("qj"),f1:s("BA"),bf:s("BE"),I9:s("q"),F5:s("aj"),GM:s("aB<q>"),Wx:s("lr"),nl:s("cz"),kl:s("ql"),Cn:s("ng"),dw:s("uK"),Ju:s("nh"),E1:s("BL"),UM:s("iT"),Wd:s("ni"),dZ:s("BQ<n>"),yb:s("e0<E?>"),z4:s("dq"),k2:s("BS<t?>"),hF:s("cb<mm>"),MV:s("cb<m0>"),o_:s("cb<jb>"),ad:s("BV"),oj:s("uM"),Kh:s("lt"),pO:s("cn<@>(S,E?)"),Wu:s("uP"),nY:s("C_<aOL,aYH>"),BL:s("C_<v5,k4>"),Np:s("C2"),JE:s("uQ<E>"),Cy:s("C5"),gt:s("lu"),Lm:s("qw"),sm:s("uS"),NF:s("aQA"),qd:s("aZU"),NU:s("aZV"),hI:s("aZW"),x9:s("eh"),mb:s("Cg"),Ew:s("uV"),iN:s("nr"),_S:s("cw"),VP:s("dx"),bu:s("bY"),UF:s("qC"),g3:s("d5"),HS:s("nv"),n5:s("uY<@>"),hj:s("b8<ng>"),p7:s("b8<bY>"),Ro:s("b8<@>"),uy:s("aEn"),RY:s("bS"),jH:s("nw"),cZ:s("uZ"),Vz:s("v_"),yE:s("b_1"),Mp:s("aY"),FW:s("z"),Vr:s("PE"),Ws:s("Cz<o>"),r:s("ly"),h5:s("v1"),Xp:s("lA"),Gt:s("v3"),V:s("fm"),M0:s("ny"),jB:s("k3"),fO:s("aR0"),y3:s("iY"),Bb:s("lC"),R:s("dy"),Km:s("df"),MF:s("hv"),d1:s("Y"),Iz:s("aq"),kj:s("CP"),N:s("o"),Vc:s("aRd"),NC:s("j0"),WT:s("dg<jk>"),u4:s("dg<yu>"),re:s("dg<aO<hA,@>>"),az:s("dg<pG>"),E8:s("dg<DO>"),d9:s("dg<J>"),hr:s("dg<dq?>"),ZC:s("nz"),ev:s("k5"),NJ:s("lG"),if:s("aRp"),f6:s("cr"),iy:s("Df"),ot:s("ia"),_l:s("fV"),qY:s("j2"),bZ:s("aRx"),fm:s("qP"),E6:s("ey"),em:s("m"),we:s("ib"),ZM:s("qS"),ZF:s("k9<k9<@>>"),zo:s("k9<@>"),qe:s("Qt"),U:s("f8"),U2:s("aRR"),zW:s("cs"),Ni:s("av<h>"),Y:s("av<P>"),u:s("hA"),ns:s("lJ"),e2:s("dh"),w7:s("ajp"),rd:s("vy"),Po:s("ajq"),H3:s("ka"),pm:s("vz<cr>"),wV:s("qW<@>"),kk:s("lL"),lQ:s("DE"),G5:s("lM<o,o>"),N2:s("vD<@>"),fS:s("nH"),gU:s("id"),Xu:s("vE"),V1:s("bQ<E>"),A9:s("bQ<qH>"),c:s("bQ<o>"),Ll:s("bQ<eT?>"),j3:s("kc<P>"),Id:s("kc<n>"),GY:s("j4"),JH:s("b_q"),Dg:s("DI"),rS:s("fr"),X3:s("lP"),NN:s("DJ"),v6:s("DK"),Vu:s("DM"),Ky:s("aN<aO<o,o>>"),Hd:s("aN<o>"),SF:s("c_<dm>"),FI:s("c_<bh>"),t5:s("c_<dx>"),X5:s("c_<b8<d5>>"),ZK:s("c_<j_>"),Ri:s("c_<o>"),mp:s("c_<fV>"),ow:s("c_<nR>"),b7:s("c_<em>"),kE:s("c_<~(E,df?)>"),Pi:s("j5<kY>"),Zw:s("j5<em>"),l7:s("f"),a7:s("vJ"),EK:s("c6"),JI:s("f0<P>"),GC:s("f0<y?>"),ZX:s("f0<dw?>"),y2:s("aX<aI>"),De:s("aX<y>"),mD:s("aX<cH>"),dy:s("aX<d3>"),W7:s("aX<z>"),uE:s("aX<m>"),XR:s("aX<P>"),rc:s("aX<y?>"),RP:s("aX<m?>"),Ag:s("nK"),QN:s("f(S,b8<c6>,f?)"),Ab:s("f(S)"),l:s("cL"),Uh:s("DO"),nL:s("qX"),dk:s("qY"),Qy:s("kd"),L1:s("DR"),JX:s("nM"),CL:s("r_"),h8:s("b3<jk>"),Gc:s("b3<pA>"),Iy:s("b3<uZ>"),D5:s("b3<k4>"),gI:s("b3<ka>"),yB:s("b3<cO?>"),EZ:s("b3<dq?>"),h:s("b3<~>"),zb:s("ke<R<n>>"),BY:s("aSg"),ZW:s("vN"),B6:s("Eb"),me:s("nO"),Wb:s("kg"),bY:s("Ex"),TC:s("r3"),uC:s("eC"),dA:s("lU<oR>"),Fb:s("lU<oS>"),UA:s("lU<oT>"),Q8:s("EB<a7<Y>>"),UJ:s("SX"),rM:s("nQ<aR>"),s5:s("r6<aR>"),l3:s("EN"),Eh:s("ET"),fk:s("vY"),h1:s("vZ"),Lv:s("ah<jk>"),kd:s("ah<pA>"),cN:s("ah<uZ>"),dH:s("ah<k4>"),aP:s("ah<ka>"),LR:s("ah<@>"),wJ:s("ah<n>"),gg:s("ah<cO?>"),X6:s("ah<dq?>"),W:s("ah<~>"),cK:s("w0"),Qu:s("lY"),U3:s("w3"),UR:s("fa"),R9:s("nS"),Fy:s("nU<E?,E?>"),Nr:s("F7"),cA:s("j9"),Sx:s("m_"),pt:s("wa"),Gk:s("Fj"),PJ:s("wb"),Fe:s("Ft"),xg:s("UL"),mG:s("rg"),Tv:s("Fu<R<n>>"),Tp:s("o_"),pi:s("kk"),KJ:s("m0"),eU:s("wl"),sZ:s("FK"),Sc:s("Va"),Li:s("FM"),c_:s("FT"),bR:s("FW"),h7:s("kl"),zP:s("dM"),Qd:s("FX"),rj:s("G5"),l0:s("rj"),Lj:s("m2"),zd:s("Gb"),SN:s("Gf"),ju:s("em"),Eg:s("wx"),xL:s("wy"),im:s("rk"),pR:s("rl"),Ez:s("e3"),Pu:s("Gw"),yd:s("GD"),jF:s("GF"),vC:s("ds"),kS:s("Xl<E?>"),S8:s("H5"),CG:s("hG<+(ie,J)>"),bm:s("hG<w>"),dQ:s("hG<m2>"),HE:s("wH"),f2:s("Hi"),i9:s("wK"),tH:s("aTd"),Wp:s("Hu<yK>"),XN:s("rs"),ps:s("rt"),nH:s("HD<lv>"),GD:s("bB<aI>"),mN:s("bB<y>"),Dm:s("bB<J>"),N5:s("bB<P>"),jY:s("bB<aI?>"),b:s("bB<y?>"),DH:s("YY"),gL:s("HO"),y:s("J"),i:s("P"),z:s("@"),C_:s("@(E)"),Hg:s("@(E,df)"),S:s("n"),ZU:s("me?"),tX:s("aBm?"),m2:s("xJ?"),Vx:s("dj?"),sa:s("eJ?"),eJ:s("oy?"),oI:s("aI?"),YY:s("oz?"),CD:s("cO?"),L5:s("aBD?"),JG:s("yd?"),cW:s("aBF?"),eG:s("yf?"),e4:s("aBG?"),EM:s("yh?"),VA:s("tf?"),_:s("y?"),YJ:s("dS?"),xG:s("kK?"),V2:s("fH?"),pc:s("cH?"),Om:s("kN?"),Dv:s("b5?"),e8:s("tI?"),pk:s("cJ?"),RC:s("zn?"),U5:s("fK?"),uZ:s("ap<bs>?"),_I:s("pg?"),gx:s("hf?"),lF:s("d_?"),C6:s("aCK?"),Pr:s("mJ?"),Ef:s("hW?"),NX:s("aR?"),LO:s("eT?"),Nl:s("hZ?"),kc:s("R<@>?"),wh:s("R<E?>?"),y6:s("i?"),qA:s("iM?"),nA:s("aO<o,@>?"),Xy:s("aO<@,@>?"),J1:s("aO<E?,E?>?"),iD:s("br?"),ka:s("pM?"),WV:s("dw?"),X:s("E?"),Ff:s("aDD?"),dJ:s("iR?"),Zr:s("aDF?"),KX:s("d3?"),uR:s("iS?"),xO:s("n3<iK>?"),hh:s("na?"),xJ:s("t?"),Qv:s("w?"),xP:s("w?(w)"),CA:s("qj?"),p2:s("aV?"),ym:s("lr?"),IT:s("cz?"),oW:s("lt?"),_N:s("qw?"),LQ:s("bY?"),wW:s("b8<d5>?"),TZ:s("qD?"),pg:s("hu?"),tW:s("z?"),MR:s("fm?"),lE:s("hv?"),ob:s("o?"),f3:s("fU?"),p8:s("m?"),Dh:s("qQ?"),qf:s("ayY?"),zV:s("vu?"),KF:s("av<h>?"),ir:s("av<P>?"),nc:s("ka?"),Wn:s("hD?"),BM:s("DL?"),Xk:s("fa?"),av:s("FN?"),IA:s("e3?"),tC:s("Ha<@>?"),X7:s("J?"),PM:s("P?"),bo:s("n?"),R7:s("d1?"),Nw:s("~()?"),Ci:s("d1"),H:s("~"),M:s("~()"),CF:s("~(E,df?)"),zv:s("~(aS)"),Su:s("~(my)"),xt:s("~(R<mA>)"),lO:s("~(E)"),hK:s("~(E,df)"),Ld:s("~(bh)"),iS:s("~(lo)"),HT:s("~(E?)")}})();(function constants(){var s=hunkHelpers.makeConstList
+return{S6:s("@<nK>"),vH:s("aLg"),od:s("b4<b0>"),gj:s("aLk<E>"),pC:s("fz"),so:s("bp<h>"),B:s("bp<P>"),Bs:s("bp<y?>"),ph:s("xB<k5>"),qH:s("aLq"),s1:s("xF"),vp:s("ou"),S7:s("xI"),jo:s("a0n"),Ak:s("mh"),u2:s("a0u"),Al:s("mj<E?>"),m_:s("ck"),k:s("a5"),q:s("f4"),pI:s("jo"),V4:s("cO"),wY:s("d8<rH>"),nz:s("d8<rV>"),OX:s("d8<fI>"),fN:s("d8<nd>"),Tx:s("d8<iT>"),fn:s("d8<ev>"),j5:s("d8<nE>"),_n:s("d8<nG>"),ZQ:s("d8<id>"),CP:s("oC"),Am:s("aLM"),WG:s("y0<o>"),d0:s("dl<cn<@>?,cn<@>>"),aL:s("aLV"),oV:s("t4"),Lh:s("y4"),PO:s("y7"),Ub:s("h6"),m6:s("y9"),Bn:s("ta"),S3:s("ya"),BQ:s("tb"),nR:s("yc"),Hz:s("fC"),hP:s("eK"),G:s("y"),IC:s("dS"),b8:s("bU<@>"),v4:s("Kl<pA>"),Ss:s("dm"),id:s("mm"),qO:s("oM<CV,@>"),li:s("bM<o,o>"),eL:s("bM<o,n>"),VJ:s("bM<o,R<o>>"),fF:s("fD<o>"),Nq:s("kI"),vn:s("ys"),pU:s("a6<q,dn<q>>"),ho:s("yu"),H5:s("aMp"),HY:s("hP"),ip:s("yC"),I7:s("tr"),Hw:s("hR"),u5:s("tu"),l4:s("aMz"),Uf:s("mp"),XP:s("aMC"),yS:s("tv"),Je:s("aYd"),EX:s("du"),jh:s("yJ"),I:s("fH"),ra:s("aYe"),xm:s("fI"),Jj:s("aMQ"),YH:s("KZ<aR>"),uL:s("h9"),zk:s("tC"),Tu:s("aS"),ML:s("dD"),A0:s("cH"),Zi:s("jw"),Rz:s("jx"),Ee:s("az<@>"),Q:s("b5"),dq:s("aNq"),GB:s("aYh"),lz:s("kP"),ay:s("kQ"),sB:s("bC"),Lt:s("bV"),VI:s("bD"),IX:s("eM<jb,bY>"),bh:s("oW"),oB:s("oX"),_w:s("kS"),HH:s("kT"),OO:s("hb"),cP:s("kU"),b5:s("oY"),P9:s("kV"),eI:s("oZ"),Ie:s("tO"),PA:s("zb"),Q9:s("aNH"),US:s("fJ"),N8:s("zf"),s4:s("a5h"),OE:s("a5i"),Kw:s("a5v"),mx:s("cJ"),l5:s("kY"),zq:s("tQ"),ia:s("p4"),VW:s("p5"),FK:s("fK"),jT:s("zq"),c4:s("jC"),bE:s("eq"),Uy:s("a5O"),_8:s("l0"),Z9:s("ap<nv>"),Ev:s("ap<J>()"),L0:s("ap<@>"),T8:s("ap<cO?>"),uz:s("ap<~>"),Fp:s("dv<v_,b0>"),pl:s("dv<n,y>"),Lu:s("eN<jX>"),Nf:s("mB"),SP:s("tS"),cD:s("cS"),uA:s("ce<iB>"),C1:s("ce<iE>"),Uv:s("ce<hf>"),jn:s("ce<iM>"),YC:s("ce<iS>"),hg:s("ce<k6>"),Qm:s("ce<k7>"),UN:s("ce<fU>"),ok:s("ce<hD>"),lh:s("ce<nT>"),Bk:s("ce<ko>"),Pw:s("ce<o8>"),xR:s("pa<cS>"),yi:s("iF<a7<Z>>"),TX:s("pb<iQ>"),bT:s("pb<a7<Z>>"),rQ:s("aYw"),GF:s("eP<jI(hX)>"),PD:s("eP<~()>"),op:s("eP<~(my)>"),bq:s("hd"),G7:s("LR<Ha<@>>"),rA:s("pf"),mS:s("pg"),AL:s("he<ag>"),Fn:s("l1"),zE:s("ag"),Lk:s("aCH"),g5:s("zB"),Oh:s("pj"),lu:s("aCJ"),dW:s("hg"),SG:s("mH"),Bc:s("mI<b5?>"),ri:s("zJ"),IS:s("fM"),og:s("cu"),WB:s("b_"),U1:s("hW"),lA:s("aOl"),JZ:s("a7L"),XO:s("a7M"),pT:s("a7N"),gD:s("mK"),C:s("b0"),nQ:s("mL"),Ya:s("u0"),ud:s("cf"),JY:s("B<@>"),VG:s("B<E?>"),lY:s("C<aLk<E>>"),QP:s("C<iv>"),NS:s("C<cF>"),tM:s("C<ox>"),sq:s("C<dk>"),I0:s("C<JO>"),gb:s("C<jo>"),Qh:s("C<oC>"),AT:s("C<tb>"),s8:s("C<aBI>"),t_:s("C<y>"),EV:s("C<mm>"),KV:s("C<eL>"),kQ:s("C<fE>"),ZD:s("C<da>"),D:s("C<du>"),vl:s("C<fH>"),Up:s("C<L_>"),lX:s("C<b5>"),LE:s("C<Lb>"),XS:s("C<tO>"),bp:s("C<cJ>"),z8:s("C<p5>"),uf:s("C<jC>"),no:s("C<mA>"),wQ:s("C<ap<p4>>"),Rh:s("C<ap<+(o,fK?)>>"),mo:s("C<ap<~>>"),iQ:s("C<cR>"),DU:s("C<hd>"),om:s("C<he<ag>>"),kr:s("C<fg>"),XZ:s("C<hg>"),Fa:s("C<fM>"),fJ:s("C<cu>"),VB:s("C<jF>"),VO:s("C<dV>"),O_:s("C<l5>"),O:s("C<aR>"),DS:s("C<eb>"),K0:s("C<hX>"),CE:s("C<jI>"),k5:s("C<es>"),k_:s("C<ME>"),HU:s("C<hi>"),xj:s("C<a8o>"),s9:s("C<A7>"),Y4:s("C<hY>"),MH:s("C<pt>"),_f:s("C<pu>"),ER:s("C<mS>"),X_:s("C<R<dx>>"),fQ:s("C<R<ds>>"),zg:s("C<R<P>>"),Zb:s("C<R<n>>"),Eo:s("C<af>"),H8:s("C<MP>"),ss:s("C<py>"),a9:s("C<fh<@>>"),IO:s("C<fh<E?>>"),en:s("C<i>"),m0:s("C<aO<o,o>>"),H7:s("C<aO<o,@>>"),Xr:s("C<br>"),YE:s("C<iP>"),tc:s("C<pU>"),Qg:s("C<ho>"),jl:s("C<E>"),Rd:s("C<ac8>"),sF:s("C<AU>"),wi:s("C<n_>"),g8:s("C<aDI<@>>"),Ql:s("C<jS<~>>"),zY:s("C<ur>"),OM:s("C<n3<cp>>"),Uz:s("C<fR>"),v:s("C<cK>"),RR:s("C<jV>"),tg:s("C<B3>"),tZ:s("C<us>"),D9:s("C<i4>"),RW:s("C<uz>"),L7:s("C<+representation,targetSize(Cy,z)>"),Co:s("C<+(o,DF)>"),lN:s("C<+data,event,timeStamp(R<i4>,aR,aS)>"),Nt:s("C<+domSize,representation,targetSize(z,Cy,z)>"),AO:s("C<t>"),Pc:s("C<qh>"),Ik:s("C<w>"),xT:s("C<ne>"),TT:s("C<q>"),Ry:s("C<cz>"),QT:s("C<dq>"),Fm:s("C<lt>"),y8:s("C<C3>"),ZP:s("C<lu>"),D1:s("C<eh>"),u1:s("C<qz>"),JO:s("C<fT>"),q1:s("C<dx>"),QF:s("C<bY>"),o4:s("C<Pq>"),Qo:s("C<qC>"),Ay:s("C<aEn>"),kO:s("C<iX>"),N_:s("C<bS>"),Gl:s("C<vb<~>>"),s:s("C<o>"),oU:s("C<aRd>"),PL:s("C<vf>"),bt:s("C<vg>"),Lx:s("C<e2>"),bG:s("C<D9>"),sD:s("C<nC>"),VS:s("C<qN>"),zs:s("C<Qm>"),AS:s("C<qO>"),Ne:s("C<ey>"),FO:s("C<k9<k9<@>>>"),LX:s("C<DF>"),Uu:s("C<ie>"),p:s("C<f>"),GA:s("C<cL>"),my:s("C<qX>"),Na:s("C<nM>"),SW:s("C<RD>"),TV:s("C<lQ>"),Kj:s("C<vU>"),_Y:s("C<fa>"),mz:s("C<Uc>"),Kx:s("C<j8>"),zj:s("C<m0>"),IR:s("C<azg>"),m3:s("C<wo>"),jE:s("C<kl>"),qi:s("C<dM>"),z_:s("C<em>"),uD:s("C<e3>"),M6:s("C<Gv>"),s6:s("C<m3>"),lb:s("C<kn>"),bd:s("C<ds>"),YK:s("C<jb>"),Z5:s("C<aT8>"),cR:s("C<wL>"),NM:s("C<m6>"),HZ:s("C<J>"),n:s("C<P>"),ee:s("C<@>"),t:s("C<n>"),L:s("C<i?>"),ef:s("C<E?>"),iG:s("C<w?>"),ny:s("C<cn<@>?>"),Fi:s("C<bS?>"),_m:s("C<o?>"),Z:s("C<n?>"),a0:s("C<d1>"),Zt:s("C<ap<J>()>"),iL:s("C<ei<hY>()>"),sA:s("C<J(hX)>"),qj:s("C<~()>"),SM:s("C<~(E,df?)>"),e:s("C<~(b4<b0>)>"),J:s("C<~(hL)>"),LY:s("C<~(iv)>"),j1:s("C<~(aS)>"),s2:s("C<~(p9)>"),Jh:s("C<~(R<mA>)>"),hi:s("C<~(nt)>"),ha:s("eR<@>"),bz:s("u2"),m:s("aR"),lT:s("eb"),dC:s("hh<@>"),Hf:s("eS<CV,@>"),zi:s("aYC"),Cl:s("iK"),D2:s("eT"),XU:s("jI(hX)"),SQ:s("u4"),Di:s("ps"),jk:s("bj<aNc>"),NE:s("bj<ms>"),ku:s("bj<AX>"),hA:s("bj<uD>"),cF:s("bj<lp>"),A:s("bj<a7<Z>>"),sY:s("bj<kj<~>>"),af:s("bj<FF>"),E9:s("ME"),Cc:s("a8o"),rf:s("A8"),hz:s("hY"),JB:s("i_<@>"),y4:s("pw<m_>"),oM:s("pw<rh>"),NH:s("aOD"),Rk:s("R<mh>"),cb:s("R<tO>"),Lc:s("R<aR>"),qC:s("R<hY>"),UX:s("R<E>"),gm:s("R<jV>"),jQ:s("R<uz>"),I1:s("R<dq>"),lD:s("R<dx>"),xc:s("R<bY>"),yp:s("R<o>"),Xw:s("R<nM>"),Z4:s("R<e3>"),rg:s("R<ds>"),Ly:s("R<P>"),j:s("R<@>"),Dn:s("R<E?>"),I_:s("af"),da:s("py"),E:s("i"),bS:s("ua"),tO:s("aT<h,ac>"),mT:s("aT<o,o>"),UH:s("aT<ac,nq>"),DC:s("aT<n,h>"),q9:s("aT<n,o>"),sw:s("aT<E,k9<@>>"),qE:s("aT<o?,R<E>>"),Dx:s("pD<@,@>"),kY:s("aO<v_,b0>"),nf:s("aO<o,E>"),GU:s("aO<o,o>"),a:s("aO<o,@>"),_P:s("aO<o,n>"),e3:s("aO<hA,@>"),f:s("aO<@,@>"),xE:s("aO<o,E?>"),F:s("aO<E?,E?>"),rr:s("aO<~(bh),br?>"),C9:s("eU<o,j_?>"),Gf:s("aa<o,@>"),rB:s("aa<m6,bY>"),qn:s("aa<n,bY>"),gn:s("aa<n,o>"),Tr:s("aa<f7,jT?>"),iB:s("aOM"),T:s("pG"),i1:s("pH"),xV:s("br"),w:s("i0"),eO:s("Aw<~>"),xS:s("hl"),Pb:s("dw"),ZA:s("Ax"),_h:s("jP"),Wz:s("i1"),Lb:s("ef"),Es:s("pR"),LZ:s("pT"),A3:s("hn"),u9:s("lb"),uK:s("iQ"),K3:s("dd<axD>"),Jc:s("dd<u3>"),Tm:s("dd<hj>"),w3:s("dd<lc>"),ji:s("dd<qr>"),WA:s("dd<fk>"),Te:s("ho"),P:s("bs"),K:s("E"),xA:s("E(n)"),_a:s("E(n{params:E?})"),yw:s("bb<azg>"),d:s("bb<~(b4<b0>)>"),g:s("bb<~(hL)>"),Xx:s("bb<~(nt)>"),yF:s("pZ"),o:s("h"),gY:s("iR"),Fj:s("AU"),BR:s("aPl"),Ms:s("n_"),oz:s("AZ<~>"),Mf:s("uq"),pw:s("jS<@>"),sd:s("jS<E?>"),Q2:s("NA"),Fw:s("dZ<iK>"),IL:s("dZ<cp>"),z2:s("fR"),ke:s("NF"),Ud:s("cK"),v3:s("p"),sT:s("jV"),sv:s("lf"),mX:s("q3"),qa:s("aZD"),ge:s("q4"),Ko:s("q5"),Au:s("jX"),pY:s("li"),qL:s("bh"),GG:s("aZJ"),XA:s("lj"),n2:s("q6"),WQ:s("q7"),w5:s("lk"),DB:s("q8"),PB:s("q9"),Mj:s("qa"),xb:s("qb"),ks:s("f6"),oN:s("ll"),f9:s("ayr<E?>"),VM:s("uv<E>"),bb:s("ux"),C0:s("aPV"),yH:s("aK"),jU:s("uF"),pK:s("aZO"),Rp:s("+()"),BZ:s("+(o,fK?)"),Yr:s("+(rb,P)"),mi:s("+(E?,E?)"),YT:s("t"),Qz:s("Od"),CZ:s("Bn"),NW:s("Bo"),x:s("w"),vz:s("qi"),DW:s("qj"),f1:s("BA"),bf:s("BE"),I9:s("q"),F5:s("aj"),GM:s("aB<q>"),Wx:s("lr"),nl:s("cz"),kl:s("ql"),Cn:s("ng"),dw:s("uK"),Ju:s("nh"),E1:s("BL"),UM:s("iT"),Wd:s("ni"),dZ:s("BQ<n>"),yb:s("e0<E?>"),z4:s("dq"),k2:s("BS<t?>"),hF:s("cb<mm>"),MV:s("cb<m0>"),o_:s("cb<jb>"),ad:s("BV"),oj:s("uM"),Kh:s("lt"),pO:s("cn<@>(S,E?)"),Wu:s("uP"),nY:s("C_<aOL,aYH>"),BL:s("C_<v5,k4>"),Np:s("C2"),JE:s("uQ<E>"),Cy:s("C5"),gt:s("lu"),Lm:s("qw"),sm:s("uS"),NF:s("aQA"),qd:s("aZU"),NU:s("aZV"),hI:s("aZW"),x9:s("eh"),mb:s("Cg"),Ew:s("uV"),iN:s("nr"),_S:s("cw"),VP:s("dx"),bu:s("bY"),UF:s("qC"),g3:s("d5"),HS:s("nv"),n5:s("uY<@>"),hj:s("b8<ng>"),p7:s("b8<bY>"),Ro:s("b8<@>"),uy:s("aEn"),RY:s("bS"),jH:s("nw"),cZ:s("uZ"),Vz:s("v_"),yE:s("b_1"),Mp:s("aY"),FW:s("z"),Vr:s("PE"),Ws:s("Cz<o>"),r:s("ly"),h5:s("v1"),Xp:s("lA"),Gt:s("v3"),V:s("fm"),M0:s("ny"),jB:s("k3"),fO:s("aR0"),y3:s("iY"),Bb:s("lC"),R:s("dy"),Km:s("df"),MF:s("hv"),d1:s("Z"),Iz:s("aq"),kj:s("CP"),N:s("o"),Vc:s("aRd"),NC:s("j0"),WT:s("dg<jk>"),u4:s("dg<yu>"),re:s("dg<aO<hA,@>>"),az:s("dg<pG>"),E8:s("dg<DO>"),d9:s("dg<J>"),hr:s("dg<dq?>"),ZC:s("nz"),ev:s("k5"),NJ:s("lG"),if:s("aRp"),f6:s("cr"),iy:s("Df"),ot:s("ia"),_l:s("fV"),qY:s("j2"),bZ:s("aRx"),fm:s("qP"),E6:s("ey"),em:s("m"),we:s("ib"),ZM:s("qS"),ZF:s("k9<k9<@>>"),zo:s("k9<@>"),qe:s("Qt"),U:s("f8"),U2:s("aRR"),zW:s("cs"),Ni:s("av<h>"),Y:s("av<P>"),u:s("hA"),ns:s("lJ"),e2:s("dh"),w7:s("ajp"),rd:s("vy"),Po:s("ajq"),H3:s("ka"),pm:s("vz<cr>"),wV:s("qW<@>"),kk:s("lL"),lQ:s("DE"),G5:s("lM<o,o>"),N2:s("vD<@>"),fS:s("nH"),gU:s("id"),Xu:s("vE"),V1:s("bQ<E>"),A9:s("bQ<qH>"),c:s("bQ<o>"),Ll:s("bQ<eT?>"),j3:s("kc<P>"),Id:s("kc<n>"),GY:s("j4"),JH:s("b_q"),Dg:s("DI"),rS:s("fr"),X3:s("lP"),NN:s("DJ"),v6:s("DK"),Vu:s("DM"),Ky:s("aN<aO<o,o>>"),Hd:s("aN<o>"),SF:s("c_<dm>"),FI:s("c_<bh>"),t5:s("c_<dx>"),X5:s("c_<b8<d5>>"),ZK:s("c_<j_>"),Ri:s("c_<o>"),mp:s("c_<fV>"),ow:s("c_<nR>"),b7:s("c_<em>"),kE:s("c_<~(E,df?)>"),Pi:s("j5<kY>"),Zw:s("j5<em>"),l7:s("f"),a7:s("vJ"),EK:s("c6"),JI:s("f0<P>"),GC:s("f0<y?>"),ZX:s("f0<dw?>"),y2:s("aX<aI>"),De:s("aX<y>"),mD:s("aX<cH>"),dy:s("aX<d3>"),W7:s("aX<z>"),uE:s("aX<m>"),XR:s("aX<P>"),rc:s("aX<y?>"),RP:s("aX<m?>"),Ag:s("nK"),QN:s("f(S,b8<c6>,f?)"),Ab:s("f(S)"),l:s("cL"),Uh:s("DO"),nL:s("qX"),dk:s("qY"),Qy:s("kd"),L1:s("DR"),JX:s("nM"),CL:s("r_"),h8:s("b3<jk>"),Gc:s("b3<pA>"),Iy:s("b3<uZ>"),D5:s("b3<k4>"),gI:s("b3<ka>"),yB:s("b3<cO?>"),EZ:s("b3<dq?>"),h:s("b3<~>"),zb:s("ke<R<n>>"),BY:s("aSg"),ZW:s("vN"),B6:s("Eb"),me:s("nO"),Wb:s("kg"),bY:s("Ex"),TC:s("r3"),uC:s("eC"),dA:s("lU<oR>"),Fb:s("lU<oS>"),UA:s("lU<oT>"),Q8:s("EB<a7<Z>>"),UJ:s("SX"),rM:s("nQ<aR>"),s5:s("r6<aR>"),l3:s("EN"),Eh:s("ET"),fk:s("vY"),h1:s("vZ"),Lv:s("ah<jk>"),kd:s("ah<pA>"),cN:s("ah<uZ>"),dH:s("ah<k4>"),aP:s("ah<ka>"),LR:s("ah<@>"),wJ:s("ah<n>"),gg:s("ah<cO?>"),X6:s("ah<dq?>"),W:s("ah<~>"),cK:s("w0"),Qu:s("lY"),U3:s("w3"),UR:s("fa"),R9:s("nS"),Fy:s("nU<E?,E?>"),Nr:s("F7"),cA:s("j9"),Sx:s("m_"),pt:s("wa"),Gk:s("Fj"),PJ:s("wb"),Fe:s("Ft"),xg:s("UL"),mG:s("rg"),Tv:s("Fu<R<n>>"),Tp:s("o_"),pi:s("kk"),KJ:s("m0"),eU:s("wl"),sZ:s("FK"),Sc:s("Va"),Li:s("FM"),c_:s("FT"),bR:s("FW"),h7:s("kl"),zP:s("dM"),Qd:s("FX"),rj:s("G5"),l0:s("rj"),Lj:s("m2"),zd:s("Gb"),SN:s("Gf"),ju:s("em"),Eg:s("wx"),xL:s("wy"),im:s("rk"),pR:s("rl"),Ez:s("e3"),Pu:s("Gw"),yd:s("GD"),jF:s("GF"),vC:s("ds"),kS:s("Xl<E?>"),S8:s("H5"),CG:s("hG<+(ie,J)>"),bm:s("hG<w>"),dQ:s("hG<m2>"),HE:s("wH"),f2:s("Hi"),i9:s("wK"),tH:s("aTd"),Wp:s("Hu<yK>"),XN:s("rs"),ps:s("rt"),nH:s("HD<lv>"),GD:s("bB<aI>"),mN:s("bB<y>"),Dm:s("bB<J>"),N5:s("bB<P>"),jY:s("bB<aI?>"),b:s("bB<y?>"),DH:s("YY"),gL:s("HO"),y:s("J"),i:s("P"),z:s("@"),C_:s("@(E)"),Hg:s("@(E,df)"),S:s("n"),ZU:s("me?"),tX:s("aBm?"),m2:s("xJ?"),Vx:s("dj?"),sa:s("eJ?"),eJ:s("oy?"),oI:s("aI?"),YY:s("oz?"),CD:s("cO?"),L5:s("aBD?"),JG:s("yd?"),cW:s("aBF?"),eG:s("yf?"),e4:s("aBG?"),EM:s("yh?"),VA:s("tf?"),_:s("y?"),YJ:s("dS?"),xG:s("kK?"),V2:s("fH?"),pc:s("cH?"),Om:s("kN?"),Dv:s("b5?"),e8:s("tI?"),pk:s("cJ?"),RC:s("zn?"),U5:s("fK?"),uZ:s("ap<bs>?"),_I:s("pg?"),gx:s("hf?"),lF:s("d_?"),C6:s("aCK?"),Pr:s("mJ?"),Ef:s("hW?"),NX:s("aR?"),LO:s("eT?"),Nl:s("hZ?"),kc:s("R<@>?"),wh:s("R<E?>?"),y6:s("i?"),qA:s("iM?"),nA:s("aO<o,@>?"),Xy:s("aO<@,@>?"),J1:s("aO<E?,E?>?"),iD:s("br?"),ka:s("pM?"),WV:s("dw?"),X:s("E?"),Ff:s("aDD?"),dJ:s("iR?"),Zr:s("aDF?"),KX:s("d3?"),uR:s("iS?"),xO:s("n3<iK>?"),hh:s("na?"),xJ:s("t?"),Qv:s("w?"),xP:s("w?(w)"),CA:s("qj?"),p2:s("aV?"),ym:s("lr?"),IT:s("cz?"),oW:s("lt?"),_N:s("qw?"),LQ:s("bY?"),wW:s("b8<d5>?"),TZ:s("qD?"),pg:s("hu?"),tW:s("z?"),MR:s("fm?"),lE:s("hv?"),ob:s("o?"),f3:s("fU?"),p8:s("m?"),Dh:s("qQ?"),qf:s("ayY?"),zV:s("vu?"),KF:s("av<h>?"),ir:s("av<P>?"),nc:s("ka?"),Wn:s("hD?"),BM:s("DL?"),Xk:s("fa?"),av:s("FN?"),IA:s("e3?"),tC:s("Ha<@>?"),X7:s("J?"),PM:s("P?"),bo:s("n?"),R7:s("d1?"),Nw:s("~()?"),Ci:s("d1"),H:s("~"),M:s("~()"),CF:s("~(E,df?)"),zv:s("~(aS)"),Su:s("~(my)"),xt:s("~(R<mA>)"),lO:s("~(E)"),hK:s("~(E,df)"),Ld:s("~(bh)"),iS:s("~(lo)"),HT:s("~(E?)")}})();(function constants(){var s=hunkHelpers.makeConstList
 B.HW=J.cf.prototype
 B.c=J.C.prototype
 B.kN=J.zT.prototype
@@ -95549,7 +95549,7 @@ B.D8=new A.ajz()
 B.a6=new A.QI()
 B.cL=new A.QK()
 B.em=new A.QP(0,0,0,0)
-B.Kn=s([],A.at("C<a33>"))
+B.Km=s([],A.at("C<a33>"))
 B.ab4=new A.ajH()
 B.ez=new A.Ra()
 B.bK=new A.Rb()
@@ -95796,8 +95796,8 @@ B.ab8=new A.a2x(1,"traversalOrder")
 B.Bc=new A.dC(1,1)
 B.bS=new A.Dq(0,"clamp")
 B.EM=new A.y(0.7215686274509804,0.27450980392156865,0.34901960784313724,0.39215686274509803,B.f)
-B.KB=s([B.EM,B.aa],t.t_)
-B.Ik=new A.hZ(B.d0,B.Bc,B.bS,B.KB,null,null)
+B.KA=s([B.EM,B.aa],t.t_)
+B.Ik=new A.hZ(B.d0,B.Bc,B.bS,B.KA,null,null)
 B.BU=new A.c1(null,null,null,null,null,B.Ik,B.ae)
 B.ch=new A.KE(0,"background")
 B.F9=new A.ts(B.BU,B.ch,null,null)
@@ -95805,8 +95805,8 @@ B.Ed=new A.y(0.0784313725490196,1,1,1,B.f)
 B.E6=new A.y(0.0392156862745098,1,1,1,B.f)
 B.DW=new A.y(0.1411764705882353,0.06666666666666667,0.13725490196078433,0.1803921568627451,B.f)
 B.Ir=s([B.Ed,B.E6,B.DW],t.t_)
-B.Jy=s([0,0.58,1],t.n)
-B.Il=new A.hZ(B.dF,B.ev,B.bS,B.Ir,B.Jy,null)
+B.Jx=s([0,0.58,1],t.n)
+B.Il=new A.hZ(B.dF,B.ev,B.bS,B.Ir,B.Jx,null)
 B.BT=new A.c1(null,null,null,null,null,B.Il,B.ae)
 B.Fa=new A.ts(B.BT,B.ch,null,null)
 B.nS=new A.KE(1,"foreground")
@@ -95992,12 +95992,12 @@ B.K=new A.MV(1,"max")
 B.bT=new A.ajF(1,"down")
 B.de=new A.fL(800)
 B.W6=new A.m(!0,B.dL,null,null,null,null,12,B.de,null,0.8,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a5I=new A.d("\u1ee8NG D\u1ee4NG \u0110\xc3 \u0110\u01af\u1ee2C C\u1eacP NH\u1eacT",null,B.W6,null,null,null,null,null,null)
+B.a5J=new A.d("\u1ee8NG D\u1ee4NG \u0110\xc3 \u0110\u01af\u1ee2C C\u1eacP NH\u1eacT",null,B.W6,null,null,null,null,null,null)
 B.zX=new A.bm(null,5,null,null)
 B.UL=new A.m(!0,B.d9,null,null,null,null,19,B.ay,null,null,null,null,1.25,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.YB=new A.d("Khai th\u1ecb H\xf2a Th\u01b0\u1ee3ng Tuy\xean H\xf3a",null,B.UL,null,null,null,null,null,null)
-B.Je=s([B.a5I,B.zX,B.YB],t.p)
-B.EN=new A.oL(B.ar,B.x,B.K,B.at,null,B.bT,null,0,B.Je,null)
+B.Zc=new A.d("Khai th\u1ecb d\u1ec5 \u0111\u1ecdc h\u01a1n",null,B.UL,null,null,null,null,null,null)
+B.JT=s([B.a5J,B.zX,B.Zc],t.p)
+B.EN=new A.oL(B.ar,B.x,B.K,B.at,null,B.bT,null,0,B.JT,null)
 B.Gx=new A.iD(1,B.dd,B.EN,null)
 B.Gy=new A.za(null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.hw=new A.kS(!1,!1,!1,!1)
@@ -96214,13 +96214,13 @@ B.oQ=new A.MD(255)
 B.oR=new A.Aa(0,"opportunity")
 B.kQ=new A.Aa(2,"mandatory")
 B.oS=new A.Aa(3,"endOfText")
-B.KL=s([B.I,B.ni],t.t_)
-B.oT=new A.hZ(B.cH,B.dG,B.bS,B.KL,null,null)
+B.KK=s([B.I,B.ni],t.t_)
+B.oT=new A.hZ(B.cH,B.dG,B.bS,B.KK,null,null)
 B.DB=new A.y(0.9254901960784314,1,1,1,B.f)
 B.EE=new A.y(0.9725490196078431,1,0.8784313725490196,0.5411764705882353,B.f)
 B.DK=new A.y(0.9372549019607843,1,0.6039215686274509,0.21176470588235294,B.f)
-B.JA=s([B.DB,B.EE,B.DK],t.t_)
-B.Ii=new A.hZ(B.dF,B.ev,B.bS,B.JA,null,null)
+B.Jz=s([B.DB,B.EE,B.DK],t.t_)
+B.Ii=new A.hZ(B.dF,B.ev,B.bS,B.Jz,null,null)
 B.Ek=new A.y(0.2,0.9490196078431372,0.5490196078431373,0.1568627450980392,B.f)
 B.IU=s([B.bX,B.Ek],t.t_)
 B.Ij=new A.hZ(B.cH,B.dG,B.bS,B.IU,null,null)
@@ -96230,10 +96230,10 @@ B.In=new A.px(1,"titleHeight")
 B.Io=new A.px(2,"top")
 B.oV=new A.px(3,"center")
 B.Ip=new A.px(4,"bottom")
-B.Kd=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
-B.JS=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
+B.Kc=s([1373.2198709594231,-1100.4251190754821,-7.278681089101213],t.n)
+B.JR=s([-271.815969077903,559.6580465940733,-32.46047482791194],t.n)
 B.L1=s([1.9622899599665666,-57.173814538844006,308.7233197812385],t.n)
-B.It=s([B.Kd,B.JS,B.L1],t.zg)
+B.It=s([B.Kc,B.JR,B.L1],t.zg)
 B.oW=s(["text","multiline","number","phone","datetime","emailAddress","url","visiblePassword","name","address","none","webSearch","twitter"],t.s)
 B.Iu=s([239,191,189],t.t)
 B.h=new A.h(0,0)
@@ -96245,36 +96245,36 @@ B.Yz=new A.d("Trang ch\u1ee7",null,null,null,null,null,null,null,null)
 B.Na=new A.mY(B.aa0,B.aa1,B.Yz)
 B.aa6=new A.hF("assets/icons/nav-teachings.png","Khai th\u1ecb",!1,null)
 B.aa5=new A.hF("assets/icons/nav-teachings.png","Khai th\u1ecb",!0,null)
-B.a_x=new A.d("Khai th\u1ecb",null,null,null,null,null,null,null,null)
-B.Nb=new A.mY(B.aa6,B.aa5,B.a_x)
+B.a_y=new A.d("Khai th\u1ecb",null,null,null,null,null,null,null,null)
+B.Nb=new A.mY(B.aa6,B.aa5,B.a_y)
 B.a9Z=new A.hF("assets/icons/nav-mantra.png","Tr\xec ch\xfa",!1,null)
 B.aa3=new A.hF("assets/icons/nav-mantra.png","Tr\xec ch\xfa",!0,null)
 B.a0d=new A.d("Tr\xec ch\xfa",null,null,null,null,null,null,null,null)
 B.N7=new A.mY(B.a9Z,B.aa3,B.a0d)
 B.aa2=new A.hF("assets/icons/nav-chat.png","Ti\u1ec3u T\u1ecbnh",!1,null)
 B.aa4=new A.hF("assets/icons/nav-chat.png","Ti\u1ec3u T\u1ecbnh",!0,null)
-B.a4N=new A.d("Ti\u1ec3u T\u1ecbnh",null,null,null,null,null,null,null,null)
-B.N9=new A.mY(B.aa2,B.aa4,B.a4N)
+B.a4O=new A.d("Ti\u1ec3u T\u1ecbnh",null,null,null,null,null,null,null,null)
+B.N9=new A.mY(B.aa2,B.aa4,B.a4O)
 B.a9Y=new A.hF("assets/icons/nav-settings.png","C\xe0i \u0111\u1eb7t",!1,null)
 B.aa_=new A.hF("assets/icons/nav-settings.png","C\xe0i \u0111\u1eb7t",!0,null)
-B.a5e=new A.d("C\xe0i \u0111\u1eb7t",null,null,null,null,null,null,null,null)
-B.N8=new A.mY(B.a9Y,B.aa_,B.a5e)
+B.a5f=new A.d("C\xe0i \u0111\u1eb7t",null,null,null,null,null,null,null,null)
+B.N8=new A.mY(B.a9Y,B.aa_,B.a5f)
 B.oX=s([B.Na,B.Nb,B.N7,B.N9,B.N8],A.at("C<mY>"))
 B.IV=s([4,9,14,19],t.t)
-B.KM=s([137,80,78,71,13,10,26,10],t.Z)
+B.KL=s([137,80,78,71,13,10,26,10],t.Z)
 B.HG=new A.mG(0,"png")
 B.HO=new A.jD(B.HG,!1,0,"png")
-B.HE=new A.l4(B.KM,B.HO,0,"png")
-B.KO=s([71,73,70,56,55,97],t.Z)
-B.HD=new A.l4(B.KO,B.hL,1,"gif87a")
+B.HE=new A.l4(B.KL,B.HO,0,"png")
+B.KN=s([71,73,70,56,55,97],t.Z)
+B.HD=new A.l4(B.KN,B.hL,1,"gif87a")
 B.K7=s([71,73,70,56,57,97],t.Z)
 B.HC=new A.l4(B.K7,B.hL,2,"gif89a")
 B.Iv=s([255,216,255],t.Z)
 B.HH=new A.mG(2,"jpeg")
 B.HS=new A.jD(B.HH,!1,3,"jpeg")
 B.HF=new A.l4(B.Iv,B.HS,3,"jpeg")
-B.Jm=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
-B.HB=new A.l4(B.Jm,B.oI,4,"webp")
+B.Jl=s([82,73,70,70,null,null,null,null,87,69,66,80],t.Z)
+B.HB=new A.l4(B.Jl,B.oI,4,"webp")
 B.Jd=s([66,77],t.Z)
 B.HI=new A.mG(4,"bmp")
 B.HQ=new A.jD(B.HI,!1,6,"bmp")
@@ -96289,16 +96289,16 @@ B.B4=new A.Gu(1,"anonymous")
 B.J6=s([B.mx,B.B4],A.at("C<Gu>"))
 B.J8=s([0,0.42,1],t.n)
 B.JV=s([0.41233895,0.35762064,0.18051042],t.n)
-B.Jx=s([0.2126,0.7152,0.0722],t.n)
+B.Jw=s([0.2126,0.7152,0.0722],t.n)
 B.KW=s([0.01932141,0.11916382,0.95034478],t.n)
-B.J9=s([B.JV,B.Jx,B.KW],t.zg)
+B.J9=s([B.JV,B.Jw,B.KW],t.zg)
 B.oY=s([0,4,12,1,5,13,3,7,15],t.t)
 B.Jc=s([65533],t.t)
 B.H3=new A.cT(58044,"MaterialIcons",!1)
 B.Hj=new A.db(B.H3,16,B.I,null,null)
 B.lR=new A.bm(8,null,null,null)
 B.a2D=new A.d("L\u1edcI KHAI TH\u1eca",null,B.ek,null,null,null,null,null,null)
-B.Jf=s([B.Hj,B.lR,B.a2D],t.p)
+B.Je=s([B.Hj,B.lR,B.a2D],t.p)
 B.a9N=new A.fX(0,1)
 B.a9S=new A.fX(0.5,1)
 B.a9V=new A.fX(0.5375,0.75)
@@ -96310,31 +96310,31 @@ B.a9W=new A.fX(0.8875,0.25)
 B.a9U=new A.fX(0.925,0.5)
 B.a9O=new A.fX(0.9625,0.75)
 B.a9P=new A.fX(1,1)
-B.Jn=s([B.a9N,B.a9S,B.a9V,B.a9X,B.a9T,B.a9R,B.a9Q,B.a9W,B.a9U,B.a9O,B.a9P],A.at("C<fX>"))
+B.Jm=s([B.a9N,B.a9S,B.a9V,B.a9X,B.a9T,B.a9R,B.a9Q,B.a9W,B.a9U,B.a9O,B.a9P],A.at("C<fX>"))
 B.cw=new A.lF(0,"left")
 B.ei=new A.lF(1,"right")
 B.b5=new A.lF(2,"center")
 B.fE=new A.lF(3,"justify")
 B.aX=new A.lF(4,"start")
 B.iH=new A.lF(5,"end")
-B.Jo=s([B.cw,B.ei,B.b5,B.fE,B.aX,B.iH],A.at("C<lF>"))
-B.JH=s([2,1.13276676],t.n)
+B.Jn=s([B.cw,B.ei,B.b5,B.fE,B.aX,B.iH],A.at("C<lF>"))
+B.JG=s([2,1.13276676],t.n)
 B.Iz=s([2.18349805,1.20311921],t.n)
-B.KC=s([2.33888662,1.28698796],t.n)
-B.KE=s([2.48660575,1.36351941],t.n)
-B.Js=s([2.62226596,1.44717976],t.n)
-B.Jz=s([2.7514899,1.53385819],t.n)
+B.KB=s([2.33888662,1.28698796],t.n)
+B.KD=s([2.48660575,1.36351941],t.n)
+B.Jr=s([2.62226596,1.44717976],t.n)
+B.Jy=s([2.7514899,1.53385819],t.n)
 B.K5=s([3.36298265,1.98288283],t.n)
-B.JK=s([4.08649929,2.23811846],t.n)
+B.JJ=s([4.08649929,2.23811846],t.n)
 B.JX=s([4.85481134,2.47563463],t.n)
-B.Jw=s([5.62945551,2.72948597],t.n)
-B.JI=s([6.43023796,2.98020421],t.n)
-B.oZ=s([B.JH,B.Iz,B.KC,B.KE,B.Js,B.Jz,B.K5,B.JK,B.JX,B.Jw,B.JI],t.zg)
-B.Jq=s(["Arial"],t.s)
-B.Jr=s([B.jn,B.jo],A.at("C<xH>"))
-B.Jt=s(["-apple-system","BlinkMacSystemFont"],t.s)
+B.Jv=s([5.62945551,2.72948597],t.n)
+B.JH=s([6.43023796,2.98020421],t.n)
+B.oZ=s([B.JG,B.Iz,B.KB,B.KD,B.Jr,B.Jy,B.K5,B.JJ,B.JX,B.Jv,B.JH],t.zg)
+B.Jp=s(["Arial"],t.s)
+B.Jq=s([B.jn,B.jo],A.at("C<xH>"))
+B.Js=s(["-apple-system","BlinkMacSystemFont"],t.s)
 B.p_=s(["BlinkMacSystemFont"],t.s)
-B.Jv=s([18,15,10,12,15,18,15,12,12],t.n)
+B.Ju=s([18,15,10,12,15,18,15,12,12],t.n)
 B.O2=new A.h(0.08,0.13)
 B.NX=new A.h(0.19,0.28)
 B.Ob=new A.h(0.32,0.1)
@@ -96353,16 +96353,16 @@ B.NI=new A.h(0.17,0.79)
 B.NL=new A.h(0.38,0.86)
 B.NK=new A.h(0.59,0.76)
 B.NR=new A.h(0.82,0.88)
-B.JB=s([B.O2,B.NX,B.Ob,B.O0,B.Oi,B.Od,B.NM,B.NO,B.NP,B.NN,B.O5,B.ND,B.O3,B.Oe,B.NI,B.NL,B.NK,B.NR],A.at("C<h>"))
+B.JA=s([B.O2,B.NX,B.Ob,B.O0,B.Oi,B.Od,B.NM,B.NO,B.NP,B.NN,B.O5,B.ND,B.O3,B.Oe,B.NI,B.NL,B.NK,B.NR],A.at("C<h>"))
 B.bn=new A.kg(0,"label")
 B.b8=new A.kg(1,"avatar")
 B.c6=new A.kg(2,"deleteIcon")
-B.JC=s([B.bn,B.b8,B.c6],A.at("C<kg>"))
-B.JE=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
+B.JB=s([B.bn,B.b8,B.c6],A.at("C<kg>"))
+B.JD=s(["Noto Color Emoji","Noto Sans Symbols","Noto Sans SC","Noto Sans TC","Noto Sans HK","Noto Sans JP","Noto Sans KR"],t.s)
 B.DO=new A.y(0.18823529411764706,0,0,0,B.f)
 B.vj=new A.h(0,8)
 B.C_=new A.dk(0,B.cJ,B.DO,B.vj,16)
-B.JG=s([B.C_],t.sq)
+B.JF=s([B.C_],t.sq)
 B.aS=new A.eC(0,"icon")
 B.b9=new A.eC(1,"input")
 B.ah=new A.eC(2,"label")
@@ -96374,7 +96374,7 @@ B.aZ=new A.eC(7,"suffixIcon")
 B.bU=new A.eC(8,"helperError")
 B.bV=new A.eC(9,"counter")
 B.cY=new A.eC(10,"container")
-B.JJ=s([B.aS,B.b9,B.ah,B.bf,B.bg,B.bh,B.ac,B.aZ,B.bU,B.bV,B.cY],A.at("C<eC>"))
+B.JI=s([B.aS,B.b9,B.ah,B.bf,B.bg,B.bh,B.ac,B.aZ,B.bU,B.bV,B.cY],A.at("C<eC>"))
 B.L2=new A.py("en",null,"US")
 B.p0=s([B.L2],t.ss)
 B.p1=s([0,41,61,101,131,181,251,301,360],t.n)
@@ -96386,11 +96386,11 @@ B.a9A=new A.lW(8,0.12)
 B.a9z=new A.lW(12,0.14)
 B.p2=s([B.a9y,B.a9D,B.a9B,B.a9C,B.a9A,B.a9z],A.at("C<lW>"))
 B.p3=s([0,21,51,121,151,191,271,321,360],t.n)
-B.JR=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
+B.JQ=s([-1,0,0,1,0,0,-1,0,1,0,0,0,-1,1,0,1,1,1,1,0],t.n)
 B.Bu=new A.JD(2,"outer")
 B.nr=new A.y(0.09803921568627451,0,0,0,B.f)
 B.BZ=new A.dk(0.2,B.Bu,B.nr,B.h,11)
-B.JT=s([B.BZ],t.sq)
+B.JS=s([B.BZ],t.sq)
 B.A4=new A.CT(0,"left")
 B.A5=new A.CT(1,"right")
 B.JW=s([B.A4,B.A5],A.at("C<CT>"))
@@ -96408,13 +96408,12 @@ B.bG=new A.j9(1,"title")
 B.d_=new A.j9(2,"subtitle")
 B.es=new A.j9(3,"trailing")
 B.K4=s([B.cZ,B.bG,B.d_,B.es],A.at("C<j9>"))
-B.K8=s(["B\u1ed5 sung b\xe0i khai th\u1ecb d\xe0i v\u1ec1 Ch\xfa L\u0103ng Nghi\xeam v\xe0 Ph\xe1p Th\xe2n.","S\u1eafp x\u1ebfp \u1ea3nh H\xf2a Th\u01b0\u1ee3ng Tuy\xean H\xf3a th\xe0nh m\u1ed9t h\xe0ng c\xe2n \u0111\u1ed1i ph\xeda tr\xean.","Ti\xeau \u0111\u1ec1 V\u0103n Ch\xfa L\u0103ng Nghi\xeam t\u1ef1 cu\u1ed9n \u0111i \u0111\u1ec3 d\xe0nh tr\u1ecdn ch\u1ed7 \u0111\u1ecdc."],t.s)
 B.b4=new A.f7(1,"fuchsia")
-B.K9=s([B.a7,B.b4,B.H,B.aP,B.av,B.aQ],A.at("C<f7>"))
+B.K8=s([B.a7,B.b4,B.H,B.aP,B.av,B.aQ],A.at("C<f7>"))
 B.E2=new A.y(0.3215686274509804,0.043137254901960784,0.09411764705882353,0.12549019607843137,B.f)
 B.Nt=new A.h(0,16)
 B.C0=new A.dk(0,B.cJ,B.E2,B.Nt,32)
-B.Ka=s([B.C0],t.sq)
+B.K9=s([B.C0],t.sq)
 B.AN=new A.vR(0,"topLeft")
 B.AQ=new A.vR(3,"bottomRight")
 B.a9t=new A.lV(B.AN,B.AQ)
@@ -96423,14 +96422,14 @@ B.AO=new A.vR(1,"topRight")
 B.AP=new A.vR(2,"bottomLeft")
 B.a9u=new A.lV(B.AO,B.AP)
 B.a9v=new A.lV(B.AP,B.AO)
-B.Kb=s([B.a9t,B.a9w,B.a9u,B.a9v],A.at("C<lV>"))
-B.Kc=s(["assets/images/teacher-pho-quang.webp"],t.s)
-B.Ke=s([35,30,20,25,30,35,30,25,25],t.n)
-B.Kh=s(["click","scroll"],t.s)
+B.Ka=s([B.a9t,B.a9w,B.a9u,B.a9v],A.at("C<lV>"))
+B.Kb=s(["assets/images/teacher-pho-quang.webp"],t.s)
+B.Kd=s([35,30,20,25,30,35,30,25,25],t.n)
+B.Kg=s(["click","scroll"],t.s)
 B.C8=new A.rH()
 B.il=new A.P9(1,"page")
 B.im=new A.ev(B.bi,B.il)
-B.Ki=s([B.C8,B.im],A.at("C<b0>"))
+B.Kh=s([B.C8,B.im],A.at("C<b0>"))
 B.c5=new A.m(!0,B.I,null,null,null,null,18,B.ay,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Yc=new A.d("K\u1ec6 T\xc1N PH\u1eacT",null,B.c5,B.b5,null,null,null,null,null)
 B.El=new A.y(1,0.8196078431372549,0.7490196078431373,0.6823529411764706,B.f)
@@ -96440,42 +96439,42 @@ B.a6G=new A.d("Ba c\xf5i ch\u1eb3ng ai b\u1eb1ng",null,B.b,null,null,null,null,n
 B.a3Y=new A.d("Th\u1ea7y d\u1ea1y kh\u1eafp tr\u1eddi ng\u01b0\u1eddi",null,B.b,null,null,null,null,null,null)
 B.a2e=new A.d("Cha l\xe0nh chung b\u1ed1n lo\xe0i",null,B.b,null,null,null,null,null,null)
 B.Yq=new A.d("Quy y tr\xf2n m\u1ed9t ni\u1ec7m",null,B.b,null,null,null,null,null,null)
-B.a5a=new A.d("D\u1ee9t s\u1ea1ch nghi\u1ec7p ba k\u1ef3",null,B.b,null,null,null,null,null,null)
+B.a5b=new A.d("D\u1ee9t s\u1ea1ch nghi\u1ec7p ba k\u1ef3",null,B.b,null,null,null,null,null,null)
 B.a3O=new A.d("X\u01b0ng d\u01b0\u01a1ng c\xf9ng t\xe1n th\xe1n",null,B.b,null,null,null,null,null,null)
 B.a0M=new A.d("\u1ee8c ki\u1ebfp kh\xf4ng c\xf9ng t\u1eadn.",null,B.b,null,null,null,null,null,null)
 B.ao=new A.bm(null,10,null,null)
-B.a53=new A.d("QU\xc1N T\u01af\u1edeNG",null,B.c5,B.b5,null,null,null,null,null)
+B.a54=new A.d("QU\xc1N T\u01af\u1edeNG",null,B.c5,B.b5,null,null,null,null,null)
 B.a1f=new A.d("Ph\u1eadt, ch\xfang sinh t\xe1nh th\u01b0\u1eddng r\u1ed7ng l\u1eb7ng",null,B.b,null,null,null,null,null,null)
 B.a6E=new A.d("\u0110\u1ea1o c\u1ea3m th\xf4ng kh\xf4ng th\u1ec3 ngh\u0129 b\xe0n",null,B.b,null,null,null,null,null,null)
-B.a_w=new A.d("L\u01b0\u1edbi \u0111\u1ebf ch\xe2u v\xed \u0111\u1ea1o tr\xe0ng",null,B.b,null,null,null,null,null,null)
+B.a_x=new A.d("L\u01b0\u1edbi \u0111\u1ebf ch\xe2u v\xed \u0111\u1ea1o tr\xe0ng",null,B.b,null,null,null,null,null,null)
 B.a1n=new A.d("M\u01b0\u1eddi ph\u01b0\u01a1ng Ph\u1eadt b\u1ea3o h\xe0o quang s\xe1ng ng\u1eddi.",null,B.b,null,null,null,null,null,null)
 B.a1r=new A.d("Tr\u01b0\u1edbc b\u1ea3o t\u1ecda th\xe2n con \u1ea3nh hi\u1ec7n",null,B.b,null,null,null,null,null,null)
 B.a2E=new A.d("C\xfai \u0111\u1ea7u xin th\u1ec7 nguy\u1ec7n quy y.",null,B.b,null,null,null,null,null,null)
-B.YK=new A.d("L\u1ec4 PH\u1eacT",null,B.c5,B.b5,null,null,null,null,null)
-B.a_V=new A.d("Ch\xed t\xe2m \u0111\u1ea3nh l\u1ec5: Nam m\xf4 t\u1eadn h\u01b0 kh\xf4ng bi\u1ebfn ph\xe1p gi\u1edbi qu\xe1, hi\u1ec7n, v\u1ecb lai Th\u1eadp ph\u01b0\u01a1ng ch\u01b0 Ph\u1eadt, T\xf4n Ph\xe1p, Hi\u1ec1n Th\xe1nh T\u0103ng th\u01b0\u1eddng tr\u1ee5 Tam B\u1ea3o (1 l\u1ea1y).",null,B.b,null,null,null,null,null,null)
-B.a57=new A.d("Ch\xed t\xe2m \u0111\u1ea3nh l\u1ec5: Nam m\xf4 Ta-b\xe0 gi\xe1o ch\u1ee7 \u0111i\u1ec1u ng\u1ef1 B\u1ed5n s\u01b0 Th\xedch-ca M\xe2u-ni Ph\u1eadt, \u0110\u01b0\u01a1ng lai h\u1ea1 sinh Di-l\u1eb7c t\xf4n Ph\u1eadt, \u0110\u1ea1i tr\xed V\u0103n-th\xf9 S\u01b0-l\u1ee3i B\u1ed3-t\xe1t, \u0110\u1ea1i h\u1ea1nh Ph\u1ed5 Hi\u1ec1n B\u1ed3-t\xe1t, H\u1ed9 ph\xe1p ch\u01b0 t\xf4n B\u1ed3-t\xe1t, Linh S\u01a1n h\u1ed9i th\u01b0\u1ee3ng Ph\u1eadt B\u1ed3-t\xe1t (1 l\u1ea1y).",null,B.b,null,null,null,null,null,null)
+B.YJ=new A.d("L\u1ec4 PH\u1eacT",null,B.c5,B.b5,null,null,null,null,null)
+B.a_W=new A.d("Ch\xed t\xe2m \u0111\u1ea3nh l\u1ec5: Nam m\xf4 t\u1eadn h\u01b0 kh\xf4ng bi\u1ebfn ph\xe1p gi\u1edbi qu\xe1, hi\u1ec7n, v\u1ecb lai Th\u1eadp ph\u01b0\u01a1ng ch\u01b0 Ph\u1eadt, T\xf4n Ph\xe1p, Hi\u1ec1n Th\xe1nh T\u0103ng th\u01b0\u1eddng tr\u1ee5 Tam B\u1ea3o (1 l\u1ea1y).",null,B.b,null,null,null,null,null,null)
+B.a58=new A.d("Ch\xed t\xe2m \u0111\u1ea3nh l\u1ec5: Nam m\xf4 Ta-b\xe0 gi\xe1o ch\u1ee7 \u0111i\u1ec1u ng\u1ef1 B\u1ed5n s\u01b0 Th\xedch-ca M\xe2u-ni Ph\u1eadt, \u0110\u01b0\u01a1ng lai h\u1ea1 sinh Di-l\u1eb7c t\xf4n Ph\u1eadt, \u0110\u1ea1i tr\xed V\u0103n-th\xf9 S\u01b0-l\u1ee3i B\u1ed3-t\xe1t, \u0110\u1ea1i h\u1ea1nh Ph\u1ed5 Hi\u1ec1n B\u1ed3-t\xe1t, H\u1ed9 ph\xe1p ch\u01b0 t\xf4n B\u1ed3-t\xe1t, Linh S\u01a1n h\u1ed9i th\u01b0\u1ee3ng Ph\u1eadt B\u1ed3-t\xe1t (1 l\u1ea1y).",null,B.b,null,null,null,null,null,null)
 B.a1Z=new A.d("Ch\xed t\xe2m \u0111\u1ea3nh l\u1ec5: Nam m\xf4 T\xe2y Ph\u01b0\u01a1ng C\u1ef1c L\u1ea1c th\u1ebf gi\u1edbi \u0110\u1ea1i t\u1eeb \u0110\u1ea1i bi A-di-\u0111\xe0 Ph\u1eadt, \u0110\u1ea1i bi Qu\xe1n Th\u1ebf \xc2m B\u1ed3-t\xe1t, \u0110\u1ea1i Th\u1ebf Ch\xed B\u1ed3-t\xe1t, \u0110\u1ea1i nguy\u1ec7n \u0110\u1ecba T\u1ea1ng V\u01b0\u01a1ng B\u1ed3-t\xe1t, Thanh t\u1ecbnh \u0111\u1ea1i h\u1ea3i ch\xfang B\u1ed3-t\xe1t (1 l\u1ea1y).",null,B.b,null,null,null,null,null,null)
-B.a5h=new A.d("L\u01b0 h\u01b0\u01a1ng x\u1ea1 nhi\u1ec7t",null,B.b,null,null,null,null,null,null)
+B.a5i=new A.d("L\u01b0 h\u01b0\u01a1ng x\u1ea1 nhi\u1ec7t",null,B.b,null,null,null,null,null,null)
 B.a3y=new A.d("Ph\xe1p gi\u1edbi m\xf4ng hu\xe2n",null,B.b,null,null,null,null,null,null)
-B.a_Q=new A.d("Ch\u01b0 Ph\u1eadt h\u1ea3i h\u1ed9i t\u1ea5t di\xeau v\u0103n",null,B.b,null,null,null,null,null,null)
+B.a_R=new A.d("Ch\u01b0 Ph\u1eadt h\u1ea3i h\u1ed9i t\u1ea5t di\xeau v\u0103n",null,B.b,null,null,null,null,null,null)
 B.a1z=new A.d("T\xf9y x\u1ee9 ki\u1ebft t\u01b0\u1eddng v\xe2n",null,B.b,null,null,null,null,null,null)
 B.a3k=new A.d("Th\xe0nh \xfd ph\u01b0\u01a1ng \xe2n",null,B.b,null,null,null,null,null,null)
-B.a5r=new A.d("Ch\u01b0 Ph\u1eadt hi\u1ec7n to\xe0n th\xe2n",null,B.b,null,null,null,null,null,null)
+B.a5s=new A.d("Ch\u01b0 Ph\u1eadt hi\u1ec7n to\xe0n th\xe2n",null,B.b,null,null,null,null,null,null)
 B.a0V=new A.d("Nam m\xf4 H\u01b0\u01a1ng V\xe2n C\xe1i B\u1ed3-t\xe1t Ma-ha-t\xe1t (3 l\u1ea7n).",null,B.b,null,null,null,null,null,null)
-B.a61=new A.d("Nam M\xf4 \u0110\u1ea1i Ph\u1eadt \u0110\u1ea3nh Th\u1ee7 L\u0103ng Nghi\xeam Ma Ha T\xe1t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t Ra \u0110\xe0 La Ni ( 3 l\u1ea7n )",null,B.b,null,null,null,null,null,null)
-B.a5L=new A.d("Nam m\xf4 L\u0103ng-nghi\xeam H\u1ed9i Th\u01b0\u1ee3ng Ph\u1eadt B\u1ed3-t\xe1t (3 l\u1ea7n).",null,B.b,null,null,null,null,null,null)
+B.a62=new A.d("Nam M\xf4 \u0110\u1ea1i Ph\u1eadt \u0110\u1ea3nh Th\u1ee7 L\u0103ng Nghi\xeam Ma Ha T\xe1t \u0110\xe1t \u0110a B\xe1t \u0110\xe1t Ra \u0110\xe0 La Ni ( 3 l\u1ea7n )",null,B.b,null,null,null,null,null,null)
+B.a5M=new A.d("Nam m\xf4 L\u0103ng-nghi\xeam H\u1ed9i Th\u01b0\u1ee3ng Ph\u1eadt B\u1ed3-t\xe1t (3 l\u1ea7n).",null,B.b,null,null,null,null,null,null)
 B.a1D=new A.d("Di\u1ec7u tr\u1ea1m t\u1ed5ng tr\xec b\u1ea5t \u0111\u1ed9ng t\xf4n",null,B.b,null,null,null,null,null,null)
 B.a1X=new A.d("Th\u1ee7 L\u0103ng-nghi\xeam v\u01b0\u01a1ng th\u1ebf hy h\u1eefu",null,B.b,null,null,null,null,null,null)
 B.a3q=new A.d("Ti\xeau ng\xe3 \u1ee9c ki\u1ebfp \u0111i\xean \u0111\u1ea3o t\u01b0\u1edfng",null,B.b,null,null,null,null,null,null)
-B.a_0=new A.d("B\u1ea5t l\u1ecbch T\u0103ng-k\u1ef3 ho\u1ea1ch ph\xe1p th\xe2n.",null,B.b,null,null,null,null,null,null)
+B.a_1=new A.d("B\u1ea5t l\u1ecbch T\u0103ng-k\u1ef3 ho\u1ea1ch ph\xe1p th\xe2n.",null,B.b,null,null,null,null,null,null)
 B.Zj=new A.d("Nguy\u1ec7n kim \u0111\u1eafc qu\u1ea3 th\xe0nh B\u1ea3o V\u01b0\u01a1ng",null,B.b,null,null,null,null,null,null)
 B.a2c=new A.d("Ho\xe0n \u0111\u1ed9 nh\u01b0 th\u1ecb h\u1eb1ng sa ch\xfang",null,B.b,null,null,null,null,null,null)
 B.a1s=new A.d("T\u01b0\u01a1ng th\u1eed th\xe2m t\xe2m ph\u1ee5ng tr\u1ea7n s\xe1t",null,B.b,null,null,null,null,null,null)
-B.a_A=new A.d("Th\u1ecb t\u1eafc danh vi b\xe1o Ph\u1eadt \xe2n.",null,B.b,null,null,null,null,null,null)
-B.YG=new A.d("Ph\u1ee5c th\u1ec9nh Th\u1ebf T\xf4n v\u1ecb ch\u1ee9ng minh",null,B.b,null,null,null,null,null,null)
+B.a_B=new A.d("Th\u1ecb t\u1eafc danh vi b\xe1o Ph\u1eadt \xe2n.",null,B.b,null,null,null,null,null,null)
+B.YF=new A.d("Ph\u1ee5c th\u1ec9nh Th\u1ebf T\xf4n v\u1ecb ch\u1ee9ng minh",null,B.b,null,null,null,null,null,null)
 B.a37=new A.d("Ng\u0169 tr\u01b0\u1ee3c \xe1c th\u1ebf th\u1ec7 ti\xean nh\u1eadp",null,B.b,null,null,null,null,null,null)
 B.a01=new A.d("Nh\u01b0 nh\u1ea5t ch\xfang sinh v\u1ecb th\xe0nh Ph\u1eadt",null,B.b,null,null,null,null,null,null)
-B.a5n=new A.d("Chung b\u1ea5t \u01b0 th\u1eed th\u1ee7 N\xea-ho\xe0n.",null,B.b,null,null,null,null,null,null)
+B.a5o=new A.d("Chung b\u1ea5t \u01b0 th\u1eed th\u1ee7 N\xea-ho\xe0n.",null,B.b,null,null,null,null,null,null)
 B.a2b=new A.d("\u0110\u1ea1i h\xf9ng \u0110\u1ea1i l\u1ef1c \u0110\u1ea1i t\u1eeb bi",null,B.b,null,null,null,null,null,null)
 B.a3v=new A.d("Hy c\xe1nh th\u1ea9m tr\u1eeb vi t\u1ebf ho\u1eb7c",null,B.b,null,null,null,null,null,null)
 B.Yj=new A.d("Linh ng\xe3 t\u1ea3o \u0111\u0103ng V\xf4 th\u01b0\u1ee3ng gi\xe1c",null,B.b,null,null,null,null,null,null)
@@ -96485,46 +96484,46 @@ B.a1T=new A.d("Th\u01b0\u1edbc-ca-ra t\xe2m v\xf4 \u0111\u1ed9ng chuy\u1ec3n.",n
 B.a3F=new A.d("Nam m\xf4 Th\u01b0\u1eddng Tr\u1ee5 Th\u1eadp ph\u01b0\u01a1ng Ph\u1eadt",null,B.b,null,null,null,null,null,null)
 B.a3G=new A.d("Nam m\xf4 Th\u01b0\u1eddng Tr\u1ee5 Th\u1eadp ph\u01b0\u01a1ng Ph\xe1p",null,B.b,null,null,null,null,null,null)
 B.a3H=new A.d("Nam m\xf4 Th\u01b0\u1eddng Tr\u1ee5 Th\u1eadp ph\u01b0\u01a1ng T\u0103ng",null,B.b,null,null,null,null,null,null)
-B.a6q=new A.d("Nam m\xf4 Th\xedch-ca M\xe2u-ni Ph\u1eadt.",null,B.b,null,null,null,null,null,null)
-B.a5X=new A.d("Nam m\xf4 Ph\u1eadt \u0110\u1ea3nh Th\u1ee7 L\u0103ng-nghi\xeam",null,B.b,null,null,null,null,null,null)
+B.a6r=new A.d("Nam m\xf4 Th\xedch-ca M\xe2u-ni Ph\u1eadt.",null,B.b,null,null,null,null,null,null)
+B.a5Y=new A.d("Nam m\xf4 Ph\u1eadt \u0110\u1ea3nh Th\u1ee7 L\u0103ng-nghi\xeam",null,B.b,null,null,null,null,null,null)
 B.a2n=new A.d("Nam m\xf4 Qu\xe1n Th\u1ebf \xc2m B\u1ed3-t\xe1t",null,B.b,null,null,null,null,null,null)
-B.ZV=new A.d("Nam m\xf4 Kim Cang T\u1ea1ng B\u1ed3-t\xe1t.",null,B.b,null,null,null,null,null,null)
-B.a5R=new A.d("Nh\u0129 th\u1eddi Th\u1ebf T\xf4n, t\xf9ng nh\u1ee5c k\u1ebf trung, d\xf5ng b\xe1 b\u1ea3o quang, quang trung d\xf5ng xu\u1ea5t, thi\xean di\u1ec7p b\u1ea3o li\xean, h\u1ef1u h\xf3a Nh\u01b0 Lai, t\u1ecda b\u1ea3o hoa trung, \u0111\u1ea3nh ph\xf3ng th\u1eadp \u0111\u1ea1o, b\xe1 b\u1ea3o quang minh, nh\u1ea5t nh\u1ea5t quang minh, giai bi\u1ebfn th\u1ecb hi\u1ec7n, th\u1eadp h\u1eb1ng h\xe0 sa, kim cang m\u1eadt t\xedch, k\xecnh s\u01a1n tr\xec s\u1eed, bi\u1ebfn h\u01b0 kh\xf4ng gi\u1edbi, \u0111\u1ea1i ch\xfang ng\u01b0\u1ee1ng quan, \xfay \xe1i ki\xeam b\u1ea3o, c\u1ea7u Ph\u1eadt ai h\u1ef1u, nh\u1ea5t t\xe2m th\xednh Ph\u1eadt, V\xf4 Ki\u1ebfn \u0110\u1ea3nh t\u01b0\u1edbng, ph\xf3ng quang Nh\u01b0 Lai, tuy\xean thuy\u1ebft th\u1ea7n ch\xfa.",null,B.b,null,null,null,null,null,null)
+B.ZW=new A.d("Nam m\xf4 Kim Cang T\u1ea1ng B\u1ed3-t\xe1t.",null,B.b,null,null,null,null,null,null)
+B.a5S=new A.d("Nh\u0129 th\u1eddi Th\u1ebf T\xf4n, t\xf9ng nh\u1ee5c k\u1ebf trung, d\xf5ng b\xe1 b\u1ea3o quang, quang trung d\xf5ng xu\u1ea5t, thi\xean di\u1ec7p b\u1ea3o li\xean, h\u1ef1u h\xf3a Nh\u01b0 Lai, t\u1ecda b\u1ea3o hoa trung, \u0111\u1ea3nh ph\xf3ng th\u1eadp \u0111\u1ea1o, b\xe1 b\u1ea3o quang minh, nh\u1ea5t nh\u1ea5t quang minh, giai bi\u1ebfn th\u1ecb hi\u1ec7n, th\u1eadp h\u1eb1ng h\xe0 sa, kim cang m\u1eadt t\xedch, k\xecnh s\u01a1n tr\xec s\u1eed, bi\u1ebfn h\u01b0 kh\xf4ng gi\u1edbi, \u0111\u1ea1i ch\xfang ng\u01b0\u1ee1ng quan, \xfay \xe1i ki\xeam b\u1ea3o, c\u1ea7u Ph\u1eadt ai h\u1ef1u, nh\u1ea5t t\xe2m th\xednh Ph\u1eadt, V\xf4 Ki\u1ebfn \u0110\u1ea3nh t\u01b0\u1edbng, ph\xf3ng quang Nh\u01b0 Lai, tuy\xean thuy\u1ebft th\u1ea7n ch\xfa.",null,B.b,null,null,null,null,null,null)
 B.a6x=new A.d("Ch\xfa L\u0103ng Nghi\xeam: \u0110\u1ec7 Nh\u1ea5t",null,B.c5,B.b5,null,null,null,null,null)
-B.a4h=new A.d("1. Nam m\xf4 t\xe1t \u0111\xe1t tha.",null,B.b,null,null,null,null,null,null)
+B.a4i=new A.d("1. Nam m\xf4 t\xe1t \u0111\xe1t tha.",null,B.b,null,null,null,null,null,null)
 B.Zd=new A.d("2. T\xf4 gi\xe0 \u0111a da.",null,B.b,null,null,null,null,null,null)
 B.a0R=new A.d("3. A ra ha \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.a33=new A.d("4. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 t\u1ecfa.",null,B.b,null,null,null,null,null,null)
-B.Z4=new A.d("5. Nam m\xf4 t\xe1t \u0111\xe1t tha.",null,B.b,null,null,null,null,null,null)
+B.Z3=new A.d("5. Nam m\xf4 t\xe1t \u0111\xe1t tha.",null,B.b,null,null,null,null,null,null)
 B.a7g=new A.d("6. Ph\u1eadt \u0111\xe0 cu tri s\u1eafc ni sam.",null,B.b,null,null,null,null,null,null)
 B.a7e=new A.d("7. Nam m\xf4 t\xe1t b\xe0.",null,B.b,null,null,null,null,null,null)
 B.a2l=new A.d("8. B\u1ed9t \u0111\xe0 b\u1ed9t \u0111\u1ecba.",null,B.b,null,null,null,null,null,null)
 B.a14=new A.d("9. T\xe1t \u0111a b\u1ec7 t\u1ec7.",null,B.b,null,null,null,null,null,null)
 B.a27=new A.d("10. Nam m\xf4 t\xe1t \u0111a n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a6a=new A.d("11. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0.",null,B.b,null,null,null,null,null,null)
+B.a6b=new A.d("11. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0.",null,B.b,null,null,null,null,null,null)
 B.a0f=new A.d("12. Cu tri n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a38=new A.d("13. Ta x\xe1 ra b\xe0 ca.",null,B.b,null,null,null,null,null,null)
 B.a1H=new A.d("14. T\u0103ng gi\xe0 n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.Zl=new A.d("15. Nam m\xf4 l\xf4 k\xea A La H\xe1n \u0111a n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a00=new A.d("16. Nam m\xf4 t\xf4 l\xf4 \u0111a ba na n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.YZ=new A.d("17. Nam m\xf4 Ta y\u1ebft r\u1ecb \u0111\xe0 d\xe0 di n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a4G=new A.d("18. Nam m\xf4 l\xf4 k\xea tam mi\u1ec7u d\xe0 \u0111a n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.YY=new A.d("17. Nam m\xf4 Ta y\u1ebft r\u1ecb \u0111\xe0 d\xe0 di n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a4H=new A.d("18. Nam m\xf4 l\xf4 k\xea tam mi\u1ec7u d\xe0 \u0111a n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a1M=new A.d("19. Tam mi\u1ec7u d\xe0 ba ra.",null,B.b,null,null,null,null,null,null)
 B.a2_=new A.d("20. \u0110\u1ec3 ba \u0111a na n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a0e=new A.d("21. Nam m\xf4 \u0111\u1ec1 b\xe0 ly s\u1eafc n\u1ecfa.",null,B.b,null,null,null,null,null,null)
 B.a3p=new A.d("22. Nam m\xf4 t\u1ea5t \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
-B.a5y=new A.d("23. T\u1ef3 \u0111\u1ecba da.",null,B.b,null,null,null,null,null,null)
-B.a_4=new A.d("24. \u0110\xe0 ra ly s\u1eaft n\u1ecfa.",null,B.b,null,null,null,null,null,null)
+B.a5z=new A.d("23. T\u1ef3 \u0111\u1ecba da.",null,B.b,null,null,null,null,null,null)
+B.a_5=new A.d("24. \u0110\xe0 ra ly s\u1eaft n\u1ecfa.",null,B.b,null,null,null,null,null,null)
 B.a05=new A.d("25. X\xe1 ba noa.",null,B.b,null,null,null,null,null,null)
-B.a_M=new A.d("26. Y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a_L=new A.d("27. Ta ha ta ra ma tha n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a_N=new A.d("26. Y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a_M=new A.d("27. Ta ha ta ra ma tha n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a2T=new A.d("28. Nam m\xf4 b\u1ea1t ra ha ma ni.",null,B.b,null,null,null,null,null,null)
 B.a7o=new A.d("29. Nam m\xf4 nh\xe2n \u0111\xe0 ra da.",null,B.b,null,null,null,null,null,null)
-B.a4x=new A.d("30. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
+B.a4y=new A.d("30. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.a1S=new A.d("31. L\xf4 \u0111\xe0 ra da.",null,B.b,null,null,null,null,null,null)
 B.a1N=new A.d("32. \xd4 ma b\xe1t \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
-B.YL=new A.d("33. Ta h\xea d\u1ea1 da.",null,B.b,null,null,null,null,null,null)
-B.a4R=new A.d("34. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
+B.YK=new A.d("33. Ta h\xea d\u1ea1 da.",null,B.b,null,null,null,null,null,null)
+B.a4S=new A.d("34. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.Y0=new A.d("35. Na la d\xe3",null,B.b,null,null,null,null,null,null)
 B.a0u=new A.d("36. Noa da",null,B.b,null,null,null,null,null,null)
 B.a6C=new A.d("37. B\xe1t d\xe1 ma ha tam m\u1ed9 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
@@ -96532,379 +96531,379 @@ B.Zy=new A.d("38. Nam m\xf4 t\u1ea5t y\u1ebft l\u1ecb \u0111a da.",null,B.b,null
 B.a73=new A.d("39. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.a0C=new A.d("40. Ma ha ca ra da.",null,B.b,null,null,null,null,null,null)
 B.a6t=new A.d("41. \u0110\u1ecba r\u1ecb b\xe1t l\u1eb7c na.",null,B.b,null,null,null,null,null,null)
-B.YF=new A.d("42. D\xe0 ra t\u1ef3 \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
+B.YE=new A.d("42. D\xe0 ra t\u1ef3 \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
 B.a6Z=new A.d("43. Ba noa ca la da.",null,B.b,null,null,null,null,null,null)
 B.a6N=new A.d("44. A \u0111\u1ecba m\u1ee5c \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
-B.a_b=new A.d("45. Thi ma x\xe1 na n\xea.",null,B.b,null,null,null,null,null,null)
+B.a_c=new A.d("45. Thi ma x\xe1 na n\xea.",null,B.b,null,null,null,null,null,null)
 B.a12=new A.d("46. B\xe0 t\u1ea5t n\xea.",null,B.b,null,null,null,null,null,null)
-B.a_F=new A.d("47. Ma \u0111\xe1t r\u1ecb d\xe0 noa.",null,B.b,null,null,null,null,null,null)
+B.a_G=new A.d("47. Ma \u0111\xe1t r\u1ecb d\xe0 noa.",null,B.b,null,null,null,null,null,null)
 B.Y6=new A.d("48. Nam m\xf4 t\u1ea5t y\u1ebft l\u1ecb \u0111a da.",null,B.b,null,null,null,null,null,null)
-B.a_m=new A.d("49. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
+B.a_n=new A.d("49. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.a0I=new A.d("50. \u0110a tha d\xe0 \u0111a c\xe2u ra da.",null,B.b,null,null,null,null,null,null)
 B.a3V=new A.d("51. Nam m\xf4 b\xe1t \u0111\u1ea7u ma c\xe2u ra da.",null,B.b,null,null,null,null,null,null)
 B.a3Z=new A.d("52. Nam m\xf4 b\u1ea1c x\xe0 ra c\xe2u ra da.",null,B.b,null,null,null,null,null,null)
 B.a1t=new A.d("53. Nam m\xf4 ma ni c\xe2u ra da.",null,B.b,null,null,null,null,null,null)
 B.a0t=new A.d("54. Nam m\xf4 d\xe0 x\xe0 c\xe2u ra da.",null,B.b,null,null,null,null,null,null)
 B.a_Y=new A.d("55. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
-B.a5H=new A.d("56. \u0110\u1ebf r\u1ecb tr\xe0",null,B.b,null,null,null,null,null,null)
-B.a4c=new A.d("57. Du ra t\xe2y na.",null,B.b,null,null,null,null,null,null)
-B.a52=new A.d("58. Ba la ha ra noa ra x\xe0 da",null,B.b,null,null,null,null,null,null)
-B.a56=new A.d("59. \u0110a tha d\xe0 \u0111a gia.",null,B.b,null,null,null,null,null,null)
+B.a5I=new A.d("56. \u0110\u1ebf r\u1ecb tr\xe0",null,B.b,null,null,null,null,null,null)
+B.a4d=new A.d("57. Du ra t\xe2y na.",null,B.b,null,null,null,null,null,null)
+B.a53=new A.d("58. Ba la ha ra noa ra x\xe0 da",null,B.b,null,null,null,null,null,null)
+B.a57=new A.d("59. \u0110a tha d\xe0 \u0111a gia.",null,B.b,null,null,null,null,null,null)
 B.a0D=new A.d("60. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.Zp=new A.d("61. Nam m\xf4 A di \u0111a b\xe0 da",null,B.b,null,null,null,null,null,null)
 B.a6V=new A.d("62. \u0110a tha d\xe0 \u0111a da.",null,B.b,null,null,null,null,null,null)
 B.Yv=new A.d("63. A ra ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.a6W=new A.d("64. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
 B.a06=new A.d("65. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
-B.a5A=new A.d("66. A s\xf4 b\u1ec7 da",null,B.b,null,null,null,null,null,null)
+B.a5B=new A.d("66. A s\xf4 b\u1ec7 da",null,B.b,null,null,null,null,null,null)
 B.a25=new A.d("67. \u0110a tha d\xe0 \u0111a da",null,B.b,null,null,null,null,null,null)
-B.a4Q=new A.d("68. A ra ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
-B.a_D=new A.d("69. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
+B.a4R=new A.d("68. A ra ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
+B.a_E=new A.d("69. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
 B.a3R=new A.d("70. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.a3I=new A.d("71. Ti xa x\xe0 da",null,B.b,null,null,null,null,null,null)
-B.a5m=new A.d("72. C\xe2u l\xf4 ph\u1ec7 tr\u1ee5 r\u1ecb da",null,B.b,null,null,null,null,null,null)
+B.a5n=new A.d("72. C\xe2u l\xf4 ph\u1ec7 tr\u1ee5 r\u1ecb da",null,B.b,null,null,null,null,null,null)
 B.a16=new A.d("73. B\xe1c ra b\xe0 ra x\xe0 da",null,B.b,null,null,null,null,null,null)
 B.a0g=new A.d("74. \u0110a tha d\xe0 \u0111a da.",null,B.b,null,null,null,null,null,null)
 B.a3z=new A.d("75. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.ZD=new A.d("76. Tam b\u1ed5 s\u01b0 b\xed \u0111a",null,B.b,null,null,null,null,null,null)
 B.a2W=new A.d("77. T\xe1t l\xe2n n\u1ea1i ra l\u1eb7c x\xe0 da",null,B.b,null,null,null,null,null,null)
-B.ZQ=new A.d("78. \u0110a tha d\xe0 \u0111a da",null,B.b,null,null,null,null,null,null)
-B.Z8=new A.d("79. A ra ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
-B.a46=new A.d("80. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
+B.ZR=new A.d("78. \u0110a tha d\xe0 \u0111a da",null,B.b,null,null,null,null,null,null)
+B.Z7=new A.d("79. A ra ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
+B.a47=new A.d("80. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
 B.a1G=new A.d("81. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.a1F=new A.d("82. X\xe1 k\xea d\xe3 m\u1eabu na du\u1ec7",null,B.b,null,null,null,null,null,null)
 B.a6T=new A.d("83. \u0110a tha d\xe0 \u0111a da",null,B.b,null,null,null,null,null,null)
 B.a76=new A.d("84. A la ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.Zk=new A.d("85. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
 B.a0_=new A.d("86. Nam m\xf4 b\xe0 d\xe0 b\xe0 \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
-B.a4V=new A.d("87. L\u1eb7c \u0111\xe1t na k\xea \u0111\xf4 ra x\xe0 da",null,B.b,null,null,null,null,null,null)
-B.a5f=new A.d("88. \u0110a tha gi\xe0 \u0111a da",null,B.b,null,null,null,null,null,null)
-B.a4L=new A.d("89. A ra ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
-B.a5v=new A.d("90. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
-B.YP=new A.d("91. \u0110\u1ebf bi\u1ec1u",null,B.b,null,null,null,null,null,null)
-B.a5z=new A.d("92. Nam m\xf4 t\u1ea5t y\u1ebft r\u1ecb \u0111a",null,B.b,null,null,null,null,null,null)
-B.a5t=new A.d("93. \u1ebe \u0111\xe0m b\xe0 d\xe0 b\xe0 \u0111a.",null,B.b,null,null,null,null,null,null)
+B.a4W=new A.d("87. L\u1eb7c \u0111\xe1t na k\xea \u0111\xf4 ra x\xe0 da",null,B.b,null,null,null,null,null,null)
+B.a5g=new A.d("88. \u0110a tha gi\xe0 \u0111a da",null,B.b,null,null,null,null,null,null)
+B.a4M=new A.d("89. A ra ha \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
+B.a5w=new A.d("90. Tam mi\u1ec7u tam b\u1ed3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
+B.YO=new A.d("91. \u0110\u1ebf bi\u1ec1u",null,B.b,null,null,null,null,null,null)
+B.a5A=new A.d("92. Nam m\xf4 t\u1ea5t y\u1ebft r\u1ecb \u0111a",null,B.b,null,null,null,null,null,null)
+B.a5u=new A.d("93. \u1ebe \u0111\xe0m b\xe0 d\xe0 b\xe0 \u0111a.",null,B.b,null,null,null,null,null,null)
 B.a15=new A.d("94. T\xe1t \u0111\xe1c tha d\xe0 \u0111\xf4 s\u1eafc ni sam.",null,B.b,null,null,null,null,null,null)
 B.a2m=new A.d("95. T\xe1t \u0111\xe1c \u0111a b\xe1t \u0111\xe1c lam",null,B.b,null,null,null,null,null,null)
-B.a5q=new A.d("96. Nam m\xf4 a b\xe0 ra th\u1ecb \u0111am.",null,B.b,null,null,null,null,null,null)
+B.a5r=new A.d("96. Nam m\xf4 a b\xe0 ra th\u1ecb \u0111am.",null,B.b,null,null,null,null,null,null)
 B.a3_=new A.d("97. B\xe1t ra \u0111\u1ebf",null,B.b,null,null,null,null,null,null)
 B.a35=new A.d("98. D\u01b0\u01a1ng k\xec ra",null,B.b,null,null,null,null,null,null)
 B.Yi=new A.d("99. T\xe1t ra b\xe0.",null,B.b,null,null,null,null,null,null)
 B.a6u=new A.d("100. B\u1ed9 \u0111a y\u1ebft ra ha",null,B.b,null,null,null,null,null,null)
 B.a3g=new A.d("101. Ni y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a04=new A.d("102. Y\u1ebft ca ra ha ni.",null,B.b,null,null,null,null,null,null)
-B.a4a=new A.d("103. B\u1ea1t ra b\xed \u0111\u1ecba da.",null,B.b,null,null,null,null,null,null)
+B.a4b=new A.d("103. B\u1ea1t ra b\xed \u0111\u1ecba da.",null,B.b,null,null,null,null,null,null)
 B.a3a=new A.d("104. S\u1ea5t \u0111\xe0 n\u1ec5.",null,B.b,null,null,null,null,null,null)
-B.a5b=new A.d("105. A ca ra.",null,B.b,null,null,null,null,null,null)
+B.a5c=new A.d("105. A ca ra.",null,B.b,null,null,null,null,null,null)
 B.a71=new A.d("106. M\u1eadt r\u1ecb tr\u1ee5",null,B.b,null,null,null,null,null,null)
-B.a65=new A.d("107. B\xe1t r\u1ecb \u0111\xe1c ra da",null,B.b,null,null,null,null,null,null)
+B.a66=new A.d("107. B\xe1t r\u1ecb \u0111\xe1c ra da",null,B.b,null,null,null,null,null,null)
 B.a1B=new A.d("108. N\u1ea3nh y\u1ebft r\u1ecb.",null,B.b,null,null,null,null,null,null)
 B.ZL=new A.d("109. T\xe1t ra b\xe0",null,B.b,null,null,null,null,null,null)
 B.a6K=new A.d("110. B\xe0n \u0111\xe0 na.",null,B.b,null,null,null,null,null,null)
-B.a_E=new A.d("111. M\u1ee5c xoa ni",null,B.b,null,null,null,null,null,null)
+B.a_F=new A.d("111. M\u1ee5c xoa ni",null,B.b,null,null,null,null,null,null)
 B.a1e=new A.d("112. T\xe1t ra b\xe0.",null,B.b,null,null,null,null,null,null)
 B.a3C=new A.d("113. \u0110\u1ed9t s\u1eafc tra.",null,B.b,null,null,null,null,null,null)
 B.a1W=new A.d("114. \u0110\u1ed9t t\u1ea5t ph\u1ea1p",null,B.b,null,null,null,null,null,null)
 B.a2U=new A.d("115. B\xe1t na n\u1ec3",null,B.b,null,null,null,null,null,null)
-B.a__=new A.d("116. Ph\u1ea1t ra ni.",null,B.b,null,null,null,null,null,null)
+B.a_0=new A.d("116. Ph\u1ea1t ra ni.",null,B.b,null,null,null,null,null,null)
 B.a1j=new A.d("117. Gi\u1ea3 \u0111\xf4 ra",null,B.b,null,null,null,null,null,null)
 B.a3E=new A.d("118. Th\u1ea5t \u0111\u1ebf n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a42=new A.d("119. Y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a43=new A.d("119. Y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a1R=new A.d("120. Ta ha t\xe1t ra nh\xe3 x\xe0",null,B.b,null,null,null,null,null,null)
 B.a7_=new A.d("121. T\u1ef3 \u0111a b\u0103ng ta na y\u1ebft r\u1ecb",null,B.b,null,null,null,null,null,null)
-B.a_o=new A.d("122. A s\u1eafc tra b\u0103ng x\xe1 \u0111\u1ebf n\u1ea9m",null,B.b,null,null,null,null,null,null)
+B.a_p=new A.d("122. A s\u1eafc tra b\u0103ng x\xe1 \u0111\u1ebf n\u1ea9m",null,B.b,null,null,null,null,null,null)
 B.ZE=new A.d("123. Na xoa s\xe1c \u0111\xe1t ra nh\xe3 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.a_q=new A.d("124. Ba ra t\xe1t \u0111\xe0 na y\u1ebft r\u1ecb",null,B.b,null,null,null,null,null,null)
+B.a_r=new A.d("124. Ba ra t\xe1t \u0111\xe0 na y\u1ebft r\u1ecb",null,B.b,null,null,null,null,null,null)
 B.a3L=new A.d("125. A s\u1eaft tra n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a4A=new A.d("126. Ma ha y\u1ebft ra ha nh\xe3 x\xe0",null,B.b,null,null,null,null,null,null)
-B.a6m=new A.d("127. T\u1ef3 \u0111a b\u0103ng t\xe1t na y\u1ebft r\u1ecb.",null,B.b,null,null,null,null,null,null)
+B.a4B=new A.d("126. Ma ha y\u1ebft ra ha nh\xe3 x\xe0",null,B.b,null,null,null,null,null,null)
+B.a6n=new A.d("127. T\u1ef3 \u0111a b\u0103ng t\xe1t na y\u1ebft r\u1ecb.",null,B.b,null,null,null,null,null,null)
 B.a0c=new A.d("128. T\xe1t b\xe0 x\xe1 \u0111\xf4 l\xf4",null,B.b,null,null,null,null,null,null)
-B.a_C=new A.d("129. N\u1ec5 b\xe0 ra nh\xe3 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.a_z=new A.d("130. H\xf4 lam \u0111\u1ed9t t\u1ea5t ph\u1ea1p",null,B.b,null,null,null,null,null,null)
-B.a4m=new A.d("131. Nan gi\xe1 na x\xe1 ni.",null,B.b,null,null,null,null,null,null)
-B.a4v=new A.d("132. B\xed sa x\xe1.",null,B.b,null,null,null,null,null,null)
+B.a_D=new A.d("129. N\u1ec5 b\xe0 ra nh\xe3 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.a_A=new A.d("130. H\xf4 lam \u0111\u1ed9t t\u1ea5t ph\u1ea1p",null,B.b,null,null,null,null,null,null)
+B.a4n=new A.d("131. Nan gi\xe1 na x\xe1 ni.",null,B.b,null,null,null,null,null,null)
+B.a4w=new A.d("132. B\xed sa x\xe1.",null,B.b,null,null,null,null,null,null)
 B.a2X=new A.d("133. T\u1ea5t \u0111\xe1c ra",null,B.b,null,null,null,null,null,null)
 B.a3n=new A.d("134. A ki\u1ebft ni.",null,B.b,null,null,null,null,null,null)
 B.a6L=new A.d("135. \xd4 \u0111\xe0 ca ra nh\xe3 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a3s=new A.d("136. A b\xe1t ra th\u1ecb \u0111a c\xe2u ra",null,B.b,null,null,null,null,null,null)
-B.a6r=new A.d("137. Ma ha b\xe1c ra chi\u1ebfn tr\xec.",null,B.b,null,null,null,null,null,null)
+B.a6s=new A.d("137. Ma ha b\xe1c ra chi\u1ebfn tr\xec.",null,B.b,null,null,null,null,null,null)
 B.a19=new A.d("138. Ma ha \u0111i\u1ec7p \u0111a.",null,B.b,null,null,null,null,null,null)
 B.Zw=new A.d("139. Ma ha \u0111\u1ebf x\xe0.",null,B.b,null,null,null,null,null,null)
 B.Ys=new A.d("140. Ma ha thu\u1ebf \u0111a x\xe0 b\xe0 ra.",null,B.b,null,null,null,null,null,null)
 B.a7n=new A.d("141. Ma ha b\u1ea1t ra b\xe0n \u0111\xe0 ra",null,B.b,null,null,null,null,null,null)
-B.YO=new A.d("142. B\xe0 t\u1ea5t n\u1ec5.",null,B.b,null,null,null,null,null,null)
-B.a4O=new A.d("143. A r\u1ecb da \u0111a ra",null,B.b,null,null,null,null,null,null)
-B.a6h=new A.d("144. T\u1ef3 r\u1ecb c\xe2u tri.",null,B.b,null,null,null,null,null,null)
-B.a_R=new A.d("145. Th\u1ec7 b\xe0 t\xec x\xe0 da.",null,B.b,null,null,null,null,null,null)
+B.YN=new A.d("142. B\xe0 t\u1ea5t n\u1ec5.",null,B.b,null,null,null,null,null,null)
+B.a4P=new A.d("143. A r\u1ecb da \u0111a ra",null,B.b,null,null,null,null,null,null)
+B.a6i=new A.d("144. T\u1ef3 r\u1ecb c\xe2u tri.",null,B.b,null,null,null,null,null,null)
+B.a_S=new A.d("145. Th\u1ec7 b\xe0 t\xec x\xe0 da.",null,B.b,null,null,null,null,null,null)
 B.a1h=new A.d("146. B\u1ea1t x\xe0 ra ma l\u1ec5 \u0111\u1ec3",null,B.b,null,null,null,null,null,null)
 B.a0p=new A.d("147. T\u1ef3 x\xe1 l\xf4 \u0111a.",null,B.b,null,null,null,null,null,null)
 B.Yy=new A.d("148. B\u1ed9t \u0111\u1eb1ng d\xf5ng ca",null,B.b,null,null,null,null,null,null)
 B.Yo=new A.d("149. B\u1ea1t x\xe0 ra ch\u1ebf h\u1eafc na a gi\xe1.",null,B.b,null,null,null,null,null,null)
-B.a48=new A.d("150. Ma la ch\u1ebf b\xe0",null,B.b,null,null,null,null,null,null)
+B.a49=new A.d("150. Ma la ch\u1ebf b\xe0",null,B.b,null,null,null,null,null,null)
 B.Y3=new A.d("151. B\xe1t ra ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
 B.a2g=new A.d("152. B\u1ea1t x\xe0 ra thi\u1ec7n tr\xec.",null,B.b,null,null,null,null,null,null)
 B.a2j=new A.d("153. T\u1ef3 x\xe1 ra gi\xe1",null,B.b,null,null,null,null,null,null)
-B.YR=new A.d("154. Phi\u1ebfn \u0111a x\xe1.",null,B.b,null,null,null,null,null,null)
-B.a5c=new A.d("155. T\xec \u0111\u1ec1 b\xe0",null,B.b,null,null,null,null,null,null)
-B.a4w=new A.d("156. B\u1ed5 th\u1ecb \u0111a",null,B.b,null,null,null,null,null,null)
-B.a_p=new A.d("157. T\xf4 ma l\xf4 ba.",null,B.b,null,null,null,null,null,null)
+B.YQ=new A.d("154. Phi\u1ebfn \u0111a x\xe1.",null,B.b,null,null,null,null,null,null)
+B.a5d=new A.d("155. T\xec \u0111\u1ec1 b\xe0",null,B.b,null,null,null,null,null,null)
+B.a4x=new A.d("156. B\u1ed5 th\u1ecb \u0111a",null,B.b,null,null,null,null,null,null)
+B.a_q=new A.d("157. T\xf4 ma l\xf4 ba.",null,B.b,null,null,null,null,null,null)
 B.ZB=new A.d("158. Ma ha thu\u1ebf \u0111a",null,B.b,null,null,null,null,null,null)
 B.a0b=new A.d("159. A r\u1ecb da \u0111a ra.",null,B.b,null,null,null,null,null,null)
-B.YT=new A.d("160. Ma ha b\xe0 la a b\xe1c ra.",null,B.b,null,null,null,null,null,null)
-B.a4j=new A.d("161. B\u1ea1t x\xe0 ra th\u01b0\u01a1ng y\u1ebft ra ch\u1ebf b\xe0.",null,B.b,null,null,null,null,null,null)
+B.YS=new A.d("160. Ma ha b\xe0 la a b\xe1c ra.",null,B.b,null,null,null,null,null,null)
+B.a4k=new A.d("161. B\u1ea1t x\xe0 ra th\u01b0\u01a1ng y\u1ebft ra ch\u1ebf b\xe0.",null,B.b,null,null,null,null,null,null)
 B.a3X=new A.d("162. B\u1ea1t x\xe0 ra c\xe2u ma r\u1ecb",null,B.b,null,null,null,null,null,null)
 B.a3A=new A.d("163. C\xe2u lam \u0111\xe0 r\u1ecb.",null,B.b,null,null,null,null,null,null)
-B.a4I=new A.d("164. B\u1ea1t x\xe0 ra h\u1eaft t\xe1t \u0111a d\xe1",null,B.b,null,null,null,null,null,null)
-B.a6b=new A.d("165. T\u1ef3 \u0111\u1ecba da",null,B.b,null,null,null,null,null,null)
-B.a4l=new A.d("166. Ki\u1ec1n d\xe1 na.",null,B.b,null,null,null,null,null,null)
-B.a6j=new A.d("167. Ma r\u1ecb ca.",null,B.b,null,null,null,null,null,null)
+B.a4J=new A.d("164. B\u1ea1t x\xe0 ra h\u1eaft t\xe1t \u0111a d\xe1",null,B.b,null,null,null,null,null,null)
+B.a6c=new A.d("165. T\u1ef3 \u0111\u1ecba da",null,B.b,null,null,null,null,null,null)
+B.a4m=new A.d("166. Ki\u1ec1n d\xe1 na.",null,B.b,null,null,null,null,null,null)
+B.a6k=new A.d("167. Ma r\u1ecb ca.",null,B.b,null,null,null,null,null,null)
 B.a0z=new A.d("168. Khu\u1ea5t t\xf4 m\u1eabu.",null,B.b,null,null,null,null,null,null)
-B.a_8=new A.d("169. B\xe0 y\u1ebft ra \u0111\xe1 na.",null,B.b,null,null,null,null,null,null)
-B.a5x=new A.d("170. B\u1ec7 l\xf4 gi\xe1 na",null,B.b,null,null,null,null,null,null)
+B.a_9=new A.d("169. B\xe0 y\u1ebft ra \u0111\xe1 na.",null,B.b,null,null,null,null,null,null)
+B.a5y=new A.d("170. B\u1ec7 l\xf4 gi\xe1 na",null,B.b,null,null,null,null,null,null)
 B.a6O=new A.d("171. C\xe2u r\u1ecb da",null,B.b,null,null,null,null,null,null)
-B.YX=new A.d("172. D\u1ea1 ra th\u1ed1.",null,B.b,null,null,null,null,null,null)
-B.a4P=new A.d("173. S\u1eafc ni sam",null,B.b,null,null,null,null,null,null)
-B.a_7=new A.d("174. T\u1ef3 chi\u1ebft lam b\xe0 ma ni gi\xe1.",null,B.b,null,null,null,null,null,null)
-B.a5W=new A.d("175. B\u1ea1t x\xe0 ra ca na ca ba ra b\xe0.",null,B.b,null,null,null,null,null,null)
-B.YS=new A.d("176. L\xf4 x\xe0 na.",null,B.b,null,null,null,null,null,null)
-B.a_j=new A.d("177. B\u1ea1t x\xe0 ra \u0111\u1ed1n tr\u1ec9 gi\xe1.",null,B.b,null,null,null,null,null,null)
-B.a_1=new A.d("178. Thu\u1ebf \u0111a gi\xe1",null,B.b,null,null,null,null,null,null)
+B.YW=new A.d("172. D\u1ea1 ra th\u1ed1.",null,B.b,null,null,null,null,null,null)
+B.a4Q=new A.d("173. S\u1eafc ni sam",null,B.b,null,null,null,null,null,null)
+B.a_8=new A.d("174. T\u1ef3 chi\u1ebft lam b\xe0 ma ni gi\xe1.",null,B.b,null,null,null,null,null,null)
+B.a5X=new A.d("175. B\u1ea1t x\xe0 ra ca na ca ba ra b\xe0.",null,B.b,null,null,null,null,null,null)
+B.YR=new A.d("176. L\xf4 x\xe0 na.",null,B.b,null,null,null,null,null,null)
+B.a_k=new A.d("177. B\u1ea1t x\xe0 ra \u0111\u1ed1n tr\u1ec9 gi\xe1.",null,B.b,null,null,null,null,null,null)
+B.a_2=new A.d("178. Thu\u1ebf \u0111a gi\xe1",null,B.b,null,null,null,null,null,null)
 B.a3M=new A.d("179. Ca ma ra.",null,B.b,null,null,null,null,null,null)
 B.a0v=new A.d("180. S\xe1t sa thi",null,B.b,null,null,null,null,null,null)
 B.a2M=new A.d("181. Ba ra b\xe0.",null,B.b,null,null,null,null,null,null)
-B.a_B=new A.d("182. \xca \u0111\u1ebf di \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
+B.a_C=new A.d("182. \xca \u0111\u1ebf di \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.a3W=new A.d("183. M\u1eabu \u0111\xe0 la.",null,B.b,null,null,null,null,null,null)
 B.a1x=new A.d("184. Y\u1ebft noa.",null,B.b,null,null,null,null,null,null)
-B.YV=new A.d("185. Ta b\u1ec7 ra s\xe1m.",null,B.b,null,null,null,null,null,null)
+B.YU=new A.d("185. Ta b\u1ec7 ra s\xe1m.",null,B.b,null,null,null,null,null,null)
 B.a3D=new A.d("186. Qu\u1eadt ph\u1ea1m \u0111\xf4.",null,B.b,null,null,null,null,null,null)
-B.a_r=new A.d("187. \u1ea4n th\u1ed1 na ma ma to\u1ea3.",null,B.b,null,null,null,null,null,null)
+B.a_s=new A.d("187. \u1ea4n th\u1ed1 na ma ma to\u1ea3.",null,B.b,null,null,null,null,null,null)
 B.a2G=new A.d("\u0110\u1ec7 Nh\u1ecb",null,B.c5,B.b5,null,null,null,null,null)
-B.a5Q=new A.d("188. \xd4 h\u1ed3ng",null,B.b,null,null,null,null,null,null)
-B.a_S=new A.d("189. R\u1ecb s\u1eafc y\u1ebft noa.",null,B.b,null,null,null,null,null,null)
-B.a5Z=new A.d("190. B\xe1t l\u1eb7c x\xe1 t\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
-B.YM=new A.d("191. T\xe1t \u0111\xe1c tha",null,B.b,null,null,null,null,null,null)
-B.a_N=new A.d("192. Gi\xe0 \u0111\xf4 s\u1eaft ni sam",null,B.b,null,null,null,null,null,null)
-B.YE=new A.d("193. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung",null,B.b,null,null,null,null,null,null)
+B.a5R=new A.d("188. \xd4 h\u1ed3ng",null,B.b,null,null,null,null,null,null)
+B.a_T=new A.d("189. R\u1ecb s\u1eafc y\u1ebft noa.",null,B.b,null,null,null,null,null,null)
+B.a6_=new A.d("190. B\xe1t l\u1eb7c x\xe1 t\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
+B.YL=new A.d("191. T\xe1t \u0111\xe1c tha",null,B.b,null,null,null,null,null,null)
+B.a_O=new A.d("192. Gi\xe0 \u0111\xf4 s\u1eaft ni sam",null,B.b,null,null,null,null,null,null)
+B.YD=new A.d("193. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung",null,B.b,null,null,null,null,null,null)
 B.a2L=new A.d("194. Chi\xeam b\xe0 na.",null,B.b,null,null,null,null,null,null)
-B.a_J=new A.d("195. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung",null,B.b,null,null,null,null,null,null)
+B.a_K=new A.d("195. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung",null,B.b,null,null,null,null,null,null)
 B.Yl=new A.d("196. t\u1ea5t \u0111am b\xe0 na.",null,B.b,null,null,null,null,null,null)
-B.a4p=new A.d("197. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung.",null,B.b,null,null,null,null,null,null)
-B.ZU=new A.d("198. Ba ra s\u1eafc \u0111\u1ecba da.",null,B.b,null,null,null,null,null,null)
+B.a4q=new A.d("197. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung.",null,B.b,null,null,null,null,null,null)
+B.ZV=new A.d("198. Ba ra s\u1eafc \u0111\u1ecba da.",null,B.b,null,null,null,null,null,null)
 B.a72=new A.d("199. Tam b\xe1c xoa",null,B.b,null,null,null,null,null,null)
 B.a7h=new A.d("200. Noa y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
 B.a0X=new A.d("201. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung",null,B.b,null,null,null,null,null,null)
 B.a6v=new A.d("202. T\xe1t b\xe0 d\u01b0\u1ee3c xoa.",null,B.b,null,null,null,null,null,null)
 B.XY=new A.d("203. H\u1eaft ra s\xe1t ta.",null,B.b,null,null,null,null,null,null)
-B.Zb=new A.d("204. Y\u1ebft ra ha nh\xe3 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.a4g=new A.d("205. T\u1ef3 \u0111\u1eb1ng b\u0103ng t\xe1t na y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
+B.Za=new A.d("204. Y\u1ebft ra ha nh\xe3 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.a4h=new A.d("205. T\u1ef3 \u0111\u1eb1ng b\u0103ng t\xe1t na y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
 B.a3h=new A.d("206. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung.",null,B.b,null,null,null,null,null,null)
 B.a0j=new A.d("207. Gi\u1ea3 \u0111\xf4 ra",null,B.b,null,null,null,null,null,null)
-B.a4E=new A.d("208. Thi \u0111\u1ec3 n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a6g=new A.d("209. Y\u1ebft ra ha",null,B.b,null,null,null,null,null,null)
+B.a4F=new A.d("208. Thi \u0111\u1ec3 n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a6h=new A.d("209. Y\u1ebft ra ha",null,B.b,null,null,null,null,null,null)
 B.a3t=new A.d("210. Ta ha t\xe1t ra n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a03=new A.d("211. T\u1ef3 \u0111\u1eb1ng b\u0103ng t\xe1t na ra.",null,B.b,null,null,null,null,null,null)
-B.YC=new A.d("212. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung",null,B.b,null,null,null,null,null,null)
+B.YB=new A.d("212. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung",null,B.b,null,null,null,null,null,null)
 B.a0a=new A.d("213. Ra xoa.",null,B.b,null,null,null,null,null,null)
 B.Yt=new A.d("214. B\xe0 gi\xe0 ph\u1ea1m.",null,B.b,null,null,null,null,null,null)
-B.a5J=new A.d("215. T\xe1c \u0111\xe1t tha.",null,B.b,null,null,null,null,null,null)
+B.a5K=new A.d("215. T\xe1c \u0111\xe1t tha.",null,B.b,null,null,null,null,null,null)
 B.a7i=new A.d("216. Gi\xe0 \u0111\xf4 s\u1eaft ni sam.",null,B.b,null,null,null,null,null,null)
-B.a_I=new A.d("217. Ba ra \u0111i\u1ec3m.",null,B.b,null,null,null,null,null,null)
-B.a51=new A.d("218. X\xe0 ki\u1ebft r\u1ecb",null,B.b,null,null,null,null,null,null)
+B.a_J=new A.d("217. Ba ra \u0111i\u1ec3m.",null,B.b,null,null,null,null,null,null)
+B.a52=new A.d("218. X\xe0 ki\u1ebft r\u1ecb",null,B.b,null,null,null,null,null,null)
 B.a7a=new A.d("219. Ma ha ta ha t\xe1t ra.",null,B.b,null,null,null,null,null,null)
-B.a59=new A.d("220. B\u1ed9t th\u1ecd ta ha t\xe1t ra",null,B.b,null,null,null,null,null,null)
+B.a5a=new A.d("220. B\u1ed9t th\u1ecd ta ha t\xe1t ra",null,B.b,null,null,null,null,null,null)
 B.a0B=new A.d("221. Th\u1ea5t r\u1ecb sa",null,B.b,null,null,null,null,null,null)
 B.a6w=new A.d("222. C\xe2u tri ta ha t\xe1t n\xea.",null,B.b,null,null,null,null,null,null)
 B.a74=new A.d("223. \u0110\u1ebf l\u1ec7 a t\u1ec7 \u0111\u1ec1 th\u1ecb b\xe0 r\u1ecb \u0111a.",null,B.b,null,null,null,null,null,null)
 B.a0w=new A.d("224. Tra tra anh ca.",null,B.b,null,null,null,null,null,null)
 B.a1A=new A.d("225. Ma ha b\u1ea1t x\xe0 l\xf4 \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
-B.ZR=new A.d("226. \u0110\u1ebf r\u1ecb b\u1ed3 b\xe0 na.",null,B.b,null,null,null,null,null,null)
+B.ZS=new A.d("226. \u0110\u1ebf r\u1ecb b\u1ed3 b\xe0 na.",null,B.b,null,null,null,null,null,null)
 B.ZK=new A.d("227. M\u1ea1n tr\xe0 ra.",null,B.b,null,null,null,null,null,null)
-B.a_t=new A.d("228. \xd4 h\u1ed3ng",null,B.b,null,null,null,null,null,null)
+B.a_u=new A.d("228. \xd4 h\u1ed3ng",null,B.b,null,null,null,null,null,null)
 B.a0K=new A.d("229. Ta t\u1ea5t \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.a2Q=new A.d("230. B\u1ea1t b\xe0 \u0111\xf4.",null,B.b,null,null,null,null,null,null)
 B.a1g=new A.d("231. M\u1ea1 m\u1ea1",null,B.b,null,null,null,null,null,null)
 B.Yp=new A.d("232. \u1ea4n th\u1ed1 na m\u1ea1 m\u1ea1 to\u1ea3.",null,B.b,null,null,null,null,null,null)
 B.a2F=new A.d("\u0110\u1ec7 Tam",null,B.c5,B.b5,null,null,null,null,null)
-B.a6o=new A.d("233. Ra x\xe0 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a6p=new A.d("233. Ra x\xe0 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a2H=new A.d("234. Ch\u1ee7 ra b\u1ea1t d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a3T=new A.d("235. A k\u1ef3 ni b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.YQ=new A.d("236. \xd4 \u0111\xe0 ca b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a_s=new A.d("237. T\u1ef3 xa b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.YP=new A.d("236. \xd4 \u0111\xe0 ca b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a_t=new A.d("237. T\u1ef3 xa b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a6B=new A.d("238. X\xe1 t\xe1t \u0111a ra b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a67=new A.d("239. B\xe0 ra ch\u01b0\u1edbc y\u1ebft ra b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a4U=new A.d("240. \u0110\u1ed9t s\u1eafc xoa b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a6c=new A.d("241. A x\xe1 n\u1ec3 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a68=new A.d("239. B\xe0 ra ch\u01b0\u1edbc y\u1ebft ra b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a4V=new A.d("240. \u0110\u1ed9t s\u1eafc xoa b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a6d=new A.d("241. A x\xe1 n\u1ec3 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a17=new A.d("242. A ca ra.",null,B.b,null,null,null,null,null,null)
-B.Z7=new A.d("243. M\u1eadt r\u1ecb tr\u1ee5 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.Z6=new A.d("243. M\u1eadt r\u1ecb tr\u1ee5 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a6U=new A.d("244. \u0110\xe0 ra ni b\u1ed9 di ki\u1ebfm.",null,B.b,null,null,null,null,null,null)
 B.Zg=new A.d("245. Ba gi\xe0 ba \u0111\xe0 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.Yd=new A.d("246. \xd4 ra ca b\xe0 \u0111a b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a5C=new A.d("247. L\u1eb7c x\xe0 \u0111\xe0n tr\xe0 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a5d=new A.d("248. Na d\xe0 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a4H=new A.d("249. T\u1ef3 \u0111i\u1ec1u \u0111\xe1t b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a5D=new A.d("247. L\u1eb7c x\xe0 \u0111\xe0n tr\xe0 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a5e=new A.d("248. Na d\xe0 b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a4I=new A.d("249. T\u1ef3 \u0111i\u1ec1u \u0111\xe1t b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a1I=new A.d("250. T\xf4 ba ra noa b\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a1l=new A.d("251. D\u01b0\u1ee3c xoa y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a2v=new A.d("252. Ra xoa t\u01b0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.Z1=new A.d("253. T\u1ea5t r\u1ecb \u0111a y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.Z0=new A.d("253. T\u1ea5t r\u1ecb \u0111a y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a1u=new A.d("254. T\u1ef3 x\xe1 gi\xe1 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a_e=new A.d("255. B\u1ed9 \u0111a y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a5F=new A.d("256. C\u01b0u b\xe0n tr\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a_f=new A.d("255. B\u1ed9 \u0111a y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a5G=new A.d("256. C\u01b0u b\xe0n tr\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a1b=new A.d("257. B\u1ed5 \u0111\u01a1n na y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a3J=new A.d("258. Ca tra b\u1ed5 \u0111\u01a1n na y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a4y=new A.d("259. T\u1ea5t ki\u1ec1n \u0111\u1ed9 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a4z=new A.d("259. T\u1ea5t ki\u1ec1n \u0111\u1ed9 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.Y2=new A.d("260. A b\xe1 t\u1ea5t ma ra y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a1d=new A.d("261. \xd4 \u0111\xe0n ma \u0111\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a7q=new A.d("262. Xa d\u1ea1 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a3m=new A.d("263. H\xea r\u1ecb b\xe0 \u0111\u1ebf y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.Zs=new A.d("264. X\u1ea3 \u0111a ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a4Y=new A.d("265. Y\u1ebft b\xe0 ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a_u=new A.d("266. L\xf4 \u0111\u1ecba ra ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a4Z=new A.d("265. Y\u1ebft b\xe0 ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a_v=new A.d("266. L\xf4 \u0111\u1ecba ra ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a2K=new A.d("267. Mang ta ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a6p=new A.d("268. M\xea \u0111\xe0 ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a6q=new A.d("268. M\xea \u0111\xe0 ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a29=new A.d("269. Ma x\xe0 ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.a2B=new A.d("270. X\xe0 \u0111a ha r\u1ecb n\u1eef.",null,B.b,null,null,null,null,null,null)
-B.a5U=new A.d("271. Th\u1ecb t\u1ef7 \u0111a ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a5Y=new A.d("272. T\u1ef3 \u0111a ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a5V=new A.d("271. Th\u1ecb t\u1ef7 \u0111a ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a5Z=new A.d("272. T\u1ef3 \u0111a ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
 B.Yg=new A.d("273. B\xe0 \u0111a ha r\u1ecb n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a44=new A.d("274. A du gi\xe1 ha r\u1ecb n\u1eef.",null,B.b,null,null,null,null,null,null)
+B.a45=new A.d("274. A du gi\xe1 ha r\u1ecb n\u1eef.",null,B.b,null,null,null,null,null,null)
 B.a1L=new A.d("275. Ch\u1ea5t \u0111a ha r\u1ecb n\u1eef.",null,B.b,null,null,null,null,null,null)
-B.a4b=new A.d("276. \u0110\u1ebf sam t\xe1t b\u1ec7 sam.",null,B.b,null,null,null,null,null,null)
-B.a5i=new A.d("277. T\xe1t b\xe0 y\u1ebft ra ha n\u1ea9m.",null,B.b,null,null,null,null,null,null)
-B.a_i=new A.d("278. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.Z_=new A.d("279. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a4c=new A.d("276. \u0110\u1ebf sam t\xe1t b\u1ec7 sam.",null,B.b,null,null,null,null,null,null)
+B.a5j=new A.d("277. T\xe1t b\xe0 y\u1ebft ra ha n\u1ea9m.",null,B.b,null,null,null,null,null,null)
+B.a_j=new A.d("278. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.YZ=new A.d("279. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a0H=new A.d("280. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a2N=new A.d("281. Ba r\u1ecb b\u1ea1t ra gi\u1ea3 ca.",null,B.b,null,null,null,null,null,null)
 B.Y_=new A.d("282. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.a18=new A.d("283. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.a_O=new A.d("284. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a4i=new A.d("285. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a_P=new A.d("284. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a4j=new A.d("285. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a_X=new A.d("286. Tr\xe0 di\u1ec5n ni.",null,B.b,null,null,null,null,null,null)
-B.a6f=new A.d("287. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
-B.a4C=new A.d("288. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.a6g=new A.d("287. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
+B.a4D=new A.d("288. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a2t=new A.d("289. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a_Z=new A.d("290. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a_v=new A.d("291. Ma ha b\xe1t du b\xe1t \u0111\xe1c d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a_w=new A.d("291. Ma ha b\xe1t du b\xe1t \u0111\xe1c d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.ZI=new A.d("292. L\xf4 \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
 B.a2x=new A.d("293. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.a2q=new A.d("294. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a3e=new A.d("295. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a_y=new A.d("296. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a_z=new A.d("296. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a2s=new A.d("297. Na ra d\u1ea1 noa.",null,B.b,null,null,null,null,null,null)
 B.a3P=new A.d("298. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.a1P=new A.d("299. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.a4n=new A.d("300. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.YU=new A.d("301. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a4o=new A.d("300. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.YT=new A.d("301. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.XX=new A.d("302. \u0110\xe1t \u0111\u1ecfa d\xe0 l\xf4 tr\xe0 t\xe2y.",null,B.b,null,null,null,null,null,null)
 B.a34=new A.d("303. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
-B.Z3=new A.d("304. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.Z6=new A.d("305. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a5w=new A.d("306. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.Z2=new A.d("304. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.Z5=new A.d("305. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a5x=new A.d("306. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a2S=new A.d("307. Ma ha ca ra.",null,B.b,null,null,null,null,null,null)
 B.Zv=new A.d("308. Ma \u0111\xe1c r\u1ecb gi\xe0 noa.",null,B.b,null,null,null,null,null,null)
 B.a2f=new A.d("309. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.a2u=new A.d("310. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.a5G=new A.d("311. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a5H=new A.d("311. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a7p=new A.d("312. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a0r=new A.d("313. Ca ba r\u1ecb ca.",null,B.b,null,null,null,null,null,null)
-B.ZW=new A.d("314. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
-B.a_G=new A.d("315. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.ZX=new A.d("314. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
+B.a_H=new A.d("315. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a0o=new A.d("316. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a66=new A.d("317. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a67=new A.d("317. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a1q=new A.d("318. X\xe0 d\u1ea1 y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
 B.a3u=new A.d("319. Ma \u0111\u1ed9 y\u1ebft ra",null,B.b,null,null,null,null,null,null)
 B.a1o=new A.d("320. T\xe1t b\xe0 ra tha ta \u0111\u1ea1t na.",null,B.b,null,null,null,null,null,null)
 B.a3b=new A.d("321. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.Zh=new A.d("322. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a21=new A.d("323. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a6d=new A.d("324. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a5N=new A.d("325. Gi\u1ea3 \u0111\u1ed1t ra.",null,B.b,null,null,null,null,null,null)
+B.a6e=new A.d("324. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a5O=new A.d("325. Gi\u1ea3 \u0111\u1ed1t ra.",null,B.b,null,null,null,null,null,null)
 B.a1p=new A.d("326. B\xe0 k\u1ef3 n\u1ec3.",null,B.b,null,null,null,null,null,null)
-B.a_d=new A.d("327. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
+B.a_e=new A.d("327. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.a0F=new A.d("328. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.ZZ=new A.d("329. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a__=new A.d("329. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.Yn=new A.d("330. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a2R=new A.d("331. T\u1ef3 r\u1ecb d\u01b0\u01a1ng h\u1ea5t r\u1ecb tri.",null,B.b,null,null,null,null,null,null)
-B.a_n=new A.d("332. Nan \u0111\xe0 k\xea sa ra.",null,B.b,null,null,null,null,null,null)
+B.a_o=new A.d("332. Nan \u0111\xe0 k\xea sa ra.",null,B.b,null,null,null,null,null,null)
 B.a7d=new A.d("333. D\xe0 noa b\xe1c \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.ZC=new A.d("334. S\xe1ch h\xea d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a1Q=new A.d("335. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
-B.a47=new A.d("336. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
-B.a_K=new A.d("337. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.Za=new A.d("338. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a48=new A.d("336. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.a_L=new A.d("337. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.Z9=new A.d("338. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a3r=new A.d("339. Na y\u1ebft na x\xe1 ra b\xe0 noa.",null,B.b,null,null,null,null,null,null)
 B.a3S=new A.d("340. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.a39=new A.d("341. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a2P=new A.d("342. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a2J=new A.d("343. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a4z=new A.d("344. A la h\xe1n.",null,B.b,null,null,null,null,null,null)
-B.a_h=new A.d("345. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
+B.a4A=new A.d("344. A la h\xe1n.",null,B.b,null,null,null,null,null,null)
+B.a_i=new A.d("345. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
 B.a2C=new A.d("346. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a0P=new A.d("347. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.ZN=new A.d("348. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.ZO=new A.d("348. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a7l=new A.d("349. T\u1ef3 \u0111a ra d\xe0.",null,B.b,null,null,null,null,null,null)
-B.a5O=new A.d("350. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
-B.a55=new A.d("351. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.a5P=new A.d("350. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
+B.a56=new A.d("351. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a2k=new A.d("352. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a_l=new A.d("353. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a_m=new A.d("353. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.a3w=new A.d("354. B\u1ea1t x\xe0 ra ba n\u1ec3.",null,B.b,null,null,null,null,null,null)
-B.a_k=new A.d("355. C\xe2u h\xea d\u1ea1 c\xe2u h\xea d\u1ea1.",null,B.b,null,null,null,null,null,null)
+B.a_l=new A.d("355. C\xe2u h\xea d\u1ea1 c\xe2u h\xea d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.ZA=new A.d("356. Ca \u0111\u1ecba b\xe1t \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
-B.a63=new A.d("357. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
-B.Z5=new A.d("358. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
+B.a64=new A.d("357. H\u1ea5t r\u1ecb \u0111\u1edfm.",null,B.b,null,null,null,null,null,null)
+B.Z4=new A.d("358. T\u1ef3 \u0111\xe0 d\u1ea1 x\xe0.",null,B.b,null,null,null,null,null,null)
 B.a7c=new A.d("359. S\xe2n \u0111\xe0 d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
-B.a_5=new A.d("360. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
+B.a_6=new A.d("360. K\xea ra d\u1ea1 di.",null,B.b,null,null,null,null,null,null)
 B.Y9=new A.d("361. Ra xoa v\u1ecfng.",null,B.b,null,null,null,null,null,null)
-B.a_U=new A.d("362. B\xe0 d\xe0 ph\u1ea1m.",null,B.b,null,null,null,null,null,null)
+B.a_V=new A.d("362. B\xe0 d\xe0 ph\u1ea1m.",null,B.b,null,null,null,null,null,null)
 B.Zu=new A.d("363. \u1ea4n th\u1ed1 na m\u1ea1 m\u1ea1 t\u1ecfa.",null,B.b,null,null,null,null,null,null)
-B.ZP=new A.d("\u0110\u1ec7 T\u1ee9",null,B.c5,B.b5,null,null,null,null,null)
-B.YD=new A.d("364. B\xe0 gi\xe0 ph\u1ea1m.",null,B.b,null,null,null,null,null,null)
+B.ZQ=new A.d("\u0110\u1ec7 T\u1ee9",null,B.c5,B.b5,null,null,null,null,null)
+B.YC=new A.d("364. B\xe0 gi\xe0 ph\u1ea1m.",null,B.b,null,null,null,null,null,null)
 B.a0G=new A.d("365. T\xe1t \u0111\xe1c \u0111a b\xe1t \u0111\xe1c ra.",null,B.b,null,null,null,null,null,null)
 B.a3U=new A.d("366. Nam m\xf4 t\xfd \u0111\xf4 \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.Yk=new A.d("367. A t\u1ea5t \u0111a na ra l\u1eb7c ca.",null,B.b,null,null,null,null,null,null)
-B.a_P=new A.d("368. Ba ra b\xe0.",null,B.b,null,null,null,null,null,null)
-B.a6n=new A.d("369. T\u1ea5t ph\u1ed5 tra.",null,B.b,null,null,null,null,null,null)
-B.ZX=new A.d("370. T\u1ef3 ca t\xe1t \u0111\xe1c \u0111a b\xe1t \u0111\u1ebf r\u1ecb.",null,B.b,null,null,null,null,null,null)
-B.a5u=new A.d("371. Th\u1eadp Ph\u1eadt ra th\u1eadp Ph\u1eadt ra.",null,B.b,null,null,null,null,null,null)
-B.Z2=new A.d("372. \u0110\xe0 ra \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
+B.a_Q=new A.d("368. Ba ra b\xe0.",null,B.b,null,null,null,null,null,null)
+B.a6o=new A.d("369. T\u1ea5t ph\u1ed5 tra.",null,B.b,null,null,null,null,null,null)
+B.ZY=new A.d("370. T\u1ef3 ca t\xe1t \u0111\xe1c \u0111a b\xe1t \u0111\u1ebf r\u1ecb.",null,B.b,null,null,null,null,null,null)
+B.a5v=new A.d("371. Th\u1eadp Ph\u1eadt ra th\u1eadp Ph\u1eadt ra.",null,B.b,null,null,null,null,null,null)
+B.Z1=new A.d("372. \u0110\xe0 ra \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
 B.a7m=new A.d("373. T\u1ea7n \u0111\xe0 ra t\u1ea7n \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
 B.a08=new A.d("374. S\xe2n \u0111\xe0 s\xe2n \u0111\xe0.",null,B.b,null,null,null,null,null,null)
 B.a0h=new A.d("375. H\u1ed5 h\u1ed3ng h\u1ed5 h\u1ed3ng.",null,B.b,null,null,null,null,null,null)
 B.a3j=new A.d("376. Ph\u1ea5n tra ph\u1ea5n tra ph\u1ea5n tra ph\u1ea5n tra ph\u1ea5n tra.",null,B.b,null,null,null,null,null,null)
 B.a1y=new A.d("377. Ta ha.",null,B.b,null,null,null,null,null,null)
-B.a5g=new A.d("378. H\xea h\xea ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.a5h=new A.d("378. H\xea h\xea ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.Yb=new A.d("379. A m\xe2u ca da ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.a4r=new A.d("380. A ba ra \u0111\u1ec1 ha da ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.a4s=new A.d("380. A ba ra \u0111\u1ec1 ha da ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a3N=new A.d("381. Ba ra b\xe0 ra \u0111\xe0 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.ZH=new A.d("382. A t\u1ed1 ra.",null,B.b,null,null,null,null,null,null)
 B.Y5=new A.d("383. T\u1ef3 \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
 B.Yw=new A.d("384. Ba ca ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.Zc=new A.d("385. T\xe1t b\xe0 \u0111\u1ec1 b\u1ec7 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.Zb=new A.d("385. T\xe1t b\xe0 \u0111\u1ec1 b\u1ec7 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a1_=new A.d("386. T\xe1t b\xe0 na d\xe0 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a6Y=new A.d("387. T\xe1t b\xe0 d\u01b0\u1ee3c xoa t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.a4J=new A.d("388. T\xe1t b\xe0 ki\u1ec1n th\xe1t b\xe0 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.a4K=new A.d("388. T\xe1t b\xe0 ki\u1ec1n th\xe1t b\xe0 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a0k=new A.d("389. T\xe1t b\xe0 b\u1ed5 \u0111\u01a1n na t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a70=new A.d("390. Ca tra b\u1ed5 \u0111\u01a1n na t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a0Q=new A.d("391. T\xe1t b\xe0 \u0111\u1ed9t lang ch\u1ec9 \u0111\u1ebf t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a2o=new A.d("392. T\xe1t b\xe0 \u0111\u1ed9t s\xe1p t\u1ef7 l\xea.",null,B.b,null,null,null,null,null,null)
 B.a1J=new A.d("393. H\u1ea5t s\u1eafc \u0111\u1ebf t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a2V=new A.d("394. T\xe1t b\xe0 th\u1eadp b\xe0 l\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.a5S=new A.d("395. T\xe1t b\xe0 a b\xe1 t\u1ea5t ma l\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.a5T=new A.d("395. T\xe1t b\xe0 a b\xe1 t\u1ea5t ma l\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a1a=new A.d("396. T\xe1t b\xe0 x\xe1 ra b\xe0 noa t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a2h=new A.d("397. T\xe1t b\xe0 \u0111\u1ecba \u0111\u1ebf k\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a0i=new A.d("398. T\xe1t b\xe0 \u0111\xe1t ma \u0111\xe0 k\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a2i=new A.d("399. T\xe1t b\xe0 t\u1ef3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
 B.Zf=new A.d("400. Ra th\u1ec7 gi\xe1 l\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.YI=new A.d("401. X\xe0 d\u1ea1 y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
+B.YH=new A.d("401. X\xe0 d\u1ea1 y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
 B.ZJ=new A.d("402. Ma \u0111\u1ed9 y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
 B.a0Z=new A.d("403. T\xe1t b\xe0 ra tha ta \u0111\xe0 k\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a3Q=new A.d("404. T\u1ef3 \u0111\u1ecba d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.a6F=new A.d("405. Gi\xe1 l\xea t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a7j=new A.d("406. Gi\u1ea3 \u0111\xf4 ra.",null,B.b,null,null,null,null,null,null)
 B.a6z=new A.d("407. Ph\u01b0\u1ee3c k\u1ef3 n\u1ec3 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.a4k=new A.d("408. B\u1ea1t x\xe0 ra.",null,B.b,null,null,null,null,null,null)
-B.a58=new A.d("409. C\xe2u ma r\u1ecb.",null,B.b,null,null,null,null,null,null)
+B.a4l=new A.d("408. B\u1ea1t x\xe0 ra.",null,B.b,null,null,null,null,null,null)
+B.a59=new A.d("409. C\xe2u ma r\u1ecb.",null,B.b,null,null,null,null,null,null)
 B.a1w=new A.d("410. T\u1ef3 \u0111\xe0 d\u1ea1.",null,B.b,null,null,null,null,null,null)
-B.a40=new A.d("411. La th\u1ec7 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.a41=new A.d("411. La th\u1ec7 t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a1k=new A.d("412. Ma ha ba ra \u0111inh d\u01b0\u01a1ng.",null,B.b,null,null,null,null,null,null)
 B.a1Y=new A.d("413. Xoa k\u1ef3 r\u1ecb t\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a30=new A.d("414. B\u1ea1t x\xe0 ra th\u01b0\u01a1ng y\u1ebft ra d\u1ea1.",null,B.b,null,null,null,null,null,null)
@@ -96912,58 +96911,58 @@ B.a6Q=new A.d("415. Ba ra tr\u01b0\u1ee3ng k\u1ef3 ra x\xe0 da ph\u1ea5n.",null,
 B.Y8=new A.d("416. Ma ha ca ra d\u1ea1.",null,B.b,null,null,null,null,null,null)
 B.Zt=new A.d("417. Ma ha m\u1ea1t \u0111\xe1t r\u1ecb ca noa.",null,B.b,null,null,null,null,null,null)
 B.a6S=new A.d("418. Nam-m\xf4 ta y\u1ebft r\u1ecb \u0111a da ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.Z9=new A.d("419. T\u1ef7 s\u1eafc noa t\u1ef3 du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.Z8=new A.d("419. T\u1ef7 s\u1eafc noa t\u1ef3 du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a36=new A.d("420. B\u1ed9t ra ha m\xe2u ni du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a0L=new A.d("421. A k\u1ef3 ni du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a0S=new A.d("422. Ma ha y\u1ebft r\u1ecb du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a1U=new A.d("423. Y\u1ebft ra \u0111\xe0n tri du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a79=new A.d("424. Mi\u1ec7c \u0111\xe1t r\u1ecb du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.a5j=new A.d("425. Lao \u0111\xe1t r\u1ecb du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.a_a=new A.d("426. Gi\xe1 v\u0103n tr\xe0 du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.a5k=new A.d("425. Lao \u0111\xe1t r\u1ecb du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
+B.a_b=new A.d("426. Gi\xe1 v\u0103n tr\xe0 du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a2Z=new A.d("427. Y\u1ebft la ra \u0111\xe1c r\u1ecb du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a3K=new A.d("428. Ca b\xe1t r\u1ecb du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a1v=new A.d("429. A \u0111\u1ecba m\u1ee5c ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
-B.YY=new A.d("430. Ca thi ma x\xe1 na.",null,B.b,null,null,null,null,null,null)
+B.YX=new A.d("430. Ca thi ma x\xe1 na.",null,B.b,null,null,null,null,null,null)
 B.a31=new A.d("431. B\xe0 t\u01b0 n\u1ec3 du\u1ec7 ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
-B.a4o=new A.d("432. Di\u1ec5n ki\u1ebft ch\u1ea5t.",null,B.b,null,null,null,null,null,null)
-B.a5V=new A.d("433. T\xe1t \u0111\u1ecfa b\xe0 t\u1ecfa.",null,B.b,null,null,null,null,null,null)
-B.a6i=new A.d("434. M\u1ea1 m\u1ea1 \u1ea5n th\u1ed1 na m\u1ea1 m\u1ea1 t\u1ecfa.",null,B.b,null,null,null,null,null,null)
-B.ZO=new A.d("\u0110\u1ec7 Ng\u0169",null,B.c5,B.b5,null,null,null,null,null)
-B.a_c=new A.d("435. \u0110\u1ed9t s\u1eafc tra ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
-B.a50=new A.d("436. A m\u1ea1t \u0111\xe1c r\u1ecb ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
+B.a4p=new A.d("432. Di\u1ec5n ki\u1ebft ch\u1ea5t.",null,B.b,null,null,null,null,null,null)
+B.a5W=new A.d("433. T\xe1t \u0111\u1ecfa b\xe0 t\u1ecfa.",null,B.b,null,null,null,null,null,null)
+B.a6j=new A.d("434. M\u1ea1 m\u1ea1 \u1ea5n th\u1ed1 na m\u1ea1 m\u1ea1 t\u1ecfa.",null,B.b,null,null,null,null,null,null)
+B.ZP=new A.d("\u0110\u1ec7 Ng\u0169",null,B.c5,B.b5,null,null,null,null,null)
+B.a_d=new A.d("435. \u0110\u1ed9t s\u1eafc tra ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
+B.a51=new A.d("436. A m\u1ea1t \u0111\xe1c r\u1ecb ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
 B.Zi=new A.d("437. \xd4 x\xe0 ha ra.",null,B.b,null,null,null,null,null,null)
 B.a6I=new A.d("438. D\xe0 ba ha ra.",null,B.b,null,null,null,null,null,null)
-B.a69=new A.d("439. L\xf4 \u0111\u1ecba ra ha ra.",null,B.b,null,null,null,null,null,null)
+B.a6a=new A.d("439. L\xf4 \u0111\u1ecba ra ha ra.",null,B.b,null,null,null,null,null,null)
 B.Zx=new A.d("440. Ta b\xe0 ha ra.",null,B.b,null,null,null,null,null,null)
-B.a4e=new A.d("441. Ma x\xe0 ha ra.",null,B.b,null,null,null,null,null,null)
-B.a49=new A.d("442. X\xe0 \u0111a ha ra.",null,B.b,null,null,null,null,null,null)
+B.a4f=new A.d("441. Ma x\xe0 ha ra.",null,B.b,null,null,null,null,null,null)
+B.a4a=new A.d("442. X\xe0 \u0111a ha ra.",null,B.b,null,null,null,null,null,null)
 B.a32=new A.d("443. Th\u1ecb t\u1ec9 \u0111a ha ra.",null,B.b,null,null,null,null,null,null)
 B.a0T=new A.d("444. B\u1ea1t l\u01b0\u1ee3c d\u1ea1 ha ra.",null,B.b,null,null,null,null,null,null)
 B.a1V=new A.d("445. Ki\u1ec1n \u0111\xe0 ha ra.",null,B.b,null,null,null,null,null,null)
 B.a3i=new A.d("446. B\u1ed1 s\u1eed ba ha ra.",null,B.b,null,null,null,null,null,null)
 B.Ya=new A.d("447. Ph\u1ea3 ra ha ra.",null,B.b,null,null,null,null,null,null)
 B.a3B=new A.d("448. B\xe0 t\u1ea3 ha ra.",null,B.b,null,null,null,null,null,null)
-B.a43=new A.d("449. B\xe1t ba ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
-B.ZS=new A.d("450. \u0110\u1ed9t s\u1eafc tra ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
+B.a44=new A.d("449. B\xe1t ba ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
+B.ZT=new A.d("450. \u0110\u1ed9t s\u1eafc tra ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
 B.a1m=new A.d("451. Lao \u0111\xe0 ra ch\u1ea5t \u0111a.",null,B.b,null,null,null,null,null,null)
-B.a62=new A.d("452. D\u01b0\u1ee3c xoa y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a63=new A.d("452. D\u01b0\u1ee3c xoa y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a0W=new A.d("453. Ra s\xe1t ta y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a_3=new A.d("454. B\u1ebf l\u1ec7 \u0111a y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.Z0=new A.d("455. T\u1ef3 x\xe1 gi\xe1 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a_4=new A.d("454. B\u1ebf l\u1ec7 \u0111a y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.Z_=new A.d("455. T\u1ef3 x\xe1 gi\xe1 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a0J=new A.d("456. B\u1ed9 \u0111a y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a6P=new A.d("457. C\u01b0u b\xe0n tr\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a4T=new A.d("458. T\u1ea5t ki\u1ec1n \u0111\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a41=new A.d("459. \xd4 \u0111\xe1t ma \u0111\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a5M=new A.d("460. Xa d\u1ea1 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a45=new A.d("461. A b\xe1 t\u1ea5t ma ra y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a4U=new A.d("458. T\u1ea5t ki\u1ec1n \u0111\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a42=new A.d("459. \xd4 \u0111\xe1t ma \u0111\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a5N=new A.d("460. Xa d\u1ea1 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a46=new A.d("461. A b\xe1 t\u1ea5t ma ra y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.Zr=new A.d("462. Tr\u1ea1ch kh\xea c\xe1ch.",null,B.b,null,null,null,null,null,null)
 B.a3l=new A.d("463. Tr\xe0 k\u1ef3 ni y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.Y4=new A.d("464. R\u1ecb Ph\u1eadt \u0111\u1ebf y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.Yx=new A.d("465. X\xe0 di ca y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.a2p=new A.d("466. X\xe1 c\xe2u ni y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a60=new A.d("467. Lao \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
-B.a_T=new A.d("468. Nan \u0111\u1ecba ca y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a5l=new A.d("469. A lam b\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a61=new A.d("467. Lao \u0111\xe0 ra.",null,B.b,null,null,null,null,null,null)
+B.a_U=new A.d("468. Nan \u0111\u1ecba ca y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a5m=new A.d("469. A lam b\xe0 y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.YA=new A.d("470. Ki\u1ec1n \u0111\u1ed9 ba ni y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
 B.Zo=new A.d("471. Th\u1eadp ph\u1ea1t ra.",null,B.b,null,null,null,null,null,null)
 B.ZF=new A.d("472. Y\xean ca h\xea ca.",null,B.b,null,null,null,null,null,null)
@@ -96972,113 +96971,114 @@ B.a0U=new A.d("474. \u0110\xe1t l\u1ec7 \u0111\u1ebf d\u01b0\u1ee3c ca.",null,B.
 B.a2w=new A.d("475. Gi\u1ea3 \u0111\u1ed9t th\xe1c ca.",null,B.b,null,null,null,null,null,null)
 B.a1K=new A.d("476. Ni \u0111\u1ec1 th\u1eadp ph\u1ea1t ra.",null,B.b,null,null,null,null,null,null)
 B.Yu=new A.d("477. T\u1ec9 sam ma th\u1eadp ph\u1ea1t ra.",null,B.b,null,null,null,null,null,null)
-B.a5D=new A.d("478. B\u1ea1t \u0111\u1ec3 ca.",null,B.b,null,null,null,null,null,null)
-B.a4B=new A.d("479. T\u1ef7 \u0111\u1ec3 ca.",null,B.b,null,null,null,null,null,null)
+B.a5E=new A.d("478. B\u1ea1t \u0111\u1ec3 ca.",null,B.b,null,null,null,null,null,null)
+B.a4C=new A.d("479. T\u1ef7 \u0111\u1ec3 ca.",null,B.b,null,null,null,null,null,null)
 B.a0A=new A.d("480. Th\u1ea5t l\u1ec7 s\u1eafc m\u1eadt ca.",null,B.b,null,null,null,null,null,null)
-B.a6k=new A.d("481. Ta n\u1ec3 b\xe1t \u0111\u1ec3 ca.",null,B.b,null,null,null,null,null,null)
+B.a6l=new A.d("481. Ta n\u1ec3 b\xe1t \u0111\u1ec3 ca.",null,B.b,null,null,null,null,null,null)
 B.a6D=new A.d("482. T\xe1t b\xe0 th\u1eadp ph\u1ea1t ra.",null,B.b,null,null,null,null,null,null)
 B.a7f=new A.d("483. Th\u1ea5t l\xf4 ki\u1ebft \u0111\u1ebf.",null,B.b,null,null,null,null,null,null)
 B.a6R=new A.d("484. M\u1ea1t \u0111\xe0 b\u1ec7 \u0111\u1ea1t l\xf4 ch\u1ebf ki\u1ebfm.",null,B.b,null,null,null,null,null,null)
-B.a4Z=new A.d("485. A \u1ef7 l\xf4 ki\u1ec1m.",null,B.b,null,null,null,null,null,null)
+B.a5_=new A.d("485. A \u1ef7 l\xf4 ki\u1ec1m.",null,B.b,null,null,null,null,null,null)
 B.a20=new A.d("486. M\u1ee5c kh\xea l\xf4 ki\u1ec1m.",null,B.b,null,null,null,null,null,null)
-B.a4s=new A.d("487. Y\u1ebft r\u1ecb \u0111\u1ed9t l\xf4 ki\u1ec1m.",null,B.b,null,null,null,null,null,null)
-B.a_6=new A.d("488. Y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
-B.a4u=new A.d("489. Y\u1ebft lam y\u1ebft noa du lam.",null,B.b,null,null,null,null,null,null)
-B.a4d=new A.d("490. \u0110\u1ea3n \u0111a du lam.",null,B.b,null,null,null,null,null,null)
-B.a6e=new A.d("491. H\u1ea5t r\u1ecb d\u1ea1 du lam.",null,B.b,null,null,null,null,null,null)
-B.a4S=new A.d("492. M\u1ea1t m\u1ea1 du lam.",null,B.b,null,null,null,null,null,null)
+B.a4t=new A.d("487. Y\u1ebft r\u1ecb \u0111\u1ed9t l\xf4 ki\u1ec1m.",null,B.b,null,null,null,null,null,null)
+B.a_7=new A.d("488. Y\u1ebft ra ha.",null,B.b,null,null,null,null,null,null)
+B.a4v=new A.d("489. Y\u1ebft lam y\u1ebft noa du lam.",null,B.b,null,null,null,null,null,null)
+B.a4e=new A.d("490. \u0110\u1ea3n \u0111a du lam.",null,B.b,null,null,null,null,null,null)
+B.a6f=new A.d("491. H\u1ea5t r\u1ecb d\u1ea1 du lam.",null,B.b,null,null,null,null,null,null)
+B.a4T=new A.d("492. M\u1ea1t m\u1ea1 du lam.",null,B.b,null,null,null,null,null,null)
 B.Zm=new A.d("493. B\u1ea1t r\u1ecb th\u1ea5t b\xe0 du lam.",null,B.b,null,null,null,null,null,null)
-B.a4D=new A.d("494. T\u1ef7 l\u1eadt s\u1eafc tra du lam.",null,B.b,null,null,null,null,null,null)
-B.a4W=new A.d("495. \xd4 \u0111\xe0 ra du lam.",null,B.b,null,null,null,null,null,null)
+B.a4E=new A.d("494. T\u1ef7 l\u1eadt s\u1eafc tra du lam.",null,B.b,null,null,null,null,null,null)
+B.a4X=new A.d("495. \xd4 \u0111\xe0 ra du lam.",null,B.b,null,null,null,null,null,null)
 B.ZG=new A.d("496. Y\u1ebft tri du lam.",null,B.b,null,null,null,null,null,null)
 B.a2z=new A.d("497. B\u1ea1t t\u1ea5t \u0111\u1ebf du lam.",null,B.b,null,null,null,null,null,null)
 B.a0l=new A.d("498. \xd4 l\xf4 du lam.",null,B.b,null,null,null,null,null,null)
 B.a0y=new A.d("499. Th\u01b0\u1eddng d\xe0 du lam.",null,B.b,null,null,null,null,null,null)
-B.a5p=new A.d("500. H\u1eafc t\u1ea5t \u0111a du lam.",null,B.b,null,null,null,null,null,null)
+B.a5q=new A.d("500. H\u1eafc t\u1ea5t \u0111a du lam.",null,B.b,null,null,null,null,null,null)
 B.Zz=new A.d("501. B\u1ea1t \u0111\xe0 du lam.",null,B.b,null,null,null,null,null,null)
-B.a5_=new A.d("502. Ta ph\xf2ng \xe1n d\xe0.",null,B.b,null,null,null,null,null,null)
-B.YJ=new A.d("503. B\xe1t ra tr\u01b0\u1ee3ng d\xe0 du lam.",null,B.b,null,null,null,null,null,null)
-B.a4f=new A.d("504. B\u1ed9 \u0111a t\u1ef7 \u0111a tr\xe0.",null,B.b,null,null,null,null,null,null)
-B.a5s=new A.d("505. Tr\xe0 k\u1ef3 ni.",null,B.b,null,null,null,null,null,null)
-B.a4q=new A.d("506. Th\u1eadp b\xe0 ra.",null,B.b,null,null,null,null,null,null)
+B.a50=new A.d("502. Ta ph\xf2ng \xe1n d\xe0.",null,B.b,null,null,null,null,null,null)
+B.YI=new A.d("503. B\xe1t ra tr\u01b0\u1ee3ng d\xe0 du lam.",null,B.b,null,null,null,null,null,null)
+B.a4g=new A.d("504. B\u1ed9 \u0111a t\u1ef7 \u0111a tr\xe0.",null,B.b,null,null,null,null,null,null)
+B.a5t=new A.d("505. Tr\xe0 k\u1ef3 ni.",null,B.b,null,null,null,null,null,null)
+B.a4r=new A.d("506. Th\u1eadp b\xe0 ra.",null,B.b,null,null,null,null,null,null)
 B.a77=new A.d("507. \u0110\xe0 \u0111\u1ed9t l\xf4 ca.",null,B.b,null,null,null,null,null,null)
 B.a3o=new A.d("508. Ki\u1ebfn \u0111\u1ed1t l\xf4 ki\u1ebft tri.",null,B.b,null,null,null,null,null,null)
 B.a7b=new A.d("509. B\xe0 l\u1ed9 \u0111a t\u1ef3.",null,B.b,null,null,null,null,null,null)
 B.Yh=new A.d("510. T\xe1t b\xe1t l\xf4.",null,B.b,null,null,null,null,null,null)
-B.a5B=new A.d("511. Ha l\u0103ng gi\xe0.",null,B.b,null,null,null,null,null,null)
+B.a5C=new A.d("511. Ha l\u0103ng gi\xe0.",null,B.b,null,null,null,null,null,null)
 B.a0O=new A.d("512. Du sa \u0111\xe1t ra.",null,B.b,null,null,null,null,null,null)
 B.a0Y=new A.d("513. Ta na y\u1ebft ra.",null,B.b,null,null,null,null,null,null)
 B.a78=new A.d("514. T\u1ef3 sa d\u1ee5 ca.",null,B.b,null,null,null,null,null,null)
 B.a24=new A.d("515. A k\u1ef3 ni.",null,B.b,null,null,null,null,null,null)
-B.a_9=new A.d("516. \xd4 \u0111\xe0 ca.",null,B.b,null,null,null,null,null,null)
+B.a_a=new A.d("516. \xd4 \u0111\xe0 ca.",null,B.b,null,null,null,null,null,null)
 B.a1O=new A.d("517. M\u1ea1t ra b\u1ec7 ra.",null,B.b,null,null,null,null,null,null)
 B.a1i=new A.d("518. Ki\u1ebfn \u0111a ra.",null,B.b,null,null,null,null,null,null)
-B.ZT=new A.d("519. A ca ra.",null,B.b,null,null,null,null,null,null)
-B.a5o=new A.d("520. M\u1eadt r\u1ecb \u0111\u1ed1t.",null,B.b,null,null,null,null,null,null)
+B.ZU=new A.d("519. A ca ra.",null,B.b,null,null,null,null,null,null)
+B.a5p=new A.d("520. M\u1eadt r\u1ecb \u0111\u1ed1t.",null,B.b,null,null,null,null,null,null)
 B.a2r=new A.d("521. \u0110\xe1t li\u1ec3m b\u1ed9 ca.",null,B.b,null,null,null,null,null,null)
 B.XZ=new A.d("522. \u0110\u1ecba l\u1eadt l\u1eb7c tra.",null,B.b,null,null,null,null,null,null)
-B.a6_=new A.d("523. T\u1ef7 r\u1ecb s\u1eafc ch\u1ea5t ca.",null,B.b,null,null,null,null,null,null)
+B.a60=new A.d("523. T\u1ef7 r\u1ecb s\u1eafc ch\u1ea5t ca.",null,B.b,null,null,null,null,null,null)
 B.a0m=new A.d("524. T\xe1t b\xe0 na c\xe2u ra.",null,B.b,null,null,null,null,null,null)
-B.a4_=new A.d("525. T\u1ee9 d\u1eabn d\xe0 t\u1ec7.",null,B.b,null,null,null,null,null,null)
+B.a40=new A.d("525. T\u1ee9 d\u1eabn d\xe0 t\u1ec7.",null,B.b,null,null,null,null,null,null)
 B.ZM=new A.d("526. Y\u1ebft ra r\u1ecb d\u01b0\u1ee3c xoa.",null,B.b,null,null,null,null,null,null)
 B.a13=new A.d("527. \u0110\xe1c ra s\xf4.",null,B.b,null,null,null,null,null,null)
-B.a_g=new A.d("528. M\u1ea1t ra th\u1ecb.",null,B.b,null,null,null,null,null,null)
+B.a_h=new A.d("528. M\u1ea1t ra th\u1ecb.",null,B.b,null,null,null,null,null,null)
 B.Zq=new A.d("529. Ph\u1ec7 \u0111\u1ebf sam.",null,B.b,null,null,null,null,null,null)
-B.YW=new A.d("530. Ta b\u1ec7 sam.",null,B.b,null,null,null,null,null,null)
+B.YV=new A.d("530. Ta b\u1ec7 sam.",null,B.b,null,null,null,null,null,null)
 B.a23=new A.d("531. T\u1ea5t \u0111\xe1t \u0111a b\xe1t \u0111\xe1c ra.",null,B.b,null,null,null,null,null,null)
 B.a3d=new A.d("532. Ma ha b\u1ea1t x\xe0 l\xf4.",null,B.b,null,null,null,null,null,null)
 B.Zn=new A.d("533. S\u1eafc ni sam.",null,B.b,null,null,null,null,null,null)
 B.a09=new A.d("534. Ma ha b\xe1t l\u1eb7c tr\u01b0\u1ee3ng k\u1ef3 lam.",null,B.b,null,null,null,null,null,null)
-B.a_2=new A.d("535. D\u1ea1 ba \u0111\u1ed9t \u0111\xe0.",null,B.b,null,null,null,null,null,null)
+B.a_3=new A.d("535. D\u1ea1 ba \u0111\u1ed9t \u0111\xe0.",null,B.b,null,null,null,null,null,null)
 B.a1c=new A.d("536. X\xe1 d\u1ee5 x\xe0 na.",null,B.b,null,null,null,null,null,null)
 B.Yf=new A.d("537. Bi\u1ec7n \u0111\xe1t l\u1ec7 noa.",null,B.b,null,null,null,null,null,null)
 B.a3c=new A.d("538. T\u1ef3 \u0111\xe0 da.",null,B.b,null,null,null,null,null,null)
-B.a5K=new A.d("539. B\xe0n \u0111\xe0m ca l\xf4 di.",null,B.b,null,null,null,null,null,null)
-B.a64=new A.d("540. \u0110\u1ebf th\xf9.",null,B.b,null,null,null,null,null,null)
+B.a5L=new A.d("539. B\xe0n \u0111\xe0m ca l\xf4 di.",null,B.b,null,null,null,null,null,null)
+B.a65=new A.d("540. \u0110\u1ebf th\xf9.",null,B.b,null,null,null,null,null,null)
 B.Y7=new A.d("541. B\xe0n \u0111\xe0m ca l\xf4 di.",null,B.b,null,null,null,null,null,null)
 B.a6y=new A.d("542. B\xe1t ra t\u1ef3 \u0111\xe0.",null,B.b,null,null,null,null,null,null)
 B.a22=new A.d("543. B\xe0n \u0111\xe0m ca l\xf4 di.",null,B.b,null,null,null,null,null,null)
 B.a2O=new A.d("544. \u0110\xe1t \u0111i\u1ec7t tha",null,B.b,null,null,null,null,null,null)
 B.a0s=new A.d("545. \xc1n",null,B.b,null,null,null,null,null,null)
 B.Ye=new A.d("546. A na l\u1ec7",null,B.b,null,null,null,null,null,null)
-B.a4M=new A.d("547. T\u1ef3 x\xe1 \u0111\u1ec1",null,B.b,null,null,null,null,null,null)
-B.a4X=new A.d("548. B\u1ec7 ra",null,B.b,null,null,null,null,null,null)
+B.a4N=new A.d("547. T\u1ef3 x\xe1 \u0111\u1ec1",null,B.b,null,null,null,null,null,null)
+B.a4Y=new A.d("548. B\u1ec7 ra",null,B.b,null,null,null,null,null,null)
 B.a6H=new A.d("549. B\u1ea1t x\xe0 ra",null,B.b,null,null,null,null,null,null)
-B.YH=new A.d("550. \u0110\xe0 r\u1ecb.",null,B.b,null,null,null,null,null,null)
+B.YG=new A.d("550. \u0110\xe0 r\u1ecb.",null,B.b,null,null,null,null,null,null)
 B.a6X=new A.d("551. B\xe0n \u0111\xe0 b\xe0n \u0111\xe0 n\u1ec3",null,B.b,null,null,null,null,null,null)
 B.a1E=new A.d("552. B\u1ea1t x\xe0 ra b\xe1n ni ph\u1ea5n.",null,B.b,null,null,null,null,null,null)
 B.a28=new A.d("553. H\u1ed5 h\u1ed3ng \u0111\xf4 l\xf4 ung ph\u1ea5n",null,B.b,null,null,null,null,null,null)
 B.a02=new A.d("554. Ta b\xe0 ha.",null,B.b,null,null,null,null,null,null)
-B.Kk=s([B.Yc,B.a10,B.a6G,B.a3Y,B.a2e,B.Yq,B.a5a,B.a3O,B.a0M,B.ao,B.a53,B.a1f,B.a6E,B.a_w,B.a1n,B.a1r,B.a2E,B.ao,B.YK,B.a_V,B.a57,B.a1Z,B.ao,B.a5h,B.a3y,B.a_Q,B.a1z,B.a3k,B.a5r,B.a0V,B.ao,B.ao,B.a61,B.a5L,B.a1D,B.a1X,B.a3q,B.a_0,B.Zj,B.a2c,B.a1s,B.a_A,B.YG,B.a37,B.a01,B.a5n,B.a2b,B.a3v,B.Yj,B.a7r,B.a2y,B.a1T,B.a3F,B.a3G,B.a3H,B.a6q,B.a5X,B.a2n,B.ZV,B.a5R,B.ao,B.ao,B.a6x,B.a4h,B.Zd,B.a0R,B.a33,B.Z4,B.a7g,B.a7e,B.a2l,B.a14,B.a27,B.a6a,B.a0f,B.a38,B.a1H,B.Zl,B.a00,B.YZ,B.a4G,B.a1M,B.a2_,B.a0e,B.a3p,B.a5y,B.a_4,B.a05,B.a_M,B.a_L,B.a2T,B.a7o,B.a4x,B.a1S,B.a1N,B.YL,B.a4R,B.Y0,B.a0u,B.a6C,B.Zy,B.a73,B.a0C,B.ao,B.a6t,B.YF,B.a6Z,B.a6N,B.a_b,B.a12,B.a_F,B.Y6,B.a_m,B.a0I,B.a3V,B.a3Z,B.a1t,B.a0t,B.a_Y,B.a5H,B.a4c,B.a52,B.a56,B.a0D,B.Zp,B.a6V,B.Yv,B.a6W,B.a06,B.a5A,B.a25,B.a4Q,B.a_D,B.a3R,B.a3I,B.a5m,B.a16,B.a0g,B.a3z,B.ZD,B.a2W,B.ZQ,B.Z8,B.a46,B.ao,B.a1G,B.a1F,B.a6T,B.a76,B.Zk,B.a0_,B.a4V,B.a5f,B.a4L,B.a5v,B.YP,B.a5z,B.a5t,B.a15,B.a2m,B.a5q,B.a3_,B.a35,B.Yi,B.a6u,B.a3g,B.a04,B.a4a,B.a3a,B.a5b,B.a71,B.a65,B.a1B,B.ZL,B.a6K,B.a_E,B.a1e,B.a3C,B.a1W,B.a2U,B.a__,B.a1j,B.a3E,B.a42,B.a1R,B.ao,B.a7_,B.a_o,B.ZE,B.a_q,B.a3L,B.a4A,B.a6m,B.a0c,B.a_C,B.a_z,B.a4m,B.a4v,B.a2X,B.a3n,B.a6L,B.a3s,B.a6r,B.a19,B.Zw,B.Ys,B.a7n,B.YO,B.a4O,B.a6h,B.a_R,B.a1h,B.a0p,B.Yy,B.Yo,B.a48,B.Y3,B.a2g,B.a2j,B.YR,B.a5c,B.a4w,B.a_p,B.ZB,B.a0b,B.YT,B.ao,B.a4j,B.a3X,B.a3A,B.a4I,B.a6b,B.a4l,B.a6j,B.a0z,B.a_8,B.a5x,B.a6O,B.YX,B.a4P,B.a_7,B.a5W,B.YS,B.a_j,B.a_1,B.a3M,B.a0v,B.a2M,B.a_B,B.a3W,B.a1x,B.YV,B.a3D,B.a_r,B.ao,B.a2G,B.a5Q,B.a_S,B.a5Z,B.YM,B.a_N,B.YE,B.a2L,B.a_J,B.Yl,B.a4p,B.ZU,B.a72,B.a7h,B.a0X,B.a6v,B.XY,B.Zb,B.a4g,B.a3h,B.a0j,B.a4E,B.a6g,B.a3t,B.a03,B.YC,B.a0a,B.Yt,B.a5J,B.a7i,B.a_I,B.a51,B.a7a,B.a59,B.a0B,B.a6w,B.a74,B.a0w,B.a1A,B.ZR,B.ZK,B.a_t,B.a0K,B.a2Q,B.a1g,B.Yp,B.ao,B.a2F,B.a6o,B.a2H,B.a3T,B.YQ,B.a_s,B.a6B,B.a67,B.a4U,B.a6c,B.a17,B.Z7,B.a6U,B.Zg,B.Yd,B.a5C,B.a5d,B.a4H,B.a1I,B.a1l,B.a2v,B.Z1,B.a1u,B.a_e,B.a5F,B.a1b,B.a3J,B.a4y,B.Y2,B.a1d,B.a7q,B.a3m,B.Zs,B.a4Y,B.a_u,B.a2K,B.a6p,B.a29,B.a2B,B.a5U,B.a5Y,B.Yg,B.ao,B.a44,B.a1L,B.a4b,B.a5i,B.a_i,B.Z_,B.a0H,B.a2N,B.Y_,B.a18,B.a_O,B.a4i,B.a_X,B.a6f,B.a4C,B.a2t,B.a_Z,B.a_v,B.ZI,B.a2x,B.a2q,B.a3e,B.a_y,B.a2s,B.a3P,B.a1P,B.a4n,B.YU,B.XX,B.a34,B.Z3,B.Z6,B.a5w,B.a2S,B.Zv,B.a2f,B.a2u,B.a5G,B.a7p,B.a0r,B.ZW,B.a_G,B.a0o,B.a66,B.a1q,B.a3u,B.a1o,B.a3b,B.Zh,B.a21,B.a6d,B.ao,B.a5N,B.a1p,B.a_d,B.a0F,B.ZZ,B.Yn,B.a2R,B.a_n,B.a7d,B.ZC,B.a1Q,B.a47,B.a_K,B.Za,B.a3r,B.a3S,B.a39,B.a2P,B.a2J,B.a4z,B.a_h,B.a2C,B.a0P,B.ZN,B.a7l,B.a5O,B.a55,B.a2k,B.a_l,B.a3w,B.a_k,B.ZA,B.a63,B.Z5,B.a7c,B.a_5,B.Y9,B.a_U,B.Zu,B.ao,B.ZP,B.YD,B.a0G,B.a3U,B.Yk,B.a_P,B.a6n,B.ZX,B.a5u,B.Z2,B.a7m,B.a08,B.a0h,B.a3j,B.a1y,B.a5g,B.Yb,B.a4r,B.a3N,B.ZH,B.Y5,B.Yw,B.Zc,B.a1_,B.a6Y,B.a4J,B.a0k,B.a70,B.a0Q,B.a2o,B.a1J,B.a2V,B.ao,B.a5S,B.a1a,B.a2h,B.a0i,B.a2i,B.Zf,B.YI,B.ZJ,B.a0Z,B.a3Q,B.a6F,B.a7j,B.a6z,B.a4k,B.a58,B.a1w,B.a40,B.a1k,B.a1Y,B.a30,B.a6Q,B.Y8,B.Zt,B.a6S,B.Z9,B.a36,B.a0L,B.a0S,B.a1U,B.a79,B.a5j,B.a_a,B.a2Z,B.a3K,B.a1v,B.YY,B.a31,B.a4o,B.a5V,B.a6i,B.ao,B.ZO,B.a_c,B.a50,B.Zi,B.a6I,B.a69,B.Zx,B.a4e,B.a49,B.a32,B.a0T,B.a1V,B.a3i,B.Ya,B.a3B,B.a43,B.ZS,B.a1m,B.a62,B.a0W,B.a_3,B.Z0,B.a0J,B.a6P,B.a4T,B.a41,B.a5M,B.a45,B.Zr,B.a3l,B.Y4,B.Yx,B.a2p,B.a60,B.a_T,B.a5l,B.YA,B.Zo,B.ZF,B.a07,B.a0U,B.a2w,B.ao,B.a1K,B.Yu,B.a5D,B.a4B,B.a0A,B.a6k,B.a6D,B.a7f,B.a6R,B.a4Z,B.a20,B.a4s,B.a_6,B.a4u,B.a4d,B.a6e,B.a4S,B.Zm,B.a4D,B.a4W,B.ZG,B.a2z,B.a0l,B.a0y,B.a5p,B.Zz,B.a5_,B.YJ,B.a4f,B.a5s,B.a4q,B.a77,B.a3o,B.a7b,B.Yh,B.a5B,B.a0O,B.a0Y,B.a78,B.a24,B.ao,B.a_9,B.a1O,B.a1i,B.ZT,B.a5o,B.a2r,B.XZ,B.a6_,B.a0m,B.a4_,B.ZM,B.a13,B.a_g,B.Zq,B.YW,B.a23,B.a3d,B.Zn,B.a09,B.a_2,B.a1c,B.Yf,B.a3c,B.a5K,B.a64,B.Y7,B.a6y,B.a22,B.a2O,B.a0s,B.Ye,B.a4M,B.a4X,B.a6H,B.YH,B.a6X,B.a1E,B.a28,B.a02],t.p)
-B.Kv=s([],t.QP)
+B.Kj=s([B.Yc,B.a10,B.a6G,B.a3Y,B.a2e,B.Yq,B.a5b,B.a3O,B.a0M,B.ao,B.a54,B.a1f,B.a6E,B.a_x,B.a1n,B.a1r,B.a2E,B.ao,B.YJ,B.a_W,B.a58,B.a1Z,B.ao,B.a5i,B.a3y,B.a_R,B.a1z,B.a3k,B.a5s,B.a0V,B.ao,B.ao,B.a62,B.a5M,B.a1D,B.a1X,B.a3q,B.a_1,B.Zj,B.a2c,B.a1s,B.a_B,B.YF,B.a37,B.a01,B.a5o,B.a2b,B.a3v,B.Yj,B.a7r,B.a2y,B.a1T,B.a3F,B.a3G,B.a3H,B.a6r,B.a5Y,B.a2n,B.ZW,B.a5S,B.ao,B.ao,B.a6x,B.a4i,B.Zd,B.a0R,B.a33,B.Z3,B.a7g,B.a7e,B.a2l,B.a14,B.a27,B.a6b,B.a0f,B.a38,B.a1H,B.Zl,B.a00,B.YY,B.a4H,B.a1M,B.a2_,B.a0e,B.a3p,B.a5z,B.a_5,B.a05,B.a_N,B.a_M,B.a2T,B.a7o,B.a4y,B.a1S,B.a1N,B.YK,B.a4S,B.Y0,B.a0u,B.a6C,B.Zy,B.a73,B.a0C,B.ao,B.a6t,B.YE,B.a6Z,B.a6N,B.a_c,B.a12,B.a_G,B.Y6,B.a_n,B.a0I,B.a3V,B.a3Z,B.a1t,B.a0t,B.a_Y,B.a5I,B.a4d,B.a53,B.a57,B.a0D,B.Zp,B.a6V,B.Yv,B.a6W,B.a06,B.a5B,B.a25,B.a4R,B.a_E,B.a3R,B.a3I,B.a5n,B.a16,B.a0g,B.a3z,B.ZD,B.a2W,B.ZR,B.Z7,B.a47,B.ao,B.a1G,B.a1F,B.a6T,B.a76,B.Zk,B.a0_,B.a4W,B.a5g,B.a4M,B.a5w,B.YO,B.a5A,B.a5u,B.a15,B.a2m,B.a5r,B.a3_,B.a35,B.Yi,B.a6u,B.a3g,B.a04,B.a4b,B.a3a,B.a5c,B.a71,B.a66,B.a1B,B.ZL,B.a6K,B.a_F,B.a1e,B.a3C,B.a1W,B.a2U,B.a_0,B.a1j,B.a3E,B.a43,B.a1R,B.ao,B.a7_,B.a_p,B.ZE,B.a_r,B.a3L,B.a4B,B.a6n,B.a0c,B.a_D,B.a_A,B.a4n,B.a4w,B.a2X,B.a3n,B.a6L,B.a3s,B.a6s,B.a19,B.Zw,B.Ys,B.a7n,B.YN,B.a4P,B.a6i,B.a_S,B.a1h,B.a0p,B.Yy,B.Yo,B.a49,B.Y3,B.a2g,B.a2j,B.YQ,B.a5d,B.a4x,B.a_q,B.ZB,B.a0b,B.YS,B.ao,B.a4k,B.a3X,B.a3A,B.a4J,B.a6c,B.a4m,B.a6k,B.a0z,B.a_9,B.a5y,B.a6O,B.YW,B.a4Q,B.a_8,B.a5X,B.YR,B.a_k,B.a_2,B.a3M,B.a0v,B.a2M,B.a_C,B.a3W,B.a1x,B.YU,B.a3D,B.a_s,B.ao,B.a2G,B.a5R,B.a_T,B.a6_,B.YL,B.a_O,B.YD,B.a2L,B.a_K,B.Yl,B.a4q,B.ZV,B.a72,B.a7h,B.a0X,B.a6v,B.XY,B.Za,B.a4h,B.a3h,B.a0j,B.a4F,B.a6h,B.a3t,B.a03,B.YB,B.a0a,B.Yt,B.a5K,B.a7i,B.a_J,B.a52,B.a7a,B.a5a,B.a0B,B.a6w,B.a74,B.a0w,B.a1A,B.ZS,B.ZK,B.a_u,B.a0K,B.a2Q,B.a1g,B.Yp,B.ao,B.a2F,B.a6p,B.a2H,B.a3T,B.YP,B.a_t,B.a6B,B.a68,B.a4V,B.a6d,B.a17,B.Z6,B.a6U,B.Zg,B.Yd,B.a5D,B.a5e,B.a4I,B.a1I,B.a1l,B.a2v,B.Z0,B.a1u,B.a_f,B.a5G,B.a1b,B.a3J,B.a4z,B.Y2,B.a1d,B.a7q,B.a3m,B.Zs,B.a4Z,B.a_v,B.a2K,B.a6q,B.a29,B.a2B,B.a5V,B.a5Z,B.Yg,B.ao,B.a45,B.a1L,B.a4c,B.a5j,B.a_j,B.YZ,B.a0H,B.a2N,B.Y_,B.a18,B.a_P,B.a4j,B.a_X,B.a6g,B.a4D,B.a2t,B.a_Z,B.a_w,B.ZI,B.a2x,B.a2q,B.a3e,B.a_z,B.a2s,B.a3P,B.a1P,B.a4o,B.YT,B.XX,B.a34,B.Z2,B.Z5,B.a5x,B.a2S,B.Zv,B.a2f,B.a2u,B.a5H,B.a7p,B.a0r,B.ZX,B.a_H,B.a0o,B.a67,B.a1q,B.a3u,B.a1o,B.a3b,B.Zh,B.a21,B.a6e,B.ao,B.a5O,B.a1p,B.a_e,B.a0F,B.a__,B.Yn,B.a2R,B.a_o,B.a7d,B.ZC,B.a1Q,B.a48,B.a_L,B.Z9,B.a3r,B.a3S,B.a39,B.a2P,B.a2J,B.a4A,B.a_i,B.a2C,B.a0P,B.ZO,B.a7l,B.a5P,B.a56,B.a2k,B.a_m,B.a3w,B.a_l,B.ZA,B.a64,B.Z4,B.a7c,B.a_6,B.Y9,B.a_V,B.Zu,B.ao,B.ZQ,B.YC,B.a0G,B.a3U,B.Yk,B.a_Q,B.a6o,B.ZY,B.a5v,B.Z1,B.a7m,B.a08,B.a0h,B.a3j,B.a1y,B.a5h,B.Yb,B.a4s,B.a3N,B.ZH,B.Y5,B.Yw,B.Zb,B.a1_,B.a6Y,B.a4K,B.a0k,B.a70,B.a0Q,B.a2o,B.a1J,B.a2V,B.ao,B.a5T,B.a1a,B.a2h,B.a0i,B.a2i,B.Zf,B.YH,B.ZJ,B.a0Z,B.a3Q,B.a6F,B.a7j,B.a6z,B.a4l,B.a59,B.a1w,B.a41,B.a1k,B.a1Y,B.a30,B.a6Q,B.Y8,B.Zt,B.a6S,B.Z8,B.a36,B.a0L,B.a0S,B.a1U,B.a79,B.a5k,B.a_b,B.a2Z,B.a3K,B.a1v,B.YX,B.a31,B.a4p,B.a5W,B.a6j,B.ao,B.ZP,B.a_d,B.a51,B.Zi,B.a6I,B.a6a,B.Zx,B.a4f,B.a4a,B.a32,B.a0T,B.a1V,B.a3i,B.Ya,B.a3B,B.a44,B.ZT,B.a1m,B.a63,B.a0W,B.a_4,B.Z_,B.a0J,B.a6P,B.a4U,B.a42,B.a5N,B.a46,B.Zr,B.a3l,B.Y4,B.Yx,B.a2p,B.a61,B.a_U,B.a5m,B.YA,B.Zo,B.ZF,B.a07,B.a0U,B.a2w,B.ao,B.a1K,B.Yu,B.a5E,B.a4C,B.a0A,B.a6l,B.a6D,B.a7f,B.a6R,B.a5_,B.a20,B.a4t,B.a_7,B.a4v,B.a4e,B.a6f,B.a4T,B.Zm,B.a4E,B.a4X,B.ZG,B.a2z,B.a0l,B.a0y,B.a5q,B.Zz,B.a50,B.YI,B.a4g,B.a5t,B.a4r,B.a77,B.a3o,B.a7b,B.Yh,B.a5C,B.a0O,B.a0Y,B.a78,B.a24,B.ao,B.a_a,B.a1O,B.a1i,B.ZU,B.a5p,B.a2r,B.XZ,B.a60,B.a0m,B.a40,B.ZM,B.a13,B.a_h,B.Zq,B.YV,B.a23,B.a3d,B.Zn,B.a09,B.a_3,B.a1c,B.Yf,B.a3c,B.a5L,B.a65,B.Y7,B.a6y,B.a22,B.a2O,B.a0s,B.Ye,B.a4N,B.a4Y,B.a6H,B.YG,B.a6X,B.a1E,B.a28,B.a02],t.p)
+B.Ku=s([],t.QP)
 B.p5=s([],A.at("C<aXY>"))
-B.Kp=s([],t.D)
-B.Kq=s([],t.fJ)
-B.Ko=s([],t.ER)
+B.Ko=s([],t.D)
+B.Kp=s([],t.fJ)
+B.Kn=s([],t.ER)
 B.abe=s([],t.ss)
 B.p6=s([],t.tc)
 B.hS=s([],t.jl)
 B.p7=s([],t.wi)
-B.Kw=s([],A.at("C<jS<@>>"))
+B.Kv=s([],A.at("C<jS<@>>"))
 B.kT=s([],t.AO)
-B.Kt=s([],A.at("C<aeQ>"))
-B.Ku=s([],t.D1)
+B.Ks=s([],A.at("C<aeQ>"))
+B.Kt=s([],t.D1)
 B.hR=s([],t.QF)
-B.Ky=s([],t.Lx)
-B.Ks=s([],t.AS)
+B.Kx=s([],t.Lx)
+B.Kr=s([],t.AS)
 B.hQ=s([],t.p)
-B.Kr=s([],t.n)
-B.Km=s([],t.t)
+B.Kq=s([],t.n)
+B.Kl=s([],t.t)
 B.p8=s([],t.ee)
-B.Kx=s([],t._m)
+B.Kw=s([],t._m)
 B.Nu=new A.h(0,2)
 B.BY=new A.dk(0.75,B.cJ,B.nr,B.Nu,1.5)
-B.KF=s([B.BY],t.sq)
+B.KE=s([B.BY],t.sq)
 B.f6=s([B.d1,B.cI,B.fR,B.fS,B.jm],t.QP)
-B.Jh=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
-B.Kj=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
-B.Ju=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
-B.KR=s([B.Jh,B.Kj,B.Ju],t.zg)
+B.KQ=s(["T\xe1ch ch\xedn ch\u1ee7 \u0111\u1ec1 khai th\u1ecb c\u1ee7a H\xf2a Th\u01b0\u1ee3ng Tuy\xean H\xf3a th\xe0nh t\u1eebng b\xe0i ri\xeang.","M\u1ed7i b\xe0i ng\u1eafn g\u1ecdn h\u01a1n, d\u1ec5 t\xecm v\xe0 thu\u1eadn ti\u1ec7n \u0111\u1ecdc tr\xean \u0111i\u1ec7n tho\u1ea1i.","Lo\u1ea1i b\u1ecf \u0111o\u1ea1n n\u1ed9i dung kh\xf4ng c\xf2n c\u1ea7n thi\u1ebft theo g\xf3p \xfd."],t.s)
+B.Jg=s([0.001200833568784504,0.002389694492170889,0.0002795742885861124],t.n)
+B.Ki=s([0.0005891086651375999,0.0029785502573438758,0.0003270666104008398],t.n)
+B.Jt=s([0.00010146692491640572,0.0005364214359186694,0.0032979401770712076],t.n)
+B.KR=s([B.Jg,B.Ki,B.Jt],t.zg)
 B.KS=s([45,95,45,20,45,90,45,45,45],t.n)
 B.KT=s([120,120,20,45,20,15,20,120,120],t.n)
 B.dZ=new A.hl(0,"controlModifier")
@@ -97676,38 +97676,38 @@ B.IK=s([4294968072,null,null,8589935161],t.Z)
 B.K1=s([8589934850,8589934850,8589934851,null],t.Z)
 B.va=new A.dv(["*",B.IN,"+",B.IO,"-",B.IP,".",B.IQ,"/",B.IR,"0",B.IS,"1",B.IT,"2",B.IW,"3",B.IY,"4",B.IZ,"5",B.J_,"6",B.J0,"7",B.J1,"8",B.J2,"9",B.J4,"Alt",B.JZ,"AltGraph",B.IC,"ArrowDown",B.ID,"ArrowLeft",B.IE,"ArrowRight",B.IF,"ArrowUp",B.IG,"Clear",B.IL,"Control",B.K_,"Delete",B.IB,"End",B.IH,"Enter",B.IA,"Home",B.II,"Insert",B.IM,"Meta",B.K0,"PageDown",B.IJ,"PageUp",B.IK,"Shift",B.K1],A.at("dv<o,R<n?>>"))
 B.J3=s([B.pi,null,null,B.uZ],t.L)
-B.Kz=s([B.uL,null,null,B.v_],t.L)
-B.JF=s([B.uM,null,null,B.v0],t.L)
+B.Ky=s([B.uL,null,null,B.v_],t.L)
+B.JE=s([B.uM,null,null,B.v0],t.L)
 B.K3=s([B.uN,null,null,B.dj],t.L)
 B.Iq=s([B.uO,null,null,B.v1],t.L)
-B.KP=s([B.uP,null,null,B.l3],t.L)
-B.KK=s([B.uQ,null,null,B.fg],t.L)
-B.Jg=s([B.uR,null,null,B.dk],t.L)
+B.KO=s([B.uP,null,null,B.l3],t.L)
+B.KJ=s([B.uQ,null,null,B.fg],t.L)
+B.Jf=s([B.uR,null,null,B.dk],t.L)
 B.KV=s([B.uS,null,null,B.fh],t.L)
-B.KJ=s([B.uT,null,null,B.dl],t.L)
+B.KI=s([B.uT,null,null,B.dl],t.L)
 B.Jb=s([B.uU,null,null,B.l4],t.L)
 B.Iw=s([B.uV,null,null,B.dm],t.L)
-B.Jp=s([B.uW,null,null,B.fi],t.L)
-B.KA=s([B.uX,null,null,B.dn],t.L)
-B.KD=s([B.uY,null,null,B.fj],t.L)
-B.Ji=s([B.fe,B.fe,B.hZ,null],t.L)
-B.KQ=s([B.hV,null,B.hV,null],t.L)
-B.JL=s([B.c2,null,null,B.dk],t.L)
-B.JM=s([B.bM,null,null,B.dl],t.L)
-B.JN=s([B.bN,null,null,B.dm],t.L)
+B.Jo=s([B.uW,null,null,B.fi],t.L)
+B.Kz=s([B.uX,null,null,B.dn],t.L)
+B.KC=s([B.uY,null,null,B.fj],t.L)
+B.Jh=s([B.fe,B.fe,B.hZ,null],t.L)
+B.KP=s([B.hV,null,B.hV,null],t.L)
+B.JK=s([B.c2,null,null,B.dk],t.L)
+B.JL=s([B.bM,null,null,B.dl],t.L)
+B.JM=s([B.bN,null,null,B.dm],t.L)
 B.KU=s([B.c3,null,null,B.dn],t.L)
-B.KH=s([B.kY,null,null,B.l4],t.L)
-B.Jj=s([B.fd,B.fd,B.hY,null],t.L)
-B.Kf=s([B.b2,null,null,B.dj],t.L)
-B.JO=s([B.dg,null,null,B.fg],t.L)
+B.KG=s([B.kY,null,null,B.l4],t.L)
+B.Ji=s([B.fd,B.fd,B.hY,null],t.L)
+B.Ke=s([B.b2,null,null,B.dj],t.L)
+B.JN=s([B.dg,null,null,B.fg],t.L)
 B.Ja=s([B.hU,null,null,B.l2],t.L)
-B.JP=s([B.dh,null,null,B.fi],t.L)
-B.KI=s([B.fc,null,null,B.l3],t.L)
-B.Jk=s([B.ff,B.ff,B.i_,null],t.L)
-B.JQ=s([B.fa,null,null,B.fh],t.L)
-B.Kl=s([B.fb,null,null,B.fj],t.L)
-B.Jl=s([B.cO,B.cO,B.di,null],t.L)
-B.MJ=new A.dv(["*",B.J3,"+",B.Kz,"-",B.JF,".",B.K3,"/",B.Iq,"0",B.KP,"1",B.KK,"2",B.Jg,"3",B.KV,"4",B.KJ,"5",B.Jb,"6",B.Iw,"7",B.Jp,"8",B.KA,"9",B.KD,"Alt",B.Ji,"AltGraph",B.KQ,"ArrowDown",B.JL,"ArrowLeft",B.JM,"ArrowRight",B.JN,"ArrowUp",B.KU,"Clear",B.KH,"Control",B.Jj,"Delete",B.Kf,"End",B.JO,"Enter",B.Ja,"Home",B.JP,"Insert",B.KI,"Meta",B.Jk,"PageDown",B.JQ,"PageUp",B.Kl,"Shift",B.Jl],A.at("dv<o,R<i?>>"))
+B.JO=s([B.dh,null,null,B.fi],t.L)
+B.KH=s([B.fc,null,null,B.l3],t.L)
+B.Jj=s([B.ff,B.ff,B.i_,null],t.L)
+B.JP=s([B.fa,null,null,B.fh],t.L)
+B.Kk=s([B.fb,null,null,B.fj],t.L)
+B.Jk=s([B.cO,B.cO,B.di,null],t.L)
+B.MJ=new A.dv(["*",B.J3,"+",B.Ky,"-",B.JE,".",B.K3,"/",B.Iq,"0",B.KO,"1",B.KJ,"2",B.Jf,"3",B.KV,"4",B.KI,"5",B.Jb,"6",B.Iw,"7",B.Jo,"8",B.Kz,"9",B.KC,"Alt",B.Jh,"AltGraph",B.KP,"ArrowDown",B.JK,"ArrowLeft",B.JL,"ArrowRight",B.JM,"ArrowUp",B.KU,"Clear",B.KG,"Control",B.Ji,"Delete",B.Ke,"End",B.JN,"Enter",B.Ja,"Home",B.JO,"Insert",B.KH,"Meta",B.Jj,"PageDown",B.JP,"PageUp",B.Kk,"Shift",B.Jk],A.at("dv<o,R<i?>>"))
 B.Nk={KeyA:0,KeyB:1,KeyC:2,KeyD:3,KeyE:4,KeyF:5,KeyG:6,KeyH:7,KeyI:8,KeyJ:9,KeyK:10,KeyL:11,KeyM:12,KeyN:13,KeyO:14,KeyP:15,KeyQ:16,KeyR:17,KeyS:18,KeyT:19,KeyU:20,KeyV:21,KeyW:22,KeyX:23,KeyY:24,KeyZ:25,Digit1:26,Digit2:27,Digit3:28,Digit4:29,Digit5:30,Digit6:31,Digit7:32,Digit8:33,Digit9:34,Digit0:35,Minus:36,Equal:37,BracketLeft:38,BracketRight:39,Backslash:40,Semicolon:41,Quote:42,Backquote:43,Comma:44,Period:45,Slash:46}
 B.vb=new A.bM(B.Nk,["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","1","2","3","4","5","6","7","8","9","0","-","=","[","]","\\",";","'","`",",",".","/"],t.li)
 B.Nj={"zh-Hant":0,"zh-TW":1,"zh-MO":2,"zh-HK":3,ja:4,ko:5,zh:6,"zh-Hans":7,"zh-CN":8}
@@ -98196,9 +98196,9 @@ B.fC=new A.bm(10,null,null,null)
 B.UU=new A.m(!0,B.dL,null,null,null,null,18,B.de,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Yr=new A.d("V\u0103n Ch\xfa L\u0103ng Nghi\xeam",null,B.UU,null,null,null,null,null,null)
 B.Gu=new A.iD(1,B.dd,B.Yr,null)
-B.JD=s([B.Hm,B.fC,B.Gu],t.p)
+B.JC=s([B.Hm,B.fC,B.Gu],t.p)
 B.a91=new A.bQ("mantra-reading-heading",t.c)
-B.Q9=new A.uN(B.aD,B.x,B.K,B.J,null,B.bT,null,0,B.JD,B.a91)
+B.Q9=new A.uN(B.aD,B.x,B.K,B.J,null,B.bT,null,0,B.JC,B.a91)
 B.Ar=new A.m(!0,B.I,null,null,null,null,20,B.ay,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a0q=new A.d("C\xe0i L\u0103ng Nghi\xeam T\xe2m C\u1ea3nh",null,B.Ar,null,null,null,null,null,null)
 B.Gw=new A.iD(1,B.dd,B.a0q,null)
@@ -98320,9 +98320,9 @@ B.zu=new A.eN([B.al,B.b3,B.c4,B.be,B.bt],t.Lu)
 B.Eq=new A.y(0.23529411764705882,0,0,0,B.f)
 B.Nx=new A.h(0,4)
 B.C2=new A.dk(0.5,B.cJ,B.Eq,B.Nx,10)
-B.Kg=s([B.C2],t.sq)
+B.Kf=s([B.C2],t.sq)
 B.Q8=new A.k_(B.jp,B.r)
-B.R2=new A.hu(null,null,null,B.Kg,B.Q8)
+B.R2=new A.hu(null,null,null,B.Kf,B.Q8)
 B.R3=new A.ad(B.fc,!1,!0,!1,!1,B.n)
 B.zv=new A.ad(B.kW,!1,!1,!1,!0,B.n)
 B.R4=new A.ad(B.pd,!0,!1,!1,!1,B.n)
@@ -98832,21 +98832,21 @@ B.TC=new A.m(!0,B.m,null,".AppleSystemUIFont",null,null,null,null,null,null,null
 B.XW=new A.dz(B.Vz,B.Ur,B.VA,B.W3,B.U2,B.Ub,B.UO,B.VZ,B.V1,B.Wv,B.Tv,B.TO,B.Ws,B.WP,B.TC)
 B.Y1=new A.d("X\xf3a l\u1ecbch s\u1eed tr\xf2 chuy\u1ec7n",null,null,null,null,null,null,null,null)
 B.Ym=new A.d("C\xf3 g\xec m\u1edbi",null,null,null,null,null,null,null,null)
-B.YN=new A.d("\u0110\xe3 hi\u1ec3u",null,null,null,null,null,null,null,null)
+B.YM=new A.d("\u0110\xe3 hi\u1ec3u",null,null,null,null,null,null,null,null)
 B.m6=new A.m(!0,B.I,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.Au=new A.d("L\u01b0u",null,B.m6,null,null,null,null,null,null)
 B.Ze=new A.d("B\u1ea1n c\xf3 ch\u1eafc ch\u1eafn mu\u1ed1n x\xf3a to\xe0n b\u1ed9 l\u1ecbch s\u1eed tr\xf2 chuy\u1ec7n v\u1edbi Ti\u1ec3u T\u1ecbnh kh\xf4ng?",null,B.m5,null,null,null,null,null,null)
+B.W7=new A.m(!0,B.I,null,null,null,null,12,B.ay,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
+B.ZN=new A.d("Phi\xean b\u1ea3n 1.5.5",null,B.W7,null,null,null,null,null,null)
 B.Ez=new A.y(1,0.4627450980392157,0.3137254901960784,0.09411764705882353,B.f)
 B.DF=new A.y(0.8,1,1,1,B.f)
 B.R0=new A.iX(B.DF,B.h,8)
-B.KN=s([B.R0],t.kO)
-B.UB=new A.m(!0,B.Ez,null,null,null,null,12,B.ay,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,B.KN,null,null,null)
-B.ZY=new A.d("TH\u1edcI KH\xd3A H\xd4M NAY",null,B.UB,null,null,null,null,null,null)
+B.KM=s([B.R0],t.kO)
+B.UB=new A.m(!0,B.Ez,null,null,null,null,12,B.ay,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,B.KM,null,null,null)
+B.ZZ=new A.d("TH\u1edcI KH\xd3A H\xd4M NAY",null,B.UB,null,null,null,null,null,null)
 B.Av=new A.d("\u0110i\u1ec1u ch\u1ec9nh ti\u1ebfn \u0111\u1ed9",null,B.m6,null,null,null,null,null,null)
-B.a_f=new A.d("X\xe1c nh\u1eadn x\xf3a",null,B.m6,null,null,null,null,null,null)
-B.a_H=new A.d("\u0110\u1eb7t l\u1ea1i m\xe3 PIN \u0111\u1ec3 m\u1edf app",null,null,null,null,null,null,null,null)
-B.W7=new A.m(!0,B.I,null,null,null,null,12,B.ay,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a_W=new A.d("Phi\xean b\u1ea3n 1.5.4",null,B.W7,null,null,null,null,null,null)
+B.a_g=new A.d("X\xe1c nh\u1eadn x\xf3a",null,B.m6,null,null,null,null,null,null)
+B.a_I=new A.d("\u0110\u1eb7t l\u1ea1i m\xe3 PIN \u0111\u1ec3 m\u1edf app",null,null,null,null,null,null,null,null)
 B.WM=new A.m(!0,B.d9,null,null,null,null,14,null,null,null,null,null,1.6,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a0n=new A.d('Ch\xednh S\xe1ch B\u1ea3o M\u1eadt (Privacy Policy)\nNg\xe0y hi\u1ec7u l\u1ef1c: 09 Th\xe1ng 09, 2026\n\nCh\xe0o m\u1eebng b\u1ea1n \u0111\u1ebfn v\u1edbi \u1ee9ng d\u1ee5ng L\u0103ng Nghi\xeam T\xe2m C\u1ea3nh, \u0111\u01b0\u1ee3c ph\xe1t tri\u1ec3n v\xe0 v\u1eadn h\xe0nh b\u1edfi Li\xean Hoa H\xf3a Sanh.\n\nB\u1ea3o v\u1ec7 th\xf4ng tin c\xe1 nh\xe2n v\xe0 quy\u1ec1n ri\xeang t\u01b0 c\u1ee7a Qu\xfd \u0110\u1ea1o H\u1eefu l\xe0 \u01b0u ti\xean h\xe0ng \u0111\u1ea7u c\u1ee7a t\xf4i. Ch\xednh s\xe1ch B\u1ea3o m\u1eadt n\xe0y gi\u1ea3i th\xedch c\xe1ch t\xf4i thu th\u1eadp, s\u1eed d\u1ee5ng v\xe0 b\u1ea3o v\u1ec7 th\xf4ng tin c\u1ee7a b\u1ea1n khi b\u1ea1n s\u1eed d\u1ee5ng \u1ee8ng d\u1ee5ng.\n\n1. Th\xf4ng tin t\xf4i thu th\u1eadp\n\u1ee8ng d\u1ee5ng c\u1ee7a t\xf4i \u0111\u01b0\u1ee3c thi\u1ebft k\u1ebf t\u1ed1i gi\u1ea3n nh\u1eb1m b\u1ea3o v\u1ec7 t\u1ed1i \u0111a quy\u1ec1n ri\xeang t\u01b0 c\u1ee7a ng\u01b0\u1eddi d\xf9ng. T\xf4i thu th\u1eadp v\xe0 x\u1eed l\xfd c\xe1c lo\u1ea1i th\xf4ng tin sau:\n- D\u1eef li\u1ec7u l\u01b0u tr\u1eef c\u1ee5c b\u1ed9 (M\xe3 PIN): \u1ee8ng d\u1ee5ng c\xf3 th\u1ec3 y\xeau c\u1ea7u b\u1ea1n thi\u1ebft l\u1eadp M\xe3 PIN \u0111\u1ec3 b\u1ea3o m\u1eadt quy\u1ec1n truy c\u1eadp. M\xe3 PIN n\xe0y ch\u1ec9 \u0111\u01b0\u1ee3c l\u01b0u tr\u1eef c\u1ee5c b\u1ed9 (local storage) tr\xean thi\u1ebft b\u1ecb c\u1ee7a b\u1ea1n. T\xf4i KH\xd4NG g\u1eedi m\xe3 PIN n\xe0y l\xean b\u1ea5t k\u1ef3 m\xe1y ch\u1ee7 n\xe0o v\xe0 ho\xe0n to\xe0n kh\xf4ng c\xf3 kh\u1ea3 n\u0103ng bi\u1ebft \u0111\u01b0\u1ee3c m\xe3 PIN c\u1ee7a b\u1ea1n.\n- N\u1ed9i dung Tr\xf2 chuy\u1ec7n AI (Chatbot Ti\u1ec3u T\u1ecbnh): Khi b\u1ea1n \u0111\u1eb7t c\xe2u h\u1ecfi ho\u1eb7c tr\xf2 chuy\u1ec7n v\u1edbi Tr\u1ee3 l\xfd AI (Ti\u1ec3u T\u1ecbnh), n\u1ed9i dung \u0111o\u1ea1n chat c\u1ee7a b\u1ea1n s\u1ebd \u0111\u01b0\u1ee3c thu th\u1eadp v\xe0 g\u1eedi t\u1edbi d\u1ecbch v\u1ee5 AI c\u1ee7a b\xean th\u1ee9 ba \u0111\u1ec3 x\u1eed l\xfd v\xe0 t\u1ea1o ra c\xe2u tr\u1ea3 l\u1eddi.\n\n2. D\u1ecbch v\u1ee5 c\u1ee7a B\xean Th\u1ee9 Ba\n\u0110\u1ec3 cung c\u1ea5p t\xednh n\u0103ng Tr\u1ee3 l\xfd AI th\xf4ng minh, t\xf4i s\u1eed d\u1ee5ng d\u1ecbch v\u1ee5 Google Generative AI c\u1ee7a Google.\n- N\u1ed9i dung v\u0103n b\u1ea3n b\u1ea1n nh\u1eadp v\xe0o khung chat s\u1ebd \u0111\u01b0\u1ee3c g\u1eedi tr\u1ef1c ti\u1ebfp v\xe0 an to\xe0n \u0111\u1ebfn m\xe1y ch\u1ee7 c\u1ee7a Google \u0111\u1ec3 ph\xe2n t\xedch v\xe0 ph\u1ea3n h\u1ed3i.\n- Vi\u1ec7c Google s\u1eed d\u1ee5ng v\xe0 b\u1ea3o v\u1ec7 d\u1eef li\u1ec7u n\xe0y tu\xe2n theo Ch\xednh s\xe1ch b\u1ea3o m\u1eadt c\u1ee7a Google. T\xf4i kh\xf4ng l\u01b0u tr\u1eef ho\u1eb7c chia s\u1ebb l\u1ecbch s\u1eed tr\xf2 chuy\u1ec7n c\u1ee7a b\u1ea1n cho b\u1ea5t k\u1ef3 m\u1ee5c \u0111\xedch ti\u1ebfp th\u1ecb ho\u1eb7c cho b\xean th\u1ee9 ba n\xe0o kh\xe1c ngo\xe0i Google \u0111\u1ec3 ph\u1ee5c v\u1ee5 t\xednh n\u0103ng AI.\n\n3. Quy\u1ec1n c\u1ee7a ng\u01b0\u1eddi d\xf9ng\nDo \u1ee8ng d\u1ee5ng kh\xf4ng y\xeau c\u1ea7u t\u1ea1o t\xe0i kho\u1ea3n (kh\xf4ng \u0111\u0103ng nh\u1eadp, kh\xf4ng thu th\u1eadp email hay s\u1ed1 \u0111i\u1ec7n tho\u1ea1i) v\xe0 ph\u1ea7n l\u1edbn d\u1eef li\u1ec7u \u0111\u01b0\u1ee3c l\u01b0u tr\xean m\xe1y c\u1ee7a b\u1ea1n, b\u1ea1n c\xf3 to\xe0n quy\u1ec1n ki\u1ec3m so\xe1t d\u1eef li\u1ec7u c\u1ee7a m\xecnh:\n- X\xf3a d\u1eef li\u1ec7u: B\u1ea1n c\xf3 th\u1ec3 x\xf3a to\xe0n b\u1ed9 l\u1ecbch s\u1eed chat v\xe0 m\xe3 PIN b\u1ea5t k\u1ef3 l\xfac n\xe0o b\u1eb1ng c\xe1ch x\xf3a b\u1ed9 nh\u1edb cache/d\u1eef li\u1ec7u c\u1ee7a \u1ee9ng d\u1ee5ng trong ph\u1ea7n c\xe0i \u0111\u1eb7t tr\xecnh duy\u1ec7t ho\u1eb7c c\xe0i \u0111\u1eb7t \u0111i\u1ec7n tho\u1ea1i, ho\u1eb7c g\u1ee1 c\xe0i \u0111\u1eb7t \u1ee8ng d\u1ee5ng.\n- Kh\xf4ng theo d\xf5i: Ch\xfang t\xf4i kh\xf4ng s\u1eed d\u1ee5ng cookies theo d\xf5i (tracking cookies) hay b\u1ea5t k\u1ef3 ph\u1ea7n m\u1ec1m ph\xe2n t\xedch h\xe0nh vi ng\u01b0\u1eddi d\xf9ng n\xe0o.\n\n4. B\u1ea3o m\u1eadt th\xf4ng tin\nT\xf4i cam k\u1ebft b\u1ea3o v\u1ec7 th\xf4ng tin c\u1ee7a b\u1ea1n. C\xe1c k\u1ebft n\u1ed1i t\u1edbi Tr\u1ee3 l\xfd AI \u0111\u1ec1u \u0111\u01b0\u1ee3c m\xe3 h\xf3a b\u1eb1ng giao th\u1ee9c HTTPS an to\xe0n. Tuy nhi\xean, v\xec kh\xf4ng c\xf3 ph\u01b0\u01a1ng th\u1ee9c truy\u1ec1n t\u1ea3i d\u1eef li\u1ec7u tr\xean Internet n\xe0o l\xe0 an to\xe0n 100%, ch\xfang t\xf4i kh\xf4ng th\u1ec3 b\u1ea3o \u0111\u1ea3m an ninh tuy\u1ec7t \u0111\u1ed1i cho d\u1eef li\u1ec7u, nh\u01b0ng s\u1ebd n\u1ed7 l\u1ef1c h\u1ebft s\u1ee9c \u0111\u1ec3 \xe1p d\u1ee5ng c\xe1c ti\xeau chu\u1ea9n b\u1ea3o m\u1eadt cao nh\u1ea5t hi\u1ec7n c\xf3.\n\n5. Thay \u0111\u1ed5i Ch\xednh s\xe1ch B\u1ea3o m\u1eadt\nT\xf4i c\xf3 th\u1ec3 c\u1eadp nh\u1eadt Ch\xednh s\xe1ch B\u1ea3o m\u1eadt n\xe0y theo th\u1eddi gian. M\u1ecdi thay \u0111\u1ed5i s\u1ebd \u0111\u01b0\u1ee3c th\xf4ng b\xe1o th\xf4ng qua \u1ee8ng d\u1ee5ng ho\u1eb7c b\u1eb1ng c\xe1ch c\u1eadp nh\u1eadt "Ng\xe0y hi\u1ec7u l\u1ef1c" \u1edf \u0111\u1ea7u trang n\xe0y. Vi\u1ec7c b\u1ea1n ti\u1ebfp t\u1ee5c s\u1eed d\u1ee5ng \u1ee8ng d\u1ee5ng sau khi c\xf3 thay \u0111\u1ed5i \u0111\u1ed3ng ngh\u0129a v\u1edbi vi\u1ec7c b\u1ea1n ch\u1ea5p nh\u1eadn Ch\xednh s\xe1ch B\u1ea3o m\u1eadt m\u1edbi.\n\n6. Li\xean h\u1ec7 v\u1edbi t\xf4i\nN\u1ebfu b\u1ea1n c\xf3 b\u1ea5t k\u1ef3 th\u1eafc m\u1eafc hay g\xf3p \xfd n\xe0o v\u1ec1 Ch\xednh s\xe1ch B\u1ea3o m\u1eadt n\xe0y ho\u1eb7c c\xe1ch th\u1ee9c ho\u1ea1t \u0111\u1ed9ng c\u1ee7a \u1ee8ng d\u1ee5ng, xin vui l\xf2ng li\xean h\u1ec7 v\u1edbi t\xf4i qua:\nT\xean nh\xe0 ph\xe1t tri\u1ec3n: Li\xean Hoa H\xf3a Sanh\nEmail: nkimanh932@gmail.com\n\nA Mi \u0110\xe0 Ph\u1eadt! Ch\xfac Qu\xfd \u0110\u1ea1o H\u1eefu lu\xf4n tinh t\u1ea5n v\xe0 an l\u1ea1c.',null,B.WM,null,null,null,null,null,null)
 B.At=new A.m(!0,null,null,null,null,null,16,B.ay,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
@@ -98865,23 +98865,23 @@ B.iL=new A.m(!0,B.h6,null,null,null,null,12,null,null,null,null,null,null,null,n
 B.a3f=new A.d("Xem h\u01b0\u1edbng d\u1eabn cho Android v\xe0 iPhone",null,B.iL,null,null,null,null,null,null)
 B.VW=new A.m(!0,B.nH,null,null,null,null,13,null,null,null,null,null,1.4,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a3x=new A.d("N\u1ebfu m\xe3 PIN c\u0169 kh\xf4ng m\u1edf \u0111\u01b0\u1ee3c app, b\u1ea1n c\xf3 th\u1ec3 \u0111\u1eb7t l\u1ea1i. Ti\u1ebfn \u0111\u1ed9 tr\xec ch\xfa v\xe0 d\u1eef li\u1ec7u kh\xe1c v\u1eabn \u0111\u01b0\u1ee3c gi\u1eef nguy\xean.",null,B.VW,B.b5,null,null,null,null,null)
-B.a4t=new A.d("Ch\u1ec9 m\xe3 PIN c\u0169 s\u1ebd \u0111\u01b0\u1ee3c x\xf3a. Ti\u1ebfn \u0111\u1ed9 tr\xec ch\xfa v\xe0 c\xe1c d\u1eef li\u1ec7u kh\xe1c v\u1eabn \u0111\u01b0\u1ee3c gi\u1eef nguy\xean.",null,null,null,null,null,null,null,null)
-B.a4F=new A.d("L\u1ea7n Tr\xec T\u1ee5ng",null,B.At,null,null,null,null,null,null)
-B.a4K=new A.d("H\u01b0\u1edbng d\u1eabn c\xe0i tr\xean \u0111i\u1ec7n tho\u1ea1i",null,null,null,null,null,null,null,null)
+B.a4_=new A.d("Phi\xean b\u1ea3n 1.5.5 \xb7 Xem n\u1ed9i dung c\u1eadp nh\u1eadt",null,B.iL,null,null,null,null,null,null)
+B.a4u=new A.d("Ch\u1ec9 m\xe3 PIN c\u0169 s\u1ebd \u0111\u01b0\u1ee3c x\xf3a. Ti\u1ebfn \u0111\u1ed9 tr\xec ch\xfa v\xe0 c\xe1c d\u1eef li\u1ec7u kh\xe1c v\u1eabn \u0111\u01b0\u1ee3c gi\u1eef nguy\xean.",null,null,null,null,null,null,null,null)
+B.a4G=new A.d("L\u1ea7n Tr\xec T\u1ee5ng",null,B.At,null,null,null,null,null,null)
+B.a4L=new A.d("H\u01b0\u1edbng d\u1eabn c\xe0i tr\xean \u0111i\u1ec7n tho\u1ea1i",null,null,null,null,null,null,null,null)
 B.Ul=new A.m(!0,null,null,null,null,null,16,null,B.os,null,null,null,1.5,null,null,null,null,null,null,null,null,null,null,null,null,null)
-B.a54=new A.d('"Hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa \u0111\u1ea7u ti\xean, m\u1ed9t khi ni\u1ec7m ra th\xec s\u1ebd xu\u1ea5t hi\u1ec7n m\u1ed9t c\u1ea3nh gi\u1edbi l\xe0: b\u1ed1n m\u1eb7t t\xe1m ph\u01b0\u01a1ng c\xf3 r\u1ea5t nhi\u1ec1u hoa sen \u0111\u1ecf \u0111\u1ebfn \u1ee7ng h\u1ed9 ng\u01b0\u1eddi tr\xec Ch\xfa n\xe0y, cho n\xean n\xf3i: Ng\xe0n \u0111\xf3a sen \u0111\u1ecf h\u1ed9 ng\u01b0\u1eddi tr\xec."',null,B.Ul,null,null,null,null,null,null)
-B.a5k=new A.d("T\u1ef1 \u0111\u1ed9ng t\xednh theo ng\xe0y hi\u1ec7n t\u1ea1i m\u1ed7i l\u1ea7n b\u1ea1n m\u1edf \u1ee9ng d\u1ee5ng.",null,B.iL,null,null,null,null,null,null)
-B.a5E=new A.d("\u0110\u1eb7t l\u1ea1i",null,null,null,null,null,null,null,null)
+B.a55=new A.d('"Hai m\u01b0\u01a1i ch\xedn c\xe2u Ch\xfa \u0111\u1ea7u ti\xean, m\u1ed9t khi ni\u1ec7m ra th\xec s\u1ebd xu\u1ea5t hi\u1ec7n m\u1ed9t c\u1ea3nh gi\u1edbi l\xe0: b\u1ed1n m\u1eb7t t\xe1m ph\u01b0\u01a1ng c\xf3 r\u1ea5t nhi\u1ec1u hoa sen \u0111\u1ecf \u0111\u1ebfn \u1ee7ng h\u1ed9 ng\u01b0\u1eddi tr\xec Ch\xfa n\xe0y, cho n\xean n\xf3i: Ng\xe0n \u0111\xf3a sen \u0111\u1ecf h\u1ed9 ng\u01b0\u1eddi tr\xec."',null,B.Ul,null,null,null,null,null,null)
+B.a5l=new A.d("T\u1ef1 \u0111\u1ed9ng t\xednh theo ng\xe0y hi\u1ec7n t\u1ea1i m\u1ed7i l\u1ea7n b\u1ea1n m\u1edf \u1ee9ng d\u1ee5ng.",null,B.iL,null,null,null,null,null,null)
+B.a5F=new A.d("\u0110\u1eb7t l\u1ea1i",null,null,null,null,null,null,null,null)
 B.EL=new A.y(1,0.09411764705882353,0.20392156862745098,0.25882352941176473,B.f)
 B.ng=new A.y(0.8666666666666667,1,1,1,B.f)
 B.R_=new A.iX(B.ng,B.h,12)
-B.KG=s([B.R_],t.kO)
-B.Uh=new A.m(!0,B.EL,null,null,null,null,34,B.de,null,null,null,null,1.15,null,null,null,null,null,null,null,null,null,B.KG,null,null,null)
-B.a5P=new A.d("Tr\u1edf v\u1ec1\nv\u1edbi t\xe2m an",null,B.Uh,null,null,null,null,null,null)
-B.a5T=new A.d("X\xf3a s\u1ea1ch tin nh\u1eafn v\u1edbi Ti\u1ec3u T\u1ecbnh",null,B.iL,null,null,null,null,null,null)
-B.a68=new A.d("B\u1eaft \u0111\u1ea7u tr\xec ch\xfa",null,null,null,null,null,null,null,null)
-B.a6l=new A.d("Ti\u1ebfp t\u1ee5c Tinh T\u1ea5n",null,B.fG,null,null,null,null,null,null)
-B.a6s=new A.d("Phi\xean b\u1ea3n 1.5.4 \xb7 Xem n\u1ed9i dung c\u1eadp nh\u1eadt",null,B.iL,null,null,null,null,null,null)
+B.KF=s([B.R_],t.kO)
+B.Uh=new A.m(!0,B.EL,null,null,null,null,34,B.de,null,null,null,null,1.15,null,null,null,null,null,null,null,null,null,B.KF,null,null,null)
+B.a5Q=new A.d("Tr\u1edf v\u1ec1\nv\u1edbi t\xe2m an",null,B.Uh,null,null,null,null,null,null)
+B.a5U=new A.d("X\xf3a s\u1ea1ch tin nh\u1eafn v\u1edbi Ti\u1ec3u T\u1ecbnh",null,B.iL,null,null,null,null,null,null)
+B.a69=new A.d("B\u1eaft \u0111\u1ea7u tr\xec ch\xfa",null,null,null,null,null,null,null,null)
+B.a6m=new A.d("Ti\u1ebfp t\u1ee5c Tinh T\u1ea5n",null,B.fG,null,null,null,null,null,null)
 B.TK=new A.m(!0,B.l9,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null,null)
 B.a6A=new A.d("X\xf3a",null,B.TK,null,null,null,null,null,null)
 B.DS=new A.y(1,0.1411764705882353,0.23921568627450981,0.28627450980392155,B.f)
@@ -98962,7 +98962,7 @@ B.a80=A.ay("kS")
 B.a81=A.ay("aR")
 B.a82=A.ay("aYG")
 B.a83=A.ay("aYx")
-B.a84=A.ay("bj<a7<Y>>")
+B.a84=A.ay("bj<a7<Z>>")
 B.a85=A.ay("u7")
 B.ma=A.ay("iM")
 B.a86=A.ay("ua")
@@ -99367,7 +99367,7 @@ return A.b([A.F(A.F(A.ak(),q),"Miter"),A.F(A.F(A.ak(),q),"Round"),A.F(A.F(A.ak()
 s($,"b1h","aKN",()=>{var q="TileMode"
 return A.b([A.F(A.F(A.ak(),q),"Clamp"),A.F(A.F(A.ak(),q),"Repeat"),A.F(A.F(A.ak(),q),"Mirror"),A.F(A.F(A.ak(),q),"Decal")],t.O)})
 s($,"b0h","aAI",()=>{var q="FilterMode",p="MipmapMode",o="Linear"
-return A.a_([B.bZ,{filter:A.F(A.F(A.ak(),q),"Nearest"),mipmap:A.F(A.F(A.ak(),p),"None")},B.GC,{filter:A.F(A.F(A.ak(),q),o),mipmap:A.F(A.F(A.ak(),p),"None")},B.bL,{filter:A.F(A.F(A.ak(),q),o),mipmap:A.F(A.F(A.ak(),p),o)},B.f1,{B:0.3333333333333333,C:0.3333333333333333}],A.at("p_"),t.m)})
+return A.Y([B.bZ,{filter:A.F(A.F(A.ak(),q),"Nearest"),mipmap:A.F(A.F(A.ak(),p),"None")},B.GC,{filter:A.F(A.F(A.ak(),q),o),mipmap:A.F(A.F(A.ak(),p),"None")},B.bL,{filter:A.F(A.F(A.ak(),q),o),mipmap:A.F(A.F(A.ak(),p),o)},B.f1,{B:0.3333333333333333,C:0.3333333333333333}],A.at("p_"),t.m)})
 s($,"b0p","aKb",()=>{var q=A.ayi(2)
 q.$flags&2&&A.au(q)
 q[0]=0
@@ -99382,7 +99382,7 @@ return A.b([A.F(A.F(A.ak(),q),"Alphabetic"),A.F(A.F(A.ak(),q),"Ideographic")],t.
 s($,"b17","aKF",()=>{var q="PlaceholderAlignment"
 return A.b([A.F(A.F(A.ak(),q),"Baseline"),A.F(A.F(A.ak(),q),"AboveBaseline"),A.F(A.F(A.ak(),q),"BelowBaseline"),A.F(A.F(A.ak(),q),"Top"),A.F(A.F(A.ak(),q),"Bottom"),A.F(A.F(A.ak(),q),"Middle")],t.O)})
 r($,"b0X","aKx",()=>A.cV().gXk()+"roboto/v32/KFOmCnqEu92Fr1Me4GZLCzYlKw.woff2")
-s($,"b0n","aK9",()=>A.aP5(B.JR))
+s($,"b0n","aK9",()=>A.aP5(B.JQ))
 s($,"b0m","awU",()=>A.a8M(A.aM_($.aK9())))
 s($,"aYj","cW",()=>{var q,p=A.F(A.F(A.ol(),"window"),"screen")
 p=p==null?null:A.F(p,"width")
@@ -99390,13 +99390,13 @@ if(p==null)p=0
 q=A.F(A.F(A.ol(),"window"),"screen")
 q=q==null?null:A.F(q,"height")
 return new A.Lb(A.aQU(p,q==null?0:q))})
-s($,"aYg","dP",()=>A.aDC(A.a_(["preventScroll",!0],t.N,t.y)))
+s($,"aYg","dP",()=>A.aDC(A.Y(["preventScroll",!0],t.N,t.y)))
 s($,"b1l","aKQ",()=>{var q=A.F(A.F(A.ol(),"window"),"trustedTypes")
 q.toString
 return A.aTS(q,"createPolicy","flutter-engine",{createScriptURL:A.je(new A.avQ())})})
 r($,"b1p","aAV",()=>A.F(A.a_d(A.ol(),"window"),"FinalizationRegistry")!=null)
 r($,"b1r","om",()=>A.F(A.a_d(A.ol(),"window"),"TextCluster")!=null)
-s($,"b0i","aK7",()=>B.a5.bW(A.a_(["type","fontsChange"],t.N,t.z)))
+s($,"b0i","aK7",()=>B.a5.bW(A.Y(["type","fontsChange"],t.N,t.z)))
 s($,"aYp","aIp",()=>{var q=t.S,p=t.Te
 return new A.Lk(A.aC(q),A.aC(q),A.aC(p),A.aC(p),A.aC(p),A.u(t.Ie,q))})
 r($,"aNZ","aIt",()=>A.tR())
@@ -99419,7 +99419,7 @@ s($,"b0J","aKo",()=>458981)
 s($,"b0G","aAO",()=>458979)
 s($,"b0H","aAP",()=>458983)
 s($,"b0o","aKa",()=>A.b([$.aAO(),$.aAP()],t.t))
-s($,"b0v","aKf",()=>A.a_([$.aAJ(),new A.avw(),$.aKd(),new A.avx(),$.aAK(),new A.avy(),$.aKe(),new A.avz(),$.aAM(),new A.avA(),$.aKh(),new A.avB(),$.aAL(),new A.avC(),$.aKg(),new A.avD()],t.S,A.at("J(jB)")))
+s($,"b0v","aKf",()=>A.Y([$.aAJ(),new A.avw(),$.aKd(),new A.avx(),$.aAK(),new A.avy(),$.aKe(),new A.avz(),$.aAM(),new A.avA(),$.aKh(),new A.avB(),$.aAL(),new A.avC(),$.aKg(),new A.avD()],t.S,A.at("J(jB)")))
 s($,"b1P","awX",()=>A.aW(new A.awv()))
 r($,"b_p","aAC",()=>A.aPb(new A.ajw()))
 s($,"b1K","aB4",()=>new A.N2(A.u(t.N,A.at("rd"))))
@@ -99437,13 +99437,13 @@ s($,"b0W","a1",()=>new A.a1d(new A.a1D(),A.u(t.S,A.at("vI"))))
 r($,"b1q","aAW",()=>{var q=A.F(A.a_d(A.ol(),"window"),"ImageDecoder")
 return(q==null?null:A.aCX(q))!=null&&$.bc().gec()===B.cK})
 s($,"aXS","aIf",()=>{var q=t.N
-return new A.a0L(A.a_(["birthday","bday","birthdayDay","bday-day","birthdayMonth","bday-month","birthdayYear","bday-year","countryCode","country","countryName","country-name","creditCardExpirationDate","cc-exp","creditCardExpirationMonth","cc-exp-month","creditCardExpirationYear","cc-exp-year","creditCardFamilyName","cc-family-name","creditCardGivenName","cc-given-name","creditCardMiddleName","cc-additional-name","creditCardName","cc-name","creditCardNumber","cc-number","creditCardSecurityCode","cc-csc","creditCardType","cc-type","email","email","familyName","family-name","fullStreetAddress","street-address","gender","sex","givenName","given-name","impp","impp","jobTitle","organization-title","language","language","middleName","additional-name","name","name","namePrefix","honorific-prefix","nameSuffix","honorific-suffix","newPassword","new-password","nickname","nickname","oneTimeCode","one-time-code","organizationName","organization","password","current-password","photo","photo","postalCode","postal-code","streetAddressLevel1","address-level1","streetAddressLevel2","address-level2","streetAddressLevel3","address-level3","streetAddressLevel4","address-level4","streetAddressLine1","address-line1","streetAddressLine2","address-line2","streetAddressLine3","address-line3","telephoneNumber","tel","telephoneNumberAreaCode","tel-area-code","telephoneNumberCountryCode","tel-country-code","telephoneNumberExtension","tel-extension","telephoneNumberLocal","tel-local","telephoneNumberLocalPrefix","tel-local-prefix","telephoneNumberLocalSuffix","tel-local-suffix","telephoneNumberNational","tel-national","transactionAmount","transaction-amount","transactionCurrency","transaction-currency","url","url","username","username"],q,q))})
+return new A.a0L(A.Y(["birthday","bday","birthdayDay","bday-day","birthdayMonth","bday-month","birthdayYear","bday-year","countryCode","country","countryName","country-name","creditCardExpirationDate","cc-exp","creditCardExpirationMonth","cc-exp-month","creditCardExpirationYear","cc-exp-year","creditCardFamilyName","cc-family-name","creditCardGivenName","cc-given-name","creditCardMiddleName","cc-additional-name","creditCardName","cc-name","creditCardNumber","cc-number","creditCardSecurityCode","cc-csc","creditCardType","cc-type","email","email","familyName","family-name","fullStreetAddress","street-address","gender","sex","givenName","given-name","impp","impp","jobTitle","organization-title","language","language","middleName","additional-name","name","name","namePrefix","honorific-prefix","nameSuffix","honorific-suffix","newPassword","new-password","nickname","nickname","oneTimeCode","one-time-code","organizationName","organization","password","current-password","photo","photo","postalCode","postal-code","streetAddressLevel1","address-level1","streetAddressLevel2","address-level2","streetAddressLevel3","address-level3","streetAddressLevel4","address-level4","streetAddressLine1","address-line1","streetAddressLine2","address-line2","streetAddressLine3","address-line3","telephoneNumber","tel","telephoneNumberAreaCode","tel-area-code","telephoneNumberCountryCode","tel-country-code","telephoneNumberExtension","tel-extension","telephoneNumberLocal","tel-local","telephoneNumberLocalPrefix","tel-local-prefix","telephoneNumberLocalSuffix","tel-local-suffix","telephoneNumberNational","tel-national","transactionAmount","transaction-amount","transactionCurrency","transaction-currency","url","url","username","username"],q,q))})
 s($,"b1T","on",()=>{var q=new A.LX()
 q.a5y()
 return q})
 s($,"b1S","aKZ",()=>{var q=t.N,p=A.at("+breaks,graphemes,words(vy,vy,vy)"),o=A.ayc(1e5,q,p),n=A.ayc(1e4,q,p)
 return new A.W9(A.ayc(20,q,p),n,o)})
-s($,"b0l","aK8",()=>A.a_([B.oM,A.aHr("grapheme"),B.oN,A.aHr("word")],A.at("zQ"),t.m))
+s($,"b0l","aK8",()=>A.Y([B.oM,A.aHr("grapheme"),B.oN,A.aHr("word")],A.at("zQ"),t.m))
 s($,"b1n","aKS",()=>{var q="v8BreakIterator"
 if(A.F(A.F(A.ol(),"Intl"),q)==null)A.U(A.dK("v8BreakIterator is not supported."))
 return A.aTN(A.a_d(A.a_d(A.ol(),"Intl"),q),A.aOH([]),A.aDC(B.MF))})
@@ -99458,7 +99458,7 @@ return p})
 s($,"b0k","awT",()=>new A.avt().$0())
 s($,"b0R","aAQ",()=>A.Iw(0,0))
 s($,"b0S","xf",()=>{var q=t.z
-q=A.tB($.aAQ(),"2d",A.a_(["willReadFrequently",!0],q,q))
+q=A.tB($.aAQ(),"2d",A.Y(["willReadFrequently",!0],q,q))
 q.toString
 return A.dN(q)})
 s($,"b1H","aB3",()=>A.aN4(A.Iw(0,0)))
@@ -99572,13 +99572,13 @@ s($,"b__","aAz",()=>A.dY())
 s($,"b1R","IZ",()=>{var q=t.N,p=t.L0
 return new A.acD(A.u(q,A.at("ap<o>")),A.u(q,p),A.u(q,p))})
 s($,"aXT","a_x",()=>new A.a0N())
-s($,"aYD","aIx",()=>A.a_([4294967562,B.kP,4294967564,B.Ie,4294967556,B.If],t.S,t.SQ))
+s($,"aYD","aIx",()=>A.Y([4294967562,B.kP,4294967564,B.Ie,4294967556,B.If],t.S,t.SQ))
 s($,"aYF","aIy",()=>{var q=t.E
-return A.a_([B.l_,A.ca([B.cO,B.di],q),B.l1,A.ca([B.ff,B.i_],q),B.l0,A.ca([B.fe,B.hZ],q),B.kZ,A.ca([B.fd,B.hY],q)],q,A.at("b8<i>"))})
+return A.Y([B.l_,A.ca([B.cO,B.di],q),B.l1,A.ca([B.ff,B.i_],q),B.l0,A.ca([B.fe,B.hZ],q),B.kZ,A.ca([B.fd,B.hY],q)],q,A.at("b8<i>"))})
 s($,"aZN","aAy",()=>new A.ade(A.b([],A.at("C<~(lo)>")),A.u(t.v3,t.E)))
 s($,"aZM","aJ9",()=>{var q=t.v3
-return A.a_([B.aap,A.ca([B.e6],q),B.aaq,A.ca([B.e8],q),B.aar,A.ca([B.e6,B.e8],q),B.aao,A.ca([B.e6],q),B.aal,A.ca([B.e5],q),B.aam,A.ca([B.fp],q),B.aan,A.ca([B.e5,B.fp],q),B.aak,A.ca([B.e5],q),B.aah,A.ca([B.e4],q),B.aai,A.ca([B.fo],q),B.aaj,A.ca([B.e4,B.fo],q),B.aag,A.ca([B.e4],q),B.aat,A.ca([B.e7],q),B.aau,A.ca([B.fq],q),B.aav,A.ca([B.e7,B.fq],q),B.aas,A.ca([B.e7],q),B.aaw,A.ca([B.dq],q),B.aax,A.ca([B.ia],q),B.aay,A.ca([B.i9],q),B.aaz,A.ca([B.fn],q)],A.at("d0"),A.at("b8<p>"))})
-s($,"aZL","aAx",()=>A.a_([B.e6,B.fe,B.e8,B.hZ,B.e5,B.cO,B.fp,B.di,B.e4,B.fd,B.fo,B.hY,B.e7,B.ff,B.fq,B.i_,B.dq,B.f9,B.ia,B.hW,B.i9,B.hX],t.v3,t.E))
+return A.Y([B.aap,A.ca([B.e6],q),B.aaq,A.ca([B.e8],q),B.aar,A.ca([B.e6,B.e8],q),B.aao,A.ca([B.e6],q),B.aal,A.ca([B.e5],q),B.aam,A.ca([B.fp],q),B.aan,A.ca([B.e5,B.fp],q),B.aak,A.ca([B.e5],q),B.aah,A.ca([B.e4],q),B.aai,A.ca([B.fo],q),B.aaj,A.ca([B.e4,B.fo],q),B.aag,A.ca([B.e4],q),B.aat,A.ca([B.e7],q),B.aau,A.ca([B.fq],q),B.aav,A.ca([B.e7,B.fq],q),B.aas,A.ca([B.e7],q),B.aaw,A.ca([B.dq],q),B.aax,A.ca([B.ia],q),B.aay,A.ca([B.i9],q),B.aaz,A.ca([B.fn],q)],A.at("d0"),A.at("b8<p>"))})
+s($,"aZL","aAx",()=>A.Y([B.e6,B.fe,B.e8,B.hZ,B.e5,B.cO,B.fp,B.di,B.e4,B.fd,B.fo,B.hY,B.e7,B.ff,B.fq,B.i_,B.dq,B.f9,B.ia,B.hW,B.i9,B.hX],t.v3,t.E))
 s($,"aZK","aJ8",()=>{var q=A.u(t.v3,t.E)
 q.m(0,B.fn,B.kX)
 q.P(0,$.aAx())
@@ -99595,10 +99595,10 @@ q.a=B.Oj
 q.gajT().l4(q.gadP())
 return q})
 r($,"b_t","aJx",()=>{var q=A.at("~(b4<b0>)")
-return A.a_([B.a7S,A.aC8(!0),B.a7D,A.aC8(!1),B.a8h,new A.ON(A.AQ(q)),B.a87,new A.Ne(A.AQ(q)),B.a8b,new A.NU(A.AQ(q)),B.AG,new A.yL(!1,A.AQ(q)),B.mb,A.aQw(),B.a8c,new A.O0(A.AQ(q)),B.a8w,new A.QR(A.AQ(q))],t.u,t.od)})
+return A.Y([B.a7S,A.aC8(!0),B.a7D,A.aC8(!1),B.a8h,new A.ON(A.AQ(q)),B.a87,new A.Ne(A.AQ(q)),B.a8b,new A.NU(A.AQ(q)),B.AG,new A.yL(!1,A.AQ(q)),B.mb,A.aQw(),B.a8c,new A.O0(A.AQ(q)),B.a8w,new A.QR(A.AQ(q))],t.u,t.od)})
 s($,"aY4","awL",()=>{var q,p,o,n=t.C,m=A.u(t.Vz,n)
 for(q=A.at("ad"),p=0;p<2;++p){o=B.kU[p]
-m.P(0,A.a_([A.ew(B.b1,!1,!1,!1,o),B.jY,A.ew(B.b1,!1,!0,!1,o),B.k0,A.ew(B.b1,!0,!1,!1,o),B.jZ,A.ew(B.b2,!1,!0,!1,o),B.eU,A.ew(B.b2,!0,!1,!1,o),B.k_],q,n))}m.m(0,B.zz,B.eT)
+m.P(0,A.Y([A.ew(B.b1,!1,!1,!1,o),B.jY,A.ew(B.b1,!1,!0,!1,o),B.k0,A.ew(B.b1,!0,!1,!1,o),B.jZ,A.ew(B.b2,!1,!0,!1,o),B.eU,A.ew(B.b2,!0,!1,!1,o),B.k_],q,n))}m.m(0,B.zz,B.eT)
 m.m(0,B.iB,B.dP)
 m.m(0,B.iC,B.dQ)
 m.m(0,B.iD,B.dT)
@@ -99626,7 +99626,7 @@ m.m(0,B.fz,B.kI)
 m.m(0,B.lQ,B.hC)
 m.m(0,B.lL,B.hD)
 return m})
-s($,"aY3","a_y",()=>A.a_([B.R9,B.jV,B.R8,B.jU,B.Rj,B.jx,B.zw,B.jV,B.Rb,B.jU,B.R3,B.jx,B.lI,B.n7,B.Ry,B.na,B.RJ,B.n6,B.ix,B.q,B.iA,B.q],t.Vz,t.C))
+s($,"aY3","a_y",()=>A.Y([B.R9,B.jV,B.R8,B.jU,B.Rj,B.jx,B.zw,B.jV,B.Rb,B.jU,B.R3,B.jx,B.lI,B.n7,B.Ry,B.na,B.RJ,B.n6,B.ix,B.q,B.iA,B.q],t.Vz,t.C))
 s($,"aY2","aAm",()=>{var q=A.l8($.awL(),t.Vz,t.C)
 q.P(0,$.a_y())
 q.m(0,B.fA,B.oc)
@@ -99639,7 +99639,7 @@ q.m(0,B.lG,B.hy)
 q.m(0,B.lH,B.hz)
 return q})
 s($,"aY5","aIh",()=>$.aAm())
-s($,"aY7","aAn",()=>A.a_([B.Rk,B.hx,B.Rl,B.hw,B.R5,B.f_,B.Rm,B.f0,B.RO,B.oj,B.RP,B.oi,B.RS,B.oe,B.RQ,B.of,B.R6,B.hC,B.Rn,B.hD,B.Ro,B.f_,B.Rp,B.f0,B.RI,B.eT,B.Ra,B.eU,B.Rc,B.dQ,B.Rd,B.dP,B.RE,B.dT,B.Re,B.dU,B.Rr,B.hB,B.Rs,B.hA,B.RC,B.Gz,B.Rt,B.GA,B.RF,B.kH,B.Rf,B.kI,B.Rg,B.dT,B.Rh,B.dU,B.Rq,B.eT,B.RU,B.eU],t.Vz,t.C))
+s($,"aY7","aAn",()=>A.Y([B.Rk,B.hx,B.Rl,B.hw,B.R5,B.f_,B.Rm,B.f0,B.RO,B.oj,B.RP,B.oi,B.RS,B.oe,B.RQ,B.of,B.R6,B.hC,B.Rn,B.hD,B.Ro,B.f_,B.Rp,B.f0,B.RI,B.eT,B.Ra,B.eU,B.Rc,B.dQ,B.Rd,B.dP,B.RE,B.dT,B.Re,B.dU,B.Rr,B.hB,B.Rs,B.hA,B.RC,B.Gz,B.Rt,B.GA,B.RF,B.kH,B.Rf,B.kI,B.Rg,B.dT,B.Rh,B.dU,B.Rq,B.eT,B.RU,B.eU],t.Vz,t.C))
 s($,"aY8","aIj",()=>{var q=A.l8($.awL(),t.Vz,t.C)
 q.P(0,$.a_y())
 q.P(0,$.aAn())
@@ -99654,7 +99654,7 @@ q.m(0,B.lH,B.hz)
 return q})
 s($,"aYa","aAo",()=>{var q,p,o,n=t.C,m=A.u(t.Vz,n)
 for(q=A.at("ad"),p=0;p<2;++p){o=B.kU[p]
-m.P(0,A.a_([A.ew(B.b1,!1,!1,!1,o),B.jY,A.ew(B.b1,!0,!1,!1,o),B.k0,A.ew(B.b1,!1,!1,!0,o),B.jZ,A.ew(B.b2,!1,!1,!1,o),B.eT,A.ew(B.b2,!0,!1,!1,o),B.eU,A.ew(B.b2,!1,!1,!0,o),B.k_],q,n))}m.m(0,B.iB,B.dP)
+m.P(0,A.Y([A.ew(B.b1,!1,!1,!1,o),B.jY,A.ew(B.b1,!0,!1,!1,o),B.k0,A.ew(B.b1,!1,!1,!0,o),B.jZ,A.ew(B.b2,!1,!1,!1,o),B.eT,A.ew(B.b2,!0,!1,!1,o),B.eU,A.ew(B.b2,!1,!1,!0,o),B.k_],q,n))}m.m(0,B.iB,B.dP)
 m.m(0,B.iC,B.dQ)
 m.m(0,B.iD,B.dT)
 m.m(0,B.iE,B.dU)
@@ -99718,7 +99718,7 @@ q.m(0,B.lH,B.hz)
 return q})
 s($,"aYb","aAp",()=>{var q,p,o,n=t.C,m=A.u(t.Vz,n)
 for(q=A.at("ad"),p=0;p<2;++p){o=B.kU[p]
-m.P(0,A.a_([A.ew(B.b1,!1,!1,!1,o),B.q,A.ew(B.b2,!1,!1,!1,o),B.q,A.ew(B.b1,!0,!1,!1,o),B.q,A.ew(B.b2,!0,!1,!1,o),B.q,A.ew(B.b1,!1,!0,!1,o),B.q,A.ew(B.b2,!1,!0,!1,o),B.q,A.ew(B.b1,!1,!1,!0,o),B.q,A.ew(B.b2,!1,!1,!0,o),B.q],q,n))}m.P(0,B.v4)
+m.P(0,A.Y([A.ew(B.b1,!1,!1,!1,o),B.q,A.ew(B.b2,!1,!1,!1,o),B.q,A.ew(B.b1,!0,!1,!1,o),B.q,A.ew(B.b2,!0,!1,!1,o),B.q,A.ew(B.b1,!1,!0,!1,o),B.q,A.ew(B.b2,!1,!0,!1,o),B.q,A.ew(B.b1,!1,!1,!0,o),B.q,A.ew(B.b2,!1,!1,!0,o),B.q],q,n))}m.P(0,B.v4)
 for(n=$.a_y().gc6().ga8(0);n.v();)m.m(0,n.gL(),B.q)
 m.m(0,B.zv,B.q)
 m.m(0,B.zy,B.q)

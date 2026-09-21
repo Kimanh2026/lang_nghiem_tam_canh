@@ -30,6 +30,7 @@ void main() {
     expect(find.text('Hòa Thượng Tuyên Hóa'), findsOneWidget);
     expect(find.byKey(const Key('teacher-hero-images')), findsOneWidget);
     expect(find.byKey(const ValueKey('teacher-hero-image-4')), findsOneWidget);
+    expect(find.text('25 bài'), findsOneWidget);
 
     await tester.drag(
       find.byKey(const Key('teachings-scroll')),
@@ -126,11 +127,29 @@ void main() {
       addedTeaching,
       contains('Thành tâm tụng Chú Lăng Nghiêm, thì không cần trải qua'),
     );
-    expect(addedTeaching, contains('HAI MƯƠI BỐN ÍCH LỢI'));
-    expect(addedTeaching, contains('NĂM ĐẠI TÂM CHÚ'));
+    for (final article in {
+      'HAI MƯƠI BỐN ÍCH LỢI CỦA SỰ PHIÊN DỊCH':
+          'tuyenHoaHaiMuoiBonIchLoi',
+      'TIÊU TAI, NHIẾP TRIỆU VÀ HÀNG PHỤC':
+          'tuyenHoaTieuTaiNhiepTrieu',
+      'VÌ SAO TỤNG TRÌ KINH CHÚ KHÔNG CÔNG HIỆU?':
+          'tuyenHoaViSaoKhongCongHieu',
+      'NHỮNG CẢNH GIỚI KHI DỤNG CÔNG TRÌ CHÚ':
+          'tuyenHoaNhungCanhGioi',
+      'HỮU HỌC VÀ VÔ HỌC': 'tuyenHoaHuuHocVaVoHoc',
+      'CHÚ LĂNG NGHIÊM LÀ “LINH VĂN”': 'tuyenHoaLinhVan',
+      'HAI MƯƠI CHÍN CÂU ĐẦU CỦA CHÚ LĂNG NGHIÊM':
+          'tuyenHoaHaiMuoiChinCau',
+      'NĂM ĐẠI TÂM CHÚ': 'tuyenHoaNamDaiTamChu',
+      'MUỐN CẦU PHƯỚC BÁU THẾ GIAN HAY QUẢ BÁU THÁNH HIỀN ĐỀU NÊN TỤNG CHÚ LĂNG NGHIÊM':
+          'tuyenHoaCauPhuocBao',
+    }.entries) {
+      expect(source, contains(article.key));
+      expect(source, contains("'preview': ${article.value}"));
+    }
     expect(
-      addedTeaching,
-      contains('MUỐN CẦU PHƯỚC BÁU THẾ GIAN HAY QUẢ BÁU THÁNH HIỀN'),
+      source,
+      isNot(contains('Bằng nguyện lực "địa ngục chưa trống thề không thành Phật')),
     );
     expect(source, isNot(contains('BUÔNG VÕ CÔNG, VÀO CHUNG NAM SƠN')));
   });

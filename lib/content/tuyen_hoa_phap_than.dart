@@ -33,9 +33,9 @@ Hóa thân Như Lai, tức là Phật biến hóa thân, ngồi trên hoa sen b�
 
 Quang minh trong miệng phóng ra là hồng quang (quang minh màu đỏ). Quang minh trong tâm phóng ra là bạch quang (quang minh màu trắng). Nhưng có khi trong miệng cũng phóng ra hoàng quang, có khi lại phóng thanh quang (quang minh màu xanh), có khi lại phóng ra hắc quang (quang minh màu đen). Có lúc quang minh xanh, vàng, đỏ, trắng, đen, đều phóng ra. Bất quá phải tu thành rồi mới có được.
 
-HAI MƯƠI BỐN ÍCH LỢI CỦA SỰ PHIÊN DỊCH
+''';
 
-Sau nói rõ chỗ ích lợi của sự phiên dịch đại khái có hai mươi bốn thứ.
+const String tuyenHoaHaiMuoiBonIchLoi = r'''Sau nói rõ chỗ ích lợi của sự phiên dịch đại khái có hai mươi bốn thứ.
 
 1. Biết được hết thảy danh hiệu của chư Phật. Như trước có một đoạn đều là danh hiệu của chư Phật. Xưng tức thường thấy thân Phật. Nếu bạn thường tụng Chú Lăng Nghiêm thì thường thấy được pháp thân của chư Phật.
 
@@ -87,9 +87,9 @@ Sau nói rõ chỗ ích lợi của sự phiên dịch đại khái có hai mư�
 
 Bốn hạng trước là giới hạn nơi năm hội chân ngôn. Còn hai mươi hạng sau cũng bao quát tâm Chú trong đó.
 
-TIÊU TAI, NHIẾP TRIỆU VÀ HÀNG PHỤC
+''';
 
-Tiêu tai tức là bạn có tai nạn gì, tụng Chú thì liền tiêu trừ. Nhưng bạn còn phải trừ khử tai (nạn) trong tâm. Nếu bạn chỉ niệm Chú, mà trong tâm cứ khởi những vọng niệm không trong sạch nào tạp niệm đầy dẫy thì tai (nạn) căn bản không thể tiêu trừ được, niệm bất cứ Chú gì cũng vô dụng.
+const String tuyenHoaTieuTaiNhiepTrieu = r'''Tiêu tai tức là bạn có tai nạn gì, tụng Chú thì liền tiêu trừ. Nhưng bạn còn phải trừ khử tai (nạn) trong tâm. Nếu bạn chỉ niệm Chú, mà trong tâm cứ khởi những vọng niệm không trong sạch nào tạp niệm đầy dẫy thì tai (nạn) căn bản không thể tiêu trừ được, niệm bất cứ Chú gì cũng vô dụng.
 
 Do đó muốn tiêu tai thì trong tâm trước phải thanh tịnh, thu thập tâm cho sạch sẽ, đó mới là chân tiêu tai. Nếu không, trong tâm đầy dẫy tham sân si, thì niệm Chú gì cũng không linh. Do đó trong tâm là quan trọng nhất. Tâm nhất định phải từ bi lương thiện, giúp đỡ mọi người, chỉ có một thứ tâm tốt. Đây là tăng ích tiêu tai pháp.
 
@@ -97,15 +97,15 @@ Nhiếp triệu tức câu triệu pháp, giống như cảnh sát bắt tội p
 
 Nếu bạn thường nói với kẻ khác rằng, bạn trì Chú có linh cảm hiệu lực gì, niệm Chú Đại Bi trị được bệnh gì, niệm Chú Lăng Nghiêm lại đắc được cảm ứng gì? Đó cũng giống như bán thuốc cao, đây gọi là rao bán sự tu hành, không đúng. Nếu như thế thì sẽ gặp tai họa, cũng không đắc được sự lợi ích không nghĩ bàn của bốn tất ích.
 
-VÌ SAO TỤNG TRÌ KINH CHÚ KHÔNG CÔNG HIỆU?
+''';
 
-Trong Pháp Uyển Châu Lâm nói là, tại sao người xuất gia và người tại gia tụng trì Kinh Chú không công hiệu? Vì tâm không chí thành khẩn thiết. Tu mệt, tu mà cảm thấy không có cảm ứng gì, liền bắt đầu phỉ báng, nói không có gì chứng minh, chẳng có linh nghiệm gì, nói Chú này là giả, Kinh này là giả. Thực ra nguyên nhân trì Chú không linh là do văn tự ngụy tạo thay thế, hoặc âm vần niệm sai, hoặc uống rượu ăn thịt, hoặc ăn ngũ tân, hoặc đi đại tiểu tiện không rửa tay rồi cầm Kinh Chú, hoặc nói những lời thế tục, không giữ quy cụ, nói chuyện thị phi, hoặc mặc y phục không sạch sẽ, hoặc ở chỗ không nghiêm tịnh, phạm tám thứ giới pháp nói trên, khiến cho quỷ thần không cung kính, không những không có công đức, ngược lại có lỗi lầm.
+const String tuyenHoaViSaoKhongCongHieu = r'''Trong Pháp Uyển Châu Lâm nói là, tại sao người xuất gia và người tại gia tụng trì Kinh Chú không công hiệu? Vì tâm không chí thành khẩn thiết. Tu mệt, tu mà cảm thấy không có cảm ứng gì, liền bắt đầu phỉ báng, nói không có gì chứng minh, chẳng có linh nghiệm gì, nói Chú này là giả, Kinh này là giả. Thực ra nguyên nhân trì Chú không linh là do văn tự ngụy tạo thay thế, hoặc âm vần niệm sai, hoặc uống rượu ăn thịt, hoặc ăn ngũ tân, hoặc đi đại tiểu tiện không rửa tay rồi cầm Kinh Chú, hoặc nói những lời thế tục, không giữ quy cụ, nói chuyện thị phi, hoặc mặc y phục không sạch sẽ, hoặc ở chỗ không nghiêm tịnh, phạm tám thứ giới pháp nói trên, khiến cho quỷ thần không cung kính, không những không có công đức, ngược lại có lỗi lầm.
 
 Nếu như bạn muốn tu pháp Chú Lăng Nghiêm, thì phải tắm rửa, súc miệng sạch sẽ. Phải có tâm chí thành khẩn thiết, thời thời khắc khắc không quên, khắp vì chúng sinh trong lục đạo, trời, người A tu la, súc sinh, ngạ quỷ và địa ngục mà phát tâm bồ đề, không lười biếng giải đãi, chí thành khẩn thiết như thế thì nhất định sẽ có ứng nghiệm.
 
-NHỮNG CẢNH GIỚI KHI DỤNG CÔNG TRÌ CHÚ
+''';
 
-Trong Hiển Mật Viên Thông nói, lúc bạn dụng công trì Chú, hoặc mộng thấy mình lạy Phật, mộng thấy Phật phóng quang minh, mộng thấy Phật đến rờ đầu, mộng thấy Phật vì bạn mà giảng Kinh thuyết pháp, hoặc mộng thấy Bồ Tát, Duyên Giác, Thanh Văn, Thánh Tăng, hoặc Thiên tướng trên trời, hoặc đủ thứ khác nhau, xuất kỳ những dị tướng rất đặc thù, hoặc mộng thấy thân mình bay lên hư không, hoặc cỡi ngựa qua sông, hoặc thấy đủ loại hương thơm, quang minh tốt đẹp, đó là những cảnh giới tốt.
+const String tuyenHoaNhungCanhGioi = r'''Trong Hiển Mật Viên Thông nói, lúc bạn dụng công trì Chú, hoặc mộng thấy mình lạy Phật, mộng thấy Phật phóng quang minh, mộng thấy Phật đến rờ đầu, mộng thấy Phật vì bạn mà giảng Kinh thuyết pháp, hoặc mộng thấy Bồ Tát, Duyên Giác, Thanh Văn, Thánh Tăng, hoặc Thiên tướng trên trời, hoặc đủ thứ khác nhau, xuất kỳ những dị tướng rất đặc thù, hoặc mộng thấy thân mình bay lên hư không, hoặc cỡi ngựa qua sông, hoặc thấy đủ loại hương thơm, quang minh tốt đẹp, đó là những cảnh giới tốt.
 
 Nếu đắc được những ứng nghiệm như thế, thì tu thân miệng ý ba nghiệp phải cẩn thận, khiến cho thanh tịnh, phát đại bồ đề tâm và dụng tâm trì Chú thêm, không thể tuyên nói cảnh giới trong Chú. Không thể nói với người khác có bất cứ cảm ứng gì, kêu người tin bạn, có hảo cảm với bạn, hoặc kêu người cung kính bạn, tán thán bạn, những thứ đó đều không thể được. Chỉ đối với người đồng tu, đừng vì cung kính, hoặc tán thán, mới có thể nói.
 
@@ -113,9 +113,9 @@ Trong Kinh Đại Bi có nói: Nếu có người khẩn thiết niệm, thì ho
 
 Bây giờ bạn niệm từ từ Chú này rất khó được. Nếu có những cảnh giới không cát tường ở trên, thì nên quán tưởng Phạn thư chữ “Lam” thì sẽ khiến bạn thanh tịnh, hoặc quán chữ “A” thì những cảnh giới không cát tường ở trên sẽ tiêu diệt. Phải biết nhân duyên pháp vốn là không.
 
-HỮU HỌC VÀ VÔ HỌC
+''';
 
-Sơ quả đoạn sạch tám mươi tám phẩm kiến hoặc, nhị quả đoạn tám mươi mốt phẩm tư hoặc. Sơ quả, nhị quả, tam quả, đều là bậc hữu học, chứng được tứ quả là bậc vô học, mới thật chân chánh chấm dứt sinh tử, đắc được vô sinh pháp nhẫn, không thấy chút pháp sinh, cũng không thấy chút pháp diệt.
+const String tuyenHoaHuuHocVaVoHoc = r'''Sơ quả đoạn sạch tám mươi tám phẩm kiến hoặc, nhị quả đoạn tám mươi mốt phẩm tư hoặc. Sơ quả, nhị quả, tam quả, đều là bậc hữu học, chứng được tứ quả là bậc vô học, mới thật chân chánh chấm dứt sinh tử, đắc được vô sinh pháp nhẫn, không thấy chút pháp sinh, cũng không thấy chút pháp diệt.
 
 Kiến hoặc tức là đối cảnh khởi tham ái, đối trước cảnh thì chấp trước mê hoặc, không biết sự việc như thế nào, cho nên sinh tâm tham, tâm ái, thấy tiền bạc thì muốn được tiền bạc, thấy sắc đẹp thì muốn được sắc đẹp, đó đều là “kiến hoặc” đều là thấy cảnh giới, không thấy thì không mê, thấy được thì không làm chủ được, hồ đồ, bị cảnh giới chuyển. Tại cảnh giới, hết thảy sự việc đến thì không nhận thức.
 
@@ -125,9 +125,9 @@ Nhị quả Thánh nhân có thể, thân vọt lên hư không hiện mười t
 
 Bậc ấy không những ở tại thế giới này, mà còn có thể đến các thế giới khác, có thể giảng Kinh thuyết pháp tại thế giới này, giáo hóa chúng sinh, lại đến thế giới khác giảng Kinh thuyết pháp, giáo hóa chúng sinh, đồng thời ở tại các thế giới đều hiện thân thuyết pháp.
 
-CHÚ LĂNG NGHIÊM LÀ “LINH VĂN”
+''';
 
-Chú Lăng Nghiêm là Chú dài nhất, còn gọi là “linh văn” vì quá linh, quá diệu, diệu không thể tả. Ai niệm thì người đó có cảm ứng. Ai trì tụng thì người đó được Bồ Tát Kim Cang Tạng hộ trì. Cho nên bạn tu Chú này phải chánh tâm thành ý, tu thân, cách vật. Cách vật là gì? Tức là cách trừ hết thảy vật dục, tức cũng là không có tâm tham, cách vật chí tri, chánh tâm thành ý, tu thân tức trì Chú này, thì sẽ có đại cảm ứng. Có người không hiểu ý nghĩa của Chú, cho nên nói Chú Lăng Nghiêm là do nhiều Chú nhỏ hợp thành, mới dài như thế, thật không bằng trẻ con. Trẻ con có nói, cũng nói những lời đã nghe người lớn nói rồi mới nói, không thể sai lợi hại như thế.
+const String tuyenHoaLinhVan = r'''Chú Lăng Nghiêm là Chú dài nhất, còn gọi là “linh văn” vì quá linh, quá diệu, diệu không thể tả. Ai niệm thì người đó có cảm ứng. Ai trì tụng thì người đó được Bồ Tát Kim Cang Tạng hộ trì. Cho nên bạn tu Chú này phải chánh tâm thành ý, tu thân, cách vật. Cách vật là gì? Tức là cách trừ hết thảy vật dục, tức cũng là không có tâm tham, cách vật chí tri, chánh tâm thành ý, tu thân tức trì Chú này, thì sẽ có đại cảm ứng. Có người không hiểu ý nghĩa của Chú, cho nên nói Chú Lăng Nghiêm là do nhiều Chú nhỏ hợp thành, mới dài như thế, thật không bằng trẻ con. Trẻ con có nói, cũng nói những lời đã nghe người lớn nói rồi mới nói, không thể sai lợi hại như thế.
 
 Nếu nói Chú Lăng Nghiêm là do nhiều Chú ngắn nối lại với nhau, thì những Chú ngắn đó là Chú gì? Nếu bạn nói không biết, sao lại nói là do nhiều Chú ngắn hợp thành? Nói thẳng đó chẳng có căn cứ, những Chú ngắn đó có tên chăng? Nếu không có thì Chú này là ai nói, cho đến tên cũng không có, thì còn nói Chú gì, cho nên thốt ra lời phải chịu trách nhiệm, không thể tùy tiện nói.
 
@@ -135,9 +135,9 @@ Chú Lăng Nghiêm từ khi bắt đầu là quy y mười phương tận hư kh
 
 Chư Thiên lễ bái bạn là vì bạn có đạo đức, có tu hành, bạn đừng nên có tâm cống cao ngã mạn nói, bạn biết không! Tất cả hộ pháp chư Thiên đều cúi đầu đảnh lễ tôi, không thể sinh tâm cống cao ngã mạn như thế, phải cảm thấy chính mình chưa đủ đạo đức của mình mới viên mãn, cũng phải xem có như không thật, như hư vọng. Mình có đạo đức mà không chấp trước, bạn có học vấn chân thật cũng đừng tự mãn, như vậy mới là người tu đạo. Cho nên người tu hành tụng trì Chú này cũng phải cung kính chư Thiên thiện thần, không những cung kính thiện thần mà ác thần cũng phải cung kính. Phải trừ khử cống cao ngã mạn của mình.
 
-HAI MƯƠI CHÍN CÂU ĐẦU CỦA CHÚ LĂNG NGHIÊM
+''';
 
-Chú Lăng Nghiêm bắt đầu từ câu thứ nhất “Nam Mô Tát Đát Tha Tô Già Đa Gia” đến “Nam Mô Nhân Đà La Gia” có 29 câu. Hai mươi chín câu này, chúng ta người tu đạo phải quy mạng đảnh lễ hết thảy chư Phật, Bồ Tát, A La Hán, Thánh hiền, Thiên, tiên v.v... Hai mươi chín câu Chú này, một khi niệm ra thì sẽ xuất hiện một cảnh giới, có thể nói cảnh giới này vốn là thật, cũng có thể nói là huyễn.
+const String tuyenHoaHaiMuoiChinCau = r'''Chú Lăng Nghiêm bắt đầu từ câu thứ nhất “Nam Mô Tát Đát Tha Tô Già Đa Gia” đến “Nam Mô Nhân Đà La Gia” có 29 câu. Hai mươi chín câu này, chúng ta người tu đạo phải quy mạng đảnh lễ hết thảy chư Phật, Bồ Tát, A La Hán, Thánh hiền, Thiên, tiên v.v... Hai mươi chín câu Chú này, một khi niệm ra thì sẽ xuất hiện một cảnh giới, có thể nói cảnh giới này vốn là thật, cũng có thể nói là huyễn.
 
 Tại sao? Vì tất cả thiên ma ngoại đạo nhìn cảnh giới này thì là thật, người tu đạo thì tự mình biết. Đây đều là do thần lực của Chú hiện ra chứ không phải chính mình, là sức lực của tam muội, là sức lực của Chú. Cho nên cũng có thể nói là huyễn.
 
@@ -145,9 +145,9 @@ Tụng trì hai mươi chín câu Chú này, thì sẽ hiện ra cảnh giới n
 
 Vào thời nhà Tống, Tế Điên tức là Tế Công hòa thượng, thường thường dùng đoạn Chú này để hàng phục thiên ma, khống chế các ngoại đạo rất linh nghiệm cảm ứng. Do đó, chúng ta học Chú Lăng Nghiêm phải biết sự diệu dụng của Chú, đoạn Chú Lăng Nghiêm này là pháp khuất phục, khi bạn tụng Chú này, thì bàn môn tả đạo, ma quỷ tà thần, đều không dám tác quái, đều lão thực.
 
-NĂM ĐẠI TÂM CHÚ
+''';
 
-Từ “Sất Đà Nễ đến Nảnh Yết Rị”, năm đại tâm Chú này ảo diệu vô cùng, dù có nói nhiều cũng không hết được.
+const String tuyenHoaNamDaiTamChu = r'''Từ “Sất Đà Nễ đến Nảnh Yết Rị”, năm đại tâm Chú này ảo diệu vô cùng, dù có nói nhiều cũng không hết được.
 
 Hỏi: Chúng ta phải niệm toàn bộ Chú Lăng Nghiêm hay là năm đại tâm Chú này?
 
@@ -165,8 +165,8 @@ Năm đại tâm Chú này, tại sao gọi là tâm Chú? Tức là từ trong 
 
 Bổn lai Chú của bàng môn ngoại đạo đều vì tâm sân hận chi trì, bạn niệm Chú Lăng Nghiêm này, thì sẽ hóa thành cát tường, diệu là diệu chỗ này. Chứ chẳng phải bạn niệm Chú này, thì đối phương thế nào chịu cũng không được, mà là Chú Lăng Nghiêm phá giải hết oai lực của Chú khác, chứ không hại người. Oai lực của Chú là từ trong tâm của chư Phật, Bồ Tát và người tụng Chú chảy ra một thứ tâm từ bi cho nên hàng phục được tất cả thiên ma ngoại đạo.
 
-MUỐN CẦU PHƯỚC BÁU THẾ GIAN HAY QUẢ BÁU THÁNH HIỀN ĐỀU NÊN TỤNG CHÚ LĂNG NGHIÊM
+''';
 
-Chúng ta hằng ngày muốn học diệu pháp, nhưng đợi đến khi diệu pháp trước mắt, thì không nhận ra được, trước mặt bỏ qua, mất đi cơ hội. Chú Lăng Nghiêm mỗi câu đều là diệu pháp, mỗi chữ đều là tam muội, vì chúng ta không hiểu rõ, nên cũng không biết tôn quý. Giống như người không nhận ra vàng thật, cho rằng đồng vàng là vàng. Nếu ai thành tâm tụng trì Chú Lăng Nghiêm, thì thường có tám vạn bốn ngàn Kim Cang Tạng Bồ Tát đến hộ trì, nhưng phải thành tâm, nếu không thành tâm thì sẽ không có cảm ứng.
+const String tuyenHoaCauPhuocBao = r'''Chúng ta hằng ngày muốn học diệu pháp, nhưng đợi đến khi diệu pháp trước mắt, thì không nhận ra được, trước mặt bỏ qua, mất đi cơ hội. Chú Lăng Nghiêm mỗi câu đều là diệu pháp, mỗi chữ đều là tam muội, vì chúng ta không hiểu rõ, nên cũng không biết tôn quý. Giống như người không nhận ra vàng thật, cho rằng đồng vàng là vàng. Nếu ai thành tâm tụng trì Chú Lăng Nghiêm, thì thường có tám vạn bốn ngàn Kim Cang Tạng Bồ Tát đến hộ trì, nhưng phải thành tâm, nếu không thành tâm thì sẽ không có cảm ứng.
 
 Nếu chúng ta niệm tụng Chú Lăng Nghiêm, ngày ngày thọ trì, thì đắc được phước báu bảy đời làm viên ngoại, tức là người có phước nhất, có đại thế lực trong thời thái bình thịnh vượng. Cho nên muốn cầu phước báu thế gian, phải niệm tụng Chú Lăng Nghiêm, muốn có quả báu Thánh hiền, càng phải niệm Chú Lăng Nghiêm.''';

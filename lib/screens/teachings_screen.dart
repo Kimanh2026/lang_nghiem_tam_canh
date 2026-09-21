@@ -77,8 +77,6 @@ Khi phát Mười Tám Đại Nguyện năm 19 tuổi, Ngài nguyện đắc Ng�
 
 Đạo nghiệp của Ngài không dừng lại ở Á Đông mà vươn rộng ra toàn cầu. Ngài đem chánh pháp gieo rắc khắp phương Tây, thành lập các đạo trang, phiên dịch kinh điển và hóa độ vô số đệ tử xuất gia lẫn tại gia.
 
-Bằng nguyện lực "địa ngục chưa trống thề không thành Phật, súc sanh ngạ quỷ còn một kẻ chưa thành Phật thề không giữ ngôi Chánh Giác", hành trạng độ sanh của Ngài chính là ngọn hải đăng xua tan đêm đen, đưa chúng sanh thoát khỏi nhà lửa Tam giới.
-
 NGÀI KHAI THỊ
 
 1. Chú Lăng Nghiêm – Vua Trong Các Thần Chú Và Bảo Bối Hàng Ma
@@ -111,6 +109,52 @@ Hòa thượng luôn nhắc nhở đệ tử rằng Chú Lăng Nghiêm là "Linh
       'title': 'THÀNH TÂM TỤNG CHÚ LĂNG NGHIÊM SẼ ĐẮC ĐƯỢC PHÁP THÂN',
       'meta': 'Hòa Thượng Tuyên Hóa',
       'preview': tuyenHoaPhapThanTeaching,
+    },
+    {
+      'title': 'HAI MƯƠI BỐN ÍCH LỢI CỦA SỰ PHIÊN DỊCH',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaHaiMuoiBonIchLoi,
+    },
+    {
+      'title': 'TIÊU TAI, NHIẾP TRIỆU VÀ HÀNG PHỤC',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaTieuTaiNhiepTrieu,
+    },
+    {
+      'title': 'VÌ SAO TỤNG TRÌ KINH CHÚ KHÔNG CÔNG HIỆU?',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaViSaoKhongCongHieu,
+    },
+    {
+      'title': 'NHỮNG CẢNH GIỚI KHI DỤNG CÔNG TRÌ CHÚ',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaNhungCanhGioi,
+    },
+    {
+      'title': 'HỮU HỌC VÀ VÔ HỌC',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaHuuHocVaVoHoc,
+    },
+    {
+      'title': 'CHÚ LĂNG NGHIÊM LÀ “LINH VĂN”',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaLinhVan,
+    },
+    {
+      'title': 'HAI MƯƠI CHÍN CÂU ĐẦU CỦA CHÚ LĂNG NGHIÊM',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaHaiMuoiChinCau,
+    },
+    {
+      'title': 'NĂM ĐẠI TÂM CHÚ',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaNamDaiTamChu,
+    },
+    {
+      'title':
+          'MUỐN CẦU PHƯỚC BÁU THẾ GIAN HAY QUẢ BÁU THÁNH HIỀN ĐỀU NÊN TỤNG CHÚ LĂNG NGHIÊM',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaCauPhuocBao,
     },
     {
       'title': 'Thời Đại “Vô Cùng Nguy Ngập”',
