@@ -11,6 +11,7 @@ void main() {
 
       expect(find.textContaining('xavia.nguyen97@gmail.com'), findsOneWidget);
       expect(find.textContaining('nkimanh932@gmail.com'), findsNothing);
+      expect(find.textContaining('Cloudflare Worker'), findsOneWidget);
 
       final panel = tester.widget<Container>(
         find.byKey(const Key('privacy-readable-panel')),

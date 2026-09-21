@@ -57,7 +57,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                 ),
                 child: const SelectableText(
                   '''Chính Sách Bảo Mật (Privacy Policy)
-Ngày hiệu lực: 09 Tháng 09, 2026
+Ngày hiệu lực: 21 Tháng 09, 2026
 
 Chào mừng bạn đến với ứng dụng Lăng Nghiêm Tâm Cảnh, được phát triển và vận hành bởi Liên Hoa Hóa Sanh.
 
@@ -69,9 +69,10 @@ Bảo vệ thông tin cá nhân và quyền riêng tư của Quý Đạo Hữu l
 - Nội dung Trò chuyện AI (Chatbot Tiểu Tịnh): Khi bạn đặt câu hỏi hoặc trò chuyện với Trợ lý AI (Tiểu Tịnh), nội dung đoạn chat của bạn sẽ được thu thập và gửi tới dịch vụ AI của bên thứ ba để xử lý và tạo ra câu trả lời.
 
 2. Dịch vụ của Bên Thứ Ba
-Để cung cấp tính năng Trợ lý AI thông minh, tôi sử dụng dịch vụ Google Generative AI của Google.
-- Nội dung văn bản bạn nhập vào khung chat sẽ được gửi trực tiếp và an toàn đến máy chủ của Google để phân tích và phản hồi.
-- Việc Google sử dụng và bảo vệ dữ liệu này tuân theo Chính sách bảo mật của Google. Tôi không lưu trữ hoặc chia sẻ lịch sử trò chuyện của bạn cho bất kỳ mục đích tiếp thị hoặc cho bên thứ ba nào khác ngoài Google để phục vụ tính năng AI.
+Để cung cấp tính năng Trợ lý AI thông minh, tôi sử dụng Cloudflare Worker làm máy chủ trung gian bảo mật và dịch vụ Google Generative AI của Google.
+- Nội dung văn bản bạn nhập vào khung chat được gửi qua kết nối HTTPS đến Cloudflare Worker, sau đó chuyển đến Google Gemini để phân tích và tạo phản hồi.
+- Cloudflare Worker không chủ động lưu nội dung trò chuyện. Lịch sử chat hiển thị trong ứng dụng được lưu cục bộ trên thiết bị của bạn.
+- Việc Cloudflare và Google sử dụng, xử lý và bảo vệ dữ liệu tuân theo chính sách bảo mật của từng nhà cung cấp. Tôi không sử dụng lịch sử trò chuyện cho mục đích tiếp thị.
 
 3. Quyền của người dùng
 Do Ứng dụng không yêu cầu tạo tài khoản (không đăng nhập, không thu thập email hay số điện thoại) và phần lớn dữ liệu được lưu trên máy của bạn, bạn có toàn quyền kiểm soát dữ liệu của mình:

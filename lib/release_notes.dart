@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.11+28';
-  static const displayVersion = '1.5.11';
+  static const version = '1.5.12+29';
+  static const displayVersion = '1.5.12';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Tiểu Tịnh phản hồi ổn định hơn';
+  static const title = 'Bảo mật và khôi phục Tiểu Tịnh';
   static const changes = <String>[
-    'Tự thử lại một lần khi kết nối AI bị gián đoạn tạm thời.',
-    'Tự cuộn đến câu trả lời mới để không bị khuất trên điện thoại.',
-    'Hiển thị rõ trạng thái Tiểu Tịnh đang suy ngẫm và lỗi kết nối.',
+    'Chuyển kết nối Gemini qua máy chủ trung gian Cloudflare Worker.',
+    'Không còn để khóa Gemini trong mã tải xuống trình duyệt.',
+    'Sửa model AI để Tiểu Tịnh có thể trả lời trên desktop và mobile.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

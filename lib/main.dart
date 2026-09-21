@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 import 'screens/home_screen.dart';
 import 'screens/teachings_screen.dart';
@@ -16,12 +15,6 @@ import 'widgets/app_background.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  try {
-    await dotenv.load(fileName: ".env");
-  } catch (e) {
-    print("No .env file found. Using fallback keys.");
-  }
-
   // Notification support must never block the app from opening on mobile web.
   // Older installed PWAs can expose a partially available notification API.
   try {

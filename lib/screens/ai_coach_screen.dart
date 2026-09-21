@@ -1,7 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:google_generative_ai/google_generative_ai.dart';
-import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'package:http/http.dart' as http;
 import 'dart:async';
 import 'dart:math' as math;
 import 'dart:convert';
@@ -65,6 +64,10 @@ class AiCoachScreen extends StatefulWidget {
 }
 
 class _AiCoachScreenState extends State<AiCoachScreen> {
+  static final Uri _chatProxyUri = Uri.parse(
+    'https://lang-nghiem-tieu-tinh.nkimanh932.workers.dev/',
+  );
+
   bool _isLoading = false;
 
   final TextEditingController _chatController = TextEditingController();
@@ -72,42 +75,16 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
 
   final List<Map<String, String>> _chatMessages = [];
 
-  late GenerativeModel _chatModel;
-  late ChatSession _chatSession;
-
-  late final String apiKey;
-
   @override
   void initState() {
     super.initState();
-    try {
-      apiKey =
-          dotenv.env['GEMINI_API_KEY'] ??
-          [
-            'AQ.Ab8RN6Ih9',
-            'fEi_-ao0uMGA',
-            'AxkhSZFy1HMx',
-            'gIXhfPwNAU',
-            'T_wRrrQ',
-          ].join('');
-    } catch (e) {
-      apiKey = [
-        'AQ.Ab8RN6Ih9',
-        'fEi_-ao0uMGA',
-        'AxkhSZFy1HMx',
-        'gIXhfPwNAU',
-        'T_wRrrQ',
-      ].join('');
-    }
     _loadChatHistory();
 
-    widget.userName.addListener(_onUserNameChanged);
     widget.clearChatTrigger.addListener(_onClearChatTriggered);
   }
 
   @override
   void dispose() {
-    widget.userName.removeListener(_onUserNameChanged);
     widget.clearChatTrigger.removeListener(_onClearChatTriggered);
     _chatController.dispose();
     _chatScrollController.dispose();
@@ -125,33 +102,22 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
     });
   }
 
-  List<Content> _buildHistoryFromMessages() {
-    final history = <Content>[];
-    String? lastRole;
+  List<Map<String, String>> _buildProxyMessages() {
+    final messages = <Map<String, String>>[];
+    for (final message in _chatMessages) {
+      final role = message['role'] == 'user' ? 'user' : 'model';
+      final text = (message['text'] ?? '').trim();
+      if (text.isEmpty || (messages.isEmpty && role == 'model')) continue;
 
-    for (var msg in _chatMessages) {
-      final role = msg['role'] == 'user' ? 'user' : 'model';
-
-      if (history.isEmpty && role == 'model') continue;
-      if (role == lastRole) continue;
-
-      history.add(
-        role == 'user'
-            ? Content.text(msg['text'] ?? '')
-            : Content.model([TextPart(msg['text'] ?? '')]),
-      );
-      lastRole = role;
+      if (messages.isNotEmpty && messages.last['role'] == role) {
+        messages.last['text'] = '${messages.last['text']}\n$text';
+      } else {
+        messages.add({'role': role, 'text': text});
+      }
     }
-
-    if (history.isNotEmpty && lastRole == 'user') {
-      history.removeLast();
-    }
-
-    return history;
-  }
-
-  void _onUserNameChanged() {
-    _initChat(history: _buildHistoryFromMessages());
+    return messages.length <= 30
+        ? messages
+        : messages.sublist(messages.length - 30);
   }
 
   void _onClearChatTriggered() {
@@ -159,33 +125,8 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       _chatMessages.clear();
       _addInitialGreeting();
       _saveChatHistory();
-      _initChat(history: _buildHistoryFromMessages());
     });
     _scrollToNewestMessage();
-  }
-
-  void _initChat({List<Content>? history}) {
-    final String currentName = widget.userName.value.trim();
-    final String nameInstruction = currentName.isNotEmpty
-        ? 'Address the user as "Đạo Hữu $currentName" by default, unless they ask you not to.'
-        : 'Address the user as "Đạo Hữu" by default, unless they ask you not to.';
-
-    _chatModel = GenerativeModel(
-      model: 'gemini-3.6-flash',
-      apiKey: apiKey,
-      systemInstruction: Content.system(
-        'You are a compassionate Buddhist Dharma Assistant named Tiểu Tịnh.\n'
-        'CRITICAL RULES:\n'
-        '1. Be concise by default, but IF the user asks for details, stories, or explanations, you MUST provide a detailed, accurate, and truthful answer.\n'
-        '2. When telling stories about the Shurangama Mantra (linh ứng chú Lăng Nghiêm) or Master Hsuan Hua (Hòa thượng Tuyên Hóa), provide accurate and engaging details.\n'
-        '3. Always do EXACTLY what the user asks. If they say "nói chi tiết", give a long detailed answer.\n'
-        '4. Always refer to yourself as "con" or "Tiểu Tịnh" (never "tôi", "mình").\n'
-        '5. $nameInstruction\n'
-        '6. Respond in Vietnamese. Do NOT use markdown. Start with "A Mi Đà Phật" only for the first greeting, not in every chat.',
-      ),
-    );
-
-    _chatSession = _chatModel.startChat(history: history);
   }
 
   void _addInitialGreeting() {
@@ -218,7 +159,6 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       } else {
         _addInitialGreeting();
       }
-      _initChat(history: _buildHistoryFromMessages());
     });
     _scrollToNewestMessage();
   }
@@ -241,15 +181,10 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
     _scrollToNewestMessage();
 
     try {
-      final response = await _sendMessageWithRetry(text);
+      final response = await _sendMessageWithRetry();
       if (!mounted) return;
       setState(() {
-        _chatMessages.add({
-          'role': 'ai',
-          'text':
-              response.text?.replaceAll('*', '') ??
-              'Tiểu Tịnh chưa nhận được nội dung phản hồi. Đạo Hữu vui lòng gửi lại câu hỏi.',
-        });
+        _chatMessages.add({'role': 'ai', 'text': response.replaceAll('*', '')});
         _saveChatHistory();
       });
       _scrollToNewestMessage();
@@ -271,17 +206,34 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
     }
   }
 
-  Future<GenerateContentResponse> _sendMessageWithRetry(String text) async {
+  Future<String> _sendMessageWithRetry() async {
     Object? firstError;
     for (var attempt = 0; attempt < 2; attempt++) {
       try {
-        return await _chatSession
-            .sendMessage(Content.text(text))
+        final response = await http
+            .post(
+              _chatProxyUri,
+              headers: const {
+                'Content-Type': 'application/json; charset=utf-8',
+              },
+              body: jsonEncode({
+                'userName': widget.userName.value.trim(),
+                'messages': _buildProxyMessages(),
+              }),
+            )
             .timeout(const Duration(seconds: 40));
+        if (response.statusCode != 200) {
+          throw _ChatProxyException(response.statusCode);
+        }
+        final data = jsonDecode(utf8.decode(response.bodyBytes));
+        final answer = data is Map ? data['text']?.toString().trim() : null;
+        if (answer == null || answer.isEmpty) {
+          throw const _ChatProxyException(502);
+        }
+        return answer;
       } catch (error) {
         firstError ??= error;
         if (attempt == 1 || !_isRetryableChatError(error)) rethrow;
-        _initChat(history: _buildHistoryFromMessages());
         await Future<void>.delayed(const Duration(milliseconds: 700));
       }
     }
@@ -291,6 +243,8 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
   bool _isRetryableChatError(Object error) {
     final message = error.toString().toLowerCase();
     return error is TimeoutException ||
+        error is http.ClientException ||
+        (error is _ChatProxyException && error.statusCode >= 429) ||
         message.contains('429') ||
         message.contains('resource_exhausted') ||
         message.contains('temporar') ||
@@ -307,7 +261,9 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
 
   String _friendlyChatError(Object error) {
     final message = error.toString().toLowerCase();
-    if (message.contains('429') || message.contains('resource_exhausted')) {
+    if ((error is _ChatProxyException && error.statusCode == 429) ||
+        message.contains('429') ||
+        message.contains('resource_exhausted')) {
       return 'Tiểu Tịnh đang có nhiều người hỏi cùng lúc. Đạo Hữu vui lòng chờ một lát rồi gửi lại câu hỏi.';
     }
     if (error is TimeoutException ||
@@ -492,4 +448,12 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       ),
     );
   }
+}
+
+class _ChatProxyException implements Exception {
+  final int statusCode;
+  const _ChatProxyException(this.statusCode);
+
+  @override
+  String toString() => 'Chat proxy returned HTTP $statusCode';
 }
