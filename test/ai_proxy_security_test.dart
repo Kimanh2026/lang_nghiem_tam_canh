@@ -15,7 +15,7 @@ void main() {
     expect(main, isNot(contains('flutter_dotenv')));
     expect(worker, contains('env.GEMINI_API_KEY'));
     expect(worker, contains('gemini-3-flash-preview:generateContent'));
-    expect(worker, contains('https://kimanh2026.github.io'));
+    expect(worker, contains('https://langnghiemtamcanh.pages.dev'));
     expect(worker, isNot(contains(RegExp(r'AQ\.[A-Za-z0-9_-]{20,}'))));
   });
 }

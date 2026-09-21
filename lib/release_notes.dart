@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.12+29';
-  static const displayVersion = '1.5.12';
+  static const version = '1.5.13+30';
+  static const displayVersion = '1.5.13';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Bảo mật và khôi phục Tiểu Tịnh';
+  static const title = 'Địa chỉ truy cập mới';
   static const changes = <String>[
-    'Chuyển kết nối Gemini qua máy chủ trung gian Cloudflare Worker.',
-    'Không còn để khóa Gemini trong mã tải xuống trình duyệt.',
-    'Sửa model AI để Tiểu Tịnh có thể trả lời trên desktop và mobile.',
+    'Địa chỉ mới: langnghiemtamcanh.pages.dev.',
+    'Tên nhà phát triển trong Chính sách Bảo mật được đổi thành Xavia.',
+    'Giữ kết nối Tiểu Tịnh an toàn qua Cloudflare Worker.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

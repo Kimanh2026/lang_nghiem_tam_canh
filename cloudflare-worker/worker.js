@@ -1,4 +1,5 @@
 const ALLOWED_ORIGINS = new Set([
+  'https://langnghiemtamcanh.pages.dev',
   'https://kimanh2026.github.io',
   'https://langnghiemtamcanh.github.io',
   'http://127.0.0.1:8765',

@@ -27,7 +27,7 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('ỨNG DỤNG ĐÃ ĐƯỢC CẬP NHẬT'), findsOneWidget);
-    expect(find.text('Phiên bản 1.5.12'), findsOneWidget);
+    expect(find.text('Phiên bản 1.5.13'), findsOneWidget);
     for (final change in AppReleaseNotes.changes) {
       expect(find.text(change), findsOneWidget);
     }
