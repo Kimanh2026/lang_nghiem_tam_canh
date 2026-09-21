@@ -28,7 +28,8 @@ void main() {
     expect(find.text('Tìm kiếm lời khai thị...'), findsNothing);
     expect(find.text('CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA'), findsOneWidget);
     expect(find.text('Hòa Thượng Tuyên Hóa'), findsOneWidget);
-    expect(find.byKey(const Key('tuyen-hoa-gallery')), findsOneWidget);
+    expect(find.byKey(const Key('teacher-hero-images')), findsOneWidget);
+    expect(find.byKey(const ValueKey('teacher-hero-image-4')), findsOneWidget);
 
     await tester.drag(
       find.byKey(const Key('teachings-scroll')),
@@ -39,29 +40,28 @@ void main() {
     expect(find.text('CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA'), findsWidgets);
   });
 
-  testWidgets('Tuyên Hóa biography includes a horizontally scrollable gallery', (
+  testWidgets('Tuyên Hóa hero presents five equal portraits in one row', (
     tester,
   ) async {
     await pumpTeachings(tester);
 
-    expect(
-      find.text('8 ảnh về Hòa Thượng • Vuốt ngang để xem'),
-      findsOneWidget,
+    final firstSize = tester.getSize(
+      find.byKey(const ValueKey('teacher-hero-image-0')),
     );
-    expect(
-      find.byKey(const ValueKey('tuyen-hoa-gallery-image-0')),
-      findsOneWidget,
+    for (var index = 1; index < 5; index++) {
+      expect(
+        tester.getSize(find.byKey(ValueKey('teacher-hero-image-$index'))),
+        firstSize,
+      );
+    }
+    final firstTop = tester.getTopLeft(
+      find.byKey(const ValueKey('teacher-hero-image-0')),
     );
-
-    await tester.drag(
-      find.byKey(const Key('tuyen-hoa-gallery')),
-      const Offset(-1900, 0),
+    final lastTop = tester.getTopLeft(
+      find.byKey(const ValueKey('teacher-hero-image-4')),
     );
-    await tester.pumpAndSettle();
-    expect(
-      find.byKey(const ValueKey('tuyen-hoa-gallery-image-7')),
-      findsOneWidget,
-    );
+    expect((firstTop.dy - lastTop.dy).abs(), lessThan(1));
+    expect(find.textContaining('Vuốt ngang để xem'), findsNothing);
   });
 
   testWidgets('Teacher filter changes content without duplicate attribution', (
@@ -102,22 +102,36 @@ void main() {
     expect(source, contains('Ngài vừa đi vừa trì tụng 108 biến Lăng Nghiêm'));
   });
 
-  test('Tuyên Hóa biography keeps the supplied sections and all eight images', () {
+  test('Tuyên Hóa content and selected hero portraits are retained', () {
     final source = File('lib/screens/teachings_screen.dart').readAsStringSync();
+    final addedTeaching = File(
+      'lib/content/tuyen_hoa_phap_than.dart',
+    ).readAsStringSync();
 
     expect(source, contains('Hòa thượng Tuyên Hóa đản sanh vào giờ Tý'));
     expect(source, contains('Mỗi ngày Ngài lạy 837 lạy'));
     expect(source, contains('PHẦN II: NHỮNG LẦN ĐỘ SANH KỲ BÍ'));
     expect(source, contains('Lăng Nghiêm hưng thì Phật pháp hưng'));
     expect(source, contains('Không chấp tướng thời gian'));
-    for (var index = 1; index <= 8; index++) {
-      final extension = index <= 6 ? 'webp' : 'jpg';
-      expect(
-        source,
-        contains(
-          'assets/images/tuyen-hoa-${index.toString().padLeft(2, '0')}.$extension',
-        ),
-      );
+    for (final image in [
+      '01.webp',
+      '02.webp',
+      '03.webp',
+      '05.webp',
+      '08.jpg',
+    ]) {
+      expect(source, contains('assets/images/tuyen-hoa-$image'));
     }
+    expect(
+      addedTeaching,
+      contains('Thành tâm tụng Chú Lăng Nghiêm, thì không cần trải qua'),
+    );
+    expect(addedTeaching, contains('HAI MƯƠI BỐN ÍCH LỢI'));
+    expect(addedTeaching, contains('NĂM ĐẠI TÂM CHÚ'));
+    expect(
+      addedTeaching,
+      contains('MUỐN CẦU PHƯỚC BÁU THẾ GIAN HAY QUẢ BÁU THÁNH HIỀN'),
+    );
+    expect(source, isNot(contains('BUÔNG VÕ CÔNG, VÀO CHUNG NAM SƠN')));
   });
 }

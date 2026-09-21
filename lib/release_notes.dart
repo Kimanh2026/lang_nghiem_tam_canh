@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.3+20';
-  static const displayVersion = '1.5.3';
+  static const version = '1.5.4+21';
+  static const displayVersion = '1.5.4';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Cuộc đời Hòa Thượng Tuyên Hóa';
+  static const title = 'Khai thị Hòa Thượng Tuyên Hóa';
   static const changes = <String>[
-    'Bổ sung bài về cuộc đời và đạo nghiệp của Hòa Thượng Tuyên Hóa.',
-    'Thêm thư viện 8 ảnh có thể vuốt ngang, tối ưu cho màn hình điện thoại.',
-    'Giữ phần chữ rộng, sáng và dễ đọc trên nền ứng dụng.',
+    'Bổ sung bài khai thị dài về Chú Lăng Nghiêm và Pháp Thân.',
+    'Sắp xếp ảnh Hòa Thượng Tuyên Hóa thành một hàng cân đối phía trên.',
+    'Tiêu đề Văn Chú Lăng Nghiêm tự cuộn đi để dành trọn chỗ đọc.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

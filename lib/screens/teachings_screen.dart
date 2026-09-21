@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../content/tuyen_hoa_phap_than.dart';
 import '../theme/app_palette.dart';
 
 class TeachingsScreen extends StatefulWidget {
@@ -18,8 +19,6 @@ class _TeachingsScreenState extends State<TeachingsScreen> {
     {
       'title': 'CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA',
       'meta': 'Hòa Thượng Tuyên Hóa',
-      'gallery':
-          'assets/images/tuyen-hoa-01.webp|assets/images/tuyen-hoa-02.webp|assets/images/tuyen-hoa-03.webp|assets/images/tuyen-hoa-04.webp|assets/images/tuyen-hoa-05.webp|assets/images/tuyen-hoa-06.webp|assets/images/tuyen-hoa-07.jpg|assets/images/tuyen-hoa-08.jpg',
       'preview': '''1. Hiện Tượng Đản Sanh Và Sự Trùng Hợp Nhân Duyên
 
 Hòa thượng Tuyên Hóa đản sanh vào giờ Tý ngày 16 tháng 3 năm 1918.
@@ -107,6 +106,11 @@ Hòa thượng luôn nhắc nhở đệ tử rằng Chú Lăng Nghiêm là "Linh
 • Giữ gìn giới luật thanh tịnh: Đặc biệt là không sát sanh, ăn chay trọn vẹn, không dâm dục và không nói dóc.
 • Dứt trừ Tham - Sân - Si: Giữ tâm địa chân thật, khiêm hạ và chan hòa tình thương đến muôn loài.
 • Không chấp tướng thời gian: Bất kỳ giờ phút nào tâm chí thành niệm chú thì lúc đó đều là thời điểm linh ứng nhất.''',
+    },
+    {
+      'title': 'THÀNH TÂM TỤNG CHÚ LĂNG NGHIÊM SẼ ĐẮC ĐƯỢC PHÁP THÂN',
+      'meta': 'Hòa Thượng Tuyên Hóa',
+      'preview': tuyenHoaPhapThanTeaching,
     },
     {
       'title': 'Thời Đại “Vô Cùng Nguy Ngập”',
@@ -440,51 +444,6 @@ Bất luận là loại yêu ma quỷ quái nào, thiên ma hay ngoại đạo, 
 Vì vậy, người biết trì tụng Chú Lăng Nghiêm, thiên ma ngoại đạo và tất cả quỷ quái đều sợ bạn. Nếu chúng không sợ, cuối cùng chúng vẫn sẽ bị hàng phục dưới sức mạnh của bạn.''',
     },
     {
-      'title': 'BUÔNG VÕ CÔNG, VÀO CHUNG NAM SƠN ĂN LÁ CÂY 72 NĂM',
-      'meta': 'Hòa Thượng Phổ Quang',
-      'preview': '''1. VÌ SAO KHÔNG LUYỆN VÕ NỮA?
-Về sau, Lão Hòa Thượng nhận ra:
-"Võ công có cao đến mấy cũng không thành đạo được, mà còn dễ làm tổn thương người.
-Nhìn thấy chuyện bất bình là muốn xen vào.
-Kết quả là để cứu 1 người tốt, có thể phải làm tổn thương 100 người xấu.
-Oan oan tương báo đến bao giờ mới dứt?"
-
-Ngài quyết định không luyện nữa.
-Ngài nói: "Người đến 30 tuổi mà còn luyện võ công là chấp mê bất ngộ.
-Công phu phải luyện từ nhỏ. Võ công có cao đến mấy cũng không thoát được sinh tử."
-
-Từ đó Ngài trốn vào rừng sâu. Không tiếp xúc với ai.
-Chuyện bất bình không nhìn thấy, cũng không có cơ hội "gây sự" nữa.
-
-2. ĐI BỘ MẤY THÁNG ĐẾN CHUNG NAM SƠN
-Về sau nghe nói Chung Nam Sơn là thánh địa mà bao đời hiền nhân ẩn sĩ tu hành đắc đạo.
-Ngài liền dẫn đệ tử đi. Đi bộ mấy tháng mới tới.
-
-Lúc đó cọp mù đã chết, tinh vẫn còn sống.
-Thấy Ngài thu dọn y và thiền trượng định đi, nó ôm chân Ngài khóc, không cho đi.
-Lão Hòa Thượng đành nhân lúc tinh ngủ, cầm thiền trượng và y, lén rời đi.
-
-3. 72 NĂM ĂN LÁ CÂY VỎ CÂY
-Chung Nam Sơn khác với Trường Bạch Sơn.
-Không có cây ăn quả, đất lại xấu.
-2 thầy trò không có quả rừng để ăn, cũng không thể trồng khoai như ở Trường Bạch để đỡ đói.
-
-Nhưng Ngài vẫn nhớ lời Tổ dạy: không tiếp xúc với người.
-Ngày ngày ngồi trong hang trì chú tu hành.
-Hè ăn lá cây, đông ăn vỏ cây. Ăn như vậy 72 năm.
-Ăn đủ 72 loại lá cây và vỏ cây.
-
-Mãi đến cuối năm 1996 mới có cư sĩ Bắc Kinh lên núi gửi gạo.
-
-Lúc đó dân rất nghèo. Nông dân làm quần quật cả ngày mới kiếm được 2 xu.
-Lương thực cũng ít. Lão Hòa Thượng không bao giờ đến nhà dân "hóa duyên".
-Lá cây khô đốt thành tro, hòa với nước lạnh uống cho no bụng.
-
-Ngài nói: "72 loại cây đều ăn được. Chỉ cần giã lá và thân cây thành bột, nấu chín là ăn được. Rất bổ."
-Ngài nói: "Tất cả do tâm tạo. Con nói nó là lá cây vỏ cây thì nó là lá cây vỏ cây. Con nói nó là bánh mì thì nó là bánh mì."
-"Chỉ cần bụng không kêu ục ục, ruột không dính vào nhau, ngồi thiền được là được rồi."''',
-    },
-    {
       'title': 'Trì Chú Cần Chí Thành Chuyên Nhất',
       'meta': 'Hòa Thượng Phổ Quang',
       'preview': '''Phổ Quang Lão Hòa Thượng
@@ -584,12 +543,19 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
     }).toList();
   }
 
-  String get _selectedTeacherImage => _selectedChipIndex == 0
-      ? 'assets/images/teacher-tuyen-hoa.jpeg'
-      : 'assets/images/teacher-pho-quang.webp';
+  static const _tuyenHoaHeroImages = <String>[
+    'assets/images/tuyen-hoa-01.webp',
+    'assets/images/tuyen-hoa-02.webp',
+    'assets/images/tuyen-hoa-03.webp',
+    'assets/images/tuyen-hoa-05.webp',
+    'assets/images/tuyen-hoa-08.jpg',
+  ];
 
   Widget _buildTeacherHero(int teachingCount, bool isPhone) {
-    final imageWidth = isPhone ? 68.0 : 150.0;
+    final isTuyenHoa = _selectedChipIndex == 0;
+    final heroImages = isTuyenHoa
+        ? (isPhone ? _tuyenHoaHeroImages.take(3).toList() : _tuyenHoaHeroImages)
+        : const ['assets/images/teacher-pho-quang.webp'];
     return ClipRRect(
       key: const Key('teacher-hero'),
       borderRadius: BorderRadius.circular(22),
@@ -616,21 +582,32 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
               right: 0,
               top: isPhone ? 8 : 14,
               bottom: isPhone ? 8 : 14,
-              child: Center(
-                child: SizedBox(
-                  width: imageWidth,
-                  height: isPhone ? 68 : 157,
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(16),
-                    child: Image.asset(
-                      _selectedTeacherImage,
-                      key: const Key('selected-teacher-image'),
-                      fit: BoxFit.cover,
-                      alignment: Alignment.topCenter,
-                      semanticLabel: 'Ảnh vị giảng sư đang được chọn',
+              child: Row(
+                key: const Key('teacher-hero-images'),
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  for (var index = 0; index < heroImages.length; index++) ...[
+                    if (index > 0) SizedBox(width: isPhone ? 6 : 10),
+                    Flexible(
+                      child: AspectRatio(
+                        aspectRatio: isPhone ? 0.82 : 0.78,
+                        child: ClipRRect(
+                          borderRadius: BorderRadius.circular(
+                            isPhone ? 10 : 16,
+                          ),
+                          child: Image.asset(
+                            heroImages[index],
+                            key: ValueKey('teacher-hero-image-$index'),
+                            fit: BoxFit.cover,
+                            alignment: Alignment.topCenter,
+                            semanticLabel:
+                                'Ảnh ${index + 1} của vị giảng sư đang được chọn',
+                          ),
+                        ),
+                      ),
                     ),
-                  ),
-                ),
+                  ],
+                ],
               ),
             ),
             Positioned(
@@ -659,68 +636,6 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
           ],
         ),
       ),
-    );
-  }
-
-  Widget _buildImageGallery(String gallery, bool isPhone) {
-    final imagePaths = gallery.split('|');
-    final galleryHeight = isPhone ? 250.0 : 330.0;
-    final imageWidth = isPhone ? 235.0 : 285.0;
-
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Row(
-          children: [
-            const Icon(
-              Icons.photo_library_outlined,
-              size: 18,
-              color: Color(0xFFF4D35E),
-            ),
-            const SizedBox(width: 7),
-            Expanded(
-              child: Text(
-                '${imagePaths.length} ảnh về Hòa Thượng • Vuốt ngang để xem',
-                style: TextStyle(
-                  color: const Color(0xFFF4D35E),
-                  fontSize: isPhone ? 12 : 14,
-                  fontWeight: FontWeight.w700,
-                ),
-              ),
-            ),
-          ],
-        ),
-        const SizedBox(height: 10),
-        SizedBox(
-          key: const Key('tuyen-hoa-gallery'),
-          height: galleryHeight,
-          child: ListView.separated(
-            scrollDirection: Axis.horizontal,
-            physics: const BouncingScrollPhysics(),
-            itemCount: imagePaths.length,
-            separatorBuilder: (_, _) => const SizedBox(width: 10),
-            itemBuilder: (context, index) {
-              return Container(
-                width: imageWidth,
-                clipBehavior: Clip.antiAlias,
-                decoration: BoxDecoration(
-                  color: const Color(0x7A0E1A21),
-                  borderRadius: BorderRadius.circular(16),
-                  border: Border.all(color: const Color(0x66D4AF37)),
-                ),
-                child: Image.asset(
-                  imagePaths[index],
-                  key: ValueKey('tuyen-hoa-gallery-image-$index'),
-                  fit: BoxFit.contain,
-                  alignment: Alignment.center,
-                  semanticLabel:
-                      'Ảnh ${index + 1} trong thư viện Hòa Thượng Tuyên Hóa',
-                ),
-              );
-            },
-          ),
-        ),
-      ],
     );
   }
 
@@ -849,10 +764,6 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                           height: 1.3,
                         ),
                       ),
-                      if (item['gallery'] != null) ...[
-                        const SizedBox(height: 14),
-                        _buildImageGallery(item['gallery']!, isPhone),
-                      ],
                       const SizedBox(height: 12),
                       Text(
                         item['preview']!,

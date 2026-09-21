@@ -105,7 +105,7 @@ void main() {
     expect(find.byKey(const Key('practice-gallery-desktop')), findsNothing);
   });
 
-  testWidgets('Teacher portrait is centered and teacher tabs are prominent', (
+  testWidgets('Teacher portraits form one equal horizontal row', (
     tester,
   ) async {
     tester.view.physicalSize = const Size(1024, 844);
@@ -128,20 +128,59 @@ void main() {
     await tester.tap(find.text('Khai thị').last);
     await tester.pumpAndSettle();
 
-    final heroCenter = tester.getCenter(find.byKey(const Key('teacher-hero')));
-    final imageCenter = tester.getCenter(
-      find.byKey(const Key('selected-teacher-image')),
+    final firstSize = tester.getSize(
+      find.byKey(const ValueKey('teacher-hero-image-0')),
     );
-    expect((heroCenter.dx - imageCenter.dx).abs(), lessThan(1));
-    expect(
-      tester.getSize(find.byKey(const Key('selected-teacher-image'))).height,
-      157,
-    );
+    expect(find.byKey(const ValueKey('teacher-hero-image-4')), findsOneWidget);
+    for (var index = 1; index < 5; index++) {
+      expect(
+        tester.getSize(find.byKey(ValueKey('teacher-hero-image-$index'))),
+        firstSize,
+      );
+    }
     final selectedTab = tester.widget<ChoiceChip>(
       find.byKey(const ValueKey('teacher-tab-0')),
     );
     expect(selectedTab.selectedColor, const Color(0xFFD4AF37));
     expect(selectedTab.showCheckmark, isFalse);
+  });
+
+  testWidgets('Mantra heading scrolls away to maximize reading space', (
+    tester,
+  ) async {
+    tester.view.physicalSize = const Size(390, 844);
+    tester.view.devicePixelRatio = 1;
+    addTearDown(tester.view.resetPhysicalSize);
+    addTearDown(tester.view.resetDevicePixelRatio);
+    SharedPreferences.setMockInitialValues({});
+
+    await tester.pumpWidget(
+      MaterialApp(
+        theme: ThemeData.dark(useMaterial3: true),
+        home: MainScaffold(
+          recitationCount: ValueNotifier(0),
+          userName: ValueNotifier('Đạo hữu'),
+          clearChatTrigger: ValueNotifier(0),
+        ),
+      ),
+    );
+    await tester.pumpAndSettle();
+    await tester.tap(find.text('Trì chú').last);
+    await tester.pumpAndSettle();
+
+    expect(
+      find.byKey(const Key('mantra-reading-heading')).hitTestable(),
+      findsOneWidget,
+    );
+    await tester.drag(
+      find.byKey(const Key('mantra-reading-scroll')),
+      const Offset(0, -360),
+    );
+    await tester.pumpAndSettle();
+    expect(
+      find.byKey(const Key('mantra-reading-heading')).hitTestable(),
+      findsNothing,
+    );
   });
 
   testWidgets('Practice imagery is removed from the chanting screen', (

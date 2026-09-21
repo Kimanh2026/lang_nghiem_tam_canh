@@ -196,26 +196,6 @@ class _MantraScreenState extends State<MantraScreen> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    const Row(
-                      children: [
-                        Icon(
-                          Icons.auto_stories_rounded,
-                          color: Color(0xFFD4AF37),
-                        ),
-                        SizedBox(width: 10),
-                        Expanded(
-                          child: Text(
-                            'Văn Chú Lăng Nghiêm',
-                            style: TextStyle(
-                              color: Color(0xFFF4D35E),
-                              fontSize: 18,
-                              fontWeight: FontWeight.w800,
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
-                    const SizedBox(height: 14),
                     Container(
                       key: const Key('mantra-reading-viewport'),
                       height: isPhone
@@ -233,9 +213,33 @@ class _MantraScreenState extends State<MantraScreen> {
                       ),
                       padding: EdgeInsets.all(isPhone ? 8 : 20),
                       child: SingleChildScrollView(
+                        key: const Key('mantra-reading-scroll'),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
-                          children: getMantraWidgets(),
+                          children: [
+                            const Row(
+                              key: Key('mantra-reading-heading'),
+                              children: [
+                                Icon(
+                                  Icons.auto_stories_rounded,
+                                  color: Color(0xFFD4AF37),
+                                ),
+                                SizedBox(width: 10),
+                                Expanded(
+                                  child: Text(
+                                    'Văn Chú Lăng Nghiêm',
+                                    style: TextStyle(
+                                      color: Color(0xFFF4D35E),
+                                      fontSize: 18,
+                                      fontWeight: FontWeight.w800,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            const SizedBox(height: 14),
+                            ...getMantraWidgets(),
+                          ],
                         ),
                       ),
                     ),
