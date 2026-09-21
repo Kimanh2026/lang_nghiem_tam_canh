@@ -327,12 +327,14 @@ class _SettingsScreenState extends State<SettingsScreen> {
   }
 
   Widget _sectionTitle(String text) => Text(
+    key: ValueKey('settings-section-$text'),
     text,
     style: const TextStyle(
-      color: Color(0xFFD4AF37),
-      fontWeight: FontWeight.bold,
-      fontSize: 14,
-      letterSpacing: 1,
+      color: AppPalette.sectionHeadingText,
+      fontWeight: FontWeight.w900,
+      fontSize: 15,
+      letterSpacing: 0.8,
+      shadows: AppPalette.crispTextShadow,
     ),
   );
 }

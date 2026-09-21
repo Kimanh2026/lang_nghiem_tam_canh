@@ -328,13 +328,11 @@ class _MainScaffoldState extends State<MainScaffold> {
                           child: DefaultTextStyle(
                             style: TextStyle(
                               color: selected
-                                  ? const Color(0xFFF4D35E)
-                                  : const Color(0xFFF4E9DC),
+                                  ? AppPalette.menuSelectedText
+                                  : AppPalette.menuText,
                               fontSize: compact ? 14 : 16,
-                              fontWeight: selected
-                                  ? FontWeight.w800
-                                  : FontWeight.w700,
-                              shadows: AppPalette.readableTextShadow,
+                              fontWeight: FontWeight.w900,
+                              shadows: AppPalette.crispTextShadow,
                             ),
                             child: Align(
                               alignment: Alignment.centerLeft,
@@ -427,14 +425,12 @@ class _MainScaffoldState extends State<MainScaffold> {
                                     const SizedBox(height: 3),
                                     DefaultTextStyle(
                                       style: TextStyle(
-                                        fontSize: 10,
-                                        fontWeight: selected
-                                            ? FontWeight.bold
-                                            : FontWeight.normal,
+                                        fontSize: 11,
+                                        fontWeight: FontWeight.w800,
                                         color: selected
-                                            ? const Color(0xFFD4AF37)
-                                            : const Color(0xFFF4E9DC),
-                                        shadows: AppPalette.readableTextShadow,
+                                            ? AppPalette.menuSelectedText
+                                            : AppPalette.menuText,
+                                        shadows: AppPalette.crispTextShadow,
                                       ),
                                       child: destination.label,
                                     ),

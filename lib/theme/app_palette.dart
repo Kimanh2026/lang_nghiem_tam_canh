@@ -11,4 +11,14 @@ class AppPalette {
   static const readableTextShadow = <Shadow>[
     Shadow(color: Color(0xB8000000), blurRadius: 5, offset: Offset(0, 1)),
   ];
+
+  /// Crisp navigation and section-heading colors for the brightest areas of
+  /// the sky artwork. These intentionally use dark ink instead of white.
+  static const menuText = Color(0xFF243D49);
+  static const menuSelectedText = Color(0xFF8A5A00);
+  static const sectionHeadingText = Color(0xFF875900);
+  static const crispTextShadow = <Shadow>[
+    Shadow(color: Color(0xF2FFFFFF), blurRadius: 2),
+    Shadow(color: Color(0x33000000), blurRadius: 1, offset: Offset(0, 1)),
+  ];
 }
