@@ -106,8 +106,14 @@ class LangNghiemApp extends StatelessWidget {
           surface: AppPalette.glassPanel,
         ),
         textTheme: const TextTheme(
-          bodyLarge: TextStyle(color: Color(0xFFFDF5E6)),
-          bodyMedium: TextStyle(color: Color(0xFFFDF5E6)),
+          bodyLarge: TextStyle(
+            color: Color(0xFFFFFFFF),
+            shadows: AppPalette.readableTextShadow,
+          ),
+          bodyMedium: TextStyle(
+            color: Color(0xFFFFFFFF),
+            shadows: AppPalette.readableTextShadow,
+          ),
         ),
         useMaterial3: true,
       ),
@@ -170,7 +176,7 @@ class _LuxuryNavIcon extends StatelessWidget {
           scale: selected ? 1.12 : 1,
           child: AnimatedOpacity(
             duration: const Duration(milliseconds: 180),
-            opacity: selected ? 1 : 0.66,
+            opacity: selected ? 1 : 0.88,
             child: SizedBox(
               key: ValueKey(
                 'nav-${asset.split('/').last.replaceFirst('nav-', '').replaceFirst('.png', '')}-${selected ? 'selected' : 'idle'}',
@@ -288,10 +294,7 @@ class _MainScaffoldState extends State<MainScaffold> {
     return Container(
       key: const Key('desktop-navigation'),
       width: compact ? 174 : 190,
-      decoration: const BoxDecoration(
-        color: AppPalette.glassPanel,
-        border: Border(right: BorderSide(color: Color(0x33D4AF37), width: 1)),
-      ),
+      decoration: const BoxDecoration(color: Colors.transparent),
       child: SafeArea(
         child: Padding(
           padding: EdgeInsets.fromLTRB(compact ? 12 : 16, 14, 10, 0),
@@ -330,7 +333,8 @@ class _MainScaffoldState extends State<MainScaffold> {
                               fontSize: compact ? 14 : 16,
                               fontWeight: selected
                                   ? FontWeight.w800
-                                  : FontWeight.w500,
+                                  : FontWeight.w700,
+                              shadows: AppPalette.readableTextShadow,
                             ),
                             child: Align(
                               alignment: Alignment.centerLeft,
@@ -386,9 +390,16 @@ class _MainScaffoldState extends State<MainScaffold> {
                   padding: const EdgeInsets.fromLTRB(8, 6, 8, kIsWeb ? 56 : 8),
                   child: DecoratedBox(
                     decoration: BoxDecoration(
-                      color: AppPalette.glassPanel,
+                      color: const Color(0x24FFFFFF),
                       borderRadius: BorderRadius.circular(24),
-                      border: Border.all(color: const Color(0x33D4AF37)),
+                      border: Border.all(color: const Color(0x66FFFFFF)),
+                      boxShadow: const [
+                        BoxShadow(
+                          color: Color(0x33000000),
+                          blurRadius: 12,
+                          offset: Offset(0, 4),
+                        ),
+                      ],
                     ),
                     child: Row(
                       children: List.generate(_railDestinations.length, (
@@ -423,6 +434,7 @@ class _MainScaffoldState extends State<MainScaffold> {
                                         color: selected
                                             ? const Color(0xFFD4AF37)
                                             : const Color(0xFFF4E9DC),
+                                        shadows: AppPalette.readableTextShadow,
                                       ),
                                       child: destination.label,
                                     ),

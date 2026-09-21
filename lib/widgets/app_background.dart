@@ -64,17 +64,17 @@ class _AppBackgroundState extends State<AppBackground>
                     math.sin(phase) * (isPhone ? 2.5 : 4.5),
                     math.cos(phase) * (isPhone ? 3.0 : 4.0),
                   );
-                  return Stack(
-                    fit: StackFit.expand,
-                    children: [
-                      ColoredBox(
-                        color: const Color(0xFFE7F2F8),
-                        child: Transform.translate(
-                          offset: offset,
-                          child: Transform.scale(
-                            key: const Key('ambient-background-transform'),
-                            scale: scale,
-                            child: Image.asset(
+                  return ColoredBox(
+                    color: const Color(0xFFE7F2F8),
+                    child: Transform.translate(
+                      offset: offset,
+                      child: Transform.scale(
+                        key: const Key('ambient-background-transform'),
+                        scale: scale,
+                        child: Stack(
+                          fit: StackFit.expand,
+                          children: [
+                            Image.asset(
                               isPhone
                                   ? 'assets/images/app-background-mobile-v1.png'
                                   : 'assets/images/app-background-desktop-v1.png',
@@ -85,17 +85,17 @@ class _AppBackgroundState extends State<AppBackground>
                               filterQuality: FilterQuality.high,
                               gaplessPlayback: true,
                             ),
-                          ),
+                            CustomPaint(
+                              key: const Key('ambient-light-particles'),
+                              painter: _AmbientLightPainter(
+                                progress: _controller.value,
+                                isPhone: isPhone,
+                              ),
+                            ),
+                          ],
                         ),
                       ),
-                      CustomPaint(
-                        key: const Key('ambient-light-particles'),
-                        painter: _AmbientLightPainter(
-                          progress: _controller.value,
-                          isPhone: isPhone,
-                        ),
-                      ),
-                    ],
+                    ),
                   );
                 },
               ),
@@ -153,9 +153,9 @@ class _AmbientLightPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final phase = progress * math.pi * 2;
     final candleCenter = _candlePoint(size, isPhone);
-    final flicker = 0.5 + 0.5 * math.sin(phase * 17);
-    final sway = math.sin(phase * 12) * 3.2 + math.sin(phase * 19) * 1.2;
-    final glowRadius = (isPhone ? 54.0 : 72.0) + flicker * 16;
+    final flicker = 0.5 + 0.5 * math.sin(phase * 9);
+    final sway = math.sin(phase * 7) * 1.4 + math.sin(phase * 11) * 0.6;
+    final glowRadius = (isPhone ? 42.0 : 58.0) + flicker * 10;
     final glowRect = Rect.fromCircle(center: candleCenter, radius: glowRadius);
     canvas.drawCircle(
       candleCenter,
@@ -171,8 +171,10 @@ class _AmbientLightPainter extends CustomPainter {
         ).createShader(glowRect),
     );
 
-    final flameHeight = isPhone ? 26.0 : 34.0;
-    final flameWidth = isPhone ? 8.0 : 10.0;
+    // This is a small translucent inner flame, not a second flame. It shares
+    // the exact transform of the background image so it remains on the wick.
+    final flameHeight = isPhone ? 20.0 : 27.0;
+    final flameWidth = isPhone ? 5.5 : 7.0;
     final flameBase = candleCenter + Offset(0, flameHeight * 0.36);
     final flameTip = candleCenter + Offset(sway, -flameHeight * 0.64);
     final flame = Path()
@@ -200,7 +202,7 @@ class _AmbientLightPainter extends CustomPainter {
         ..shader = const LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [Color(0xECFFFFFF), Color(0xF8FFE08A), Color(0xEFFF9A36)],
+          colors: [Color(0xB8FFFFFF), Color(0xC8FFE08A), Color(0xA8FF9A36)],
         ).createShader(flame.getBounds()),
     );
 
@@ -255,7 +257,7 @@ class _AmbientLightPainter extends CustomPainter {
   Offset _candlePoint(Size viewport, bool phone) {
     final sourceSize = phone ? const Size(946, 2048) : const Size(1673, 941);
     final sourcePoint = phone
-        ? const Offset(473, 1437)
+        ? const Offset(473, 1188)
         : const Offset(1354, 574);
     final scale = math.max(
       viewport.width / sourceSize.width,

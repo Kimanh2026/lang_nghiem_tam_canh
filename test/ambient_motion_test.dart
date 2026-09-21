@@ -1,3 +1,5 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lang_nghiem_tam_canh/widgets/app_background.dart';
@@ -25,5 +27,22 @@ void main() {
 
     expect(after, isNot(equals(before)));
     expect(find.byKey(const Key('ambient-light-particles')), findsOneWidget);
+    expect(
+      find.ancestor(
+        of: find.byKey(const Key('ambient-light-particles')),
+        matching: find.byKey(const Key('ambient-background-transform')),
+      ),
+      findsOneWidget,
+    );
   });
+
+  test(
+    'animated flame remains attached to the moving background transform',
+    () {
+      final source = File('lib/widgets/app_background.dart').readAsStringSync();
+
+      expect(source, contains('const Offset(473, 1188)'));
+      expect(source, contains('final sway = math.sin(phase * 7) * 1.4'));
+    },
+  );
 }
