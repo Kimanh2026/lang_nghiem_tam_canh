@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:google_generative_ai/google_generative_ai.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
+import 'dart:async';
 import 'dart:math' as math;
 import 'dart:convert';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -67,6 +68,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
   bool _isLoading = false;
 
   final TextEditingController _chatController = TextEditingController();
+  final ScrollController _chatScrollController = ScrollController();
 
   final List<Map<String, String>> _chatMessages = [];
 
@@ -107,7 +109,20 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
   void dispose() {
     widget.userName.removeListener(_onUserNameChanged);
     widget.clearChatTrigger.removeListener(_onClearChatTriggered);
+    _chatController.dispose();
+    _chatScrollController.dispose();
     super.dispose();
+  }
+
+  void _scrollToNewestMessage() {
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (!mounted || !_chatScrollController.hasClients) return;
+      _chatScrollController.animateTo(
+        _chatScrollController.position.maxScrollExtent,
+        duration: const Duration(milliseconds: 320),
+        curve: Curves.easeOutCubic,
+      );
+    });
   }
 
   List<Content> _buildHistoryFromMessages() {
@@ -146,6 +161,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       _saveChatHistory();
       _initChat(history: _buildHistoryFromMessages());
     });
+    _scrollToNewestMessage();
   }
 
   void _initChat({List<Content>? history}) {
@@ -204,6 +220,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       }
       _initChat(history: _buildHistoryFromMessages());
     });
+    _scrollToNewestMessage();
   }
 
   Future<void> _saveChatHistory() async {
@@ -221,32 +238,86 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       _saveChatHistory();
     });
     _chatController.clear();
+    _scrollToNewestMessage();
 
     try {
-      final response = await _chatSession.sendMessage(Content.text(text));
+      final response = await _sendMessageWithRetry(text);
+      if (!mounted) return;
       setState(() {
         _chatMessages.add({
           'role': 'ai',
           'text':
               response.text?.replaceAll('*', '') ??
-              'Xin lỗi, tôi không thể trả lời lúc này.',
+              'Tiểu Tịnh chưa nhận được nội dung phản hồi. Đạo Hữu vui lòng gửi lại câu hỏi.',
         });
         _saveChatHistory();
       });
+      _scrollToNewestMessage();
     } catch (e) {
-      print('AI Error occurred: $e');
+      if (!mounted) return;
+      debugPrint('AI request failed after retry: ${e.runtimeType}');
       setState(() {
-        _chatMessages.add({
-          'role': 'ai',
-          'text': 'Có lỗi xảy ra kết nối với AI. Xin thử lại sau.',
-        });
+        _chatMessages.add({'role': 'ai', 'text': _friendlyChatError(e)});
         _saveChatHistory();
       });
+      _scrollToNewestMessage();
     } finally {
-      setState(() {
-        _isLoading = false;
-      });
+      if (mounted) {
+        setState(() {
+          _isLoading = false;
+        });
+        _scrollToNewestMessage();
+      }
     }
+  }
+
+  Future<GenerateContentResponse> _sendMessageWithRetry(String text) async {
+    Object? firstError;
+    for (var attempt = 0; attempt < 2; attempt++) {
+      try {
+        return await _chatSession
+            .sendMessage(Content.text(text))
+            .timeout(const Duration(seconds: 40));
+      } catch (error) {
+        firstError ??= error;
+        if (attempt == 1 || !_isRetryableChatError(error)) rethrow;
+        _initChat(history: _buildHistoryFromMessages());
+        await Future<void>.delayed(const Duration(milliseconds: 700));
+      }
+    }
+    throw firstError!;
+  }
+
+  bool _isRetryableChatError(Object error) {
+    final message = error.toString().toLowerCase();
+    return error is TimeoutException ||
+        message.contains('429') ||
+        message.contains('resource_exhausted') ||
+        message.contains('temporar') ||
+        message.contains('network') ||
+        message.contains('connection') ||
+        message.contains('socket') ||
+        message.contains('timeout') ||
+        message.contains('unavailable') ||
+        message.contains('500') ||
+        message.contains('502') ||
+        message.contains('503') ||
+        message.contains('504');
+  }
+
+  String _friendlyChatError(Object error) {
+    final message = error.toString().toLowerCase();
+    if (message.contains('429') || message.contains('resource_exhausted')) {
+      return 'Tiểu Tịnh đang có nhiều người hỏi cùng lúc. Đạo Hữu vui lòng chờ một lát rồi gửi lại câu hỏi.';
+    }
+    if (error is TimeoutException ||
+        message.contains('network') ||
+        message.contains('connection') ||
+        message.contains('socket') ||
+        message.contains('timeout')) {
+      return 'Kết nối đang chậm nên Tiểu Tịnh chưa thể trả lời. Đạo Hữu vui lòng kiểm tra mạng và gửi lại câu hỏi.';
+    }
+    return 'Tiểu Tịnh tạm thời chưa thể trả lời. Đạo Hữu vui lòng thử lại sau ít phút.';
   }
 
   @override
@@ -295,6 +366,8 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
       children: [
         Expanded(
           child: ListView.builder(
+            key: const Key('chat-message-list'),
+            controller: _chatScrollController,
             itemCount: _chatMessages.length,
             itemBuilder: (context, index) {
               final msg = _chatMessages[index];
@@ -304,9 +377,26 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
           ),
         ),
         if (_isLoading)
-          const Padding(
-            padding: EdgeInsets.symmetric(vertical: 10.0),
-            child: SpinningLotusLoading(size: 30),
+          Semantics(
+            liveRegion: true,
+            label: 'Tiểu Tịnh đang suy ngẫm',
+            child: const Padding(
+              padding: EdgeInsets.symmetric(vertical: 10.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  SpinningLotusLoading(size: 26),
+                  SizedBox(width: 10),
+                  Flexible(
+                    child: Text(
+                      'Tiểu Tịnh đang suy ngẫm…',
+                      key: Key('chat-loading-label'),
+                      style: TextStyle(fontSize: 13),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         const SizedBox(height: 10),
         Row(

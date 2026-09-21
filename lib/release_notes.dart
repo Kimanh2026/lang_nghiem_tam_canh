@@ -5,14 +5,14 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.10+27';
-  static const displayVersion = '1.5.10';
+  static const version = '1.5.11+28';
+  static const displayVersion = '1.5.11';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Đồng bộ nền Chính sách bảo mật';
+  static const title = 'Tiểu Tịnh phản hồi ổn định hơn';
   static const changes = <String>[
-    'Đổi nền Chính sách bảo mật sang màu xanh kính đồng bộ với Cài đặt.',
-    'Giữ chữ trắng đậm, bóng nhẹ và khoảng cách dòng dễ đọc.',
-    'Duy trì email liên hệ xavia.nguyen97@gmail.com.',
+    'Tự thử lại một lần khi kết nối AI bị gián đoạn tạm thời.',
+    'Tự cuộn đến câu trả lời mới để không bị khuất trên điện thoại.',
+    'Hiển thị rõ trạng thái Tiểu Tịnh đang suy ngẫm và lỗi kết nối.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>
