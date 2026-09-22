@@ -5,13 +5,13 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.14+31';
-  static const displayVersion = '1.5.14';
+  static const version = '1.5.15+32';
+  static const displayVersion = '1.5.15';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Tinh gọn phần Cài đặt';
+  static const title = 'Tâm nguyện của ứng dụng';
   static const changes = <String>[
-    'Đã bỏ mục Có gì mới khỏi trang Cài đặt theo yêu cầu.',
-    'Giữ nguyên các tùy chọn cài ứng dụng, thông tin cá nhân và bảo mật.',
+    'Bổ sung lời tâm nguyện trên Trang chủ.',
+    'Cập nhật thông tin nhà phát triển thành AnhLya.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>

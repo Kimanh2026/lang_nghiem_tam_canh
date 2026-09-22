@@ -225,6 +225,57 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: 20),
 
+            // Tâm nguyện của ứng dụng
+            Card(
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20.0),
+                side: const BorderSide(color: Color(0x1AD4AF37), width: 1),
+              ),
+              child: Padding(
+                padding: EdgeInsets.all(isPhone ? 18 : 24),
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    const Row(
+                      children: [
+                        Icon(
+                          Icons.spa_outlined,
+                          color: Color(0xFFD4AF37),
+                          size: 18,
+                        ),
+                        SizedBox(width: 8),
+                        Text(
+                          'TÂM NGUYỆN',
+                          style: TextStyle(
+                            color: Color(0xFFD4AF37),
+                            fontWeight: FontWeight.bold,
+                            fontSize: 14,
+                            letterSpacing: 1,
+                          ),
+                        ),
+                      ],
+                    ),
+                    const SizedBox(height: 14),
+                    Text(
+                      '''Ứng dụng này được tạo nên từ một tâm nguyện nhỏ, mong kết duyên cùng những người hữu duyên với Chú Lăng Nghiêm, cùng nhau tinh tấn hành trì và hướng đến viên mãn 36.000 biến Chú.
+
+Nguyện nương nơi những lời khai thị quý báu của Hòa Thượng Tuyên Hóa và Hòa Thượng Phổ Quang, để mỗi người có thêm niềm tin, nghị lực và sự nhắc nhở trên con đường tu học.
+
+Mong rằng từng biến Chú được trì tụng không chỉ là một con số được ghi nhận, mà còn là một lần quay về với chánh niệm, nuôi lớn tâm Bồ Đề, gìn giữ chánh pháp và chuyển hóa chính mình.
+
+Nguyện cho những ai hữu duyên gặp được ứng dụng này đều bền lòng hành trì, tinh tấn tu học, tăng trưởng Bồ Đề tâm, cho đến ngày viên thành Phật Đạo.''',
+                      style: TextStyle(
+                        color: const Color(0xFFF4E9DC),
+                        fontSize: isPhone ? 15 : 16,
+                        height: 1.65,
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            const SizedBox(height: 20),
+
             // Progress Tracker Card
             Card(
               shape: RoundedRectangleBorder(

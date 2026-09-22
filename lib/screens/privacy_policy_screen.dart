@@ -59,7 +59,7 @@ class PrivacyPolicyScreen extends StatelessWidget {
                   '''Chính Sách Bảo Mật (Privacy Policy)
 Ngày hiệu lực: 21 Tháng 09, 2026
 
-Chào mừng bạn đến với ứng dụng Lăng Nghiêm Tâm Cảnh, được phát triển và vận hành bởi Xavia.
+Chào mừng bạn đến với ứng dụng Lăng Nghiêm Tâm Cảnh, được phát triển và vận hành bởi AnhLya.
 
 Bảo vệ thông tin cá nhân và quyền riêng tư của Quý Đạo Hữu là ưu tiên hàng đầu của tôi. Chính sách Bảo mật này giải thích cách tôi thu thập, sử dụng và bảo vệ thông tin của bạn khi bạn sử dụng Ứng dụng.
 
@@ -87,8 +87,8 @@ Tôi có thể cập nhật Chính sách Bảo mật này theo thời gian. Mọ
 
 6. Liên hệ với tôi
 Nếu bạn có bất kỳ thắc mắc hay góp ý nào về Chính sách Bảo mật này hoặc cách thức hoạt động của Ứng dụng, xin vui lòng liên hệ với tôi qua:
-Tên nhà phát triển: Xavia
-Email: xavia.nguyen97@gmail.com
+Tên nhà phát triển: AnhLya
+Email: anhlya2026@gmail.com
 
 A Mi Đà Phật! Chúc Quý Đạo Hữu luôn tinh tấn và an lạc.''',
                   style: TextStyle(

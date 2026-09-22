@@ -9,8 +9,10 @@ void main() {
     (tester) async {
       await tester.pumpWidget(const MaterialApp(home: PrivacyPolicyScreen()));
 
-      expect(find.textContaining('xavia.nguyen97@gmail.com'), findsOneWidget);
-      expect(find.textContaining('Tên nhà phát triển: Xavia'), findsOneWidget);
+      expect(find.textContaining('anhlya2026@gmail.com'), findsOneWidget);
+      expect(find.textContaining('Tên nhà phát triển: AnhLya'), findsOneWidget);
+      expect(find.textContaining('vận hành bởi AnhLya'), findsOneWidget);
+      expect(find.textContaining('xavia.nguyen97@gmail.com'), findsNothing);
       expect(find.textContaining('nkimanh932@gmail.com'), findsNothing);
       expect(find.textContaining('Cloudflare Worker'), findsOneWidget);
 

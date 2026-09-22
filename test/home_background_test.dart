@@ -30,5 +30,10 @@ void main() {
     });
 
     expect(coloredContainers, isEmpty);
+    expect(find.text('TÂM NGUYỆN'), findsOneWidget);
+    expect(
+      find.textContaining('Ứng dụng này được tạo nên từ một tâm nguyện nhỏ'),
+      findsOneWidget,
+    );
   });
 }
