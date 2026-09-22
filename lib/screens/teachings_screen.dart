@@ -15,6 +15,11 @@ class _TeachingsScreenState extends State<TeachingsScreen> {
 
   List<String> get _filters => ['Hòa Thượng Tuyên Hóa', 'Hòa Thượng Phổ Quang'];
 
+  static const _mobileTeacherLabels = <String>[
+    'Hòa Thượng\nTuyên Hóa',
+    'Hòa Thượng\nPhổ Quang',
+  ];
+
   List<Map<String, String>> get _allTeachings => [
     {
       'title': 'CUỘC ĐỜI HÒA THƯỢNG TUYÊN HÓA',
@@ -613,9 +618,7 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
 
   Widget _buildTeacherHero(int teachingCount, bool isPhone) {
     final isTuyenHoa = _selectedChipIndex == 0;
-    final heroImages = isTuyenHoa
-        ? _tuyenHoaHeroImages
-        : _phoQuangHeroImages;
+    final heroImages = isTuyenHoa ? _tuyenHoaHeroImages : _phoQuangHeroImages;
     final teacherKey = isTuyenHoa ? 'tuyen-hoa' : 'pho-quang';
     final teacherName = isTuyenHoa
         ? 'Hòa Thượng Tuyên Hóa'
@@ -739,10 +742,14 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                                 label: SizedBox(
                                   width: double.infinity,
                                   child: Text(
-                                    _filters[index],
+                                    isPhone
+                                        ? _mobileTeacherLabels[index]
+                                        : _filters[index],
+                                    key: ValueKey('teacher-tab-label-$index'),
                                     maxLines: 2,
                                     textAlign: TextAlign.center,
-                                    overflow: TextOverflow.ellipsis,
+                                    overflow: TextOverflow.visible,
+                                    softWrap: true,
                                   ),
                                 ),
                                 selected: _selectedChipIndex == index,

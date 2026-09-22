@@ -87,6 +87,16 @@ void main() {
 
     await tester.tap(find.text('Khai thị').last);
     await tester.pumpAndSettle();
+    for (final entry in const {
+      0: 'Hòa Thượng\nTuyên Hóa',
+      1: 'Hòa Thượng\nPhổ Quang',
+    }.entries) {
+      final label = tester.widget<Text>(
+        find.byKey(ValueKey('teacher-tab-label-${entry.key}')),
+      );
+      expect(label.data, entry.value);
+      expect(label.overflow, TextOverflow.visible);
+    }
     expect(tester.getSize(find.byKey(const Key('teacher-hero'))).height, 84);
     await tester.drag(
       find.byKey(const Key('teacher-hero-gallery')),
@@ -98,7 +108,7 @@ void main() {
       findsOneWidget,
     );
 
-    await tester.tap(find.text('Hòa Thượng Phổ Quang'));
+    await tester.tap(find.byKey(const ValueKey('teacher-tab-1')));
     await tester.pumpAndSettle();
     await tester.drag(
       find.byKey(const Key('teacher-hero-gallery')),

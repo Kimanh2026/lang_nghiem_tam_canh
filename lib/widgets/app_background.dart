@@ -153,13 +153,18 @@ class _AmbientLightPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final phase = progress * math.pi * 2;
     final candleCenter = _candlePoint(size, isPhone);
-    final flicker = 0.5 + 0.5 * math.sin(phase * 5);
-    final sway = math.sin(phase * 3) * 2.2 + math.sin(phase * 5) * 0.5;
-    final flameBreath = math.sin(phase * 4) * 1.3;
+    // Integer harmonics keep the first and last animation frame identical,
+    // producing a seamless loop while the uneven mix feels like a soft wind.
+    final flicker =
+        0.5 + 0.32 * math.sin(phase * 4) + 0.18 * math.sin(phase * 7);
+    final windSway = math.sin(phase * 4) * 3.0 + math.sin(phase * 7) * 0.85;
+    final sway = windSway * (isPhone ? 1.0 : 1.15);
+    final flameBreath = math.sin(phase * 5) * 1.15;
     final glowRadius = (isPhone ? 44.0 : 60.0) + flicker * 11;
-    final glowRect = Rect.fromCircle(center: candleCenter, radius: glowRadius);
+    final glowCenter = candleCenter + Offset(sway * 0.16, -flicker * 1.2);
+    final glowRect = Rect.fromCircle(center: glowCenter, radius: glowRadius);
     canvas.drawCircle(
-      candleCenter,
+      glowCenter,
       glowRadius,
       Paint()
         ..shader = RadialGradient(
@@ -181,7 +186,7 @@ class _AmbientLightPainter extends CustomPainter {
     final flame = Path()
       ..moveTo(flameBase.dx, flameBase.dy)
       ..cubicTo(
-        candleCenter.dx - flameWidth,
+        candleCenter.dx - flameWidth + sway * 0.22,
         candleCenter.dy + flameHeight * 0.05,
         flameTip.dx - flameWidth * 0.42,
         flameTip.dy + flameHeight * 0.26,
@@ -191,7 +196,7 @@ class _AmbientLightPainter extends CustomPainter {
       ..cubicTo(
         flameTip.dx + flameWidth * 0.52,
         flameTip.dy + flameHeight * 0.28,
-        candleCenter.dx + flameWidth,
+        candleCenter.dx + flameWidth + sway * 0.22,
         candleCenter.dy + flameHeight * 0.05,
         flameBase.dx,
         flameBase.dy,

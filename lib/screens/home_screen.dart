@@ -259,9 +259,9 @@ class HomeScreen extends StatelessWidget {
                     Text(
                       '''Ứng dụng này được tạo nên từ một tâm nguyện nhỏ, mong kết duyên cùng những người hữu duyên với Chú Lăng Nghiêm, cùng nhau tinh tấn hành trì và hướng đến viên mãn 36.000 biến Chú.
 
-Nguyện nương nơi những lời khai thị quý báu của Hòa Thượng Tuyên Hóa và Hòa Thượng Phổ Quang, để mỗi người có thêm niềm tin, nghị lực và sự nhắc nhở trên con đường tu học.
+Nguyện nương nơi những lời khai thị quý báu của Hòa Thượng Tuyên Hóa và Hòa Thượng Phổ Quang, để đạo hữu có thêm niềm tin, nghị lực và sự nhắc nhở trên con đường tu học.
 
-Mong rằng từng biến Chú được trì tụng không chỉ là một con số được ghi nhận, mà còn là một lần quay về với chánh niệm, nuôi lớn tâm Bồ Đề, gìn giữ chánh pháp và chuyển hóa chính mình.
+Mong rằng từng biến Chú được trì tụng không chỉ là một con số được ghi nhận, mà còn là một lần quay về với chánh niệm, nuôi lớn tâm Bồ Đề, gìn giữ chánh Pháp và chuyển hóa chính mình.
 
 Nguyện cho những ai hữu duyên gặp được ứng dụng này đều bền lòng hành trì, tinh tấn tu học, tăng trưởng Bồ Đề tâm, cho đến ngày viên thành Phật Đạo.''',
                       style: TextStyle(

@@ -5,13 +5,13 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.16+33';
-  static const displayVersion = '1.5.16';
+  static const version = '1.5.17+34';
+  static const displayVersion = '1.5.17';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Trải nghiệm đọc Chú trên mobile';
+  static const title = 'Hoàn thiện giao diện mobile';
   static const changes = <String>[
-    'Tối ưu không gian đọc Văn Chú Lăng Nghiêm trên mobile.',
-    'Thanh menu sát mép dưới và ngọn nến chuyển động nhẹ nhàng hơn.',
+    'Hiển thị đầy đủ tên hai Hòa Thượng trên mobile.',
+    'Ngọn lửa đung đưa nhẹ nhàng theo vòng lặp liền mạch.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>
