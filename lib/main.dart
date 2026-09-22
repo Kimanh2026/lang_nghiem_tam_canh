@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/foundation.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 import 'screens/home_screen.dart';
@@ -9,7 +8,6 @@ import 'screens/ai_coach_screen.dart';
 import 'screens/pin_screen.dart';
 import 'screens/settings_screen.dart';
 import 'services/notification_service.dart';
-import 'release_notes.dart';
 import 'theme/app_palette.dart';
 import 'widgets/app_background.dart';
 
@@ -35,10 +33,6 @@ void main() async {
     initialCount,
   );
   final String? savedPin = prefs.getString('app_pin');
-  final bool showUpdateAnnouncement = AppReleaseNotes.shouldAnnounce(
-    prefs.getString(AppReleaseNotes.seenVersionKey),
-  );
-
   // Settings state
   final String initialName = prefs.getString('user_name') ?? '';
   final ValueNotifier<String> globalUserName = ValueNotifier<String>(
@@ -62,7 +56,6 @@ void main() async {
       savedPin: savedPin,
       userName: globalUserName,
       clearChatTrigger: globalClearChatTrigger,
-      showUpdateAnnouncement: showUpdateAnnouncement,
     ),
   );
 }
@@ -72,15 +65,12 @@ class LangNghiemApp extends StatelessWidget {
   final String? savedPin;
   final ValueNotifier<String> userName;
   final ValueNotifier<int> clearChatTrigger;
-  final bool showUpdateAnnouncement;
-
   const LangNghiemApp({
     super.key,
     required this.recitationCount,
     this.savedPin,
     required this.userName,
     required this.clearChatTrigger,
-    this.showUpdateAnnouncement = false,
   });
 
   @override
@@ -117,7 +107,6 @@ class LangNghiemApp extends StatelessWidget {
           recitationCount: recitationCount,
           userName: userName,
           clearChatTrigger: clearChatTrigger,
-          showUpdateAnnouncement: showUpdateAnnouncement,
         ),
       },
       home: PinScreen(savedPin: savedPin, recitationCount: recitationCount),
@@ -129,14 +118,11 @@ class MainScaffold extends StatefulWidget {
   final ValueNotifier<int> recitationCount;
   final ValueNotifier<String> userName;
   final ValueNotifier<int> clearChatTrigger;
-  final bool showUpdateAnnouncement;
-
   const MainScaffold({
     super.key,
     required this.recitationCount,
     required this.userName,
     required this.clearChatTrigger,
-    this.showUpdateAnnouncement = false,
   });
 
   @override
@@ -191,26 +177,6 @@ class _LuxuryNavIcon extends StatelessWidget {
 
 class _MainScaffoldState extends State<MainScaffold> {
   static const double _compactRailBreakpoint = 800;
-
-  @override
-  void initState() {
-    super.initState();
-    if (widget.showUpdateAnnouncement) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        _announceCurrentRelease();
-      });
-    }
-  }
-
-  Future<void> _announceCurrentRelease() async {
-    if (!mounted) return;
-    await showCurrentReleaseNotes(context);
-    final prefs = await SharedPreferences.getInstance();
-    await prefs.setString(
-      AppReleaseNotes.seenVersionKey,
-      AppReleaseNotes.version,
-    );
-  }
 
   static const _railDestinations = <NavigationRailDestination>[
     NavigationRailDestination(
@@ -377,8 +343,7 @@ class _MainScaffoldState extends State<MainScaffold> {
             : SafeArea(
                 top: false,
                 child: Padding(
-                  // Leave room for the hosting badge without covering controls.
-                  padding: const EdgeInsets.fromLTRB(8, 6, 8, kIsWeb ? 56 : 8),
+                  padding: const EdgeInsets.fromLTRB(6, 4, 6, 4),
                   child: DecoratedBox(
                     decoration: BoxDecoration(
                       color: const Color(0x24FFFFFF),

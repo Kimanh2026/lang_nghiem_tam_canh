@@ -42,7 +42,8 @@ void main() {
       final source = File('lib/widgets/app_background.dart').readAsStringSync();
 
       expect(source, contains('const Offset(473, 1188)'));
-      expect(source, contains('final sway = math.sin(phase * 7) * 1.4'));
+      expect(source, contains('final sway = math.sin(phase * 3) * 2.2'));
+      expect(source, contains('Duration(seconds: 20)'));
     },
   );
 }

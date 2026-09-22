@@ -1,8 +1,16 @@
+import 'dart:io';
+
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:lang_nghiem_tam_canh/release_notes.dart';
 
 void main() {
+  test('release notes are not opened automatically', () {
+    final mainSource = File('lib/main.dart').readAsStringSync();
+    expect(mainSource, isNot(contains('showCurrentReleaseNotes')));
+    expect(mainSource, isNot(contains('showUpdateAnnouncement')));
+  });
+
   test('release announcement is shown once per version', () {
     expect(AppReleaseNotes.shouldAnnounce(null), isTrue);
     expect(AppReleaseNotes.shouldAnnounce('1.4.3+16'), isTrue);
@@ -27,7 +35,10 @@ void main() {
     await tester.pumpAndSettle();
 
     expect(find.text('ỨNG DỤNG ĐÃ ĐƯỢC CẬP NHẬT'), findsOneWidget);
-    expect(find.text('Phiên bản 1.5.15'), findsOneWidget);
+    expect(
+      find.text('Phiên bản ${AppReleaseNotes.displayVersion}'),
+      findsOneWidget,
+    );
     for (final change in AppReleaseNotes.changes) {
       expect(find.text(change), findsOneWidget);
     }

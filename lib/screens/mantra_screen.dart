@@ -199,8 +199,8 @@ class _MantraScreenState extends State<MantraScreen> {
                     Container(
                       key: const Key('mantra-reading-viewport'),
                       height: isPhone
-                          ? (MediaQuery.sizeOf(context).height * 0.62)
-                                .clamp(360.0, 560.0)
+                          ? (MediaQuery.sizeOf(context).height - 155)
+                                .clamp(500.0, 720.0)
                                 .toDouble()
                           : (MediaQuery.sizeOf(context).height - 170)
                                 .clamp(440.0, 700.0)

@@ -21,7 +21,7 @@ class _AppBackgroundState extends State<AppBackground>
     super.initState();
     _controller = AnimationController(
       vsync: this,
-      duration: const Duration(seconds: 36),
+      duration: const Duration(seconds: 20),
     )..repeat();
   }
 
@@ -153,9 +153,10 @@ class _AmbientLightPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final phase = progress * math.pi * 2;
     final candleCenter = _candlePoint(size, isPhone);
-    final flicker = 0.5 + 0.5 * math.sin(phase * 9);
-    final sway = math.sin(phase * 7) * 1.4 + math.sin(phase * 11) * 0.6;
-    final glowRadius = (isPhone ? 42.0 : 58.0) + flicker * 10;
+    final flicker = 0.5 + 0.5 * math.sin(phase * 5);
+    final sway = math.sin(phase * 3) * 2.2 + math.sin(phase * 5) * 0.5;
+    final flameBreath = math.sin(phase * 4) * 1.3;
+    final glowRadius = (isPhone ? 44.0 : 60.0) + flicker * 11;
     final glowRect = Rect.fromCircle(center: candleCenter, radius: glowRadius);
     canvas.drawCircle(
       candleCenter,
@@ -173,7 +174,7 @@ class _AmbientLightPainter extends CustomPainter {
 
     // This is a small translucent inner flame, not a second flame. It shares
     // the exact transform of the background image so it remains on the wick.
-    final flameHeight = isPhone ? 20.0 : 27.0;
+    final flameHeight = (isPhone ? 23.0 : 29.0) + flameBreath;
     final flameWidth = isPhone ? 5.5 : 7.0;
     final flameBase = candleCenter + Offset(0, flameHeight * 0.36);
     final flameTip = candleCenter + Offset(sway, -flameHeight * 0.64);

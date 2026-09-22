@@ -119,7 +119,7 @@ void main() {
     await tester.tap(find.text('Trì chú').last);
     await tester.pumpAndSettle();
     final readingViewport = find.byKey(const Key('mantra-reading-viewport'));
-    expect(tester.getSize(readingViewport).height, greaterThanOrEqualTo(360));
+    expect(tester.getSize(readingViewport).height, greaterThanOrEqualTo(680));
     expect(tester.getSize(readingViewport).width, greaterThanOrEqualTo(360));
     expect(tester.getTopLeft(readingViewport).dy, lessThan(170));
     expect(find.byKey(const Key('practice-gallery')), findsNothing);
@@ -201,6 +201,10 @@ void main() {
       const Offset(0, -360),
     );
     await tester.pumpAndSettle();
+    expect(
+      tester.getSize(find.byKey(const Key('scroll-away-header'))).height,
+      0,
+    );
     expect(
       find.byKey(const Key('mantra-reading-heading')).hitTestable(),
       findsNothing,
