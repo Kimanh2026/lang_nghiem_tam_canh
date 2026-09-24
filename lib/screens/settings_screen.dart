@@ -283,7 +283,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       Icons.privacy_tip_outlined,
                       color: Color(0xFFD4AF37),
                     ),
-                    title: const Text('Chính Sách Bảo Mật'),
+                    title: const Text('Chính Sách Bảo Mật & Liên Hệ'),
                     trailing: const Icon(
                       Icons.chevron_right,
                       color: Colors.white54,

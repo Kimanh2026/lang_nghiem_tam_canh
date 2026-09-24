@@ -5,13 +5,12 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.17+34';
-  static const displayVersion = '1.5.17';
+  static const version = '1.5.18+35';
+  static const displayVersion = '1.5.18';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Hoàn thiện giao diện mobile';
+  static const title = 'Cập nhật thông tin liên hệ';
   static const changes = <String>[
-    'Hiển thị đầy đủ tên hai Hòa Thượng trên mobile.',
-    'Ngọn lửa đung đưa nhẹ nhàng theo vòng lặp liền mạch.',
+    'Đổi tên mục Chính Sách Bảo Mật & Liên Hệ.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>
