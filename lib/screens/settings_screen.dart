@@ -85,7 +85,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 'Lưu ý: biểu tượng ngoài màn hình và giao diện toàn màn hình hoạt động như app. Tuy nhiên iPhone và một số trình duyệt có thể hạn chế thông báo chạy nền.',
                 style: TextStyle(
                   color: AppPalette.secondaryText,
-                  fontWeight: FontWeight.w600,
+                  fontWeight: FontWeight.w500,
                   height: 1.45,
                   shadows: AppPalette.readableTextShadow,
                 ),
@@ -120,7 +120,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
           body,
           style: const TextStyle(
             color: AppPalette.secondaryText,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w500,
             height: 1.45,
             shadows: AppPalette.readableTextShadow,
           ),
@@ -172,7 +172,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
       SnackBar(
         content: Text(
           message,
-          style: const TextStyle(color: Color(0xFF1B2D38)),
+          style: const TextStyle(
+            color: Color(0xFF1B2D38),
+            fontWeight: FontWeight.w600,
+            shadows: <Shadow>[],
+          ),
         ),
         backgroundColor: const Color(0xFFD4AF37),
         duration: const Duration(seconds: 3),
@@ -212,7 +216,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                   style: TextStyle(
                     color: AppPalette.mutedText,
                     fontSize: 12,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                     shadows: AppPalette.readableTextShadow,
                   ),
                 ),
@@ -243,7 +247,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       style: TextStyle(
                         color: AppPalette.mutedText,
                         fontSize: 12,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w500,
                         shadows: AppPalette.readableTextShadow,
                       ),
                     ),
@@ -255,7 +259,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                           '${item.solarDate.day.toString().padLeft(2, '0')}/${item.solarDate.month.toString().padLeft(2, '0')}/${item.solarDate.year}  ·  ${item.title}',
                           style: const TextStyle(
                             color: AppPalette.secondaryText,
-                            fontWeight: FontWeight.w600,
+                            fontWeight: FontWeight.w500,
                             shadows: AppPalette.readableTextShadow,
                           ),
                         ),
@@ -309,7 +313,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                       style: TextStyle(
                         color: AppPalette.mutedText,
                         fontSize: 12,
-                        fontWeight: FontWeight.w600,
+                        fontWeight: FontWeight.w500,
                         shadows: AppPalette.readableTextShadow,
                       ),
                     ),

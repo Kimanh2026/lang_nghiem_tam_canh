@@ -364,7 +364,7 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                   hintText: 'Nhập câu hỏi...',
                   hintStyle: const TextStyle(
                     color: AppPalette.secondaryText,
-                    fontWeight: FontWeight.w600,
+                    fontWeight: FontWeight.w500,
                     shadows: AppPalette.readableTextShadow,
                   ),
                   filled: true,

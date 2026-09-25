@@ -91,48 +91,65 @@ class LangNghiemApp extends StatelessWidget {
         textTheme: const TextTheme(
           bodyLarge: TextStyle(
             color: AppPalette.primaryText,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w500,
             shadows: AppPalette.readableTextShadow,
           ),
           bodyMedium: TextStyle(
             color: AppPalette.primaryText,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w500,
             shadows: AppPalette.readableTextShadow,
           ),
           bodySmall: TextStyle(
             color: AppPalette.secondaryText,
-            fontWeight: FontWeight.w600,
+            fontWeight: FontWeight.w500,
             shadows: AppPalette.readableTextShadow,
           ),
           titleLarge: TextStyle(
             color: AppPalette.primaryText,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
             shadows: AppPalette.readableTextShadow,
           ),
           titleMedium: TextStyle(
             color: AppPalette.primaryText,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
             shadows: AppPalette.readableTextShadow,
           ),
           titleSmall: TextStyle(
             color: AppPalette.secondaryText,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
             shadows: AppPalette.readableTextShadow,
           ),
           labelLarge: TextStyle(
             color: AppPalette.primaryText,
-            fontWeight: FontWeight.w700,
-            shadows: AppPalette.readableTextShadow,
+            fontWeight: FontWeight.w600,
           ),
           labelMedium: TextStyle(
             color: AppPalette.secondaryText,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
             shadows: AppPalette.readableTextShadow,
           ),
           labelSmall: TextStyle(
             color: AppPalette.secondaryText,
-            fontWeight: FontWeight.w700,
+            fontWeight: FontWeight.w600,
             shadows: AppPalette.readableTextShadow,
+          ),
+        ),
+        filledButtonTheme: FilledButtonThemeData(
+          style: FilledButton.styleFrom(
+            foregroundColor: const Color(0xFF1B2D38),
+            textStyle: const TextStyle(
+              fontWeight: FontWeight.w700,
+              shadows: <Shadow>[],
+            ),
+          ),
+        ),
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            foregroundColor: const Color(0xFF1B2D38),
+            textStyle: const TextStyle(
+              fontWeight: FontWeight.w700,
+              shadows: <Shadow>[],
+            ),
           ),
         ),
         useMaterial3: true,

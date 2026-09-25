@@ -276,7 +276,7 @@ Nguyện cho những ai hữu duyên gặp được ứng dụng này đều b�
                       style: TextStyle(
                         color: AppPalette.primaryText,
                         fontSize: isPhone ? 14.5 : 15.5,
-                        fontWeight: FontWeight.w700,
+                        fontWeight: FontWeight.w600,
                         fontStyle: FontStyle.normal,
                         height: 1.6,
                         shadows: AppPalette.readableTextShadow,

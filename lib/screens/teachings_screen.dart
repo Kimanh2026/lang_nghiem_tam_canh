@@ -771,6 +771,9 @@ Cuối cùng tôi nói cho các bạn biết: Cái lợi ích lớn nhất của
                                       : const Color(0xFFFDF5E6),
                                   fontSize: isPhone ? 11 : 15,
                                   fontWeight: FontWeight.w800,
+                                  shadows: isSelected
+                                      ? const <Shadow>[]
+                                      : AppPalette.readableTextShadow,
                                 ),
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(18),

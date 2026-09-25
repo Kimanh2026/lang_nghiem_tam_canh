@@ -52,6 +52,9 @@ class _MantraScreenState extends State<MantraScreen> {
               fontSize: isPhone ? 12.5 : 14,
               fontWeight: FontWeight.w800,
               height: 1.15,
+              shadows: selected
+                  ? const <Shadow>[]
+                  : AppPalette.readableTextShadow,
             ),
           ),
         ),
@@ -88,7 +91,7 @@ class _MantraScreenState extends State<MantraScreen> {
             style: const TextStyle(
               color: AppPalette.primaryText,
               fontSize: 16,
-              fontWeight: FontWeight.w600,
+              fontWeight: FontWeight.w500,
               height: 1.72,
               shadows: AppPalette.readableTextShadow,
             ),

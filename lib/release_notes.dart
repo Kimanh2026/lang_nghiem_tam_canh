@@ -5,13 +5,13 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.20+37';
-  static const displayVersion = '1.5.20';
+  static const version = '1.5.21+38';
+  static const displayVersion = '1.5.21';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Tăng độ rõ và đồng bộ giao diện đọc';
+  static const title = 'Tinh chỉnh độ rõ và độ thanh của chữ';
   static const changes = <String>[
     'Đồng bộ nền đọc Chú Lăng Nghiêm tiếng Phạn với bản tiếng Việt.',
-    'Tăng độ tương phản chữ trên toàn ứng dụng và làm rõ phần Tâm Nguyện.',
+    'Làm chữ trắng thanh hơn và loại bỏ hiệu ứng lem trên chữ đen nền vàng.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>
@@ -149,7 +149,10 @@ Future<void> showCurrentReleaseNotes(BuildContext context) {
                     backgroundColor: const Color(0xFFD4AF37),
                     foregroundColor: const Color(0xFF1B2D38),
                     padding: const EdgeInsets.symmetric(vertical: 13),
-                    textStyle: const TextStyle(fontWeight: FontWeight.bold),
+                    textStyle: const TextStyle(
+                      fontWeight: FontWeight.bold,
+                      shadows: <Shadow>[],
+                    ),
                   ),
                 ),
               ),

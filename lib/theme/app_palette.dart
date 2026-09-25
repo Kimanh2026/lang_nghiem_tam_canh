@@ -13,8 +13,7 @@ class AppPalette {
   static const mutedText = Color(0xFFE8E0D7);
 
   static const readableTextShadow = <Shadow>[
-    Shadow(color: Color(0xE6000000), blurRadius: 6, offset: Offset(0, 1)),
-    Shadow(color: Color(0x80000000), blurRadius: 1, offset: Offset(0, 1)),
+    Shadow(color: Color(0x99000000), blurRadius: 2, offset: Offset(0, 1)),
   ];
 
   /// Crisp navigation and section-heading colors for the brightest areas of
