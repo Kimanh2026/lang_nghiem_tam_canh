@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../data/mantra_text.dart';
+import '../data/sanskrit_mantra_text.dart';
 import '../theme/app_palette.dart';
 import '../widgets/scroll_away_page.dart';
 
@@ -16,6 +17,83 @@ class MantraScreen extends StatefulWidget {
 
 class _MantraScreenState extends State<MantraScreen> {
   final int _goal = 36000;
+  int _selectedMantraTab = 0;
+
+  Widget _mantraTab({
+    required int index,
+    required String label,
+    required bool isPhone,
+  }) {
+    final selected = _selectedMantraTab == index;
+    return Expanded(
+      child: InkWell(
+        key: Key('mantra-tab-$index'),
+        borderRadius: BorderRadius.circular(12),
+        onTap: () => setState(() => _selectedMantraTab = index),
+        child: AnimatedContainer(
+          duration: const Duration(milliseconds: 180),
+          padding: EdgeInsets.symmetric(
+            horizontal: isPhone ? 6 : 14,
+            vertical: isPhone ? 10 : 12,
+          ),
+          decoration: BoxDecoration(
+            color: selected ? const Color(0xFFD4AF37) : Colors.white10,
+            borderRadius: BorderRadius.circular(12),
+            border: Border.all(
+              color: selected ? const Color(0xFFF4D35E) : Colors.white24,
+            ),
+          ),
+          child: Text(
+            label,
+            maxLines: 2,
+            textAlign: TextAlign.center,
+            style: TextStyle(
+              color: selected ? const Color(0xFF1B2D38) : Colors.white,
+              fontSize: isPhone ? 12.5 : 14,
+              fontWeight: FontWeight.w800,
+              height: 1.15,
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+
+  Widget _sanskritTextCard({required String title, required String content}) {
+    return Container(
+      width: double.infinity,
+      padding: const EdgeInsets.all(16),
+      decoration: BoxDecoration(
+        color: const Color(0x7310252F),
+        borderRadius: BorderRadius.circular(16),
+        border: Border.all(color: const Color(0x4DD4AF37)),
+      ),
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        children: [
+          Text(
+            title,
+            textAlign: TextAlign.center,
+            style: const TextStyle(
+              color: Color(0xFFF4D35E),
+              fontSize: 18,
+              fontWeight: FontWeight.w800,
+              height: 1.35,
+            ),
+          ),
+          const SizedBox(height: 14),
+          SelectableText(
+            content,
+            style: const TextStyle(
+              color: Color(0xFFF4E9DC),
+              fontSize: 16,
+              height: 1.72,
+            ),
+          ),
+        ],
+      ),
+    );
+  }
 
   void _incrementCount() async {
     widget.recitationCount.value++;
@@ -217,28 +295,56 @@ class _MantraScreenState extends State<MantraScreen> {
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.stretch,
                           children: [
-                            const Row(
-                              key: Key('mantra-reading-heading'),
+                            Row(
                               children: [
-                                Icon(
-                                  Icons.auto_stories_rounded,
-                                  color: Color(0xFFD4AF37),
+                                _mantraTab(
+                                  index: 0,
+                                  label: 'Chú Lăng Nghiêm\ntiếng Việt',
+                                  isPhone: isPhone,
                                 ),
-                                SizedBox(width: 10),
-                                Expanded(
-                                  child: Text(
-                                    'Văn Chú Lăng Nghiêm',
-                                    style: TextStyle(
-                                      color: Color(0xFFF4D35E),
-                                      fontSize: 18,
-                                      fontWeight: FontWeight.w800,
-                                    ),
-                                  ),
+                                const SizedBox(width: 8),
+                                _mantraTab(
+                                  index: 1,
+                                  label: 'Chú Lăng Nghiêm\ntiếng Phạn',
+                                  isPhone: isPhone,
                                 ),
                               ],
                             ),
                             const SizedBox(height: 14),
-                            ...getMantraWidgets(),
+                            if (_selectedMantraTab == 0) ...[
+                              const Row(
+                                key: Key('mantra-reading-heading'),
+                                children: [
+                                  Icon(
+                                    Icons.auto_stories_rounded,
+                                    color: Color(0xFFD4AF37),
+                                  ),
+                                  SizedBox(width: 10),
+                                  Expanded(
+                                    child: Text(
+                                      'Văn Chú Lăng Nghiêm',
+                                      style: TextStyle(
+                                        color: Color(0xFFF4D35E),
+                                        fontSize: 18,
+                                        fontWeight: FontWeight.w800,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              const SizedBox(height: 14),
+                              ...getMantraWidgets(),
+                            ] else ...[
+                              _sanskritTextCard(
+                                title: 'Chú Lăng Nghiêm Tiếng Phạn',
+                                content: surangamaSanskrit,
+                              ),
+                              const SizedBox(height: 18),
+                              _sanskritTextCard(
+                                title: 'CHÚ LĂNG NGHIÊM\n(Phiên Âm Tiếng Phạn)',
+                                content: surangamaSanskritPhonetic,
+                              ),
+                            ],
                           ],
                         ),
                       ),
