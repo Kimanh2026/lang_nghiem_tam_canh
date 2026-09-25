@@ -362,7 +362,11 @@ class _AiCoachScreenState extends State<AiCoachScreen> {
                 controller: _chatController,
                 decoration: InputDecoration(
                   hintText: 'Nhập câu hỏi...',
-                  hintStyle: const TextStyle(color: Color(0xFFF4E9DC)),
+                  hintStyle: const TextStyle(
+                    color: AppPalette.secondaryText,
+                    fontWeight: FontWeight.w600,
+                    shadows: AppPalette.readableTextShadow,
+                  ),
                   filled: true,
                   fillColor: AppPalette.glassPanel,
                   border: OutlineInputBorder(

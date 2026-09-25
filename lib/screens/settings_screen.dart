@@ -83,7 +83,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
               const SizedBox(height: 14),
               const Text(
                 'Lưu ý: biểu tượng ngoài màn hình và giao diện toàn màn hình hoạt động như app. Tuy nhiên iPhone và một số trình duyệt có thể hạn chế thông báo chạy nền.',
-                style: TextStyle(color: Colors.white60, height: 1.45),
+                style: TextStyle(
+                  color: AppPalette.secondaryText,
+                  fontWeight: FontWeight.w600,
+                  height: 1.45,
+                  shadows: AppPalette.readableTextShadow,
+                ),
               ),
             ],
           ),
@@ -111,7 +116,15 @@ class _SettingsScreenState extends State<SettingsScreen> {
           ),
         ),
         const SizedBox(height: 8),
-        Text(body, style: const TextStyle(color: Colors.white70, height: 1.45)),
+        Text(
+          body,
+          style: const TextStyle(
+            color: AppPalette.secondaryText,
+            fontWeight: FontWeight.w600,
+            height: 1.45,
+            shadows: AppPalette.readableTextShadow,
+          ),
+        ),
       ],
     ),
   );
@@ -132,7 +145,13 @@ class _SettingsScreenState extends State<SettingsScreen> {
         actions: [
           TextButton(
             onPressed: () => Navigator.pop(context),
-            child: const Text('Hủy', style: TextStyle(color: Colors.white54)),
+            child: const Text(
+              'Hủy',
+              style: TextStyle(
+                color: AppPalette.mutedText,
+                fontWeight: FontWeight.w700,
+              ),
+            ),
           ),
           TextButton(
             onPressed: () {
@@ -190,7 +209,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                 title: const Text('Hướng dẫn cài trên điện thoại'),
                 subtitle: const Text(
                   'Xem hướng dẫn cho Android và iPhone',
-                  style: TextStyle(color: Colors.white54, fontSize: 12),
+                  style: TextStyle(
+                    color: AppPalette.mutedText,
+                    fontSize: 12,
+                    fontWeight: FontWeight.w600,
+                    shadows: AppPalette.readableTextShadow,
+                  ),
                 ),
                 trailing: const Icon(
                   Icons.chevron_right,
@@ -216,7 +240,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     const SizedBox(height: 6),
                     const Text(
                       'Tự động tính theo ngày hiện tại mỗi lần bạn mở ứng dụng.',
-                      style: TextStyle(color: Colors.white54, fontSize: 12),
+                      style: TextStyle(
+                        color: AppPalette.mutedText,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        shadows: AppPalette.readableTextShadow,
+                      ),
                     ),
                     const SizedBox(height: 12),
                     for (final item in upcoming)
@@ -224,7 +253,11 @@ class _SettingsScreenState extends State<SettingsScreen> {
                         padding: const EdgeInsets.only(bottom: 9),
                         child: Text(
                           '${item.solarDate.day.toString().padLeft(2, '0')}/${item.solarDate.month.toString().padLeft(2, '0')}/${item.solarDate.year}  ·  ${item.title}',
-                          style: const TextStyle(color: Colors.white70),
+                          style: const TextStyle(
+                            color: AppPalette.secondaryText,
+                            fontWeight: FontWeight.w600,
+                            shadows: AppPalette.readableTextShadow,
+                          ),
                         ),
                       ),
                   ],
@@ -273,7 +306,12 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     title: const Text('Xóa lịch sử trò chuyện'),
                     subtitle: const Text(
                       'Xóa sạch tin nhắn với Tiểu Tịnh',
-                      style: TextStyle(color: Colors.white54, fontSize: 12),
+                      style: TextStyle(
+                        color: AppPalette.mutedText,
+                        fontSize: 12,
+                        fontWeight: FontWeight.w600,
+                        shadows: AppPalette.readableTextShadow,
+                      ),
                     ),
                     onTap: _confirmClearChat,
                   ),

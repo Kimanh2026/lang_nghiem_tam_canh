@@ -90,11 +90,48 @@ class LangNghiemApp extends StatelessWidget {
         ),
         textTheme: const TextTheme(
           bodyLarge: TextStyle(
-            color: Color(0xFFFFFFFF),
+            color: AppPalette.primaryText,
+            fontWeight: FontWeight.w600,
             shadows: AppPalette.readableTextShadow,
           ),
           bodyMedium: TextStyle(
-            color: Color(0xFFFFFFFF),
+            color: AppPalette.primaryText,
+            fontWeight: FontWeight.w600,
+            shadows: AppPalette.readableTextShadow,
+          ),
+          bodySmall: TextStyle(
+            color: AppPalette.secondaryText,
+            fontWeight: FontWeight.w600,
+            shadows: AppPalette.readableTextShadow,
+          ),
+          titleLarge: TextStyle(
+            color: AppPalette.primaryText,
+            fontWeight: FontWeight.w700,
+            shadows: AppPalette.readableTextShadow,
+          ),
+          titleMedium: TextStyle(
+            color: AppPalette.primaryText,
+            fontWeight: FontWeight.w700,
+            shadows: AppPalette.readableTextShadow,
+          ),
+          titleSmall: TextStyle(
+            color: AppPalette.secondaryText,
+            fontWeight: FontWeight.w700,
+            shadows: AppPalette.readableTextShadow,
+          ),
+          labelLarge: TextStyle(
+            color: AppPalette.primaryText,
+            fontWeight: FontWeight.w700,
+            shadows: AppPalette.readableTextShadow,
+          ),
+          labelMedium: TextStyle(
+            color: AppPalette.secondaryText,
+            fontWeight: FontWeight.w700,
+            shadows: AppPalette.readableTextShadow,
+          ),
+          labelSmall: TextStyle(
+            color: AppPalette.secondaryText,
+            fontWeight: FontWeight.w700,
             shadows: AppPalette.readableTextShadow,
           ),
         ),

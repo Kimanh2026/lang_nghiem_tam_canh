@@ -94,15 +94,9 @@ A Mi Đà Phật! Chúc Quý Đạo Hữu luôn tinh tấn và an lạc.''',
                   style: TextStyle(
                     fontSize: 15,
                     height: 1.65,
-                    color: Colors.white,
-                    fontWeight: FontWeight.w500,
-                    shadows: [
-                      Shadow(
-                        color: Color(0x99000000),
-                        blurRadius: 2,
-                        offset: Offset(0, 1),
-                      ),
-                    ],
+                    color: AppPalette.primaryText,
+                    fontWeight: FontWeight.w600,
+                    shadows: AppPalette.readableTextShadow,
                   ),
                 ),
               ),

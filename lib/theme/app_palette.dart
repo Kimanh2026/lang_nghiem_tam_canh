@@ -8,8 +8,13 @@ class AppPalette {
   static const glassPanel = Color(0x821B2D38);
   static const glassPanelHighlight = Color(0x82465964);
 
+  static const primaryText = Color(0xFFFFFFFF);
+  static const secondaryText = Color(0xFFFDF7EF);
+  static const mutedText = Color(0xFFE8E0D7);
+
   static const readableTextShadow = <Shadow>[
-    Shadow(color: Color(0xB8000000), blurRadius: 5, offset: Offset(0, 1)),
+    Shadow(color: Color(0xE6000000), blurRadius: 6, offset: Offset(0, 1)),
+    Shadow(color: Color(0x80000000), blurRadius: 1, offset: Offset(0, 1)),
   ];
 
   /// Crisp navigation and section-heading colors for the brightest areas of

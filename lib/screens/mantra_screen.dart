@@ -64,9 +64,9 @@ class _MantraScreenState extends State<MantraScreen> {
       width: double.infinity,
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
-        color: const Color(0x7310252F),
+        color: Colors.transparent,
         borderRadius: BorderRadius.circular(16),
-        border: Border.all(color: const Color(0x4DD4AF37)),
+        border: Border.all(color: const Color(0x33D4AF37)),
       ),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.stretch,
@@ -79,15 +79,18 @@ class _MantraScreenState extends State<MantraScreen> {
               fontSize: 18,
               fontWeight: FontWeight.w800,
               height: 1.35,
+              shadows: AppPalette.readableTextShadow,
             ),
           ),
           const SizedBox(height: 14),
           SelectableText(
             content,
             style: const TextStyle(
-              color: Color(0xFFF4E9DC),
+              color: AppPalette.primaryText,
               fontSize: 16,
+              fontWeight: FontWeight.w600,
               height: 1.72,
+              shadows: AppPalette.readableTextShadow,
             ),
           ),
         ],
@@ -129,7 +132,10 @@ class _MantraScreenState extends State<MantraScreen> {
             style: const TextStyle(color: Colors.white),
             decoration: const InputDecoration(
               hintText: 'Nhập số biến đã trì',
-              hintStyle: TextStyle(color: Colors.white54),
+              hintStyle: TextStyle(
+                color: AppPalette.mutedText,
+                fontWeight: FontWeight.w600,
+              ),
               enabledBorder: UnderlineInputBorder(
                 borderSide: BorderSide(color: Color(0xFFD4AF37)),
               ),
@@ -141,7 +147,13 @@ class _MantraScreenState extends State<MantraScreen> {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Hủy', style: TextStyle(color: Colors.white54)),
+              child: const Text(
+                'Hủy',
+                style: TextStyle(
+                  color: AppPalette.mutedText,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
             ),
             TextButton(
               onPressed: () async {
@@ -498,15 +510,19 @@ class _MantraScreenState extends State<MantraScreen> {
                             const Text(
                               '0',
                               style: TextStyle(
-                                color: Color(0xFFF4E9DC),
+                                color: AppPalette.secondaryText,
                                 fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                                shadows: AppPalette.readableTextShadow,
                               ),
                             ),
                             Text(
                               'Mục tiêu: $_goal',
                               style: const TextStyle(
-                                color: Color(0xFFF4E9DC),
+                                color: AppPalette.secondaryText,
                                 fontSize: 12,
+                                fontWeight: FontWeight.w700,
+                                shadows: AppPalette.readableTextShadow,
                               ),
                             ),
                           ],

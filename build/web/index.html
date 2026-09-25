@@ -45,7 +45,7 @@
   <script>
     // The installed mobile web app checks this uncached file whenever it opens,
     // returns to the foreground, reconnects, and once per minute while visible.
-    const currentAppBuild = '1.5.19+36';
+    const currentAppBuild = '1.5.20+37';
     const updateCheckIntervalMs = 60 * 1000;
     let updateCheckInFlight = false;
 
@@ -134,7 +134,7 @@
       await checkForAppUpdate();
 
       const bootstrap = document.createElement('script');
-      bootstrap.src = 'flutter_bootstrap.js?v=20260925-36';
+      bootstrap.src = 'flutter_bootstrap.js?v=20260925-37';
       bootstrap.async = true;
       document.body.appendChild(bootstrap);
     })();

@@ -56,7 +56,10 @@ class HomeScreen extends StatelessWidget {
             style: const TextStyle(color: Colors.white),
             decoration: const InputDecoration(
               hintText: 'Nhập số biến đã trì',
-              hintStyle: TextStyle(color: Colors.white54),
+              hintStyle: TextStyle(
+                color: AppPalette.mutedText,
+                fontWeight: FontWeight.w600,
+              ),
               enabledBorder: UnderlineInputBorder(
                 borderSide: BorderSide(color: Color(0xFFD4AF37)),
               ),
@@ -68,7 +71,13 @@ class HomeScreen extends StatelessWidget {
           actions: [
             TextButton(
               onPressed: () => Navigator.pop(context),
-              child: const Text('Hủy', style: TextStyle(color: Colors.white54)),
+              child: const Text(
+                'Hủy',
+                style: TextStyle(
+                  color: AppPalette.mutedText,
+                  fontWeight: FontWeight.w700,
+                ),
+              ),
             ),
             TextButton(
               onPressed: () async {
@@ -265,9 +274,12 @@ Mong rằng từng biến Chú được trì tụng không chỉ là một con s
 
 Nguyện cho những ai hữu duyên gặp được ứng dụng này đều bền lòng hành trì, tinh tấn tu học, tăng trưởng Bồ Đề tâm, cho đến ngày viên thành Phật Đạo.''',
                       style: TextStyle(
-                        color: const Color(0xFFF4E9DC),
-                        fontSize: isPhone ? 15 : 16,
-                        height: 1.65,
+                        color: AppPalette.primaryText,
+                        fontSize: isPhone ? 14.5 : 15.5,
+                        fontWeight: FontWeight.w700,
+                        fontStyle: FontStyle.normal,
+                        height: 1.6,
+                        shadows: AppPalette.readableTextShadow,
                       ),
                     ),
                   ],
@@ -342,8 +354,10 @@ Nguyện cho những ai hữu duyên gặp được ứng dụng này đều b�
                                 const Text(
                                   '/ 36,000',
                                   style: TextStyle(
-                                    color: Color(0xFFF4E9DC),
+                                    color: AppPalette.secondaryText,
                                     fontSize: 12,
+                                    fontWeight: FontWeight.w700,
+                                    shadows: AppPalette.readableTextShadow,
                                   ),
                                 ),
                               ],
@@ -367,8 +381,10 @@ Nguyện cho những ai hữu duyên gặp được ứng dụng này đều b�
                         const Text(
                           'Bạn đang đi đúng hướng. Hãy tiếp tục tinh tấn!',
                           style: TextStyle(
-                            color: Color(0xFFF4E9DC),
+                            color: AppPalette.secondaryText,
                             fontSize: 14,
+                            fontWeight: FontWeight.w700,
+                            shadows: AppPalette.readableTextShadow,
                           ),
                         ),
                       ],

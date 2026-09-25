@@ -5,13 +5,13 @@ import 'theme/app_palette.dart';
 class AppReleaseNotes {
   const AppReleaseNotes._();
 
-  static const version = '1.5.19+36';
-  static const displayVersion = '1.5.19';
+  static const version = '1.5.20+37';
+  static const displayVersion = '1.5.20';
   static const seenVersionKey = 'last_seen_release_notes_version';
-  static const title = 'Bổ sung Chú Lăng Nghiêm tiếng Phạn';
+  static const title = 'Tăng độ rõ và đồng bộ giao diện đọc';
   static const changes = <String>[
-    'Tách riêng tab Chú Lăng Nghiêm tiếng Việt và tiếng Phạn.',
-    'Bổ sung bản Sanskrit và bản phiên âm tiếng Phạn.',
+    'Đồng bộ nền đọc Chú Lăng Nghiêm tiếng Phạn với bản tiếng Việt.',
+    'Tăng độ tương phản chữ trên toàn ứng dụng và làm rõ phần Tâm Nguyện.',
   ];
 
   static bool shouldAnnounce(String? lastSeenVersion) =>
